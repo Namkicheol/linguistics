@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.1 Constituency — 개념정리</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:repeating-linear-gradient(transparent,transparent 27px,#d5d8cf 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:820px;margin:0 auto;padding:24px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.header-sticker{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;background:#1a1f3a;color:#e8eaff;padding:5px 13px;border-radius:3px;letter-spacing:2px;text-transform:uppercase}
+.header-chapter{font-family:'JetBrains Mono',monospace;font-size:12px;color:#4a4d6a;letter-spacing:.5px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:10px}
+.header-divider{border:none;border-top:2px dashed #888;margin-bottom:10px}
+.header-tip{font-size:12px;color:#2a2e6e;font-family:'JetBrains Mono',monospace;margin-bottom:20px;background:rgba(59,63,134,.06);border:1px solid rgba(59,63,134,.2);border-radius:8px;padding:9px 14px;line-height:1.7}
+
+.wrap{max-width:820px;margin:0 auto}
+
+.sec{background:#fff;border:1.5px solid #c5c8e8;border-radius:16px;margin-bottom:20px;overflow:hidden;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@media(max-width:600px){.grid.col2,.grid.col3{grid-template-columns:1fr}}
+.sec-header{background:linear-gradient(135deg,rgba(59,63,134,.08),rgba(124,131,217,.05));border-bottom:1.5px solid #c5c8e8;padding:16px 22px;display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+.sec-icon{font-size:20px}
+.sec-title{font-size:16px;font-weight:700;color:#2a2e6e;font-family:'JetBrains Mono',monospace}
+.sec-tag{font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:6px;margin-left:auto;font-weight:600}
+.sec-arrow{font-size:13px;color:#4a4d6a;transition:transform .3s;margin-left:6px}
+.sec.open .sec-arrow{transform:rotate(180deg)}
+.sec-body{display:none;padding:22px}
+.sec.open .sec-body{display:block}
+
+.concept{margin-bottom:22px}
+.concept:last-child{margin-bottom:0}
+.c-title{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#2a2e6e;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.c-title .badge-ex{font-size:10px;background:rgba(184,101,26,.12);color:#b8651a;border:1px solid rgba(184,101,26,.3);padding:2px 7px;border-radius:4px;letter-spacing:0;text-transform:none;font-weight:700}
+.def{background:rgba(59,63,134,.06);border-left:4px solid #3b3f86;padding:12px 16px;border-radius:0 10px 10px 0;margin-bottom:10px;font-size:17px;line-height:1.8;color:#1a1f3a}
+.note{font-size:16px;color:#2a2e6e;line-height:1.75;margin-bottom:6px;padding-left:6px}
+.note::before{content:"• ";color:#7c83d9;font-weight:700}
+
+.kw1{background:rgba(59,63,134,.15);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(59,63,134,.25);white-space:nowrap}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.45);white-space:nowrap}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(184,101,26,.3);white-space:nowrap}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(183,28,28,.25);white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:10px 14px;background:#fff;border:1.5px solid #c5c8e8;border-radius:10px;align-items:center}
+.legend-title{font-size:10px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-right:4px}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:#2a2e6e}
+
+.grid{display:grid;gap:10px;margin-top:12px}
+.grid.col2{grid-template-columns:1fr 1fr}
+.grid.col3{grid-template-columns:1fr 1fr 1fr}
+.grid-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:14px 16px}
+.gi-title{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#3b3f86;margin-bottom:7px}
+.gi-body{font-size:14px;color:#2a2e6e;line-height:1.7}
+.gi-body span{display:block}
+
+.eg{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:14px}
+.eg-line{display:block;margin:3px 0;line-height:1.7}
+.eg-ok{color:#1f7a4a}
+.eg-ok::before{content:"✓ "}
+.eg-bad{color:#b71c1c}
+.eg-bad::before{content:"* "}
+.eg-note{display:block;margin-top:8px;padding-top:8px;border-top:1px dashed #c5c8e8;font-family:'Noto Sans KR',sans-serif;font-size:13px;color:#4a4d6a}
+
+.div{height:1px;background:rgba(124,131,217,.25);margin:18px 0}
+
+.exam{background:rgba(184,101,26,.06);border:1.5px solid rgba(184,101,26,.25);border-radius:10px;padding:14px 16px;margin-top:14px}
+.exam-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#b8651a;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-weight:700}
+.exam p{font-size:13.5px;color:#6b3f0e;line-height:1.75;margin-bottom:4px}
+
+.toc{max-width:820px;margin:0 auto 20px;background:#fff;border:1.5px solid #c5c8e8;border-radius:12px;padding:16px 20px;box-shadow:0 2px 8px rgba(59,63,134,.06)}
+.toc-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;font-weight:700}
+.toc-list{display:flex;flex-wrap:wrap;gap:7px}
+.toc-item{font-size:12px;color:#3b3f86;background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.2);padding:5px 12px;border-radius:8px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace;font-weight:600}
+.toc-item:hover{background:rgba(59,63,134,.18)}
+
+.tree-svg{display:block;margin:12px auto;width:100%;max-width:560px;font-family:'Noto Serif KR','Noto Sans KR',serif}
+.tree-svg text{font-family:'Noto Serif KR',Georgia,serif}
+
+.nav-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0 8px;border-top:1px solid #c5c8e8;margin-top:24px}
+.nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
+.nav-btn:hover{background:#f7f8ff}
+.nav-btn.next-btn{font-weight:600}
+
+@media(max-width:640px){.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.concept{overflow-x:auto}svg{min-width:480px;display:block}}
+</style>
+</head>
+<body>
+
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-sticker">STUDY NOTE</span>
+    <span class="header-chapter">Ch.01 · Constituency</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <div class="header-script">Concept Notes · Constituency · Syntax</div>
+  <p class="header-sub">합격자 노트 기반 · 기출 포인트 · 비교 도식</p>
+  <div class="header-divider"></div>
+  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기</p>
+</div>
+
+<div class="wrap">
+
+<!-- TOC -->
+<div class="toc">
+  <div class="toc-title">📋 목차</div>
+  <div class="toc-list">
+    <div class="toc-item" onclick="openSec('s1')">① Constituent 정의</div>
+    <div class="toc-item" onclick="openSec('s2')">② Substitution Test</div>
+    <div class="toc-item" onclick="openSec('s3')">③ Movement Test</div>
+    <div class="toc-item" onclick="openSec('s4')">④ Coordination Test</div>
+    <div class="toc-item" onclick="openSec('s5')">⑤ Fragment / Cleft</div>
+    <div class="toc-item" onclick="openSec('s6')">⑥ Phrasal vs Prep V</div>
+    <div class="toc-item" onclick="openSec('s7')">⑦ X-bar Schema</div>
+    <div class="toc-item" onclick="openSec('s8')">⑧ C-command</div>
+    <div class="toc-item" onclick="openSec('s9')">⑨ Structural Ambiguity</div>
+  </div>
+</div>
+
+<!-- 범례 -->
+<div class="legend">
+  <span class="legend-title">키워드</span>
+  <span class="legend-item"><span class="kw4">★★★ 최빈출</span></span>
+  <span class="legend-item"><span class="kw3">★★ 빈출</span></span>
+  <span class="legend-item"><span class="kw1">★ 기본개념</span></span>
+  <span class="legend-item"><span class="kw2">부키워드</span></span>
+</div>
+
+<!-- 기출분석 포인트 -->
+<div class="exam" style="margin-bottom:20px">
+  <div class="exam-label">📝 기출분석 포인트 (Ch.1 Constituency)</div>
+  <p>① <span class='kw4'>Constituent test</span>로 비문/정문 구분 — substitution·movement·coordination·fragment 사용</p>
+  <p>② <span class='kw4'>Phrasal verb</span> vs <span class='kw4'>Prepositional verb</span> 구분 — 부사 삽입·NP 위치·전치 가능성</p>
+  <p>③ <span class='kw3'>C-command</span> 정의·asymmetric vs symmetric — Binding·NPI 단원의 기초</p>
+  <p>④ <span class='kw3'>Structural ambiguity</span> (PP attachment 등) — 두 트리 구분</p>
+  <p>⑤ <span class='kw2'>X-bar schema</span> — head·complement·adjunct·specifier 위계</p>
+</div>
+
+<!-- ① Constituent 정의 -->
+<div class="sec open" id="s1">
+  <div class="sec-header" onclick="toggle('s1')">
+    <span class="sec-icon">🧱</span>
+    <span class="sec-title">① Constituent 정의</span>
+    <span class="sec-tag">Phrase Structure</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">A <span class='kw1'>constituent</span> is a group of words that functions together as a single syntactic unit within a hierarchical structure.</div>
+      <p class="note">한 개의 노드(node)로 묶이는 단어 묶음 — tree 위에서 single node에 의해 dominate되는 모든 단어들</p>
+      <p class="note">가장 작은 constituent는 word 자체 (head); 가장 큰 constituent는 sentence 전체</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Hierarchical Structure</div>
+      <p class="note">문장은 <span class='kw1'>flat sequence</span>가 아니라 <span class='kw2'>hierarchical</span> 구조를 가짐 → constituent test로 검증</p>
+      <p class="note"><span class='kw2'>Recursion</span>: 큰 constituent 안에 작은 constituent가 들어가는 nested 구조</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Why constituency matters</div>
+      <p class="note">의미 단위·통사 규칙(이동·생략·대용)이 모두 constituent 단위로 작동</p>
+      <p class="note">비문(*)/정문 판별의 출발점 — 잘못된 단어 묶음을 묶으려 하면 비문</p>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2010 1차 Q34</strong> — <span class='kw1'>phrase structure</span>·<span class='kw1'>constituency</span>·<span class='kw1'>X-bar theory</span>: 구 구조 분석과 X-bar 이론 적용 (서술형 전환 이전 객관식 시대 마지막 linguistics syntax 출제)</p>
+      <p><strong>2018 1차 서술3 (A형)</strong> — <span class='kw1'>constituency tests</span>·<span class='kw2'>substitution</span>·<span class='kw2'>movement</span>: constituent 검증 테스트 실제 적용 — 다양한 test를 복합적으로 사용해 구 경계 판별</p>
+    </div>
+  </div>
+</div>
+
+<!-- ② Substitution -->
+<div class="sec" id="s2">
+  <div class="sec-header" onclick="toggle('s2')">
+    <span class="sec-icon">🔁</span>
+    <span class="sec-title">② Substitution Test</span>
+    <span class="sec-tag">proform substitution</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Definition</div>
+      <div class="def">If a string of words can be replaced by a single <span class='kw1'>proform</span> (pronoun, do so, there, then, etc.) without changing grammaticality, that string forms a <span class='kw2'>constituent</span>.</div>
+    </div>
+    <div class="concept">
+      <div class="c-title">Proform 종류</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">NP → <span class='kw1'>pronoun</span></div>
+          <div class="gi-body"><span>he · she · it · they · this · that</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">VP → <span class='kw1'>do so / do it</span></div>
+          <div class="gi-body"><span>활동·상태 동사구 대용</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">PP (locative) → <span class='kw1'>there</span></div>
+          <div class="gi-body"><span>장소 PP 대용</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">PP (temporal) → <span class='kw1'>then</span></div>
+          <div class="gi-body"><span>시간 PP 대용</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — VP substitution by <em>do so</em></div>
+      <div class="eg">
+        <span class="eg-line eg-ok">The students [VP read the journal in the library], and the visitors did so too.</span>
+        <span class="eg-line eg-ok">Hannah [VP wrote a letter quickly], and Liam did so as well.</span>
+        <span class="eg-line eg-bad">The students read [the journal in the library], and the visitors did so too. — wrong bracketing</span>
+        <span class="eg-note">→ <em>do so</em>는 VP 전체를 대용. 부분만 대용하면 비문이 되거나 의미가 달라짐.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — Locative PP substitution by <em>there</em></div>
+      <div class="eg">
+        <span class="eg-line eg-ok">The cat slept [PP under the porch], and the dog slept there too.</span>
+        <span class="eg-line eg-bad">The cat slept under [the porch], and the dog slept under there too. — preposition 잔여 비자연</span>
+        <span class="eg-note">→ <em>there</em>는 [PP under the porch] 전체를 대용해야 자연. <span class='kw1'>PP</span>가 constituent임을 입증.</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2018 1차 서술3 (A형)</strong> — <span class='kw1'>constituency tests</span>·<span class='kw2'>substitution</span>·<span class='kw2'>movement</span>: substitution test를 포함한 여러 constituent 검증 테스트 복합 적용 문항</p>
+    </div>
+  </div>
+</div>
+
+<!-- ③ Movement -->
+<div class="sec" id="s3">
+  <div class="sec-header" onclick="toggle('s3')">
+    <span class="sec-icon">↔️</span>
+    <span class="sec-title">③ Movement Test</span>
+    <span class="sec-tag">topicalization · preposing</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Definition</div>
+      <div class="def">If a string of words can be moved together to a different position (e.g. fronted by <span class='kw1'>topicalization</span>, <span class='kw1'>clefting</span>, or <span class='kw1'>preposing</span>), that string forms a <span class='kw2'>constituent</span>.</div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — PP preposing</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">The students debated the issue [PP in the auditorium].</span>
+        <span class="eg-line eg-ok">[PP In the auditorium], the students debated the issue.</span>
+        <span class="eg-line eg-bad">[in the], the students debated the issue auditorium.</span>
+        <span class="eg-note">→ PP 전체만 이동 가능. 부분만 이동하면 비문.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — VP topicalization</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">Mira said she would [VP finish the report by Friday], and [VP finish the report by Friday] she did.</span>
+        <span class="eg-line eg-bad">Mira said she would finish [the report by Friday], and [the report by Friday] she finish did.</span>
+        <span class="eg-note">→ VP 전체가 함께 이동해야 함.</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2018 1차 서술3 (A형)</strong> — <span class='kw1'>constituency tests</span>·<span class='kw2'>substitution</span>·<span class='kw2'>movement</span>: movement test를 포함한 constituent 검증 테스트 복합 적용 문항</p>
+    </div>
+  </div>
+</div>
+
+<!-- ④ Coordination -->
+<div class="sec" id="s4">
+  <div class="sec-header" onclick="toggle('s4')">
+    <span class="sec-icon">➕</span>
+    <span class="sec-title">④ Coordination Test</span>
+    <span class="sec-tag">like-category coordination</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Definition</div>
+      <div class="def">Only <span class='kw2'>like categories</span> coordinate. If two strings can be coordinated by <span class='kw1'>and</span>, <span class='kw1'>or</span>, <span class='kw1'>but</span>, they form constituents of the <span class='kw2'>same category</span>.</div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — VP coordination</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">Tomas [VP read the article] and [VP wrote a summary].</span>
+        <span class="eg-line eg-bad">Tomas read [the article and wrote] a summary.</span>
+        <span class="eg-note">→ 두 VP가 결합. NP+V 같은 비균질 묶음은 결합 불가.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — PP coordination</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">The witness left [PP before noon] and [PP after the testimony].</span>
+        <span class="eg-line eg-bad">The witness left [before] and [after the testimony].</span>
+        <span class="eg-note">→ 완전한 PP끼리만 coordinate.</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2022 1차 A-7</strong> — <span class='kw4'>coordination diagnostic</span>·<span class='kw4'>complement</span>·<span class='kw3'>adjunct</span>: coordination test로 complement와 adjunct를 구별 — "Korean" = complement (linguistics와 등위, language 의미), "in Seoul" = adjunct 판별</p>
+      <p><strong>2023 1차 B-5</strong> — <span class='kw3'>phrasal coordination</span>·<span class='kw3'>clausal coordination</span>·<span class='kw2'>truth conditions</span>: phrasal vs clausal coordination의 truth condition 차이로 중의성 분석 — (1b)·(2a)·(3a)·(4a-d)의 phrasal 형태 대조</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑤ Fragment & Cleft -->
+<div class="sec" id="s5">
+  <div class="sec-header" onclick="toggle('s5')">
+    <span class="sec-icon">✂️</span>
+    <span class="sec-title">⑤ Fragment Answer & Cleft</span>
+    <span class="sec-tag">stand-alone test</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Fragment Answer Test</div>
+      <div class="def">A string that can stand alone as a <span class='kw1'>fragment answer</span> to a wh-question is a <span class='kw2'>constituent</span>.</div>
+      <div class="eg">
+        <span class="eg-line">Q: Where did Olivia leave the keys?</span>
+        <span class="eg-line eg-ok">A: [PP On the kitchen counter].</span>
+        <span class="eg-line eg-bad">A: [On the].</span>
+        <span class="eg-note">→ 완전한 PP만 answer 가능.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">Cleft Construction Test</div>
+      <div class="def">A string that can occupy the focus position of an <span class='kw1'>it-cleft</span> ("It is X that …") forms a <span class='kw2'>constituent</span>.</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">It was [PP at midnight] that the alarm sounded.</span>
+        <span class="eg-line eg-ok">It was [NP the new intern] who fixed the bug.</span>
+        <span class="eg-line eg-bad">It was [the new] who fixed intern the bug.</span>
+        <span class="eg-note">→ NP·PP 등 단일 phrase만 focus position에 들어감.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑥ Phrasal vs Prepositional V -->
+<div class="sec" id="s6">
+  <div class="sec-header" onclick="toggle('s6')">
+    <span class="sec-icon">🪢</span>
+    <span class="sec-title">⑥ Phrasal Verb vs Prepositional Verb</span>
+    <span class="sec-tag" style="background:rgba(183,28,28,.12);color:#b71c1c;border:1px solid rgba(183,28,28,.2)">★★★ 최빈출</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">두 동사 유형 구분 <span class="badge-ex">기출 단골</span></div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title"><span class='kw4'>Phrasal Verb</span> (V + Particle)</div>
+          <div class="gi-body">
+            <span>Particle은 V와 결합해 V를 형성</span>
+            <span>NP 목적어가 particle <span class='kw2'>앞·뒤</span> 모두 가능</span>
+            <span>대명사 NP는 <span class='kw2'>particle 앞</span>에만 가능</span>
+            <span>부사 삽입 V와 particle 사이 ❌</span>
+            <span>Particle 단독 fronting ❌</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title"><span class='kw4'>Prepositional Verb</span> (V + PP)</div>
+          <div class="gi-body">
+            <span>Preposition은 NP와 결합해 PP를 형성</span>
+            <span>NP는 항상 P <span class='kw2'>뒤</span></span>
+            <span>부사 삽입 V와 P 사이 ✅</span>
+            <span>PP fronting ✅</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div"></div>
+    <div class="concept">
+      <div class="c-title">예시 — put off (Phrasal V)</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">The committee put off [NP the decision].</span>
+        <span class="eg-line eg-ok">The committee put [NP the decision] off. — particle 뒤로 NP shift</span>
+        <span class="eg-line eg-ok">The committee put it off. — pronoun은 particle 앞</span>
+        <span class="eg-line eg-bad">The committee put it off the decision. — 비문</span>
+        <span class="eg-line eg-bad">[Off the decision] the committee put. — particle+NP는 PP가 아님</span>
+        <span class="eg-line eg-bad">The committee put suddenly off the decision. — 부사 삽입 비자연</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — climb down (Prepositional V)</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">The workers would climb [PP down the ladder].</span>
+        <span class="eg-line eg-ok">The workers would climb slowly down the ladder. — 부사 삽입 OK</span>
+        <span class="eg-line eg-ok">[PP Down the ladder] the workers would climb. — PP fronting OK</span>
+        <span class="eg-line eg-bad">The workers would climb the ladder down. — NP shift 비문</span>
+        <span class="eg-line eg-bad">The workers would climb it down. — pronoun shift 비문</span>
+      </div>
+    </div>
+
+    <svg class="tree-svg" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg">
+      <text x="270" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">Phrasal V — [VP put off the decision]</text>
+      <text x="270" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">VP</text>
+      <line x1="270" y1="64" x2="160" y2="100" stroke="#aaa" stroke-width="1.5"/>
+      <line x1="270" y1="64" x2="380" y2="100" stroke="#aaa" stroke-width="1.5"/>
+      <text x="160" y="118" text-anchor="middle" font-size="14" fill="#3b3f86" font-weight="600">V</text>
+      <text x="380" y="118" text-anchor="middle" font-size="14" fill="#1f7a8c" font-weight="600">NP</text>
+      <line x1="160" y1="124" x2="110" y2="160" stroke="#aaa" stroke-width="1.5"/>
+      <line x1="160" y1="124" x2="210" y2="160" stroke="#aaa" stroke-width="1.5"/>
+      <text x="110" y="178" text-anchor="middle" font-size="12" fill="#666">V</text>
+      <text x="210" y="178" text-anchor="middle" font-size="12" fill="#666">Prt</text>
+      <line x1="110" y1="184" x2="110" y2="208" stroke="#aaa" stroke-width="1.5"/>
+      <line x1="210" y1="184" x2="210" y2="208" stroke="#aaa" stroke-width="1.5"/>
+      <text x="110" y="224" text-anchor="middle" font-size="13" fill="#1a1a2e" font-style="italic">put</text>
+      <text x="210" y="224" text-anchor="middle" font-size="13" fill="#1a1a2e" font-style="italic">off</text>
+      <line x1="380" y1="124" x2="380" y2="208" stroke="#aaa" stroke-width="1.5"/>
+      <text x="380" y="224" text-anchor="middle" font-size="13" fill="#1a1a2e" font-style="italic">the decision</text>
+      <text x="270" y="280" text-anchor="middle" font-size="11" fill="#666">→ V 노드 안에 [V Prt] 결합 / NP는 형제(sister)</text>
+    </svg>
+
+    <svg class="tree-svg" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg">
+      <text x="270" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">Prepositional V — [VP climb [PP down the ladder]]</text>
+      <text x="270" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">VP</text>
+      <line x1="270" y1="64" x2="160" y2="100" stroke="#aaa" stroke-width="1.5"/>
+      <line x1="270" y1="64" x2="380" y2="100" stroke="#aaa" stroke-width="1.5"/>
+      <text x="160" y="118" text-anchor="middle" font-size="14" fill="#3b3f86" font-weight="600">V</text>
+      <text x="380" y="118" text-anchor="middle" font-size="14" fill="#1f7a8c" font-weight="600">PP</text>
+      <line x1="160" y1="124" x2="160" y2="160" stroke="#aaa" stroke-width="1.5"/>
+      <text x="160" y="178" text-anchor="middle" font-size="13" fill="#1a1a2e" font-style="italic">climb</text>
+      <line x1="380" y1="124" x2="320" y2="160" stroke="#aaa" stroke-width="1.5"/>
+      <line x1="380" y1="124" x2="440" y2="160" stroke="#aaa" stroke-width="1.5"/>
+      <text x="320" y="178" text-anchor="middle" font-size="12" fill="#666">P</text>
+      <text x="440" y="178" text-anchor="middle" font-size="12" fill="#1f7a8c" font-weight="600">NP</text>
+      <line x1="320" y1="184" x2="320" y2="208" stroke="#aaa" stroke-width="1.5"/>
+      <text x="320" y="224" text-anchor="middle" font-size="13" fill="#1a1a2e" font-style="italic">down</text>
+      <line x1="440" y1="184" x2="440" y2="208" stroke="#aaa" stroke-width="1.5"/>
+      <text x="440" y="224" text-anchor="middle" font-size="13" fill="#1a1a2e" font-style="italic">the ladder</text>
+      <text x="270" y="280" text-anchor="middle" font-size="11" fill="#666">→ P가 NP와 결합해 PP 형성 / VP는 V + PP</text>
+    </svg>
+
+    <div class="exam">
+      <div class="exam-label">🔑 핵심 구분 표</div>
+      <p>Phrasal: NP shift ✅ / Pronoun shift ✅ / 부사 삽입 ❌ / Particle fronting ❌</p>
+      <p>Prepositional: NP shift ❌ / Pronoun shift ❌ / 부사 삽입 ✅ / PP fronting ✅</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑦ X-bar -->
+<div class="sec" id="s7">
+  <div class="sec-header" onclick="toggle('s7')">
+    <span class="sec-icon">📐</span>
+    <span class="sec-title">⑦ X-bar Schema</span>
+    <span class="sec-tag">head · complement · adjunct · specifier</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">X-bar 일반 도식</div>
+      <div class="def"><span class='kw1'>XP → (Specifier) X′</span> &nbsp;|&nbsp; <span class='kw1'>X′ → X′ Adjunct</span> &nbsp;|&nbsp; <span class='kw1'>X′ → X (Complement)</span></div>
+      <p class="note">모든 phrase는 동일한 위계: <span class='kw2'>head</span> · <span class='kw2'>complement</span> · <span class='kw2'>adjunct</span> · <span class='kw2'>specifier</span></p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Complement vs Adjunct 구분 <span class="badge-ex">기출 포인트</span></div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title"><span class='kw4'>Complement</span></div>
+          <div class="gi-body">
+            <span>head가 <span class='kw2'>의무적</span>으로 요구</span>
+            <span>head와 가장 <span class='kw2'>가까이</span> 위치 (sister to head)</span>
+            <span>의미적으로 head에 의해 selected</span>
+            <span>do so 대용 시 함께 사라짐</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title"><span class='kw4'>Adjunct</span></div>
+          <div class="gi-body">
+            <span><span class='kw2'>선택적</span> · 부가적 정보</span>
+            <span>complement <span class='kw2'>바깥쪽</span> 위치</span>
+            <span>recursion 가능 (여러 개 누적)</span>
+            <span>do so 대용 시 남을 수 있음</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — student of physics with long hair</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">[NP the student of physics with long hair]</span>
+        <span class="eg-line">→ <em>of physics</em> = complement (student가 의미상 요구)</span>
+        <span class="eg-line">→ <em>with long hair</em> = adjunct (선택적, 외곽)</span>
+        <span class="eg-line eg-bad">[NP the student with long hair of physics] — adjunct·complement 순서 위반</span>
+        <span class="eg-note">→ Complement는 head 직속, adjunct는 그 바깥. <em>of physics</em>가 더 안쪽이어야 자연.</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2010 1차 Q34</strong> — <span class='kw1'>phrase structure</span>·<span class='kw1'>constituency</span>·<span class='kw1'>X-bar theory</span>: X-bar 이론 기반 구 구조 분석 (객관식)</p>
+      <p><strong>2022 1차 A-7</strong> — <span class='kw4'>complement</span>·<span class='kw4'>adjunct</span>·<span class='kw3'>coordination diagnostic</span>: coordination test를 사용해 complement(head가 select)와 adjunct(선택적) 구별 — NP "linguistics Korean" 구조 분석에서 "Korean" = complement 판별</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑧ C-command -->
+<div class="sec" id="s8">
+  <div class="sec-header" onclick="toggle('s8')">
+    <span class="sec-icon">⛓️</span>
+    <span class="sec-title">⑧ C-command</span>
+    <span class="sec-tag" style="background:rgba(183,28,28,.12);color:#b71c1c;border:1px solid rgba(183,28,28,.2)">★★★ 최빈출</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Definition (Reinhart 1976)</div>
+      <div class="def">Node A <span class='kw1'>c-commands</span> node B iff: (i) A does not dominate B, (ii) B does not dominate A, (iii) the <span class='kw2'>first branching node</span> dominating A also dominates B.</div>
+      <p class="note">간단히: A의 <span class='kw2'>sister</span> node 안에 B가 있으면 A가 B를 c-command한다</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Asymmetric vs Symmetric C-command</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title"><span class='kw1'>Asymmetric c-command</span></div>
+          <div class="gi-body">
+            <span>A c-commands B, but B does <span class='kw2'>not</span> c-command A</span>
+            <span>(예: subject NP가 object NP를 c-command, but not vice versa)</span>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title"><span class='kw1'>Symmetric c-command (Mutual)</span></div>
+          <div class="gi-body">
+            <span>A c-commands B and B c-commands A</span>
+            <span>(예: 두 sister node)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — Subject c-commands Object</div>
+      <div class="eg">
+        <span class="eg-line">[S [NP The teacher<sub>i</sub>] [VP praised [NP himself<sub>i</sub>]]]</span>
+        <span class="eg-line">→ NP "the teacher" c-commands NP "himself" (S의 sister, 첫 분기 노드 S가 dominates both)</span>
+        <span class="eg-line eg-bad">*[Himself<sub>i</sub>] praised [the teacher<sub>i</sub>]. — Anaphor가 antecedent를 c-command해야 결속 성립</span>
+        <span class="eg-note">→ Binding Principle A: Anaphor는 결속 영역 안에서 c-commanding antecedent를 가져야 함.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — NPI Licensing</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">[Nobody] has read [any of the reports]. — Nobody c-commands any</span>
+        <span class="eg-line eg-bad">*[The friend of nobody] has read [any of the reports]. — nobody는 NP 안에 갇혀 any를 c-command 못함</span>
+        <span class="eg-note">→ NPI <em>any</em>는 negative element가 c-command해야 인가됨. PP/NP 안에 갇힌 부정어는 인가 못함.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑨ Structural Ambiguity -->
+<div class="sec" id="s9">
+  <div class="sec-header" onclick="toggle('s9')">
+    <span class="sec-icon">🌀</span>
+    <span class="sec-title">⑨ Structural Ambiguity</span>
+    <span class="sec-tag">PP attachment etc.</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Structural Ambiguity</div>
+      <div class="def">A sentence has <span class='kw1'>structural ambiguity</span> when the same string of words can be associated with <span class='kw2'>two distinct constituent structures</span>.</div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — PP attachment</div>
+      <div class="eg">
+        <span class="eg-line">The captain saw the pirate with the telescope.</span>
+        <span class="eg-line">→ Reading 1 (VP-attachment): [VP saw [NP the pirate] [PP with the telescope]] = 망원경으로 봄</span>
+        <span class="eg-line">→ Reading 2 (NP-attachment): [VP saw [NP the pirate [PP with the telescope]]] = 망원경 든 해적을 봄</span>
+        <span class="eg-note">→ 같은 단어 sequence, 두 개의 tree. constituent 묶음이 다름.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시 — Coordination scope</div>
+      <div class="eg">
+        <span class="eg-line">old men and women</span>
+        <span class="eg-line">→ Reading 1: [old [men and women]] = 늙은 남녀</span>
+        <span class="eg-line">→ Reading 2: [[old men] and [women]] = 늙은 남자들과 (모든) 여자들</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-bottom">
+  <a class="nav-btn" href="./index.html">← 목차</a>
+  <a class="nav-btn next-btn" href="./constituency.html">OX 풀러 가기 →</a>
+</div>
+
+</div>
+
+<script>
+function toggle(id){ document.getElementById(id).classList.toggle('open'); }
+function openSec(id){ const s=document.getElementById(id); s.classList.add('open'); s.scrollIntoView({behavior:'smooth',block:'start'}); }
+</script>
+
+</body>
+</html>

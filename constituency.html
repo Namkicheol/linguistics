@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.1 Constituency OX Quiz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">NO. 01 <span>—</span> Constituency</span>
+    <span class="header-label">Past-Exam Notebook</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <div class="header-script">Concept Master · Syntax</div>
+  <p class="header-sub">영어학 · Constituency · 임용고시 대비</p>
+  <div class="header-divider"></div>
+</div>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">1 / 40</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:2.5%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div id="nav"></div>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/40</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const Q=[
+  // ── Substitution Test (4) ──
+  {src:"Constituency Test",cat:"Substitution · do so",
+   text:"In the sentence \"Marcus repaired the bicycle in the garage, and Helena did so as well,\" the proform <span class='kw1'>did so</span> substitutes for the entire VP <span class='kw2'>repaired the bicycle in the garage</span>, demonstrating that this string is a constituent.",
+   ans:true,
+   correct:"<span class='kw1'>do so</span> 대용은 VP 전체를 대용함. 부분 대용은 비문 또는 의미 변화.",
+   why:"<span class='kw1'>do so substitution test</span>는 VP가 <span class='kw2'>constituent</span>임을 보여주는 대표 진단법입니다. <em>did so</em>가 정자연하게 들어가면 그 자리는 VP. 부분만 대용하려 하면 비문이거나 의미가 비논리적이 됩니다.",
+   source:"\"If a string can be replaced by a single proform without loss of grammaticality, it forms a constituent. <em>do so</em> targets VP.\"",
+   compare:[{title:"<span class='kw1'>VP</span> 대용",desc:"do so / do it / do that"},{title:"<span class='kw1'>NP</span> 대용",desc:"he / she / it / they"}]},
+
+  {src:"Constituency Test",cat:"Substitution · pronoun",
+   text:"In \"<span class='kw2'>The young intern in the lab</span> presented her findings, and <span class='kw1'>she</span> answered every question,\" the pronoun <span class='kw1'>she</span> proves that <span class='kw2'>The young intern</span> alone is a constituent.",
+   ans:false,
+   correct:"<span class='kw1'>she</span>가 대용하는 것은 <span class='kw2'>The young intern in the lab</span> NP 전체. 부분(<span class='kw2'>The young intern</span>)만 대용하는 게 아님.",
+   why:"<span class='kw1'>Pronoun substitution</span>은 NP 전체를 대용합니다. <em>in the lab</em>은 NP 안의 PP modifier로, 대용된 부분에 포함됩니다. 부분 NP 대용으로 잘못 해석하면 안 됩니다.",
+   source:"\"A pronoun replaces a complete NP, including all modifiers attached to its head noun.\""},
+
+  {src:"Constituency Test",cat:"Substitution · there",
+   text:"The proform <span class='kw1'>there</span> in \"The keys are on the shelf, and the wallet is there too\" demonstrates that <span class='kw2'>on the shelf</span> is a <span class='kw1'>PP constituent</span>.",
+   ans:true,
+   correct:"<span class='kw1'>there</span>는 locative <span class='kw1'>PP</span> 전체를 대용 — PP가 constituent임을 입증.",
+   why:"<span class='kw1'>there</span>는 장소 <span class='kw2'>PP</span>의 proform. <em>on the shelf</em>를 통째로 대용하므로 PP가 하나의 단위(constituent)임을 보여줍니다. 같은 원리로 시간 PP는 <em>then</em>으로 대용됩니다.",
+   source:"\"Locative PPs are substituted by <em>there</em>; temporal PPs by <em>then</em>. Substitution by these proforms is a diagnostic for PP constituency.\""},
+
+  {src:"Constituency Test",cat:"Substitution · partial replacement",
+   text:"In \"The students examined <span class='kw2'>the manuscript</span> in the archive,\" replacing only <span class='kw2'>the manuscript</span> with <span class='kw1'>it</span> yields the grammatical \"The students examined it in the archive,\" which proves that <span class='kw2'>the manuscript in the archive</span> is <span class='kw1'>not</span> a single NP constituent.",
+   ans:true,
+   correct:"<span class='kw1'>it</span>이 <span class='kw2'>the manuscript</span>만을 대용하면 PP는 따로 남는 것이 자연 — 즉 <span class='kw2'>the manuscript</span>만 NP, <span class='kw2'>in the archive</span>는 별도의 VP-attached PP.",
+   why:"<span class='kw1'>Substitution test</span>는 양방향으로 작동합니다. \"the manuscript in the archive\"가 NP라면 <em>it</em>으로 대체 시 PP도 함께 사라져야 자연. <em>it in the archive</em>가 자연스러우면 PP는 NP 외부 — VP에 attached.",
+   source:"\"Asymmetric substitution patterns reveal whether a PP is NP-attached (inside the NP) or VP-attached (sister of V).\""},
+
+  // ── Movement Test (3) ──
+  {src:"Constituency Test",cat:"Movement · PP preposing",
+   text:"The grammaticality of \"<span class='kw2'>On Tuesday morning</span>, the council convened the special hearing\" supports the claim that <span class='kw1'>On Tuesday morning</span> is a <span class='kw1'>PP constituent</span>.",
+   ans:true,
+   correct:"<span class='kw1'>PP preposing</span> 가능 → <span class='kw1'>PP</span>가 single constituent임을 입증.",
+   why:"<span class='kw1'>Movement test</span>: 한 단위로 이동 가능하면 constituent. <em>On Tuesday morning</em> 전체가 함께 문장 앞으로 이동했으므로 PP 단위 존재가 입증됩니다. 부분만 이동하면 비문이 됩니다.",
+   source:"\"Constituents can move as a unit. Preposing of [PP On Tuesday morning] preserves grammaticality.\""},
+
+  {src:"Constituency Test",cat:"Movement · partial movement",
+   text:"The string <span class='kw2'>the report</span> in \"The committee will release the report on Friday\" can be topicalized: \"<span class='kw2'>The report</span>, the committee will release on Friday.\" This proves that <span class='kw1'>the report on Friday</span> forms an NP constituent.",
+   ans:false,
+   correct:"이동된 것은 <span class='kw2'>the report</span> 단독 → <span class='kw1'>the report</span>만 NP, <span class='kw2'>on Friday</span>는 별도 VP-PP.",
+   why:"<span class='kw1'>Topicalization</span>이 the report만 이동시키고 <em>on Friday</em>를 남겼다면, 두 string은 별개의 constituent임을 의미합니다. <em>the report on Friday</em>를 한 NP로 묶을 근거가 없습니다.",
+   source:"\"Movement of part X without Y suggests X and Y are distinct constituents, not a single unit containing both.\""},
+
+  {src:"Constituency Test",cat:"Movement · VP topicalization",
+   text:"\"Olivia promised to <span class='kw2'>finish the manuscript by Friday</span>, and <span class='kw1'>finish the manuscript by Friday</span> she did\" exemplifies <span class='kw1'>VP-topicalization</span>, supporting VP constituency.",
+   ans:true,
+   correct:"VP <span class='kw1'>finish the manuscript by Friday</span> 전체가 단위로 이동 → VP가 constituent.",
+   why:"<span class='kw1'>VP-topicalization</span>은 영어에서 VP 전체가 함께 이동할 수 있음을 보여주는 진단법입니다. 부분 string은 이렇게 이동할 수 없습니다.",
+   source:"\"VP-topicalization is a strong diagnostic: only a VP constituent can occupy this fronted position.\""},
+
+  // ── Coordination Test (3) ──
+  {src:"Constituency Test",cat:"Coordination · unlike categories",
+   text:"\"<span class='kw4'>*</span>The chef <span class='kw2'>chopped the carrots</span> and <span class='kw2'>into thin slices</span>\" is ungrammatical because the two conjuncts are not of the same category — a VP cannot coordinate with a PP.",
+   ans:true,
+   correct:"VP(<em>chopped the carrots</em>)와 PP(<em>into thin slices</em>)는 같은 범주가 아니므로 coordination 불가 → 비문.",
+   why:"<span class='kw1'>Coordination test</span>는 같은 범주의 constituent끼리만 결합 가능을 보여줍니다. VP와 PP는 통사 범주가 다르므로 <em>and</em>로 묶을 수 없고, 결과는 비문이 됩니다.",
+   source:"\"Coordinated constituents must share the same syntactic category. Mixing categories like VP and PP yields ungrammaticality.\""},
+
+  {src:"Constituency Test",cat:"Coordination · non-constituent",
+   text:"The grammaticality of \"Liam <span class='kw2'>reviewed the draft</span> and <span class='kw2'>signed the contract</span>\" shows that <span class='kw1'>reviewed the draft</span> and <span class='kw1'>signed the contract</span> are both <span class='kw1'>VP constituents</span>.",
+   ans:true,
+   correct:"두 string 모두 V + NP의 <span class='kw1'>VP constituent</span> → coordination 가능.",
+   why:"<span class='kw1'>Coordination</span>으로 결합되는 두 단위는 같은 범주의 constituent여야 합니다. 두 VP가 <em>and</em>로 결합되어 자연스러우므로 둘 다 VP임이 검증됩니다.",
+   source:"\"VPs coordinate freely with VPs; this is the canonical coordination pattern.\""},
+
+  {src:"Constituency Test",cat:"Coordination · ungrammatical",
+   text:"\"<span class='kw4'>*</span>The chef <span class='kw2'>chopped the onions</span> and <span class='kw2'>the carrots quickly</span>\" is grammatical because both conjuncts are NPs.",
+   ans:false,
+   correct:"<span class='kw1'>chopped the onions</span>는 V+NP(VP)이고 <span class='kw1'>the carrots quickly</span>는 NP+AdvP — 같은 범주가 아니라 비문.",
+   why:"두 conjunct가 다른 범주(혹은 다른 분포의 string)면 coordination 비문이 됩니다. <em>chopped the onions</em>(VP)와 <em>the carrots quickly</em>(이질적 묶음)은 결합 불가.",
+   source:"\"Coordinated strings must be of the same category and function. Mixed-category coordination yields ungrammaticality.\""},
+
+  // ── Fragment Answer (2) ──
+  {src:"Constituency Test",cat:"Fragment Answer",
+   text:"For the question \"Where did the children build the fort?\", the fragment answer \"<span class='kw2'>In the backyard</span>\" supports that <span class='kw1'>In the backyard</span> is a PP constituent.",
+   ans:true,
+   correct:"Fragment answer로 단독 사용 가능 → <span class='kw1'>PP constituent</span>임이 입증.",
+   why:"<span class='kw1'>Fragment answer test</span>: wh-Q에 단독으로 답할 수 있는 string은 constituent입니다. PP 전체가 답으로 가능하므로 단위로 작동.",
+   source:"\"A string that can serve as a fragment answer to a wh-question is a constituent.\""},
+
+  {src:"Constituency Test",cat:"Fragment Answer · ungrammatical",
+   text:"For \"What did Hannah send to the editor?\", the fragment answer \"<span class='kw4'>*</span><span class='kw2'>The draft to</span>\" is acceptable because the determiner and preposition are adjacent.",
+   ans:false,
+   correct:"<span class='kw2'>The draft to</span>는 NP+P 조각으로 constituent가 아님 → fragment answer 비문.",
+   why:"답으로 단독 사용할 수 있는 단위는 constituent입니다. <em>The draft to</em>는 PP의 head P가 NP를 결여한 조각이므로 단위가 아니고, 정상적인 답이 될 수 없습니다.",
+   source:"\"Stranded prepositions or NP+P fragments are not constituents and cannot stand alone as answers.\""},
+
+  // ── Cleft (3) ──
+  {src:"Constituency Test",cat:"It-cleft · NP focus",
+   text:"\"It was <span class='kw2'>the senior accountant</span> who detected the discrepancy\" places <span class='kw1'>the senior accountant</span> in cleft focus, confirming its NP constituent status.",
+   ans:true,
+   correct:"NP가 cleft focus 위치 점유 → <span class='kw1'>NP constituent</span>.",
+   why:"<span class='kw1'>It-cleft test</span>: focus 위치에 들어갈 수 있는 string은 constituent. NP <em>the senior accountant</em>가 자연스럽게 들어가므로 단위로 작동.",
+   source:"\"Cleft focus position requires a single phrasal constituent (NP, PP, AP, or AdvP).\""},
+
+  {src:"Constituency Test",cat:"It-cleft · PP focus",
+   text:"\"It was <span class='kw2'>at the welcome reception</span> that the dean announced the new policy\" demonstrates that <span class='kw1'>at the welcome reception</span> is a PP constituent.",
+   ans:true,
+   correct:"PP가 cleft focus 가능 → <span class='kw1'>PP constituent</span> 입증.",
+   why:"PP 전체가 cleft focus에 들어갈 수 있으면 그 PP는 single constituent. 부분만 들어가면 비문이 됩니다.",
+   source:"\"PPs occupy cleft focus position when they form a single constituent.\""},
+
+  {src:"Constituency Test",cat:"It-cleft · ungrammatical",
+   text:"\"<span class='kw4'>*</span>It was <span class='kw2'>the new intern fixed</span> who the bug\" is a grammatical cleft because the focus position contains a complete clause.",
+   ans:false,
+   correct:"focus 위치에 들어간 <span class='kw2'>the new intern fixed</span>는 NP+V 조각으로 constituent가 아니므로 비문.",
+   why:"Cleft focus는 단일 phrasal constituent만 받습니다. NP와 V를 같은 focus에 묶을 수 없습니다 — 두 요소는 각자 다른 위계의 단위이며 함께 묶일 통사 노드가 없습니다.",
+   source:"\"Cleft focus cannot host non-constituent strings such as NP+V or partial VPs.\""},
+
+  // ── Phrasal V vs Prepositional V (10) ──
+  {src:"Phrasal V",cat:"NP shift",
+   text:"In <span class='kw1'>phrasal verbs</span> such as <em>turn off</em>, the NP object can appear either before or after the particle: \"She turned off the light\" / \"She turned the light off.\"",
+   ans:true,
+   correct:"<span class='kw1'>Phrasal V</span>의 NP 목적어는 particle 앞·뒤 모두 가능 (<span class='kw2'>NP shift</span>).",
+   why:"<span class='kw1'>Phrasal verb</span>에서 particle은 V와 함께 V 노드를 형성하고 NP는 그 외부 sister입니다. NP가 particle을 건너뛰어 ordering 변경 가능 — 이를 <em>NP shift</em> 또는 <em>particle shift</em>라 합니다.",
+   source:"\"Phrasal verbs allow optional NP shift: V-Prt-NP or V-NP-Prt.\""},
+
+  {src:"Phrasal V",cat:"Pronoun shift",
+   text:"The pronoun <em>it</em> in a phrasal verb construction must precede the particle: \"She turned <span class='kw2'>it</span> off\" is grammatical, while <span class='kw4'>*</span>\"She turned off it\" is not.",
+   ans:true,
+   correct:"<span class='kw1'>Pronoun</span> NP는 phrasal V의 particle 앞에만 위치 가능.",
+   why:"대명사는 정보적으로 가벼운 요소이므로 phrasal verb의 particle 뒤로 갈 수 없고, 반드시 V와 particle 사이에 위치해야 합니다 (<span class='kw2'>obligatory pronoun shift</span>).",
+   source:"\"With phrasal verbs, pronominal objects obligatorily precede the particle: *V-Prt-pronoun is ungrammatical.\""},
+
+  {src:"Prepositional V",cat:"NP order",
+   text:"In <span class='kw1'>prepositional verbs</span> such as <em>look at</em>, the NP can shift to precede the preposition: \"She looked at the painting\" / \"She looked the painting at.\"",
+   ans:false,
+   correct:"<span class='kw1'>Prep V</span>의 NP는 preposition <span class='kw2'>뒤에만</span> 가능. shift 비문.",
+   why:"<span class='kw1'>Prepositional verb</span>는 V + [PP P NP] 구조로, NP는 PP 안에 깊이 위치합니다. P가 NP 없이 단독 stranded되면 비문이 됩니다 (passive·wh-extraction 같은 특수 환경 제외).",
+   source:"\"In prepositional verbs, the NP must remain inside the PP, immediately following the preposition.\""},
+
+  {src:"Phrasal vs Prep V",cat:"Adverb insertion",
+   text:"Adverb insertion between V and the next element is grammatical with <span class='kw1'>prepositional verbs</span> (\"She <span class='kw2'>looked carefully at</span> the painting\") but ungrammatical with <span class='kw1'>phrasal verbs</span> (<span class='kw4'>*</span>\"She <span class='kw2'>turned carefully off</span> the light\").",
+   ans:true,
+   correct:"부사 삽입: Prep V는 <span class='kw1'>가능</span>, Phrasal V는 <span class='kw1'>불가</span>.",
+   why:"Phrasal V의 V와 particle은 하나의 V 노드를 형성하므로 부사가 그 사이에 들어갈 수 없습니다. Prep V에서는 V와 PP가 별개 형제이므로 부사가 사이에 자연스럽게 삽입됩니다.",
+   source:"\"Manner adverbs separate V from PP (prepositional V) but cannot intrude between V and Prt (phrasal V).\"",
+   compare:[{title:"<span class='kw1'>Phrasal V</span>",desc:"부사 삽입 ❌ (V와 Prt 결합)"},{title:"<span class='kw1'>Prep V</span>",desc:"부사 삽입 ✅ (V와 PP 분리)"}]},
+
+  {src:"Prepositional V",cat:"Wh-extraction · P-stranding",
+   text:"With <span class='kw1'>prepositional verbs</span>, the preposition can be stranded under wh-extraction: \"<span class='kw2'>What</span> did the analyst <span class='kw2'>look at</span>?\" is grammatical, with the preposition <em>at</em> remaining in place.",
+   ans:true,
+   correct:"<span class='kw1'>Prep V</span>는 wh-question에서 P-stranding 허용.",
+   why:"영어의 <span class='kw1'>prepositional verb</span>는 wh-extraction 시 preposition을 stranded시킬 수 있습니다 (P가 NP 자리만 비고 그대로 남음). Phrasal V의 particle은 stranding과 무관하게 V와 함께 결합되어 있으므로 동일하게 stranded되지만, P-stranding 자체는 prepositional V에서 진단적입니다.",
+   source:"\"English prepositional verbs allow preposition stranding in wh-extraction: 'What did X look at?' — the P remains.\""},
+
+  {src:"Phrasal V",cat:"Particle fronting",
+   text:"The particle of a phrasal verb can be fronted together with the following NP, as in \"<span class='kw2'>Off the light</span>, she turned suddenly.\"",
+   ans:false,
+   correct:"<span class='kw1'>Particle + NP</span>는 PP가 아니므로 fronting 비문.",
+   why:"Phrasal V에서 particle은 NP와 PP를 형성하지 않습니다 — particle은 V 안에 있고 NP는 별개 형제이므로 둘을 묶어 이동시킬 single constituent가 없습니다.",
+   source:"\"*[Prt+NP] cannot be fronted: phrasal verbs do not yield a PP constituent containing the particle.\""},
+
+  {src:"Phrasal V",cat:"Heavy NP shift",
+   text:"With <span class='kw1'>phrasal verbs</span>, very long (heavy) NPs strongly prefer the post-particle position: \"She turned off <span class='kw2'>every light in the upstairs hallway and the basement</span>.\"",
+   ans:true,
+   correct:"Heavy NP는 <span class='kw1'>particle 뒤</span> 선호 (end-weight principle).",
+   why:"긴 NP는 발화의 끝으로 가는 경향(<span class='kw2'>end-weight principle</span>)이 있어 particle 뒤로 이동을 선호합니다. 짧은 NP는 어느 위치든 자연스럽지만 heavy NP는 particle 뒤가 자연스럽습니다.",
+   source:"\"Heavy NP shift: phrasal verbs prefer V-Prt-NP order when the NP is long or complex.\""},
+
+  {src:"Phrasal V",cat:"Particle stranding",
+   text:"In passive constructions of phrasal verbs, the particle is stranded: \"<span class='kw2'>The light was turned off</span>\" shows the particle remaining behind the verb.",
+   ans:true,
+   correct:"Phrasal V의 passive에서 particle은 V 옆에 stranded.",
+   why:"수동화 시 NP가 주어 자리로 이동하면 particle은 V와 함께 본래 자리에 남습니다. Particle은 V의 일부이므로 함께 이동하지 않습니다.",
+   source:"\"Particles strand under passivization, reflecting their close attachment to V.\""},
+
+  {src:"Prepositional V",cat:"Pseudo-passive",
+   text:"Prepositional verbs allow pseudo-passive: \"The painting was <span class='kw2'>looked at</span> by every visitor.\" The preposition is stranded but the structure remains a prepositional verb.",
+   ans:true,
+   correct:"<span class='kw1'>Pseudo-passive</span>: Prep V도 P stranding 허용 (특수 구문).",
+   why:"<span class='kw1'>Prep V</span>는 pseudo-passive에서 P를 stranded시키며 NP를 주어로 이동시킬 수 있습니다. 이는 Prep V가 active에서 PP를 그대로 유지하는 것과 별개의 구문적 사실입니다.",
+   source:"\"Pseudo-passive licenses preposition stranding even though active prepositional verbs require P-NP adjacency.\""},
+
+  {src:"Phrasal vs Prep V",cat:"Diagnostic summary",
+   text:"To distinguish <span class='kw1'>phrasal</span> from <span class='kw1'>prepositional</span> verbs, the four standard tests yield <span class='kw2'>opposite</span> patterns: NP shift, pronoun shift, adverb insertion, and PP fronting.",
+   ans:true,
+   correct:"네 가지 진단 모두 <span class='kw1'>대조적 패턴</span>으로 두 동사 유형을 구분.",
+   why:"NP shift·pronoun shift는 <span class='kw1'>Phrasal V만</span> 가능. 부사 삽입·PP fronting은 <span class='kw1'>Prep V만</span> 가능. 이 네 진단을 종합하면 두 동사 유형이 명확히 갈립니다.",
+   source:"\"Four-way diagnostic: shift tests target phrasal verbs; insertion and fronting tests target prepositional verbs.\"",
+   compare:[{title:"<span class='kw1'>Phrasal V</span>",desc:"NP shift ✅ Pronoun shift ✅ 부사삽입 ❌ PP fronting ❌"},{title:"<span class='kw1'>Prep V</span>",desc:"NP shift ❌ Pronoun shift ❌ 부사삽입 ✅ PP fronting ✅"}]},
+
+  // ── C-command (8) ──
+  {src:"C-command",cat:"Definition",
+   text:"Node A <span class='kw1'>c-commands</span> node B if and only if the <span class='kw2'>first branching node</span> dominating A also dominates B, and neither dominates the other.",
+   ans:true,
+   correct:"<span class='kw1'>C-command</span>의 표준 정의 (Reinhart 1976).",
+   why:"이 정의는 <span class='kw1'>Reinhart의 c-command</span>로, A의 first branching node 안에 B가 있으면 c-command 성립합니다. Binding·NPI licensing 등 통사 의존성의 기반 개념입니다.",
+   source:"\"Reinhart (1976): A c-commands B iff (i) A ≠ B, (ii) A does not dominate B, (iii) the first branching node dominating A dominates B.\""},
+
+  {src:"C-command",cat:"Asymmetric · subject-object",
+   text:"In a typical SVO clause, the <span class='kw1'>subject NP</span> c-commands the <span class='kw1'>object NP</span>, and the object NP c-commands the subject NP <span class='kw2'>symmetrically</span>.",
+   ans:false,
+   correct:"Subject가 object를 <span class='kw1'>c-command</span>하는 것은 <span class='kw2'>asymmetric</span> — object는 subject를 c-command하지 않음.",
+   why:"Subject는 S 노드의 daughter이고 object는 VP 안에 있습니다. Subject의 first branching node인 S가 object를 dominate하므로 subject → object c-command 성립. 그러나 object의 first branching node는 VP이고 VP는 subject를 dominate하지 않으므로 역방향은 성립 안 합니다.",
+   source:"\"Subjects asymmetrically c-command into the VP, the foundation of subject-orientation in binding.\""},
+
+  {src:"C-command",cat:"Symmetric · sister nodes",
+   text:"Two <span class='kw1'>sister nodes</span> (sharing the same mother) c-command each other <span class='kw2'>symmetrically</span> (mutual c-command).",
+   ans:true,
+   correct:"두 sister 노드는 <span class='kw1'>mutual c-command</span> 관계.",
+   why:"Sister 관계의 두 노드는 같은 mother를 first branching node로 공유합니다. 따라서 서로의 c-command 영역에 들어가 mutual(symmetric) c-command가 성립합니다.",
+   source:"\"Sisters mutually c-command each other; this is symmetric c-command.\""},
+
+  {src:"C-command",cat:"Anaphor binding",
+   text:"<span class='kw4'>*</span>\"<span class='kw2'>Himself<sub>i</sub></span> admires the candidate<sub>i</sub>\" is grammatical because <em>himself</em> and <em>the candidate</em> are coindexed.",
+   ans:false,
+   correct:"<span class='kw1'>Anaphor</span>(<em>himself</em>)는 antecedent에게 c-command <span class='kw2'>당해야</span> 함 — antecedent를 c-command해서는 안 됨.",
+   why:"<span class='kw1'>Binding Principle A</span>: anaphor는 결속 영역 안에서 c-commanding antecedent를 가져야 합니다. <em>himself</em>가 주어 자리에서 object를 c-command하지만 그 반대(object → subject) c-command는 안 되므로 antecedent를 받을 수 없어 비문.",
+   source:"\"Principle A: An anaphor must be bound (c-commanded by a coindexed antecedent) in its binding domain.\""},
+
+  {src:"C-command",cat:"Anaphor binding · grammatical",
+   text:"\"The candidate<sub>i</sub> admires <span class='kw2'>himself<sub>i</sub></span>\" is grammatical because <em>the candidate</em> c-commands <em>himself</em> and binds it.",
+   ans:true,
+   correct:"Subject NP가 object anaphor를 <span class='kw1'>c-command + bind</span> → Principle A 충족.",
+   why:"<em>The candidate</em>는 S 안에서 anaphor <em>himself</em>를 c-command하며 동지수입니다. Binding Principle A의 조건(c-commanding antecedent in binding domain)을 만족하므로 정문.",
+   source:"\"A subject antecedent c-commands an object anaphor and binds it within the local clause.\""},
+
+  {src:"C-command",cat:"NPI licensing",
+   text:"\"<span class='kw2'>Nobody</span> in the room said <span class='kw1'>anything</span>\" is grammatical because <em>nobody</em> c-commands and licenses the NPI <em>anything</em>.",
+   ans:true,
+   correct:"부정 요소 <span class='kw1'>nobody</span>가 NPI <span class='kw1'>anything</span>을 c-command → 인가 성립.",
+   why:"<span class='kw1'>NPI licensing</span>은 c-command 관계에서 일어납니다. 주어 <em>nobody</em>는 VP 안의 NPI <em>anything</em>을 c-command하므로 인가됩니다.",
+   source:"\"NPIs must be c-commanded by a licensing negative or downward-entailing operator.\""},
+
+  {src:"C-command",cat:"NPI licensing · ungrammatical",
+   text:"\"<span class='kw4'>*</span><span class='kw2'>The friend of nobody</span> reviewed <span class='kw1'>any</span> of the manuscripts\" is grammatical because <em>nobody</em> licenses <em>any</em>.",
+   ans:false,
+   correct:"<span class='kw1'>nobody</span>는 NP 내부에 갇혀 <span class='kw1'>any</span>를 c-command하지 못함 → NPI 인가 실패.",
+   why:"<em>nobody</em>의 first branching node는 NP 내부 (PP 또는 NP 노드)이고, 그 안에 anyrk가 dominate되지 않습니다. 따라서 c-command가 성립하지 않아 NPI 인가가 실패하고 비문이 됩니다.",
+   source:"\"NP-internal negation does not c-command material in the matrix VP; NPI licensing fails.\""},
+
+  {src:"C-command",cat:"R-expression · Principle C",
+   text:"\"<span class='kw4'>*</span><span class='kw2'>He<sub>i</sub></span> insisted that the manager<sub>i</sub> resign\" violates <span class='kw1'>Binding Principle C</span> because the pronoun c-commands the coindexed R-expression.",
+   ans:true,
+   correct:"<span class='kw1'>Principle C</span>: R-expression(<em>the manager</em>)은 c-commanding pronoun과 동지수일 수 없음.",
+   why:"<span class='kw1'>Principle C</span>는 R-expression이 어떤 c-commanding 요소와도 동지수가 될 수 없다고 규정합니다. 주어 pronoun <em>he</em>가 종속절의 <em>the manager</em>를 c-command하면서 coindex되면 위반.",
+   source:"\"Principle C: An R-expression must be free (not c-commanded by a coindexed element).\""},
+
+  // ── X-bar (4) ──
+  {src:"X-bar",cat:"Complement vs Adjunct",
+   text:"In the NP \"<span class='kw2'>the student of physics with long hair</span>,\" <span class='kw1'>of physics</span> is a <span class='kw1'>complement</span> of <em>student</em>, while <span class='kw1'>with long hair</span> is an <span class='kw1'>adjunct</span>.",
+   ans:true,
+   correct:"<span class='kw1'>Complement</span>는 head 가까이, <span class='kw1'>adjunct</span>는 외곽 — 어순이 head→complement→adjunct.",
+   why:"Complement는 head가 의미상 요구하는 selected element로 head와 sister 관계입니다. Adjunct는 선택적 modifier로 complement 외곽에 위치합니다. 어순은 일반적으로 head → complement → adjunct.",
+   source:"\"Complements are sisters of the head (X′ → X complement); adjuncts attach higher (X′ → X′ adjunct).\""},
+
+  {src:"X-bar",cat:"Word order violation",
+   text:"\"<span class='kw4'>*</span>The <span class='kw2'>student with long hair of physics</span>\" is acceptable because adjuncts and complements freely re-order.",
+   ans:false,
+   correct:"순서 위반 — complement(<em>of physics</em>)가 adjunct(<em>with long hair</em>)보다 head에 가까워야 함.",
+   why:"Complement는 head의 sister이므로 head에 가장 가까이 위치합니다. Adjunct가 그 사이를 끼어들면 X′ 구조가 위반되어 비문이 됩니다.",
+   source:"\"Order: head → complement → adjunct. Reversing this order violates X-bar attachment height.\""},
+
+  {src:"X-bar",cat:"Adjunct recursion",
+   text:"<span class='kw1'>Adjuncts</span> can be stacked recursively, as in \"the book <span class='kw2'>on the table</span> <span class='kw2'>in the corner</span> <span class='kw2'>by the window</span>.\"",
+   ans:true,
+   correct:"<span class='kw1'>Adjunct</span>는 <span class='kw1'>recursive</span>하게 누적 가능 (X′ → X′ adjunct 반복 적용).",
+   why:"<span class='kw1'>X-bar schema</span>에서 adjunct attachment는 X′ → X′ adjunct로 표현되어 X′ level이 반복됩니다. 따라서 여러 PP adjunct가 누적되어 stacked될 수 있습니다.",
+   source:"\"Adjunction is recursive at the X′ level: X′ → X′ adjunct can apply iteratively.\""},
+
+  {src:"X-bar",cat:"Complement obligatoriness",
+   text:"In \"<span class='kw4'>*</span>The architect <span class='kw2'>devoured</span>,\" the omission of the NP complement is grammatical because <em>devour</em> permits intransitive use.",
+   ans:false,
+   correct:"<em>devour</em>는 obligatory NP complement 요구 동사 — 생략 시 비문.",
+   why:"<span class='kw1'>Subcategorization</span>: <em>devour</em>는 transitive only verb로 NP complement를 의무적으로 요구합니다. Complement 생략은 V의 selectional requirement 위반이므로 비문.",
+   source:"\"Some verbs subcategorize for an obligatory NP complement; omission yields ungrammaticality.\""},
+
+  // ── Structural Ambiguity (3) ──
+  {src:"Ambiguity",cat:"PP attachment",
+   text:"\"The detective spotted the courier with the briefcase\" is structurally ambiguous between an <span class='kw1'>NP-attached</span> reading (the courier holding the briefcase) and a <span class='kw1'>VP-attached</span> reading (the detective using the briefcase to spot).",
+   ans:true,
+   correct:"<span class='kw1'>PP attachment ambiguity</span>: NP-attached vs VP-attached.",
+   why:"<span class='kw1'>Structural ambiguity</span>: 같은 단어 sequence가 두 개의 서로 다른 tree와 연결됩니다. <em>with the briefcase</em>가 NP <em>the courier</em>를 modify하면 \"가방을 든 배달원\", VP를 modify하면 \"가방을 이용해 발견했다\" 의미.",
+   source:"\"Classic PP attachment ambiguity: same string, two distinct constituent trees.\""},
+
+  {src:"Ambiguity",cat:"Coordination scope",
+   text:"\"old men and women\" has two readings: [<span class='kw2'>old [men and women]</span>] (both old) and [<span class='kw2'>[old men] and [women]</span>] (only men necessarily old).",
+   ans:true,
+   correct:"<span class='kw1'>Coordination scope ambiguity</span>: 형용사가 두 명사 모두/한 명사만 수식.",
+   why:"<em>old</em>의 modification scope가 모호합니다. [old [men and women]]에서는 두 명사 모두 old, [[old men] and [women]]에서는 men만 old. 두 다른 constituent 묶음이 두 의미를 만듭니다.",
+   source:"\"Coordination scope creates structural ambiguity: the modifier may take wide or narrow scope.\""},
+
+  {src:"X-bar",cat:"Subcategorization · obligatory complements",
+   text:"The verb <span class='kw1'>put</span> obligatorily requires both an NP and a PP complement: \"<span class='kw4'>*</span>She put the book\" is ungrammatical because the locative PP is missing.",
+   ans:true,
+   correct:"<em>put</em>은 NP + PP 두 complement 모두 의무적 — 하나라도 결여 시 비문.",
+   why:"<span class='kw1'>Subcategorization</span>은 동사가 어떤 complement를 요구하는지를 규정합니다. <em>put</em>은 <em>[NP, PP]</em>를 모두 요구하는 ditransitive locative verb로, PP를 빠뜨리면 의미·통사 모두 불완전해 비문이 됩니다 (cf. \"She put the book on the shelf.\" — 정문).",
+   source:"\"Verbs subcategorize for specific complements. <em>put</em> requires both an NP object and a locative PP; omission of either yields ungrammaticality.\""}
+];
+
+const TOTAL=Q.length;
+const SAVE_KEY='ox_constituency_v1';
+let answers=new Array(TOTAL).fill(null);
+let cur=0;
+let mode='normal',order=[...Array(TOTAL).keys()];
+function initOrder(m){if(m==='random'){const a=[...Array(TOTAL).keys()];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}order=a;}else order=[...Array(TOTAL).keys()];}
+function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
+function setMode(m){if(mode===m)return;mode=m;initOrder(m);cur=0;answers=new Array(TOTAL).fill(null);localStorage.removeItem(SAVE_KEY);document.getElementById('rb').style.display='none';document.getElementById('sc').classList.remove('show');updateModeUI();renderNav();render();}
+
+function getScore(){return answers.filter(a=>a&&a.correct).length;}
+function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+
+function freshStart(){
+  cur=0;answers=new Array(TOTAL).fill(null);mode='normal';order=[...Array(TOTAL).keys()];clearProgress();
+  document.getElementById('rb').style.display='none';
+  document.getElementById('qa').style.display='block';
+  updateModeUI();renderNav();render();
+}
+
+function renderNav(){
+  document.getElementById('nav').innerHTML=Array.from({length:TOTAL},(_,i)=>{
+    const a=answers[i];
+    const cls=i===cur?'nd cur':a===null?'nd':a.correct?'nd ok':'nd ng';
+    return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
+  }).join('');
+}
+
+function jumpTo(i){cur=i;render();}
+
+function renderExp(q,isCorrect){
+  const three=q.compare&&q.compare.length===3;
+  const cmp=q.compare?`
+    <div class="sec-label">📊 비교 정리</div>
+    <div class="compare${three?' three':''}">
+      ${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}
+    </div>`:'';
+  return `<div class="exp show">
+    <div class="exp-header"><span>${isCorrect?'✅ 정답':'❌ 오답'} · 해설</span></div>
+    <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
+    <div class="exp-body">
+      <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
+      <div class="sec-label">📌 Source</div>
+      <div class="def-box"><p>${q.source}</p></div>
+      ${cmp}
+    </div>
+  </div>`;
+}
+
+function render(){
+  if(cur>=TOTAL){
+    document.getElementById('qa').style.display='none';
+    document.getElementById('sc').classList.add('show');
+    const s=getScore();
+    document.getElementById('fs').textContent=s;
+    const p=s/TOTAL;
+    document.getElementById('rm').textContent=p===1?'🎉 Perfect!':p>=.8?'👏 Great!':p>=.6?'😊 Good!':'💪 Keep going!';
+    document.getElementById('rs').textContent=`${TOTAL}문제 중 ${s}문제 정답 (${Math.round(p*100)}%)`;
+    setTimeout(function(){window.showScorePopup&&window.showScorePopup(s,TOTAL);},400);
+    renderNav();return;
+  }
+  document.getElementById('sc').classList.remove('show');
+  document.getElementById('qa').style.display='block';
+  renderNav();
+  const q=Q[order[cur]];
+  document.getElementById('bf').style.width=((cur+1)/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('pt').textContent=`${cur+1} / ${TOTAL}`;
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  const a=answers[cur];
+  if(a!==null){
+    let oBtnCls='',xBtnCls='';
+    if(a.picked===true){oBtnCls=a.correct?'co':'wp';if(!a.correct)xBtnCls='cx';}
+    else{xBtnCls=a.correct?'cx':'wp';if(!a.correct)oBtnCls='co';}
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn ${oBtnCls}" disabled>⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn ${xBtnCls}" disabled>❌<span class="lb">WRONG</span></button>
+        </div>
+        <div class="badge ${a.correct?'ok':'ng'}">${a.correct?'✅ 정답!':'❌ 오답! 정답은 '+(q.ans?'O':'X')}</div>
+        <div>${renderExp(q,a.correct)}</div>
+        <button class="next-btn show" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }else{
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn" onclick="pick(true)" id="ob">⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn" onclick="pick(false)" id="xb">❌<span class="lb">WRONG</span></button>
+        </div>
+        <div id="bd" class="badge"></div>
+        <div id="ep"></div>
+        <button class="next-btn" id="nb" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }
+}
+
+function pick(val){
+  const q=Q[order[cur]];
+  document.getElementById('ob').disabled=true;
+  document.getElementById('xb').disabled=true;
+  const ok=val===q.ans;
+  answers[cur]={picked:val,correct:ok};
+  if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
+  const bd=document.getElementById('bd');
+  bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
+  bd.className='badge '+(ok?'ok':'ng');
+  document.getElementById(val?'ob':'xb').classList.add(ok?(val?'co':'cx'):'wp');
+  if(!ok)document.getElementById(q.ans?'ob':'xb').classList.add(q.ans?'co':'cx');
+  document.getElementById('ep').innerHTML=renderExp(q,ok);
+  document.getElementById('nb').classList.add('show');
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  renderNav();
+}
+
+function next(){
+  cur++;
+  if(cur>=TOTAL){clearProgress();}else{saveProgress();}
+  render();
+}
+function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
+
+(function(){
+  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
+    cur=saved.cur;answers=saved.answers;
+    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+    const done=answers.filter(a=>a!==null).length;
+    if(done>0){
+      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
+      document.getElementById('rb').style.display='block';
+    }
+  }
+  updateModeUI();renderNav();render();
+})();
+</script>
+</body>
+</html>

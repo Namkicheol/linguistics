@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Claude 로컬 설정
+.claude/*
+!.claude/skills
+
+# refs 자료는 로컬 전용 (저작권·합격자 노트·교재 자료 + 2GB 사이즈)
+refs/
