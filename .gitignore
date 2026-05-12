@@ -7,3 +7,6 @@
 
 # refs 자료는 로컬 전용 (저작권·합격자 노트·교재 자료 + 2GB 사이즈)
 refs/
+
+# 로컬 도구 클론
+code-review-graph/
