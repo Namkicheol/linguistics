@@ -7,7 +7,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:repeating-linear-gradient(transparent,transparent 27px,#d5d8cf 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:repeating-linear-gradient(transparent,transparent 27px,#d5d8cf 28px);color:#1a1a1a;min-height:100vh;padding:16px;overflow-x:hidden}
 .header-wrap{max-width:820px;margin:0 auto;padding:24px 8px 0}
 .header-topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
 .header-sticker{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;background:#1a1f3a;color:#e8eaff;padding:5px 13px;border-radius:3px;letter-spacing:2px;text-transform:uppercase}
@@ -40,10 +40,10 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .note{font-size:16px;color:#2a2e6e;line-height:1.75;margin-bottom:6px;padding-left:6px}
 .note::before{content:"• ";color:#7c83d9;font-weight:700}
 
-.kw1{background:rgba(59,63,134,.15);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(59,63,134,.25);white-space:nowrap}
-.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.45);white-space:nowrap}
-.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(184,101,26,.3);white-space:nowrap}
-.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(183,28,28,.25);white-space:nowrap}
+.kw1{background:rgba(59,63,134,.15);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(59,63,134,.25);overflow-wrap:anywhere}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.45);overflow-wrap:anywhere}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(184,101,26,.3);overflow-wrap:anywhere}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(183,28,28,.25);overflow-wrap:anywhere}
 .legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:10px 14px;background:#fff;border:1.5px solid #c5c8e8;border-radius:10px;align-items:center}
 .legend-title{font-size:10px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-right:4px}
 .legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:#2a2e6e}
@@ -56,7 +56,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .gi-body{font-size:14px;color:#2a2e6e;line-height:1.7}
 .gi-body span{display:block}
 
-.eg{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:14px}
+.eg{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:14px;overflow-wrap:anywhere}
 .eg-line{display:block;margin:3px 0;line-height:1.7}
 .eg-ok{color:#1f7a4a}
 .eg-ok::before{content:"✓ "}
@@ -68,7 +68,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 
 .exam{background:rgba(184,101,26,.06);border:1.5px solid rgba(184,101,26,.25);border-radius:10px;padding:14px 16px;margin-top:14px}
 .exam-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#b8651a;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-weight:700}
-.exam p{font-size:13.5px;color:#6b3f0e;line-height:1.75;margin-bottom:4px}
+.exam p{font-size:13.5px;color:#6b3f0e;line-height:1.75;margin-bottom:4px;overflow-wrap:anywhere}
 
 .toc{max-width:820px;margin:0 auto 20px;background:#fff;border:1.5px solid #c5c8e8;border-radius:12px;padding:16px 20px;box-shadow:0 2px 8px rgba(59,63,134,.06)}
 .toc-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;font-weight:700}
@@ -76,7 +76,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .toc-item{font-size:12px;color:#3b3f86;background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.2);padding:5px 12px;border-radius:8px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace;font-weight:600}
 .toc-item:hover{background:rgba(59,63,134,.18)}
 
-.tree-svg{display:block;margin:12px auto;width:100%;max-width:560px;font-family:'Noto Serif KR','Noto Sans KR',serif}
+.tree-svg{display:block;margin:12px auto;width:100%;max-width:560px;height:auto;font-family:'Noto Serif KR','Noto Sans KR',serif}
 .tree-svg text{font-family:'Noto Serif KR',Georgia,serif}
 
 .nav-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0 8px;border-top:1px solid #c5c8e8;margin-top:24px}
@@ -84,7 +84,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
 
-@media(max-width:640px){.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.concept{overflow-x:auto}svg{min-width:480px;display:block}}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
 </style>
 </head>
 <body>
