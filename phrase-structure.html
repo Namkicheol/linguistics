@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.2 Phrase Structure OX Quiz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">NO. 02 <span>—</span> Phrase Structure</span>
+    <span class="header-label">Past-Exam Notebook</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <div class="header-script">Concept Master · Syntax</div>
+  <p class="header-sub">영어학 · Phrase Structure · 임용고시 대비</p>
+  <div class="header-divider"></div>
+</div>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">1 / 40</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:2.5%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div id="nav"></div>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/40</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const Q=[
+  {src:"Phrase Structure Rule",cat:"PS Rule · rewrite",
+   text:"A <span class='kw1'>phrase structure rule</span> rewrites a category into its immediate constituents, so a rule like <span class='kw2'>VP → V NP</span> states that a VP may be expanded into a V followed by an NP.",
+   ans:true,
+   correct:"<span class='kw1'>phrase structure rule</span>은 상위 범주를 바로 아래 constituent들로 전개하는 규칙이다.",
+   why:"<span class='kw1'>rewrite rule</span>은 위계 구조를 선형 문자열이 아니라 노드 전개 방식으로 기술합니다. <span class='kw2'>VP → V NP</span>는 VP의 daughter가 V와 NP임을 뜻합니다.",
+   source:"Refs 요지: Phrase structure rules generate hierarchical structure by expanding a mother node into its daughters.",
+   compare:[{title:"Mother",desc:"VP"},{title:"Daughters",desc:"V + NP"}]},
+
+  {src:"Phrase Structure Rule",cat:"PS Rule · tree",
+   text:"If a sentence is analyzed by the rule <span class='kw2'>S → NP VP</span>, the subject NP and the predicate VP are sisters immediately dominated by S.",
+   ans:true,
+   correct:"<span class='kw2'>S → NP VP</span>는 S 바로 아래에 NP와 VP가 자매로 놓인다는 뜻이다.",
+   why:"rewrite rule은 직계 구성 관계를 나타냅니다. 따라서 S가 NP와 VP를 직접 지배하고, 두 범주는 서로 sister relation을 형성합니다.",
+   source:"Refs 요지: A rule of the form S → NP VP places NP and VP under the same mother node."},
+
+  {src:"Phrase Structure Rule",cat:"PS Rule · category",
+   text:"The rule <span class='kw2'>NP → V PP</span> is a standard nominal rule because every NP must contain a verb.",
+   ans:false,
+   correct:"NP는 표준적으로 verb를 head로 갖지 않는다. NP analysis에서는 N이 head이고, DP hypothesis에서는 D가 더 큰 nominal projection의 head다.",
+   why:"phrase structure에서 head category는 projection의 정체성을 결정합니다. verb를 nominal projection의 head로 두는 rule은 표준 NP/DP structure와 맞지 않습니다.",
+   source:"Refs 요지: Nominal projections are headed by N or D, not by V."},
+
+  {src:"Phrase Structure Rule",cat:"PS Rule · recursion",
+   text:"Recursion means that a category may contain another phrase of the same general type inside it, which allows phrase structure rules to generate potentially unbounded structures.",
+   ans:true,
+   correct:"<span class='kw1'>recursion</span> 덕분에 phrase structure는 무한 확장 가능하다.",
+   why:"PP inside NP, CP inside VP처럼 비슷한 유형의 phrase가 다른 phrase 안에 다시 들어갈 수 있기 때문에 구조는 원칙적으로 무한히 길어질 수 있습니다.",
+   source:"Refs 요지: Recursive embedding makes phrase structure productive rather than finite."},
+
+  {src:"Phrase Structure Rule",cat:"PS Rule · linear order",
+   text:"A phrase structure rule only states word order and says nothing about hierarchy, so tree diagrams are optional decorations rather than structural representations.",
+   ans:false,
+   correct:"phrase structure rule은 단순 어순표가 아니라 위계 구조를 전제로 하는 규칙이다.",
+   why:"임용 문항에서 <span class='kw1'>phrase structure rules</span>와 <span class='kw1'>tree diagram</span>이 함께 출제되는 이유가 바로 이 점입니다. rule은 daughter relation을 통해 hierarchy를 인코딩합니다.",
+   source:"Refs 요지: Tree diagrams visualize the hierarchical content already implied by phrase structure rules."},
+
+  {src:"Phrase Structure Rule",cat:"PS Rule · tree diagram",
+   text:"A <span class='kw1'>tree diagram</span> is appropriate when we need to show not only the sequence of words but also which strings form intermediate constituents such as NP, VP, or PP.",
+   ans:true,
+   correct:"<span class='kw1'>tree diagram</span>은 intermediate constituent를 보이기 위한 핵심 도구다.",
+   why:"같은 단어열이라도 어떤 node가 어떤 범주를 project하는지에 따라 분석이 달라집니다. tree는 이런 중간 수준 구조를 시각화합니다.",
+   source:"Refs 요지: Tree diagrams display constituent boundaries and dominance relations that a plain string cannot show."},
+
+  {src:"Phrase Structure Rule",cat:"PS Rule · branching",
+   text:"If a category immediately dominates two daughters, the mother is a <span class='kw1'>branching node</span>.",
+   ans:true,
+   correct:"두 daughter를 바로 지배하면 그 mother는 branching node다.",
+   why:"c-command 정의나 X-bar 구조 설명에서 <span class='kw1'>first branching node</span>가 자주 등장합니다. branching 여부는 구조적 관계 계산의 기준이 됩니다.",
+   source:"Refs 요지: A branching node is any node with more than one daughter."},
+
+  {src:"Phrase Structure Rule",cat:"PS Rule · terminal",
+   text:"Words such as <em>students</em>, <em>read</em>, and <em>carefully</em> are <span class='kw1'>terminal nodes</span> because they are not further expanded in the tree.",
+   ans:true,
+   correct:"단어 자체는 더 이상 분기하지 않는 <span class='kw1'>terminal node</span>다.",
+   why:"terminal node는 tree의 가장 아래 단계입니다. phrase structure rule은 비단어 범주를 전개하고, 마지막 단계에서 lexical item이 실현됩니다.",
+   source:"Refs 요지: Terminal nodes host lexical items and have no daughters."},
+
+  {src:"X-bar Schema",cat:"X-bar · projection",
+   text:"In <span class='kw1'>X-bar theory</span>, head X projects first to <span class='kw2'>X′</span> and then to <span class='kw2'>XP</span>.",
+   ans:true,
+   correct:"head X는 <span class='kw2'>X′</span>, 다시 <span class='kw2'>XP</span>로 projection된다.",
+   why:"X-bar schema는 lexical heads(N, V, A, P)와 functional heads(C, T, D 등)를 동일한 projection 원리로 설명하려는 장치입니다. head보다 큰 단계를 intermediate projection과 maximal projection으로 구분합니다.",
+   source:"Refs 요지: A head projects to an intermediate bar level and then to a maximal projection."},
+
+  {src:"X-bar Schema",cat:"X-bar · head",
+   text:"The head determines the category label of the whole phrase, so a phrase headed by N is an NP and a phrase headed by V is a VP.",
+   ans:true,
+   correct:"phrase의 범주명은 head가 결정한다.",
+   why:"projection의 정체성은 head feature에서 옵니다. 그래서 같은 modifier가 붙어도 head가 N이면 nominal projection, V이면 verbal projection이 됩니다.",
+   source:"Refs 요지: Projection inherits its category from the head."},
+
+  {src:"X-bar Schema",cat:"X-bar · complement",
+   text:"A <span class='kw1'>complement</span> is merged as sister to the head at the <span class='kw2'>X′</span> level.",
+   ans:true,
+   correct:"complement는 head와 가장 가까운 자매로 결합한다.",
+   why:"X-bar에서 complement는 head selection을 직접 받는 요소라서 head 옆에 붙습니다. 이 관계가 head-complement locality의 핵심입니다.",
+   source:"Refs 요지: Complements are sisters of heads in X-bar structure."},
+
+  {src:"X-bar Schema",cat:"X-bar · adjunct",
+   text:"An <span class='kw1'>adjunct</span> is sister to X′ and creates a larger X′, rather than being sister directly to the head.",
+   ans:true,
+   correct:"adjunct는 head가 아니라 X′에 붙는다.",
+   why:"adjunct는 선택적 수식어이므로 head의 subcategorization 대상이 아닙니다. 따라서 complement보다 바깥쪽에서 recursive하게 결합합니다.",
+   source:"Refs 요지: Adjuncts attach to bar-level projections, not directly to the head."},
+
+  {src:"X-bar Schema",cat:"X-bar · specifier",
+   text:"A <span class='kw1'>specifier</span> combines with X′ to form XP, which places it structurally outside the head-complement unit.",
+   ans:true,
+   correct:"specifier는 X′와 결합해 XP를 만든다.",
+   why:"specifier는 maximal projection의 외곽에 놓입니다. 이것이 complement보다 더 바깥 위치에 있다는 점이 중요합니다.",
+   source:"Refs 요지: Specifiers merge with X′ to form XP."},
+
+  {src:"X-bar Schema",cat:"X-bar · order",
+   text:"Because an adjunct is merged closer to the head than a complement, the normal order is head → adjunct → complement.",
+   ans:false,
+   correct:"표준 X-bar order는 head → complement → adjunct다.",
+   why:"complement가 head의 직접 자매이므로 가장 안쪽에 위치합니다. adjunct는 그 바깥에서 X′를 한 번 더 확장합니다.",
+   source:"Refs 요지: Complements are structurally closer to the head than adjuncts."},
+
+  {src:"X-bar Schema",cat:"X-bar · maximal projection",
+   text:"The phrase XP is the <span class='kw1'>maximal projection</span> of the head X.",
+   ans:true,
+   correct:"XP는 head X의 maximal projection이다.",
+   why:"X-bar 표기에서 bar가 없는 XP가 가장 큰 phrasal level이며, 이 단계가 문장 안에서 distributional unit으로 작동합니다.",
+   source:"Refs 요지: XP is the maximal projection associated with head X."},
+
+  {src:"X-bar Schema",cat:"X-bar · universality",
+   text:"One goal of X-bar theory is to capture a common structural template across categories such as N, V, A, P, and C rather than giving each category a completely unrelated format.",
+   ans:true,
+   correct:"X-bar theory는 범주 간 공통 템플릿을 제시하려는 이론이다.",
+   why:"N, V, A, P, C마다 전혀 다른 구조를 두지 않고, head-complement-specifier-adjunct 관계를 같은 방식으로 기술합니다.",
+   source:"Refs 요지: X-bar theory generalizes phrase structure across lexical categories."},
+
+  {src:"Complement vs Adjunct",cat:"Selection",
+   text:"If a head semantically or syntactically requires a phrase, that phrase is more likely to be a <span class='kw1'>complement</span> than an <span class='kw1'>adjunct</span>.",
+   ans:true,
+   correct:"head가 요구하는 요소는 complement일 가능성이 높다.",
+   why:"selection과 subcategorization은 complement 판정의 핵심 기준입니다. adjunct는 선택적 정보만 더합니다.",
+   source:"Refs 요지: Selection is a hallmark of complement status."},
+
+  {src:"Complement vs Adjunct",cat:"Optionality",
+   text:"Because adjuncts are optional modifiers, removing an adjunct usually preserves the core grammaticality of the phrase.",
+   ans:true,
+   correct:"adjunct는 대개 제거해도 핵심 문법성이 유지된다.",
+   why:"예를 들어 <em>read the article in the library</em>에서 <em>in the library</em>를 지워도 clause는 완전합니다. 이는 adjunct의 전형적 성질입니다.",
+   source:"Refs 요지: Adjuncts are optional and do not satisfy the head's core requirements."},
+
+  {src:"Complement vs Adjunct",cat:"Recursion",
+   text:"Multiple adjuncts can stack recursively, while a head's complement position is much more tightly constrained.",
+   ans:true,
+   correct:"adjunct는 재귀적으로 누적되지만 complement 자리는 제한적이다.",
+   why:"동일 head에 시간 PP, 장소 PP, manner AdvP 등이 연속적으로 붙을 수 있는 반면, complement는 head의 선택 정보에 직접 묶여 있습니다.",
+   source:"Refs 요지: Adjunct recursion contrasts with the restricted distribution of complements."},
+
+  {src:"Complement vs Adjunct",cat:"Order",
+   text:"In a noun phrase such as <em>the student of linguistics with a notebook</em>, the order <span class='kw2'>of linguistics</span> before <span class='kw2'>with a notebook</span> is consistent with the analysis that the former is a complement and the latter an adjunct.",
+   ans:true,
+   correct:"complement가 adjunct보다 head에 더 가깝게 온다.",
+   why:"<em>of linguistics</em>는 N이 선택하는 의미상 결합이고, <em>with a notebook</em>는 추가 수식어입니다. X-bar ordering과 잘 맞습니다.",
+   source:"Refs 요지: Complement-before-adjunct order reflects structural closeness to the head."},
+
+  {src:"Complement vs Adjunct",cat:"Coordination diagnostic",
+   text:"If one string can coordinate naturally with another phrase of the same semantic type required by the head, that fact may support a complement analysis.",
+   ans:true,
+   correct:"coordination diagnostic은 complement 분석의 근거가 될 수 있다.",
+   why:"2022 A-7 유형처럼 head가 요구하는 범주의 다른 phrase와 자연스럽게 등위되면 그 요소를 complement로 볼 근거가 생깁니다.",
+   source:"Refs 요지: Coordination can reveal whether a phrase belongs to the selected complement domain."},
+
+  {src:"Complement vs Adjunct",cat:"Misanalysis",
+   text:"Every PP following a noun must be an adjunct because PPs are never selected by nouns.",
+   ans:false,
+   correct:"noun도 PP complement를 가질 수 있다.",
+   why:"<em>student of linguistics</em>, <em>destruction of the city</em> 같은 구조에서 PP는 head noun이 요구하는 complement로 분석될 수 있습니다.",
+   source:"Refs 요지: Nominal heads may select PP complements."},
+
+  {src:"Complement vs Adjunct",cat:"Do-so style contrast",
+   text:"A constituent test that leaves a modifier behind can help show that the modifier is outside the core head-complement unit.",
+   ans:true,
+   correct:"modifier가 남는 대용 패턴은 adjunct 외곽 부착을 시사한다.",
+   why:"대용이나 이동을 했을 때 핵심 predicate만 사라지고 PP/AdvP가 남아 있으면, 그 요소는 complement가 아니라 바깥쪽 adjunct일 가능성이 큽니다.",
+   source:"Refs 요지: Constituent diagnostics can separate the selected core from outer modifiers."},
+
+  {src:"Complement vs Adjunct",cat:"Semantic role",
+   text:"The distinction between complement and adjunct is purely about meaning and has no structural consequence in X-bar theory.",
+   ans:false,
+   correct:"complement vs adjunct 구분은 구조적으로도 핵심적이다.",
+   why:"둘의 차이는 의미만이 아니라 attachment site, ordering, recursion, selection에 모두 반영됩니다. 임용에서 tree로 직접 묻는 이유가 이 점입니다.",
+   source:"Refs 요지: Complement and adjunct differ structurally as well as semantically."},
+
+  {src:"Specifier",cat:"XP layer",
+   text:"A specifier is structurally higher than the head-complement unit because it merges with X′ to form XP.",
+   ans:true,
+   correct:"specifier는 head-complement 묶음보다 바깥쪽이다.",
+   why:"specifier는 XP의 최상층을 만드는 요소이므로, head와 complement보다 한 단계 높은 위치를 차지합니다.",
+   source:"Refs 요지: Specifier occupies the outer edge of the maximal projection."},
+
+  {src:"Specifier",cat:"Subject position",
+   text:"In many phrase structure analyses, the subject NP is treated as occupying a specifier position rather than as a sister directly to the lexical verb.",
+   ans:true,
+   correct:"subject는 흔히 specifier position으로 분석된다.",
+   why:"VP-internal subject hypothesis나 TP/IP 구조를 도입하면 subject는 lexical verb의 직접 자매가 아니라 더 높은 specifier에 놓입니다.",
+   source:"Refs 요지: Subjects are commonly analyzed in specifier positions in modern phrase structure."},
+
+  {src:"Specifier",cat:"Confusion",
+   text:"Because specifiers are outside X′, they are complements of the head.",
+   ans:false,
+   correct:"specifier와 complement는 서로 다른 structural position이다.",
+   why:"complement는 head의 자매, specifier는 X′와 결합해 XP를 만드는 외곽 요소입니다. 구조적으로 완전히 다른 위치입니다.",
+   source:"Refs 요지: Specifier is distinct from complement in X-bar geometry."},
+
+  {src:"Specifier",cat:"Determiner position",
+   text:"Under the <span class='kw1'>DP hypothesis</span>, the determiner occupies the head D position, while NP appears inside the larger DP projection.",
+   ans:true,
+   correct:"DP hypothesis에서는 D가 head이고 NP는 그 안에 포함된다.",
+   why:"2017 기입4 계열 포인트입니다. determiner를 단순 modifier가 아니라 전체 nominal phrase의 functional head로 보는 분석입니다.",
+   source:"Refs 요지: DP hypothesis treats D as the head of the nominal projection."},
+
+  {src:"Specifier",cat:"Specifier of CP",
+   text:"In standard movement analyses, a fronted wh-phrase is associated with <span class='kw1'>Spec CP</span> rather than with complement position inside VP.",
+   ans:true,
+   correct:"fronted wh-phrase는 보통 <span class='kw1'>Spec CP</span>에 간다.",
+   why:"이 챕터가 movement 자체를 다루지는 않지만, phrase structure 관점에서 CP와 specifier 위치를 알아야 이후 wh-movement 분석이 가능합니다.",
+   source:"Refs 요지: Wh-phrases are commonly analyzed in Spec CP."},
+
+  {src:"Specifier",cat:"Adjunct confusion",
+   text:"If a phrase occurs at the edge of XP, it must be an adjunct and cannot be a specifier.",
+   ans:false,
+   correct:"XP edge에는 adjunct뿐 아니라 specifier도 올 수 있다.",
+   why:"specifier 역시 projection의 edge에 위치합니다. edge position이라는 이유만으로 adjunct로 단정할 수 없습니다.",
+   source:"Refs 요지: Edge positions can host either specifiers or adjuncts, depending on structure."},
+
+  {src:"DP Hypothesis",cat:"Nominal projection",
+   text:"The <span class='kw1'>DP hypothesis</span> claims that the highest nominal projection is DP rather than NP when a determiner is present.",
+   ans:true,
+   correct:"determiner가 있으면 nominal phrase를 DP로 보는 분석이다.",
+   why:"명사구 전체의 distribution을 determiner가 좌우한다는 관점에서, D를 head로 두고 NP를 complement로 분석합니다.",
+   source:"Refs 요지: DP replaces NP as the maximal nominal projection in determiner-bearing phrases."},
+
+  {src:"DP Hypothesis",cat:"Head status",
+   text:"Under the DP hypothesis, the determiner is merely an adjunct attached to NP and does not project.",
+   ans:false,
+   correct:"DP hypothesis에서는 determiner가 adjunct가 아니라 head D다.",
+   why:"이 분석의 핵심은 determiner의 head status입니다. adjunct로 보면 DP hypothesis 자체가 사라집니다.",
+   source:"Refs 요지: The determiner is the projecting head in DP."},
+
+  {src:"DP Hypothesis",cat:"Articleless NPs",
+   text:"Recognizing DP as a projection does not require every nominal expression in every context to contain an overt determiner.",
+   ans:true,
+   correct:"DP hypothesis가 overt determiner의 보편적 실현을 뜻하는 것은 아니다.",
+   why:"고유명사, 복수 무관사 명사구처럼 overt D가 없는 표면형도 있을 수 있습니다. 중요한 것은 구조적 head position의 존재 가능성입니다.",
+   source:"Refs 요지: A functional head may be null even when no overt determiner appears."},
+
+  {src:"Clause Structure",cat:"CP layer",
+   text:"A clause introduced by an overt complementizer such as <em>that</em> is commonly analyzed as a CP headed by C.",
+   ans:true,
+   correct:"overt complementizer가 있으면 CP 분석이 자연스럽다.",
+   why:"<em>that</em>, <em>whether</em> 같은 요소는 clause 외곽의 functional head C로 분석됩니다. 그래서 절 전체를 CP라 부릅니다.",
+   source:"Refs 요지: Complementizers head CP."},
+
+  {src:"Clause Structure",cat:"IP/TP",
+   text:"Functional structure above VP allows tense or inflectional information to be represented in a higher projection such as IP or TP.",
+   ans:true,
+   correct:"tense/inflection 정보를 담는 상위 projection이 IP/TP다.",
+   why:"phrase structure가 lexical phrase만으로는 tense, agreement, clause type을 설명하기 어렵기 때문에 functional projections이 도입됩니다.",
+   source:"Refs 요지: IP/TP hosts inflectional information above VP."},
+
+  {src:"Clause Structure",cat:"Small clause",
+   text:"In a structure like <em>consider [Mina intelligent]</em>, the bracketed string can be analyzed as a <span class='kw1'>small clause</span> because it behaves like a predication unit without an overt finite verb.",
+   ans:true,
+   correct:"small clause는 finite verb 없이도 predication을 이루는 단위다.",
+   why:"<em>Mina intelligent</em>는 subject-predicate relation을 갖지만 finite tense가 없습니다. 이런 구성을 small clause라 부릅니다.",
+   source:"Refs 요지: Small clauses express predication without an overt finite verb."},
+
+  {src:"Clause Structure",cat:"Small clause confusion",
+   text:"Because a small clause lacks an overt finite verb, it cannot be represented in phrase structure at all.",
+   ans:false,
+   correct:"finite verb가 없어도 small clause는 구조적으로 표현 가능하다.",
+   why:"phrase structure는 overt finite verb 유무만으로 predication unit을 배제하지 않습니다. small clause는 오히려 통사 분석의 대표 사례입니다.",
+   source:"Refs 요지: Phrase structure can represent predicational units even when tense is absent."},
+
+  {src:"Clause Structure",cat:"VP-internal subject",
+   text:"The <span class='kw1'>VP-internal subject hypothesis</span> assumes that the subject originates lower in the clause and later appears in a higher specifier position.",
+   ans:true,
+   correct:"VP-internal subject hypothesis는 subject의 lower origin을 가정한다.",
+   why:"이 가설은 subject가 처음부터 S 바깥에 있는 것이 아니라 clause 내부에서 출발해 상위 position으로 이동한다는 분석입니다. 관련 evidence는 이 가설을 뒷받침하는 근거로 제시됩니다.",
+   source:"Refs 요지: Subjects are first merged inside the VP domain and then move higher."},
+
+  {src:"Clause Structure",cat:"VP-internal subject",
+   text:"If the VP-internal subject hypothesis is correct, the subject must always remain as sister to the verb on the surface.",
+   ans:false,
+   correct:"lower origin을 가진다고 해서 surface에서도 그 자리에 남는 것은 아니다.",
+   why:"가설의 요지는 origin과 surface position을 구분하는 데 있습니다. subject는 higher specifier로 이동해 표면상 더 위에 보일 수 있습니다.",
+   source:"Refs 요지: Origin position and surface position need not be identical."},
+
+  {src:"Clause Structure",cat:"Binary branching",
+   text:"A binary-branching representation is compatible with X-bar style analysis because head-complement and specifier relations can be built through repeated two-way merges.",
+   ans:true,
+   correct:"binary branching은 X-bar 분석과 양립 가능하다.",
+   why:"현대 phrase structure는 큰 다지 branching보다 연속적인 이진 결합으로 구조를 세우는 경향이 강합니다. X-bar 관계도 이 방식으로 구현됩니다.",
+   source:"Refs 요지: Binary branching can encode X-bar relations through successive projection."}
+];
+
+const TOTAL=Q.length;
+const SAVE_KEY='linguistics_phrase_structure_quiz_v1';
+let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
+function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
+function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
+function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function getScore(){return answers.filter(a=>a&&a.correct).length;}
+function renderNav(){
+  document.getElementById('nav').innerHTML=answers.map((_,i)=>{
+    const a=answers[i];
+    const cls=i===cur?'nd cur':a===null?'nd':a.correct?'nd ok':'nd ng';
+    return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
+  }).join('');
+}
+function jumpTo(i){cur=i;render();}
+function renderExp(q,isCorrect){
+  const three=q.compare&&q.compare.length===3;
+  const cmp=q.compare?`
+    <div class="sec-label">📊 비교 정리</div>
+    <div class="compare${three?' three':''}">
+      ${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}
+    </div>`:'';
+  return `<div class="exp show">
+    <div class="exp-header"><span>${isCorrect?'✅ 정답':'❌ 오답'} · 해설</span></div>
+    <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
+    <div class="exp-body">
+      <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
+      <div class="sec-label">📌 Source</div>
+      <div class="def-box"><p>${q.source}</p></div>
+      ${cmp}
+    </div>
+  </div>`;
+}
+function render(){
+  if(cur>=TOTAL){
+    document.getElementById('qa').style.display='none';
+    document.getElementById('sc').classList.add('show');
+    const s=getScore();
+    document.getElementById('fs').textContent=s;
+    const p=s/TOTAL;
+    document.getElementById('rm').textContent=p===1?'🎉 Perfect!':p>=.8?'👏 Great!':p>=.6?'😊 Good!':'💪 Keep going!';
+    document.getElementById('rs').textContent=`${TOTAL}문제 중 ${s}문제 정답 (${Math.round(p*100)}%)`;
+    setTimeout(function(){window.showScorePopup&&window.showScorePopup(s,TOTAL);},400);
+    renderNav();return;
+  }
+  document.getElementById('sc').classList.remove('show');
+  document.getElementById('qa').style.display='block';
+  renderNav();
+  const q=Q[order[cur]];
+  document.getElementById('bf').style.width=((cur+1)/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('pt').textContent=`${cur+1} / ${TOTAL}`;
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  const a=answers[cur];
+  if(a!==null){
+    let oBtnCls='',xBtnCls='';
+    if(a.picked===true){oBtnCls=a.correct?'co':'wp';if(!a.correct)xBtnCls='cx';}
+    else{xBtnCls=a.correct?'cx':'wp';if(!a.correct)oBtnCls='co';}
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn ${oBtnCls}" disabled>⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn ${xBtnCls}" disabled>❌<span class="lb">WRONG</span></button>
+        </div>
+        <div class="badge ${a.correct?'ok':'ng'}">${a.correct?'✅ 정답!':'❌ 오답! 정답은 '+(q.ans?'O':'X')}</div>
+        <div>${renderExp(q,a.correct)}</div>
+        <button class="next-btn show" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }else{
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn" onclick="pick(true)" id="ob">⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn" onclick="pick(false)" id="xb">❌<span class="lb">WRONG</span></button>
+        </div>
+        <div id="bd" class="badge"></div>
+        <div id="ep"></div>
+        <button class="next-btn" id="nb" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }
+}
+function pick(val){
+  const q=Q[order[cur]];
+  document.getElementById('ob').disabled=true;
+  document.getElementById('xb').disabled=true;
+  const ok=val===q.ans;
+  answers[cur]={picked:val,correct:ok};
+  if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
+  const bd=document.getElementById('bd');
+  bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
+  bd.className='badge '+(ok?'ok':'ng');
+  document.getElementById(val?'ob':'xb').classList.add(ok?(val?'co':'cx'):'wp');
+  if(!ok)document.getElementById(q.ans?'ob':'xb').classList.add(q.ans?'co':'cx');
+  document.getElementById('ep').innerHTML=renderExp(q,ok);
+  document.getElementById('nb').classList.add('show');
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  renderNav();
+}
+function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
+function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
+(function(){
+  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
+    cur=saved.cur;answers=saved.answers;
+    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+    const done=answers.filter(a=>a!==null).length;
+    if(done>0){
+      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
+      document.getElementById('rb').style.display='block';
+    }
+  }
+  updateModeUI();renderNav();render();
+})();
+</script>
+</body>
+</html>

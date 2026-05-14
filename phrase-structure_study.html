@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.2 Phrase Structure — 개념정리</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:repeating-linear-gradient(transparent,transparent 27px,#d5d8cf 28px);color:#1a1a1a;min-height:100vh;padding:16px;overflow-x:hidden}
+.header-wrap{max-width:820px;margin:0 auto;padding:24px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.header-sticker{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;background:#1a1f3a;color:#e8eaff;padding:5px 13px;border-radius:3px;letter-spacing:2px;text-transform:uppercase}
+.header-chapter{font-family:'JetBrains Mono',monospace;font-size:12px;color:#4a4d6a;letter-spacing:.5px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:10px}
+.header-divider{border:none;border-top:2px dashed #888;margin-bottom:10px}
+.header-tip{font-size:12px;color:#2a2e6e;font-family:'JetBrains Mono',monospace;margin-bottom:20px;background:rgba(59,63,134,.06);border:1px solid rgba(59,63,134,.2);border-radius:8px;padding:9px 14px;line-height:1.7}
+.wrap{max-width:820px;margin:0 auto}
+.sec{background:#fff;border:1.5px solid #c5c8e8;border-radius:16px;margin-bottom:20px;overflow:hidden;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@media(max-width:600px){.grid.col2,.grid.col3{grid-template-columns:1fr}}
+.sec-header{background:linear-gradient(135deg,rgba(59,63,134,.08),rgba(124,131,217,.05));border-bottom:1.5px solid #c5c8e8;padding:16px 22px;display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+.sec-icon{font-size:20px}
+.sec-title{font-size:16px;font-weight:700;color:#2a2e6e;font-family:'JetBrains Mono',monospace}
+.sec-tag{font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:6px;margin-left:auto;font-weight:600}
+.sec-arrow{font-size:13px;color:#4a4d6a;transition:transform .3s;margin-left:6px}
+.sec.open .sec-arrow{transform:rotate(180deg)}
+.sec-body{display:none;padding:22px}
+.sec.open .sec-body{display:block}
+.concept{margin-bottom:22px}
+.concept:last-child{margin-bottom:0}
+.c-title{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#2a2e6e;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.def{background:rgba(59,63,134,.06);border-left:4px solid #3b3f86;padding:12px 16px;border-radius:0 10px 10px 0;margin-bottom:10px;font-size:17px;line-height:1.8;color:#1a1f3a}
+.note{font-size:16px;color:#2a2e6e;line-height:1.75;margin-bottom:6px;padding-left:6px}
+.note::before{content:"• ";color:#7c83d9;font-weight:700}
+.kw1{background:rgba(59,63,134,.15);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(59,63,134,.25);overflow-wrap:anywhere}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.45);overflow-wrap:anywhere}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(184,101,26,.3);overflow-wrap:anywhere}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(183,28,28,.25);overflow-wrap:anywhere}
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:10px 14px;background:#fff;border:1.5px solid #c5c8e8;border-radius:10px;align-items:center}
+.legend-title{font-size:10px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-right:4px}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:#2a2e6e}
+.grid{display:grid;gap:10px;margin-top:12px}
+.grid.col2{grid-template-columns:1fr 1fr}
+.grid.col3{grid-template-columns:1fr 1fr 1fr}
+.grid-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:14px 16px}
+.gi-title{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#3b3f86;margin-bottom:7px}
+.gi-body{font-size:14px;color:#2a2e6e;line-height:1.7}
+.gi-body span{display:block}
+.eg{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:14px;overflow-wrap:anywhere}
+.eg-line{display:block;margin:3px 0;line-height:1.7}
+.eg-ok{color:#1f7a4a}
+.eg-ok::before{content:"✓ "}
+.eg-bad{color:#b71c1c}
+.eg-bad::before{content:"* "}
+.eg-note{display:block;margin-top:8px;padding-top:8px;border-top:1px dashed #c5c8e8;font-family:'Noto Sans KR',sans-serif;font-size:13px;color:#4a4d6a}
+.exam{background:rgba(184,101,26,.06);border:1.5px solid rgba(184,101,26,.25);border-radius:10px;padding:14px 16px;margin-top:14px}
+.exam-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#b8651a;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-weight:700}
+.exam p{font-size:13.5px;color:#6b3f0e;line-height:1.75;margin-bottom:4px;overflow-wrap:anywhere}
+.toc{max-width:820px;margin:0 auto 20px;background:#fff;border:1.5px solid #c5c8e8;border-radius:12px;padding:16px 20px;box-shadow:0 2px 8px rgba(59,63,134,.06)}
+.toc-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;font-weight:700}
+.toc-list{display:flex;flex-wrap:wrap;gap:7px}
+.toc-item{font-size:12px;color:#3b3f86;background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.2);padding:5px 12px;border-radius:8px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace;font-weight:600}
+.toc-item:hover{background:rgba(59,63,134,.18)}
+.tree-svg{display:block;margin:12px auto;width:100%;max-width:620px;height:auto;font-family:'Noto Serif KR','Noto Sans KR',serif}
+.tree-svg text{font-family:'Noto Serif KR',Georgia,serif}
+.nav-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0 8px;border-top:1px solid #c5c8e8;margin-top:24px}
+.nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
+.nav-btn:hover{background:#f7f8ff}
+.nav-btn.next-btn{font-weight:600}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-sticker">STUDY NOTE</span>
+    <span class="header-chapter">Ch.02 · Phrase Structure</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <div class="header-script">Concept Notes · Phrase Structure · Syntax</div>
+  <p class="header-sub">합격자 노트 기반 · 기출 포인트 · tree diagram</p>
+  <div class="header-divider"></div>
+  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기</p>
+</div>
+<div class="wrap">
+<div class="toc">
+  <div class="toc-title">📋 목차</div>
+  <div class="toc-list">
+    <div class="toc-item" onclick="openSec('phrase-structure-rules')">① Phrase Structure Rules</div>
+    <div class="toc-item" onclick="openSec('tree-diagram-basics')">② Tree Diagram Basics</div>
+    <div class="toc-item" onclick="openSec('x-bar-schema')">③ X-bar Schema</div>
+    <div class="toc-item" onclick="openSec('complement-adjunct')">④ Complement vs Adjunct</div>
+    <div class="toc-item" onclick="openSec('specifier-projection')">⑤ Specifier & Projection</div>
+    <div class="toc-item" onclick="openSec('dp-hypothesis')">⑥ DP Hypothesis</div>
+    <div class="toc-item" onclick="openSec('clause-layers')">⑦ Clause Layers</div>
+    <div class="toc-item" onclick="openSec('vp-internal-subject')">⑧ VP-internal Subject</div>
+  </div>
+</div>
+<div class="legend">
+  <span class="legend-title">키워드</span>
+  <span class="legend-item"><span class="kw4">★★★ 최빈출</span></span>
+  <span class="legend-item"><span class="kw3">★★ 빈출</span></span>
+  <span class="legend-item"><span class="kw1">★ 기본개념</span></span>
+  <span class="legend-item"><span class="kw2">부키워드</span></span>
+</div>
+<div class="exam" style="margin-bottom:20px">
+  <div class="exam-label">📝 기출분석 포인트 (Ch.2 Phrase Structure)</div>
+  <p>① <span class='kw4'>phrase structure rules</span>와 <span class='kw4'>tree diagram</span>의 대응 관계</p>
+  <p>② <span class='kw4'>X-bar theory</span>에서 head · complement · adjunct · specifier 위계</p>
+  <p>③ <span class='kw3'>DP hypothesis</span>와 determiner의 head status</p>
+  <p>④ <span class='kw3'>CP / IP / TP</span> 같은 functional projection의 필요성</p>
+  <p>⑤ <span class='kw3'>VP-internal subject hypothesis</span>로 subject origin 설명</p>
+</div>
+
+<div class="sec open" id="phrase-structure-rules">
+  <div class="sec-header" onclick="toggle('phrase-structure-rules')">
+    <span class="sec-icon">🧱</span>
+    <span class="sec-title">① Phrase Structure Rules</span>
+    <span class="sec-tag">rewrite rule</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">A <span class='kw1'>phrase structure rule</span> rewrites a category into the immediate constituents that it dominates in a tree.</div>
+      <p class="note"><span class='kw2'>S → NP VP</span>, <span class='kw2'>VP → V NP</span>, <span class='kw2'>PP → P NP</span>처럼 mother와 daughter 관계를 기술한다.</p>
+      <p class="note">rule은 단순 어순표가 아니라 <span class='kw1'>hierarchical structure</span>의 뼈대를 제공한다.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">왜 중요한가</div>
+      <p class="note">문자열만 보면 보이지 않는 constituent 경계와 중간 projection을 설명할 수 있다.</p>
+      <p class="note">임용에서 <span class='kw1'>tree diagram</span>과 세트로 자주 출제된다.</p>
+    </div>
+    <div class="grid col3">
+      <div class="grid-item"><div class="gi-title">S → NP VP</div><div class="gi-body"><span>clause의 기본 골격</span></div></div>
+      <div class="grid-item"><div class="gi-title">VP → V NP</div><div class="gi-body"><span>verb와 object의 결합</span></div></div>
+      <div class="grid-item"><div class="gi-title">PP → P NP</div><div class="gi-body"><span>preposition phrase의 최소 구조</span></div></div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2011 1차 Q33</strong> — <span class='kw1'>syntax</span>·<span class='kw1'>phrase structure rules</span>·<span class='kw1'>tree diagram</span>: 구 구조 규칙과 수형도 대응 관계 분석</p>
+      <p><strong>2010 1차 Q34</strong> — <span class='kw1'>phrase structure</span>·<span class='kw1'>constituency</span>·<span class='kw1'>X-bar theory</span>: phrase structure를 X-bar 분석으로 연결</p>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="tree-diagram-basics">
+  <div class="sec-header" onclick="toggle('tree-diagram-basics')">
+    <span class="sec-icon">🌳</span>
+    <span class="sec-title">② Tree Diagram Basics</span>
+    <span class="sec-tag">dominance · sister</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">필수 관계</div>
+      <div class="def">A tree diagram makes <span class='kw1'>dominance</span>, <span class='kw1'>precedence</span>, and <span class='kw1'>sisterhood</span> visible at the same time.</div>
+      <p class="note">mother가 daughter를 지배하고, 같은 mother를 공유하면 sister relation이다.</p>
+      <p class="note">terminal node는 실제 단어, nonterminal node는 phrase category다.</p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg">
+      <text x="310" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">S → NP VP</text>
+      <text x="310" y="58" text-anchor="middle" font-size="18" font-weight="700" fill="#3b3f86">S</text>
+      <line x1="310" y1="64" x2="190" y2="102" stroke="#999" stroke-width="1.6"/>
+      <line x1="310" y1="64" x2="430" y2="102" stroke="#999" stroke-width="1.6"/>
+      <text x="190" y="122" text-anchor="middle" font-size="16" font-weight="700" fill="#3b3f86">NP</text>
+      <line x1="190" y1="128" x2="190" y2="168" stroke="#999" stroke-width="1.6"/>
+      <text x="190" y="188" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">The student</text>
+      <text x="430" y="122" text-anchor="middle" font-size="16" font-weight="700" fill="#3b3f86">VP</text>
+      <line x1="430" y1="128" x2="340" y2="168" stroke="#999" stroke-width="1.6"/>
+      <line x1="430" y1="128" x2="500" y2="168" stroke="#999" stroke-width="1.6"/>
+      <text x="340" y="188" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">V</text>
+      <line x1="340" y1="194" x2="340" y2="224" stroke="#999" stroke-width="1.6"/>
+      <text x="340" y="244" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">read</text>
+      <text x="500" y="188" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">NP</text>
+      <line x1="500" y1="194" x2="500" y2="224" stroke="#999" stroke-width="1.6"/>
+      <text x="500" y="244" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">the article</text>
+    </svg>
+    <div class="concept">
+      <div class="c-title">해석 포인트</div>
+      <p class="note">NP와 VP는 S의 daughter이면서 서로 sister다.</p>
+      <p class="note">object NP는 VP 안에서 V의 sister이자 complement이며, 둘이 함께 더 큰 VP constituent를 이룬다.</p>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2011 1차 Q33</strong> — <span class='kw1'>tree diagram</span>으로 phrase structure rule을 실제 수형도에 매핑하는 유형</p>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="x-bar-schema">
+  <div class="sec-header" onclick="toggle('x-bar-schema')">
+    <span class="sec-icon">📐</span>
+    <span class="sec-title">③ X-bar Schema</span>
+    <span class="sec-tag">head · X′ · XP</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Template</div>
+      <div class="def">In <span class='kw1'>X-bar theory</span>, the head X projects to <span class='kw2'>X′</span>, and <span class='kw2'>X′</span> projects to <span class='kw2'>XP</span>.</div>
+      <p class="note">head가 범주를 결정하고, complement는 head 옆, specifier는 XP 외곽, adjunct는 X′ 외곽에 붙는다.</p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 620 330" xmlns="http://www.w3.org/2000/svg">
+      <text x="310" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">XP with Specifier, Head, Complement, Adjunct</text>
+      <text x="310" y="58" text-anchor="middle" font-size="18" font-weight="700" fill="#3b3f86">XP</text>
+      <line x1="310" y1="64" x2="170" y2="104" stroke="#999" stroke-width="1.6"/>
+      <line x1="310" y1="64" x2="430" y2="104" stroke="#999" stroke-width="1.6"/>
+      <text x="170" y="126" text-anchor="middle" font-size="15" font-weight="700" fill="#1f7a8c">Specifier</text>
+      <line x1="170" y1="132" x2="170" y2="170" stroke="#999" stroke-width="1.6"/>
+      <text x="170" y="192" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">D / subject / wh-phrase</text>
+      <text x="430" y="126" text-anchor="middle" font-size="17" font-weight="700" fill="#3b3f86">X′</text>
+      <line x1="430" y1="132" x2="330" y2="172" stroke="#999" stroke-width="1.6"/>
+      <line x1="430" y1="132" x2="500" y2="172" stroke="#999" stroke-width="1.6"/>
+      <text x="330" y="194" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">X′</text>
+      <line x1="330" y1="200" x2="260" y2="238" stroke="#999" stroke-width="1.6"/>
+      <line x1="330" y1="200" x2="390" y2="238" stroke="#999" stroke-width="1.6"/>
+      <text x="500" y="194" text-anchor="middle" font-size="15" font-weight="700" fill="#b8651a">Adjunct</text>
+      <line x1="500" y1="200" x2="500" y2="238" stroke="#999" stroke-width="1.6"/>
+      <text x="500" y="260" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">optional modifier</text>
+      <text x="260" y="260" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">Head X</text>
+      <line x1="260" y1="266" x2="260" y2="300" stroke="#999" stroke-width="1.6"/>
+      <text x="260" y="322" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">N / V / A / P / C</text>
+      <text x="390" y="260" text-anchor="middle" font-size="15" font-weight="700" fill="#1f7a8c">Complement</text>
+      <line x1="390" y1="266" x2="390" y2="300" stroke="#999" stroke-width="1.6"/>
+      <text x="390" y="322" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">selected phrase</text>
+    </svg>
+    <div class="grid col2">
+      <div class="grid-item"><div class="gi-title">Head</div><div class="gi-body"><span>projection의 범주 결정</span></div></div>
+      <div class="grid-item"><div class="gi-title">Complement</div><div class="gi-body"><span>head의 직접 sister</span></div></div>
+      <div class="grid-item"><div class="gi-title">Adjunct</div><div class="gi-body"><span>X′에 붙는 선택적 modifier</span></div></div>
+      <div class="grid-item"><div class="gi-title">Specifier</div><div class="gi-body"><span>X′와 결합해 XP 완성</span></div></div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2010 1차 Q34</strong> — <span class='kw1'>X-bar theory</span>와 phrase structure 연결</p>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="complement-adjunct">
+  <div class="sec-header" onclick="toggle('complement-adjunct')">
+    <span class="sec-icon">⚖️</span>
+    <span class="sec-title">④ Complement vs Adjunct</span>
+    <span class="sec-tag">selection · recursion</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">핵심 구분</div>
+      <div class="def">A <span class='kw1'>complement</span> is selected by the head, whereas an <span class='kw1'>adjunct</span> is an optional modifier attached outside the head-complement core.</div>
+    </div>
+    <div class="grid col2">
+      <div class="grid-item">
+        <div class="gi-title">Complement</div>
+        <div class="gi-body"><span>selected by head</span><span>head에 가장 가까움</span><span>recursion 제한적</span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Adjunct</div>
+        <div class="gi-body"><span>optional modifier</span><span>X′ 바깥에서 결합</span><span>여러 개 누적 가능</span></div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예시</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">the student <span class="kw2">of linguistics</span> <span class="kw2">with a notebook</span></span>
+        <span class="eg-line">→ <span class="kw2">of linguistics</span>: complement</span>
+        <span class="eg-line">→ <span class="kw2">with a notebook</span>: adjunct</span>
+        <span class="eg-note">complement가 head에 더 가깝고, adjunct가 더 바깥에서 수식한다.</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2022 1차 A-7</strong> — <span class='kw1'>complement</span>·<span class='kw1'>adjunct</span>·<span class='kw1'>coordination diagnostic</span>: 선택성과 등위 가능성으로 complement 판정</p>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="specifier-projection">
+  <div class="sec-header" onclick="toggle('specifier-projection')">
+    <span class="sec-icon">📍</span>
+    <span class="sec-title">⑤ Specifier & Projection</span>
+    <span class="sec-tag">outer edge</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Specifier Position</div>
+      <div class="def">A <span class='kw1'>specifier</span> occupies the outer edge of a projection and combines with <span class='kw2'>X′</span> to form <span class='kw2'>XP</span>.</div>
+      <p class="note">complement와 달리 head의 직접 자매가 아니다.</p>
+      <p class="note">classical NP analysis의 determiner, TP/IP의 subject, CP의 wh-phrase처럼 projection별로 다른 specifier 예시가 있다.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Exam Relevance</div>
+      <p class="note"><span class='kw1'>Spec CP</span>는 이후 wh-movement 분석의 landing site로 중요하다.</p>
+      <p class="note">subject를 higher specifier로 보는 분석이 VP-internal subject hypothesis와 연결된다.</p>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2018 1차 서술2</strong> — <span class='kw1'>wh-movement</span>·<span class='kw1'>Spec CP</span>: wh-movement의 도착 지점을 phrase structure로 설명</p>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="dp-hypothesis">
+  <div class="sec-header" onclick="toggle('dp-hypothesis')">
+    <span class="sec-icon">🧾</span>
+    <span class="sec-title">⑥ DP Hypothesis</span>
+    <span class="sec-tag">determiner as head</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Claim</div>
+      <div class="def">The <span class='kw1'>DP hypothesis</span> treats the determiner as the head D of the whole nominal phrase, with NP appearing inside DP.</div>
+      <p class="note">traditional NP analysis에서는 N이 nominal projection의 head이고 determiner는 specifier로 분석될 수 있지만, DP hypothesis에서는 D가 더 큰 DP projection의 head가 된다.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">왜 필요한가</div>
+      <p class="note">nominal phrase의 distribution이 determiner 체계와 강하게 연결된다는 점을 설명하기 쉽다.</p>
+      <p class="note">functional category를 명시적으로 도입하는 modern phrase structure와 잘 맞는다.</p>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2017 1차 기입4</strong> — <span class='kw1'>DP hypothesis</span>·<span class='kw1'>determiner</span>: 한정사의 head status를 묻는 포인트</p>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="clause-layers">
+  <div class="sec-header" onclick="toggle('clause-layers')">
+    <span class="sec-icon">🏗️</span>
+    <span class="sec-title">⑦ Clause Layers</span>
+    <span class="sec-tag">CP · IP/TP · small clause</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Functional Projection</div>
+      <div class="def"><span class='kw1'>CP</span>, <span class='kw1'>IP/TP</span>, and related layers allow phrase structure to encode clause type, complementizer status, and inflection above VP.</div>
+      <p class="note"><span class='kw1'>C</span>는 complementizer를, <span class='kw1'>I/T</span>는 tense·inflection을 담당한다.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Small Clause</div>
+      <div class="eg">
+        <span class="eg-line">consider [Mina intelligent]</span>
+        <span class="eg-note">finite verb 없이도 predication 관계를 이루는 구성을 <span class='kw1'>small clause</span>로 본다.</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2017 1차 기입4</strong> — <span class='kw1'>DP hypothesis</span>·<span class='kw1'>determiner</span>: functional projection 분석의 출발점</p>
+      <p><strong>2018 1차 서술2</strong> — <span class='kw1'>Spec CP</span>·<span class='kw1'>wh-movement</span>: CP layer와 specifier 위치 활용</p>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="vp-internal-subject">
+  <div class="sec-header" onclick="toggle('vp-internal-subject')">
+    <span class="sec-icon">🚶</span>
+    <span class="sec-title">⑧ VP-internal Subject</span>
+    <span class="sec-tag">subject origin</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Main Idea</div>
+      <div class="def">The <span class='kw1'>VP-internal subject hypothesis</span> says that the subject is first merged inside the VP domain and later appears in a higher specifier position.</div>
+      <p class="note">origin과 surface position을 분리하는 분석이다.</p>
+      <p class="note">phrase structure와 movement가 만나는 핵심 챕터이므로 Raising/Control, Movement 단원과 연결된다.</p>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2015 1차 서술3</strong> — <span class='kw1'>VP-internal subject hypothesis</span>·<span class='kw1'>evidence</span>: subject의 lower origin을 뒷받침하는 통사적 근거 설명</p>
+    </div>
+  </div>
+</div>
+
+<div class="nav-bottom">
+  <a class="nav-btn" href="./index.html">← 목차</a>
+  <a class="nav-btn next-btn" href="./phrase-structure.html">OX 풀러 가기 →</a>
+</div>
+</div>
+<script>
+function toggle(id){ document.getElementById(id).classList.toggle('open'); }
+function openSec(id){ const s=document.getElementById(id); s.classList.add('open'); s.scrollIntoView({behavior:'smooth',block:'start'}); }
+</script>
+</body>
+</html>
