@@ -1,4 +1,4 @@
-# 영어학 개념 마스터
+# linguistics — AGENTS.md (Codex)
 
 임용고시 대비 영어학(English Linguistics) OX 퀴즈 + 개념 정리 웹 애플리케이션. 순수 HTML/CSS/JS (백엔드 없음).
 
