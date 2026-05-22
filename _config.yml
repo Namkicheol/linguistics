@@ -2,7 +2,11 @@ theme: jekyll-theme-primer
 
 exclude:
   - refs/
+  - docs/
+  - blog/
   - .claude/
   - .code-review-graph/
   - code-review-graph/
   - AGENTS.md
+  - CLAUDE.md
+  - README.md
