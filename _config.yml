@@ -1,0 +1,8 @@
+theme: jekyll-theme-primer
+
+exclude:
+  - refs/
+  - .claude/
+  - .code-review-graph/
+  - code-review-graph/
+  - AGENTS.md
