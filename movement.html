@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.3 Movement OX Quiz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">NO. 03 <span>—</span> Movement</span>
+    <span class="header-label">Past-Exam Notebook</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <div class="header-script">Concept Master · Transformational Syntax</div>
+  <p class="header-sub">영어학 · Movement · 임용고시 대비</p>
+  <div class="header-divider"></div>
+</div>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">1 / 40</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:2.5%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div id="nav"></div>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/40</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const Q=[
+
+  /* ── ① D-structure & S-structure ──────────────────────── */
+  {src:"D/S-structure",cat:"two levels · base-generated",
+   text:"<span class='kw1'>D-structure</span> is the level of syntactic representation generated by the base component (phrase structure rules + lexicon), before any movement transformation applies.",
+   ans:true,
+   correct:"<span class='kw1'>D-structure</span>는 phrase structure rules로 생성된 base representation이며 movement 이전 구조다.",
+   why:"D-structure는 theta-role이 결정되는 층위입니다. movement 이전의 상태이기 때문에 argument의 original position이 theta-role과 일치합니다.",
+   source:"Refs 요지: D-structure is generated by phrase structure rules and serves as the input to transformational rules.",
+   compare:[{title:"D-structure",desc:"base-generated, theta-role 결정"},{title:"S-structure",desc:"movement 후, Case 점검"}]},
+
+  {src:"D/S-structure",cat:"two levels · passive",
+   text:"In the passive sentence \"The proposal was presented to the board,\" the NP <em>the proposal</em> is base-generated in the subject position (Spec,IP) at D-structure.",
+   ans:false,
+   correct:"passive 구문에서 surface subject는 D-structure에서 object position에 base-generated된다.",
+   why:"passive 구문에서 동사 <em>presented</em>의 internal argument는 D-structure에서 object 위치에 있습니다. <em>the proposal</em>은 NP-movement에 의해 Spec,IP로 이동한 결과 surface subject가 됩니다.",
+   source:"Refs 요지: The surface subject of a passive sentence originates in the object position at D-structure.",
+   compare:[{title:"D-str 위치",desc:"object (V 뒤)"},{title:"S-str 위치",desc:"Spec,IP (subject)"}]},
+
+  {src:"D/S-structure",cat:"theta-role · D-structure",
+   text:"<span class='kw1'>Theta-roles</span> (thematic roles such as Agent, Theme, Goal) are assigned at D-structure, so the relationship between a predicate and its arguments is established before movement.",
+   ans:true,
+   correct:"theta-role는 D-structure에서 결정되므로 movement 후에도 argument의 의미역 관계는 original position에서 계산된다.",
+   why:"이것이 D-structure를 설정하는 핵심 이유 중 하나입니다. passive 구문에서 surface subject가 agent가 아닌 theme인 이유도 theta-role이 D-str object position에서 할당되기 때문입니다.",
+   source:"Refs 요지: Theta-role assignment occurs at D-structure, preserving thematic relations across movement."},
+
+  {src:"D/S-structure",cat:"transformation · mapping",
+   text:"<span class='kw1'>Transformations</span> (movement rules) map D-structure to S-structure by displacing constituents from their original positions to new positions in the tree.",
+   ans:true,
+   correct:"transformation은 D-structure를 input으로 받아 S-structure를 output으로 산출하는 mapping 규칙이다.",
+   why:"movement rules인 V MOVEMENT, I MOVEMENT, NP MOVEMENT, WH MOVEMENT 등이 모두 D-structure에서 S-structure로의 변환에 해당합니다.",
+   source:"Refs 요지: Transformational rules take D-structure as input and yield S-structure as output by displacing constituents."},
+
+  {src:"D/S-structure",cat:"identical levels",
+   text:"D-structure and S-structure are always identical for any grammatical sentence because movement rules are optional.",
+   ans:false,
+   correct:"D-structure와 S-structure가 같은 것은 movement가 전혀 적용되지 않는 경우뿐이다.",
+   why:"active declarative 문장(예: <em>The assistant wrote the report.</em>)처럼 movement가 적용되지 않는 경우에만 D-structure와 S-structure가 일치합니다. passive, questions 등에서는 움직임이 있어 두 층위가 달라집니다.",
+   source:"Refs 요지: D-structure and S-structure coincide only when no movement transformation applies."},
+
+  /* ── ② V-movement ──────────────────────────────────────── */
+  {src:"V-movement",cat:"V-to-I · finite clause",
+   text:"When there is no Modal in I and I is empty, the finite V of the VP raises to the empty I position by <span class='kw1'>V-to-I Movement</span>, acquiring Tense and Agreement features from I.",
+   ans:true,
+   correct:"Modal이 없을 때 V가 I로 이동해 Tense/Agreement를 얻는다. 이것이 <span class='kw1'>V-to-I Movement</span>다.",
+   why:"Modal이 I를 채우면 V는 VP head에 남습니다. Modal이 없을 때 I는 비어 있고, Tense/Agreement feature를 VP의 V에 전달해야 합니다. V-movement 분석에서는 V가 I로 올라가 이 features를 얻습니다.",
+   source:"Refs 요지: When I is empty of a Modal, V raises to I to acquire Tense/Agreement under the V-movement analysis.",
+   compare:[{title:"Modal 있음",desc:"Modal in I; V stays in VP"},{title:"Modal 없음",desc:"V raises to empty I"}]},
+
+  {src:"V-movement",cat:"V-to-I · S-structure position",
+   text:"In the sentence \"The researcher examines the data carefully,\" the verb <em>examines</em> remains as the head of VP at S-structure under the <span class='kw1'>V-movement</span> analysis.",
+   ans:false,
+   correct:"V-movement 분석에서 <em>examines</em>는 I 위치에 있고 VP head는 trace(t)다.",
+   why:"V-movement 분석의 핵심은 inflected V가 VP head가 아니라 I 위치를 차지한다는 것입니다. S-structure에서 VP 내부에는 trace t_V가 남습니다.",
+   source:"Refs 요지: Under V-movement, the inflected verb occupies the I position at S-structure, not the VP-head position."},
+
+  {src:"V-movement",cat:"V-to-I · vacuous application",
+   text:"V-movement is said to apply <span class='kw2'>vacuously</span> in English because I and V are adjacent, so whether V moves to I or I affixes move to V produces the same surface word order.",
+   ans:true,
+   correct:"영어에서 I와 V가 인접하므로 V-movement는 표면 어순에 observable한 변화를 만들지 않는다 — 따라서 <span class='kw2'>vacuous application</span>이라 한다.",
+   why:"Koopman(1984)이 제시한 논점으로, 영어에서는 두 분석의 차이를 word order로 판별할 수 없습니다. 비인접 언어(예: Vata)에서는 V-movement가 명시적 word-order 변화를 만들어 증거를 제공합니다.",
+   source:"Refs 요지: In English, V-movement applies vacuously; cross-linguistic evidence from V-I non-adjacent languages distinguishes the analyses."},
+
+  {src:"V-movement",cat:"affix movement · comparison",
+   text:"Under the <span class='kw2'>affix movement</span> analysis, the Tense/Agreement affixes in I move down to the leftmost V of VP, leaving the inflected V in VP-head position at S-structure.",
+   ans:true,
+   correct:"<span class='kw2'>affix movement</span>는 I의 affix가 V로 내려가는 분석으로, inflected V는 VP head에 남는다.",
+   why:"이것이 Chomsky(1981) Lectures 분석입니다. V-movement와 대조적으로, affix movement에서는 V가 이동하지 않고 affix가 V에 붙습니다. 두 분석 모두 inflected V를 산출하지만 구조적 위치가 다릅니다.",
+   source:"Refs 요지: Under affix movement (Chomsky 1981), I-affixes descend to V; under V-movement (Koopman 1984), V ascends to I.",
+   compare:[{title:"Affix movement",desc:"I → V (affix 내려감); V stays in VP"},{title:"V-movement",desc:"V → I (V 올라감); trace in VP"}]},
+
+  {src:"V-movement",cat:"V-to-I · Modal co-occurrence",
+   text:"A sentence like <span class='kw4'>*She will reads the report</span> is ungrammatical because when a Modal occupies I, V-movement cannot place a second inflected V in the same I position.",
+   ans:true,
+   correct:"Modal이 I를 이미 채우고 있으면 V는 I로 이동할 수 없다. V는 uninflected base form으로 VP에 남는다.",
+   why:"<em>will reads</em>가 비문인 이유는 I를 Modal <em>will</em>이 이미 차지하고 있기 때문입니다. VP의 V는 uninflected base form(<em>read</em>)이어야 합니다. <em>*will reads</em>는 V가 이동했거나 V가 독립적으로 inflected된 경우인데, 둘 다 허용되지 않습니다.",
+   source:"Refs 요지: When I contains a Modal, V stays uninflected in VP; an inflected V alongside a Modal violates I-structure."},
+
+  /* ── ③ I-to-C ──────────────────────────────────────────── */
+  {src:"I-to-C",cat:"Subject-Auxiliary Inversion",
+   text:"In direct yes/no questions in English, the Modal or Auxiliary in I moves to the empty C position, producing what is traditionally called Subject-Auxiliary Inversion. This movement is <span class='kw1'>I-to-C Movement</span>.",
+   ans:true,
+   correct:"직접 yes/no 의문문에서 I의 Modal이 C 자리로 이동한다. 이것이 <span class='kw1'>I-to-C Movement</span>다.",
+   why:"D-structure에서 Modal은 I에 있습니다. question 형성 시 I-to-C가 적용되어 Modal이 empty C로 이동하고 subject NP 앞에 놓입니다.",
+   source:"Refs 요지: I-to-C movement fronts the Modal from I to C, creating Subject-Auxiliary Inversion in direct yes/no questions.",
+   compare:[{title:"D-str",desc:"[CP [C e]] [IP she [I will] [VP leave]]"},{title:"S-str",desc:"[CP [C Will]] [IP she [I t] [VP leave]]?"}]},
+
+  {src:"I-to-C",cat:"gap argument · no refilling",
+   text:"The sentence <span class='kw4'>*Will she could leave?</span> is ungrammatical because after I-to-C moves <em>will</em> to C, the vacated I position cannot be refilled by another Modal.",
+   ans:true,
+   correct:"I-to-C 적용 후 남겨진 I 위치는 다른 Modal로 채울 수 없다 — no-refilling condition.",
+   why:"이것이 I-to-C 분석의 핵심 증거인 gap argument입니다. I 위치는 originally <em>will</em>로 채워져 있었고, <em>will</em>이 C로 이동한 후 그 자리는 비어 있습니다. <em>could</em>로 재채움하면 subcategorization violation이 발생합니다.",
+   source:"Refs 요지: The no-refilling convention prevents another Modal from occupying the gap left in I after I-to-C movement."},
+
+  {src:"I-to-C",cat:"direct vs indirect question",
+   text:"I-to-C movement applies in indirect questions as well as direct questions, producing auxiliary inversion in both structures.",
+   ans:false,
+   correct:"I-to-C는 직접의문문에만 적용된다. 간접의문문에서는 C가 이미 채워져 있어 I-to-C가 적용되지 않는다.",
+   why:"<em>I wonder if she will stay.</em>에서 C는 <em>if</em>가 채우고 있어 Modal이 이동할 자리가 없습니다. <em>*I wonder will she stay</em>가 비문인 이유입니다.",
+   source:"Refs 요지: I-to-C applies only in direct questions; in indirect questions C is already filled by a complementizer.",
+   compare:[{title:"Direct Q",desc:"I-to-C 적용: Can she leave? → C=can"},{title:"Indirect Q",desc:"I-to-C 불가: I wonder if she can leave. (C=if)"}]},
+
+  {src:"I-to-C",cat:"I-to-C · filled C",
+   text:"In the indirect question \"She asked whether he had finished the assignment,\" I-to-C movement does not apply because the C position is already occupied by <em>whether</em>.",
+   ans:true,
+   correct:"C가 <em>whether</em>로 채워져 있으면 I-to-C Movement가 적용될 수 없다.",
+   why:"I-to-C의 landing site는 empty C입니다. C가 already lexicalized된 경우 inversion은 불가능합니다. 따라서 간접의문문의 word order는 declarative word order와 동일합니다.",
+   source:"Refs 요지: I-to-C requires an empty C; a filled C blocks inversion."},
+
+  {src:"I-to-C",cat:"HAVE contraction · gap",
+   text:"The ungrammaticality of contraction in <em>Should I *I've called them?</em> supports I-to-C movement analysis because the gap left in I after movement blocks HAVE contraction.",
+   ans:true,
+   correct:"I-to-C 후 I 위치에 남겨진 gap이 HAVE 축약을 차단한다 — I-to-C 분석의 또 다른 증거.",
+   why:"HAVE contraction(<em>I've</em>)은 pronoun과 <em>have</em> 사이에 gap이 없을 때만 가능합니다. I-to-C 분석에서 <em>should</em>는 D-str에서 pronoun과 <em>have</em> 사이에 있으므로 이동 후 그 자리에 gap이 남아 축약을 막습니다.",
+   source:"Refs 요지: HAVE contraction is blocked by the gap left in I after I-to-C movement, supporting the claim that the Modal originates in I."},
+
+  /* ── ④ NP-movement: Passive ────────────────────────────── */
+  {src:"NP-movement (Passive)",cat:"Case Filter · passive",
+   text:"In passive constructions, <span class='kw1'>passive morphology</span> removes the verb's ability to assign accusative Case to its internal argument, which forces the internal argument NP to move to a position where it can receive Case.",
+   ans:true,
+   correct:"passive morphology는 동사의 accusative Case 부여 능력을 제거하여 NP가 Case를 받기 위해 이동하도록 만든다.",
+   why:"<span class='kw1'>Case Filter</span>에 따르면 모든 overt NP는 Case를 받아야 합니다. passive verb가 accusative Case를 부여하지 못하면, object NP는 nominative Case를 받기 위해 empty subject position(Spec,IP)으로 이동합니다.",
+   source:"Refs 요지: Passive morphology suppresses accusative Case assignment; the internal argument NP moves to subject position to receive nominative Case.",
+   compare:[{title:"Active",desc:"V assigns acc to object"},{title:"Passive",desc:"V cannot assign acc → NP moves"}]},
+
+  {src:"NP-movement (Passive)",cat:"NP-movement · landing site",
+   text:"In a passive sentence, the object NP moves to the empty <span class='kw2'>Spec,IP</span> (subject position) at S-structure to receive nominative Case from I.",
+   ans:true,
+   correct:"passive에서 NP의 landing site는 <span class='kw2'>Spec,IP</span>이다.",
+   why:"NP-movement의 landing site는 A-position입니다. empty subject position(Spec,IP)은 I로부터 nominative Case를 받을 수 있는 위치이므로, 이곳이 passive NP-movement의 landing site입니다.",
+   source:"Refs 요지: The landing site for passive NP-movement is Spec,IP, where the NP receives nominative Case from I."},
+
+  {src:"NP-movement (Passive)",cat:"D-structure · passive subject",
+   text:"In the passive sentence \"The analysis was conducted by the research team,\" <em>the analysis</em> is base-generated as the subject at D-structure.",
+   ans:false,
+   correct:"passive 구문의 surface subject는 D-structure에서 object(internal argument) position에 base-generated된다.",
+   why:"D-structure에서 passive verb는 external argument(agent)를 갖지 않습니다. internal argument <em>the analysis</em>는 V 뒤 object position에 base-generated되고, NP-movement에 의해 Spec,IP로 이동합니다.",
+   source:"Refs 요지: The passive subject originates in the object position at D-structure and moves to Spec,IP at S-structure."},
+
+  {src:"NP-movement (Passive)",cat:"subcategorization · argument",
+   text:"One argument for NP-movement in passives is that a passive verb still satisfies its original subcategorization requirements — as if the moved NP were still in its base-generated position.",
+   ans:true,
+   correct:"passive verb는 D-structure에서 NP complement와 함께 subcategorization을 충족한다 — NP-movement 분석의 증거.",
+   why:"예를 들어 <em>put</em>은 NP와 PP를 subcategorize합니다. <em>The book was put on the shelf</em>에서 D-structure: [put [NP the book] [PP on the shelf]]로 subcategorization이 충족됩니다. 이것이 NP-movement 분석의 첫 번째 증거입니다.",
+   source:"Refs 요지: Passive sentences obey the subcategorization of the verb at D-structure, evidencing that the subject NP originates in object position."},
+
+  {src:"NP-movement (Passive)",cat:"gap argument · refilling",
+   text:"The sentence <span class='kw4'>*The contract was signed the report by the director</span> is ungrammatical because the gap left by NP-movement in the object position cannot be refilled by another lexical NP.",
+   ans:true,
+   correct:"NP-movement 후 남겨진 object 위치는 다른 NP로 채울 수 없다 — gap argument.",
+   why:"<em>the contract</em>가 object에서 subject로 이동한 후, 그 자리는 비어 있습니다. 다른 NP <em>the report</em>를 넣으면 subcategorization(one NP object)을 위반합니다. 이것이 gap argument입니다.",
+   source:"Refs 요지: The gap left in object position after passive NP-movement cannot be refilled by another lexical NP."},
+
+  {src:"NP-movement (Passive)",cat:"idiom chunk · passive",
+   text:"Idiom chunk NPs such as <em>tabs</em> can appear as the subjects of passive sentences (e.g., <em>Tabs were kept on all visitors</em>), which supports the claim that idiom chunk NPs originate in object position at D-structure.",
+   ans:true,
+   correct:"passive subject로 idiom chunk가 나타날 수 있다 → D-structure에서 verb 바로 뒤 object 위치에 base-generated됨을 지지하는 증거.",
+   why:"idiom chunk NP는 특정 동사 바로 뒤에만 허용됩니다. passive subject로 등장할 수 있다는 것은 D-structure에서 그 NP가 V 뒤 object position에 있었음을 의미합니다.",
+   source:"Refs 요지: Idiom chunk NPs as passive subjects confirm their D-structure object origin, supporting NP-movement analysis."},
+
+  {src:"NP-movement (Passive)",cat:"adjectival vs verbal passive",
+   text:"<span class='kw2'>Adjectival passives</span> like <em>unknown</em> trigger NP-movement, which is why <em>There was unknown to be a problem</em> is grammatical.",
+   ans:false,
+   correct:"adjectival passive는 NP-movement를 유발하지 않는다. *There was unknown to be a problem은 비문이며, 이것이 verbal passive와 구별하는 기준이다.",
+   why:"verbal passive(<em>expected, believed</em>)는 NP-movement를 유발해 expletive <em>there</em>가 이동할 수 있습니다. adjectival passive(<em>unknown, unexpected</em>)는 NP-movement를 유발하지 않아 <em>there</em>-movement가 불가능합니다.",
+   source:"Refs 요지: Adjectival passives do not trigger NP-movement; verbal passives do. This explains the contrast in there-constructions.",
+   compare:[{title:"Verbal passive",desc:"There was expected to be a problem. ✓"},{title:"Adjectival passive",desc:"*There was unknown to be a problem. ✗"}]},
+
+  {src:"NP-movement (Passive)",cat:"Case Filter · NP-movement",
+   text:"The <span class='kw4'>Case Filter</span> requires every overt NP to receive Case; in a passive clause, the internal argument NP moves to subject position specifically to satisfy this requirement.",
+   ans:true,
+   correct:"<span class='kw4'>Case Filter</span>가 NP-movement의 근본 동기다.",
+   why:"passive morphology가 V의 acc Case 부여 능력을 제거하면, object NP는 acc Case를 받지 못해 Case Filter를 위반합니다. 이를 피하기 위해 NP가 nominative Case를 받을 수 있는 Spec,IP로 이동합니다.",
+   source:"Refs 요지: The Case Filter (*NP without Case) motivates passive NP-movement to a Case-marked subject position. (2025 1차 A-7 출제 각도)"},
+
+  /* ── ⑤ NP-movement: Raising ────────────────────────────── */
+  {src:"NP-movement (Raising)",cat:"raising verb · no theta-role",
+   text:"<span class='kw1'>Raising verbs</span> like <em>seem</em> and <em>appear</em> do not assign a theta-role to their surface subjects; the surface subject receives its only theta-role from the embedded predicate.",
+   ans:true,
+   correct:"<span class='kw1'>raising verb</span>는 matrix subject에 theta-role을 부여하지 않는다. subject의 theta-role은 embedded predicate에서 온다.",
+   why:"이것이 raising verb를 정의하는 핵심입니다. <em>The plan seems to be feasible</em>에서 <em>the plan</em>의 theta-role(theme/patient)은 <em>feasible</em>에서 옵니다. <em>seem</em>은 theta-role을 부여하지 않습니다.",
+   source:"Refs 요지: Raising verbs lack theta-role assignment to their surface subjects; the subject's theta-role is assigned by the embedded predicate.",
+   compare:[{title:"Raising verb",desc:"seem, appear, happen, tend, be likely"},{title:"Control verb",desc:"want, try, persuade, force, decide"}]},
+
+  {src:"NP-movement (Raising)",cat:"raising vs control",
+   text:"The sentence \"The situation seems to be improving\" involves control rather than raising because <em>the situation</em> is controlled by a PRO in the embedded clause.",
+   ans:false,
+   correct:"<em>seem</em>은 raising verb다. <em>the situation</em>은 PRO가 아니라 NP-movement에 의해 embedded subject position에서 matrix Spec,IP로 이동한다.",
+   why:"control 구문에서는 embedded clause에 PRO가 있고 matrix subject와 control 관계를 맺습니다. raising 구문에서는 NP 자체가 이동합니다. <em>seem</em>은 raising verb이며 PRO를 허용하지 않습니다.",
+   source:"Refs 요지: Seem is a raising verb; the surface subject undergoes NP-movement rather than being controlled by a PRO."},
+
+  {src:"NP-movement (Raising)",cat:"expletive there · raising",
+   text:"The grammaticality of <em>There seem to be several options available</em> demonstrates that <em>seem</em> is a raising verb, because expletive <em>there</em> can serve as the surface subject of a raising verb.",
+   ans:true,
+   correct:"expletive <em>there</em>가 raising verb의 surface subject가 될 수 있다 → <em>seem</em>은 raising verb임을 지지하는 증거.",
+   why:"expletive <em>there</em>는 theta-role을 갖지 않습니다. raising verb는 surface subject에 theta-role을 부여하지 않으므로 <em>there</em>를 허용합니다. control verb는 subject에 theta-role을 부여하므로 <em>there</em>를 허용하지 않습니다.",
+   source:"Refs 요지: Raising verbs allow expletive there as subject because they don't assign a theta-role to the subject position.",
+   compare:[{title:"Raising",desc:"There seem to be problems. ✓"},{title:"Control",desc:"*There want to be problems. ✗"}]},
+
+  {src:"NP-movement (Raising)",cat:"idiom chunk · raising",
+   text:"The grammaticality of <em>Tabs tend to be kept on new arrivals</em> is evidence that <em>tend</em> is a raising verb, because idiom chunk NPs can surface as subjects only of raising verbs.",
+   ans:true,
+   correct:"idiom chunk NP(<em>tabs</em>)가 raising verb의 subject로 나타날 수 있다 → raising 증거.",
+   why:"idiom chunk NP는 의미적 자유도가 없습니다. control verb는 subject에 의미역을 부여해 idiom chunk의 고정성을 깨므로, idiom chunk subject는 허용되지 않습니다. raising verb는 theta-role을 부여하지 않으므로 idiom chunk가 subject로 올 수 있습니다.",
+   source:"Refs 요지: Idiom chunk subjects are permitted with raising verbs because raising verbs don't select for the thematic content of the subject."},
+
+  {src:"NP-movement (Raising)",cat:"control verb · theta-role",
+   text:"The sentence \"She tried to understand the argument\" involves control because <em>try</em> assigns a theta-role to its surface subject <em>she</em>, which makes NP-movement inapplicable.",
+   ans:true,
+   correct:"<em>try</em>는 control verb다. matrix subject <em>she</em>에 theta-role(agent)을 부여하므로 raising이 아니다.",
+   why:"control verb는 matrix Spec,IP에 theta-role을 부여합니다. 이 위치는 theta-role이 할당된 A-position이므로 이미 다른 NP가 theta-role을 가진 채 이 위치에 있을 수 없습니다. embedded clause에는 PRO가 있어 matrix subject와 control 관계를 맺습니다.",
+   source:"Refs 요지: Control verbs assign a theta-role to their subjects, making that position a theta-position and blocking NP-movement."},
+
+  {src:"NP-movement (Raising)",cat:"raising · D-structure",
+   text:"In the raising sentence \"The student appears to have solved the problem,\" the NP <em>the student</em> is base-generated in the <span class='kw2'>embedded subject position</span> at D-structure.",
+   ans:true,
+   correct:"raising 구문에서 surface matrix subject는 D-structure에서 embedded clause의 subject position에 있다.",
+   why:"D-str: [IP [e] [appears [IP [the student] [to have solved the problem]]]] — <em>the student</em>는 embedded IP의 Spec에 있고, raising에 의해 matrix Spec,IP로 이동합니다.",
+   source:"Refs 요지: In a raising structure, the surface matrix subject originates as the subject of the embedded infinitival clause at D-structure."},
+
+  /* ── ⑥ Wh-movement ─────────────────────────────────────── */
+  {src:"Wh-movement",cat:"Spec,CP · operator movement",
+   text:"In wh-questions, the wh-phrase moves from its original argument position to <span class='kw4'>Spec,CP</span> (the specifier of CP), leaving a <span class='kw1'>trace</span> (gap) in its original position.",
+   ans:true,
+   correct:"wh-phrase는 D-str의 argument position에서 <span class='kw4'>Spec,CP</span>로 이동한다.",
+   why:"WH MOVEMENT는 wh-phrase를 Spec,CP로 front합니다. 이것은 A-bar movement(operator movement)이며, 원래 위치에 wh-trace를 남깁니다.",
+   source:"Refs 요지: Wh-movement fronts the wh-phrase to Spec,CP, the specifier of the CP projection, leaving a trace in the original argument position.",
+   compare:[{title:"D-str",desc:"wh-phrase in argument position (obj, subj, etc.)"},{title:"S-str",desc:"wh-phrase in Spec,CP; trace in original position"}]},
+
+  {src:"Wh-movement",cat:"D-structure · wh-phrase origin",
+   text:"In \"Which article did the editor approve t?\", the wh-phrase <em>which article</em> is base-generated in the <span class='kw2'>Spec,CP</span> position at D-structure.",
+   ans:false,
+   correct:"wh-phrase는 D-structure에서 argument position(여기서는 V의 object)에 base-generated되고, WH MOVEMENT에 의해 Spec,CP로 이동한다.",
+   why:"wh-phrase의 theta-role은 D-str의 argument position에서 결정됩니다. <em>which article</em>은 <em>approve</em>의 object로 theme theta-role을 받고, WH MOVEMENT에 의해 문두 Spec,CP로 이동합니다.",
+   source:"Refs 요지: Wh-phrases originate in argument positions at D-structure; they reach Spec,CP only through WH MOVEMENT."},
+
+  {src:"Wh-movement",cat:"direct wh-question · I-to-C + WH",
+   text:"In a direct wh-question like \"What has the inspector examined t?\", both WH MOVEMENT and I-to-C movement apply: the wh-phrase moves to Spec,CP and the auxiliary moves to C.",
+   ans:true,
+   correct:"직접 wh-의문문에서 <span class='kw1'>WH MOVEMENT</span>와 <span class='kw1'>I-to-C</span>가 동시에 적용된다.",
+   why:"Spec,CP는 wh-phrase의 자리이고 C는 inverted auxiliary(I-to-C 적용)의 자리입니다. 두 자리가 다르므로 두 movement가 동시에 적용될 수 있습니다.",
+   source:"Refs 요지: Direct wh-questions involve simultaneous WH MOVEMENT (to Spec,CP) and I-to-C movement (to C)."},
+
+  {src:"Wh-movement",cat:"indirect question · no I-to-C",
+   text:"In the indirect question \"They asked which project the committee had chosen t\", I-to-C movement applies because the question is embedded under a matrix verb.",
+   ans:false,
+   correct:"간접의문문에서는 I-to-C가 적용되지 않는다. WH MOVEMENT만 적용되어 wh-phrase가 embedded Spec,CP로 이동한다.",
+   why:"indirect question에서는 C가 wh-phrase 이동 후의 C′를 가지지만, I-to-C는 main clause direct questions에만 의무적으로 적용됩니다. <em>They asked which project the committee had chosen</em>에서 inversion이 없음을 확인할 수 있습니다.",
+   source:"Refs 요지: Indirect questions involve WH MOVEMENT to embedded Spec,CP but not I-to-C movement."},
+
+  {src:"Wh-movement",cat:"subcategorization argument",
+   text:"The subcategorization argument for WH MOVEMENT states that even after the wh-phrase has moved to Spec,CP, the original verb's selection requirements are still met — as if the wh-phrase were in its base-generated position.",
+   ans:true,
+   correct:"wh-phrase가 이동해도 동사의 subcategorization은 D-str의 original position에서 충족된다 — WH MOVEMENT의 증거.",
+   why:"예: <em>What did she buy t?</em> — <em>buy</em>는 NP complement를 subcategorize하며, trace가 그 자리를 채워 subcategorization을 충족합니다. 이것은 wh-phrase가 D-str에서 object 위치에 있었음을 지지합니다.",
+   source:"Refs 요지: The verb's subcategorization is satisfied at D-structure by the wh-phrase in its original position, even after movement to Spec,CP."},
+
+  {src:"Wh-movement",cat:"landing site · C vs Spec,CP",
+   text:"The wh-phrase in a wh-question lands in the <span class='kw4'>C head</span> position, sharing the same node as a complementizer like <em>that</em>.",
+   ans:false,
+   correct:"wh-phrase의 landing site는 <span class='kw4'>C head</span>가 아니라 <span class='kw4'>Spec,CP</span>다. C head는 inverted auxiliary(I-to-C)나 complementizer(<em>that/if</em>)가 차지한다.",
+   why:"<em>What did she read t?</em>에서 <em>what</em>은 Spec,CP에, <em>did</em>는 C에 있습니다. 두 요소가 다른 자리에 있기 때문에 wh-phrase와 inverted auxiliary가 공존할 수 있습니다.",
+   source:"Refs 요지: The landing site for wh-phrases is Spec,CP, not C; C houses the complementizer or the I-to-C-moved auxiliary.",
+   compare:[{title:"Spec,CP",desc:"wh-phrase (which report, what, who)"},{title:"C head",desc:"inverted aux (did, was) / complementizer (that, if)"}]},
+
+  /* ── ⑦ Trace & Empty Category ──────────────────────────── */
+  {src:"Trace",cat:"empty category · coindexing",
+   text:"When a constituent moves, it leaves behind an <span class='kw1'>empty category</span> called a <span class='kw1'>trace</span> (t) at its original position; the moved element and its trace are <span class='kw2'>coindexed</span> (share the same subscript).",
+   ans:true,
+   correct:"movement 후 original position에 trace(t)가 남고, 이동한 요소와 trace는 동일한 index로 표기된다.",
+   why:"coindexing은 이동한 요소와 trace 사이의 관계를 보존합니다. 예: [which report]_i ... review t_i — <em>i</em>라는 index로 두 요소가 연결됩니다.",
+   source:"Refs 요지: Movement leaves a coindexed trace at the extraction site, preserving the original position information."},
+
+  {src:"Trace",cat:"NP-trace vs wh-trace",
+   text:"An <span class='kw2'>NP-trace</span> (left by passive or raising NP-movement) and a <span class='kw2'>wh-trace</span> (left by WH MOVEMENT) are subject to the same set of binding principles.",
+   ans:false,
+   correct:"NP-trace는 A-bound이어야 하며 Binding Principle A의 적용 대상이다. wh-trace는 A-bar bound이며 ECP(Empty Category Principle)의 적용 대상이다.",
+   why:"NP-trace는 A-position에서 A-position으로의 이동 결과이므로 A-bound 요구됩니다. wh-trace는 A-position에서 A-bar position(Spec,CP)으로의 이동 결과이며 ECP에 의해 govern되어야 합니다.",
+   source:"Refs 요지: NP-traces are A-bound and subject to Binding Principle A; wh-traces are A-bar bound and subject to the ECP.",
+   compare:[{title:"NP-trace",desc:"A-movement; locally A-bound; Principle A"},{title:"Wh-trace",desc:"A-bar movement; A-bar bound; ECP"}]},
+
+  {src:"Trace",cat:"that-trace effect",
+   text:"The sentence <span class='kw4'>*Who do you think that t saw the professor?</span> is ungrammatical because the complementizer <em>that</em> adjacent to the subject trace prevents the trace from being properly governed, violating the <span class='kw3'>That-trace Effect</span>.",
+   ans:true,
+   correct:"subject 위치의 wh-trace 앞에 <em>that</em>이 오면 ECP 위반 — <span class='kw3'>That-trace Effect</span>.",
+   why:"ECP는 trace가 properly governed되어야 한다고 요구합니다. subject wh-trace 앞에 <em>that</em>이 있으면 trace는 proper government를 받지 못합니다. <em>that</em>을 삭제하면 정문(<em>Who do you think t saw the professor?</em>)이 됩니다.",
+   source:"Refs 요지: The that-trace effect: a subject wh-trace adjacent to 'that' is not properly governed, violating the ECP. (2026 1차 B-9 출제)"},
+
+  {src:"Trace",cat:"that-trace · resolution",
+   text:"The sentence <em>Who do you think t saw the professor?</em> is grammatical because omitting the complementizer <em>that</em> allows the subject trace to be properly governed.",
+   ans:true,
+   correct:"<em>that</em> 생략으로 That-trace Effect를 해소할 수 있다. trace가 proper government를 받으면 정문이 된다.",
+   why:"<em>that</em> 없이 subject trace가 남으면 proper government 조건을 충족할 수 있습니다. 이것이 영어에서 <em>Who do you think ____ left early?</em>가 정문인 이유입니다.",
+   source:"Refs 요지: Omitting 'that' restores proper government to the subject trace, making the sentence grammatical."},
+
+  /* ── ⑧ Subjacency & Islands ────────────────────────────── */
+  {src:"Subjacency",cat:"bounding node · constraint",
+   text:"The <span class='kw4'>Subjacency Principle</span> states that a moved element cannot cross more than one <span class='kw2'>bounding node</span> (IP and NP in English) in a single movement step.",
+   ans:true,
+   correct:"<span class='kw4'>Subjacency</span>: movement이 한 번에 두 개 이상의 bounding node(IP, NP)를 교차하면 비문이 된다.",
+   why:"영어에서 bounding node는 IP(= TP, S)와 NP입니다. long movement는 intermediate Spec,CP를 경유하는 successive cyclic movement로 처리되어 각 단계마다 하나의 bounding node만 교차합니다.",
+   source:"Refs 요지: Subjacency prohibits crossing more than one bounding node per movement step; in English, bounding nodes are IP and NP. (2025 1차 B-5 출제)"},
+
+  {src:"Subjacency",cat:"complex NP island",
+   text:"The sentence <span class='kw4'>*Which report did she meet a professor who had reviewed t?</span> is ungrammatical because extraction from a complex NP (relative clause) crosses more than one bounding node, violating Subjacency.",
+   ans:true,
+   correct:"relative clause(complex NP) 내부에서 wh-phrase 추출 → complex NP island 위반 → Subjacency 위반 → 비문.",
+   why:"<em>[NP a professor [CP who had reviewed t]]</em>에서 <em>which report</em>를 추출하면 NP와 CP(IP) 두 개의 bounding node를 교차합니다. Subjacency 위반으로 비문이 됩니다.",
+   source:"Refs 요지: Extraction from a complex NP (relative clause or noun complement) crosses two bounding nodes and violates Subjacency."},
+
+  {src:"Subjacency",cat:"subject island",
+   text:"The sentence <span class='kw4'>*What did [pictures of t] bother the curator?</span> is ungrammatical because extracting a wh-phrase from inside an NP subject crosses two bounding nodes.",
+   ans:true,
+   correct:"NP subject 내부에서 추출 → subject island(Subject Condition) 위반 → Subjacency 위반 → 비문.",
+   why:"<em>[NP pictures of t]</em>는 matrix subject 위치에 있습니다. 이 NP 내부에서 wh-phrase를 추출하면 NP와 IP를 동시에 교차하여 Subjacency를 위반합니다. 이것이 subject island constraint입니다.",
+   source:"Refs 요지: Subject Island (Subject Condition): extraction from inside an NP subject violates Subjacency by crossing two bounding nodes. (2025 1차 B-5 출제)"},
+
+  {src:"Subjacency",cat:"wh-island",
+   text:"In the sentence <span class='kw4'>*What does he wonder who bought t?</span>, the extraction of <em>what</em> from an embedded wh-clause is grammatical because wh-phrases can always move to the matrix Spec,CP.",
+   ans:false,
+   correct:"embedded wh-clause 내부에서 다른 wh-phrase를 추출하면 <span class='kw3'>wh-island</span> 위반 → 비문.",
+   why:"<em>who bought what</em>에서 <em>what</em>을 추출하려면 embedded CP(이미 <em>who</em>가 Spec,CP를 채운)를 교차해야 합니다. 이 embedded CP는 bounding node 역할을 하여 Subjacency 위반을 만들어 냅니다.",
+   source:"Refs 요지: Wh-island constraint: extraction from an embedded wh-clause is blocked because the filled Spec,CP of the embedded clause acts as an island barrier."},
+
+  {src:"Subjacency",cat:"successive cyclic movement",
+   text:"In the grammatical sentence \"Which book did she say she had read t?\", the long-distance movement of <em>which book</em> does not violate Subjacency because it moves through the intermediate Spec,CP of the embedded clause in a <span class='kw2'>successive cyclic</span> fashion.",
+   ans:true,
+   correct:"long movement에서 intermediate Spec,CP를 경유하는 <span class='kw2'>successive cyclic movement</span>를 통해 Subjacency 위반 없이 장거리 이동이 가능하다.",
+   why:"<em>which book</em>은 먼저 embedded Spec,CP로 이동(IP 하나 교차)하고, 다음 단계에서 matrix Spec,CP로 이동(또 IP 하나 교차)합니다. 각 단계마다 bounding node를 하나만 교차하므로 Subjacency를 충족합니다.",
+   source:"Refs 요지: Successive cyclic movement through intermediate Spec,CP positions permits long-distance wh-movement without Subjacency violation."}
+];
+
+const TOTAL=Q.length;
+const SAVE_KEY='linguistics_movement_quiz_v1';
+let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
+function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
+function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
+function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function getScore(){return answers.filter(a=>a&&a.correct).length;}
+function renderNav(){
+  document.getElementById('nav').innerHTML=answers.map((_,i)=>{
+    const a=answers[i];
+    const cls=i===cur?'nd cur':a===null?'nd':a.correct?'nd ok':'nd ng';
+    return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
+  }).join('');
+}
+function jumpTo(i){cur=i;render();}
+function renderExp(q,isCorrect){
+  const three=q.compare&&q.compare.length===3;
+  const cmp=q.compare?`
+    <div class="sec-label">📊 비교 정리</div>
+    <div class="compare${three?' three':''}">
+      ${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}
+    </div>`:'';
+  return `<div class="exp show">
+    <div class="exp-header"><span>${isCorrect?'✅ 정답':'❌ 오답'} · 해설</span></div>
+    <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
+    <div class="exp-body">
+      <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
+      <div class="sec-label">📌 Source</div>
+      <div class="def-box"><p>${q.source}</p></div>
+      ${cmp}
+    </div>
+  </div>`;
+}
+function render(){
+  if(cur>=TOTAL){
+    document.getElementById('qa').style.display='none';
+    document.getElementById('sc').classList.add('show');
+    const s=getScore();
+    document.getElementById('fs').textContent=s;
+    const p=s/TOTAL;
+    document.getElementById('rm').textContent=p===1?'🎉 Perfect!':p>=.8?'👏 Great!':p>=.6?'😊 Good!':'💪 Keep going!';
+    document.getElementById('rs').textContent=`${TOTAL}문제 중 ${s}문제 정답 (${Math.round(p*100)}%)`;
+    setTimeout(function(){window.showScorePopup&&window.showScorePopup(s,TOTAL);},400);
+    renderNav();return;
+  }
+  document.getElementById('sc').classList.remove('show');
+  document.getElementById('qa').style.display='block';
+  renderNav();
+  const q=Q[order[cur]];
+  document.getElementById('bf').style.width=((cur+1)/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('pt').textContent=`${cur+1} / ${TOTAL}`;
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  const a=answers[cur];
+  if(a!==null){
+    let oBtnCls='',xBtnCls='';
+    if(a.picked===true){oBtnCls=a.correct?'co':'wp';if(!a.correct)xBtnCls='cx';}
+    else{xBtnCls=a.correct?'cx':'wp';if(!a.correct)oBtnCls='co';}
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn ${oBtnCls}" disabled>⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn ${xBtnCls}" disabled>❌<span class="lb">WRONG</span></button>
+        </div>
+        <div class="badge ${a.correct?'ok':'ng'}">${a.correct?'✅ 정답!':'❌ 오답! 정답은 '+(q.ans?'O':'X')}</div>
+        <div>${renderExp(q,a.correct)}</div>
+        <button class="next-btn show" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }else{
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn" onclick="pick(true)" id="ob">⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn" onclick="pick(false)" id="xb">❌<span class="lb">WRONG</span></button>
+        </div>
+        <div id="bd" class="badge"></div>
+        <div id="ep"></div>
+        <button class="next-btn" id="nb" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }
+}
+function pick(val){
+  const q=Q[order[cur]];
+  document.getElementById('ob').disabled=true;
+  document.getElementById('xb').disabled=true;
+  const ok=val===q.ans;
+  answers[cur]={picked:val,correct:ok};
+  if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
+  const bd=document.getElementById('bd');
+  bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
+  bd.className='badge '+(ok?'ok':'ng');
+  document.getElementById(val?'ob':'xb').classList.add(ok?(val?'co':'cx'):'wp');
+  if(!ok)document.getElementById(q.ans?'ob':'xb').classList.add(q.ans?'co':'cx');
+  document.getElementById('ep').innerHTML=renderExp(q,ok);
+  document.getElementById('nb').classList.add('show');
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  renderNav();
+}
+function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
+function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
+(function(){
+  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
+    cur=saved.cur;answers=saved.answers;
+    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+    const done=answers.filter(a=>a!==null).length;
+    if(done>0){
+      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
+      document.getElementById('rb').style.display='block';
+    }
+  }
+  updateModeUI();renderNav();render();
+})();
+</script>
+</body>
+</html>
