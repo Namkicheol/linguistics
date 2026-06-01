@@ -141,11 +141,11 @@ sub-agent(Task 도구 / Codex parallel agent)는 작업 분할이 의미 있을 
 | **`refs/TalkFile_영어통사론 정태구.md`** | 정태구 『영어통사론』 — **통사론 한글 학술 용어 권위 출처** (이미지 PDF) |
 | `refs/TalkFile_영어통사론 정태구_images/` | 정태구 본문 이미지 |
 | `refs/syntax_argumentation.md` (850KB) | 통사 논증·분석 자료 |
-| `refs/트포 단권화 (구매).md` | TG Ch.4~7 전반 보조 |
-| `refs/단숲_TG 정리.md` | Negation 강함 |
-| `refs/movement 단권화.md` | Movement 챕터 전용 |
-| `refs/Raising And Control .md` | Raising/Control 챕터 전용 |
-| `refs/raising and control.md` | Raising/Control 기출 문장 위주 |
+| `refs/24 영어학 best/트포 단권화 (구매).md` | TG Ch.4~7 전반 보조 |
+| `refs/24 영어학 best/단숲_TG 정리.md` | Negation 강함 |
+| `refs/24 영어학 best/0. movement 단권화(트포, 카니, 일부 모고) 7p(구매).md` | Movement 챕터 전용 |
+| `refs/24 영어학 best/7.Raising and control(a).md` · `7. Raising and control (B).md` | Raising/Control 챕터 전용 — ⚠️ **PNG 이미지 wrapper**(텍스트 grep 안 됨, Read로 직접 읽기) |
+| `refs/24 영어학 best/22. Raising And Control (역대 기출 문장 모음).md` | Raising/Control 역대 기출 문장(연도 태그) — ⚠️ **PNG 이미지**(Read 필요) |
 | `refs/1. 트포 원서정리 87p(구입).md` | 통사 기출문제 형식 참조 |
 
 ### 형태론 (Morphology)
@@ -171,11 +171,13 @@ sub-agent(Task 도구 / Codex parallel agent)는 작업 분할이 의미 있을 
 |------|------|------|------|
 | Constituency | `transformational_grammar.md` (Ch.2) | `syntax_argumentation.md` | `트포 단권화` |
 | Phrase Structure | `transformational_grammar.md` (Ch.3~5) | `트포 단권화` | `syntax_argumentation.md` |
-| Movement | `movement 단권화.md` | `transformational_grammar.md` (Ch.6,8,9) | `트포 단권화` |
-| Raising/Control | `Raising And Control .md` | `raising and control.md` | `단숲_TG 정리.md` |
-| Binding | `transformational_grammar.md` (Ch.10) | `syntax_argumentation.md` | `트포 단권화` |
+| Movement | `24 영어학 best/0. movement 단권화…` | `transformational_grammar.md` (Ch.6,8,9) | `24 영어학 best/트포 단권화` |
+| Raising/Control | `24 영어학 best/7.Raising and control(a)/(B)` (PNG) | `24 영어학 best/22. R&C 역대 기출 문장` (PNG) | `24 영어학 best/단숲_TG 정리` |
+| Binding | `transformational_grammar.md` (Ch.10) | `syntax_argumentation.md` | `24 영어학 best/트포 단권화` |
 
 > ⚠️ **원칙**: 예문·규칙 정의는 반드시 `transformational_grammar.md`에서 구조와 기준을 확인한다. 단, 예문은 §영어학 예문 정책에 따라 그대로 베끼지 말고 구조를 유지한 채 어휘를 변형하거나 새로 만든다. 나머지 md는 해설 보조·임용 출제 포인트 파악용.
+>
+> ⚠️ **경로 주의**: 단권화·합격자노트 자료(`트포 단권화`, `단숲_TG 정리`, `movement 단권화`, `Raising and control`, `22. R&C 기출 문장` 등)는 **top-level `refs/`가 아니라 `refs/24 영어학 best/` 하위**에 있다. R&C 합격자노트(`7.Raising and control(a)/(B)`, `22.`)는 **PNG 이미지 wrapper**라 grep 불가 — 반드시 Read로 이미지를 직접 읽어야 한다. **refs 분석이 충돌하면 합격자노트·기출이 정답 기준**(대학 교재 Radford보다 우선).
 
 ---
 
@@ -372,9 +374,9 @@ iframe 템플릿:
 - ② **기출 맥락**: 영어학 기출 답안 패턴 풀이 + `refs/메가쌤_기출분석.md` + `refs/24 영어학 best/` 우선 활용
 - ③ **키텀 비교**:
   - Constituency: `syntax_argumentation.md`
-  - Phrase Structure: `트포 단권화` + `transformational_grammar.md`
-  - Movement: `movement 단권화.md`
-  - Raising/Control: `Raising And Control .md`
+  - Phrase Structure: `24 영어학 best/트포 단권화` + `transformational_grammar.md`
+  - Movement: `24 영어학 best/0. movement 단권화…`
+  - Raising/Control: `24 영어학 best/7.Raising and control(a)/(B)` (PNG) + `22. R&C 기출 문장` (PNG)
   - Binding: `transformational_grammar.md` (Ch.10)
   - Morphology: `teachers_grammar.md` + `linguistics_non_linguists.md`
   - Semantics/Pragmatics: `linguistics_non_linguists.md` + `윤도형2015.md`
