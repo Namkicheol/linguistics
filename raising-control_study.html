@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.4 Raising &amp; Control — 개념정리</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:repeating-linear-gradient(transparent,transparent 27px,#d5d8cf 28px);color:#1a1a1a;min-height:100vh;padding:16px;overflow-x:hidden}
+.header-wrap{max-width:820px;margin:0 auto;padding:24px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.header-sticker{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;background:#1a1f3a;color:#e8eaff;padding:5px 13px;border-radius:3px;letter-spacing:2px;text-transform:uppercase}
+.header-chapter{font-family:'JetBrains Mono',monospace;font-size:12px;color:#4a4d6a;letter-spacing:.5px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:10px}
+.header-divider{border:none;border-top:2px dashed #888;margin-bottom:10px}
+.header-tip{font-size:12px;color:#2a2e6e;font-family:'JetBrains Mono',monospace;margin-bottom:20px;background:rgba(59,63,134,.06);border:1px solid rgba(59,63,134,.2);border-radius:8px;padding:9px 14px;line-height:1.7}
+.wrap{max-width:820px;margin:0 auto}
+.sec{background:#fff;border:1.5px solid #c5c8e8;border-radius:16px;margin-bottom:20px;overflow:hidden;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@media(max-width:600px){.grid.col2,.grid.col3{grid-template-columns:1fr}}
+.sec-header{background:linear-gradient(135deg,rgba(59,63,134,.08),rgba(124,131,217,.05));border-bottom:1.5px solid #c5c8e8;padding:16px 22px;display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+.sec-icon{font-size:20px}
+.sec-title{font-size:16px;font-weight:700;color:#2a2e6e;font-family:'JetBrains Mono',monospace}
+.sec-tag{font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:6px;margin-left:auto;font-weight:600}
+.sec-arrow{font-size:13px;color:#4a4d6a;transition:transform .3s;margin-left:6px}
+.sec.open .sec-arrow{transform:rotate(180deg)}
+.sec-body{display:none;padding:22px}
+.sec.open .sec-body{display:block}
+.concept{margin-bottom:22px}
+.concept:last-child{margin-bottom:0}
+.c-title{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#2a2e6e;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.def{background:rgba(59,63,134,.06);border-left:4px solid #3b3f86;padding:12px 16px;border-radius:0 10px 10px 0;margin-bottom:10px;font-size:17px;line-height:1.8;color:#1a1f3a}
+.note{font-size:16px;color:#2a2e6e;line-height:1.75;margin-bottom:6px;padding-left:6px}
+.note::before{content:"• ";color:#7c83d9;font-weight:700}
+.kw1{background:rgba(59,63,134,.15);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(59,63,134,.25);overflow-wrap:anywhere}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.45);overflow-wrap:anywhere}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(184,101,26,.3);overflow-wrap:anywhere}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(183,28,28,.25);overflow-wrap:anywhere}
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:10px 14px;background:#fff;border:1.5px solid #c5c8e8;border-radius:10px;align-items:center}
+.legend-title{font-size:10px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-right:4px}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:#2a2e6e}
+.grid{display:grid;gap:10px;margin-top:12px}
+.grid.col2{grid-template-columns:1fr 1fr}
+.grid.col3{grid-template-columns:1fr 1fr 1fr}
+.grid-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:14px 16px}
+.gi-title{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#3b3f86;margin-bottom:7px}
+.gi-body{font-size:14px;color:#2a2e6e;line-height:1.7}
+.gi-body span{display:block}
+.eg{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:14px;overflow-wrap:anywhere}
+.eg-line{display:block;margin:3px 0;line-height:1.7}
+.eg-ok{color:#1f7a4a}
+.eg-ok::before{content:"✓ "}
+.eg-bad{color:#b71c1c}
+.eg-bad::before{content:"* "}
+.eg-note{display:block;margin-top:8px;padding-top:8px;border-top:1px dashed #c5c8e8;font-family:'Noto Sans KR',sans-serif;font-size:13px;color:#4a4d6a}
+.tbl-wrap{overflow-x:auto;margin-top:12px}
+table.diag{border-collapse:collapse;width:100%;min-width:560px;font-size:13px}
+table.diag th,table.diag td{border:1.5px solid #c5c8e8;padding:8px 10px;text-align:center;line-height:1.55}
+table.diag thead th{background:rgba(59,63,134,.1);color:#2a2e6e;font-family:'JetBrains Mono',monospace;font-size:12px}
+table.diag tbody th{background:rgba(124,131,217,.06);color:#2a2e6e;text-align:left;font-weight:700;white-space:nowrap}
+table.diag td.y{color:#1f7a4a;font-weight:700}
+table.diag td.n{color:#b71c1c;font-weight:700}
+.exam{background:rgba(184,101,26,.06);border:1.5px solid rgba(184,101,26,.25);border-radius:10px;padding:14px 16px;margin-top:14px}
+.exam-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#b8651a;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-weight:700}
+.exam p{font-size:13.5px;color:#6b3f0e;line-height:1.75;margin-bottom:4px;overflow-wrap:anywhere}
+.toc{max-width:820px;margin:0 auto 20px;background:#fff;border:1.5px solid #c5c8e8;border-radius:12px;padding:16px 20px;box-shadow:0 2px 8px rgba(59,63,134,.06)}
+.toc-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;font-weight:700}
+.toc-list{display:flex;flex-wrap:wrap;gap:7px}
+.toc-item{font-size:12px;color:#3b3f86;background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.2);padding:5px 12px;border-radius:8px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace;font-weight:600}
+.toc-item:hover{background:rgba(59,63,134,.18)}
+.tree-svg{display:block;margin:12px auto;width:100%;max-width:660px;height:auto;font-family:'Noto Serif KR','Noto Sans KR',serif}
+.tree-svg text{font-family:'Noto Serif KR',Georgia,serif}
+.nav-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0 8px;border-top:1px solid #c5c8e8;margin-top:24px}
+.nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
+.nav-btn:hover{background:#f7f8ff}
+.nav-btn.next-btn{font-weight:600}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-sticker">STUDY NOTE</span>
+    <span class="header-chapter">Ch.04 · Raising &amp; Control</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <div class="header-script">Concept Notes · Raising &amp; Control · Transformational Syntax</div>
+  <p class="header-sub">합격자 노트 기반 · 기출 포인트 · SSR / SOR / SC / OC 4분류</p>
+  <div class="header-divider"></div>
+  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기 &nbsp;·&nbsp; 핵심: raising은 의미역 안 주고 NP 이동 / control은 의미역 주고 PRO</p>
+</div>
+<div class="wrap">
+<div class="toc">
+  <div class="toc-title">📋 목차</div>
+  <div class="toc-list">
+    <div class="toc-item" onclick="openSec('theta-criterion')">① Theta Criterion</div>
+    <div class="toc-item" onclick="openSec('ssr')">② Subject-to-Subject Raising</div>
+    <div class="toc-item" onclick="openSec('sor-ecm')">③ Subject-to-Object Raising &amp; ECM</div>
+    <div class="toc-item" onclick="openSec('subject-control')">④ Subject Control</div>
+    <div class="toc-item" onclick="openSec('object-control')">⑤ Object Control</div>
+    <div class="toc-item" onclick="openSec('pro')">⑥ PRO</div>
+    <div class="toc-item" onclick="openSec('diagnostics')">⑦ Diagnostics 요약</div>
+  </div>
+</div>
+<div class="legend">
+  <span class="legend-title">키워드</span>
+  <span class="legend-item"><span class="kw4">★★★ 최빈출</span></span>
+  <span class="legend-item"><span class="kw3">★★ 빈출</span></span>
+  <span class="legend-item"><span class="kw1">★ 기본개념</span></span>
+  <span class="legend-item"><span class="kw2">부키워드</span></span>
+</div>
+<div class="exam" style="margin-bottom:20px">
+  <div class="exam-label">📝 기출분석 포인트 (Ch.4 Raising &amp; Control)</div>
+  <p>① <span class='kw4'>Raising vs Control</span>: 같은 표면 어순 <em>NP V to-VP</em>를 <span class='kw1'>expletive</span>·<span class='kw1'>idiom chunk</span>·<span class='kw1'>voice transparency</span>로 판별</p>
+  <p>② <span class='kw4'>4분류</span>: <span class='kw1'>SSR</span>(seem) / <span class='kw1'>SOR·ECM</span>(believe) / <span class='kw1'>SC</span>(try) / <span class='kw1'>OC</span>(persuade)</p>
+  <p>③ <span class='kw3'>PRO</span>: controlled vs arbitrary PRO, obligatory vs optional control</p>
+  <p>④ <span class='kw3'>Theta Criterion</span> &amp; <span class='kw3'>Case</span>: raising 술어는 subject에 theta-role 안 줌 / ECM은 목적격 부여</p>
+  <p>⑤ 함정: <span class='kw4'>*probable</span> raising 불가, <span class='kw4'>persuade</span>는 expletive·voice transparency 불허</p>
+</div>
+
+<!-- ① Theta Criterion -->
+<div class="sec open" id="theta-criterion">
+  <div class="sec-header" onclick="toggle('theta-criterion')">
+    <span class="sec-icon">🎯</span>
+    <span class="sec-title">① Theta Theory &amp; Theta Criterion</span>
+    <span class="sec-tag">의미역 · 토대</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>Theta Criterion</span> (Chomsky 1981): <em>Each argument bears one and only one theta-role, and each theta-role is assigned to one and only one argument.</em></div>
+      <p class="note">argument(논항)는 정확히 하나의 <span class='kw1'>theta-role</span>(의미역: Agent, Theme, Goal, Experiencer 등)을 받고, 각 theta-role도 정확히 하나의 argument에만 할당된다.</p>
+      <p class="note"><span class='kw1'>theta-role</span>은 <span class='kw2'>D-structure</span>(심층구조)에서 할당되며, movement 후에도 보존된다.</p>
+      <p class="note">한 자리가 theta-role을 받는 자리이면 <span class='kw2'>theta-position</span>, 받지 않는 자리이면 <span class='kw2'>non-theta position</span>이다.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">왜 Raising / Control 구분의 토대인가</div>
+      <p class="note"><span class='kw4'>Raising verb</span>(seem, appear …)의 matrix subject 자리는 <span class='kw2'>non-theta position</span> — 술어가 그 자리에 theta-role을 주지 않는다. 그래서 의미가 빈 NP(expletive, idiom chunk)도 올 수 있다.</p>
+      <p class="note"><span class='kw4'>Control verb</span>(try, persuade …)의 matrix subject/object 자리는 <span class='kw2'>theta-position</span> — 술어가 theta-role을 준다. 그래서 의미가 빈 NP는 못 온다.</p>
+      <p class="note">결국 raising과 control의 모든 진단은 "matrix 자리에 theta-role이 할당되는가"로 환원된다.</p>
+    </div>
+    <div class="grid col2">
+      <div class="grid-item">
+        <div class="gi-title">Theta Criterion 위반 ①</div>
+        <div class="gi-body"><span>argument가 theta-role을 못 받음 → 비문</span><span style="font-size:12px;color:#b71c1c">*The student put the book.</span><span style="font-size:12px">(put은 NP + PP 두 internal argument 필요)</span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Theta Criterion 위반 ②</div>
+        <div class="gi-body"><span>theta-role을 받을 argument가 없음 → 비문</span><span style="font-size:12px;color:#b71c1c">*The student arrived the parcel the office.</span><span style="font-size:12px">(arrive는 internal argument 못 가짐)</span></div>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2013 1차 Q33</strong> — <span class='kw1'>thematic roles</span>·<span class='kw1'>argument structure</span>: 논항 구조와 의미역 분석</p>
+      <p><strong>2014 1차 서술5</strong> — <span class='kw1'>theta roles</span>·<span class='kw1'>argument structure</span>: 논항 구조와 의미역 분석</p>
+      <p><strong>2025 1차 B-5</strong> — <span class='kw4'>theta-criterion</span>·<span class='kw1'>theta-role</span>·<span class='kw1'>argument</span>: ditransitive <em>put</em>의 argument 누락으로 Theta Criterion 위반 판정</p>
+    </div>
+  </div>
+</div>
+
+<!-- ② Subject-to-Subject Raising -->
+<div class="sec" id="ssr">
+  <div class="sec-header" onclick="toggle('ssr')">
+    <span class="sec-icon">🔼</span>
+    <span class="sec-title">② Subject-to-Subject Raising (SSR)</span>
+    <span class="sec-tag">seem · NP-movement</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>Raising verbs</span> (<em>seem, appear, be likely, turn out, be unlikely, prove</em>) assign <span class='kw4'>no theta-role</span> to their surface subject. The subject of the embedded infinitival clause undergoes <span class='kw1'>NP-movement</span> to the matrix <span class='kw2'>Spec,IP</span>. This is <span class='kw1'>Subject-to-Subject Raising</span> (SSR).</div>
+      <p class="note">왜 NP가 이동하나? 하위 <span class='kw2'>infinitival I</span>(to)는 nominative Case를 주지 못한다. NP는 Case를 받기 위해 matrix Spec,IP로 이동한다.</p>
+      <p class="note">matrix subject 자리는 <span class='kw2'>non-theta position</span>이므로, NP는 이동 후에도 embedded predicate의 theta-role을 그대로 보유한다.</p>
+      <p class="note"><span class='kw2'>dummy-it</span> paraphrase와 동의: <em>It seems that John is working</em> ≈ <em>John seems to be working.</em></p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowRc1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#c62828"/></marker>
+      </defs>
+      <text x="330" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">SSR: The student_i seems [ t_i to win ] — embedded subject → matrix Spec,IP</text>
+      <!-- matrix IP -->
+      <text x="330" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#3b3f86">IP</text>
+      <!-- Spec,IP (the student_i) -->
+      <line x1="330" y1="52" x2="150" y2="90" stroke="#999" stroke-width="1.5"/>
+      <text x="150" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#1f7a8c">Spec</text>
+      <line x1="150" y1="116" x2="150" y2="146" stroke="#999" stroke-width="1.5"/>
+      <text x="150" y="166" text-anchor="middle" font-size="12" font-style="italic" fill="#c62828">The student</text>
+      <text x="206" y="166" text-anchor="start" font-size="10" fill="#c62828">i</text>
+      <!-- I' -->
+      <line x1="330" y1="52" x2="450" y2="90" stroke="#999" stroke-width="1.5"/>
+      <text x="450" y="110" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">I′</text>
+      <!-- I (Pres) -->
+      <line x1="450" y1="116" x2="390" y2="148" stroke="#999" stroke-width="1.5"/>
+      <text x="390" y="168" text-anchor="middle" font-size="12" fill="#1a1a1a">Pres</text>
+      <!-- VP -->
+      <line x1="450" y1="116" x2="520" y2="148" stroke="#999" stroke-width="1.5"/>
+      <text x="520" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">VP</text>
+      <!-- V (seems) -->
+      <line x1="520" y1="174" x2="470" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="470" y="224" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">seem</text>
+      <!-- embedded IP -->
+      <line x1="520" y1="174" x2="580" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="580" y="224" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">IP</text>
+      <!-- embedded Spec (trace) -->
+      <line x1="580" y1="230" x2="535" y2="262" stroke="#999" stroke-width="1.5"/>
+      <text x="535" y="282" text-anchor="middle" font-size="12" fill="#c62828">t</text>
+      <text x="543" y="278" text-anchor="start" font-size="10" fill="#c62828">i</text>
+      <!-- embedded I' -->
+      <line x1="580" y1="230" x2="625" y2="262" stroke="#999" stroke-width="1.5"/>
+      <text x="625" y="282" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">I′</text>
+      <line x1="625" y1="288" x2="600" y2="318" stroke="#999" stroke-width="1.5"/>
+      <text x="600" y="336" text-anchor="middle" font-size="11" fill="#1a1a1a">to</text>
+      <line x1="625" y1="288" x2="650" y2="318" stroke="#999" stroke-width="1.5"/>
+      <text x="650" y="336" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">win</text>
+      <!-- movement arrow: t_i → Spec,IP -->
+      <path d="M 535,278 Q 360,235 165,168" stroke="#c62828" stroke-width="1.8" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowRc1)"/>
+    </svg>
+    <div class="concept">
+      <div class="c-title">진단 (Raising 증거)</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">① Expletive there / it</div>
+          <div class="gi-body"><span>theta-role 없는 expletive가 subject로 가능</span><span class="eg-line eg-ok" style="font-size:12px">There seem to be several options.</span><span class="eg-line eg-ok" style="font-size:12px">It seems to be raining.</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">② Idiom chunk 보존</div>
+          <div class="gi-body"><span>idiom chunk가 raising subject로 가능</span><span class="eg-line eg-ok" style="font-size:12px">The cat seems to be out of the bag.</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">③ Voice transparency</div>
+          <div class="gi-body"><span>능동·수동 하위절이 동의</span><span style="font-size:12px">The doctor seems to have examined the patient ≈ The patient seems to have been examined by the doctor.</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">④ *probable 함정</div>
+          <div class="gi-body"><span class="eg-line eg-bad" style="font-size:12px">*John is probable to pass the test.</span><span class="eg-line eg-ok" style="font-size:12px">John is likely to pass the test.</span><span style="font-size:12px">probable은 raising 불가, likely는 가능</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="eg">
+      <span class="eg-line eg-ok">The students were found to have rashes.</span>
+      <span class="eg-line eg-ok">The supervisors turned out to be under investigation.</span>
+      <span class="eg-line eg-ok">The angry crowd is unlikely to leave the plaza.</span>
+      <span class="eg-note">found · turned out · be unlikely 모두 SSR — matrix subject에 theta-role 없음</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2012 1차</strong> — <span class='kw1'>SSR</span>: appeared / turned out / be unlikely / be found 등 raising 술어를 control 술어(planned, preferred, keen)와 분류</p>
+      <p><strong>2024 1차 A-7</strong> — <span class='kw4'>Case Filter</span>·<span class='kw1'>external argument</span>·<span class='kw1'>NP-movement</span>: raising 술어가 외부논항 없어 acc Case 부여 불가 → NP가 case-assigned subject 자리로 이동</p>
+    </div>
+  </div>
+</div>
+
+<!-- ③ Subject-to-Object Raising & ECM -->
+<div class="sec" id="sor-ecm">
+  <div class="sec-header" onclick="toggle('sor-ecm')">
+    <span class="sec-icon">🔀</span>
+    <span class="sec-title">③ Subject-to-Object Raising &amp; ECM</span>
+    <span class="sec-tag">believe · 목적격 · 하위절 주어</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><em>believe, expect, want, report, consider, know</em>류 동사는 infinitival 보문을 취하고, 하위절 주어 NP에 <span class='kw1'>objective/accusative Case</span>(목적격)를 예외적으로 부여한다 — <span class='kw1'>Exceptional Case Marking</span> (ECM). 임용에서는 <span class='kw1'>Subject-to-Object Raising</span> (SOR)으로도 부른다.</div>
+      <p class="note">핵심: matrix verb는 그 NP에 <span class='kw4'>theta-role을 주지 않는다</span>. theta-role은 하위절 전체에 부여되므로, NP는 <span class='kw2'>하위절의 주어</span>로 행동한다.</p>
+      <p class="note">표면상 <em>believe + NP + to-VP</em>는 object control(persuade)과 같지만, 아래 진단으로 명확히 갈린다.</p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowRc2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#1f7a8c"/></marker>
+      </defs>
+      <text x="330" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">SOR / ECM: Ed believes [ him to be honest ] — matrix V가 하위절 주어에 목적격 부여</text>
+      <!-- matrix IP -->
+      <text x="330" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#3b3f86">IP</text>
+      <line x1="330" y1="52" x2="200" y2="88" stroke="#999" stroke-width="1.5"/>
+      <text x="200" y="108" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">Ed</text>
+      <line x1="330" y1="52" x2="430" y2="88" stroke="#999" stroke-width="1.5"/>
+      <text x="430" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">I′</text>
+      <line x1="430" y1="114" x2="380" y2="146" stroke="#999" stroke-width="1.5"/>
+      <text x="380" y="166" text-anchor="middle" font-size="12" fill="#1a1a1a">Pres</text>
+      <line x1="430" y1="114" x2="500" y2="146" stroke="#999" stroke-width="1.5"/>
+      <text x="500" y="166" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">VP</text>
+      <!-- V (believes) -->
+      <line x1="500" y1="172" x2="440" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="440" y="224" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">believe</text>
+      <!-- embedded IP -->
+      <line x1="500" y1="172" x2="575" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="575" y="224" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">IP</text>
+      <!-- embedded subject (him, accusative) -->
+      <line x1="575" y1="230" x2="535" y2="262" stroke="#999" stroke-width="1.5"/>
+      <text x="535" y="282" text-anchor="middle" font-size="12" font-style="italic" fill="#1f7a8c">him</text>
+      <text x="528" y="298" text-anchor="middle" font-size="9" fill="#1f7a8c">[ACC]</text>
+      <!-- embedded I' -->
+      <line x1="575" y1="230" x2="620" y2="262" stroke="#999" stroke-width="1.5"/>
+      <text x="620" y="282" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">I′</text>
+      <text x="620" y="300" text-anchor="middle" font-size="10" font-style="italic" fill="#1a1a1a">to be honest</text>
+      <!-- Case arrow: V → embedded subject -->
+      <path d="M 452,210 Q 495,245 528,268" stroke="#1f7a8c" stroke-width="1.6" fill="none" stroke-dasharray="4,3" marker-end="url(#arrowRc2)"/>
+      <text x="455" y="250" text-anchor="middle" font-size="10" fill="#1f7a8c">Exceptional Case</text>
+    </svg>
+    <div class="concept">
+      <div class="c-title">진단: NP가 하위절 주어임을 보임</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">① Expletive there / it</div>
+          <div class="gi-body"><span class="eg-line eg-ok" style="font-size:12px">Ed believes there to be a traitor.</span><span class="eg-line eg-ok" style="font-size:12px">Ed believes it to be raining.</span><span style="font-size:12px">expletive가 가능 → 그 자리는 하위절 주어</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">② Idiom chunk 보존</div>
+          <div class="gi-body"><span class="eg-line eg-ok" style="font-size:12px">Ed believes the coast to be clear.</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">③ Voice transparency</div>
+          <div class="gi-body"><span>하위절 능동·수동이 동의</span><span style="font-size:12px">Ed believes the jury to have given the verdict ≈ Ed believes the verdict to have been given by the jury.</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">④ Single clausal complement</div>
+          <div class="gi-body"><span class="eg-line eg-ok" style="font-size:12px">John believes Bill to have slept.</span><span class="eg-line eg-bad" style="font-size:12px">*John believes Bill that he has slept.</span><span style="font-size:12px">하나의 절 보문만 허용</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">believe vs want vs expect</div>
+      <div class="eg">
+        <span class="eg-line eg-ok">The story is believed to be false by Ed.</span>
+        <span class="eg-note"><strong>believe</strong>: main clause passivize 가능. <span style="color:#b71c1c">*for</span> 차단(<em>*I believe for the story to be false</em>).</span>
+        <span class="eg-line eg-bad">*Robert was wanted by Jean to go over there.</span>
+        <span class="eg-note"><strong>want</strong>: 숨은 <em>for</em>(Case) 때문에 main clause passivize 불가. 단 expletive·voice transparency는 believe와 같음.</span>
+        <span class="eg-line eg-ok">George expects to win. &nbsp;/&nbsp; George expects Sue to win.</span>
+        <span class="eg-note"><strong>expect</strong>: subject control(앞)과 SOR(뒤) 둘 다 가능.</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2007 1차</strong> — <span class='kw1'>believe</span> SOR: <em>John believes Bill to be taller</em> — believe는 internal Case 부여 가능(= external theta-role 부여), likely는 Case 부여 불가(<em>*It is likely Bill to be taller</em>) 대조</p>
+      <p><strong>2018 1차</strong> — <span class='kw1'>seem</span>·<span class='kw1'>believe</span>·Case: <em>It seems that Tom is believed to admire Mary</em> 류 다층 분석</p>
+      <p><strong>2019 1차 기입3</strong> — <span class='kw1'>SOR</span>·<span class='kw1'>OC</span> 대조: <em>John believed Sue to be obedient</em>(S-O Raising) vs <em>John persuaded Sue to obey</em>(object control)</p>
+      <p><strong>2024 1차 A-7</strong> — <span class='kw4'>Case</span>: <span class='kw4'>*It is believed the team to win</span> → <em>the team</em>이 case-assigned subject 자리로 이동해야 함</p>
+    </div>
+  </div>
+</div>
+
+<!-- ④ Subject Control -->
+<div class="sec" id="subject-control">
+  <div class="sec-header" onclick="toggle('subject-control')">
+    <span class="sec-icon">🙋</span>
+    <span class="sec-title">④ Subject Control (SC)</span>
+    <span class="sec-tag">try · PRO · 이동 없음</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>Subject control verbs</span> (<em>try, plan, decide, hope, intend, threaten, prefer, refuse, be keen, be relieved</em>) <span class='kw4'>assign a theta-role to their subject</span>. The embedded infinitival clause has a <span class='kw1'>PRO</span> subject controlled by the matrix subject. <span class='kw2'>No movement.</span></div>
+      <p class="note">matrix subject 자리는 <span class='kw2'>theta-position</span>이므로 expletive·idiom chunk가 올 수 없다.</p>
+      <p class="note">하위절 주어는 <span class='kw1'>PRO</span>이며 matrix subject와 <span class='kw2'>coindex</span>(control)된다.</p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowRc3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#8d4d14"/></marker>
+      </defs>
+      <text x="330" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">SC: John_i tried [ PRO_i to resign ] — matrix subject가 PRO를 control (이동 없음)</text>
+      <text x="330" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#3b3f86">IP</text>
+      <line x1="330" y1="52" x2="180" y2="88" stroke="#999" stroke-width="1.5"/>
+      <text x="180" y="108" text-anchor="middle" font-size="12" font-style="italic" fill="#8d4d14">John</text>
+      <text x="208" y="108" text-anchor="start" font-size="10" fill="#8d4d14">i</text>
+      <line x1="330" y1="52" x2="430" y2="88" stroke="#999" stroke-width="1.5"/>
+      <text x="430" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">I′</text>
+      <line x1="430" y1="114" x2="385" y2="146" stroke="#999" stroke-width="1.5"/>
+      <text x="385" y="166" text-anchor="middle" font-size="12" fill="#1a1a1a">Past</text>
+      <line x1="430" y1="114" x2="500" y2="146" stroke="#999" stroke-width="1.5"/>
+      <text x="500" y="166" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">VP</text>
+      <line x1="500" y1="172" x2="445" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="445" y="224" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">try</text>
+      <line x1="500" y1="172" x2="575" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="575" y="224" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">CP</text>
+      <line x1="575" y1="230" x2="535" y2="262" stroke="#999" stroke-width="1.5"/>
+      <text x="535" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">PRO</text>
+      <text x="563" y="282" text-anchor="start" font-size="10" fill="#8d4d14">i</text>
+      <line x1="575" y1="230" x2="620" y2="262" stroke="#999" stroke-width="1.5"/>
+      <text x="620" y="282" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">I′</text>
+      <text x="620" y="300" text-anchor="middle" font-size="10" font-style="italic" fill="#1a1a1a">to resign</text>
+      <!-- control line: John → PRO -->
+      <path d="M 195,112 Q 360,140 535,272" stroke="#8d4d14" stroke-width="1.5" fill="none" stroke-dasharray="3,3" marker-end="url(#arrowRc3)"/>
+      <text x="335" y="135" text-anchor="middle" font-size="10" fill="#8d4d14">control</text>
+    </svg>
+    <div class="concept">
+      <div class="c-title">진단 (Control 증거 — raising과 반대)</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">① Expletive 불허</div>
+          <div class="gi-body"><span class="eg-line eg-bad" style="font-size:12px">*There tried to be a problem.</span><span style="font-size:12px">matrix subject가 theta-position이므로</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">② Idiom chunk 깨짐</div>
+          <div class="gi-body"><span class="eg-line eg-bad" style="font-size:12px">*The cat tried to be out of the bag.</span><span style="font-size:12px">idiom 의미 유지 불가</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="eg">
+      <span class="eg-line eg-ok">The researchers planned to start their project.</span>
+      <span class="eg-line eg-ok">The candidate was keen to support his opponent.</span>
+      <span class="eg-line eg-ok">I threatened to leave.</span>
+      <span class="eg-note">planned · be keen · threaten 모두 subject control — matrix subject에 theta-role 부여</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2012 1차</strong> — <span class='kw1'>SC</span>: planned / preferred / be relieved / be keen 등 control 술어를 raising 술어와 분류</p>
+      <p><strong>2013 1차 Q34</strong> — <span class='kw1'>control</span>·<span class='kw1'>PRO</span>·<span class='kw1'>raising</span>: <em>I decided to go</em>(SC) 등 control 구문과 PRO</p>
+      <p><strong>2015 1차 기입3</strong> — <span class='kw3'>raising verb</span>·<span class='kw3'>control verb</span> 구분</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑤ Object Control -->
+<div class="sec" id="object-control">
+  <div class="sec-header" onclick="toggle('object-control')">
+    <span class="sec-icon">👉</span>
+    <span class="sec-title">⑤ Object Control (OC)</span>
+    <span class="sec-tag">persuade · 목적어가 PRO control</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>Object control verbs</span> (<em>persuade, order, force, allow, motivate, advise, remind, tell, convince</em>) assign a theta-role to their <span class='kw4'>matrix object</span>. The embedded PRO is controlled by the matrix <span class='kw2'>object</span> (not the subject).</div>
+      <p class="note">matrix object 자리는 <span class='kw2'>theta-position</span> — NP는 진짜 목적어이므로 expletive·idiom chunk가 올 수 없다.</p>
+      <p class="note">이것이 <span class='kw4'>persuade(OC)</span> vs <span class='kw4'>believe(SOR)</span>를 가르는 핵심 — 둘 다 표면 <em>V + NP + to-VP</em>이지만 NP의 자격이 다르다.</p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowRc4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#8d4d14"/></marker>
+      </defs>
+      <text x="330" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">OC: We persuaded Mary_i [ PRO_i to resign ] — matrix object가 PRO를 control</text>
+      <text x="330" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#3b3f86">IP</text>
+      <line x1="330" y1="52" x2="180" y2="88" stroke="#999" stroke-width="1.5"/>
+      <text x="180" y="108" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">We</text>
+      <line x1="330" y1="52" x2="440" y2="88" stroke="#999" stroke-width="1.5"/>
+      <text x="440" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">I′</text>
+      <line x1="440" y1="114" x2="500" y2="146" stroke="#999" stroke-width="1.5"/>
+      <text x="500" y="166" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">VP</text>
+      <!-- V (persuaded) -->
+      <line x1="500" y1="172" x2="400" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="400" y="224" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">persuade</text>
+      <!-- NP object (Mary) -->
+      <line x1="500" y1="172" x2="480" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="480" y="224" text-anchor="middle" font-size="12" font-style="italic" fill="#8d4d14">Mary</text>
+      <text x="510" y="224" text-anchor="start" font-size="10" fill="#8d4d14">i</text>
+      <!-- embedded CP -->
+      <line x1="500" y1="172" x2="585" y2="204" stroke="#999" stroke-width="1.5"/>
+      <text x="585" y="224" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">CP</text>
+      <line x1="585" y1="230" x2="545" y2="262" stroke="#999" stroke-width="1.5"/>
+      <text x="545" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">PRO</text>
+      <text x="573" y="282" text-anchor="start" font-size="10" fill="#8d4d14">i</text>
+      <line x1="585" y1="230" x2="625" y2="262" stroke="#999" stroke-width="1.5"/>
+      <text x="625" y="282" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">I′</text>
+      <text x="625" y="300" text-anchor="middle" font-size="10" font-style="italic" fill="#1a1a1a">to resign</text>
+      <!-- control line: Mary → PRO -->
+      <path d="M 490,228 Q 530,248 545,272" stroke="#8d4d14" stroke-width="1.5" fill="none" stroke-dasharray="3,3" marker-end="url(#arrowRc4)"/>
+      <text x="552" y="250" text-anchor="middle" font-size="10" fill="#8d4d14">control</text>
+    </svg>
+    <div class="concept">
+      <div class="c-title">persuade(OC) vs believe(SOR) — 핵심 대조</div>
+      <div class="eg">
+        <span class="eg-line eg-bad">*Ed persuaded there to be a party.</span>
+        <span class="eg-line eg-ok">Ed believes there to be a problem.</span>
+        <span class="eg-note">expletive: persuade 불허(목적어 theta-position) / believe 허용(하위절 주어)</span>
+        <span class="eg-line">Ed persuaded Brian to interview Melanie.  ≠  Ed persuaded Melanie to be interviewed by Brian.</span>
+        <span class="eg-note">voice transparency 실패: 두 문장 모두 정문이지만 <strong>의미가 다름</strong>(≠) — persuade가 목적어를 theta-mark하기 때문. ECM(believe)에서만 능동·수동 하위절이 동의</span>
+        <span class="eg-line eg-ok">John persuaded Sue that she should obey her parents.</span>
+        <span class="eg-note">persuade는 finite CP 보문도 취함 — SOR(believe)와 또 다른 차이</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2013 1차</strong> — <span class='kw1'>OC</span>: <em>You allowed us to come in</em> / <em>He ordered us to get out</em> 등 object control</p>
+      <p><strong>2019 1차 기입3</strong> — <span class='kw4'>object control</span> vs <span class='kw1'>S-O Raising</span>: <em>John persuaded Sue to obey</em>(OC) vs <em>John believed Sue to be obedient</em>(SOR), <em>John motivated Sue …</em>(OC)</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑥ PRO -->
+<div class="sec" id="pro">
+  <div class="sec-header" onclick="toggle('pro')">
+    <span class="sec-icon">👻</span>
+    <span class="sec-title">⑥ PRO</span>
+    <span class="sec-tag">empty subject · controlled vs arbitrary</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>PRO</span> is the phonetically null subject of a non-finite (control) clause — an <span class='kw2'>empty category</span> that bears a theta-role from the embedded predicate. PRO is <span class='kw2'>base-generated</span> (not the result of movement).</div>
+      <p class="note">분포: PRO는 <span class='kw2'>infinitival (to-)clause의 주어 자리</span>에만 나타난다. 정형절 주어나 목적어 자리에는 못 온다.</p>
+      <p class="note">예: <em>I will try PRO to solve the problem</em> — PRO는 <em>solve</em>의 Agent argument로 theta-role을 받는다.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Controlled PRO vs Arbitrary PRO</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">Controlled PRO</div>
+          <div class="gi-body"><span>특정 controller(matrix subject/object)와 coindex</span><span class="eg-line eg-ok" style="font-size:12px">John_i tried [PRO_i to obey].</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Arbitrary PRO (PRO_arb)</div>
+          <div class="gi-body"><span>임의·일반적 지시 (≈ for anyone)</span><span class="eg-line eg-ok" style="font-size:12px">[PRO to go to college] is not essential.</span><span class="eg-line eg-ok" style="font-size:12px">It is not easy [PRO to love our neighbors].</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">PRO vs NP-trace</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">PRO (control)</div>
+          <div class="gi-body"><span>base-generated, 이동 아님</span><span>theta-role 보유</span><span>controller가 control</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">NP-trace (raising/passive)</div>
+          <div class="gi-body"><span>NP-movement의 흔적</span><span>Caseless 자리에서 이동</span><span>moved NP와 coindex</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 이력</div>
+      <p><strong>2013 1차 Q34</strong> — <span class='kw1'>control</span>·<span class='kw1'>PRO</span>·<span class='kw1'>raising</span>: PRO 분석과 raising/control 구분</p>
+      <p><strong>2019 1차 기입3</strong> — <span class='kw1'>control verb</span>·<span class='kw1'>PRO</span>·<span class='kw1'>infinitive</span>: controlled PRO vs arbitrary PRO, obligatory vs optional control</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑦ Diagnostics 요약 -->
+<div class="sec" id="diagnostics">
+  <div class="sec-header" onclick="toggle('diagnostics')">
+    <span class="sec-icon">📊</span>
+    <span class="sec-title">⑦ Diagnostics 요약</span>
+    <span class="sec-tag">SSR · SOR · SC · OC</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">4분류 한눈에 비교</div>
+      <p class="note">표면 어순 <em>NP V (NP) to-VP</em>가 같아도 아래 진단으로 SSR / SOR(ECM) / SC / OC가 갈린다. 가장 빈출되는 판별 포인트.</p>
+      <div class="tbl-wrap">
+        <table class="diag">
+          <thead>
+            <tr><th>진단</th><th>SSR<br>(seem)</th><th>SOR·ECM<br>(believe)</th><th>SC<br>(try)</th><th>OC<br>(persuade)</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>matrix subject에 theta-role</th><td class="n">No</td><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+            <tr><th>matrix object에 theta-role</th><td>—</td><td class="n">No(목적격만)</td><td>—</td><td class="y">Yes</td></tr>
+            <tr><th>하위절 주어</th><td>NP-trace(이동)</td><td>overt NP(목적격)</td><td>PRO</td><td>PRO</td></tr>
+            <tr><th>expletive there/it</th><td class="y">OK</td><td class="y">OK</td><td class="n">*</td><td class="n">*</td></tr>
+            <tr><th>idiom chunk 보존</th><td class="y">OK</td><td class="y">OK</td><td class="n">*</td><td class="n">*</td></tr>
+            <tr><th>voice transparency</th><td class="y">O</td><td class="y">O</td><td>—</td><td class="n">X</td></tr>
+            <tr><th>movement</th><td>NP-movement</td><td>없음(Case in situ)</td><td>없음</td><td>없음</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">동사 분류 빠른 참조</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">SSR (subject-to-subject)</div>
+          <div class="gi-body"><span>seem, appear, be likely, turn out</span><span>be unlikely, be found, prove</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">SOR · ECM</div>
+          <div class="gi-body"><span>believe, expect, want, report</span><span>consider, know</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">SC (subject control)</div>
+          <div class="gi-body"><span>try, plan, decide, hope, intend</span><span>threaten, prefer, refuse, be keen</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">OC (object control)</div>
+          <div class="gi-body"><span>persuade, order, force, allow</span><span>motivate, advise, remind, tell</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">답안 작성 패턴 (합격자 노트)</div>
+      <p class="note"><strong>Raising</strong>: "The matrix predicate assigns no theta-role to its subject; the embedded subject NP undergoes NP-movement to matrix Spec,IP and retains its embedded theta-role."</p>
+      <p class="note"><strong>SOR·ECM</strong>: "The matrix verb assigns objective Case to the embedded subject across the clause boundary; the NP behaves as the subject of the infinitival clause (expletive/idiom/voice transparency)."</p>
+      <p class="note"><strong>Control</strong>: "The matrix verb assigns a theta-role to its subject(SC)/object(OC); the embedded infinitival clause has a PRO subject controlled by the matrix subject/object; no movement."</p>
+    </div>
+  </div>
+</div>
+
+<div class="nav-bottom">
+  <a class="nav-btn" href="./movement_study.html">← Ch.3 Movement</a>
+  <a class="nav-btn next-btn" href="./raising-control.html">OX 풀러 가기 →</a>
+</div>
+</div>
+<script>
+function toggle(id){ document.getElementById(id).classList.toggle('open'); }
+function openSec(id){ const s=document.getElementById(id); s.classList.add('open'); s.scrollIntoView({behavior:'smooth',block:'start'}); }
+</script>
+</body>
+</html>

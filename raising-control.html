@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.4 Raising &amp; Control OX Quiz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">NO. 04 <span>—</span> Raising &amp; Control</span>
+    <span class="header-label">Past-Exam Notebook</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <div class="header-script">Concept Master · Transformational Syntax</div>
+  <p class="header-sub">영어학 · Raising &amp; Control · 임용고시 대비</p>
+  <div class="header-divider"></div>
+</div>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">1 / 40</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:2.5%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div id="nav"></div>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/40</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const Q=[
+
+  /* ── ① Theta Criterion ─────────────────────────────────── */
+  {src:"Theta Criterion",cat:"definition",
+   text:"The <span class='kw1'>Theta Criterion</span> requires that each argument bear one and only one theta-role, and that each theta-role be assigned to one and only one argument.",
+   ans:true,
+   correct:"<span class='kw1'>Theta Criterion</span>의 표준 정의로 정확하다.",
+   why:"Theta Criterion은 argument와 theta-role 사이의 일대일 대응을 요구합니다. 한 argument가 두 theta-role을 받거나, 한 theta-role이 두 argument에 할당되면 위반입니다.",
+   source:"Refs 요지: Each argument bears one and only one theta-role, and each theta-role is assigned to one and only one argument. (Chomsky 1981)"},
+
+  {src:"Theta Criterion",cat:"D-structure · assignment",
+   text:"<span class='kw1'>Theta-roles</span> are assigned at S-structure, after movement has applied, so a moved NP receives its theta-role in its landing site.",
+   ans:false,
+   correct:"theta-role은 <span class='kw2'>D-structure</span>에서 할당되며 movement 후에도 original position의 theta-role이 보존된다.",
+   why:"theta-role은 D-structure에서 결정됩니다. 그래서 raising으로 이동한 NP는 landing site(matrix Spec,IP, non-theta position)가 아니라 original embedded position의 theta-role을 유지합니다.",
+   source:"Refs 요지: Theta-role assignment occurs at D-structure and is preserved across movement.",
+   compare:[{title:"D-structure",desc:"theta-role 할당"},{title:"S-structure",desc:"Case 점검; theta-role 보존됨"}]},
+
+  {src:"Theta Criterion",cat:"theta-position",
+   text:"The surface subject position of a <span class='kw1'>raising verb</span> such as <em>seem</em> is a <span class='kw2'>theta-position</span> to which the verb assigns a theta-role.",
+   ans:false,
+   correct:"raising verb의 surface subject 자리는 <span class='kw2'>non-theta position</span>이다 — 술어가 theta-role을 부여하지 않는다.",
+   why:"raising verb가 subject에 theta-role을 부여하지 않기 때문에 expletive·idiom chunk가 그 자리에 올 수 있습니다. 만약 theta-position이라면 의미가 빈 NP는 허용되지 않을 것입니다.",
+   source:"Refs 요지: The matrix subject of a raising verb is a non-theta position; the verb assigns no theta-role there."},
+
+  {src:"Theta Criterion",cat:"argument 누락 · 위반",
+   text:"The sentence <span class='kw4'>*The committee put the proposal</span> is ungrammatical because <em>put</em> requires both an NP and a PP argument, and omitting the PP leaves a theta-role unassigned, violating the <span class='kw1'>Theta Criterion</span>.",
+   ans:true,
+   correct:"<em>put</em>은 NP와 PP 두 internal argument를 요구한다. PP가 빠지면 theta-role이 할당되지 못해 Theta Criterion 위반.",
+   why:"<em>put</em>은 theme(NP)과 location(PP)을 subcategorize합니다. <em>*The committee put the proposal</em>은 location PP가 없어 해당 theta-role이 실현되지 못하므로 비문입니다. (2025 1차 B-5 출제 각도)",
+   source:"Refs 요지: ditransitive put requires NP+PP; a missing argument violates the Theta Criterion. (2025 1차 B-5)"},
+
+  /* ── ② Subject-to-Subject Raising (SSR) ────────────────── */
+  {src:"SSR",cat:"raising · NP-movement",
+   text:"With a <span class='kw1'>raising verb</span> like <em>seem</em> or <em>appear</em>, the subject of the embedded infinitival clause undergoes <span class='kw1'>NP-movement</span> to the matrix Spec,IP, while the matrix verb assigns no theta-role to that subject.",
+   ans:true,
+   correct:"<span class='kw1'>SSR</span>: 하위절 주어가 matrix Spec,IP로 NP-movement하고, matrix verb는 그 subject에 theta-role을 부여하지 않는다.",
+   why:"raising verb는 one-place predicate로 하위절 전체만 취합니다. matrix subject 자리는 비어 있고 non-theta position이므로, 하위 비정형절 주어가 Case를 받기 위해 그 자리로 이동합니다.",
+   source:"Refs 요지: Subject-to-Subject Raising moves the embedded subject to matrix Spec,IP; the raising verb assigns no theta-role to its subject.",
+   compare:[{title:"Raising (SSR)",desc:"seem, appear, be likely, turn out"},{title:"증거",desc:"expletive · idiom · voice transparency"}]},
+
+  {src:"SSR",cat:"expletive there",
+   text:"The grammaticality of <em>There seem to be several flaws in the design</em> supports a raising analysis of <em>seem</em>, because expletive <em>there</em> can occupy the subject of a raising verb.",
+   ans:true,
+   correct:"expletive <em>there</em>가 raising verb의 surface subject로 가능 → <em>seem</em>은 raising verb.",
+   why:"expletive <em>there</em>는 theta-role을 갖지 않습니다. raising verb는 subject에 theta-role을 부여하지 않으므로 <em>there</em>를 허용합니다. 이것이 raising의 핵심 진단 중 하나입니다.",
+   source:"Refs 요지: Expletive there as the subject of seem confirms a raising analysis."},
+
+  {src:"SSR",cat:"raising vs control 혼동",
+   text:"The sentence <em>The committee seems to review the budget annually</em> involves control, because <em>the committee</em> is base-generated in the matrix subject position and controls a PRO.",
+   ans:false,
+   correct:"<em>seem</em>은 raising verb다. <em>the committee</em>는 PRO를 control하는 것이 아니라 NP-movement로 embedded subject 자리에서 이동한 것이다.",
+   why:"<em>seem</em>은 subject에 theta-role을 부여하지 않으므로 control이 아니라 raising입니다. control 구문이라면 matrix subject가 theta-role을 받아야 하는데, <em>seem</em>은 그렇지 않습니다.",
+   source:"Refs 요지: Seem is a raising verb; its surface subject is moved, not a controller of PRO."},
+
+  {src:"SSR",cat:"voice transparency",
+   text:"The near-synonymy of <em>The inspector seems to have examined the bridge</em> and <em>The bridge seems to have been examined by the inspector</em> shows that <em>seem</em> assigns an Agent theta-role to its surface subject.",
+   ans:false,
+   correct:"오히려 반대다. 이 voice transparency(능동·수동 동의)는 <em>seem</em>이 subject에 theta-role을 부여하지 <strong>않는다</strong>는 증거다.",
+   why:"<em>seem</em>이 어느 주어에도 theta-role을 주지 않기 때문에 하위절 능동·수동 교체가 전체 의미를 바꾸지 않습니다. 만약 subject에 Agent theta-role을 부여한다면 두 문장의 주어가 달라 동의가 성립하지 않을 것입니다.",
+   source:"Refs 요지: Voice transparency (active/passive embedded clause synonymy) diagnoses raising."},
+
+  {src:"SSR",cat:"*probable 함정",
+   text:"The sentence <span class='kw4'>*The candidate is probable to win the election</span> is ungrammatical because <em>probable</em>, unlike <em>likely</em>, does not function as a raising predicate.",
+   ans:true,
+   correct:"<em>probable</em>은 raising 불가, <em>likely</em>는 가능. <em>*~ is probable to VP</em>는 비문.",
+   why:"<em>likely</em>는 raising을 허용해 <em>The candidate is likely to win</em>이 정문이지만, <em>probable</em>은 raising을 허용하지 않아 finite <em>It is probable that …</em> 형태로만 쓰입니다. 이것은 반복 출제된 함정입니다.",
+   source:"Refs 요지: *NP is probable to VP — probable is not a raising predicate, unlike likely.",
+   compare:[{title:"likely",desc:"NP is likely to VP ✓ (raising)"},{title:"probable",desc:"*NP is probable to VP ✗"}]},
+
+{src:"SSR",cat:"idiom chunk",
+   text:"The sentence <em>The cat seems to be out of the bag</em> is ungrammatical, because idiom chunk NPs can never be the subjects of raising verbs.",
+   ans:false,
+   correct:"오히려 정문이다. idiom chunk가 raising verb의 subject로 나타날 수 있다는 것이 raising의 증거다.",
+   why:"raising verb는 subject의 의미 내용을 선택하지 않으므로 idiom chunk(<em>the cat … out of the bag</em>)가 그대로 보존됩니다. control verb였다면 idiom 의미가 깨져 비문이 됩니다.",
+   source:"Refs 요지: Idiom chunk subjects are licensed by raising verbs, evidencing the raising analysis."},
+
+  {src:"SSR",cat:"기출 — Case",
+   text:"The sentence <span class='kw4'>*It is believed the team to win the championship</span> is ungrammatical because <em>the team</em> fails to receive Case in that position and must move to the case-assigned subject position of the finite matrix clause.",
+   ans:true,
+   correct:"<em>the team</em>이 Case를 못 받는 자리에 있어 비문 — case-assigned subject 자리(<em>The team is believed to win</em>)로 이동해야 한다.",
+   why:"raising/passive 술어는 외부논항이 없어 그 NP에 Case를 부여할 통로가 막혀 있습니다. 따라서 <em>the team</em>은 정형 matrix clause의 nominative subject 자리로 이동해야 합니다. (2024 1차 A-7 출제 각도)",
+   source:"Refs 요지: The NP must move to a case-assigned subject position; raising predicates lack an external argument. (2024 1차 A-7)"},
+
+  /* ── ③ Subject-to-Object Raising & ECM (SOR) ───────────── */
+  {src:"SOR · ECM",cat:"exceptional Case",
+   text:"With verbs like <em>believe</em>, <em>expect</em>, and <em>consider</em>, the matrix verb exceptionally assigns <span class='kw1'>objective Case</span> to the subject of the embedded infinitival clause across the clause boundary.",
+   ans:true,
+   correct:"<span class='kw1'>ECM</span>: believe류 동사는 하위절 주어에 목적격을 예외적으로 부여한다.",
+   why:"<em>I believe him to be honest</em>에서 <em>him</em>은 목적격을 받지만 <em>believe</em>의 의미상 목적어가 아니라 하위절(<em>to be honest</em>)의 주어입니다. matrix verb가 절 경계를 넘어 Case를 부여하는 것이 Exceptional Case Marking입니다.",
+   source:"Refs 요지: ECM verbs assign objective Case to the embedded subject across the clause boundary.",
+   compare:[{title:"SOR · ECM",desc:"believe, expect, want, consider"},{title:"NP의 자격",desc:"하위절 주어 (목적격)"}]},
+
+  {src:"SOR · ECM",cat:"expletive 진단",
+   text:"The grammaticality of <em>The editor believes there to be an error in the draft</em> shows that <em>there</em> is the direct object of <em>believe</em>, receiving a theta-role from it.",
+   ans:false,
+   correct:"<em>there</em>는 <em>believe</em>의 목적어가 아니라 하위절 주어다. expletive는 theta-role을 못 받으므로 목적어일 수 없다.",
+   why:"expletive <em>there</em>가 가능하다는 것은 그 자리가 theta-role 없는 자리(하위절 주어)임을 보여줍니다. <em>believe</em>가 <em>there</em>에 theta-role을 부여한다면 의미 없는 expletive는 허용되지 않았을 것입니다.",
+   source:"Refs 요지: Expletive there/it after believe shows the NP is the embedded subject (ECM)."},
+
+  {src:"SOR · ECM",cat:"voice transparency",
+   text:"<em>Ed believes the jury to have reached the verdict</em> and <em>Ed believes the verdict to have been reached by the jury</em> are <em>not</em> truth-conditionally equivalent, because <em>believe</em> assigns a distinct theta-role to the NP in each version.",
+   ans:false,
+   correct:"두 문장은 동의다(voice transparency). <em>believe</em>는 NP가 아니라 하위절 전체에 theta-role을 부여하기 때문이다.",
+   why:"ECM 구문에서 <em>believe</em>의 theta-role은 하위절 전체에 부여되므로 하위절 내부 능동·수동 교체는 진리조건을 바꾸지 않습니다. 이것이 NP가 theta-marked 목적어가 아니라 하위절 주어임을 보여줍니다.",
+   source:"Refs 요지: Voice transparency holds for believe because it theta-marks the clause, not the NP."},
+
+  {src:"SOR · ECM",cat:"single complement",
+   text:"The sentence <span class='kw4'>*The manager believes Tom that he has resigned</span> is grammatical because <em>believe</em> can take both an NP object and a finite clause.",
+   ans:false,
+   correct:"비문이다. ECM 동사는 <span class='kw2'>single clausal complement</span>만 취하며 두 개의 internal argument(NP + that-clause)를 허용하지 않는다.",
+   why:"<em>believe</em>는 <em>John believes Bill to have slept</em>처럼 하나의 절 보문만 취합니다. NP와 that-clause를 동시에 취하는 <em>*believes Tom that …</em>은 비문입니다.",
+   source:"Refs 요지: ECM verbs allow only a single clausal complement, not NP + that-clause.",
+   compare:[{title:"정문",desc:"John believes Bill to have slept."},{title:"비문",desc:"*John believes Bill that he has slept."}]},
+
+  {src:"SOR · ECM",cat:"want · main passive",
+   text:"The sentence <span class='kw4'>*Robert was wanted by Jean to leave early</span> is ungrammatical because <em>want</em>, unlike <em>believe</em>, resists main-clause passivization of the embedded subject.",
+   ans:true,
+   correct:"<em>want</em>은 숨은 <em>for</em>(Case) 때문에 main clause passivize가 불가능 — <em>believe</em>와의 차이.",
+   why:"<em>want</em>은 expletive·voice transparency에서는 believe와 같지만, 하위절 앞 보이지 않는 <em>for</em>가 Case를 처리하기 때문에 상위절 수동화(<em>*Robert was wanted by Jean …</em>)가 막힙니다.",
+   source:"Refs 요지: want blocks main-clause passivization (hidden for/Case), unlike believe."},
+
+  {src:"SOR · ECM",cat:"expect · 이중 frame",
+   text:"The verb <em>expect</em> appears only in a subject-to-object raising frame, so <span class='kw4'>*The coach expects to win</span> (without an embedded subject) is ungrammatical.",
+   ans:false,
+   correct:"<em>expect</em>은 subject control frame(<em>expects to win</em>)과 SOR frame(<em>expects the team to win</em>) 둘 다 가능하다.",
+   why:"<em>The coach expects to win</em>은 PRO 주어를 가진 control 구문으로 정문입니다. <em>expect</em>은 control과 ECM/SOR 두 frame 모두에 나타나는 동사입니다.",
+   source:"Refs 요지: expect takes both a control frame and an ECM/SOR frame."},
+
+{src:"SOR · ECM",cat:"likely vs believe",
+   text:"The contrast between <span class='kw4'>*It is likely Bill to be late</span> and <em>Bill is believed to be late</em> shows that <em>likely</em> cannot assign Case to the embedded subject, whereas <em>believe</em> can.",
+   ans:true,
+   correct:"<em>likely</em>는 하위절 주어에 Case 부여 불가(*It is likely Bill to ~), <em>believe</em>는 가능 — 2007 기출 대조.",
+   why:"<em>likely</em>는 형용사로 하위절 주어에 목적격을 줄 수 없어 raising(<em>Bill is likely to be late</em>)으로만 처리됩니다. <em>believe</em>는 ECM으로 목적격을 부여할 수 있습니다. (2007 1차 출제 각도)",
+   source:"Refs 요지: likely cannot Case-mark the embedded subject; believe can (ECM). (2007 1차)"},
+
+  {src:"SOR · ECM",cat:"*for 차단",
+   text:"The sentence <span class='kw4'>*I believe for the witness to be lying</span> is ungrammatical because the complement of an ECM verb like <em>believe</em> is a bare clause without the complementizer <em>for</em>.",
+   ans:true,
+   correct:"ECM 동사 <em>believe</em>의 보문에는 complementizer <em>for</em>가 올 수 없다 → <em>*believe for NP to VP</em>는 비문.",
+   why:"ECM 구문의 보문은 complementizer 없는 절이어서 matrix verb가 직접 하위절 주어에 Case를 부여합니다. <em>for</em>가 들어가면 그 Case 부여 통로가 막혀 비문이 됩니다.",
+   source:"Refs 요지: ECM complements lack the complementizer for; *believe for NP to VP."},
+
+  /* ── ④ Subject Control (SC) ────────────────────────────── */
+  {src:"Subject Control",cat:"theta-role · PRO",
+   text:"A <span class='kw1'>subject control verb</span> such as <em>try</em> or <em>decide</em> assigns a theta-role to its subject, and the embedded infinitival clause has a <span class='kw1'>PRO</span> subject controlled by the matrix subject.",
+   ans:true,
+   correct:"<span class='kw1'>subject control</span>: matrix verb가 subject에 theta-role 부여, 하위절 주어는 matrix subject가 control하는 PRO. 이동 없음.",
+   why:"<em>John tried PRO to resign</em>에서 <em>try</em>는 <em>John</em>에 agent theta-role을 부여하고, 하위절 주어 PRO는 <em>John</em>과 coindex됩니다. NP-movement는 일어나지 않습니다.",
+   source:"Refs 요지: Subject control verbs theta-mark their subject; the embedded PRO is controlled by the matrix subject.",
+   compare:[{title:"Subject Control",desc:"try, decide, plan, hope"},{title:"하위절 주어",desc:"PRO (matrix subject가 control)"}]},
+
+  {src:"Subject Control",cat:"expletive 불허",
+   text:"The sentence <em>There tried to be a solution to the crisis</em> is grammatical, since <em>try</em>, like <em>seem</em>, takes an infinitival complement and allows an expletive subject.",
+   ans:false,
+   correct:"비문이다. <em>try</em>는 subject에 theta-role을 부여하는 control verb이므로 expletive <em>there</em>가 올 수 없다.",
+   why:"control verb의 subject 자리는 theta-position이라 의미 없는 expletive를 허용하지 않습니다(<em>*There tried to be …</em>). 보문이 비정형이라는 점은 raising/control을 가르지 못합니다 — <em>seem</em>과 달리 <em>try</em>는 raising이 아닙니다.",
+   source:"Refs 요지: Control verbs reject expletive subjects because the subject is a theta-position."},
+
+  {src:"Subject Control",cat:"control vs raising 혼동",
+   text:"The sentence <em>The researcher decided to publish the findings</em> involves raising, because <em>decide</em> assigns no theta-role to its subject.",
+   ans:false,
+   correct:"<em>decide</em>는 subject control verb다. matrix subject <em>the researcher</em>에 theta-role(agent)을 부여하므로 raising이 아니다.",
+   why:"<em>decide, try, plan, hope, intend</em>는 subject에 agent theta-role을 부여하는 control verb입니다. 하위절에는 PRO가 있고, 이동은 일어나지 않습니다.",
+   source:"Refs 요지: decide is a subject control verb assigning an agent theta-role to its subject."},
+
+  {src:"Subject Control",cat:"idiom chunk 불허",
+   text:"The idiom-reading sentence <span class='kw4'>*The cat managed to be out of the bag</span> is ungrammatical because the control verb <em>manage</em> requires its subject to bear a theta-role, which the idiom chunk cannot satisfy.",
+   ans:true,
+   correct:"control verb는 subject에 theta-role을 요구하므로 idiom chunk가 subject로 올 수 없다 → idiom 해석 불가.",
+   why:"idiom chunk는 고정 표현의 일부라 독립적 theta-role을 받을 수 없습니다. control verb <em>manage</em>가 subject에 theta-role을 부여하므로 idiom 해석은 비문이 됩니다. raising verb였다면 정문입니다.",
+   source:"Refs 요지: Idiom chunk subjects are blocked with control verbs (theta-position)."},
+
+  {src:"Subject Control",cat:"술어 식별",
+   text:"In <em>The intern threatened to resign before the deadline</em>, the verb <em>threaten</em> is a subject control verb, so the understood subject of <em>resign</em> is a PRO controlled by <em>the intern</em>.",
+   ans:true,
+   correct:"<em>threaten</em>은 subject control verb — <em>resign</em>의 주어는 <em>the intern</em>이 control하는 PRO.",
+   why:"<em>threaten, plan, prefer, be keen, be relieved</em>는 subject control 술어입니다. matrix subject가 하위절 PRO를 control하며 theta-role을 받습니다.",
+   source:"Refs 요지: threaten / plan / prefer / be keen are subject control predicates."},
+
+  /* ── ⑤ Object Control (OC) ─────────────────────────────── */
+  {src:"Object Control",cat:"object가 PRO control",
+   text:"An <span class='kw1'>object control verb</span> such as <em>persuade</em> assigns a theta-role to its matrix object, and the embedded PRO is controlled by that <span class='kw2'>object</span> rather than the subject.",
+   ans:true,
+   correct:"<span class='kw1'>object control</span>: matrix object에 theta-role 부여, 하위절 PRO는 그 object가 control.",
+   why:"<em>We persuaded Mary PRO to resign</em>에서 <em>Mary</em>는 <em>persuade</em>의 진짜 목적어로 theta-role을 받고, 하위절 PRO를 control합니다. PRO의 지시는 matrix subject가 아니라 object입니다.",
+   source:"Refs 요지: Object control verbs theta-mark the matrix object, which controls the embedded PRO.",
+   compare:[{title:"Object Control",desc:"persuade, order, force, advise"},{title:"PRO controller",desc:"matrix object"}]},
+
+  {src:"Object Control",cat:"expletive 불허",
+   text:"The sentence <em>We persuaded there to be a meeting on Friday</em> is grammatical, exactly parallel to <em>We believe there to be a problem</em>.",
+   ans:false,
+   correct:"비문이다. <em>persuade</em>의 NP는 theta-role을 받는 진짜 목적어라 expletive <em>there</em>가 올 수 없다 — <em>believe</em>(ECM)와 정반대.",
+   why:"<em>believe</em>는 그 NP에 theta-role을 안 줘서 expletive가 가능하지만(<em>believes there to be …</em>), <em>persuade</em>는 목적어를 theta-mark하므로 <em>*persuaded there …</em>는 비문입니다. 두 동사는 표면 어순만 같습니다.",
+   source:"Refs 요지: persuade rejects expletive there (object is a theta-position), unlike believe."},
+
+  {src:"Object Control",cat:"voice transparency 실패",
+   text:"<em>We persuaded the doctor to examine Mary</em> and <em>We persuaded Mary to be examined by the doctor</em> are synonymous, just as the corresponding <em>believe</em> sentences are.",
+   ans:false,
+   correct:"두 persuade 문장은 동의가 <strong>아니다</strong>. <em>persuade</em>가 목적어를 theta-mark하므로 누구를 설득했는지가 의미를 바꾼다.",
+   why:"<em>persuade</em>는 목적어에 theta-role을 부여하므로 의사를 설득한 사건과 Mary를 설득한 사건이 다릅니다 → voice transparency 실패. ECM(<em>believe</em>)에서만 능동·수동 하위절이 동의입니다.",
+   source:"Refs 요지: persuade fails voice transparency because it theta-marks its object."},
+
+  {src:"Object Control",cat:"persuade vs believe 구조",
+   text:"<em>John persuaded Sue to leave</em> and <em>John believed Sue to leave</em> have the same syntactic structure because <em>Sue</em> is the embedded subject in both.",
+   ans:false,
+   correct:"두 구조는 다르다. <em>persuade</em>에서 <em>Sue</em>는 matrix object(theta-role 받음), <em>believe</em>에서 <em>Sue</em>는 하위절 주어(목적격만 받음).",
+   why:"<em>persuade</em>(object control)는 <em>Sue</em>를 목적어로 theta-mark하고 하위절 PRO를 control합니다. <em>believe</em>(ECM)는 <em>Sue</em>를 하위절 주어로 두고 목적격만 줍니다. expletive·voice transparency가 둘을 구별합니다.",
+   source:"Refs 요지: persuade (object control) and believe (ECM) differ: matrix object vs embedded subject."},
+
+  {src:"Object Control",cat:"finite CP 보문",
+   text:"The grammaticality of <em>The officer persuaded the driver that he should pull over</em> shows that <em>persuade</em> can also take a finite CP complement, unlike an ECM verb.",
+   ans:true,
+   correct:"<em>persuade</em>는 finite CP 보문(<em>… that he should …</em>)도 취한다 — ECM 동사와의 또 다른 차이.",
+   why:"object control verb <em>persuade</em>는 목적어 + 비정형 보문, 또는 목적어 + finite that-clause를 취할 수 있습니다. 반면 ECM 동사는 single clausal complement만 취합니다.",
+   source:"Refs 요지: persuade also takes a finite CP complement (persuade NP that S), unlike ECM verbs."},
+
+  {src:"Object Control",cat:"술어 식별",
+   text:"In <em>The principal advised the students to revise their essays</em>, the verb <em>advise</em> is an object control verb, so the understood subject of <em>revise</em> is controlled by <em>the students</em>.",
+   ans:true,
+   correct:"<em>advise</em>는 object control verb — <em>revise</em>의 주어 PRO는 <em>the students</em>가 control.",
+   why:"<em>advise, order, force, remind, motivate, tell, allow</em>는 object control 술어입니다. matrix object가 하위절 PRO를 control하며 theta-role을 받습니다.",
+   source:"Refs 요지: advise / order / force / remind / motivate are object control predicates."},
+
+  /* ── ⑥ PRO ─────────────────────────────────────────────── */
+  {src:"PRO",cat:"empty subject · theta-role",
+   text:"<span class='kw1'>PRO</span> is the phonetically null subject of a non-finite control clause; it bears a theta-role from the embedded predicate and is base-generated rather than created by movement.",
+   ans:true,
+   correct:"<span class='kw1'>PRO</span>는 비정형 control 절의 음성 없는 주어로, 하위 술어의 theta-role을 받고 base-generated된다.",
+   why:"<em>I will try PRO to solve the problem</em>에서 PRO는 <em>solve</em>의 agent argument로 theta-role을 받습니다. PRO는 이동의 산물(trace)이 아니라 D-structure에서 생성된 empty category입니다.",
+   source:"Refs 요지: PRO is the base-generated null subject of a non-finite clause, bearing a theta-role.",
+   compare:[{title:"PRO",desc:"base-generated, theta-role 보유"},{title:"controller",desc:"matrix subject/object"}]},
+
+  {src:"PRO",cat:"분포",
+   text:"PRO can appear freely as the subject of a finite clause, as in <span class='kw4'>*The teacher hopes PRO will arrive early</span>.",
+   ans:false,
+   correct:"PRO는 비정형 to-clause의 주어 자리에만 나타난다. 정형절 주어(<em>*PRO will arrive</em>)나 목적어 자리에는 올 수 없다.",
+   why:"PRO의 분포는 비정형절 주어로 제한됩니다. <em>*The teacher hopes PRO will arrive early</em>처럼 정형절 주어 자리에는 PRO가 올 수 없습니다.",
+   source:"Refs 요지: PRO occurs only as the subject of a non-finite (to-infinitival) clause."},
+
+  {src:"PRO",cat:"arbitrary PRO",
+   text:"In <em>[PRO to remain silent during the test] is sometimes the wisest choice</em>, the PRO has arbitrary reference (roughly 'for anyone') rather than a specific controller.",
+   ans:true,
+   correct:"controller 없는 generic 지시의 PRO = <span class='kw2'>arbitrary PRO</span> (PRO_arb).",
+   why:"matrix에 control할 NP가 없는 환경에서 PRO는 임의·일반적 지시를 갖습니다(≈ for anyone). <em>It is not easy PRO to love our neighbors</em>도 같은 arbitrary PRO입니다.",
+   source:"Refs 요지: Arbitrary PRO (PRO_arb) has generic reference when no controller is present.",
+   compare:[{title:"Controlled PRO",desc:"John tried PRO to obey. (PRO=John)"},{title:"Arbitrary PRO",desc:"[PRO to remain silent] is wise."}]},
+
+  {src:"PRO",cat:"PRO vs NP-trace",
+   text:"An NP-trace and a PRO are the same kind of empty category, since both are produced by NP-movement.",
+   ans:false,
+   correct:"다르다. PRO는 base-generated(이동 아님)이고 theta-role을 보유한다. NP-trace는 NP-movement가 남긴 흔적이다.",
+   why:"PRO는 control 절에 base-generated되어 theta-role을 받습니다. NP-trace는 raising/passive의 NP-movement가 Caseless 자리에 남긴 empty category로, 이동한 NP와 coindex됩니다. 생성 방식이 근본적으로 다릅니다.",
+   source:"Refs 요지: PRO is base-generated (control); NP-trace is left by NP-movement. They are distinct.",
+   compare:[{title:"PRO",desc:"base-generated; theta-role 보유"},{title:"NP-trace",desc:"NP-movement의 흔적"}]},
+
+  {src:"PRO",cat:"controlled PRO",
+   text:"In <em>The volunteer hoped PRO to be selected for the program</em>, the PRO is controlled by — and therefore coindexed with — <em>the volunteer</em>.",
+   ans:true,
+   correct:"controlled PRO: <em>hope</em>의 subject <em>the volunteer</em>가 하위절 PRO를 control(coindex).",
+   why:"subject control verb <em>hope</em>의 하위절 PRO는 matrix subject <em>the volunteer</em>와 coindex되어 동일 지시를 갖습니다. <em>selected</em>되는 대상은 자원자 자신입니다.",
+   source:"Refs 요지: Controlled PRO is coindexed with its controller (here the matrix subject)."},
+
+  /* ── ⑦ Diagnostics 종합 ────────────────────────────────── */
+  {src:"Diagnostics",cat:"SOR vs OC 판별",
+   text:"Although <em>believe NP to-VP</em> and <em>persuade NP to-VP</em> share the same surface order, they are distinguished by expletive licensing and voice transparency.",
+   ans:true,
+   correct:"표면 어순이 같아도 expletive·voice transparency로 <span class='kw1'>SOR(believe)</span>와 <span class='kw1'>OC(persuade)</span>를 구별한다.",
+   why:"<em>believe</em>는 expletive <em>there</em>·voice transparency를 허용(NP가 하위절 주어)하고, <em>persuade</em>는 둘 다 불허(NP가 theta-marked 목적어)합니다. 이것이 두 구문을 가르는 표준 진단입니다.",
+   source:"Refs 요지: believe (SOR/ECM) vs persuade (OC) are distinguished by expletive and voice-transparency tests."},
+
+  {src:"Diagnostics",cat:"expletive 적용 범위",
+   text:"Expletive <em>there</em> can serve as the embedded subject with both <em>seem</em> and <em>try</em>, since both take infinitival complements.",
+   ans:false,
+   correct:"<em>seem</em>(raising)은 expletive <em>there</em>를 허용하지만 <em>try</em>(control)는 불허한다.",
+   why:"<em>There seems to be a problem</em>은 정문이지만 <em>*There tried to be a problem</em>은 비문입니다. raising은 subject가 non-theta position이라 expletive를 허용하고, control은 theta-position이라 불허합니다. 보문이 비정형이라는 점만으로 판별할 수 없습니다.",
+   source:"Refs 요지: Expletive there is licensed by raising (seem) but not by control (try)."},
+
+  {src:"Diagnostics",cat:"say passive · raising",
+   text:"The sentence <em>The suspect was said to have left the country</em> is grammatical, with the passive of <em>say</em> behaving like a raising predicate.",
+   ans:true,
+   correct:"<em>be said to VP</em>는 정문 — passive <em>say</em>가 raising 술어처럼 행동한다.",
+   why:"<em>say</em>의 수동형 <em>be said to</em>는 하위절 주어를 matrix 주어로 raising하는 구문으로 쓰입니다. <em>It was said that the suspect had left</em>과 동의이며, theta-role을 subject에 부여하지 않습니다. (2009 1차 출제 각도)",
+   source:"Refs 요지: be said to VP behaves as a raising construction (passive of say). (2009 1차)"},
+
+  {src:"Diagnostics",cat:"idiom chunk 적용 범위",
+   text:"An idiom chunk subject is grammatical with all four predicate types — <em>seem</em>, <em>believe</em>, <em>try</em>, and <em>persuade</em> — because idioms are fixed expressions.",
+   ans:false,
+   correct:"idiom chunk는 raising(seem)·ECM(believe)에서만 OK, control(try·persuade)에서는 비문이다.",
+   why:"raising·ECM 술어는 그 자리에 theta-role을 주지 않아 idiom chunk를 보존하지만, control 술어(try=subject, persuade=object)는 theta-role을 부여해 idiom 의미를 깨뜨립니다.",
+   source:"Refs 요지: Idiom chunk subjects: OK with raising/ECM, blocked with control verbs.",
+   compare:[{title:"OK (theta-role 안 줌)",desc:"seem, believe"},{title:"비문 (theta-role 줌)",desc:"try, persuade"}]},
+
+  {src:"Diagnostics",cat:"핵심 기준",
+   text:"Raising constructions and control constructions are ultimately distinguished by whether the matrix predicate assigns a theta-role to the relevant matrix position.",
+   ans:true,
+   correct:"raising vs control의 궁극적 기준 = matrix 자리에 theta-role이 할당되는가.",
+   why:"raising 술어는 matrix subject에 theta-role을 주지 않아(non-theta position) NP-movement·expletive·idiom·voice transparency를 허용합니다. control 술어는 matrix subject/object에 theta-role을 주어(theta-position) 이들을 막습니다. 모든 진단이 이 한 기준으로 환원됩니다.",
+   source:"Refs 요지: The raising/control distinction reduces to whether the matrix position is a theta-position."}
+];
+
+const TOTAL=Q.length;
+const SAVE_KEY='linguistics_raising_control_quiz_v1';
+let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
+function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
+function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
+function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function getScore(){return answers.filter(a=>a&&a.correct).length;}
+function renderNav(){
+  document.getElementById('nav').innerHTML=answers.map((_,i)=>{
+    const a=answers[i];
+    const cls=i===cur?'nd cur':a===null?'nd':a.correct?'nd ok':'nd ng';
+    return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
+  }).join('');
+}
+function jumpTo(i){cur=i;render();}
+function renderExp(q,isCorrect){
+  const three=q.compare&&q.compare.length===3;
+  const cmp=q.compare?`
+    <div class="sec-label">📊 비교 정리</div>
+    <div class="compare${three?' three':''}">
+      ${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}
+    </div>`:'';
+  return `<div class="exp show">
+    <div class="exp-header"><span>${isCorrect?'✅ 정답':'❌ 오답'} · 해설</span></div>
+    <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
+    <div class="exp-body">
+      <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
+      <div class="sec-label">📌 Source</div>
+      <div class="def-box"><p>${q.source}</p></div>
+      ${cmp}
+    </div>
+  </div>`;
+}
+function render(){
+  if(cur>=TOTAL){
+    document.getElementById('qa').style.display='none';
+    document.getElementById('sc').classList.add('show');
+    const s=getScore();
+    document.getElementById('fs').textContent=s;
+    const p=s/TOTAL;
+    document.getElementById('rm').textContent=p===1?'🎉 Perfect!':p>=.8?'👏 Great!':p>=.6?'😊 Good!':'💪 Keep going!';
+    document.getElementById('rs').textContent=`${TOTAL}문제 중 ${s}문제 정답 (${Math.round(p*100)}%)`;
+    setTimeout(function(){window.showScorePopup&&window.showScorePopup(s,TOTAL);},400);
+    renderNav();return;
+  }
+  document.getElementById('sc').classList.remove('show');
+  document.getElementById('qa').style.display='block';
+  renderNav();
+  const q=Q[order[cur]];
+  document.getElementById('bf').style.width=((cur+1)/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('pt').textContent=`${cur+1} / ${TOTAL}`;
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  const a=answers[cur];
+  if(a!==null){
+    let oBtnCls='',xBtnCls='';
+    if(a.picked===true){oBtnCls=a.correct?'co':'wp';if(!a.correct)xBtnCls='cx';}
+    else{xBtnCls=a.correct?'cx':'wp';if(!a.correct)oBtnCls='co';}
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn ${oBtnCls}" disabled>⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn ${xBtnCls}" disabled>❌<span class="lb">WRONG</span></button>
+        </div>
+        <div class="badge ${a.correct?'ok':'ng'}">${a.correct?'✅ 정답!':'❌ 오답! 정답은 '+(q.ans?'O':'X')}</div>
+        <div>${renderExp(q,a.correct)}</div>
+        <button class="next-btn show" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }else{
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn" onclick="pick(true)" id="ob">⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn" onclick="pick(false)" id="xb">❌<span class="lb">WRONG</span></button>
+        </div>
+        <div id="bd" class="badge"></div>
+        <div id="ep"></div>
+        <button class="next-btn" id="nb" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }
+}
+function pick(val){
+  const q=Q[order[cur]];
+  document.getElementById('ob').disabled=true;
+  document.getElementById('xb').disabled=true;
+  const ok=val===q.ans;
+  answers[cur]={picked:val,correct:ok};
+  if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
+  const bd=document.getElementById('bd');
+  bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
+  bd.className='badge '+(ok?'ok':'ng');
+  document.getElementById(val?'ob':'xb').classList.add(ok?(val?'co':'cx'):'wp');
+  if(!ok)document.getElementById(q.ans?'ob':'xb').classList.add(q.ans?'co':'cx');
+  document.getElementById('ep').innerHTML=renderExp(q,ok);
+  document.getElementById('nb').classList.add('show');
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  renderNav();
+}
+function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
+function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
+(function(){
+  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
+    cur=saved.cur;answers=saved.answers;
+    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+    const done=answers.filter(a=>a!==null).length;
+    if(done>0){
+      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
+      document.getElementById('rb').style.display='block';
+    }
+  }
+  updateModeUI();renderNav();render();
+})();
+</script>
+</body>
+</html>
