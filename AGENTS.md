@@ -1,4 +1,6 @@
-# linguistics — AGENTS.md (Codex)
+# linguistics
+
+이 파일이 canonical 작업 지침이다. `CLAUDE.md`(Claude Code)와 `AGENTS.md`(Codex)는 같은 파일이다(symlink). Claude Code·Codex 공통.
 
 임용고시 대비 영어학(English Linguistics) OX 퀴즈 + 개념 정리 웹 애플리케이션. 순수 HTML/CSS/JS (백엔드 없음).
 
@@ -9,7 +11,9 @@
 
 ## 🚨 운영 원칙 (최우선)
 
-- **Git 워크플로우는 Codex 앱 기준으로 처리.** 작업 완료 후 필요한 검증을 먼저 하고, 커밋은 사용자가 요청했거나 작업 단위가 명확할 때 수행한다. 푸시·PR·배포처럼 외부에 보이는 작업은 명시 요청이 있을 때 진행한다.
+- **Git 워크플로우**: 작업 완료 후 필요한 검증을 먼저 하고, 커밋은 사용자가 요청했거나 작업 단위가 명확할 때 수행한다. 푸시·PR·배포처럼 외부에 보이는 작업은 명시 요청이 있을 때 진행한다.
+- **브랜치 prefix**: 사용하는 도구 관례를 따른다 (Claude Code `claude/`, Codex `codex/`).
+- **커밋 트레일러** (`Co-Authored-By: Claude…`)는 도구 기본 동작을 따르되 강제하지 않는다. Codex 커밋에는 넣지 않는다.
 - **사용자에게 묻는 건 겁나 중요한 것만** — 콘텐츠 방향·삭제·되돌리기 불가한 결정 등. 기술적 세부사항은 묻지 않는다.
 
 ---
@@ -26,7 +30,7 @@
 - 정태구 자료에 한글 표현이 명시되어 있으면 그 표현을 채택 (예: 정태구가 사용하는 한글 표현이 있으면 그것을 우선)
 - 정태구에 한글 표현이 없거나 영어 원어로만 등장하면 영어 원어 그대로
 
-> 상세 매핑표·예시·위반 트리거는 **`docs/한글용어.md`** 참조. 정책 원본은 전역 `~/.codex/AGENTS.md` "임용 관련 작업: 한국어 용어 규칙" 및 testmaster `docs/한글용어.md`.
+> 상세 매핑표·예시·위반 트리거는 **`docs/한글용어.md`** 참조. 정책 원본은 전역 지침(`~/.claude/CLAUDE.md` / `~/.codex/AGENTS.md`) "임용 관련 작업: 한국어 용어 규칙" 및 testmaster `docs/한글용어.md`.
 
 ---
 
@@ -55,7 +59,7 @@
    ```
 4. 출력에서 `깨진링크: 0건` 확인. 깨졌으면 anchor 이름 수정.
 
-### 트리거 (Codex 자동 실행)
+### 트리거 (자동 실행)
 
 다음 상황에서 별도 지시 없이 위 절차를 실행한다:
 - 새 `_study.html` 챕터 생성/완성 직후
@@ -70,20 +74,20 @@ GitHub: `https://github.com/Namkicheol/testmaster`
 
 ---
 
-## Codex 작업 가이드
+## 작업 가이드
 
-englisheducation의 디자인·구조를 재사용하되, Claude 전용 스킬 이름에 의존하지 않는다. Codex에서는 아래 순서로 직접 확인하고 작업한다.
+englisheducation의 디자인·구조를 재사용한다. スキル 정의가 있으면 활용하되, 없으면 아래 순서로 직접 확인하고 작업한다.
 
-| 상황 | Codex 기준 처리 |
+| 상황 | 처리 방법 |
 |------|----------------|
 | 디자인 시스템, 색상, kw1~kw4 키워드 스타일 | 기존 완성 파일(`constituency*.html`, `index.html`, `blog/Ch01-*`)을 템플릿으로 비교·복제 |
 | OX 퀴즈 페이지 제작 | `constituency.html`의 `SAVE_KEY`, `TOTAL`, 모드 토글, `Q[]`, script 로드 순서를 기준으로 수정 |
 | 개념 정리 페이지 제작 | `constituency_study.html`의 TOC, `.concept`, `.exam`, 인라인 SVG 패턴을 기준으로 수정 |
-| 챕터 완료 후 점검 | 이 문서의 체크리스트 + `rg` 검색 + 브라우저/정적 확인으로 검증 |
+| 챕터 완료 후 점검 | 이 문서의 체크리스트 + rg/Grep 검색 + 브라우저/정적 확인으로 검증 |
 | 통사론 예문·트리·OX 작성 보조 | refs의 Radford/합격자 노트/기출맥락을 직접 대조하고, 트리는 `_study.html`에 인라인 SVG로 작성 |
-| 이미지 생성 | Canva plugin이 사용 가능하면 Canva, 아니면 Codex `image_gen` 또는 사용자가 지정한 도구 사용 |
+| 이미지 생성 | Canva plugin이 사용 가능하면 Canva, 아니면 Pencil MCP·Gemini / Codex `image_gen` 또는 사용자가 지정한 도구 사용 |
 
-Codex sub-agent는 사용자가 명시적으로 요청했을 때만 사용한다. 자동으로 백그라운드 에이전트를 띄워야 한다는 Claude Code식 규칙은 적용하지 않는다.
+sub-agent(Task 도구 / Codex parallel agent)는 작업 분할이 의미 있을 때만, 사용자가 명시적으로 요청한 경우에 사용한다. 자동으로 백그라운드 에이전트를 띄우는 것은 trivial 작업에 강제 적용하지 않는다.
 
 ---
 
@@ -101,10 +105,10 @@ Codex sub-agent는 사용자가 명시적으로 요청했을 때만 사용한다
 
 | 챕터 | 영역 | 퀴즈 | 개념정리 | 상태 |
 |------|------|------|---------|------|
-| 1. Constituency | Syntax | `constituency.html` | `constituency_study.html` | ⏳ |
-| 2. Phrase Structure | Syntax | `phrase-structure.html` | `phrase-structure_study.html` | ⏳ |
-| 3. Movement | Syntax | `movement.html` | `movement_study.html` | ⏳ |
-| 4. Raising & Control | Syntax | `raising-control.html` | `raising-control_study.html` | ⏳ |
+| 1. Constituency | Syntax | `constituency.html` | `constituency_study.html` | ✅ |
+| 2. Phrase Structure | Syntax | `phrase-structure.html` | `phrase-structure_study.html` | ✅ |
+| 3. Movement | Syntax | `movement.html` | `movement_study.html` | ✅ |
+| 4. Raising & Control | Syntax | `raising-control.html` | `raising-control_study.html` | 🚧 작업 중 |
 | 5. Binding | Syntax | `binding.html` | `binding_study.html` | ⏳ |
 | 6. Morphology | Morphology | `morphology.html` | `morphology_study.html` | ⏳ |
 | 7. Semantics | Semantics | `semantics.html` | `semantics_study.html` | ⏳ |
@@ -226,7 +230,7 @@ Codex sub-agent는 사용자가 명시적으로 요청했을 때만 사용한다
 
 ### 점검 책임
 
-- **콘텐츠 작성자(=Codex)가 점검까지 책임진다.** 사용자에게 "미묘한 부분은 확인해주세요" 떠넘기지 않는다.
+- **콘텐츠 작성자가 점검까지 책임진다.** 사용자에게 "미묘한 부분은 확인해주세요" 떠넘기지 않는다.
 - 의심 문항은 **작성 시점에서 안전한 표준 진단으로 교체**한다.
 - 작성 완료 후 자체 점검: ① 비문 표시가 표준 분석에서 일관한가 ② 진술이 임용 표준 답안 패턴에 부합하는가 ③ 예문이 native 자연성을 가지는가.
 
@@ -313,7 +317,7 @@ Codex sub-agent는 사용자가 명시적으로 요청했을 때만 사용한다
 - **키워드 하이라이트 필수** (5색): 학술 용어(c-command·Binding·Movement·entailment 등) → 파랑 `#3182ce` / 학자명(Radford·Chomsky·Grice 등) → 보라 `#805ad5` / 함정·비문(*표시 등) → 빨강 `#c53030` / 정문·올바른 분석·정의 → 청록 `#319795` / 현직쌤 팁 → 주황 `#dd6b20`
 - **기출 연도 빨간색 인라인** (`#c53030`)
 - 핵심 개념은 **영어 원문 한 문단 + 한글 설명 한 문단** 교차 (개념정리 페이지 수록 개념 + 알파)
-- **신규 글 썸네일은 Canva plugin 또는 Codex `image_gen`으로 생성**. 기존 글은 그대로 유지
+- **신규 글 썸네일은 Canva plugin 또는 Pencil MCP·Gemini / Codex `image_gen`으로 생성**. 기존 글은 그대로 유지
 - **SVG 사용 금지** (블로그 한정. 웹앱 페이지 내부 SVG 다이어그램은 별개)
 - **Radford 교재 표기**: `Radford 교수의 『Transformational Grammar』` 만 사용. "(국제판)" 표기 절대 금지
 
@@ -353,7 +357,7 @@ iframe 템플릿:
 **태그**: 임용고시, 중등영어, 영어학, 통사론, Ch1, Constituency, [챕터별 키텀 5~10개], 서브노트, 기출분석
 ```
 
-**썸네일**: 신규 글마다 가능하면 **Canva plugin**으로 1장 생성. Canva가 현재 세션에서 사용 불가하면 Codex `image_gen` 또는 사용자가 지정한 도구를 사용한다. 사이즈 1200×630 (Tistory 표준), 인디고 그라디언트 배경, 챕터 제목 + 영역명 + "임용영어학".
+**썸네일**: 신규 글마다 가능하면 **Canva plugin**으로 1장 생성. Canva가 현재 세션에서 사용 불가하면 Pencil MCP·Gemini / Codex `image_gen` 또는 사용자가 지정한 도구를 사용한다. 사이즈 1200×630 (Tistory 표준), 인디고 그라디언트 배경, 챕터 제목 + 영역명 + "임용영어학".
 
 **📝 OX 블로그 글 구조** (별도 발행 — 해설 중심 3섹션)
 - ① 짧은 도입 (1-2줄)
@@ -403,9 +407,9 @@ iframe 템플릿:
 
 ---
 
-## 🤖 신규 페이지 작성 시 Codex 보조 절차 (필수)
+## 🤖 신규 페이지 작성 시 보조 절차 (필수)
 
-`_study.html` 또는 OX 파일을 **신규 작성하거나 대폭 수정**할 때 아래 절차를 Codex가 직접 수행한다. sub-agent는 사용자가 명시적으로 요청한 경우에만 병렬 보조로 사용한다.
+`_study.html` 또는 OX 파일을 **신규 작성하거나 대폭 수정**할 때 아래 절차를 직접 수행한다. sub-agent는 사용자가 명시적으로 요청한 경우에만 병렬 보조로 사용한다.
 
 ### 트리거 조건
 
