@@ -16,3 +16,4 @@ code-review-graph/
 
 # playwright MCP 디버깅 산출물 (콘솔 로그·페이지 스냅샷)
 .playwright-mcp/
+.omc/
