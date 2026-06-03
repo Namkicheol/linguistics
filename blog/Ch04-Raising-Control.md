@@ -63,7 +63,7 @@ theta-role을 받는 자리는 <span style="color:#319795;">**theta-position**</
 
 | 동사 | 특징 | 예 |
 |---|---|---|
-| **believe** | main clause passivize 가능 / 숨은 *for* 차단 | <span style="color:#319795;">*The story is believed to be false by Ed.*</span> &nbsp;|&nbsp; <span style="color:#c53030;">**\*I believe for the story to be false.**</span> |
+| **believe** | main clause passivize 가능 / 숨은 *for* 차단 | <span style="color:#319795;">*The story is believed to be false by Ed.*</span> <br> <span style="color:#c53030;">**\*I believe for the story to be false.**</span> |
 | **want** | 숨은 *for*(Case) 때문에 main clause passivize 불가 (단 expletive·voice는 believe와 동일) | <span style="color:#c53030;">**\*Robert was wanted by Jean to go over there.**</span> |
 | **expect** | subject control(앞)과 SOR(뒤) 둘 다 가능 | <span style="color:#319795;">*George expects to win.*</span> / <span style="color:#319795;">*George expects Sue to win.*</span> |
 
