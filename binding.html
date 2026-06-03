@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.5 Binding OX Quiz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">NO. 05 <span>—</span> Binding</span>
+    <span class="header-label">Past-Exam Notebook</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <div class="header-script">Concept Master · Transformational Syntax</div>
+  <p class="header-sub">영어학 · Binding · 임용고시 대비</p>
+  <div class="header-divider"></div>
+</div>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">1 / 40</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:2.5%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div id="nav"></div>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/40</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const Q=[
+
+  /* ── ① c-command / binding 기본 ────────────────────────── */
+  {src:"c-command",cat:"binding 정의",
+   text:"<span class='kw1'>Binding</span> requires both <span class='kw2'>c-command</span> and <span class='kw2'>coindexation</span>: A binds B if and only if A c-commands B and A and B are coindexed.",
+   ans:true,
+   correct:"<span class='kw1'>Binding</span>의 정의가 정확하다 — c-command와 coindexation을 <strong>둘 다</strong> 요구한다.",
+   why:"Binding은 단순한 동일 지시(coindexation)만으로 성립하지 않습니다. 선행사 A가 B를 c-command하면서 동시에 coindex돼야 binding이 성립합니다. 두 조건 중 하나라도 빠지면 그 요소는 free입니다.",
+   source:"Refs 요지: A binds B iff A c-commands B and A and B are coindexed."},
+
+  {src:"c-command",cat:"free 정의",
+   text:"An expression is <span class='kw1'>free</span> when it has no c-commanding coindexed antecedent.",
+   ans:true,
+   correct:"<span class='kw1'>free</span> = not bound — c-commanding coindexed antecedent가 없는 상태.",
+   why:"bound와 free는 상보적입니다. 어떤 요소를 c-command하면서 coindex된 선행사가 없으면 그 요소는 free입니다. Principle B/C는 특정 영역에서 요소가 free일 것을 요구합니다.",
+   source:"Refs 요지: An element is free iff it is not bound (no c-commanding coindexed antecedent)."},
+
+  {src:"c-command",cat:"c-command 정의",
+   text:"A node <span class='kw1'>c-commands</span> its sisters and all of their descendants.",
+   ans:true,
+   correct:"<span class='kw1'>c-command</span>의 표준 정의 — 어떤 node는 자신의 sister와 그 sister가 지배하는 모든 것을 c-command한다.",
+   why:"X 위로 처음 갈라지는 first branching node가 지배하는 모든 요소를 X가 c-command합니다. 직관적으로 X는 자신의 sister와 그 후손들을 c-command합니다. subject DP가 VP 내부 object를 c-command하는 것이 전형적 예입니다.",
+   source:"Refs 요지: A node c-commands its sisters and all of their descendants. (Radford)"},
+
+  {src:"c-command",cat:"possessor c-command 실패",
+   text:"In <span class='kw4'>*The witness' testimony exposed themselves</span>, the possessor <em>the witness'</em> c-commands <em>themselves</em>.",
+   ans:false,
+   correct:"<em>the witness'</em>는 소유격 specifier 안에 갇혀 <em>themselves</em>를 <span class='kw2'>c-command하지 못한다</span> → 적법한 선행사 부재 → 비문.",
+   why:"소유격 specifier(<em>the witness'</em>)는 큰 subject DP 내부에 갇혀 있어 그 위 first branching node가 <em>themselves</em>를 dominate하지 못합니다. The sentence is ungrammatical because Principle A is violated — the anaphor has no c-commanding antecedent within its governing category.",
+   source:"Refs 요지: A possessor inside a subject DP fails to c-command outside it; the reflexive has no antecedent.",
+   compare:[{title:"비문",desc:"*The witness' testimony exposed themselves."},{title:"정문",desc:"The witnesses exposed themselves."}]},
+
+  {src:"c-command",cat:"subject c-command",
+   text:"In <em>The witnesses exposed themselves</em>, the subject DP c-commands the reflexive <em>themselves</em>.",
+   ans:true,
+   correct:"subject DP <em>the witnesses</em>가 VP 내부 <em>themselves</em>를 <span class='kw2'>c-command</span> → Principle A 충족 → 정문.",
+   why:"subject DP 위 first branching node(TP)가 VP와 그 안의 <em>themselves</em>를 dominate하므로 subject가 reflexive를 c-command합니다. 같은 절(=governing category) 안에서 bound되므로 Principle A를 충족합니다.",
+   source:"Refs 요지: The subject DP c-commands the object reflexive within the same clause."},
+
+  {src:"c-command",cat:"coindexation만으로 불충분",
+   text:"Coindexation alone, without c-command, is enough to count as <span class='kw1'>binding</span>.",
+   ans:false,
+   correct:"틀리다. coindexation만으로는 부족하다 — <span class='kw2'>c-command</span>도 반드시 필요하다.",
+   why:"binding은 c-command와 coindexation을 동시에 요구합니다. 같은 index를 공유해도 선행사가 그 요소를 c-command하지 못하면 binding이 아닙니다(예: 소유격 안 선행사). 그래서 c-command 없는 coindexation은 binding으로 치지 않습니다.",
+   source:"Refs 요지: Coindexation without c-command does not constitute binding."},
+
+  /* ── ② Principle A — anaphors ──────────────────────────── */
+  {src:"Principle A",cat:"agreement 위반",
+   text:"The sentence <span class='kw4'>*The actress blamed himself</span> is grammatical.",
+   ans:false,
+   correct:"비문이다. anaphor <em>himself</em>가 선행사 <em>the actress</em>와 <span class='kw2'>gender agreement</span>에 실패한다.",
+   why:"reflexive는 선행사와 person·number·gender에서 일치해야 합니다. <em>the actress</em>(여성)와 <em>himself</em>(남성)는 gender가 어긋나므로 적법한 c-commanding antecedent가 없는 것과 같습니다. The sentence is ungrammatical because Principle A is violated — the anaphor is not properly bound in its governing category.",
+   source:"Refs 요지: A reflexive must agree with its antecedent in person, number, and gender."},
+
+  {src:"Principle A",cat:"anaphor not locally bound",
+   text:"<span class='kw4'>*Brian hopes that Karen will forgive himself</span> violates <span class='kw1'>Principle A</span>.",
+   ans:true,
+   correct:"<span class='kw1'>Principle A</span> 위반이 맞다 — <em>himself</em>가 자기 governing category 안에서 bound되지 못한다.",
+   why:"<em>himself</em>의 governing category는 종속절(<em>Karen will forgive himself</em>)이고 그 안에는 적법한 선행사가 없습니다. 선행사 <em>Brian</em>은 절 밖에 있습니다. The sentence is ungrammatical because Principle A is violated — the anaphor is not bound within its governing category.",
+   source:"Refs 요지: An anaphor must be bound within its governing category; a higher-clause antecedent is too far."},
+
+  {src:"Principle A",cat:"reciprocal number 위반",
+   text:"The sentence <span class='kw4'>*The juror distrusts each other</span> is grammatical.",
+   ans:false,
+   correct:"비문이다. reciprocal <em>each other</em>는 복수 선행사를 요구하는데 <em>the juror</em>는 단수다.",
+   why:"reciprocal anaphor <em>each other</em>는 의미상 복수 선행사를 필요로 합니다. 단수 <em>the juror</em>는 이를 만족시키지 못합니다. The sentence is ungrammatical because Principle A is violated — the anaphor lacks an appropriate plural antecedent in its governing category.",
+   source:"Refs 요지: A reciprocal (each other) requires a plural antecedent within its governing category."},
+
+  {src:"Principle A",cat:"anaphor에 선행사 부재",
+   text:"The sentence <span class='kw4'>*Each other resigned</span> is grammatical.",
+   ans:false,
+   correct:"비문이다. reciprocal <em>each other</em>에 c-commanding 선행사가 전혀 없다.",
+   why:"anaphor은 독립 지시를 가질 수 없어 반드시 c-commanding 선행사가 필요합니다. 주어 자리의 <em>each other</em>는 선행사가 없습니다. The sentence is ungrammatical because Principle A is violated — the anaphor is not bound (it has no c-commanding antecedent).",
+   source:"Refs 요지: An anaphor with no c-commanding antecedent violates Principle A."},
+
+  {src:"Principle A",cat:"finite 종속절 locality",
+   text:"An anaphor inside a <span class='kw1'>finite</span> embedded clause may take its antecedent from the higher clause.",
+   ans:false,
+   correct:"틀리다. finite 종속절은 닫힌 <span class='kw2'>governing category</span>이므로 상위 절 선행사를 가질 수 없다.",
+   why:"finite 종속절은 그 자체로 anaphor의 governing category를 형성하므로 anaphor은 그 절 안에서 bound돼야 합니다. 상위 절의 선행사는 너무 멀어 Principle A를 위반합니다. (ECM 비정형 보문에서는 domain이 확장되지만, finite 절에서는 닫혀 있습니다.)",
+   source:"Refs 요지: An anaphor in a finite embedded clause cannot be bound from the higher clause."},
+
+  {src:"Principle A",cat:"ECM domain 확장",
+   text:"<em>Nora believes herself to be qualified</em> is grammatical.",
+   ans:true,
+   correct:"정문이다 — <span class='kw1'>ECM</span> 구문에서 matrix subject <em>Nora</em>가 <em>herself</em>의 governing category 안에서 bind한다.",
+   why:"비정형/ECM 보문(<em>believe X to VP</em>)에서는 하위 subject 자리에 적법한 subject-binder가 없어 anaphor의 governing category가 matrix subject까지 확장됩니다. 따라서 <em>Nora</em>가 <em>herself</em>를 같은 domain 안에서 c-command·bind → Principle A 충족.",
+   source:"Refs 요지: In ECM, the matrix subject lies within the anaphor's governing category and binds it.",
+   compare:[{title:"정문 (anaphor)",desc:"Nora believes herself to be qualified."},{title:"비문 (pronoun)",desc:"*Nora believes her to be qualified. (her=Nora)"}]},
+
+  {src:"Principle A",cat:"agreement + 선행사 부재",
+   text:"The sentence <span class='kw4'>*The committee elected herself</span> is grammatical.",
+   ans:false,
+   correct:"비문이다 — <em>herself</em>가 적법한 선행사도 없고 number/gender agreement도 충족하지 못한다.",
+   why:"<em>the committee</em>는 <em>herself</em>를 c-command하지만 의미·자질 면에서 적법한 선행사가 되지 못하고, anaphor은 governing category 안에서 bound될 적절한 선행사를 찾지 못합니다. The sentence is ungrammatical because Principle A is violated — the anaphor is not properly bound in its governing category.",
+   source:"Refs 요지: A reflexive needs an agreeing, appropriate c-commanding antecedent in its governing category."},
+
+  {src:"Principle A",cat:"reflexive agreement",
+   text:"A <span class='kw1'>reflexive</span> and its antecedent may differ in gender as long as the reflexive is locally bound.",
+   ans:false,
+   correct:"틀리다 — reflexive는 선행사와 person·number·gender에서 모두 <span class='kw2'>일치</span>해야 한다.",
+   why:"anaphor은 독립 지시가 없으므로 선행사와 자질을 공유해야 합니다. local binding이 성립해도 gender가 어긋나면 비문입니다 — <em>The actress blamed herself</em>는 정문이지만 <em>*The actress blamed himself</em>는 gender 불일치로 비문입니다.",
+   source:"Refs 요지: A reflexive must agree with its antecedent in person, number, and gender."},
+
+  {src:"Principle A",cat:"reflexive vs reciprocal 의미",
+   text:"In <em>The siblings admire each other</em>, the reciprocal means each admires the other(s), not that each admires himself or herself.",
+   ans:true,
+   correct:"맞다 — reciprocal <em>each other</em>는 '서로'를 뜻하고, reflexive <em>themselves</em>('각자 자기 자신')와 의미가 다르다.",
+   why:"reflexive와 reciprocal은 둘 다 anaphor로 Principle A의 적용을 똑같이 받지만 의미가 다릅니다. <em>They admire themselves</em>는 각자 자기 자신을, <em>They admire each other</em>는 서로 상대를 칭찬한다는 뜻입니다.",
+   source:"Refs 요지: They admire themselves = each admires self; They admire each other = each admires the other(s).",
+   compare:[{title:"reflexive",desc:"They admire themselves. (각자 자기 자신)"},{title:"reciprocal",desc:"They admire each other. (서로)"}]},
+
+  {src:"Principle A",cat:"reading availability",
+   text:"In <em>Daniel said that the teacher praised himself</em>, <em>himself</em> can refer to Daniel.",
+   ans:false,
+   correct:"불가하다 — <em>himself</em>는 finite 종속절(governing category) 안에서 bound돼야 하므로 <em>the teacher</em>만 선행사로 가능하다.",
+   why:"<em>himself</em>의 governing category는 종속절(<em>the teacher praised himself</em>)입니다. 그 안의 subject <em>the teacher</em>가 유일한 적법 선행사이고, 절 밖의 <em>Daniel</em>로 해석하는 독해는 Principle A 위반이라 불가합니다. (문장 자체는 <em>himself</em>=<em>the teacher</em>로 정문입니다.)",
+   source:"Refs 요지: An anaphor must be bound within its governing category, so only the local subject can be its antecedent."},
+
+  /* ── ③ Principle B — pronouns ──────────────────────────── */
+  {src:"Principle B",cat:"pronoun locally bound",
+   text:"<span class='kw4'>*Megan criticized her</span> (her = Megan) violates <span class='kw1'>Principle B</span>.",
+   ans:true,
+   correct:"<span class='kw1'>Principle B</span> 위반이 맞다 — pronoun <em>her</em>가 자기 governing category 안에서 bound된다.",
+   why:"pronoun은 governing category 안에서 free여야 합니다. <em>her</em>가 같은 절 subject <em>Megan</em>에 bound되면(her=Megan) 위반입니다. The sentence is ungrammatical on that reading because Principle B is violated — the pronoun is not free in its governing category.",
+   source:"Refs 요지: A pronoun must be free in its governing category; local binding violates Principle B."},
+
+  {src:"Principle B",cat:"non-local coreference 허용",
+   text:"<em>Megan said that Paula admired her</em> allows the reading <em>her = Megan</em>.",
+   ans:true,
+   correct:"허용된다 — pronoun <em>her</em>는 자기 governing category(종속절) 안에서 free이고, 절 밖 <em>Megan</em>과 coreference는 가능하다.",
+   why:"<em>her</em>의 governing category는 종속절(<em>Paula admired her</em>)이고 그 안에서는 free입니다(Paula에 bound 안 됨). 절 밖의 <em>Megan</em>과 coreference는 Principle B를 위반하지 않으므로 her=Megan 독해가 가능합니다.",
+   source:"Refs 요지: A pronoun free in its governing category may corefer with an antecedent outside it."},
+
+  {src:"Principle B",cat:"Principle B 정의",
+   text:"A <span class='kw1'>pronoun</span> must be bound within its governing category.",
+   ans:false,
+   correct:"틀리다 — <span class='kw1'>Principle B</span>는 pronoun이 governing category 안에서 <span class='kw2'>free</span>일 것을 요구한다(bound가 아니라).",
+   why:"governing category 안에서 bound돼야 하는 것은 anaphor(Principle A)입니다. pronoun은 정반대로 같은 domain 안에서 free여야 하고(Principle B), domain 밖 선행사와의 coreference만 허용됩니다. 그래서 reflexive와 pronoun은 complementary distribution을 이룹니다.",
+   source:"Refs 요지: Principle B — a pronoun must be free in its governing category."},
+
+  {src:"Principle B",cat:"ECM pronoun bound",
+   text:"<span class='kw4'>*The senator believes him to be honest</span> (him = the senator) is grammatical.",
+   ans:false,
+   correct:"비문이다 — ECM에서 <em>him</em>이 governing category 안 matrix subject <em>the senator</em>에 bound된다.",
+   why:"ECM 보문에서 pronoun <em>him</em>의 governing category는 matrix까지 확장되어 <em>the senator</em>를 포함합니다. him=the senator로 해석하면 같은 domain 안에서 bound되는 것입니다. The sentence is ungrammatical because Principle B is violated — the pronoun is not free in its governing category.",
+   source:"Refs 요지: In ECM the matrix subject is within the pronoun's governing category; local binding violates Principle B."},
+
+  {src:"Principle B",cat:"non-local coreference 허용",
+   text:"<em>Oliver wants Sarah to support him</em> allows the reading <em>him = Oliver</em>.",
+   ans:true,
+   correct:"허용된다 — <em>him</em>은 종속절 안에서 free(Sarah가 선행사 아님), 절 밖 <em>Oliver</em>와 coreference 가능.",
+   why:"<em>him</em>의 governing category 안에서는 <em>Sarah</em>에 bound되지 않아 free입니다. matrix subject <em>Oliver</em>는 그 domain 밖에 있으므로 him=Oliver coreference가 Principle B를 위반하지 않습니다.",
+   source:"Refs 요지: A pronoun free in its governing category may corefer with a matrix antecedent."},
+
+  {src:"Principle B",cat:"complementary distribution",
+   text:"<span class='kw1'>Reflexives</span> and <span class='kw1'>pronouns</span> are in complementary distribution in a given position.",
+   ans:true,
+   correct:"맞다 — 같은 자리에서 anaphor이 정문이면 pronoun은 그 선행사로 비문, 그 반대도 성립한다.",
+   why:"Principle A는 anaphor이 governing category 안에서 bound될 것을, Principle B는 pronoun이 같은 domain에서 free일 것을 요구합니다. 따라서 한 자리에서 한쪽이 정문이면 다른 쪽은 비문이 되어 complementary distribution을 이룹니다.",
+   source:"Refs 요지: Reflexives and pronouns are in complementary distribution.",
+   compare:[{title:"anaphor",desc:"Victor defended himself. ✓"},{title:"pronoun",desc:"*Victor defended him. (him=Victor) ✗"}]},
+
+  {src:"Principle B",cat:"pronoun locally bound",
+   text:"<span class='kw4'>*Victor defended him</span> (him = Victor) is grammatical.",
+   ans:false,
+   correct:"비문이다 — pronoun <em>him</em>이 자기 governing category 안 subject <em>Victor</em>에 bound된다.",
+   why:"pronoun은 같은 절(governing category) 안에서 free여야 합니다. him=Victor로 해석하면 같은 절 subject에 bound되는 것입니다. The sentence is ungrammatical on that reading because Principle B is violated — the pronoun is not free in its governing category.",
+   source:"Refs 요지: A locally bound pronoun violates Principle B."},
+
+  {src:"Principle B",cat:"anaphor locally bound",
+   text:"<em>Victor defended himself</em> (himself = Victor) is grammatical.",
+   ans:true,
+   correct:"정문이다 — anaphor <em>himself</em>가 governing category 안에서 bound된다 (Principle A 충족).",
+   why:"<em>himself</em>는 같은 절 subject <em>Victor</em>에 c-command·coindex되어 governing category 안에서 bound됩니다. anaphor은 local binding을 요구하므로 Principle A를 충족하는 정문입니다.",
+   source:"Refs 요지: A locally bound anaphor satisfies Principle A."},
+
+  {src:"Principle B",cat:"pronoun antecedent 가능",
+   text:"A pronoun may never have an antecedent anywhere in the sentence.",
+   ans:false,
+   correct:"틀리다 — pronoun은 governing category <strong>밖</strong>의 선행사와는 coreference가 가능하다.",
+   why:"Principle B는 governing category 안에서만 free를 요구합니다. domain 밖 선행사와의 coreference는 허용되므로(예: <em>Oliver wants Sarah to support him</em>, him=Oliver) pronoun이 문장 안에서 선행사를 가질 수 있습니다.",
+   source:"Refs 요지: A pronoun may corefer with an antecedent outside its governing category."},
+
+  {src:"Principle B",cat:"clause-mate subject bound",
+   text:"<span class='kw4'>*Claire told Beth about her</span> can mean <em>her = Claire</em>.",
+   ans:false,
+   correct:"불가하다 — <em>her</em>는 같은 minimal clause 주어 <em>Claire</em>에 bound될 수 없다.",
+   why:"<em>her</em>의 governing category는 그 문장 전체(단일 절)이고, subject <em>Claire</em>가 <em>her</em>를 c-command합니다. her=Claire로 해석하면 같은 domain 안에서 bound되는 것입니다. The reading is blocked because Principle B is violated — the pronoun is not free in its governing category.",
+   source:"Refs 요지: A pronoun cannot be bound by a clause-mate subject (Principle B)."},
+
+  /* ── ④ Principle C — R-expressions ─────────────────────── */
+  {src:"Principle C",cat:"Principle C 정의",
+   text:"An <span class='kw1'>R-expression</span> must be free only within its binding domain, but may be bound outside it.",
+   ans:false,
+   correct:"틀리다 — <span class='kw1'>Principle C</span>는 R-expression이 <span class='kw2'>everywhere free</span>일 것을 요구한다(domain 안팎 모두).",
+   why:"domain 밖 선행사와의 binding을 허용하는 것은 pronoun(Principle B)입니다. R-expression은 스스로 지시를 가지므로 어떤 c-commanding coindexed 선행사에도 bound될 수 없습니다 — governing category 안이든 밖이든 전부. 다른 절의 c-commanding pronoun과 coindex돼도 비문입니다.",
+   source:"Refs 요지: Principle C — an R-expression must be free everywhere (not just locally)."},
+
+  {src:"Principle C",cat:"pronoun이 이름 c-command",
+   text:"<span class='kw4'>*He thinks Trevor will win</span> with <em>He = Trevor</em> violates <span class='kw1'>Principle C</span>.",
+   ans:true,
+   correct:"<span class='kw1'>Principle C</span> 위반이 맞다 — matrix subject <em>He</em>가 종속절 이름 <em>Trevor</em>를 c-command·coindex한다.",
+   why:"matrix subject <em>He</em>는 종속절 안 <em>Trevor</em>를 c-command합니다. He=Trevor로 coindex하면 R-expression이 c-commanding 선행사에 bound되는 것입니다. The sentence is ungrammatical on that reading because Principle C is violated — the R-expression is not free.",
+   source:"Refs 요지: A c-commanding coindexed pronoun over a name violates Principle C."},
+
+  {src:"Principle C",cat:"possessor는 c-command 못 함",
+   text:"<em>His mother adores Trevor</em> allows the reading <em>His = Trevor</em>.",
+   ans:true,
+   correct:"허용된다 — <em>His</em>(소유격)는 <em>Trevor</em>를 c-command하지 못하므로 R-expression이 free → 정문.",
+   why:"<em>His</em>는 subject DP <em>His mother</em> 안의 소유격 specifier에 갇혀 <em>Trevor</em>를 c-command하지 못합니다. c-command가 없으면 coindex해도 binding이 아니므로 R-expression <em>Trevor</em>는 free로 유지되어 His=Trevor 독해가 가능합니다.",
+   source:"Refs 요지: A possessor pronoun does not c-command the object, so the R-expression remains free."},
+
+  {src:"Principle C",cat:"이름 반복 bound",
+   text:"<span class='kw4'>*Sheila praised Sheila</span> (same person) is grammatical.",
+   ans:false,
+   correct:"비문이다 — 앞 <em>Sheila</em>가 뒤 R-expression <em>Sheila</em>를 c-command·coindex한다.",
+   why:"앞의 subject <em>Sheila</em>가 object 자리의 이름 <em>Sheila</em>를 c-command합니다. 같은 인물로 coindex하면 R-expression이 bound되는 것입니다. The sentence is ungrammatical on that reading because Principle C is violated — the R-expression is not free.",
+   source:"Refs 요지: A name c-commanded and coindexed by another expression violates Principle C."},
+
+  {src:"Principle C",cat:"부사절 — c-command 없음",
+   text:"<em>When she arrived, Diana smiled</em> allows the reading <em>she = Diana</em>.",
+   ans:true,
+   correct:"허용된다 — 부사절 안 <em>she</em>는 주절 <em>Diana</em>를 c-command하지 못하므로 정문.",
+   why:"<em>she</em>는 부사절(<em>When she arrived</em>) 안에 있어 주절 subject <em>Diana</em>를 c-command하지 못합니다. c-command가 없으면 coindex해도 binding이 아니므로 R-expression <em>Diana</em>가 free로 유지되어 she=Diana 독해가 가능합니다.",
+   source:"Refs 요지: A pronoun in an adverbial clause does not c-command the main-clause name, so coreference is allowed."},
+
+  {src:"Principle C",cat:"matrix pronoun이 이름 c-command",
+   text:"<span class='kw4'>*She said that Diana was promoted</span> with <em>She = Diana</em> is grammatical.",
+   ans:false,
+   correct:"비문이다 — matrix subject <em>She</em>가 종속절 이름 <em>Diana</em>를 c-command·coindex한다.",
+   why:"matrix subject <em>She</em>는 종속절 안 <em>Diana</em>를 c-command합니다. She=Diana로 coindex하면 R-expression이 bound됩니다. The sentence is ungrammatical on that reading because Principle C is violated — the R-expression is not free.",
+   source:"Refs 요지: A c-commanding coindexed matrix pronoun over an embedded name violates Principle C."},
+
+  {src:"Principle C",cat:"다른 절이어도 bound 불가",
+   text:"A name can be bound by a c-commanding coindexed pronoun as long as they are in different clauses.",
+   ans:false,
+   correct:"틀리다 — R-expression은 절이 다르더라도 c-commanding 선행사에 bound될 수 없다.",
+   why:"Principle C는 R-expression이 <em>어디서나</em> free일 것을 요구합니다. 다른 절에 있는 c-commanding pronoun이라도 coindex하면 위반입니다(예: <em>*She said that Diana was promoted</em>, She=Diana). locality는 R-expression에 완화를 주지 않습니다.",
+   source:"Refs 요지: An R-expression cannot be bound by a c-commanding antecedent even across clauses."},
+
+  /* ── ⑤ governing category / binding domain / locality ──── */
+  {src:"binding domain",cat:"locality 정의",
+   text:"The <span class='kw1'>binding domain</span> (governing category) is the smallest clause containing the element and a subject.",
+   ans:true,
+   correct:"맞다 — <span class='kw1'>binding domain</span> = governing category = 그 요소와 subject를 포함하는 가장 작은 절.",
+   why:"locality는 Principle A·B가 적용되는 '어디까지'를 정합니다. 대략 anaphor/pronoun을 포함하는 가장 작은 절이 그 domain입니다. anaphor은 이 안에서 bound, pronoun은 이 안에서 free여야 합니다.",
+   source:"Refs 요지: The binding domain is the smallest clause containing the element and a subject."},
+
+  {src:"binding domain",cat:"clause-bounded",
+   text:"A <span class='kw1'>reflexive</span> and its antecedent are clause-bounded — they must be clause-mates.",
+   ans:true,
+   correct:"맞다 — reflexive와 선행사의 관계는 clause-bounded(같은 절 안)다.",
+   why:"anaphor은 자신의 governing category 안에서 bound돼야 하므로 선행사와 clause-mate여야 합니다(finite 절 기준). 선행사가 다른 절에 있으면 Principle A 위반입니다. (ECM 비정형 보문에서는 domain이 위로 확장됩니다.)",
+   source:"Refs 요지: A reflexive and its antecedent are clause-bounded (clause-mates)."},
+
+  {src:"binding domain",cat:"ECM domain 확장",
+   text:"In an <span class='kw1'>ECM</span> structure like <em>believe X to be...</em>, the matrix subject lies within the binding domain of X.",
+   ans:true,
+   correct:"맞다 — ECM에서는 하위 subject 자리 요소 X의 binding domain이 matrix subject까지 확장된다.",
+   why:"비정형/ECM 보문에서는 하위 subject 자리에 적법한 subject-binder가 없어 X의 binding domain이 matrix까지 확장됩니다. 그래서 <em>Nora believes herself to be...</em>는 정문(anaphor bound), <em>*Nora believes her to be...</em>는 비문(pronoun bound)입니다.",
+   source:"Refs 요지: In ECM the matrix subject is within the binding domain of the embedded-subject element."},
+
+  {src:"binding domain",cat:"용어 동의 관계",
+   text:"<span class='kw1'>governing category</span> and <span class='kw1'>binding domain</span> denote different, conflicting notions.",
+   ans:false,
+   correct:"틀리다 — 둘은 같은 개념의 표준 <span class='kw2'>동의어</span>다(register 변이일 뿐).",
+   why:"<em>governing category</em>는 GB 고전 용어, <em>binding domain</em>은 같은 개념의 운영 용어로, 둘 다 '요소와 그 binder가 될 수 있는 subject를 포함하는 가장 작은 절'을 가리킵니다. 충돌하는 개념이 아니라 같은 것을 부르는 두 이름입니다.",
+   source:"Refs 요지: governing category and binding domain denote the same notion (synonyms)."},
+
+  /* ── ⑥ 통합 / 대조 / 기출 각도 ─────────────────────────── */
+  {src:"3-way contrast",cat:"A vs B complementarity",
+   text:"The contrast between <em>Helen convinced herself</em> (✓) and <span class='kw4'>*Helen convinced her</span> (her = Helen) shows <span class='kw1'>Principle A</span> vs <span class='kw1'>Principle B</span> complementarity.",
+   ans:true,
+   correct:"맞다 — 같은 자리에서 anaphor은 정문(Principle A), pronoun은 비문(Principle B)이라 complementarity를 보여준다.",
+   why:"같은 governing category 안에서 anaphor <em>herself</em>는 bound돼야 정문이고, pronoun <em>her</em>는 free여야 하므로 같은 선행사로는 비문입니다. 이 대조가 Principle A와 B의 상보성을 보여줍니다.",
+   source:"Refs 요지: The herself/her contrast in one position illustrates Principle A vs B complementarity.",
+   compare:[{title:"anaphor (Principle A)",desc:"Helen convinced herself. ✓"},{title:"pronoun (Principle B)",desc:"*Helen convinced her. (her=Helen) ✗"}]},
+
+  {src:"3-way contrast",cat:"ECM pronoun 교체",
+   text:"In <em>Nora believes herself to be qualified</em>, replacing <em>herself</em> with <em>her</em> (her = Nora) keeps the sentence grammatical.",
+   ans:false,
+   correct:"틀리다 — <span class='kw4'>*Nora believes her to be qualified</span> (her=Nora)는 Principle B 위반이다.",
+   why:"ECM 구문에서 binding domain이 matrix까지 확장되므로, pronoun <em>her</em>가 그 domain 안 matrix subject <em>Nora</em>에 bound되면 위반입니다. The sentence is ungrammatical on that reading because Principle B is violated — the pronoun is not free in its governing category.",
+   source:"Refs 요지: In ECM, a pronoun coindexed with the matrix subject violates Principle B."},
+
+  {src:"3-way contrast",cat:"기출 각도 — 결합형",
+   text:"When an anaphor sits in the lowest embedded clause and its only possible antecedent is the matrix subject, the sentence is ill-formed because the anaphor cannot be bound in its <span class='kw1'>binding domain</span>.",
+   ans:true,
+   correct:"맞다 — anaphor이 자신의 binding domain 안에서 bound될 수 없으면 ill-formed다.",
+   why:"anaphor은 자신의 governing category(minimal clause) 안에서 bound돼야 하므로, 유일한 선행사가 멀리 떨어진 matrix subject뿐이면 binding condition을 만족시킬 수 없어 ill-formed입니다. (메가쌤 기출분석에서 확인된 Theta+Binding+Movement 결합형 서술형 각도)",
+   source:"Refs 요지: An anaphor whose only antecedent is a distant matrix subject cannot be bound in its binding domain. (기출분석 결합형 각도)"}
+];
+
+const TOTAL=Q.length;
+const SAVE_KEY='linguistics_binding_quiz_v1';
+let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
+function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
+function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
+function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function getScore(){return answers.filter(a=>a&&a.correct).length;}
+function renderNav(){
+  document.getElementById('nav').innerHTML=answers.map((_,i)=>{
+    const a=answers[i];
+    const cls=i===cur?'nd cur':a===null?'nd':a.correct?'nd ok':'nd ng';
+    return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
+  }).join('');
+}
+function jumpTo(i){cur=i;render();}
+function renderExp(q,isCorrect){
+  const three=q.compare&&q.compare.length===3;
+  const cmp=q.compare?`
+    <div class="sec-label">📊 비교 정리</div>
+    <div class="compare${three?' three':''}">
+      ${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}
+    </div>`:'';
+  return `<div class="exp show">
+    <div class="exp-header"><span>${isCorrect?'✅ 정답':'❌ 오답'} · 해설</span></div>
+    <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
+    <div class="exp-body">
+      <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
+      <div class="sec-label">📌 Source</div>
+      <div class="def-box"><p>${q.source}</p></div>
+      ${cmp}
+    </div>
+  </div>`;
+}
+function render(){
+  if(cur>=TOTAL){
+    document.getElementById('qa').style.display='none';
+    document.getElementById('sc').classList.add('show');
+    const s=getScore();
+    document.getElementById('fs').textContent=s;
+    const p=s/TOTAL;
+    document.getElementById('rm').textContent=p===1?'🎉 Perfect!':p>=.8?'👏 Great!':p>=.6?'😊 Good!':'💪 Keep going!';
+    document.getElementById('rs').textContent=`${TOTAL}문제 중 ${s}문제 정답 (${Math.round(p*100)}%)`;
+    setTimeout(function(){window.showScorePopup&&window.showScorePopup(s,TOTAL);},400);
+    renderNav();return;
+  }
+  document.getElementById('sc').classList.remove('show');
+  document.getElementById('qa').style.display='block';
+  renderNav();
+  const q=Q[order[cur]];
+  document.getElementById('bf').style.width=((cur+1)/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('pt').textContent=`${cur+1} / ${TOTAL}`;
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  const a=answers[cur];
+  if(a!==null){
+    let oBtnCls='',xBtnCls='';
+    if(a.picked===true){oBtnCls=a.correct?'co':'wp';if(!a.correct)xBtnCls='cx';}
+    else{xBtnCls=a.correct?'cx':'wp';if(!a.correct)oBtnCls='co';}
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn ${oBtnCls}" disabled>⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn ${xBtnCls}" disabled>❌<span class="lb">WRONG</span></button>
+        </div>
+        <div class="badge ${a.correct?'ok':'ng'}">${a.correct?'✅ 정답!':'❌ 오답! 정답은 '+(q.ans?'O':'X')}</div>
+        <div>${renderExp(q,a.correct)}</div>
+        <button class="next-btn show" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }else{
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn" onclick="pick(true)" id="ob">⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn" onclick="pick(false)" id="xb">❌<span class="lb">WRONG</span></button>
+        </div>
+        <div id="bd" class="badge"></div>
+        <div id="ep"></div>
+        <button class="next-btn" id="nb" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }
+}
+function pick(val){
+  const q=Q[order[cur]];
+  document.getElementById('ob').disabled=true;
+  document.getElementById('xb').disabled=true;
+  const ok=val===q.ans;
+  answers[cur]={picked:val,correct:ok};
+  if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
+  const bd=document.getElementById('bd');
+  bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
+  bd.className='badge '+(ok?'ok':'ng');
+  document.getElementById(val?'ob':'xb').classList.add(ok?(val?'co':'cx'):'wp');
+  if(!ok)document.getElementById(q.ans?'ob':'xb').classList.add(q.ans?'co':'cx');
+  document.getElementById('ep').innerHTML=renderExp(q,ok);
+  document.getElementById('nb').classList.add('show');
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  renderNav();
+}
+function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
+function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
+(function(){
+  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
+    cur=saved.cur;answers=saved.answers;
+    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+    const done=answers.filter(a=>a!==null).length;
+    if(done>0){
+      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
+      document.getElementById('rb').style.display='block';
+    }
+  }
+  updateModeUI();renderNav();render();
+})();
+</script>
+</body>
+</html>
