@@ -13,14 +13,13 @@
 | **Ch.4 Raising & Control** | ✅ 개념정리 + OX 완성 | 개념 **/121**, OX **/125** (둘 다 setContent — 내용완전·plain) |
 | **Ch.5 Binding** | ✅ 웹(study+OX) + 블로그(개념+OX) 완성 | 개념 **/126**, OX **/127** (setContent — 내용완전·plain) |
 | **Ch.6 Morphology** | ✅ 웹(study+OX) + 블로그(개념+OX) 완성 | 개념 **/128**, OX **/129** (setContent — plain) |
-| Ch.6 Morphology | ❌ 미작성 | ❌ 미발행 |
-| Ch.7 Semantics | ❌ 미작성 | ❌ 미발행 |
+| Ch.7 Semantics | 🚧 웹 작업 중 | ❌ 미발행 |
 | Ch.8 Pragmatics | ❌ 미작성 | ❌ 미발행 |
 
 ## 요약
-- **발행 완료: Ch.1 · Ch.2 · Ch.3** (개념+OX). 다시 올리지 말 것.
-- **Ch.4 R&C = 개념 /121 + OX /125** (둘 다 plain 서식). 깨진 /122·/123·/124는 삭제됨.
-- **본문 미작성: Ch.5~8.**
+- **발행 완료: Ch.1~6** (각 개념+OX). 다시 올리지 말 것.
+- 깨진 /122·/123·/124(R&C 자동화 검증 중 생성)는 삭제됨. R&C 최종 = /121·/125.
+- **남은 작업: Ch.7 Semantics(웹 작업 중) · Ch.8 Pragmatics.**
 
 ## 발행 도구
 - `../../naver-blog-automation/upload_tistory_md.py` (경로·한계는 그 레포 AGENTS.md).
