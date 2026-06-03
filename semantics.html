@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.7 Semantics OX Quiz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">NO. 07 <span>—</span> Semantics</span>
+    <span class="header-label">Past-Exam Notebook</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <div class="header-script">Concept Master · Semantics</div>
+  <p class="header-sub">의미론 · Semantics · 임용고시 대비</p>
+  <div class="header-divider"></div>
+</div>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">1 / 28</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:3.6%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div id="nav"></div>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/28</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const Q=[
+
+  /* ── ① Sense vs Reference (denotation / connotation, deixis) ── */
+  {src:"Sense / Reference",cat:"definition",
+   text:"The expressions <em>the morning star</em> and <em>the evening star</em> share the same <span class='kw1'>reference</span> (the planet Venus) yet differ in <span class='kw1'>sense</span>.",
+   ans:true,
+   correct:"같은 <span class='kw1'>reference</span>(Venus)라도 <span class='kw1'>sense</span>는 다를 수 있다 — Frege의 고전적 구분.",
+   why:"sense는 표현이 referent를 제시하는 방식(개념적 의미)이고 reference는 실세계 대상과의 관계입니다. 두 표현이 같은 대상(Venus)을 가리켜도 그것을 떠올리는 방식(아침에 보이는 별 / 저녁에 보이는 별)이 달라 sense가 구별됩니다.",
+   source:"Refs 요지: Two expressions can share a referent but differ in sense (Frege's morning/evening star).",
+   compare:[{title:"Sense",desc:"내적·개념적 의미 (제시 방식)"},{title:"Reference",desc:"실세계 referent와의 관계"}]},
+
+  {src:"Sense / Reference",cat:"sense vs reference",
+   text:"If two expressions pick out the same <span class='kw1'>referent</span> in the world, then they must also have the same <span class='kw4'>sense</span>.",
+   ans:false,
+   correct:"같은 reference라도 sense는 다를 수 있다 — <em>Venus</em> / <em>the morning star</em>처럼 동일 referent, 다른 sense.",
+   why:"reference의 동일성이 sense의 동일성을 보장하지 않습니다. 한 referent를 서로 다른 방식으로 제시하는 표현들은 reference가 같아도 sense가 다릅니다. 이것이 Frege가 지적한 핵심입니다.",
+   source:"Refs 요지: Sameness of reference does not entail sameness of sense."},
+
+  {src:"Sense / Reference",cat:"denotation / connotation",
+   text:"In standard usage, <span class='kw4'>denotation</span> and <span class='kw4'>connotation</span> are synonyms that pick out exactly the same aspect of a word's meaning.",
+   ans:false,
+   correct:"둘은 다르다. <span class='kw2'>denotation</span>=문자적·중심 의미, <span class='kw2'>connotation</span>=그 위에 얹히는 정서적·문화적 함축.",
+   why:"denotation은 단어가 적용되는 대상의 집합, 즉 문자적 중심 의미입니다. connotation은 그것을 넘어서는 정서적·문화적 overtone입니다. 예를 들어 <em>thrifty</em>와 <em>stingy</em>는 denotation은 비슷하나 connotation이 정반대입니다.",
+   source:"Refs 요지: Denotation = literal central meaning; connotation = affective/cultural overtones. They are distinct.",
+   compare:[{title:"Denotation",desc:"문자적·중심 의미"},{title:"Connotation",desc:"정서적·문화적 함축"}]},
+
+  {src:"Sense / Reference",cat:"deixis",
+   text:"The expressions <em>here</em>, <em>now</em>, and <em>this</em> are <span class='kw1'>deictic expressions</span> that signal proximity (proximal) to the speaker.",
+   ans:true,
+   correct:"<em>here / now / this</em>는 화자에 가까움(<span class='kw2'>proximal</span>)을 나타내는 deictic expression이다.",
+   why:"deictic expression은 발화 맥락에 의존해 지시 대상이 정해집니다. <em>here, now, this</em>는 proximal(화자에 가까움)을, <em>there, then, that</em>은 distal(화자에서 멈)을 나타냅니다.",
+   source:"Refs 요지: here/now/this are proximal deictic expressions anchored to the speaker."},
+
+  /* ── ② Synonymy & Antonymy ─────────────────────────────── */
+  {src:"Antonymy",cat:"complementary",
+   text:"<em>alive</em> and <em>dead</em> are <span class='kw1'>complementary antonyms</span>: negating one entails the positive of the other, with no middle ground.",
+   ans:true,
+   correct:"<em>alive/dead</em>는 <span class='kw1'>complementary antonym</span> — 한쪽의 부정이 다른쪽의 긍정을 함의하고 중간값이 없다.",
+   why:"complementary(binary) antonym은 한쪽을 부정하면 곧 다른쪽이 됩니다. <em>not alive</em> = <em>dead</em>이며 중간 단계가 없어 정도 부사·비교급이 부자연스럽습니다. <em>pass/fail</em>, <em>present/absent</em>도 같은 부류입니다.",
+   source:"Refs 요지: Complementary antonyms — negation of one entails the other; no intermediate values.",
+   compare:[{title:"Complementary",desc:"alive/dead, pass/fail — 중간 없음"},{title:"Gradable",desc:"hot/cold, rich/poor — 중간값 있음"}]},
+
+  {src:"Antonymy",cat:"converse (relational)",
+   text:"<em>employer</em> and <em>employee</em> are <span class='kw1'>converse (relational) antonyms</span>: <em>A is B's employer</em> and <em>B is A's employee</em> paraphrase each other.",
+   ans:true,
+   correct:"<em>employer/employee</em>는 <span class='kw1'>converse(relational)</span> antonym — 같은 관계를 반대 시점에서 보며 서로 paraphrase가 된다.",
+   why:"converse antonym은 두 entity 사이의 관계를 정반대 시점에서 기술합니다. <em>A is B's employer</em>가 참이면 <em>B is A's employee</em>도 반드시 참이어서 서로 paraphrase입니다. <em>buy/sell</em>, <em>above/below</em>도 같습니다.",
+   source:"Refs 요지: Converse (relational) antonyms describe a relation from opposite viewpoints and paraphrase each other."},
+
+  {src:"Antonymy",cat:"gradable 판별",
+   text:"<em>hot</em> and <em>cold</em> are <span class='kw4'>complementary antonyms</span>, so there can be no intermediate value between them.",
+   ans:false,
+   correct:"<em>hot/cold</em>는 <span class='kw2'>gradable antonym</span>이다 — <em>warm, cool</em> 같은 중간값이 존재하고 비교급·정도 부사가 가능하다.",
+   why:"gradable antonym은 척도상의 대립으로 중간값을 허용합니다. <em>hot–warm–cool–cold</em>처럼 단계가 있고 <em>hotter</em>, <em>very cold</em> 같은 비교급·정도 표현이 자연스럽습니다. complementary(중간 없음)와 구별됩니다.",
+   source:"Refs 요지: hot/cold are gradable, not complementary — intermediate values exist (warm, cool)."},
+
+  /* ── ③ Hyponymy, Meronymy, Prototype ───────────────────── */
+  {src:"Hyponymy",cat:"entailment direction",
+   text:"<em>sparrow</em> is a hyponym of <em>bird</em>, and <em>I saw a sparrow</em> entails <em>I saw a bird</em>.",
+   ans:true,
+   correct:"<em>sparrow</em>는 <em>bird</em>의 <span class='kw1'>hyponym</span>이고, hyponym은 superordinate를 <span class='kw2'>entail</span>한다.",
+   why:"hyponymy는 의미 포함(종류 관계)입니다. hyponym(<em>sparrow</em>)이 superordinate(<em>bird</em>)를 entail합니다 — 참새를 봤다면 새를 본 것입니다. 역방향(새를 봤다고 참새를 본 것은 아님)은 성립하지 않습니다.",
+   source:"Refs 요지: A hyponym entails its superordinate (sparrow ⊨ bird), but not vice versa."},
+
+  {src:"Hyponymy",cat:"방향 함정",
+   text:"Because <em>rose</em> is a hyponym of <em>flower</em>, the sentence <em>I bought a flower</em> entails <span class='kw4'>I bought a rose</span>.",
+   ans:false,
+   correct:"방향이 반대다. superordinate(<em>flower</em>)는 hyponym(<em>rose</em>)을 entail하지 <strong>않는다</strong>. 꽃을 샀다고 장미를 산 것은 아니다.",
+   why:"entailment는 hyponym→superordinate 한 방향입니다. <em>I bought a rose</em>는 <em>I bought a flower</em>를 entail하지만 역은 성립하지 않습니다 — 카네이션을 샀을 수도 있기 때문입니다.",
+   source:"Refs 요지: A superordinate does not entail its hyponym (flower ⊭ rose)."},
+
+  {src:"Meronymy",cat:"meronymy vs hyponymy",
+   text:"A <em>wheel</em> is a hyponym of <em>car</em>, since a wheel is a kind of car.",
+   ans:false,
+   correct:"<em>wheel</em>은 <em>car</em>의 부분이지 종류가 아니다 → hyponymy가 아니라 <span class='kw2'>meronymy</span>(부분–전체) 관계.",
+   why:"meronymy는 부분–전체 관계이고 hyponymy는 종류 관계입니다. <em>wheel</em>은 <em>car</em>의 <strong>부분</strong>(meronym)이지 <em>car</em>의 한 <strong>종류</strong>가 아닙니다. <em>page∈book</em>, <em>petal∈flower</em>도 meronymy입니다.",
+   source:"Refs 요지: wheel is a part of a car (meronymy), not a kind of car (hyponymy).",
+   compare:[{title:"Hyponymy",desc:"kind-of (sparrow ⊂ bird)"},{title:"Meronymy",desc:"part-of (wheel ∈ car)"}]},
+
+  {src:"Prototype",cat:"graded membership",
+   text:"In prototype theory, every member of a category is an <span class='kw4'>equally typical</span> example of that category.",
+   ans:false,
+   correct:"범주 소속은 <span class='kw2'>graded</span>다 — 어떤 멤버는 다른 멤버보다 더 전형적이다(<em>robin</em>이 <em>penguin</em>보다 더 prototypical한 bird).",
+   why:"prototype theory에서 범주 멤버십은 정도 문제입니다. 모든 멤버가 동등하게 전형적인 것이 아니라, 더 중심적·대표적인 prototype과 주변적인 멤버가 있습니다. <em>robin/sparrow</em>는 <em>bird</em>의 전형, <em>penguin/ostrich</em>는 주변적입니다.",
+   source:"Refs 요지: Category membership is graded; some members are more prototypical than others."},
+
+  /* ── ④ Homonymy vs Polysemy ────────────────────────────── */
+  {src:"Homonymy",cat:"unrelated senses",
+   text:"<em>bank</em> 'edge of a river' and <em>bank</em> 'financial institution' have unrelated meanings, so they are a case of <span class='kw1'>homonymy</span> listed as separate dictionary entries.",
+   ans:true,
+   correct:"의미가 무관 → <span class='kw1'>homonymy</span>. 사전에 별도 entry로 오른다.",
+   why:"homonymy는 형태가 같고 의미가 무관한 경우로, 사전에 별개의 entry로 등재됩니다. <em>bank</em>(강가) / <em>bank</em>(은행)는 역사적·의미적으로 무관하여 homonym입니다.",
+   source:"Refs 요지: Homonymy = one form, unrelated meanings, separate dictionary entries.",
+   compare:[{title:"Homonymy",desc:"무관한 의미 · 별도 entry"},{title:"Polysemy",desc:"관련된 의미 · 단일 entry"}]},
+
+  {src:"Polysemy",cat:"related senses",
+   text:"The <em>foot</em> in <em>the foot of the mountain</em> is related in meaning to the body-part <em>foot</em>, making this a case of <span class='kw1'>polysemy</span>.",
+   ans:true,
+   correct:"의미가 관련됨(아랫부분이라는 공통 의미) → <span class='kw1'>polysemy</span>, 단일 entry.",
+   why:"polysemy는 한 형태가 서로 관련된 여러 의미를 갖는 경우로, 사전에 단일 entry 아래 묶입니다. <em>foot</em>(발) / <em>foot of the mountain</em>(산기슭)은 '아래·바닥'이라는 의미적 연결이 있어 polysemy입니다.",
+   source:"Refs 요지: Polysemy = one form, multiple related meanings under a single entry."},
+
+  {src:"Homonymy",cat:"polysemy 혼동",
+   text:"<em>bright</em> 'intelligent' and <em>bright</em> 'shining' have unrelated meanings, so the pair is a clear case of <span class='kw4'>homonymy</span>.",
+   ans:false,
+   correct:"두 의미는 관련됨(밝음 → 영리함의 은유적 연결) → <span class='kw2'>polysemy</span>이지 homonymy가 아니다.",
+   why:"<em>bright</em>의 '빛나는'과 '영리한'은 은유적으로 연결된 관련 의미라 polysemy입니다. 의미가 무관할 때만 homonymy입니다. 의미의 관련성 여부가 둘을 가르는 핵심 기준입니다.",
+   source:"Refs 요지: bright 'intelligent'/'shining' are related senses → polysemy, not homonymy."},
+
+  /* ── ⑤ Entailment vs Presupposition ────────────────────── */
+  {src:"Entailment",cat:"truth-based definition",
+   text:"In an <span class='kw1'>entailment</span> relation, if p is true then q must be true, and if q is false then p must be false.",
+   ans:true,
+   correct:"<span class='kw1'>entailment</span>의 정의: p 참 → q 참, q 거짓 → p 거짓.",
+   why:"entailment는 진리값으로 정의됩니다: p가 참일 때 q가 반드시 참이고, q가 거짓일 때 p가 반드시 거짓이면 p가 q를 entail합니다. 이 관계는 어휘·통사 구조가 보장합니다.",
+   source:"Refs 요지: p entails q iff (p true → q true) and (q false → p false)."},
+
+  {src:"Entailment",cat:"p-false 함정",
+   text:"If p entails q, then whenever p is false, q must also be <span class='kw4'>false</span>.",
+   ans:false,
+   correct:"p가 거짓이면 q는 <span class='kw2'>미정</span>이다 — entailment는 p 거짓일 때 q의 진리값을 결정하지 않는다.",
+   why:"entailment는 p 참→q 참, q 거짓→p 거짓만 보장합니다. p가 거짓이라고 q가 거짓이 되는 것은 아닙니다. 예를 들어 <em>I bought a dog</em>(거짓)이라도 <em>I bought an animal</em>은 참일 수 있습니다(고양이를 샀을 경우).",
+   source:"Refs 요지: When p is false, nothing follows about q under entailment."},
+
+  {src:"Presupposition",cat:"constancy under negation",
+   text:"<em>Liam stopped jogging</em> and <em>Liam didn't stop jogging</em> both presuppose <em>Liam had been jogging</em> (constancy under negation).",
+   ans:true,
+   correct:"<span class='kw1'>presupposition</span>은 문장을 부정해도 유지된다 — change-of-state verb <em>stop</em>의 trigger.",
+   why:"presupposition은 화자가 참으로 깔고 가는 배경 가정으로, 문장을 부정해도 살아남습니다(constancy under negation). <em>stop</em>은 change-of-state trigger라 긍정·부정 모두 <em>Liam had been jogging</em>을 전제합니다.",
+   source:"Refs 요지: A presupposition survives negation (change-of-state verb stop triggers it).",
+   compare:[{title:"Entailment",desc:"부정하면 사라짐 (원문장에 딸림)"},{title:"Presupposition",desc:"부정해도 유지됨"}]},
+
+  {src:"Presupposition",cat:"negation test 함정",
+   text:"A <span class='kw1'>presupposition</span> disappears as soon as the sentence carrying it is <span class='kw4'>negated</span>.",
+   ans:false,
+   correct:"반대다. presupposition은 부정해도 <span class='kw2'>유지</span>된다(constancy under negation) — 이것이 entailment와의 핵심 변별점이다.",
+   why:"presupposition의 진단 기준이 바로 constancy under negation입니다. <em>My car is a wreck</em>와 <em>My car is not a wreck</em>는 둘 다 <em>I have a car</em>를 전제합니다. 부정 시 사라지는 것은 (원문장에만 딸린) entailment입니다.",
+   source:"Refs 요지: Presuppositions survive negation; the negation test is the diagnostic, not a canceller."},
+
+  {src:"Paraphrase",cat:"mutual entailment",
+   text:"An active sentence and its passive counterpart do <span class='kw4'>not</span> entail each other.",
+   ans:false,
+   correct:"능동·수동문은 서로를 entail한다(<span class='kw2'>mutual entailment</span>) — 이것이 곧 paraphrase 관계다.",
+   why:"paraphrase는 mutual entailment, 즉 서로를 entail하는 관계입니다. <em>The committee approved the plan</em>과 <em>The plan was approved by the committee</em>는 진리조건이 같아 서로를 entail합니다.",
+   source:"Refs 요지: Active and passive are paraphrases — they mutually entail each other."},
+
+  /* ── ⑥ Ambiguity — lexical vs structural ───────────────── */
+  {src:"Ambiguity",cat:"structural (PP)",
+   text:"<em>I saw the astronomer with the telescope</em> is structurally ambiguous, because the PP <em>with the telescope</em> can attach to either the NP or the VP.",
+   ans:true,
+   correct:"같은 단어열에 구성 구조(트리)가 둘 → <span class='kw1'>structural ambiguity</span> (PP attachment).",
+   why:"structural ambiguity는 동일한 단어열에 둘 이상의 구성 구조가 배정되어 생깁니다. <em>with the telescope</em>가 NP(천문학자가 망원경 소지)에 붙거나 VP(망원경으로 봄)에 붙을 수 있어 두 해석이 나옵니다.",
+   source:"Refs 요지: PP-attachment ambiguity is structural — one string, two constituent structures."},
+
+  {src:"Ambiguity",cat:"lexical 판별",
+   text:"<em>He saw her duck</em> is ambiguous because the word <em>duck</em> has two senses, so this is a case of <span class='kw4'>structural ambiguity</span>.",
+   ans:false,
+   correct:"한 단어(<em>duck</em>: 명사 '오리' / 동사 '몸을 숙이다')의 의미 때문 → <span class='kw2'>lexical ambiguity</span>이지 structural이 아니다.",
+   why:"중의성이 단일 단어의 여러 의미에서 비롯되면 lexical ambiguity입니다. <em>duck</em>이 명사인지 동사인지에 따라 해석이 갈립니다. 구성 구조(트리)가 둘로 갈릴 때만 structural ambiguity입니다.",
+   source:"Refs 요지: Ambiguity from a single word's senses is lexical, not structural.",
+   compare:[{title:"Lexical",desc:"한 단어의 여러 sense"},{title:"Structural",desc:"한 단어열의 여러 트리"}]},
+
+  /* ── ⑦ Thematic / semantic roles ───────────────────────── */
+  {src:"Thematic Roles",cat:"Agent / Instrument",
+   text:"In <em>The thief broke the window with a brick</em>, <em>the thief</em> bears the <span class='kw1'>Agent</span> role and <em>a brick</em> bears the <span class='kw1'>Instrument</span> role.",
+   ans:true,
+   correct:"<em>the thief</em>=<span class='kw1'>Agent</span>(행위 주체), <em>a brick</em>=<span class='kw1'>Instrument</span>(수단).",
+   why:"thematic role은 의미로 부여됩니다. 행위를 일으키는 <em>the thief</em>는 Agent, 그 수단인 <em>a brick</em>은 Instrument입니다. role은 grammatical function과 독립적입니다.",
+   source:"Refs 요지: Agent = instigator; Instrument = the means by which the action is carried out."},
+
+  {src:"Thematic Roles",cat:"role independence",
+   text:"In both <em>The vase broke</em> and <em>Tom broke the vase</em>, <em>the vase</em> bears the <span class='kw1'>Theme</span> role even though it is subject in one and object in the other.",
+   ans:true,
+   correct:"같은 NP가 subject↔object로 위치가 바뀌어도 thematic role(<span class='kw1'>Theme</span>)은 유지된다.",
+   why:"thematic role은 grammatical function(subject/object)과 독립적으로 의미에 의해 부여됩니다. <em>the vase</em>는 깨짐을 겪는 대상이므로 위치에 관계없이 Theme입니다. role과 문법기능이 분리됨을 보여주는 표준 사례입니다.",
+   source:"Refs 요지: Thematic role is assigned by meaning, independent of grammatical function.",
+   compare:[{title:"The vase broke",desc:"the vase = Theme (subject)"},{title:"Tom broke the vase",desc:"the vase = Theme (object)"}]},
+
+  {src:"Thematic Roles",cat:"Experiencer 함정",
+   text:"In <em>Sarah feared the storm</em>, <em>Sarah</em> bears the <span class='kw4'>Agent</span> role.",
+   ans:false,
+   correct:"<em>Sarah</em>는 심리 상태를 겪는 <span class='kw2'>Experiencer</span>이지 Agent가 아니다.",
+   why:"Agent는 행위를 능동적으로 일으키는 주체입니다. <em>fear</em>는 심리 상태를 나타내는 동사이고 <em>Sarah</em>는 그 상태를 경험하는 Experiencer입니다. 의도적 행위가 없으므로 Agent가 아닙니다.",
+   source:"Refs 요지: The subject of a psychological verb like fear is an Experiencer, not an Agent."},
+
+  {src:"Thematic Roles",cat:"Goal 함정",
+   text:"In <em>Noah handed the key to the guard</em>, <em>the guard</em> bears the <span class='kw4'>Source</span> role.",
+   ans:false,
+   correct:"<em>the guard</em>는 이동의 도착점이므로 <span class='kw2'>Goal</span>이다 — Source(출발점)가 아니다.",
+   why:"Goal은 무언가가 이동해 가는 도착점, Source는 출발점입니다. <em>the key</em>가 <em>the guard</em>에게로 이동하므로 <em>the guard</em>는 Goal입니다. Source라면 <em>from</em>으로 표시되는 출발점이어야 합니다.",
+   source:"Refs 요지: The endpoint of motion is the Goal; the Source is the starting point.",
+   compare:[{title:"Goal",desc:"도착점 (to the guard)"},{title:"Source",desc:"출발점 (from Madrid)"}]},
+
+  /* ── ⑧ Componential analysis / semantic features (truth conditions) ── */
+  {src:"Semantic Features",cat:"componential analysis",
+   text:"In componential analysis, <em>man</em> and <em>boy</em> differ only in the value of the single feature <span class='kw1'>[±adult]</span>.",
+   ans:true,
+   correct:"<em>man</em>과 <em>boy</em>는 오직 <span class='kw1'>[±adult]</span> 자질 값에서만 차이가 난다(둘 다 [+human, +male]).",
+   why:"componential analysis는 단어 의미를 이진 semantic feature로 분해합니다. <em>man</em>=[+human,+adult,+male], <em>boy</em>=[+human,−adult,+male]로, 둘은 [±adult] 한 자질에서만 다릅니다.",
+   source:"Refs 요지: man and boy are distinguished by a single feature, [±adult]."},
+
+  {src:"Truth Conditions",cat:"analytic sentence",
+   text:"<em>A bachelor is unmarried</em> is an <span class='kw1'>analytic sentence</span> — true solely by virtue of the meanings of its words.",
+   ans:true,
+   correct:"<em>A bachelor is unmarried</em>는 단어 의미만으로 필연적으로 참 → <span class='kw1'>analytic sentence</span>.",
+   why:"analytic sentence는 세계를 확인하지 않고 단어 의미만으로 참이 보장되는 문장입니다. <em>bachelor</em>의 의미 자체가 '결혼하지 않은'을 포함하므로 필연적으로 참입니다. <em>A triangle has three sides</em>도 같습니다.",
+   source:"Refs 요지: An analytic sentence is necessarily true by virtue of word meanings.",
+   compare:[{title:"Analytic",desc:"단어 의미만으로 필연적 참"},{title:"Synthetic",desc:"세계 상태로 참·거짓 판정"}]},
+
+  {src:"Truth Conditions",cat:"synthetic 함정",
+   text:"<em>The mayor owns three cars</em> is an <span class='kw4'>analytic sentence</span>, true purely by virtue of word meanings.",
+   ans:false,
+   correct:"세계 상태를 확인해야 참·거짓을 알 수 있으므로 <span class='kw2'>synthetic sentence</span>이지 analytic이 아니다.",
+   why:"synthetic sentence는 단어 의미만으로 진리값이 정해지지 않고 세계의 실제 상태에 따라 참·거짓이 결정됩니다. 시장이 차를 세 대 소유했는지는 현실을 확인해야 알 수 있으므로 synthetic입니다.",
+   source:"Refs 요지: A sentence whose truth depends on the state of the world is synthetic, not analytic."}
+];
+
+const TOTAL=Q.length;
+const SAVE_KEY='linguistics_semantics_quiz_v1';
+let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
+function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
+function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
+function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function getScore(){return answers.filter(a=>a&&a.correct).length;}
+function renderNav(){
+  document.getElementById('nav').innerHTML=answers.map((_,i)=>{
+    const a=answers[i];
+    const cls=i===cur?'nd cur':a===null?'nd':a.correct?'nd ok':'nd ng';
+    return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
+  }).join('');
+}
+function jumpTo(i){cur=i;render();}
+function renderExp(q,isCorrect){
+  const three=q.compare&&q.compare.length===3;
+  const cmp=q.compare?`
+    <div class="sec-label">📊 비교 정리</div>
+    <div class="compare${three?' three':''}">
+      ${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}
+    </div>`:'';
+  return `<div class="exp show">
+    <div class="exp-header"><span>${isCorrect?'✅ 정답':'❌ 오답'} · 해설</span></div>
+    <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
+    <div class="exp-body">
+      <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
+      <div class="sec-label">📌 Source</div>
+      <div class="def-box"><p>${q.source}</p></div>
+      ${cmp}
+    </div>
+  </div>`;
+}
+function render(){
+  if(cur>=TOTAL){
+    document.getElementById('qa').style.display='none';
+    document.getElementById('sc').classList.add('show');
+    const s=getScore();
+    document.getElementById('fs').textContent=s;
+    const p=s/TOTAL;
+    document.getElementById('rm').textContent=p===1?'🎉 Perfect!':p>=.8?'👏 Great!':p>=.6?'😊 Good!':'💪 Keep going!';
+    document.getElementById('rs').textContent=`${TOTAL}문제 중 ${s}문제 정답 (${Math.round(p*100)}%)`;
+    setTimeout(function(){window.showScorePopup&&window.showScorePopup(s,TOTAL);},400);
+    renderNav();return;
+  }
+  document.getElementById('sc').classList.remove('show');
+  document.getElementById('qa').style.display='block';
+  renderNav();
+  const q=Q[order[cur]];
+  document.getElementById('bf').style.width=((cur+1)/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('pt').textContent=`${cur+1} / ${TOTAL}`;
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  const a=answers[cur];
+  if(a!==null){
+    let oBtnCls='',xBtnCls='';
+    if(a.picked===true){oBtnCls=a.correct?'co':'wp';if(!a.correct)xBtnCls='cx';}
+    else{xBtnCls=a.correct?'cx':'wp';if(!a.correct)oBtnCls='co';}
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn ${oBtnCls}" disabled>⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn ${xBtnCls}" disabled>❌<span class="lb">WRONG</span></button>
+        </div>
+        <div class="badge ${a.correct?'ok':'ng'}">${a.correct?'✅ 정답!':'❌ 오답! 정답은 '+(q.ans?'O':'X')}</div>
+        <div>${renderExp(q,a.correct)}</div>
+        <button class="next-btn show" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }else{
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn" onclick="pick(true)" id="ob">⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn" onclick="pick(false)" id="xb">❌<span class="lb">WRONG</span></button>
+        </div>
+        <div id="bd" class="badge"></div>
+        <div id="ep"></div>
+        <button class="next-btn" id="nb" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }
+}
+function pick(val){
+  const q=Q[order[cur]];
+  document.getElementById('ob').disabled=true;
+  document.getElementById('xb').disabled=true;
+  const ok=val===q.ans;
+  answers[cur]={picked:val,correct:ok};
+  if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
+  const bd=document.getElementById('bd');
+  bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
+  bd.className='badge '+(ok?'ok':'ng');
+  document.getElementById(val?'ob':'xb').classList.add(ok?(val?'co':'cx'):'wp');
+  if(!ok)document.getElementById(q.ans?'ob':'xb').classList.add(q.ans?'co':'cx');
+  document.getElementById('ep').innerHTML=renderExp(q,ok);
+  document.getElementById('nb').classList.add('show');
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  renderNav();
+}
+function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
+function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
+(function(){
+  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
+    cur=saved.cur;answers=saved.answers;
+    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+    const done=answers.filter(a=>a!==null).length;
+    if(done>0){
+      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
+      document.getElementById('rb').style.display='block';
+    }
+  }
+  updateModeUI();renderNav();render();
+})();
+</script>
+</body>
+</html>

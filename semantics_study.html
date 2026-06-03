@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.7 Semantics — 개념정리</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:repeating-linear-gradient(transparent,transparent 27px,#d5d8cf 28px);color:#1a1a1a;min-height:100vh;padding:16px;overflow-x:hidden}
+.header-wrap{max-width:820px;margin:0 auto;padding:24px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.header-sticker{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;background:#1a1f3a;color:#e8eaff;padding:5px 13px;border-radius:3px;letter-spacing:2px;text-transform:uppercase}
+.header-chapter{font-family:'JetBrains Mono',monospace;font-size:12px;color:#4a4d6a;letter-spacing:.5px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:10px}
+.header-divider{border:none;border-top:2px dashed #888;margin-bottom:10px}
+.header-tip{font-size:12px;color:#2a2e6e;font-family:'JetBrains Mono',monospace;margin-bottom:20px;background:rgba(59,63,134,.06);border:1px solid rgba(59,63,134,.2);border-radius:8px;padding:9px 14px;line-height:1.7}
+.wrap{max-width:820px;margin:0 auto}
+.sec{background:#fff;border:1.5px solid #c5c8e8;border-radius:16px;margin-bottom:20px;overflow:hidden;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@media(max-width:600px){.grid.col2,.grid.col3{grid-template-columns:1fr}}
+.sec-header{background:linear-gradient(135deg,rgba(59,63,134,.08),rgba(124,131,217,.05));border-bottom:1.5px solid #c5c8e8;padding:16px 22px;display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+.sec-icon{font-size:20px}
+.sec-title{font-size:16px;font-weight:700;color:#2a2e6e;font-family:'JetBrains Mono',monospace}
+.sec-tag{font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:6px;margin-left:auto;font-weight:600}
+.sec-arrow{font-size:13px;color:#4a4d6a;transition:transform .3s;margin-left:6px}
+.sec.open .sec-arrow{transform:rotate(180deg)}
+.sec-body{display:none;padding:22px}
+.sec.open .sec-body{display:block}
+.concept{margin-bottom:22px}
+.concept:last-child{margin-bottom:0}
+.c-title{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#2a2e6e;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.def{background:rgba(59,63,134,.06);border-left:4px solid #3b3f86;padding:12px 16px;border-radius:0 10px 10px 0;margin-bottom:10px;font-size:17px;line-height:1.8;color:#1a1f3a}
+.note{font-size:16px;color:#2a2e6e;line-height:1.75;margin-bottom:6px;padding-left:6px}
+.note::before{content:"• ";color:#7c83d9;font-weight:700}
+.kw1{background:rgba(59,63,134,.15);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(59,63,134,.25);overflow-wrap:anywhere}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.45);overflow-wrap:anywhere}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(184,101,26,.3);overflow-wrap:anywhere}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(183,28,28,.25);overflow-wrap:anywhere}
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:10px 14px;background:#fff;border:1.5px solid #c5c8e8;border-radius:10px;align-items:center}
+.legend-title{font-size:10px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-right:4px}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:#2a2e6e}
+.grid{display:grid;gap:10px;margin-top:12px}
+.grid.col2{grid-template-columns:1fr 1fr}
+.grid.col3{grid-template-columns:1fr 1fr 1fr}
+.grid-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:14px 16px}
+.gi-title{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#3b3f86;margin-bottom:7px}
+.gi-body{font-size:14px;color:#2a2e6e;line-height:1.7}
+.gi-body span{display:block}
+.eg{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:14px;overflow-wrap:anywhere}
+.eg-line{display:block;margin:3px 0;line-height:1.7}
+.eg-ok{color:#1f7a4a}
+.eg-ok::before{content:"✓ "}
+.eg-bad{color:#b71c1c}
+.eg-bad::before{content:"* "}
+.eg-note{display:block;margin-top:8px;padding-top:8px;border-top:1px dashed #c5c8e8;font-family:'Noto Sans KR',sans-serif;font-size:13px;color:#4a4d6a}
+.tbl-wrap{overflow-x:auto;margin-top:12px}
+table.diag{border-collapse:collapse;width:100%;min-width:560px;font-size:13px}
+table.diag th,table.diag td{border:1.5px solid #c5c8e8;padding:8px 10px;text-align:center;line-height:1.55}
+table.diag thead th{background:rgba(59,63,134,.1);color:#2a2e6e;font-family:'JetBrains Mono',monospace;font-size:12px}
+table.diag tbody th{background:rgba(124,131,217,.06);color:#2a2e6e;text-align:left;font-weight:700;white-space:nowrap}
+table.diag td.y{color:#1f7a4a;font-weight:700}
+table.diag td.n{color:#b71c1c;font-weight:700}
+.exam{background:rgba(184,101,26,.06);border:1.5px solid rgba(184,101,26,.25);border-radius:10px;padding:14px 16px;margin-top:14px}
+.exam-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#b8651a;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-weight:700}
+.exam p{font-size:13.5px;color:#6b3f0e;line-height:1.75;margin-bottom:4px;overflow-wrap:anywhere}
+.toc{max-width:820px;margin:0 auto 20px;background:#fff;border:1.5px solid #c5c8e8;border-radius:12px;padding:16px 20px;box-shadow:0 2px 8px rgba(59,63,134,.06)}
+.toc-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;font-weight:700}
+.toc-list{display:flex;flex-wrap:wrap;gap:7px}
+.toc-item{font-size:12px;color:#3b3f86;background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.2);padding:5px 12px;border-radius:8px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace;font-weight:600}
+.toc-item:hover{background:rgba(59,63,134,.18)}
+.tree-svg{display:block;margin:12px auto;width:100%;max-width:660px;height:auto;font-family:'Noto Serif KR','Noto Sans KR',serif}
+.tree-svg text{font-family:'Noto Serif KR',Georgia,serif}
+.nav-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0 8px;border-top:1px solid #c5c8e8;margin-top:24px}
+.nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
+.nav-btn:hover{background:#f7f8ff}
+.nav-btn.next-btn{font-weight:600}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-sticker">STUDY NOTE</span>
+    <span class="header-chapter">Ch.07 · Semantics</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <div class="header-script">Concept Notes · Semantics · Meaning &amp; Lexical Relations</div>
+  <p class="header-sub">refs 기반 · sense/reference · lexical relations · entailment/presupposition · thematic roles</p>
+  <div class="header-divider"></div>
+  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기 &nbsp;·&nbsp; 핵심: entailment는 진리조건, presupposition은 부정해도 살아남는다(constancy under negation)</p>
+</div>
+<div class="wrap">
+<div class="toc">
+  <div class="toc-title">📋 목차</div>
+  <div class="toc-list">
+    <div class="toc-item" onclick="openSec('sense-reference')">① Sense &amp; Reference</div>
+    <div class="toc-item" onclick="openSec('synonymy-antonymy')">② Synonymy &amp; Antonymy</div>
+    <div class="toc-item" onclick="openSec('hyponymy-meronymy')">③ Hyponymy &amp; Meronymy</div>
+    <div class="toc-item" onclick="openSec('homonymy-polysemy')">④ Homonymy &amp; Polysemy</div>
+    <div class="toc-item" onclick="openSec('entailment-presupposition')">⑤ Entailment &amp; Presupposition</div>
+    <div class="toc-item" onclick="openSec('ambiguity')">⑥ Ambiguity</div>
+    <div class="toc-item" onclick="openSec('thematic-roles')">⑦ Thematic Roles</div>
+    <div class="toc-item" onclick="openSec('componential-analysis')">⑧ Componential Analysis</div>
+  </div>
+</div>
+<div class="legend">
+  <span class="legend-title">키워드</span>
+  <span class="legend-item"><span class="kw4">★★★ 최빈출</span></span>
+  <span class="legend-item"><span class="kw3">★★ 빈출</span></span>
+  <span class="legend-item"><span class="kw1">★ 기본개념</span></span>
+  <span class="legend-item"><span class="kw2">부키워드</span></span>
+</div>
+<div class="exam" style="margin-bottom:20px">
+  <div class="exam-label">📝 기출분석 포인트 (Ch.7 Semantics)</div>
+  <p>① <span class='kw4'>Entailment vs Presupposition</span>: 두 문장쌍의 의미 관계를 truth-table 기준으로 판별 (entailment one-way / presupposition constancy under negation)</p>
+  <p>② <span class='kw4'>Thematic roles</span>: argument들의 role 식별 + role이 grammatical function과 독립적임 (같은 NP가 subject↔object여도 Theme 유지)</p>
+  <p>③ <span class='kw3'>Lexical relations</span>: <span class='kw1'>hyponymy</span> 방향(hyponym ⊨ superordinate), <span class='kw1'>gradable</span> vs <span class='kw1'>complementary</span> vs <span class='kw1'>converse</span> antonymy</p>
+  <p>④ <span class='kw3'>Reference &amp; deixis</span>: 같은 reference, 다른 sense / proximal vs distal deictic expressions</p>
+  <p>⑤ 함정: <span class='kw4'>hyponymy 역방향</span>(superordinate ⊭ hyponym), <span class='kw4'>presupposition은 부정 시 유지</span>(사라진다 X), homonymy(무관) vs polysemy(관련)</p>
+  <p style="font-size:12px;color:#8d4d14;margin-top:6px">※ 검증된 연도 stamp가 없어 본 페이지는 <strong>연도 표기 생략</strong> — 메가쌤 기출 분석의 <strong>출제 각도</strong>만 반영.</p>
+</div>
+
+<!-- ① Sense & Reference -->
+<div class="sec open" id="sense-reference">
+  <div class="sec-header" onclick="toggle('sense-reference')">
+    <span class="sec-icon">🔭</span>
+    <span class="sec-title">① Sense &amp; Reference (denotation · connotation · deixis)</span>
+    <span class="sec-tag">의미 vs 지시</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>Sense</span> is the internal, mental meaning content of an expression — the way it presents its referent. <span class='kw1'>Reference</span> is the relation between an expression and the actual entity (the <span class='kw2'>referent</span>) it picks out in the world.</div>
+      <p class="note">sense는 표현이 가진 <span class='kw1'>내적·개념적 의미</span>이고, reference는 그 표현이 실제 세계에서 가리키는 대상(referent)과의 관계다.</p>
+      <p class="note">두 표현이 <span class='kw4'>같은 referent</span>를 가리켜도 <span class='kw4'>sense는 다를 수 있다</span>(Frege의 고전적 논점): <em>the morning star</em>와 <em>the evening star</em>는 둘 다 Venus를 reference하지만 sense가 다르다. <span style="font-size:13px;color:#8d4d14">(Frege sense/reference 프레임은 표준 도입 — refs 미수록.)</span></p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Denotation vs Connotation</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">Denotation</div>
+          <div class="gi-body"><span>단어의 문자적·중심 의미 / 단어가 적용되는 대상들의 집합</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Connotation</div>
+          <div class="gi-body"><span>denotation 위에 얹히는 정서적·문화적 함축(overtone)</span></div>
+        </div>
+      </div>
+      <div class="eg">
+        <span class="eg-line"><em>home</em> vs <em>house</em> — 거의 같은 denotation(거주 건물)이나 <em>home</em>은 따뜻함·소속의 connotation을 더 가짐.</span>
+        <span class="eg-line"><em>thrifty</em> vs <em>stingy</em> — 비슷한 denotation(돈을 아낌)이나 connotation이 정반대(긍정/부정).</span>
+        <span class="eg-note">denotation과 connotation은 <strong>별개</strong>다 — 동의어가 아니다.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">Deixis (reference 맥락) <span style="font-size:11px;color:#8d4d14;font-family:'Noto Sans KR'">※ 핵심은 화용 챕터 — 여기선 지시 맥락에서만</span></div>
+      <p class="note"><span class='kw1'>Deictic expression</span>은 발화 맥락(화자·시간·장소)에 따라 referent가 정해지는 표현이다(Greek 'pointing').</p>
+      <div class="grid col3">
+        <div class="grid-item">
+          <div class="gi-title">person deixis</div>
+          <div class="gi-body"><span><em>I, you, this, him, them</em></span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">spatial deixis</div>
+          <div class="gi-body"><span><em>here, there, this, that</em></span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">temporal deixis</div>
+          <div class="gi-body"><span><em>now, then, last week</em></span></div>
+        </div>
+      </div>
+      <p class="note"><span class='kw2'>proximal</span>(화자에 가까움): <em>this / here / now</em> &nbsp;↔&nbsp; <span class='kw2'>distal</span>(화자에서 멂): <em>that / there / then</em>.</p>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📝 출제 각도 (Semantics – Reference / Deixis)</div>
+      <p>같은 referent를 가리키는 두 표현의 <span class='kw1'>sense</span> 차이 식별, person/spatial <span class='kw1'>deixis</span> 식별·deictic shifting이 출제 각도로 보고됨(메가쌤 기출 분석, <em>Pragmatics – Deixis – Deictic Expressions</em>; 검증된 연도 stamp 없음 → 연도 미표기).</p>
+    </div>
+  </div>
+</div>
+
+<!-- ② Synonymy & Antonymy -->
+<div class="sec" id="synonymy-antonymy">
+  <div class="sec-header" onclick="toggle('synonymy-antonymy')">
+    <span class="sec-icon">⚖️</span>
+    <span class="sec-title">② Synonymy &amp; Antonymy</span>
+    <span class="sec-tag">동의 · 반의 3유형</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Synonymy</div>
+      <div class="def"><span class='kw1'>Synonymy</span> is sameness or near-sameness of sense (<em>big/large</em>, <em>buy/purchase</em>). True synonymy is rare; synonyms are usually <span class='kw1'>context-dependent</span> — interchangeable in some contexts but not all.</div>
+      <p class="note">synonymy는 sense가 같거나 거의 같은 관계인데, 완전 동의어는 드물고 대개 <span class='kw1'>context-dependent</span>다(어떤 문맥에서만 교체 가능).</p>
+      <div class="eg">
+        <span class="eg-line"><em>a small chance</em> / <em>a little chance</em> — 둘 다 자연스러움.</span>
+        <span class="eg-line"><em>a small boy</em>(크기) ≠ <em>a little boy</em>(어림+귀여움) — 문맥 의존.</span>
+        <span class="eg-note">같은 어휘쌍이라도 context에 따라 교체 가능 여부가 달라진다.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">Antonymy — 3 standard sub-types</div>
+      <div class="grid col3">
+        <div class="grid-item">
+          <div class="gi-title">Complementary (binary)</div>
+          <div class="gi-body"><span>한쪽 부정 = 다른쪽 긍정</span><span>중간값 없음</span><span>정도 부사·비교급 부자연</span><span class="eg-line eg-ok" style="font-size:12px">awake/asleep, legal/illegal, true/false</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Gradable</div>
+          <div class="gi-body"><span>척도상 대립, 중간값 존재</span><span>정도 부사·비교급 가능</span><span>상대적, 한쪽 <span class='kw2'>unmarked</span></span><span class="eg-line eg-ok" style="font-size:12px">cheap/expensive, warm/cool, bright/dim</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Converse (relational)</div>
+          <div class="gi-body"><span>같은 관계를 반대 시점에서</span><span>서로 paraphrase</span><span class="eg-line eg-ok" style="font-size:12px">teacher/student, lend/borrow, in front of/behind</span></div>
+        </div>
+      </div>
+      <p class="note"><span class='kw3'>markedness</span>: gradable에서 한쪽이 unmarked(중립) 멤버다 — <em>How old is he?</em>는 자연스럽지만 <span class='kw4'>*How young is he?</span>는 어색(중립 질문 불가).</p>
+      <p class="note"><span class='kw4'>함정</span>: <em>hot/cold</em>는 <span class='kw4'>complementary가 아니라 gradable</span>이다 — warm/cool 등 중간값이 존재한다.</p>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📝 출제 각도 (Lexical Relations – Antonymy)</div>
+      <p><span class='kw1'>gradable</span> 여부, complementary/converse 분류가 임용 영어학에서 반복 출제 토픽으로 등장(topic attestation). <span class='kw1'>converse(=relational)</span> 쌍의 paraphrase 관계 판별이 전형적 각도. <span style="font-size:12px">(연도·문항 wording 미표기.)</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- ③ Hyponymy & Meronymy -->
+<div class="sec" id="hyponymy-meronymy">
+  <div class="sec-header" onclick="toggle('hyponymy-meronymy')">
+    <span class="sec-icon">🌳</span>
+    <span class="sec-title">③ Hyponymy &amp; Meronymy (· prototype)</span>
+    <span class="sec-tag">포함 · 부분–전체</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Hyponymy — inclusion of sense (kind-of)</div>
+      <div class="def"><span class='kw1'>Hyponymy</span> is inclusion of sense (a <span class='kw1'>kind-of</span> relation). A <span class='kw1'>superordinate</span> (= <span class='kw1'>hypernym</span>) term includes more specific <span class='kw1'>hyponyms</span>; hyponyms at the same level are <span class='kw2'>cohyponyms</span>. A hyponym <span class='kw4'>entails</span> its superordinate, but not vice versa.</div>
+      <p class="note">superordinate(=hypernym)가 더 구체적인 hyponym들을 포함하고, 같은 층위의 형제는 cohyponym이다.</p>
+      <p class="note"><span class='kw4'>방향 고정</span>: hyponym은 superordinate를 <span class='kw4'>entail</span>한다 (<em>I planted tulips</em> ⊨ <em>I planted flowers</em>). 역방향은 성립하지 않는다 (<em>flower</em> 샀다고 <em>rose</em> 산 것은 아님).</p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 660 280" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrowS1" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#1f7a4a"/></marker>
+      </defs>
+      <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">Hyponymy taxonomy — superordinate ⊃ hyponyms (cohyponyms 동일 층위)</text>
+      <!-- superordinate -->
+      <rect x="280" y="40" width="100" height="34" rx="7" fill="#eef0ff" stroke="#3b3f86" stroke-width="1.5"/>
+      <text x="330" y="62" text-anchor="middle" font-size="15" font-weight="700" fill="#2a2e6e">bird</text>
+      <text x="392" y="58" text-anchor="start" font-size="10" fill="#4a4d6a">(superordinate / hypernym)</text>
+      <!-- branches -->
+      <line x1="330" y1="74" x2="140" y2="130" stroke="#999" stroke-width="1.5"/>
+      <line x1="330" y1="74" x2="330" y2="130" stroke="#999" stroke-width="1.5"/>
+      <line x1="330" y1="74" x2="520" y2="130" stroke="#999" stroke-width="1.5"/>
+      <!-- hyponyms -->
+      <rect x="90" y="132" width="100" height="32" rx="7" fill="#f0fff4" stroke="#1f7a4a" stroke-width="1.5"/>
+      <text x="140" y="153" text-anchor="middle" font-size="14" fill="#1f7a4a">sparrow</text>
+      <rect x="280" y="132" width="100" height="32" rx="7" fill="#f0fff4" stroke="#1f7a4a" stroke-width="1.5"/>
+      <text x="330" y="153" text-anchor="middle" font-size="14" fill="#1f7a4a">eagle</text>
+      <rect x="470" y="132" width="100" height="32" rx="7" fill="#f0fff4" stroke="#1f7a4a" stroke-width="1.5"/>
+      <text x="520" y="153" text-anchor="middle" font-size="14" fill="#1f7a4a">owl</text>
+      <text x="330" y="186" text-anchor="middle" font-size="11" fill="#4a4d6a">sparrow · eagle · owl = cohyponyms (서로 동일 층위 hyponym)</text>
+      <!-- entailment arrow: hyponym -> superordinate -->
+      <path d="M 140,132 Q 220,100 285,74" stroke="#1f7a4a" stroke-width="1.8" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowS1)"/>
+      <text x="330" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#1f7a4a">entailment 방향: sparrow ⊨ bird &nbsp;(역방향 bird ⊭ sparrow)</text>
+      <text x="330" y="256" text-anchor="middle" font-size="12" fill="#b71c1c">화살표는 hyponym → superordinate 한 방향만 성립</text>
+    </svg>
+    <div class="concept">
+      <div class="c-title">Meronymy vs Prototype <span style="font-size:11px;color:#8d4d14;font-family:'Noto Sans KR'">※ 표준, refs 미수록</span></div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">Meronymy (part–whole)</div>
+          <div class="gi-body"><span>meronym = holonym의 <strong>부분</strong></span><span><em>page</em> ∈ <em>book</em>, <em>engine</em> ∈ <em>car</em>, <em>petal</em> ∈ <em>flower</em></span><span style="color:#b71c1c">hyponymy(종류)와 구분: <em>wheel</em>은 <em>car</em>의 <strong>부분</strong>이지 <strong>종류</strong>가 아님</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Prototype</div>
+          <div class="gi-body"><span>범주의 가장 전형적·중심 멤버</span><span>범주 소속은 <strong>graded</strong>(정도 문제)</span><span><em>robin/sparrow</em>가 <em>bird</em>의 prototype에 가깝고 <em>penguin/ostrich</em>는 주변적</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📝 출제 각도 (Lexical Relations – Hyponymy)</div>
+      <p><span class='kw1'>hyponymy</span> 방향성(hyponym ⊨ superordinate, 역은 X)이 반복 출제 토픽으로 등장. 부분–전체(<span class='kw1'>meronymy</span>)와 종류 관계(hyponymy) 혼동이 전형적 함정. <span style="font-size:12px">(연도 미표기.)</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- ④ Homonymy & Polysemy -->
+<div class="sec" id="homonymy-polysemy">
+  <div class="sec-header" onclick="toggle('homonymy-polysemy')">
+    <span class="sec-icon">🔤</span>
+    <span class="sec-title">④ Homonymy &amp; Polysemy (· homophone · homograph)</span>
+    <span class="sec-tag">무관 vs 관련 의미</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Homonymy vs Polysemy</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">Homonymy</div>
+          <div class="gi-body"><span>한 word-form, <strong>무관한(unrelated)</strong> 둘 이상의 의미</span><span>사전 <strong>별도 entry</strong></span><span class="eg-line" style="font-size:12px"><em>bank</em> '강가' / '은행'</span><span class="eg-line" style="font-size:12px"><em>bark</em> '나무껍질' / '개 짖는 소리'</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Polysemy</div>
+          <div class="gi-body"><span>한 word-form, <strong>관련된(related)</strong> 여러 의미</span><span>사전 <strong>단일 entry</strong></span><span class="eg-line" style="font-size:12px"><em>head</em> '신체' / '리더' / '윗부분'</span><span class="eg-line" style="font-size:12px"><em>mouth</em> '사람의 입' / '강어귀'</span></div>
+        </div>
+      </div>
+      <div class="def" style="font-size:15px"><span class='kw4'>판별 기준</span>: 두 의미가 <span class='kw1'>관련</span>되면 polysemy, <span class='kw1'>무관</span>하면(특히 품사가 다르면) homonymy.</div>
+      <p class="note">예: <em>bright</em> '영리한' / '빛나는'은 의미가 <span class='kw4'>관련</span>되므로 <span class='kw4'>polysemy</span>(homonymy 아님). <em>the foot of the mountain</em>의 <em>foot</em>도 신체 <em>foot</em>과 관련된 polysemy.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Homophone vs Homograph <span style="font-size:11px;color:#8d4d14;font-family:'Noto Sans KR'">※ 표준 하위 구분, refs 미수록</span></div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">Homophone (소리만 같음)</div>
+          <div class="gi-body"><span>same sound, 다른 철자/의미</span><span><em>flour/flower</em>, <em>night/knight</em>, <em>sea/see</em></span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Homograph (철자만 같음)</div>
+          <div class="gi-body"><span>same spelling, 다른 소리/의미일 수 있음</span><span><em>lead</em> /liːd/ '이끌다' / <em>lead</em> /lɛd/ '납'</span><span><em>tear</em> /tɪər/ '눈물' / <em>tear</em> /tɛər/ '찢다'</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑤ Entailment & Presupposition -->
+<div class="sec" id="entailment-presupposition">
+  <div class="sec-header" onclick="toggle('entailment-presupposition')">
+    <span class="sec-icon">🧮</span>
+    <span class="sec-title">⑤ Entailment &amp; Presupposition</span>
+    <span class="sec-tag">함의 · 전제 · truth-table</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Entailment (함의)</div>
+      <div class="def">Sentence p <span class='kw4'>entails</span> q iff whenever p is true, q must be true; and whenever q is false, p must be false. (If p is false, nothing follows about q.) Entailment is given by <span class='kw1'>linguistic structure</span> — lexical (hyponymy) or syntactic (active/passive).</div>
+      <p class="note">entailment(함의)는 <span class='kw1'>p가 참이면 q가 반드시 참</span>, <span class='kw1'>q가 거짓이면 p가 반드시 거짓</span>인 관계다. <span class='kw4'>p가 거짓이면 q는 미정</span>이다.</p>
+      <p class="note"><span class='kw2'>one-way</span>: <em>Tom assassinated the senator</em> ⊨ <em>The senator died</em> (assassinate가 die를 포함). 역은 성립 안 함.</p>
+      <p class="note"><span class='kw3'>paraphrase = mutual entailment</span>: 능동/수동쌍은 서로를 entail한다 — <em>The committee approved the plan</em> ⟺ <em>The plan was approved by the committee</em>.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Presupposition (전제) — constancy under negation</div>
+      <div class="def"><span class='kw4'>Presupposition</span> is a background assumption a speaker takes as already true. <span class='kw1'>Diagnostic — constancy under negation</span>: the presupposition survives when the sentence is negated.</div>
+      <p class="note">presupposition(전제)는 화자가 이미 참으로 깔고 가는 배경이며, <span class='kw4'>부정해도 유지</span>되는지로 진단한다: <em>My car is a wreck</em> / <em>My car is not a wreck</em> → 둘 다 <em>I have a car</em>를 presuppose.</p>
+      <p class="note"><span class='kw4'>함정</span>: presupposition은 문장을 부정하면 <span class='kw4'>사라지는 것이 아니라 유지</span>된다.</p>
+      <p class="note"><span class='kw3'>Presupposition triggers</span>: definite expression, factive verb(<em>regret, realize, be aware, be odd</em>), implicative verb(<em>manage, forget</em>), change-of-state verb(<em>stop, begin, continue</em>), iterative(<em>again, return</em>), cleft, wh-question.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Truth-table 변별 (메가쌤 출제 각도)</div>
+      <div class="tbl-wrap">
+        <table class="diag">
+          <thead>
+            <tr><th>관계</th><th>p가 참 → q</th><th>p를 부정 → q</th><th>대표 예</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>Entailment</th><td class="y">q 참</td><td>q 미정(원문장에 딸림)</td><td><em>Mary sings arias beautifully</em> ⊨ <em>Mary sings arias</em></td></tr>
+            <tr><th>Presupposition</th><td class="y">presup 참</td><td class="y">presup 여전히 참</td><td><em>John lost the wallet again</em> ≫ <em>John had lost it before</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note"><span class='kw4'>핵심 변별</span>: 부정해도 살아남으면 <span class='kw4'>presupposition</span>, 부정하면 사라지면 (원문장에만 딸린) <span class='kw4'>entailment</span> 쪽.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Implicature note <span style="font-size:11px;color:#8d4d14;font-family:'Noto Sans KR'">※ 표준, Pragmatics 소관 — 대비만</span></div>
+      <p class="note"><span class='kw1'>Implicature</span>는 <span class='kw4'>취소 가능한(cancellable)</span> 추론(Grice)으로, 취소 불가능한 entailment와 대비된다. <em>Some students passed</em>는 'not all'을 implicate하지만 취소 가능하다(<em>in fact, all did</em>).</p>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📝 출제 각도 (Semantics – Truth Condition – Entailment & Presupposition)</div>
+      <p>두 문장쌍의 의미 관계를 <span class='kw1'>truth-table</span> 기준으로 <strong>판별·설명</strong>: 1a T→1b T / 1b F→1a F = <span class='kw1'>entailment</span>; 2a를 부정해도 2b 유지 = <span class='kw1'>presupposition</span>. 메가쌤 기출 분석 보고 각도(연도 stamp 없음 → 미표기).</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑥ Ambiguity -->
+<div class="sec" id="ambiguity">
+  <div class="sec-header" onclick="toggle('ambiguity')">
+    <span class="sec-icon">🌗</span>
+    <span class="sec-title">⑥ Ambiguity — lexical vs structural</span>
+    <span class="sec-tag">단어 의미 vs 구조</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Lexical vs Structural Ambiguity</div>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">Lexical ambiguity</div>
+          <div class="gi-body"><span>한 <strong>단어</strong>가 여러 sense(homonymy/polysemy) → 문장 중의</span><span class="eg-line" style="font-size:12px"><em>She went to the bank.</em> (강가 / 은행)</span><span class="eg-line" style="font-size:12px"><em>The pitcher was full.</em> (주전자 / 투수)</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Structural (syntactic) ambiguity</div>
+          <div class="gi-body"><span>같은 단어열에 <strong>구성 구조(트리)</strong>가 둘 이상</span><span class="eg-line" style="font-size:12px"><em>The boy saw the man with a telescope.</em> (PP attachment)</span><span class="eg-line" style="font-size:12px"><em>Every student read a book.</em> (scope)</span></div>
+        </div>
+      </div>
+      <p class="note"><span class='kw4'>변별</span>: 트리가 둘로 갈리면 <span class='kw4'>structural</span>, 단어 하나의 의미가 갈리면 <span class='kw4'>lexical</span>. 예: <em>He saw her duck</em>는 단어 <em>duck</em>의 두 의미 → <span class='kw4'>lexical</span>(structural 아님).</p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+      <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">Structural ambiguity: "old men and women" — 두 bracketing(구조)</text>
+      <!-- Reading A: [old [men and women]] -->
+      <text x="165" y="48" text-anchor="middle" font-size="12" font-weight="700" fill="#3b3f86">Reading A — 모두 늙음</text>
+      <text x="165" y="66" text-anchor="middle" font-size="11" fill="#4a4d6a">[ old [ men and women ] ]</text>
+      <text x="165" y="92" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">NP</text>
+      <line x1="165" y1="98" x2="90" y2="128" stroke="#999" stroke-width="1.5"/>
+      <line x1="165" y1="98" x2="240" y2="128" stroke="#999" stroke-width="1.5"/>
+      <text x="90" y="148" text-anchor="middle" font-size="12" font-style="italic" fill="#1f7a8c">old</text>
+      <text x="240" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">NP</text>
+      <line x1="240" y1="154" x2="195" y2="184" stroke="#999" stroke-width="1.5"/>
+      <line x1="240" y1="154" x2="240" y2="184" stroke="#999" stroke-width="1.5"/>
+      <line x1="240" y1="154" x2="290" y2="184" stroke="#999" stroke-width="1.5"/>
+      <text x="195" y="202" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">men</text>
+      <text x="240" y="202" text-anchor="middle" font-size="11" fill="#1a1a1a">and</text>
+      <text x="290" y="202" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">women</text>
+      <text x="165" y="232" text-anchor="middle" font-size="11" fill="#1f7a4a">old이 [men and women] 전체를 수식 → 남녀 모두 늙음</text>
+      <!-- divider -->
+      <line x1="335" y1="40" x2="335" y2="250" stroke="#c5c8e8" stroke-width="1.5" stroke-dasharray="4,4"/>
+      <!-- Reading B: [[old men] and women] -->
+      <text x="500" y="48" text-anchor="middle" font-size="12" font-weight="700" fill="#3b3f86">Reading B — 남자만 늙음</text>
+      <text x="500" y="66" text-anchor="middle" font-size="11" fill="#4a4d6a">[ [ old men ] and women ]</text>
+      <text x="500" y="92" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">NP</text>
+      <line x1="500" y1="98" x2="430" y2="128" stroke="#999" stroke-width="1.5"/>
+      <line x1="500" y1="98" x2="510" y2="128" stroke="#999" stroke-width="1.5"/>
+      <line x1="500" y1="98" x2="585" y2="128" stroke="#999" stroke-width="1.5"/>
+      <text x="430" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">NP</text>
+      <text x="510" y="148" text-anchor="middle" font-size="11" fill="#1a1a1a">and</text>
+      <text x="585" y="148" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">women</text>
+      <line x1="430" y1="154" x2="400" y2="184" stroke="#999" stroke-width="1.5"/>
+      <line x1="430" y1="154" x2="460" y2="184" stroke="#999" stroke-width="1.5"/>
+      <text x="400" y="202" text-anchor="middle" font-size="11" font-style="italic" fill="#1f7a8c">old</text>
+      <text x="460" y="202" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">men</text>
+      <text x="500" y="232" text-anchor="middle" font-size="11" fill="#1f7a4a">old이 [men]만 수식 → 남자만 늙음, women은 무관</text>
+    </svg>
+    <div class="concept">
+      <div class="c-title">Disambiguation tests (PP attachment)</div>
+      <p class="note"><span class='kw1'>substitution</span>(<em>saw him</em>로 대체), <span class='kw1'>passivization</span>, <span class='kw1'>preposing/movement</span>으로 structural ambiguity를 disambiguate한다.</p>
+      <div class="eg">
+        <span class="eg-line"><em>I watched the bird with binoculars.</em> — binoculars가 bird 소유 vs 도구(structural, PP).</span>
+        <span class="eg-line"><em>Someone loves everyone.</em> — 한 사람이 모두를 / 각자에게 사랑하는 누군가(scope).</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑦ Thematic Roles -->
+<div class="sec" id="thematic-roles">
+  <div class="sec-header" onclick="toggle('thematic-roles')">
+    <span class="sec-icon">🎭</span>
+    <span class="sec-title">⑦ Thematic / Semantic Roles</span>
+    <span class="sec-tag">theta-role · 의미로 부여</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">Each argument of a predicate bears a <span class='kw1'>thematic role</span> (theta-role), drawn from a small universal set. Roles are assigned by <span class='kw4'>meaning</span>, independent of grammatical function (subject/object).</div>
+      <p class="note">role은 <span class='kw4'>의미</span>로 부여되며 subject/object 같은 grammatical function과 <span class='kw4'>독립적</span>이다 — 같은 NP가 위치를 바꿔도 role이 유지된다.</p>
+      <p class="note"><em>broke the window</em>에서 <em>John</em>=Agent, <em>a hammer</em>=Instrument — 같은 subject 자리라도 role이 다르다.</p>
+    </div>
+    <div class="concept">
+      <div class="c-title">Role 목록</div>
+      <div class="grid col2">
+        <div class="grid-item"><div class="gi-title">Agent</div><div class="gi-body"><span>행위 주체(instigator)</span><span><em>John</em> broke the window.</span></div></div>
+        <div class="grid-item"><div class="gi-title">Theme / Patient</div><div class="gi-body"><span>영향 받는·겪는 대상</span><span>John broke <em>the window</em>; <em>Mary</em> fell.</span></div></div>
+        <div class="grid-item"><div class="gi-title">Experiencer</div><div class="gi-body"><span>심리 상태 경험자</span><span><em>John</em> was happy.</span></div></div>
+        <div class="grid-item"><div class="gi-title">Instrument</div><div class="gi-body"><span>수단</span><span>John wounded Harry <em>with a knife</em>.</span></div></div>
+        <div class="grid-item"><div class="gi-title">Goal</div><div class="gi-body"><span>도착점</span><span>John passed the book <em>to Mary</em>.</span></div></div>
+        <div class="grid-item"><div class="gi-title">Source</div><div class="gi-body"><span>출발점</span><span>John returned <em>from Paris</em>.</span></div></div>
+        <div class="grid-item"><div class="gi-title">Benefactive</div><div class="gi-body"><span>수혜자</span><span>John bought flowers <em>for Mary</em>.</span></div></div>
+        <div class="grid-item"><div class="gi-title">Location (Locative)</div><div class="gi-body"><span>장소</span><span>John hid the letter <em>under the bed</em>.</span></div></div>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">예문 — role 배정</div>
+      <div class="eg">
+        <span class="eg-line"><em>The chef</em>(Agent) sliced <em>the onion</em>(Theme) <em>with a cleaver</em>(Instrument).</span>
+        <span class="eg-line"><em>Maria</em>(Agent) sent <em>a parcel</em>(Theme) <em>to her cousin</em>(Goal) <em>from Madrid</em>(Source).</span>
+        <span class="eg-line"><em>The toddler</em>(Experiencer) feared the dog. — 심리 상태이므로 Agent 아님.</span>
+        <span class="eg-note"><strong>독립성</strong>: <em>The vase broke</em>(the vase=Theme, subject) vs <em>The cat broke the vase</em>(the vase=Theme, object) — 위치가 달라도 Theme 유지.</span>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📝 출제 각도 (Syntax – Theta Theory – Thematic Relations & Theta Roles)</div>
+      <p>argument들의 <span class='kw1'>thematic role</span>을 <strong>식별</strong>하고, role이 grammatical function과 독립적임을 설명(같은 NP가 위치 바뀌어도 Theme 유지; <span class='kw1'>Theme vs Instrument</span> 변별). 메가쌤 기출 분석 보고 각도(연도 stamp 없음 → 미표기).</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑧ Componential Analysis -->
+<div class="sec" id="componential-analysis">
+  <div class="sec-header" onclick="toggle('componential-analysis')">
+    <span class="sec-icon">🧬</span>
+    <span class="sec-title">⑧ Componential Analysis &amp; Truth Conditions</span>
+    <span class="sec-tag">semantic feature · analytic/synthetic</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Componential Analysis — semantic features</div>
+      <div class="def"><span class='kw1'>Componential analysis</span> decomposes word meaning into binary <span class='kw1'>semantic features</span> ([±feature]). Words can be distinguished by the value of a single feature.</div>
+      <div class="tbl-wrap">
+        <table class="diag">
+          <thead>
+            <tr><th></th><th>[±human/horse]</th><th>[±adult]</th><th>[±male]</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>man</th><td>+human</td><td class="y">+adult</td><td>+male</td></tr>
+            <tr><th>woman</th><td>+human</td><td class="y">+adult</td><td class="n">−male</td></tr>
+            <tr><th>boy</th><td>+human</td><td class="n">−adult</td><td>+male</td></tr>
+            <tr><th>girl</th><td>+human</td><td class="n">−adult</td><td class="n">−male</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note"><em>man</em>과 <em>boy</em>는 오직 <span class='kw4'>[±adult]</span> 자질 값에서만 차이가 난다.</p>
+      <p class="note"><span class='kw3'>Selectional restriction</span>: predicate가 argument에 거는 의미 자질 제약 — <em>regret</em>는 [+human] 주어 요구(<span class='kw4'>*The rock regretted leaving</span>).</p>
+      <div class="eg">
+        <span class="eg-line"><em>stallion</em> = [+horse, +male, +adult]; <em>mare</em> = [+horse, −male, +adult]; <em>foal</em> = [+horse, −adult].</span>
+        <span class="eg-line eg-bad"><em>The idea slept furiously.</em> — <em>sleep</em>은 [+animate] 주어 요구 → 위반.</span>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="c-title">Truth conditions <span style="font-size:11px;color:#8d4d14;font-family:'Noto Sans KR'">※ proposition·contradiction·tautology는 표준 도입</span></div>
+      <p class="note"><span class='kw1'>Proposition</span>은 평서문의 의미 내용(참·거짓의 대상)이고, 문장 의미는 <span class='kw1'>truth conditions</span>(참이 되는 조건)로 모형화된다.</p>
+      <div class="grid col2">
+        <div class="grid-item">
+          <div class="gi-title">Analytic sentence</div>
+          <div class="gi-body"><span>단어 의미만으로 <strong>필연적 참</strong></span><span><em>A triangle has three sides.</em></span><span><em>A bachelor is unmarried.</em></span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Synthetic sentence</div>
+          <div class="gi-body"><span>세계 상태에 따라 참·거짓</span><span><em>The senator owns a yacht.</em></span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Contradiction</div>
+          <div class="gi-body"><span>필연적 <strong>거짓</strong></span><span><em>My unmarried sister is married.</em></span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Tautology</div>
+          <div class="gi-body"><span>필연적·trivial 참</span><span><em>Either it is raining or it is not.</em></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-bottom">
+  <a class="nav-btn" href="./morphology_study.html">← Ch.6 Morphology</a>
+  <a class="nav-btn next-btn" href="./semantics.html">📝 Ch.7 Semantics OX 28문항 풀러 가기 →</a>
+</div>
+</div>
+<script>
+function toggle(id){ document.getElementById(id).classList.toggle('open'); }
+function openSec(id){ const s=document.getElementById(id); s.classList.add('open'); s.scrollIntoView({behavior:'smooth',block:'start'}); }
+</script>
+</body>
+</html>
