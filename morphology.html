@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.6 Morphology OX Quiz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">NO. 06 <span>—</span> Morphology</span>
+    <span class="header-label">Past-Exam Notebook</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <div class="header-script">Concept Master · English Morphology</div>
+  <p class="header-sub">형태론 · Morphology · 임용고시 대비</p>
+  <div class="header-divider"></div>
+</div>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">1 / 28</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:3.6%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div id="nav"></div>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/28</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const Q=[
+
+  /* ── ① Morpheme — free/bound ───────────────────────────── */
+  {src:"Morpheme",cat:"definition",
+   text:"A <span class='kw1'>bound morpheme</span> cannot stand alone as a word and must attach to another form, as with <em>-ness</em> in <em>brightness</em> or <em>re-</em> in <em>reopen</em>.",
+   ans:true,
+   correct:"<span class='kw1'>bound morpheme</span>의 정의로 정확하다 — 단독 단어로 설 수 없고 다른 형태에 붙어야 한다.",
+   why:"bound morpheme은 혼자 단어가 되지 못하고 반드시 base에 부착됩니다. <em>-ness</em>·<em>re-</em>처럼 모든 affix가 여기에 속합니다. 반대로 <em>bright</em>·<em>open</em>은 단독으로 설 수 있는 free morpheme입니다.",
+   source:"Refs 요지: A bound morpheme cannot stand alone and must attach to another form (e.g., -ness, re-).",
+   compare:[{title:"Free morpheme",desc:"bright, open — 단독 단어 가능"},{title:"Bound morpheme",desc:"-ness, re- — 부착 필수"}]},
+
+  {src:"Morpheme",cat:"affixes are bound",
+   text:"In English, every affix — both <span class='kw1'>prefixes</span> and <span class='kw1'>suffixes</span> — is a bound morpheme.",
+   ans:true,
+   correct:"영어의 모든 affix(prefix·suffix)는 <span class='kw2'>bound morpheme</span>이다.",
+   why:"영어에서 affix는 prefix이든 suffix이든 단독으로 단어가 될 수 없어 항상 base에 붙어야 합니다. 따라서 모든 affix는 정의상 bound morpheme입니다.",
+   source:"Refs 요지: All affixes (prefixes and suffixes) in English are bound morphemes."},
+
+  {src:"Morpheme",cat:"definition trap",
+   text:"A morpheme is best defined as <span class='kw4'>the smallest unit that can always stand alone as an independent word</span>.",
+   ans:false,
+   correct:"morpheme은 의미·문법 기능의 <span class='kw2'>최소 단위</span>일 뿐이며, bound morpheme은 단독으로 설 수 없다.",
+   why:"morpheme은 minimal unit of meaning or grammatical function으로 정의됩니다. 단독으로 설 수 있는 것은 free morpheme에 한정되며, <em>-ed</em>·<em>un-</em> 같은 bound morpheme은 독립 단어가 될 수 없습니다.",
+   source:"Refs 요지: A morpheme is the minimal unit of meaning/function; bound morphemes cannot stand alone."},
+
+  /* ── ② Inflection vs Derivation ────────────────────────── */
+  {src:"Inflection",cat:"inventory · suffix",
+   text:"English has exactly <span class='kw1'>eight inflectional morphemes</span>, and all of them are suffixes.",
+   ans:true,
+   correct:"영어 inflection은 정확히 <span class='kw2'>8개</span>이며 모두 suffix다.",
+   why:"영어의 8 inflections는 noun <em>-'s</em>(possessive)·<em>-s</em>(plural), verb <em>-s</em>(3sg)·<em>-ing</em>·<em>-ed</em>·<em>-en</em>, adjective <em>-er</em>(comparative)·<em>-est</em>(superlative)이며, 모두 suffix입니다. inflectional prefix는 없습니다.",
+   source:"Refs 요지: English has exactly 8 inflectional morphemes, all suffixes.",
+   compare:[{title:"Noun",desc:"-'s, -s"},{title:"Verb · Adj",desc:"-s, -ing, -ed, -en / -er, -est"}]},
+
+  {src:"Inflection",cat:"category-preserving",
+   text:"An <span class='kw1'>inflectional morpheme</span> never changes the grammatical category of the word it attaches to.",
+   ans:true,
+   correct:"inflection은 <span class='kw2'>category-preserving</span> — 품사를 절대 바꾸지 않는다.",
+   why:"inflection은 수·시제·비교·소유 같은 문법 기능만 표시하고 품사를 유지합니다. <em>walk → walks/walked/walking</em>은 모두 verb로 남고, <em>tall → taller/tallest</em>는 모두 adjective입니다.",
+   source:"Refs 요지: Inflection is category-preserving; it never changes the part of speech."},
+
+  {src:"Derivation",cat:"class-changing suffix",
+   text:"The suffix <em>-ize</em> in <em>standardize</em> is a <span class='kw1'>class-changing</span> derivational affix.",
+   ans:true,
+   correct:"<em>-ize</em>는 품사를 바꾸는 <span class='kw2'>class-changing</span> derivational suffix다 (A/N→V).",
+   why:"<em>standard</em>(N/A) + <em>-ize</em> → <em>standardize</em>(V)로 품사가 바뀝니다. 이렇게 새 단어를 만들고 품사를 바꾸는 affix는 derivational이며, 그중 품사를 바꾸는 것을 class-changing이라 합니다.",
+   source:"Refs 요지: -ize is a class-changing derivational suffix (N/A → V)."},
+
+  {src:"Inflection",cat:"-er homophony trap",
+   text:"The <em>-er</em> in <em>painter</em> is an <span class='kw4'>inflectional</span> morpheme, just like the <em>-er</em> in <em>shorter</em>.",
+   ans:false,
+   correct:"<em>painter</em>의 <em>-er</em>는 agentive <span class='kw2'>derivational</span>(V→N)이고, <em>shorter</em>의 <em>-er</em>는 comparative inflection이다 — 동음이지만 다른 morpheme.",
+   why:"<em>paint</em>(V) + agentive <em>-er</em> → <em>painter</em>(N)는 품사를 바꾸는 derivation입니다. 반면 <em>short</em> → <em>shorter</em>의 <em>-er</em>는 comparative inflection(adj→adj)으로 품사를 유지합니다. 형태는 같아도 서로 다른 morpheme입니다.",
+   source:"Refs 요지: Agentive -er (painter) is derivational (V→N); comparative -er (shorter) is inflectional.",
+   compare:[{title:"derivational -er",desc:"painter (V→N), agentive"},{title:"inflectional -er",desc:"shorter (adj), comparative"}]},
+
+  {src:"Inflection",cat:"un- is not inflection",
+   text:"The <em>un-</em> in <em>unfriendly</em> is an <span class='kw4'>inflectional prefix</span>.",
+   ans:false,
+   correct:"<em>un-</em>는 <span class='kw2'>derivational</span> prefix다. 영어 inflection에는 prefix가 없다(모두 suffix).",
+   why:"영어의 inflection 8개는 모두 suffix이므로 inflectional prefix는 존재하지 않습니다. <em>un-</em>는 새 단어를 만드는 derivational prefix(adj→adj)입니다.",
+   source:"Refs 요지: English has no inflectional prefixes; un- is derivational."},
+
+  {src:"Inflection",cat:"count trap",
+   text:"English has <span class='kw4'>twelve inflectional morphemes</span>, several of which are prefixes.",
+   ans:false,
+   correct:"영어 inflection은 <span class='kw2'>8개</span>이며 모두 suffix다 — prefix는 하나도 없다.",
+   why:"영어의 inflection은 정확히 8개이고 전부 suffix입니다. '12개'·'prefix 포함'은 모두 틀린 진술입니다.",
+   source:"Refs 요지: English has exactly 8 inflections, all suffixes — none are prefixes."},
+
+  /* ── ③ Word-formation processes ────────────────────────── */
+  {src:"Conversion",cat:"zero-derivation",
+   text:"In <em>They will salt the soup</em>, <em>salt</em> is formed by <span class='kw1'>conversion (zero-derivation)</span>, with no affix added.",
+   ans:true,
+   correct:"<em>salt</em>(N→V)는 affix 없이 품사만 바뀐 <span class='kw2'>conversion</span>의 예다.",
+   why:"명사 <em>salt</em>를 동사로 그대로 쓰는 것은 affix를 더하지 않고 품사만 바꾸는 conversion(zero-derivation, functional shift)입니다. 형태 변화 없이 syntactic category만 바뀝니다.",
+   source:"Refs 요지: Conversion assigns a word to a new category without adding an affix (N→V salt)."},
+
+  {src:"Blending",cat:"process ID",
+   text:"<em>Smog</em>, from <em>smoke</em> + <em>fog</em>, is formed by <span class='kw1'>blending</span>.",
+   ans:true,
+   correct:"<em>smog</em>는 두 단어의 비형태소적 조각을 합친 <span class='kw2'>blending</span>이다.",
+   why:"blending은 두 단어의 non-morphemic 조각(보통 앞 단어 앞부분 + 뒤 단어 뒷부분)을 결합합니다. <em>smoke</em>의 앞부분과 <em>fog</em>의 뒷부분이 합쳐져 <em>smog</em>가 됩니다.",
+   source:"Refs 요지: Blending combines non-morphemic parts of two words (smoke + fog → smog)."},
+
+  {src:"Backformation",cat:"process ID",
+   text:"<em>Edit</em> was created from <em>editor</em> by <span class='kw1'>backformation</span>.",
+   ans:true,
+   correct:"<em>edit</em>은 <em>editor</em>에서 추정 affix를 떼어 만든 <span class='kw2'>backformation</span>이다.",
+   why:"backformation은 실제 또는 추정 affix를 제거해 새 단어를 만드는 과정입니다. <em>editor</em>를 '<em>edit</em> + 행위자 <em>-or</em>'로 재분석해 동사 <em>edit</em>을 만들어낸 것이 그 예입니다.",
+   source:"Refs 요지: Backformation removes a (supposed) affix (editor → edit)."},
+
+  {src:"Clipping",cat:"clipping vs blending",
+   text:"<em>Brunch</em> (from <em>breakfast</em> + <em>lunch</em>) is formed by <span class='kw4'>clipping</span>.",
+   ans:false,
+   correct:"<em>brunch</em>는 두 단어 조각을 섞은 <span class='kw2'>blending</span>이다. clipping은 한 단어를 줄이는 것이다.",
+   why:"clipping은 한 다음절 단어의 음절을 잘라내는 것입니다(<em>professor → prof</em>). <em>brunch</em>는 <em>breakfast</em>와 <em>lunch</em> 두 단어의 조각을 합친 것이므로 blending입니다.",
+   source:"Refs 요지: brunch (breakfast+lunch) is blending, not clipping (clipping shortens one word).",
+   compare:[{title:"Clipping",desc:"한 단어 줄임: advertisement → ad"},{title:"Blending",desc:"두 단어 조각: breakfast+lunch → brunch"}]},
+
+  {src:"Acronym",cat:"acronym vs initialism",
+   text:"<em>FBI</em>, pronounced as separate letters, is an <span class='kw4'>acronym</span>.",
+   ans:false,
+   correct:"글자를 따로 읽으면 <span class='kw2'>initialism</span>이다. acronym은 머리글자를 단어처럼 발음한다(<em>NATO</em>).",
+   why:"acronym은 구의 머리글자를 한 단어처럼 발음하는 것입니다(<em>NATO</em>, <em>radar</em>). <em>FBI</em>처럼 글자를 하나하나 따로 읽으면 initialism(abbreviation)입니다.",
+   source:"Refs 요지: Acronym = letters pronounced as a word (NATO); FBI (separate letters) is an initialism.",
+   compare:[{title:"Acronym",desc:"NATO, laser — 단어처럼 발음"},{title:"Initialism",desc:"FBI, USA — 글자 따로 발음"}]},
+
+  {src:"Conversion",cat:"conversion vs derivation",
+   text:"<em>Standardize</em> is an example of <span class='kw4'>conversion (zero-derivation)</span>.",
+   ans:false,
+   correct:"<em>standardize</em>는 suffix <em>-ize</em>를 더한 <span class='kw2'>derivation</span>이지 conversion이 아니다.",
+   why:"conversion은 affix를 더하지 않고 품사만 바꾸는 것입니다. <em>standardize</em>는 <em>-ize</em>라는 derivational suffix가 추가되었으므로 derivation에 해당합니다.",
+   source:"Refs 요지: standardize adds -ize → derivation, not conversion (no affix)."},
+
+  {src:"Compounding",cat:"derivation vs compounding",
+   text:"<em>Loveseat</em> (love + seat) is formed by <span class='kw4'>derivation</span>.",
+   ans:false,
+   correct:"<em>loveseat</em>은 두 free word를 합친 <span class='kw2'>compounding</span>이다. derivation은 affix를 더하는 과정이다.",
+   why:"derivation은 base에 derivational affix를 붙입니다. <em>loveseat</em>은 <em>love</em>와 <em>seat</em>라는 두 독립 단어를 결합한 것이므로 compounding입니다.",
+   source:"Refs 요지: loveseat (love+seat) is compounding (two free words), not derivation."},
+
+  /* ── ④ Allomorphy ──────────────────────────────────────── */
+  {src:"Allomorphy",cat:"plural allomorphs",
+   text:"[s], [z], and [əz] are three <span class='kw1'>phonologically conditioned allomorphs</span> of the English plural morpheme.",
+   ans:true,
+   correct:"plural morpheme의 세 allomorph <span class='kw2'>[s]/[z]/[əz]</span>는 음운 환경에 따라 갈린다.",
+   why:"plural <em>-s</em>는 무성음 뒤 [s](<em>maps</em>), 유성음 뒤 [z](<em>beds</em>), sibilant 뒤 [əz](<em>buzzes</em>)로 실현됩니다. 의미·기능은 같고 소리만 조건에 따라 달라지는 phonologically conditioned allomorph입니다.",
+   source:"Refs 요지: [s]/[z]/[əz] are phonologically conditioned allomorphs of the plural morpheme."},
+
+  {src:"Allomorphy",cat:"negative prefix",
+   text:"The negative prefix appears as <em>im-</em> before bilabial sounds, as in <em>imbalance</em>.",
+   ans:true,
+   correct:"negative prefix는 bilabial 앞에서 <span class='kw2'>im-</span>로 실현된다 (place assimilation).",
+   why:"negative <em>in-</em>는 후행 자음의 조음 위치에 동화됩니다. bilabial /b, p, m/ 앞에서는 <em>im-</em>(<em>imbalance, impossible</em>), /l/ 앞 <em>il-</em>, /r/ 앞 <em>ir-</em>, 그 밖에서는 <em>in-</em>입니다.",
+   source:"Refs 요지: The negative prefix becomes im- before bilabials (impossible, imbalance).",
+   compare:[{title:"im- / il- / ir-",desc:"bilabial / /l/ / /r/ 앞"},{title:"in-",desc:"그 밖의 환경"}]},
+
+  {src:"Allomorphy",cat:"conditioning trap",
+   text:"The plural allomorph [əz] occurs after voiceless stops such as the /t/ in <em>mats</em>.",
+   ans:false,
+   correct:"<em>mats</em>의 plural은 <span class='kw2'>[s]</span>다. [əz]는 sibilant 뒤(<em>bushes</em>)에만 나타난다.",
+   why:"[əz]는 sibilant(/s, z, ʃ, ʒ, tʃ, dʒ/) 뒤에서만 쓰입니다. <em>mats</em>는 무성음 /t/로 끝나므로 plural이 [s]로 실현됩니다.",
+   source:"Refs 요지: [əz] occurs after sibilants (bushes); mats takes [s]."},
+
+  {src:"Allomorphy",cat:"same meaning",
+   text:"Two <span class='kw1'>allomorphs</span> of one morpheme <span class='kw4'>differ in meaning</span> from each other.",
+   ans:false,
+   correct:"allomorph는 같은 morpheme의 변이형으로 의미·기능이 <span class='kw2'>동일</span>하고 소리(형태)만 다르다.",
+   why:"allomorph는 한 morpheme이 음운 환경에 따라 다른 형태로 실현된 것입니다. 의미·문법 기능은 같고 소리만 조건에 따라 달라집니다. [s]/[z]/[əz]는 모두 '복수'라는 같은 기능을 합니다.",
+   source:"Refs 요지: Allomorphs share the same meaning/function and differ only in form."},
+
+  /* ── ⑤ Compounding — headedness ────────────────────────── */
+  {src:"Compounding",cat:"rightmost head",
+   text:"In English compounds, the <span class='kw1'>rightmost element is the head</span> and determines the grammatical category of the whole.",
+   ans:true,
+   correct:"영어 compound의 head는 <span class='kw2'>오른쪽 요소</span>로, 전체의 품사를 결정한다.",
+   why:"영어 compound에서 head는 rightmost element입니다. <em>handmade</em>(N+A→A)처럼 마지막 요소의 품사가 전체 품사를 결정하고, 대략적 의미도 head가 좌우합니다.",
+   source:"Refs 요지: In English compounds the rightmost element is the head and fixes the category.",
+   compare:[{title:"head = rightmost",desc:"handmade → A (made)"},{title:"의미",desc:"head가 broad meaning 결정"}]},
+
+  {src:"Compounding",cat:"endocentric",
+   text:"<em>Teapot</em> is an <span class='kw1'>endocentric compound</span> because it denotes a kind of pot.",
+   ans:true,
+   correct:"<em>teapot</em>은 head(<em>pot</em>)의 하위어 — a kind of pot이므로 <span class='kw2'>endocentric</span>이다.",
+   why:"endocentric compound는 head의 hyponym으로, head가 가리키는 것의 한 종류를 뜻합니다. <em>teapot</em>은 일종의 pot이므로 endocentric입니다(<em>raincoat</em> = a kind of coat도 동일).",
+   source:"Refs 요지: An endocentric compound is a hyponym of its head (teapot = a kind of pot)."},
+
+  {src:"Compounding",cat:"exocentric",
+   text:"<em>Pickpocket</em> is an <span class='kw1'>exocentric compound</span> because it denotes a person, not a kind of pocket.",
+   ans:true,
+   correct:"<em>pickpocket</em>은 어느 요소의 하위어도 아닌 <span class='kw2'>exocentric</span>이다 — pocket의 한 종류가 아니라 사람을 가리킨다.",
+   why:"exocentric(headless) compound는 두 요소 중 어느 것의 하위어도 아닙니다. <em>pickpocket</em>은 pocket의 한 종류가 아니라 '소매치기(사람)'를 가리키므로 exocentric입니다(<em>scarecrow</em>도 동일).",
+   source:"Refs 요지: An exocentric compound denotes neither element's kind (pickpocket = a person)."},
+
+  {src:"Compounding",cat:"head trap",
+   text:"In the English compound <em>overflow</em>, <em>over</em> is the <span class='kw4'>head</span>.",
+   ans:false,
+   correct:"영어 compound의 head는 rightmost이므로 <em>overflow</em>의 head는 <span class='kw2'>flow</span>다.",
+   why:"영어 compound head는 항상 오른쪽 요소입니다. <em>overflow</em>는 <em>over</em>(preposition) + <em>flow</em>(verb)로, head는 <em>flow</em>이고 전체가 verb가 됩니다.",
+   source:"Refs 요지: The English compound head is rightmost; in overflow the head is flow."},
+
+  {src:"Compounding",cat:"compound vs phrase",
+   text:"<em>Greenhouse</em> and <em>green house</em> have <span class='kw4'>identical stress and meaning</span>.",
+   ans:false,
+   correct:"compound <em>gréenhouse</em>(온실)는 첫 요소 강세, phrase <em>green hóuse</em>(초록 집)는 둘째 강세로 <span class='kw2'>강세·의미가 다르다</span>.",
+   why:"compound는 보통 첫 요소에 강세(<em>gréenhouse</em> '온실')가 오고, 대응하는 phrase는 둘째 요소에 강세(<em>green hóuse</em> '초록색으로 칠한 집')가 옵니다. 강세 위치가 둘을 구별합니다.",
+   source:"Refs 요지: Compounds stress the first element (gréenhouse); phrases stress the second (green hóuse).",
+   compare:[{title:"Compound",desc:"gréenhouse '온실' (첫 요소 강세)"},{title:"Phrase",desc:"green hóuse '초록 집' (둘째 강세)"}]},
+
+  {src:"Compounding",cat:"inflection placement",
+   text:"The plural of <em>toothbrush</em> is <span class='kw4'>teethbrush</span>, inflecting the first element.",
+   ans:false,
+   correct:"복수 표지는 첫 요소가 아니라 <span class='kw2'>복합어 전체</span>에 붙는다 → <em>toothbrushes</em>.",
+   why:"compound의 inflection은 첫 요소가 아니라 복합어 전체에 부착됩니다. 따라서 복수형은 <em>*teethbrush</em>가 아니라 <em>toothbrushes</em>입니다.",
+   source:"Refs 요지: Inflection attaches to the whole compound (toothbrushes), not the first element."},
+
+  /* ── ⑥ Word structure — tree / bracketing ──────────────── */
+  {src:"Word structure",cat:"bracketing ambiguity",
+   text:"<em>Unbuttonable</em> is structurally ambiguous between <span class='kw1'>[un-[buttonable]]</span> ('not able to be buttoned') and <span class='kw1'>[[unbutton]-able]</span> ('able to be unbuttoned').",
+   ans:true,
+   correct:"두 종류의 <em>un-</em> 때문에 <em>unbuttonable</em>은 <span class='kw2'>bracketing ambiguity</span>를 보인다.",
+   why:"<em>un-</em>는 두 morpheme입니다: adjectival <em>un-</em>(adj→adj 'not')와 verbal <em>un-</em>(V→V 'reverse'). 전자가 <em>buttonable</em>에 붙으면 '단추를 채울 수 없는', 후자가 <em>button</em>에 먼저 붙어 <em>unbutton</em>이 되고 <em>-able</em>이 붙으면 '단추를 풀 수 있는'이 됩니다.",
+   source:"Refs 요지: unbuttonable is ambiguous: [un-[buttonable]] vs [[unbutton]-able] (two un- morphemes).",
+   compare:[{title:"[un-[buttonable]]",desc:"'not able to be buttoned'"},{title:"[[unbutton]-able]",desc:"'able to be unbuttoned'"}]},
+
+  {src:"Word structure",cat:"ordering by selection",
+   text:"<em>Rewashable</em> must be analyzed as <span class='kw4'>[re-[washable]]</span>, with <em>re-</em> attaching to the adjective <em>washable</em>.",
+   ans:false,
+   correct:"<em>re-</em>는 verb에만 붙으므로 <span class='kw2'>[[rewash]-able]</span>이 맞다 — adjective <em>washable</em>에는 부착 불가.",
+   why:"<em>re-</em>는 verb를 입력으로 선택하므로 <em>rewash</em>(V)를 먼저 만들고 그 위에 <em>-able</em>이 붙습니다(<em>[[rewash]-able]</em>). <em>washable</em>은 adjective라서 <em>re-</em>가 붙을 수 없어 <em>*[re-[washable]]</em>는 불가능합니다.",
+   source:"Refs 요지: re- selects verbs, so rewashable = [[rewash]-able], not [re-[washable]]."}
+
+];
+
+const TOTAL=Q.length;
+const SAVE_KEY='linguistics_morphology_quiz_v1';
+let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
+function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
+function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
+function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function getScore(){return answers.filter(a=>a&&a.correct).length;}
+function renderNav(){
+  document.getElementById('nav').innerHTML=answers.map((_,i)=>{
+    const a=answers[i];
+    const cls=i===cur?'nd cur':a===null?'nd':a.correct?'nd ok':'nd ng';
+    return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
+  }).join('');
+}
+function jumpTo(i){cur=i;render();}
+function renderExp(q,isCorrect){
+  const three=q.compare&&q.compare.length===3;
+  const cmp=q.compare?`
+    <div class="sec-label">📊 비교 정리</div>
+    <div class="compare${three?' three':''}">
+      ${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}
+    </div>`:'';
+  return `<div class="exp show">
+    <div class="exp-header"><span>${isCorrect?'✅ 정답':'❌ 오답'} · 해설</span></div>
+    <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
+    <div class="exp-body">
+      <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
+      <div class="sec-label">📌 Source</div>
+      <div class="def-box"><p>${q.source}</p></div>
+      ${cmp}
+    </div>
+  </div>`;
+}
+function render(){
+  if(cur>=TOTAL){
+    document.getElementById('qa').style.display='none';
+    document.getElementById('sc').classList.add('show');
+    const s=getScore();
+    document.getElementById('fs').textContent=s;
+    const p=s/TOTAL;
+    document.getElementById('rm').textContent=p===1?'🎉 Perfect!':p>=.8?'👏 Great!':p>=.6?'😊 Good!':'💪 Keep going!';
+    document.getElementById('rs').textContent=`${TOTAL}문제 중 ${s}문제 정답 (${Math.round(p*100)}%)`;
+    setTimeout(function(){window.showScorePopup&&window.showScorePopup(s,TOTAL);},400);
+    renderNav();return;
+  }
+  document.getElementById('sc').classList.remove('show');
+  document.getElementById('qa').style.display='block';
+  renderNav();
+  const q=Q[order[cur]];
+  document.getElementById('bf').style.width=((cur+1)/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('pt').textContent=`${cur+1} / ${TOTAL}`;
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  const a=answers[cur];
+  if(a!==null){
+    let oBtnCls='',xBtnCls='';
+    if(a.picked===true){oBtnCls=a.correct?'co':'wp';if(!a.correct)xBtnCls='cx';}
+    else{xBtnCls=a.correct?'cx':'wp';if(!a.correct)oBtnCls='co';}
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn ${oBtnCls}" disabled>⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn ${xBtnCls}" disabled>❌<span class="lb">WRONG</span></button>
+        </div>
+        <div class="badge ${a.correct?'ok':'ng'}">${a.correct?'✅ 정답!':'❌ 오답! 정답은 '+(q.ans?'O':'X')}</div>
+        <div>${renderExp(q,a.correct)}</div>
+        <button class="next-btn show" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }else{
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn" onclick="pick(true)" id="ob">⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn" onclick="pick(false)" id="xb">❌<span class="lb">WRONG</span></button>
+        </div>
+        <div id="bd" class="badge"></div>
+        <div id="ep"></div>
+        <button class="next-btn" id="nb" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }
+}
+function pick(val){
+  const q=Q[order[cur]];
+  document.getElementById('ob').disabled=true;
+  document.getElementById('xb').disabled=true;
+  const ok=val===q.ans;
+  answers[cur]={picked:val,correct:ok};
+  if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
+  const bd=document.getElementById('bd');
+  bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
+  bd.className='badge '+(ok?'ok':'ng');
+  document.getElementById(val?'ob':'xb').classList.add(ok?(val?'co':'cx'):'wp');
+  if(!ok)document.getElementById(q.ans?'ob':'xb').classList.add(q.ans?'co':'cx');
+  document.getElementById('ep').innerHTML=renderExp(q,ok);
+  document.getElementById('nb').classList.add('show');
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  renderNav();
+}
+function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
+function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
+(function(){
+  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
+    cur=saved.cur;answers=saved.answers;
+    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+    const done=answers.filter(a=>a!==null).length;
+    if(done>0){
+      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
+      document.getElementById('rb').style.display='block';
+    }
+  }
+  updateModeUI();renderNav();render();
+})();
+</script>
+</body>
+</html>

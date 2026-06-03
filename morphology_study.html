@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.6 Morphology — 개념정리</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:repeating-linear-gradient(transparent,transparent 27px,#d5d8cf 28px);color:#1a1a1a;min-height:100vh;padding:16px;overflow-x:hidden}
+.header-wrap{max-width:820px;margin:0 auto;padding:24px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.header-sticker{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;background:#1a1f3a;color:#e8eaff;padding:5px 13px;border-radius:3px;letter-spacing:2px;text-transform:uppercase}
+.header-chapter{font-family:'JetBrains Mono',monospace;font-size:12px;color:#4a4d6a;letter-spacing:.5px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:10px}
+.header-divider{border:none;border-top:2px dashed #888;margin-bottom:10px}
+.header-tip{font-size:12px;color:#2a2e6e;font-family:'JetBrains Mono',monospace;margin-bottom:20px;background:rgba(59,63,134,.06);border:1px solid rgba(59,63,134,.2);border-radius:8px;padding:9px 14px;line-height:1.7}
+.wrap{max-width:820px;margin:0 auto}
+.sec{background:#fff;border:1.5px solid #c5c8e8;border-radius:16px;margin-bottom:20px;overflow:hidden;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@media(max-width:600px){.grid.col2,.grid.col3{grid-template-columns:1fr}}
+.sec-header{background:linear-gradient(135deg,rgba(59,63,134,.08),rgba(124,131,217,.05));border-bottom:1.5px solid #c5c8e8;padding:16px 22px;display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+.sec-icon{font-size:20px}
+.sec-title{font-size:16px;font-weight:700;color:#2a2e6e;font-family:'JetBrains Mono',monospace}
+.sec-tag{font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:6px;margin-left:auto;font-weight:600}
+.sec-arrow{font-size:13px;color:#4a4d6a;transition:transform .3s;margin-left:6px}
+.sec.open .sec-arrow{transform:rotate(180deg)}
+.sec-body{display:none;padding:22px}
+.sec.open .sec-body{display:block}
+.concept{margin-bottom:22px}
+.concept:last-child{margin-bottom:0}
+.c-title{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#2a2e6e;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.def{background:rgba(59,63,134,.06);border-left:4px solid #3b3f86;padding:12px 16px;border-radius:0 10px 10px 0;margin-bottom:10px;font-size:17px;line-height:1.8;color:#1a1f3a}
+.note{font-size:16px;color:#2a2e6e;line-height:1.75;margin-bottom:6px;padding-left:6px}
+.note::before{content:"• ";color:#7c83d9;font-weight:700}
+.kw1{background:rgba(59,63,134,.15);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(59,63,134,.25);overflow-wrap:anywhere}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.45);overflow-wrap:anywhere}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(184,101,26,.3);overflow-wrap:anywhere}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border:1px solid rgba(183,28,28,.25);overflow-wrap:anywhere}
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:10px 14px;background:#fff;border:1.5px solid #c5c8e8;border-radius:10px;align-items:center}
+.legend-title{font-size:10px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-right:4px}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:#2a2e6e}
+.grid{display:grid;gap:10px;margin-top:12px}
+.grid.col2{grid-template-columns:1fr 1fr}
+.grid.col3{grid-template-columns:1fr 1fr 1fr}
+.grid-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:14px 16px}
+.gi-title{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#3b3f86;margin-bottom:7px}
+.gi-body{font-size:14px;color:#2a2e6e;line-height:1.7}
+.gi-body span{display:block}
+.eg{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:10px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:14px;overflow-wrap:anywhere}
+.eg-line{display:block;margin:3px 0;line-height:1.7}
+.eg-ok{color:#1f7a4a}
+.eg-ok::before{content:"✓ "}
+.eg-bad{color:#b71c1c}
+.eg-bad::before{content:"* "}
+.eg-note{display:block;margin-top:8px;padding-top:8px;border-top:1px dashed #c5c8e8;font-family:'Noto Sans KR',sans-serif;font-size:13px;color:#4a4d6a}
+.tbl-wrap{overflow-x:auto;margin-top:12px}
+table.diag{border-collapse:collapse;width:100%;min-width:560px;font-size:13px}
+table.diag th,table.diag td{border:1.5px solid #c5c8e8;padding:8px 10px;text-align:center;line-height:1.55}
+table.diag thead th{background:rgba(59,63,134,.1);color:#2a2e6e;font-family:'JetBrains Mono',monospace;font-size:12px}
+table.diag tbody th{background:rgba(124,131,217,.06);color:#2a2e6e;text-align:left;font-weight:700;white-space:nowrap}
+table.diag td.y{color:#1f7a4a;font-weight:700}
+table.diag td.n{color:#b71c1c;font-weight:700}
+.exam{background:rgba(184,101,26,.06);border:1.5px solid rgba(184,101,26,.25);border-radius:10px;padding:14px 16px;margin-top:14px}
+.exam-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#b8651a;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-weight:700}
+.exam p{font-size:13.5px;color:#6b3f0e;line-height:1.75;margin-bottom:4px;overflow-wrap:anywhere}
+.toc{max-width:820px;margin:0 auto 20px;background:#fff;border:1.5px solid #c5c8e8;border-radius:12px;padding:16px 20px;box-shadow:0 2px 8px rgba(59,63,134,.06)}
+.toc-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;font-weight:700}
+.toc-list{display:flex;flex-wrap:wrap;gap:7px}
+.toc-item{font-size:12px;color:#3b3f86;background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.2);padding:5px 12px;border-radius:8px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace;font-weight:600}
+.toc-item:hover{background:rgba(59,63,134,.18)}
+.tree-svg{display:block;margin:12px auto;width:100%;max-width:660px;height:auto;font-family:'Noto Serif KR','Noto Sans KR',serif}
+.tree-svg text{font-family:'Noto Serif KR',Georgia,serif}
+.nav-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0 8px;border-top:1px solid #c5c8e8;margin-top:24px}
+.nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
+.nav-btn:hover{background:#f7f8ff}
+.nav-btn.next-btn{font-weight:600}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-sticker">STUDY NOTE</span>
+    <span class="header-chapter">Ch.06 · Morphology</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <div class="header-script">Concept Notes · Morphology · Word Structure</div>
+  <p class="header-sub">morpheme · inflection / derivation · word-formation · compounding · bracketing</p>
+  <div class="header-divider"></div>
+  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기 &nbsp;·&nbsp; 핵심: 품사가 바뀌거나 새 단어가 생기면 derivation / 같은 단어의 문법형이면 inflection</p>
+</div>
+<div class="wrap">
+<div class="toc">
+  <div class="toc-title">📋 목차</div>
+  <div class="toc-list">
+    <div class="toc-item" onclick="openSec('morpheme')">① Morpheme</div>
+    <div class="toc-item" onclick="openSec('lexical-functional')">② Lexical vs Functional</div>
+    <div class="toc-item" onclick="openSec('inflection-derivation')">③ Inflection vs Derivation</div>
+    <div class="toc-item" onclick="openSec('affix-types')">④ Affix Types</div>
+    <div class="toc-item" onclick="openSec('allomorphy')">⑤ Allomorphy</div>
+    <div class="toc-item" onclick="openSec('word-formation')">⑥ Word-Formation</div>
+    <div class="toc-item" onclick="openSec('compounding')">⑦ Compounding</div>
+    <div class="toc-item" onclick="openSec('word-structure')">⑧ Word Structure &amp; Bracketing</div>
+    <div class="toc-item" onclick="openSec('productivity')">⑨ Productivity</div>
+  </div>
+</div>
+<div class="legend">
+  <span class="legend-title">키워드</span>
+  <span class="legend-item"><span class="kw4">★★★ 최핵심</span></span>
+  <span class="legend-item"><span class="kw3">★★ 빈출개념</span></span>
+  <span class="legend-item"><span class="kw1">★ 기본개념</span></span>
+  <span class="legend-item"><span class="kw2">부키워드</span></span>
+</div>
+<div class="exam" style="margin-bottom:20px">
+  <div class="exam-label">📝 학습 포인트 (Ch.6 Morphology · 개념 위주)</div>
+  <p>① <span class='kw4'>morpheme 분류</span>: free vs bound, lexical vs functional</p>
+  <p>② <span class='kw4'>inflection vs derivation</span>: category-change·8 inflections·suffix-only로 판별</p>
+  <p>③ <span class='kw3'>word-formation process</span> 식별: derivation / compounding / conversion / clipping / blending / acronym / backformation</p>
+  <p>④ <span class='kw3'>allomorphy</span>: plural <span class='kw1'>[s]/[z]/[əz]</span>, negative prefix <span class='kw1'>in-/im-/il-/ir-</span> 의 phonological conditioning</p>
+  <p>⑤ 함정: 동음 <span class='kw4'>-er</span>(comparative inflection vs agentive derivation), <span class='kw4'>bracketing ambiguity</span>(<em>unbuttonable</em>), compound <span class='kw4'>head</span>(rightmost)</p>
+</div>
+
+<!-- ① Morpheme -->
+<div class="sec open" id="morpheme">
+  <div class="sec-header" onclick="toggle('morpheme')">
+    <span class="sec-icon">🧩</span>
+    <span class="sec-title">① Morpheme — free / bound, root / stem / base / affix</span>
+    <span class="sec-tag">최소 의미 단위</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">A <span class='kw1'>morpheme</span> is the minimal unit of meaning or grammatical function. A <span class='kw1'>free morpheme</span> can stand alone as a word; a <span class='kw1'>bound morpheme</span> must attach to another form. <span class='kw4'>All affixes in English — prefixes and suffixes — are bound morphemes.</span></div>
+      <p class="note"><span class='kw1'>morpheme</span>(형태소)은 의미·문법 기능을 가지는 최소 단위다. 혼자 단어로 설 수 있으면 <span class='kw2'>free</span>, 반드시 다른 형태에 붙어야 하면 <span class='kw2'>bound</span>다.</p>
+      <p class="note"><span class='kw1'>root</span>는 더 쪼갤 수 없는 핵심 의미 형태, <span class='kw1'>stem</span>/<span class='kw1'>base</span>는 affix가 붙는 대상이다. root는 가장 안쪽 핵심이고, stem·base는 affix가 붙는 시점의 형태라는 점을 구분한다.</p>
+      <p class="note"><span class='kw1'>affix</span>는 bound morpheme으로, base 앞에 붙으면 <span class='kw2'>prefix</span>, 뒤에 붙으면 <span class='kw2'>suffix</span>다.</p>
+    </div>
+    <div class="grid col2">
+      <div class="grid-item">
+        <div class="gi-title">free morpheme</div>
+        <div class="gi-body"><span>혼자 단어로 성립</span><span style="font-size:12px"><em>book</em>, <em>travel</em>, <em>cat</em>, <em>play</em></span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">bound morpheme</div>
+        <div class="gi-body"><span>반드시 부착 (= 모든 affix)</span><span style="font-size:12px"><em>re-</em>, <em>-ist</em>, <em>-ed</em>, <em>-s</em>, <em>-ness</em></span></div>
+      </div>
+    </div>
+    <div class="eg">
+      <span class="eg-line"><em>unkindness</em> = <span class='kw3'>un-</span>(prefix, bound) + <span class='kw1'>kind</span>(root, free) + <span class='kw3'>-ness</span>(suffix, bound) → 3 morphemes</span>
+      <span class="eg-line"><em>players</em> = <span class='kw1'>play</span>(free root) + <span class='kw3'>-er</span>(bound, agentive) + <span class='kw3'>-s</span>(bound, plural)</span>
+      <span class="eg-line"><em>cats</em> = <span class='kw1'>cat</span>(free) + <span class='kw3'>-s</span>(bound)</span>
+      <span class="eg-line"><em>book</em> = single free morpheme (no internal structure)</span>
+      <span class="eg-note">root는 free일 수도 bound일 수도 있으나, 영어에서 affix는 예외 없이 모두 bound다.</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p>형태소 분류 — <span class='kw1'>free vs bound</span>, <span class='kw1'>lexical vs functional</span> 구분이 형태론의 기본 출제 영역으로 attest됨.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ② Lexical vs Functional -->
+<div class="sec" id="lexical-functional">
+  <div class="sec-header" onclick="toggle('lexical-functional')">
+    <span class="sec-icon">🗂️</span>
+    <span class="sec-title">② Lexical vs Functional morphemes</span>
+    <span class="sec-tag">open vs closed class</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>Lexical morphemes</span> are content-bearing free morphemes (ordinary nouns, verbs, adjectives, adverbs); new ones are added easily → <span class='kw4'>open class</span>. <span class='kw1'>Functional morphemes</span> are function words (conjunctions, prepositions, articles, pronouns); new ones are almost never added → <span class='kw4'>closed class</span>.</div>
+      <p class="note">free morpheme은 다시 <span class='kw2'>lexical</span>과 <span class='kw2'>functional</span>로 나뉜다. lexical은 메시지의 '내용'을 나르는 noun·verb·adjective 등으로, 새로 잘 만들어지므로 <span class='kw3'>open class</span>다.</p>
+      <p class="note">functional은 conjunction·preposition·article·pronoun 같은 기능어로, 거의 추가되지 않으므로 <span class='kw3'>closed class</span>다.</p>
+      <p class="note">보조: derivational morpheme은 새 lexical word를 만드는 데 쓰여 open class와 연결되고, inflection은 functional 성격에 가깝다.</p>
+    </div>
+    <div class="grid col2">
+      <div class="grid-item">
+        <div class="gi-title">Lexical (open class)</div>
+        <div class="gi-body"><span style="font-size:12px"><em>blog</em>, <em>email</em>, <em>download</em></span><span style="font-size:12px">새 동사 <em>to google</em> 처럼 쉽게 추가</span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Functional (closed class)</div>
+        <div class="gi-body"><span style="font-size:12px"><em>the</em>, <em>of</em>, <em>because</em>, <em>them</em></span><span style="font-size:12px">새 preposition·article은 사실상 생기지 않음</span></div>
+      </div>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p><span class='kw1'>lexical vs functional</span> morpheme, open/closed class 구분이 morpheme classification 영역으로 attest됨.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ③ Inflection vs Derivation -->
+<div class="sec" id="inflection-derivation">
+  <div class="sec-header" onclick="toggle('inflection-derivation')">
+    <span class="sec-icon">⚖️</span>
+    <span class="sec-title">③ Inflection vs Derivation</span>
+    <span class="sec-tag">the core contrast</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>Inflection</span> marks grammatical function only and <span class='kw4'>never changes grammatical category</span>; English has <span class='kw4'>exactly eight</span> inflections, all <span class='kw4'>suffixes</span>. <span class='kw1'>Derivation</span> makes a <span class='kw4'>new word</span>, may change category, and uses prefixes or suffixes.</div>
+      <p class="note">핵심 판별: <span class='kw3'>품사가 바뀌거나 새 단어가 생기면 derivation, 같은 단어의 문법형이면 inflection.</span></p>
+      <p class="note"><span class='kw1'>inflection</span>은 수·시제·비교·소유 같은 문법 기능만 표시하며 새 단어를 만들지 않는다. <span class='kw1'>derivation</span>은 새 lexical word를 만들고 품사를 바꿀 수 있다.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table class="diag">
+        <thead>
+          <tr><th>기준</th><th>Inflection</th><th>Derivation</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>기능</th><td>문법 기능만 (number·tense·comparison·possession)</td><td>새 단어 형성, 품사 변경 가능</td></tr>
+          <tr><th>category change</th><td class="n">never (category-preserving)</td><td class="y">often (<em>good</em>→<em>goodness</em>)</td></tr>
+          <tr><th>position</th><td>suffix only</td><td>prefix 또는 suffix</td></tr>
+          <tr><th>inventory</th><td>closed: 정확히 8개</td><td>open / many</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="concept" style="margin-top:16px">
+      <div class="c-title">The 8 English inflectional morphemes (all suffixes)</div>
+      <div class="grid col3">
+        <div class="grid-item">
+          <div class="gi-title">Noun</div>
+          <div class="gi-body"><span><span class='kw1'>-'s</span> possessive</span><span><span class='kw1'>-s</span> plural</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Verb</div>
+          <div class="gi-body"><span><span class='kw1'>-s</span> 3rd-sg</span><span><span class='kw1'>-ing</span> pres. participle</span><span><span class='kw1'>-ed</span> past</span><span><span class='kw1'>-en</span> past participle</span></div>
+        </div>
+        <div class="grid-item">
+          <div class="gi-title">Adjective</div>
+          <div class="gi-body"><span><span class='kw1'>-er</span> comparative</span><span><span class='kw1'>-est</span> superlative</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="eg">
+      <span class="eg-line eg-ok">Inflection: <em>teach → teaches / teaching / taught</em>; <em>tall → taller / tallest</em>; <em>dog → dog's / dogs</em> (품사 유지)</span>
+      <span class="eg-line eg-ok">Derivation: <em>teach</em>(V) → <em>teacher</em>(N); <em>happy</em>(A) → <em>happiness</em>(N); <em>kind</em>(A) → <em>unkind</em>(A, 품사 유지지만 새 단어)</span>
+      <span class="eg-note"><strong>함정 대조 (homophonous -er):</strong> <em>taller</em> 의 <span class='kw4'>-er</span>(comparative, <strong>inflection</strong>, adj→adj) vs <em>teacher</em> 의 <span class='kw4'>-er</span>(agentive, <strong>derivation</strong>, V→N) — 같은 형태, 다른 morpheme.</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p><span class='kw1'>derivational vs inflectional morpheme</span> 구분이 형태론 핵심 출제 영역으로 attest됨.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ④ Affix Types -->
+<div class="sec" id="affix-types">
+  <div class="sec-header" onclick="toggle('affix-types')">
+    <span class="sec-icon">🔧</span>
+    <span class="sec-title">④ Affix types — prefix / suffix, class-changing vs class-maintaining</span>
+    <span class="sec-tag">위치 ↔ 효과 별개 축</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">By <span class='kw2'>position</span>: <span class='kw1'>prefix</span> (before the base) vs <span class='kw1'>suffix</span> (after the base). By <span class='kw2'>effect on word class</span>: <span class='kw1'>class-changing</span> derivational affixes change part of speech; <span class='kw1'>class-maintaining</span> ones keep it.</div>
+      <p class="note">영어 prefix는 대체로 class-maintaining(<em>un-</em>, <em>re-</em>, <em>dis-</em>)이고, 많은 suffix가 class-changing(<em>-ness</em>, <em>-ize</em>, <em>-ly</em>)이다.</p>
+      <p class="note"><span class='kw4'>position과 effect는 별개 축</span>이다: <em>un-</em> 는 prefix이면서 class-maintaining, <em>-able</em>·<em>-ize</em> 는 suffix이면서 class-changing.</p>
+      <p class="note">※ 이 축(POS 기반)은 <span class='kw2'>Class 1 / Class 2</span> 음운 분류(⑨ 참조)와는 <span class='kw4'>다른 개념</span>이다. "class"라는 단어만 공유한다.</p>
+    </div>
+    <div class="grid col2">
+      <div class="grid-item">
+        <div class="gi-title">Class-changing (category-changing)</div>
+        <div class="gi-body"><span style="font-size:13px"><span class='kw3'>-ness</span> A→N: <em>kind→kindness</em></span><span style="font-size:13px"><span class='kw3'>-ize</span> N/A→V: <em>modern→modernize</em></span><span style="font-size:13px"><span class='kw3'>-ful</span> N→A: <em>care→careful</em></span><span style="font-size:13px"><span class='kw3'>-ly</span> A→Adv: <em>quick→quickly</em></span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Class-maintaining</div>
+        <div class="gi-body"><span style="font-size:13px"><span class='kw1'>un-</span> A→A: <em>legal→illegal</em></span><span style="font-size:13px"><span class='kw1'>re-</span> V→V: <em>write→rewrite</em></span><span style="font-size:13px"><span class='kw1'>dis-</span> V→V: <em>do→undo</em> 류 prefix 다수</span></div>
+      </div>
+    </div>
+    <div class="eg">
+      <span class="eg-line">Class-changing suffix: <em>employ</em>(V) → <em>employment</em>(N); <em>beauty</em>(N) → <em>beautiful</em>(A)</span>
+      <span class="eg-line">Class-maintaining prefix: <em>legal</em>(A) → <em>illegal</em>(A); <em>write</em>(V) → <em>rewrite</em>(V)</span>
+      <span class="eg-note">Position vs effect 독립: <em>un-</em> 는 prefix이면서 class-maintaining; <em>-ize</em> 는 suffix이면서 class-changing.</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p><span class='kw1'>derivation / affixation</span> 과 단어 형성, 부정 prefix 선택이 출제 영역으로 attest됨.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑤ Allomorphy -->
+<div class="sec" id="allomorphy">
+  <div class="sec-header" onclick="toggle('allomorphy')">
+    <span class="sec-icon">🔀</span>
+    <span class="sec-title">⑤ Allomorphy — conditioned variants of a morpheme</span>
+    <span class="sec-tag">phonologically conditioned</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">An <span class='kw1'>allomorph</span> is one of the variant phonetic forms of the <span class='kw4'>same morpheme</span> (same meaning/function). The variants are typically <span class='kw1'>phonologically conditioned</span> — the surrounding sounds decide which form appears.</div>
+      <p class="note">한 morpheme이 음운 환경에 따라 다른 형태로 실현되면 그 변이형들이 <span class='kw3'>allomorph</span>다. <span class='kw4'>의미·기능은 같고 소리만 조건에 따라 갈린다.</span></p>
+    </div>
+    <div class="grid col3">
+      <div class="grid-item">
+        <div class="gi-title">Plural -s</div>
+        <div class="gi-body"><span><span class='kw1'>[s]</span> voiceless 뒤: <em>cats</em>, <em>books</em></span><span><span class='kw1'>[z]</span> voiced 뒤: <em>dogs</em>, <em>bags</em></span><span><span class='kw1'>[əz]</span> sibilant 뒤: <em>bushes</em>, <em>roses</em></span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Past -ed</div>
+        <div class="gi-body"><span><span class='kw1'>[t]</span> voiceless 뒤: <em>kissed</em></span><span><span class='kw1'>[d]</span> voiced 뒤: <em>buzzed</em></span><span><span class='kw1'>[ɪd]</span> /t,d/ 뒤: <em>planted</em></span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Negative in-</div>
+        <div class="gi-body"><span><span class='kw1'>in-</span> elsewhere: <em>inactive</em></span><span><span class='kw1'>im-</span> bilabial: <em>imbalance</em></span><span><span class='kw1'>il-</span> /l/: <em>illegible</em></span><span><span class='kw1'>ir-</span> /r/: <em>irregular</em></span></div>
+      </div>
+    </div>
+    <div class="eg">
+      <span class="eg-line"><em>books</em> [s] / <em>bags</em> [z] / <em>roses</em> [əz] — 같은 plural morpheme의 3 allomorph</span>
+      <span class="eg-line"><em>kissed</em> [t] / <em>buzzed</em> [d] / <em>planted</em> [ɪd] — 같은 past morpheme</span>
+      <span class="eg-line"><em>imbalance</em> (/b/) · <em>irregular</em> (/r/) · <em>illegible</em> (/l/) · <em>inactive</em> (elsewhere) — 같은 negative morpheme</span>
+      <span class="eg-line"><em>a</em> book / <em>an</em> apple — indefinite article allomorphs</span>
+      <span class="eg-note"><strong>함정:</strong> allomorph는 <span class='kw4'>의미가 다르지 않다</span>. 같은 의미·기능, 형태(소리)만 다르다. 또 <em>cats</em>는 [s]이지 [əz]가 아니다 ([əz]는 sibilant 뒤).</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p><span class='kw1'>allomorph</span> 와 phonological conditioning (plural -s, negative prefix in-/im-/il-/ir-)이 출제 영역으로 attest됨.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑥ Word-Formation -->
+<div class="sec" id="word-formation">
+  <div class="sec-header" onclick="toggle('word-formation')">
+    <span class="sec-icon">🏗️</span>
+    <span class="sec-title">⑥ Word-formation processes</span>
+    <span class="sec-tag">derivation · compounding · conversion · clipping · blending · acronym · backformation</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">새 단어를 만드는 과정들. <span class='kw4'>affix를 더하면</span> derivation, <span class='kw4'>단어를 합치면</span> compounding, <span class='kw4'>affix 없이 품사만 바꾸면</span> conversion, <span class='kw4'>잘라내면</span> clipping, <span class='kw4'>두 단어 조각을 섞으면</span> blending, <span class='kw4'>머리글자를 단어처럼 읽으면</span> acronym, <span class='kw4'>affix를 떼어내면</span> backformation이다.</div>
+    </div>
+    <div class="grid col2">
+      <div class="grid-item">
+        <div class="gi-title">Derivation</div>
+        <div class="gi-body"><span>derivational affix 추가</span><span style="font-size:12px"><em>kind → unkindness</em></span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Compounding</div>
+        <div class="gi-body"><span>둘 이상의 단어 결합</span><span style="font-size:12px"><em>love + seat → loveseat</em> (⑦ 상세)</span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Conversion (zero-derivation)</div>
+        <div class="gi-body"><span>affix 없이 품사 전환 (functional shift)</span><span style="font-size:12px"><em>butter</em>(N) → <em>to butter</em>(V)</span><span style="font-size:12px">2음절어 강세 이동: <em>ímport</em>(N) / <em>impórt</em>(V)</span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Clipping</div>
+        <div class="gi-body"><span>한 단어의 음절 삭제</span><span style="font-size:12px"><em>professor → prof</em>, <em>influenza → flu</em></span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Blending</div>
+        <div class="gi-body"><span>두 단어의 <span class='kw2'>non-morphemic</span> 조각 결합</span><span style="font-size:12px"><em>smoke+fog → smog</em>, <em>motor+hotel → motel</em></span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Acronym vs Initialism</div>
+        <div class="gi-body"><span>머리글자를 <span class='kw2'>단어처럼</span> 발음 → acronym (<em>NATO</em>, <em>laser</em>)</span><span>글자를 <span class='kw2'>따로</span> 발음 → initialism (<em>FBI</em>, <em>USA</em>)</span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Backformation</div>
+        <div class="gi-body"><span>실재/추정 affix를 <span class='kw2'>제거</span></span><span style="font-size:12px"><em>editor → edit</em>, <em>donation → donate</em></span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Reduplication (minor)</div>
+        <div class="gi-body"><span>base의 전부/일부 반복</span><span style="font-size:12px"><em>so-so</em>, <em>bye-bye</em></span></div>
+      </div>
+    </div>
+    <div class="eg">
+      <span class="eg-line"><em>automation → automate</em> : <span class='kw3'>backformation</span> (suffix 제거)</span>
+      <span class="eg-line"><em>information + entertainment → infotainment</em> : <span class='kw3'>blending</span></span>
+      <span class="eg-line"><em>(to) comb your hair</em> (from <em>the comb</em>) : <span class='kw3'>conversion</span> (N→V, affix 없음)</span>
+      <span class="eg-line"><em>random access memory → RAM</em> : <span class='kw3'>acronym</span></span>
+      <span class="eg-note"><strong>판별 핵심:</strong> clipping은 한 단어를 줄임 / blending은 두 단어의 non-morphemic 조각을 합침 / acronym은 구의 머리글자(단어처럼 발음). <em>brunch</em>는 clipping이 아니라 <span class='kw4'>blending</span>(breakfast+lunch).</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p><span class='kw1'>conversion / zero-derivation / functional shift</span> 와 word-formation process 식별이 출제 영역으로 attest됨.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑦ Compounding -->
+<div class="sec" id="compounding">
+  <div class="sec-header" onclick="toggle('compounding')">
+    <span class="sec-icon">🔗</span>
+    <span class="sec-title">⑦ Compounding — headedness, endocentric vs exocentric</span>
+    <span class="sec-tag">rightmost head · compound vs phrase</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">A <span class='kw1'>compound</span> combines two or more words into a new word. In English the <span class='kw4'>rightmost element is the head</span>: it determines the compound's grammatical category and broad meaning.</div>
+      <p class="note"><span class='kw3'>endocentric</span> compound는 head의 하위어(<em>a kind of</em> head)다 — <em>armchair</em> = a kind of chair.</p>
+      <p class="note"><span class='kw3'>exocentric</span> compound (headless / bahuvrihi)는 어느 요소의 하위어도 아니다 — <em>pickpocket</em> = a person, not a pocket.</p>
+      <p class="note"><span class='kw2'>category determination</span>: 두 부분의 품사가 다르면 <span class='kw4'>오른쪽(final)</span> 단어의 품사가 이긴다.</p>
+    </div>
+    <svg class="tree-svg" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
+      <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">Compound head = rightmost: handmade (N + A → A), head는 made</text>
+      <!-- root A -->
+      <text x="330" y="58" text-anchor="middle" font-size="16" font-weight="700" fill="#3b3f86">A</text>
+      <text x="330" y="74" text-anchor="middle" font-size="10" fill="#8d4d14">(compound)</text>
+      <line x1="320" y1="64" x2="210" y2="110" stroke="#999" stroke-width="1.5"/>
+      <line x1="340" y1="64" x2="450" y2="110" stroke="#999" stroke-width="1.5"/>
+      <!-- left N (hand) -->
+      <text x="210" y="130" text-anchor="middle" font-size="15" font-weight="700" fill="#1f7a8c">N</text>
+      <line x1="210" y1="138" x2="210" y2="168" stroke="#999" stroke-width="1.5"/>
+      <text x="210" y="188" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">hand</text>
+      <!-- right A (made) = head -->
+      <text x="450" y="130" text-anchor="middle" font-size="15" font-weight="700" fill="#b71c1c">A</text>
+      <text x="486" y="130" text-anchor="start" font-size="10" fill="#b71c1c">head</text>
+      <line x1="450" y1="138" x2="450" y2="168" stroke="#999" stroke-width="1.5"/>
+      <text x="450" y="188" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">made</text>
+      <text x="330" y="216" text-anchor="middle" font-size="11" fill="#4a4d6a">→ 전체 품사 = head(made)의 품사 = Adjective</text>
+    </svg>
+    <div class="grid col2">
+      <div class="grid-item">
+        <div class="gi-title">Endocentric (head의 하위어)</div>
+        <div class="gi-body"><span style="font-size:13px"><em>teapot</em> = a kind of pot</span><span style="font-size:13px"><em>raincoat</em> = a kind of coat</span><span style="font-size:13px"><em>blackbird</em> = a kind of bird</span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Exocentric (어느 쪽도 아님)</div>
+        <div class="gi-body"><span style="font-size:13px"><em>scarecrow</em> = a device, not a crow</span><span style="font-size:13px"><em>turncoat</em> = a traitor, not a coat</span><span style="font-size:13px"><em>highbrow</em> = a person</span></div>
+      </div>
+    </div>
+    <div class="eg">
+      <span class="eg-line">Head 결정: <em>overflow</em> (preposition+verb → verb), <em>handmade</em> (N+A → A)</span>
+      <span class="eg-line"><strong>Compound vs phrase (강세):</strong> <em>bláckboard</em> 'chalkboard' (compound, 첫 요소 강세) vs <em>black bóard</em> 'a board that is black' (phrase, 둘째 강세)</span>
+      <span class="eg-line eg-ok">Inflection 위치: <em>toothbrushes</em> (전체에 부착)</span>
+      <span class="eg-line eg-bad">teethbrush (첫 요소 inflection 불가)</span>
+      <span class="eg-note">복수·시제 표지는 첫 요소가 아니라 <span class='kw4'>복합어 전체</span>에 붙는다. <em>overflow</em>의 head는 rightmost <em>flow</em>이지 <em>over</em>가 아니다.</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p><span class='kw1'>compounding</span> 과 word-formation process 순서·식별, head 결정이 출제 영역으로 attest됨.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑧ Word Structure & Bracketing -->
+<div class="sec" id="word-structure">
+  <div class="sec-header" onclick="toggle('word-structure')">
+    <span class="sec-icon">🌳</span>
+    <span class="sec-title">⑧ Hierarchical word structure — tree / bracketing &amp; ambiguity</span>
+    <span class="sec-tag">[un-[V-able]] vs [[un-V]-able]</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def">Morphologically complex words are built in <span class='kw4'>ordered steps</span>, giving <span class='kw1'>hierarchical</span> (layered) internal structure shown by a tree or bracketing. Each affix's input/output category restricts the order.</div>
+      <p class="note"><span class='kw3'>Ambiguity from structure:</span> <em>un-</em> 는 두 개의 distinct morpheme이다 — (a) <span class='kw1'>un-</span> + Adjective → Adjective ('not', <em>unhappy</em>); (b) <span class='kw1'>un-</span> + Verb → Verb ('reverse of', <em>untie</em>).</p>
+      <p class="note">그래서 <em>un + V + able</em> 형태는 두 가지로 bracketing되어 <span class='kw4'>중의성</span>이 생긴다. bracketing이 의미를 가른다는 점이 핵심이다.</p>
+    </div>
+    <div class="c-title" style="margin-top:6px">Bracketing ambiguity: <em>unbuttonable</em></div>
+    <svg class="tree-svg" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+      <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">두 reading — bracketing이 의미를 가른다</text>
+      <!-- LEFT reading: [un-[button-able]] = 'not able to be buttoned' -->
+      <text x="165" y="48" text-anchor="middle" font-size="12" font-weight="700" fill="#3b3f86">[un-[button-able]]</text>
+      <text x="165" y="64" text-anchor="middle" font-size="10" fill="#1f7a4a">'not able to be buttoned'</text>
+      <!-- top A -->
+      <text x="165" y="92" text-anchor="middle" font-size="14" font-weight="700" fill="#b71c1c">A</text>
+      <line x1="158" y1="98" x2="110" y2="128" stroke="#999" stroke-width="1.5"/>
+      <line x1="172" y1="98" x2="225" y2="128" stroke="#999" stroke-width="1.5"/>
+      <!-- un- (adjectival) -->
+      <text x="105" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">un-</text>
+      <text x="105" y="160" text-anchor="middle" font-size="9" fill="#8d4d14">A→A</text>
+      <!-- inner A (buttonable) -->
+      <text x="225" y="146" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">A</text>
+      <line x1="218" y1="152" x2="180" y2="182" stroke="#999" stroke-width="1.5"/>
+      <line x1="232" y1="152" x2="270" y2="182" stroke="#999" stroke-width="1.5"/>
+      <text x="180" y="200" text-anchor="middle" font-size="12" font-style="italic" fill="#1f7a8c">V</text>
+      <text x="180" y="214" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">button</text>
+      <text x="270" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">-able</text>
+      <text x="270" y="214" text-anchor="middle" font-size="9" fill="#8d4d14">V→A</text>
+      <text x="165" y="258" text-anchor="middle" font-size="10" fill="#4a4d6a">adjectival un- 이 형용사 buttonable에 부착</text>
+      <!-- divider -->
+      <line x1="330" y1="40" x2="330" y2="270" stroke="#c5c8e8" stroke-width="1.5" stroke-dasharray="4,4"/>
+      <!-- RIGHT reading: [[un-button]-able] = 'able to be unbuttoned' -->
+      <text x="495" y="48" text-anchor="middle" font-size="12" font-weight="700" fill="#3b3f86">[[un-button]-able]</text>
+      <text x="495" y="64" text-anchor="middle" font-size="10" fill="#1f7a4a">'able to be unbuttoned'</text>
+      <!-- top A -->
+      <text x="495" y="92" text-anchor="middle" font-size="14" font-weight="700" fill="#b71c1c">A</text>
+      <line x1="488" y1="98" x2="440" y2="128" stroke="#999" stroke-width="1.5"/>
+      <line x1="502" y1="98" x2="560" y2="128" stroke="#999" stroke-width="1.5"/>
+      <!-- inner V (unbutton) -->
+      <text x="435" y="146" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">V</text>
+      <line x1="428" y1="152" x2="395" y2="182" stroke="#999" stroke-width="1.5"/>
+      <line x1="442" y1="152" x2="475" y2="182" stroke="#999" stroke-width="1.5"/>
+      <text x="395" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">un-</text>
+      <text x="395" y="214" text-anchor="middle" font-size="9" fill="#8d4d14">V→V</text>
+      <text x="475" y="200" text-anchor="middle" font-size="12" font-style="italic" fill="#1f7a8c">V</text>
+      <text x="475" y="214" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">button</text>
+      <!-- -able -->
+      <text x="560" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">-able</text>
+      <text x="560" y="160" text-anchor="middle" font-size="9" fill="#8d4d14">V→A</text>
+      <text x="495" y="258" text-anchor="middle" font-size="10" fill="#4a4d6a">verbal un- 이 V에 먼저, 그 뒤 -able</text>
+    </svg>
+    <div class="c-title" style="margin-top:10px">Ordering fixed by selection: <em>rewashable</em></div>
+    <svg class="tree-svg" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
+      <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">[[re-wash]-able] — 유일한 분석 (re-는 V에만 부착)</text>
+      <!-- top A -->
+      <text x="330" y="52" text-anchor="middle" font-size="15" font-weight="700" fill="#b71c1c">A</text>
+      <line x1="323" y1="58" x2="255" y2="92" stroke="#999" stroke-width="1.5"/>
+      <line x1="337" y1="58" x2="430" y2="92" stroke="#999" stroke-width="1.5"/>
+      <!-- inner V (rewash) -->
+      <text x="250" y="110" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">V</text>
+      <line x1="243" y1="116" x2="200" y2="150" stroke="#999" stroke-width="1.5"/>
+      <line x1="257" y1="116" x2="305" y2="150" stroke="#999" stroke-width="1.5"/>
+      <text x="200" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">re-</text>
+      <text x="200" y="182" text-anchor="middle" font-size="9" fill="#8d4d14">V→V</text>
+      <text x="305" y="168" text-anchor="middle" font-size="12" font-style="italic" fill="#1f7a8c">V</text>
+      <text x="305" y="182" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">wash</text>
+      <!-- -able -->
+      <text x="430" y="110" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">-able</text>
+      <text x="430" y="124" text-anchor="middle" font-size="9" fill="#8d4d14">V→A</text>
+      <text x="330" y="210" text-anchor="middle" font-size="10" fill="#4a4d6a"><tspan font-style="italic">washable</tspan> 은 이미 A → re-(V에만 부착)는 거기 못 붙음 → *re-[washable] 불가</text>
+    </svg>
+    <div class="eg">
+      <span class="eg-line"><strong>Bracketing ambiguity:</strong> <em>unbuttonable</em> = [un-[button-able]] 'not able to be buttoned' vs [[un-button]-able] 'able to be unbuttoned'</span>
+      <span class="eg-line"><strong>Ordering fixed:</strong> <em>unwearable</em> = [un-[wear-able]] only (<em>-able</em> 가 동사 <em>wear</em>에 먼저 닿아야 함; 그 뒤 adjectival <em>un-</em> 이 형용사 <em>wearable</em>에 부착)</span>
+      <span class="eg-line eg-bad">re-[washable] — <em>washable</em>은 adjective라 verb 전용 <em>re-</em> 부착 불가</span>
+      <span class="eg-note">각 affix의 input/output 품사 제약(selectional restriction)이 derivation 순서를 결정한다.</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p><span class='kw1'>hierarchical structure / bracketing ambiguity</span> (un-…-able 류)가 출제 영역으로 attest됨.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ⑨ Productivity -->
+<div class="sec" id="productivity">
+  <div class="sec-header" onclick="toggle('productivity')">
+    <span class="sec-icon">📈</span>
+    <span class="sec-title">⑨ Productivity, lexicalization &amp; derivational constraints</span>
+    <span class="sec-tag">생산성 · 제약</span>
+    <span class="sec-arrow">▼</span>
+  </div>
+  <div class="sec-body">
+    <div class="concept">
+      <div class="c-title">Core Definition</div>
+      <div class="def"><span class='kw1'>Productivity</span> is the degree to which a process applies freely to new bases. Inflection and some affixes (<em>-ness</em>, <em>-ly</em>) are highly productive; others are restricted by phonological/category constraints.</div>
+      <p class="note"><span class='kw1'>derivational constraints</span>: 일부 affix는 base의 형태를 선택한다. <em>-en</em>(causative, A→V)은 <span class='kw2'>monosyllabic + obstruent-final</span> base에만 붙고, <em>-al</em>(V→N)은 final-syllable stress를 요구한다.</p>
+      <p class="note"><span class='kw1'>lexicalization</span>: 파생형이 하나의 어휘로 굳어 의미가 더는 예측되지 않는 현상 (<em>business</em> < <em>busy+ness</em>, 하지만 'state of being busy'가 아님).</p>
+    </div>
+    <div class="grid col2">
+      <div class="grid-item">
+        <div class="gi-title">Productive / 적용</div>
+        <div class="gi-body"><span class="eg-line eg-ok" style="font-size:12px">bright → brighten</span><span class="eg-line eg-ok" style="font-size:12px">short → shorten</span><span style="font-size:12px">(monosyllabic + obstruent-final 만족)</span></div>
+      </div>
+      <div class="grid-item">
+        <div class="gi-title">Blocked / 차단</div>
+        <div class="gi-body"><span class="eg-line eg-bad" style="font-size:12px">calmen (/m/ sonorant 종결)</span><span class="eg-line eg-bad" style="font-size:12px">curiousen (disyllabic)</span></div>
+      </div>
+    </div>
+    <div class="concept" style="margin-top:14px">
+      <div class="c-title">Level-ordering note (개념 소개 수준)</div>
+      <p class="note"><span class='kw2'>Class 1</span> affix는 강세 이동·분절 변화를 일으킬 수 있고(<em>-ity</em>, <em>-ion</em>), <span class='kw2'>Class 2</span> affix는 음운적으로 중립적이다(<em>-ness</em>, <em>-less</em>). Class 1이 보통 root에 더 가깝게 위치한다.</p>
+      <p class="note">※ 이 Class 1 / Class 2 (음운 분류)는 ④의 class-changing / class-maintaining (POS 분류)과 <span class='kw4'>다른 축</span>이다. 혼동 금지.</p>
+    </div>
+    <div class="eg">
+      <span class="eg-line eg-ok"><em>bright → brighten</em>, <em>short → shorten</em> (productive)</span>
+      <span class="eg-line eg-bad"><em>calmen</em> (ends in /m/, sonorant) · <em>curiousen</em> (disyllabic)</span>
+      <span class="eg-line"><em>understand</em> ≠ 'stand under' — lexicalized</span>
+      <span class="eg-note">productivity는 한 과정이 새 base에 얼마나 자유롭게 적용되는가의 정도다.</span>
+    </div>
+    <div class="exam">
+      <div class="exam-label">📋 기출 맥락 (개념 위주 · 연도 표기 생략)</div>
+      <p>derivational productivity·constraint 및 lexicalization은 형태론 심화 개념으로 다룬다 (검증된 연도 없음 → 연도 표기 생략).</p>
+    </div>
+  </div>
+</div>
+
+<div class="nav-bottom">
+  <a class="nav-btn" href="./index.html">← 챕터 목록</a>
+  <a class="nav-btn next-btn" href="./morphology.html">📝 Ch.6 Morphology OX 28문항 풀러 가기 →</a>
+</div>
+</div>
+<script>
+function toggle(id){ document.getElementById(id).classList.toggle('open'); }
+function openSec(id){ const s=document.getElementById(id); s.classList.add('open'); s.scrollIntoView({behavior:'smooth',block:'start'}); }
+</script>
+</body>
+</html>
