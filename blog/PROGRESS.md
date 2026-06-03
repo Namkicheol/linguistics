@@ -1,0 +1,26 @@
+# 영어학(통사론 등) 블로그 — 티스토리(obangti) 발행 현황
+
+> **새 글 올리기 전 / 중복 방지용 단일 출처.** 발행하면 post-id를 **즉시** 기록한다.
+> 검증: `obangti.tistory.com/rss` + `naver-blog-automation/tistory_posts.json`.
+
+## 단원별 상태
+
+| 단원 | 블로그 본문 | Tistory 발행 |
+|---|---|---|
+| **Ch.1 Constituency** | ✅ 완성 (개념+OX) | ✅ 발행 — 개념 /83, OX /84 |
+| **Ch.2 Phrase Structure** | ✅ 완성 (개념+OX) | ✅ 발행 — 개념 /101, OX /100 |
+| **Ch.3 Movement** | ✅ 완성 (개념+OX) | ✅ 발행 — 개념 /103, OX /102 |
+| **Ch.4 Raising & Control** | ✅ 개념정리 완성 / OX 미작성 | ⚠️ 개념 **/121 발행**(setContent — 내용완전·볼드·5색 없음). OX 미발행 |
+| Ch.5 Binding | ❌ 미작성 | ❌ 미발행 |
+| Ch.6 Morphology | ❌ 미작성 | ❌ 미발행 |
+| Ch.7 Semantics | ❌ 미작성 | ❌ 미발행 |
+| Ch.8 Pragmatics | ❌ 미작성 | ❌ 미발행 |
+
+## 요약
+- **발행 완료: Ch.1 · Ch.2 · Ch.3** (개념+OX). 다시 올리지 말 것.
+- **Ch.4 R&C 개념정리 = /121** (plain 서식). 깨진 /122·/123·/124는 삭제됨. R&C OX는 아직 미작성.
+- **본문 미작성: Ch.5~8.**
+
+## 발행 도구
+- `../../naver-blog-automation/upload_tistory_md.py` (경로·한계는 그 레포 AGENTS.md).
+- 기존 발행글은 **마크다운 에디터 수동 입력**이라 5색 하이라이트·볼드 보존. setContent 자동화는 plain.
