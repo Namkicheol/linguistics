@@ -12,6 +12,7 @@
 | **Ch.3 Movement** | ✅ 완성 (개념+OX) | ✅ 발행 — 개념 /103, OX /102 |
 | **Ch.4 Raising & Control** | ✅ 개념정리 + OX 완성 | 개념 **/121**, OX **/125** (둘 다 setContent — 내용완전·plain) |
 | **Ch.5 Binding** | ✅ 웹(study+OX) + 블로그(개념+OX) 완성 | 개념 **/126**, OX **/127** (setContent — 내용완전·plain) |
+| **Ch.6 Morphology** | ✅ 웹(study+OX) + 블로그(개념+OX) 완성 | 개념 **/128**, OX **/129** (setContent — plain) |
 | Ch.6 Morphology | ❌ 미작성 | ❌ 미발행 |
 | Ch.7 Semantics | ❌ 미작성 | ❌ 미발행 |
 | Ch.8 Pragmatics | ❌ 미작성 | ❌ 미발행 |
