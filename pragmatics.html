@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch.8 Pragmatics OX Quiz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.kw3{background:rgba(184,101,26,.13);color:#8d4d14;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw4{background:rgba(183,28,28,.11);color:#b71c1c;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+</style>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">NO. 08 <span>—</span> Pragmatics</span>
+    <span class="header-label">Past-Exam Notebook</span>
+  </div>
+  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <div class="header-script">Concept Master · Pragmatics</div>
+  <p class="header-sub">화용론 · Pragmatics · 임용고시 대비</p>
+  <div class="header-divider"></div>
+</div>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">1 / 28</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:3.6%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div id="nav"></div>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/28</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const Q=[
+
+  /* ── A. Speech act 분류 (locutionary / illocutionary / perlocutionary) ── */
+  {src:"Speech Acts",cat:"illocutionary act",
+   text:"The <span class='kw1'>illocutionary act</span> of an utterance is the act performed via its communicative force, such as promising or warning.",
+   ans:true,
+   correct:"<span class='kw1'>illocutionary act</span>의 표준 정의로 정확하다 — 발화의 communicative force로 수행되는 행위.",
+   why:"illocutionary act는 발화의 communicative force로 수행되는 행위(진술·요청·약속·경고 등 화자의 의도)입니다. 이 force가 illocutionary force입니다. locutionary act(기본 발화 자체)·perlocutionary act(청자에게 미친 효과)와 구분됩니다.",
+   source:"Refs 요지: The illocutionary act is performed via the utterance's communicative force (= illocutionary force).",
+   compare:[{title:"illocutionary",desc:"화자의 force/의도 (promise, warn)"},{title:"perlocutionary",desc:"청자에게 미친 effect"}]},
+
+  {src:"Speech Acts",cat:"perlocutionary · 혼동",
+   text:"The <span class='kw1'>perlocutionary act</span> refers to the speaker's intention or communicative force, independent of any effect on the hearer.",
+   ans:false,
+   correct:"perlocutionary act는 발화가 청자에게 일으키는 <span class='kw2'>effect</span>다 — 화자의 force/의도는 <span class='kw2'>illocutionary act</span>다.",
+   why:"perlocutionary act는 발화가 청자에게 실제로 일으키는 의도된 효과(설득됨·놀람·문 닫음 등)입니다. 화자의 communicative force/의도는 illocutionary act에 해당합니다. 둘을 바꿔 진술했으므로 거짓입니다.",
+   source:"Refs 요지: The perlocutionary act = the effect on the hearer; the speaker's force = the illocutionary act."},
+
+  {src:"Speech Acts",cat:"locutionary act",
+   text:"Producing the basic, meaningful linguistic expression itself — its sounds, words, and structure — is the <span class='kw1'>locutionary act</span>.",
+   ans:true,
+   correct:"<span class='kw1'>locutionary act</span> = 의미 있는 언어 표현(소리·단어·구조)을 산출하는 기본 발화 행위. 정확하다.",
+   why:"locutionary act는 sense와 reference를 가진 의미 있는 언어 표현 자체를 만들어 내는 기본 발화 행위입니다. 외국어를 못 만들거나 혀가 굳으면 바로 이 locutionary act가 실패합니다.",
+   source:"Refs 요지: The locutionary act is the basic act of uttering a meaningful linguistic expression."},
+
+  {src:"Speech Acts",cat:"perlocutionary · 효과",
+   text:"In the utterance <em>Watch out for the wet floor!</em>, the hearer's stopping in alarm is the <span class='kw1'>illocutionary act</span>.",
+   ans:false,
+   correct:"청자가 놀라 멈추는 것은 <span class='kw2'>perlocutionary</span> effect다 — warning이 illocutionary act다.",
+   why:"<em>Watch out!</em>의 illocutionary act는 경고(warning)이고, 그 결과 청자가 놀라 멈추는 것은 perlocutionary effect입니다. 청자에게 미친 결과를 illocutionary로 진술했으므로 거짓입니다.",
+   source:"Refs 요지: The hearer's reaction is the perlocutionary effect; the warning is the illocutionary act."},
+
+  {src:"Speech Acts",cat:"force 가변성",
+   text:"The same locutionary act can carry different <span class='kw1'>illocutionary forces</span> depending on context, e.g. <em>It's cold in here</em> as a statement or as a request to close a window.",
+   ans:true,
+   correct:"동일한 locutionary act가 맥락에 따라 다른 illocutionary force(진술 또는 요청)를 가질 수 있다. 정확하다.",
+   why:"같은 문장 <em>It's cold in here</em>가 단순 진술일 수도, 난방·창문에 대한 간접 요청일 수도 있습니다. illocutionary force는 맥락에 따라 결정되므로, 하나의 locutionary act가 여러 force를 운반할 수 있습니다.",
+   source:"Refs 요지: One locutionary act may carry different illocutionary forces by context."},
+
+  /* ── B. Direct vs indirect speech act ── */
+  {src:"Direct/Indirect",cat:"indirect 식별",
+   text:"Using an interrogative such as <em>Could you close the window?</em> to make a request is an <span class='kw1'>indirect speech act</span>.",
+   ans:true,
+   correct:"의문형식을 능력 질문이 아니라 요청으로 쓰면 <span class='kw1'>indirect speech act</span>다. 정확하다.",
+   why:"interrogative의 기본 기능은 질문입니다. <em>Could you…?</em>를 능력을 묻는 게 아니라 요청으로 쓰면 sentence type을 다른 기능으로 쓴 것이므로 indirect speech act입니다. 이런 간접 발화가 일반적으로 더 공손합니다.",
+   source:"Refs 요지: An interrogative used as a request is an indirect speech act.",
+   compare:[{title:"direct",desc:"sentence type ↔ 기본 기능"},{title:"indirect",desc:"sentence type ↔ 다른 기능"}]},
+
+  {src:"Direct/Indirect",cat:"direct · 혼동",
+   text:"A declarative sentence used to make a statement is an <span class='kw1'>indirect speech act</span>.",
+   ans:false,
+   correct:"declarative를 진술 기능으로 쓰면 기본 기능대로 쓴 것이므로 <span class='kw2'>direct speech act</span>다.",
+   why:"declarative의 기본 기능은 statement입니다. 그 기본 기능 그대로 진술에 쓰였다면 direct speech act입니다. sentence type을 다른 기능으로 써야 indirect가 됩니다.",
+   source:"Refs 요지: A declarative used to state is a direct speech act, not indirect."},
+
+  {src:"Direct/Indirect",cat:"politeness",
+   text:"Indirect speech acts are generally perceived as <span class='kw2'>more polite</span> than their direct (imperative) counterparts.",
+   ans:true,
+   correct:"indirect speech act는 대응되는 direct(명령형) 발화보다 일반적으로 더 공손하게 느껴진다. 정확하다.",
+   why:"<em>Could you lower your voice?</em> 같은 간접 요청은 <em>Lower your voice.</em> 같은 직접 명령보다 상대의 face를 덜 위협해 더 공손하게 인식됩니다. 다만 청자가 문자 그대로 반응하면 의도된 force를 놓칠 위험이 있습니다.",
+   source:"Refs 요지: Indirect speech acts are generally felt to be more polite than direct imperatives."},
+
+  {src:"Direct/Indirect",cat:"primary force 누락",
+   text:"In an indirect request like <em>Do you know what time it is?</em>, answering only <em>Yes</em> successfully fulfills the speaker's intended (primary) force.",
+   ans:false,
+   correct:"<em>Yes</em>만 답하는 것은 literal(direct) 반응일 뿐, 시간을 알려 달라는 intended <span class='kw2'>primary force</span>를 놓친 것이다.",
+   why:"이 발화의 primary force는 시간을 알려 달라는 요청입니다. 청자가 문자 그대로의 yes/no 질문으로만 받아 <em>Yes</em>라고만 답하면 secondary(literal) force에 반응한 것이고 화자의 의도된 요청은 충족되지 못합니다.",
+   source:"Refs 요지: Answering only Yes responds to the literal force and misses the intended request."},
+
+  /* ── C. Performative / felicity ── */
+  {src:"Performative",cat:"performative sense 4조건",
+   text:"For a performative verb to have its performative sense, the utterance must be positive, present tense, first-person, and refer to a specific event.",
+   ans:true,
+   correct:"performative sense의 4조건(positive · present · first-person · specific event)으로 정확하다.",
+   why:"performative verb가 행위를 수행하는 의미를 가지려면 positive·present tense·first-person agent·specific event 네 조건을 모두 충족해야 합니다. 하나라도 어기면 그 발화는 행위 수행이 아니라 단지 상태 기술(representative)이 됩니다. <em>hereby</em> 삽입 가능 여부가 보조 진단입니다.",
+   source:"Refs 요지: Performative sense requires positive, present tense, first-person, and a specific event.",
+   compare:[{title:"performative",desc:"positive·present·1st person·specific"},{title:"위반 시",desc:"merely describes a state (representative)"}]},
+
+  {src:"Performative",cat:"past tense · 함정",
+   text:"<em>I promised to bring the documents</em> (past tense) is a felicitous performative that constitutes a promise in the act of being uttered.",
+   ans:false,
+   correct:"과거시제라 performative sense가 없다 — 약속을 수행하는 게 아니라 과거 약속을 <span class='kw2'>기술</span>할 뿐이다.",
+   why:"performative sense는 present tense를 요구합니다. <em>I promised…</em>는 과거시제이므로 발화로 약속을 수행하는 게 아니라 이미 한 약속을 진술하는 representative입니다. <em>I promise to bring…</em>이라야 발화가 곧 약속 행위가 됩니다.",
+   source:"Refs 요지: A past-tense 'I promised' lacks performative sense; it describes, not performs."},
+
+  {src:"Performative",cat:"general condition",
+   text:"If the hearer cannot understand the language of the utterance, the speech act fails the <span class='kw1'>general (felicity) condition</span>.",
+   ans:true,
+   correct:"청자가 그 언어를 이해하지 못하면 <span class='kw1'>general condition</span> 위반으로 speech act가 실패한다. 정확하다.",
+   why:"general condition은 청자가 발화(locution)를 이해할 수 있어야 한다는 조건입니다. 청자가 그 언어를 전혀 모르면 이 일반 조건이 충족되지 못해 위협·요청 등 speech act가 felicitous하게 성립하지 못합니다.",
+   source:"Refs 요지: The general felicity condition requires the hearer to understand the locution."},
+
+  /* ── D. Maxim identification (which maxim is flouted) ── */
+  {src:"Maxims",cat:"Quantity",
+   text:"Answering <em>Food.</em> to <em>What did you make for dinner?</em> flouts the maxim of <span class='kw1'>Quantity</span> by giving less information than required.",
+   ans:true,
+   correct:"필요한 정보보다 적게 주었으므로 maxim of <span class='kw1'>Quantity</span> flouting이다. 정확하다.",
+   why:"Quantity는 필요한 만큼의 정보를 제공하라는 maxim입니다. <em>Food.</em>는 무엇을 만들었는지에 비해 정보가 명백히 부족하므로 Quantity를 어겨, 더 말하기 싫다는 등의 implicature를 전달합니다.",
+   source:"Refs 요지: Under-informative answers flout the maxim of Quantity."},
+
+  {src:"Maxims",cat:"Quality · 혼동",
+   text:"Saying something one believes to be patently false, e.g. an ironic <em>Yes, and pigs can fly</em>, flouts the maxim of <span class='kw1'>Relation</span>.",
+   ans:false,
+   correct:"믿지 않는 거짓을 말하는 flouting은 maxim of <span class='kw2'>Quality</span>(참·근거)다 — Relation이 아니다.",
+   why:"Quality는 참이라고 믿고 근거가 있는 것만 말하라는 maxim입니다. <em>and pigs can fly</em>처럼 명백히 거짓인 것을 말하는 반어는 Quality flouting으로, 실제로는 반대 의미(불신)를 함축합니다. Relation은 관련성에 대한 maxim입니다.",
+   source:"Refs 요지: Saying what one believes false (irony) flouts Quality, not Relation."},
+
+  {src:"Maxims",cat:"Relation",
+   text:"Replying <em>The morning paper has already arrived</em> to <em>What time is it?</em> exploits the maxim of <span class='kw1'>Relation</span> to convey an answer indirectly.",
+   ans:true,
+   correct:"직접 답 대신 관련 정보로 시간을 추론하게 하므로 maxim of <span class='kw1'>Relation</span> 활용이다. 정확하다.",
+   why:"Relation은 관련성 있는 기여를 하라는 maxim입니다. 시간을 직접 말하지 않고 관련 사실(신문 배달)을 제시하면, 청자는 협력을 가정해 대략의 시간을 추론합니다 — Relation을 통한 indirect answer입니다.",
+   source:"Refs 요지: An indirectly relevant reply exploits the maxim of Relation."},
+
+  {src:"Maxims",cat:"Manner · 혼동",
+   text:"Deliberately spelling out a word letter by letter so that children cannot follow flouts the maxim of <span class='kw1'>Quality</span>.",
+   ans:false,
+   correct:"일부러 모호·장황하게 말해 명확성을 깨뜨린 것은 maxim of <span class='kw2'>Manner</span>다 — Quality가 아니다.",
+   why:"Manner는 명료하게(모호·중의·장황 회피) 말하라는 maxim입니다. 특정 청자가 못 알아듣게 일부러 철자를 풀어 말하는 것은 명확성을 의도적으로 위배한 Manner flouting입니다. Quality는 진실성에 관한 maxim이라 무관합니다.",
+   source:"Refs 요지: Deliberate obscurity flouts the maxim of Manner, not Quality."},
+
+  /* ── E. Implicature vs entailment; conversational vs conventional; scalar ── */
+  {src:"Implicature",cat:"cancellability",
+   text:"A <span class='kw1'>conversational implicature</span> is cancellable: <em>Some applicants passed — in fact, all of them did</em> removes the <em>not all</em> inference without contradiction.",
+   ans:true,
+   correct:"conversational implicature는 <span class='kw2'>cancellable</span>하다 — <em>in fact, all</em>로 모순 없이 취소된다. 정확하다.",
+   why:"conversational implicature는 CP·maxim·맥락으로 calculable하며, 명시적으로 cancel할 수 있는(defeasible) 성질을 갖습니다. <em>some</em>의 함축(not all)을 <em>in fact, all of them did</em>로 모순 없이 취소할 수 있다는 점이 이를 보여 줍니다.",
+   source:"Refs 요지: Conversational implicatures are cancellable without contradiction.",
+   compare:[{title:"conversational",desc:"calculable · cancellable"},{title:"entailment",desc:"진리조건 · not cancellable"}]},
+
+  {src:"Implicature",cat:"entailment · 혼동",
+   text:"An <span class='kw1'>entailment</span> can be cancelled by adding <em>…but in fact not</em>, just like a conversational implicature.",
+   ans:false,
+   correct:"entailment는 진리조건의 일부라 <span class='kw2'>not cancellable</span>하다 — 취소하면 모순이다.",
+   why:"entailment는 문장의 진리조건에 속하므로 p가 참이면 q가 반드시 참입니다. <em>…but in fact not</em>으로 취소하려 하면 모순이 생깁니다. 취소 가능한 것은 conversational implicature뿐이며, 이 cancel 가능 여부가 둘의 핵심 변별점입니다.",
+   source:"Refs 요지: Entailments are part of truth conditions and are not cancellable."},
+
+  {src:"Implicature",cat:"conventional implicature",
+   text:"The contrast meaning carried by <em>but</em> in <em>He is brilliant but lazy</em> is a <span class='kw1'>conventional implicature</span> and is not cancellable.",
+   ans:true,
+   correct:"<em>but</em>의 대조 함축은 단어에 관습적으로 묶인 <span class='kw1'>conventional implicature</span>로 취소 불가다. 정확하다.",
+   why:"conventional implicature는 특정 lexical item(<em>but/therefore/even</em>)에 관습적으로 결합된 비진리조건적 함축으로, 맥락과 무관하고 취소되지 않습니다. <em>but</em>이 운반하는 대조 함축은 conversational implicature와 달리 cancel할 수 없습니다.",
+   source:"Refs 요지: The contrast meaning of 'but' is a conventional, non-cancellable implicature."},
+
+  {src:"Implicature",cat:"scalar · 방향 오류",
+   text:"On the scale ⟨all, most, some⟩, asserting <em>some</em> generates the <span class='kw1'>scalar implicature</span> that <span class='kw4'>all</span> of them hold.",
+   ans:false,
+   correct:"scalar implicature는 상위 항의 <span class='kw2'>부정</span>이다 — <em>some</em>은 <em>not all</em>을 함축한다.",
+   why:"scalar implicature는 scale에서 약한 항을 주장하면 강한 항을 부정하는 함축입니다. ⟨all, most, some⟩에서 <em>some</em>을 쓰면 <em>not all</em>을 함축합니다. <em>all</em>을 함축한다고 했으므로 방향이 반대라 거짓입니다.",
+   source:"Refs 요지: Asserting 'some' scalar-implicates 'not all', the negation of the stronger item."},
+
+  {src:"Implicature",cat:"entailment vs implicature",
+   text:"From <em>The chef seasoned every dish</em>, the inference <em>The chef seasoned a dish</em> is a cancellable <span class='kw1'>conversational implicature</span>.",
+   ans:false,
+   correct:"이것은 진리조건의 일부인 <span class='kw2'>entailment</span>다 — 취소 불가이지 cancellable conversational implicature가 아니다.",
+   why:"<em>every dish</em>를 양념했다면 <em>a dish</em>를 양념한 것은 진리상 반드시 따라옵니다(p 참 → q 참). 따라서 이는 entailment이며 취소 시 모순이 생깁니다. cancellable한 conversational implicature가 아닙니다.",
+   source:"Refs 요지: 'seasoned a dish' from 'seasoned every dish' is an entailment, not a cancellable implicature."},
+
+  /* ── F. Presupposition + triggers + negation test ── */
+  {src:"Presupposition",cat:"constancy under negation",
+   text:"A presupposition survives the <span class='kw1'>constancy under negation</span> test: <em>Owen has / hasn't quit smoking</em> both presuppose <em>Owen used to smoke</em>.",
+   ans:true,
+   correct:"긍정문과 부정문이 모두 같은 전제를 유지하므로 <span class='kw1'>constancy under negation</span>을 통과한다. 정확하다.",
+   why:"presupposition은 문장을 부정·의문화해도 유지됩니다. <em>quit</em>은 change-of-state trigger로, 긍정 <em>has quit</em>과 부정 <em>hasn't quit</em> 모두 <em>Owen used to smoke</em>를 전제합니다 — constancy under negation을 통과합니다.",
+   source:"Refs 요지: Presuppositions remain constant under negation (change-of-state trigger).",
+   compare:[{title:"presupposition",desc:"부정해도 유지"},{title:"entailment",desc:"부정하면 사라짐"}]},
+
+  {src:"Presupposition",cat:"non-factive 함정",
+   text:"The verb <em>believe</em> in <em>She believes that the vault is empty</em> is a <span class='kw1'>factive</span> presupposition trigger guaranteeing the vault is empty.",
+   ans:false,
+   correct:"<em>believe</em>는 <span class='kw2'>non-factive</span>라 보문의 참을 전제하지 않는다 — factive trigger가 아니다.",
+   why:"factive verb(regret, realize, be aware)는 보문이 참임을 전제하지만, <em>believe, think, claim, maintain</em> 같은 non-factive 술어는 보문의 참을 전제하지 않습니다. <em>She believes the vault is empty</em>는 금고가 실제로 비었는지 전제하지 않으므로 거짓입니다.",
+   source:"Refs 요지: 'believe' is non-factive and triggers no presupposition about its complement."},
+
+  {src:"Presupposition",cat:"cleft trigger",
+   text:"The cleft <em>It was the curator who unlocked the case</em> carries <span class='kw4'>no presupposition</span>, since clefts only assert and never presuppose.",
+   ans:false,
+   correct:"cleft는 presupposition trigger다 — <em>It was X that…</em>는 <span class='kw2'>누군가 그 일을 했다</span>를 전제한다.",
+   why:"cleft 구문 <em>It was X that/who…</em>는 <em>someone unlocked the case</em>를 전제하는 trigger입니다. 부정문 <em>It wasn't the curator who unlocked the case</em>에서도 누군가 열었다는 전제는 유지됩니다. cleft가 전제를 운반하지 않는다는 진술은 거짓입니다.",
+   source:"Refs 요지: Clefts are presupposition triggers (It was X that … presupposes someone did it)."},
+
+  {src:"Presupposition",cat:"entailment vs presupposition",
+   text:"Negating an entailing sentence leaves the entailment intact, exactly as negation leaves a presupposition intact.",
+   ans:false,
+   correct:"부정은 <span class='kw2'>entailment를 제거</span>한다 — 부정 아래 유지되는 것은 presupposition뿐이다.",
+   why:"presupposition만 constancy under negation을 통과합니다. entailment는 문장을 부정하면 보장이 사라집니다(부정문에서 같은 함의가 따라오지 않음). 따라서 entailment가 부정 아래 유지된다는 진술은 거짓이며, 이것이 둘을 가르는 진단입니다.",
+   source:"Refs 요지: Negation removes an entailment but a presupposition survives."},
+
+  /* ── G. Conventional implicature / face / politeness / deixis ── */
+  {src:"Politeness",cat:"face",
+   text:"<span class='kw1'>Negative face</span> is a person's want to be unimpeded and to act autonomously, whereas <span class='kw1'>positive face</span> is the want to be approved of.",
+   ans:true,
+   correct:"negative face = 불간섭·자율 욕구, positive face = 인정·소속 욕구. 정확하다.",
+   why:"face는 공적 자아상으로, Brown & Levinson은 이를 둘로 나눕니다. negative face는 방해받지 않고 자율적이고 싶은 욕구, positive face는 인정받고 소속되고 싶은 욕구입니다. 진술이 둘을 올바르게 정의하므로 참입니다.",
+   source:"Refs 요지: Negative face = want to be unimpeded; positive face = want to be approved of.",
+   compare:[{title:"negative face",desc:"불간섭·자율 욕구"},{title:"positive face",desc:"인정·소속 욕구"}]},
+
+  {src:"Politeness",cat:"FTA · 혼동",
+   text:"A <span class='kw1'>face-threatening act (FTA)</span> is one that protects the hearer's face, such as a sincere compliment intended to please.",
+   ans:false,
+   correct:"FTA는 상대의 face를 <span class='kw2'>위협</span>하는 행위(요청·명령·거절·비판)다 — 보호하는 행위가 아니다.",
+   why:"face-threatening act는 본질적으로 상대의 face를 위협하는 행위입니다(요청·명령·거절·비판 등). 화자는 indirectness·hedge·존대 같은 politeness 전략으로 이 위협을 완화합니다. FTA가 face를 보호한다는 진술은 정의가 반대라 거짓입니다.",
+   source:"Refs 요지: An FTA threatens face; speakers mitigate it with politeness strategies."},
+
+  {src:"Deixis",cat:"deictic shifting",
+   text:"When John's <em>I'll see her here tomorrow</em> is re-reported the next day at another place, <span class='kw1'>deictic shifting</span> changes <em>here</em> and <em>tomorrow</em> (e.g. to <em>there</em>, <em>the next day</em>), while proper names stay constant.",
+   ans:true,
+   correct:"맥락 의존 deictic(<em>here, tomorrow</em>)은 shift하고 고유명사는 유지된다 — <span class='kw1'>deictic shifting</span>의 정의로 정확하다.",
+   why:"발화를 새 맥락에서 재보고하면 맥락 의존 표현은 바뀝니다: <em>here→there</em>, <em>tomorrow→the next day</em>, <em>I→해당 화자</em>. 반면 고유명사·절대 시간 표현은 맥락 독립적이라 그대로 유지됩니다. 진술이 이를 정확히 기술하므로 참입니다.",
+   source:"Refs 요지: Deictic shifting changes context-dependent deictics while proper names stay constant.",
+   compare:[{title:"shift",desc:"here, tomorrow, I (맥락 의존)"},{title:"유지",desc:"proper names, five years ago"}]}
+];
+
+const TOTAL=Q.length;
+const SAVE_KEY='linguistics_pragmatics_quiz_v1';
+let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
+function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
+function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
+function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function getScore(){return answers.filter(a=>a&&a.correct).length;}
+function renderNav(){
+  document.getElementById('nav').innerHTML=answers.map((_,i)=>{
+    const a=answers[i];
+    const cls=i===cur?'nd cur':a===null?'nd':a.correct?'nd ok':'nd ng';
+    return `<button class="${cls}" onclick="jumpTo(${i})">${i+1}</button>`;
+  }).join('');
+}
+function jumpTo(i){cur=i;render();}
+function renderExp(q,isCorrect){
+  const three=q.compare&&q.compare.length===3;
+  const cmp=q.compare?`
+    <div class="sec-label">📊 비교 정리</div>
+    <div class="compare${three?' three':''}">
+      ${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}
+    </div>`:'';
+  return `<div class="exp show">
+    <div class="exp-header"><span>${isCorrect?'✅ 정답':'❌ 오답'} · 해설</span></div>
+    <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
+    <div class="exp-body">
+      <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
+      <div class="sec-label">📌 Source</div>
+      <div class="def-box"><p>${q.source}</p></div>
+      ${cmp}
+    </div>
+  </div>`;
+}
+function render(){
+  if(cur>=TOTAL){
+    document.getElementById('qa').style.display='none';
+    document.getElementById('sc').classList.add('show');
+    const s=getScore();
+    document.getElementById('fs').textContent=s;
+    const p=s/TOTAL;
+    document.getElementById('rm').textContent=p===1?'🎉 Perfect!':p>=.8?'👏 Great!':p>=.6?'😊 Good!':'💪 Keep going!';
+    document.getElementById('rs').textContent=`${TOTAL}문제 중 ${s}문제 정답 (${Math.round(p*100)}%)`;
+    setTimeout(function(){window.showScorePopup&&window.showScorePopup(s,TOTAL);},400);
+    renderNav();return;
+  }
+  document.getElementById('sc').classList.remove('show');
+  document.getElementById('qa').style.display='block';
+  renderNav();
+  const q=Q[order[cur]];
+  document.getElementById('bf').style.width=((cur+1)/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('pt').textContent=`${cur+1} / ${TOTAL}`;
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  const a=answers[cur];
+  if(a!==null){
+    let oBtnCls='',xBtnCls='';
+    if(a.picked===true){oBtnCls=a.correct?'co':'wp';if(!a.correct)xBtnCls='cx';}
+    else{xBtnCls=a.correct?'cx':'wp';if(!a.correct)oBtnCls='co';}
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn ${oBtnCls}" disabled>⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn ${xBtnCls}" disabled>❌<span class="lb">WRONG</span></button>
+        </div>
+        <div class="badge ${a.correct?'ok':'ng'}">${a.correct?'✅ 정답!':'❌ 오답! 정답은 '+(q.ans?'O':'X')}</div>
+        <div>${renderExp(q,a.correct)}</div>
+        <button class="next-btn show" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }else{
+    document.getElementById('qa').innerHTML=`
+      <div class="card">
+        <div class="q-meta"><span class="q-num">Q${cur+1}</span><span class="q-src">${q.src}</span><span class="q-cat">${q.cat}</span></div>
+        <div class="q-text">${q.text}</div>
+        <div class="ox-btns">
+          <button class="ox-btn o-btn" onclick="pick(true)" id="ob">⭕<span class="lb">CORRECT</span></button>
+          <button class="ox-btn x-btn" onclick="pick(false)" id="xb">❌<span class="lb">WRONG</span></button>
+        </div>
+        <div id="bd" class="badge"></div>
+        <div id="ep"></div>
+        <button class="next-btn" id="nb" onclick="next()">${cur<TOTAL-1?'Next →':'결과 보기 →'}</button>
+      </div>`;
+  }
+}
+function pick(val){
+  const q=Q[order[cur]];
+  document.getElementById('ob').disabled=true;
+  document.getElementById('xb').disabled=true;
+  const ok=val===q.ans;
+  answers[cur]={picked:val,correct:ok};
+  if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
+  const bd=document.getElementById('bd');
+  bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
+  bd.className='badge '+(ok?'ok':'ng');
+  document.getElementById(val?'ob':'xb').classList.add(ok?(val?'co':'cx'):'wp');
+  if(!ok)document.getElementById(q.ans?'ob':'xb').classList.add(q.ans?'co':'cx');
+  document.getElementById('ep').innerHTML=renderExp(q,ok);
+  document.getElementById('nb').classList.add('show');
+  document.getElementById('ps').textContent=`정답 ${getScore()}개`;
+  renderNav();
+}
+function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
+function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
+(function(){
+  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
+    cur=saved.cur;answers=saved.answers;
+    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+    const done=answers.filter(a=>a!==null).length;
+    if(done>0){
+      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
+      document.getElementById('rb').style.display='block';
+    }
+  }
+  updateModeUI();renderNav();render();
+})();
+</script>
+</body>
+</html>
