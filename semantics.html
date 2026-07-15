@@ -76,7 +76,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 .score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
 .restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
 .restart-btn:hover{background:rgba(59,63,134,.1)}
-.nd{width:28px;height:28px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd{width:36px;height:36px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
 .nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
 .nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
 .nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
@@ -85,6 +85,11 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 .mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
 .mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
 .mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+.quiz-hub-nav{display:flex;align-items:center;gap:6px;max-width:720px;margin:0 auto 18px;padding:0 8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.quiz-hub-nav::-webkit-scrollbar{display:none}
+.quiz-hub-nav a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:36px;padding:7px 11px;border:1px solid #c5c8e8;border-radius:999px;background:#fff;color:#2a2e6e;font-size:11.5px;font-weight:700;text-decoration:none;white-space:nowrap}
+.quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
+@media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -98,6 +103,9 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
   <p class="header-sub">의미론 · Semantics · 임용고시 대비</p>
   <div class="header-divider"></div>
 </div>
+<nav class="quiz-hub-nav" aria-label="전공영어 학습 허브">
+  <a href="./index.html">영어학 허브</a><a href="./semantics_study.html">개념 학습</a><a href="https://testmaster-pi.vercel.app/">기출 WIKI</a><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a><a href="https://testmaster-pi.vercel.app/keyterm-quiz.html">영교론 키텀</a>
+</nav>
 <div class="prog-wrap">
   <div class="prog-info"><span id="pt">1 / 28</span><span id="ps">정답 0개</span></div>
   <div class="bar"><div class="bar-fill" id="bf" style="width:3.6%"></div></div>
