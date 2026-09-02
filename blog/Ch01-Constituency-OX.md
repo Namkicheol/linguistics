@@ -146,11 +146,11 @@ PP 전체가 cleft focus 가능 → PP constituent. 부분만 들어가면 비�
 
 긴 NP는 발화의 끝으로 가는 경향(<span style="color:#3182ce">**end-weight principle**</span>)이 있어 phrasal V에서 particle 뒤로 이동 선호.
 
-### Q23. Passive particle stranded — ✅ O
+### Q23. Passive particle remains in situ — ✅ O
 
 > *"<span style="color:#319795">**The light was turned off**</span>"*
 
-수동화 시 particle은 V 옆에 stranded. Particle은 V의 일부이므로 함께 이동하지 않습니다.
+수동화 시 particle은 V와 함께 in situ에 남습니다. Particle은 V의 일부이므로 V와 분리되어 이동하지 않습니다.
 
 ### Q24. Pseudo-passive — ✅ O
 

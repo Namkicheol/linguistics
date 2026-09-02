@@ -102,7 +102,7 @@
 | 이동 유형 | A → A position | A → A-bar position |
 | 적용 원리 | Binding Principle A | ECP (Empty Category Principle) |
 
-<span style="color:#c53030">**That-trace Effect**</span>: wh-phrase가 subject 위치에서 이동할 때, complementizer <em>that</em> 바로 앞에 trace가 남으면 ECP 위반으로 비문이 됩니다.
+<span style="color:#c53030">**That-trace Effect**</span>: wh-phrase가 subject 위치에서 이동할 때, wh-trace가 complementizer <em>that</em> 뒤에 남으면 ECP 위반으로 비문이 됩니다.
 
 - <span style="color:#c53030">*Who do you think **that** t saw the professor?*</span> — 비문 (That-trace Effect)
 - <span style="color:#319795">*Who do you think t saw the professor?*</span> — 정문 (*that* 생략으로 해소)
@@ -148,7 +148,7 @@ Movement 챕터는 임용고시에서 지속적으로 출제되어 왔습니다.
 
 <span style="color:#c53030">**2025 B-5**</span> — Subjacency와 bounding node: 두 개 이상 교차 시 비문.
 
-<span style="color:#c53030">**2026 B-9**</span> — That-trace effect: wh-trace 뒤에 <em>that</em>이 오면 비문.
+<span style="color:#c53030">**2026 B-9**</span> — That-trace effect: wh-trace가 <em>that</em> 뒤에 오면 비문.
 
 ---
 
@@ -184,7 +184,7 @@ Movement 챕터는 임용고시에서 지속적으로 출제되어 왔습니다.
 ### 비문 판별 루틴
 
 1. **Case Filter 위반 여부**: passive/raising 구문에서 NP가 Case를 받는가?
-2. **That-trace Effect**: wh-phrase가 subject에서 이동할 때 <em>that</em>이 남아 있는가?
+2. **That-trace Effect**: wh-phrase가 subject에서 이동할 때 <em>that</em>이 subject trace 앞에 남아 있는가?
 3. **Subjacency 위반**: 이동 과정에서 bounding node(IP, NP)를 두 개 이상 교차했는가?
 4. **Island constraint**: Subject Island, Complex NP Island, Wh-island 중 하나에 해당하는가?
 

@@ -98,7 +98,7 @@
 
 <span style="color:#3182ce;">**Presupposition**</span>은 화자가 발화 시 이미 참이라고 전제하는 배경 정보입니다. <span style="color:#319795;">**constancy under negation test**</span>로 판별합니다 — 문장을 부정·의문화해도 전제는 유지됩니다. <span style="color:#3182ce;">**Presupposition trigger**</span>에는 <span style="color:#319795;">definite expression</span>, <span style="color:#319795;">factive verb</span>(regret/realize/aware/odd), <span style="color:#319795;">implicative verb</span>(manage/forget), <span style="color:#319795;">change-of-state verb</span>(stop/begin/continue), <span style="color:#319795;">iterative</span>(again/return), <span style="color:#319795;">cleft</span>, <span style="color:#319795;">wh-question</span>이 있습니다. 반대로 <span style="color:#c53030;">**non-factive**</span>(think/believe/claim/likely)는 보문의 참을 전제하지 않습니다(함정).
 
-- Definite: *The dean of the college / didn't … resigned.* → 그 college에 dean이 존재한다(부정해도 유지).
+- Definite: *The dean of the college resigned / didn't resign.* → 그 college에 dean이 존재한다(부정해도 유지).
 - Factive: <span style="color:#319795;">*Noah regrets / doesn't regret selling the car.*</span> → Noah가 차를 팔았다(유지).
 - Change-of-state: *Mia stopped / didn't stop jogging at dawn.* → Mia가 전에 새벽에 조깅했다.
 - Iterative: *The comet appeared / didn't appear again.* → 그 혜성이 전에 나타났다.
@@ -108,15 +108,15 @@
 
 ### Politeness, Face, FTA; Deixis (person/spatial/temporal/social)
 
-> **Politeness theory (Brown & Levinson): face is a person's public self-image. Positive face = the desire to be approved of and to belong; negative face = the desire to be unimpeded and autonomous. A face-threatening act (FTA) intrinsically threatens face (requests, orders, refusals, criticisms). Speakers mitigate FTAs with strategies: bald on record (no mitigation), positive politeness (appeal to solidarity), negative politeness (defer, hedge, indirectness), or off record (hint indirectly). Deixis = expressions whose reference depends on the utterance context: person deixis (I, you, she), spatial deixis (here, there, this) with a proximal/distal contrast, and temporal deixis (now, then, tomorrow), plus social deixis and discourse deixis. Deictic shifting: when an utterance is re-reported in a new context, context-dependent deictics shift (here→there, tomorrow→the next day, I→the new speaker), while proper names and absolute time spans stay constant.**
+> **Politeness theory (Brown & Levinson): face is a person's public self-image. Positive face = the desire to be approved of and to belong; negative face = the desire to be unimpeded and autonomous. A face-threatening act (FTA) intrinsically threatens face (requests, orders, refusals, criticisms). Speakers mitigate FTAs with strategies: bald on record (no mitigation), positive politeness (appeal to solidarity), negative politeness (defer, hedge, indirectness), or off record (hint indirectly). Deixis = expressions whose reference depends on the utterance context: person deixis (I, you, she), spatial deixis (here, there, this) with a proximal/distal contrast, and temporal deixis (now, then, tomorrow), plus social deixis and discourse deixis. Deictic shifting: when an utterance is re-reported in a new context, context-dependent deictics shift (here→there, tomorrow→the next day, I→the new speaker). Relative temporal deictics (yesterday, five years ago, ten years ago, in an hour) are re-anchored to the reporting context, while proper names and absolute dates stay constant.**
 
-*(politeness/face는 <span style="color:#805ad5;">**Brown & Levinson**</span> 표준 프레임.)* <span style="color:#3182ce;">**Face**</span>는 공적 자아상으로, <span style="color:#3182ce;">**positive face**</span>(인정·소속 욕구)와 <span style="color:#3182ce;">**negative face**</span>(불간섭·자율 욕구)로 나뉩니다. <span style="color:#3182ce;">**FTA**</span>(face-threatening act)는 상대의 face를 <span style="color:#319795;">위협</span>하는 행위(요청·명령·거절·비판)이고, 화자는 <span style="color:#319795;">bald on record / positive politeness / negative politeness / off record</span> 전략으로 위협을 완화합니다. <span style="color:#3182ce;">**Deixis**</span>는 맥락에 의존해 지시가 정해지는 표현으로, <span style="color:#319795;">person / spatial(proximal·distal) / temporal</span>이 핵심이고 <span style="color:#319795;">social·discourse deixis</span>가 확장입니다. <span style="color:#3182ce;">**Deictic shifting**</span>은 발화를 새 맥락에서 재보고할 때 맥락 의존 표현(here, tomorrow, I)은 바뀌고 고유명사·절대 시간은 유지되는 현상입니다.
+*(politeness/face는 <span style="color:#805ad5;">**Brown & Levinson**</span> 표준 프레임.)* <span style="color:#3182ce;">**Face**</span>는 공적 자아상으로, <span style="color:#3182ce;">**positive face**</span>(인정·소속 욕구)와 <span style="color:#3182ce;">**negative face**</span>(불간섭·자율 욕구)로 나뉩니다. <span style="color:#3182ce;">**FTA**</span>(face-threatening act)는 상대의 face를 <span style="color:#319795;">위협</span>하는 행위(요청·명령·거절·비판)이고, 화자는 <span style="color:#319795;">bald on record / positive politeness / negative politeness / off record</span> 전략으로 위협을 완화합니다. <span style="color:#3182ce;">**Deixis**</span>는 맥락에 의존해 지시가 정해지는 표현으로, <span style="color:#319795;">person / spatial(proximal·distal) / temporal</span>이 핵심이고 <span style="color:#319795;">social·discourse deixis</span>가 확장입니다. <span style="color:#3182ce;">**Deictic shifting**</span>은 발화를 새 맥락에서 재보고할 때 맥락 의존 표현(here, tomorrow, I)과 relative temporal deictic(yesterday, five years ago, ten years ago, in an hour)을 보고 맥락에 맞춰 다시 해석하는 현상입니다. 고유명사와 절대 날짜만 유지됩니다.
 
 - Negative politeness(indirect): <span style="color:#319795;">*I'm so sorry to bother you, but could you possibly move your bag?*</span> — negative face 배려.
 - Positive politeness: <span style="color:#319795;">*Hey buddy, give us a hand with this, would you?*</span> — 친밀감·소속 강조.
 - Bald on record: *Pass the report.* — 완화 없음(친밀하거나 긴급한 상황).
 - Deictic shifting: John이 *I'll meet her here tomorrow* 라고 한 것을 다음 날 다른 곳에서 보고하면 → *…he'd meet her there the next day.*
-- 유지: John이 *Ben left ten years ago* 라고 했으면, 재보고 시 <span style="color:#c53030;">*Ben*·*ten years ago*</span> 는 shift 안 함.
+- 재보고: John이 *Ben left ten years ago* 라고 했으면, <span style="color:#c53030;">*Ben*</span>은 유지되지만 <span style="color:#319795;">*ten years ago*</span>는 새 보고 맥락을 기준으로 다시 해석되어 shift함.
 
 ---
 
@@ -129,7 +129,7 @@
 - <span style="color:#3182ce;">**Speech Acts (loc/illoc/perloc)**</span> — 세 종류 구분 + 빈칸에 illocutionary 채우기. "speaker's intent(praise·criticize·warn·threaten)"가 곧 <span style="color:#319795;">illocutionary</span>임을 식별하는 각도.
 - <span style="color:#3182ce;">**Primary / indirect illocutionary force**</span> — 여러 발화 중 primary·indirect force를 갖는 것 고르기(선언 형식이 request, 명령 형식이 expressive).
 - <span style="color:#3182ce;">**Maxim of Relation**</span> — 직접 요청 없이 관련 발화로 의도가 전달되는 대화에서 어떤 maxim이 작동하는지 식별.
-- <span style="color:#3182ce;">**Deixis / deictic shifting**</span> — 보고 맥락 전환 시 shift가 필요한 deictic expression을 찾고 이유를 설명(here·in an hour·I 는 shift, 고유명사·*five years ago* 는 유지).
+- <span style="color:#3182ce;">**Deixis / deictic shifting**</span> — 보고 맥락 전환 시 shift가 필요한 deictic expression을 찾고 이유를 설명(here·in an hour·I·yesterday·*five years ago* 는 shift, 고유명사·절대 날짜는 유지).
 - <span style="color:#3182ce;">**Entailment vs Presupposition**</span> — 두 문장쌍의 의미 관계를 entailment/presupposition으로 분류하고 truth 조건으로 설명(*John doesn't eat vegetables* ⊨ *doesn't eat broccoli*; *John regretted telling a lie* ≫ *John told a lie*).
 - <span style="color:#3182ce;">**Conversational implicature / CP**</span> — implicature가 CP·maxim으로 설명된다는 지문 출제.
 

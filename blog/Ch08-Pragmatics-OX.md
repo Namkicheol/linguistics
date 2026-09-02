@@ -154,9 +154,9 @@ A presupposition survives the <span style="color:#3182ce;">**constancy under neg
 
 ### Q28. deictic shifting — context-dependent deictic은 shift, proper name은 유지 — ✅ O
 
-When John's *I'll see her here tomorrow* is re-reported the next day at another place, <span style="color:#3182ce;">**deictic shifting**</span> changes *here* and *tomorrow* (e.g. to *there*, *the next day*), while proper names stay constant. 발화를 새 맥락에서 재보고하면 맥락 의존 표현은 바뀝니다: <span style="color:#319795;">*here→there*, *tomorrow→the next day*, *I→해당 화자*</span>. 반면 고유명사·절대 시간 표현은 맥락 독립적이라 그대로 유지됩니다. 진술이 이를 정확히 기술하므로 참입니다.
+When John's *I'll see her here tomorrow* is re-reported the next day at another place, <span style="color:#3182ce;">**deictic shifting**</span> changes *here* and *tomorrow* (e.g. to *there*, *the next day*), while proper names stay constant. 발화를 새 맥락에서 재보고하면 맥락 의존 표현은 바뀝니다: <span style="color:#319795;">*here→there*, *tomorrow→the next day*, *I→해당 화자*</span>. *yesterday*, *five years ago*, *ten years ago*, *in an hour*도 보고 맥락을 기준으로 다시 해석되는 relative temporal deictic입니다. 고유명사와 절대 날짜만 그대로 유지됩니다. 진술이 이를 정확히 기술하므로 참입니다.
 
-> **비교** — shift: here, tomorrow, I (맥락 의존) / 유지: proper names, five years ago
+> **비교** — shift: here, tomorrow, I, yesterday, five years ago (맥락 의존) / 유지: proper names, absolute dates
 
 ---
 
