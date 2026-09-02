@@ -198,12 +198,12 @@ const Q=[
    why:"<span class='kw1'>Coordination</span>으로 결합되는 두 단위는 같은 범주의 constituent여야 합니다. 두 VP가 <em>and</em>로 결합되어 자연스러우므로 둘 다 VP임이 검증됩니다.",
    source:"\"VPs coordinate freely with VPs; this is the canonical coordination pattern.\""},
 
-  {src:"Constituency Test",cat:"Coordination · ungrammatical",
-   text:"\"<span class='kw4'>*</span>The chef <span class='kw2'>chopped the onions</span> and <span class='kw2'>the carrots quickly</span>\" is grammatical because both conjuncts are NPs.",
-   ans:false,
-   correct:"<span class='kw1'>chopped the onions</span>는 V+NP(VP)이고 <span class='kw1'>the carrots quickly</span>는 NP+AdvP — 같은 범주가 아니라 비문.",
-   why:"두 conjunct가 다른 범주(혹은 다른 분포의 string)면 coordination 비문이 됩니다. <em>chopped the onions</em>(VP)와 <em>the carrots quickly</em>(이질적 묶음)은 결합 불가.",
-   source:"\"Coordinated strings must be of the same category and function. Mixed-category coordination yields ungrammaticality.\""},
+  {src:"Constituency Test",cat:"Coordination · NP",
+   text:"In \"The chef chopped <span class='kw2'>the onions</span> and <span class='kw2'>the carrots</span>,\" the highlighted conjuncts are both <span class='kw1'>NP constituents</span>; accordingly, the sentence is grammatical.",
+   ans:true,
+   correct:"<span class='kw1'>the onions</span>와 <span class='kw1'>the carrots</span>는 각각 NP constituent. 같은 category의 coordination이므로 정문.",
+   why:"<span class='kw1'>Coordination test</span>에서 두 conjunct는 같은 category의 constituent여야 합니다. 여기서 하이라이트한 두 string은 각각 direct-object NP이므로 NP+NP coordination이 가능하며, VP나 AdvP를 conjunct에 포함시키지 않았습니다.",
+   source:"Radford: \"Only identical categories can be conjoined, idiomatically\"; the diagnostic \"makes crucial reference to constituent structure and category membership.\""},
 
   // ── Fragment Answer (2) ──
   {src:"Constituency Test",cat:"Fragment Answer",

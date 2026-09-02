@@ -64,11 +64,11 @@ VP 전체가 fronted position으로 이동 가능 → VP가 constituent. 부분 
 
 두 VP를 *and*로 결합한 것은 표준 coordination. 같은 범주 결합이므로 정문.
 
-### Q10. Mixed-category ungrammatical — ❌ X
+### Q10. NP coordination — ✅ O
 
-> *"<span style="color:#c53030">*</span>The chef chopped the onions and the carrots quickly is grammatical because both NPs are coordinated."*
+> *"The chef chopped <span style="color:#319795">**the onions**</span> and <span style="color:#319795">**the carrots**</span>."*
 
-<span style="color:#c53030">**⚠️ 반대입니다.**</span> chopped the onions(VP)와 the carrots quickly(이질적 묶음)은 같은 범주가 아니므로 비문.
+<span style="color:#319795">**NP + NP coordination**</span>입니다. 하이라이트한 두 string은 각각 direct-object NP이므로 같은 category의 constituent끼리 결합한 정문입니다. Verb와 문장 끝의 다른 요소를 conjunct에 포함시키지 않고, 두 NP만 비교하는 것이 핵심입니다.
 
 ---
 
