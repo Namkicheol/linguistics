@@ -86,15 +86,17 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 
 @media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
+<nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./constituency.html">OX 풀기</a></nav>
 
 <div class="header-wrap">
   <div class="header-topbar">
     <span class="header-sticker">STUDY NOTE</span>
     <span class="header-chapter">Ch.01 · Constituency</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <h1 class="header-title">Constituency · 개념정리</h1>
   <div class="header-script">Concept Notes · Constituency · Syntax</div>
   <p class="header-sub">합격자 노트 기반 · 기출 포인트 · 비교 도식</p>
   <div class="header-divider"></div>
@@ -211,15 +213,53 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
         <span class="eg-line eg-ok">The students [VP read the journal in the library], and the visitors did so too.</span>
         <span class="eg-line eg-ok">Hannah [VP wrote a letter quickly], and Liam did so as well.</span>
         <span class="eg-line eg-bad">The students read [the journal in the library], and the visitors did so too. — wrong bracketing</span>
-        <span class="eg-note">→ <em>do so</em>는 VP 전체를 대용. 부분만 대용하면 비문이 되거나 의미가 달라짐.</span>
-      </div>
+        <span class="eg-note">→ Radford/TG의 분석에서 <em>do so</em>는 동사와 complement를 포함하는 단위를 대용한다. Adjunct는 함께 대용되거나 대용 범위 밖에 남을 수 있다.</span>
+  <figure style="margin:20px 0;max-width:560px">
+<svg id="do-so-scope" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 940" role="img" aria-labelledby="do-so-title do-so-desc" style="width:100%;height:auto;max-width:560px;display:block" lang="ko">
+<title id="do-so-title">do so: adjunct를 포함하거나 밖에 남기기</title><desc id="do-so-desc">같은 buy 구문에서 do so는 buy the map on Friday 전체 또는 buy the map만 대용할 수 있다. 첫 경우 on Friday까지 대용 범위에 포함된다. 둘째 경우 on Friday는 범위 밖에 남고 뒤 절에 on Sunday가 올 수 있다. 전체 문장 구조가 아닌 대용 범위를 보여주는 도식이다.</desc>
+<style>#do-so-scope text{font-family:'Noto Sans CJK KR','Noto Sans',sans-serif;fill:#172b42;font-size:21px}#do-so-scope .h{font-size:30px;font-weight:700}#do-so-scope .sub{font-size:20px;fill:#42566b}#do-so-scope .label{font-size:22px;font-weight:700}#do-so-scope .blue{fill:#15569b}#do-so-scope .teal{fill:#08685e}</style>
+<rect width="560" height="940" rx="22" fill="#f5f7fb"/>
+<text x="28" y="48" class="h">do so: 어디까지 대용할까?</text>
+<text x="28" y="81" class="sub">Radford / TG · Complement와 adjunct</text>
+<rect x="22" y="110" width="516" height="333" rx="12" fill="#fff" stroke="#d4deea" stroke-width="2"/>
+<text x="42" y="148" class="label blue">01  Adjunct까지 포함</text>
+<text x="42" y="187" class="">Maya will …</text>
+<rect x="40" y="208" width="480" height="79" rx="12" fill="#eaf3ff" stroke="#15569b" stroke-width="2"/>
+<text x="57" y="241" class="" style="font-size:24px">buy the map</text>
+<text x="287" y="241" class="" style="font-size:24px">on Friday</text>
+<text x="57" y="270" class="sub">V + complement</text>
+<text x="287" y="270" class="sub">adjunct</text>
+<path d="M280 294 V316" stroke="#15569b" stroke-width="3" fill="none"/><path d="M274 311 L280 319 L286 311" fill="none" stroke="#15569b" stroke-width="3"/>
+<text x="42" y="352" class="" style="font-size:25px">Leo will do so too.</text>
+<text x="42" y="391" class="sub">do so = buy the map on Friday</text>
+<text x="42" y="421" class="sub">on Friday까지 대용 범위에 포함된다.</text>
+<rect x="22" y="465" width="516" height="333" rx="12" fill="#fff" stroke="#d4deea" stroke-width="2"/>
+<text x="42" y="503" class="label teal">02  Adjunct를 밖에 남김</text>
+<text x="42" y="542" class="">Maya will …</text>
+<rect x="40" y="563" width="235" height="79" rx="12" fill="#eaf3ff" stroke="#15569b" stroke-width="2"/>
+<rect x="287" y="563" width="233" height="79" rx="12" fill="#fff" stroke="#5c7185" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="55" y="596" class="" style="font-size:24px">buy the map</text>
+<text x="302" y="596" class="" style="font-size:24px">on Friday</text>
+<text x="55" y="625" class="sub">V + complement</text>
+<text x="302" y="625" class="sub">adjunct</text>
+<path d="M155 648 V669" stroke="#15569b" stroke-width="3" fill="none"/><path d="M149 664 L155 672 L161 664" fill="none" stroke="#15569b" stroke-width="3"/>
+<text x="42" y="707" class="" style="font-size:25px">Leo will do so on Sunday.</text>
+<text x="42" y="746" class="sub">do so = buy the map</text>
+<text x="42" y="776" class="sub">시간을 나타내는 adjunct는 별도로 붙일 수 있다.</text>
+<text x="28" y="841" class="label">실선 상자 = do so의 대용 범위</text>
+<text x="28" y="875" class="sub">이 예에서 adjunct는 포함하거나 남길 수 있다.</text>
+<text x="28" y="907" class="sub">전체 문장 구조가 아닌 대용 범위를 보여 준다.</text>
+</svg>
+<figcaption style="font-size:16px;line-height:1.7;color:#172b42;margin-top:12px;overflow-wrap:anywhere">Radford/TG의 분석에서 do so는 동사(V)와 그 complement를 포함하는 단위를 대용한다. 이 예문에서는 시간을 나타내는 on Friday(adjunct)까지 함께 포함하거나, 이를 대용 범위 밖에 남길 수 있다. 실선 상자는 전체 문장 구조가 아닌 대용 범위를 보여 준다. 동사가 선택하는 complement도 임의로 밖에 남길 수 있다는 뜻은 아니다.</figcaption>
+</figure>
+
+    </div>
     </div>
     <div class="concept">
       <div class="c-title">예시 — Locative PP substitution by <em>there</em></div>
       <div class="eg">
         <span class="eg-line eg-ok">The cat slept [PP under the porch], and the dog slept there too.</span>
-        <span class="eg-line eg-bad">The cat slept under [the porch], and the dog slept under there too. — preposition 잔여 비자연</span>
-        <span class="eg-note">→ <em>there</em>는 [PP under the porch] 전체를 대용해야 자연. <span class='kw1'>PP</span>가 constituent임을 입증.</span>
+        <span class="eg-note">→ <em>there</em>는 이 예문에서 [PP under the porch] 전체를 대용한다. <span class='kw1'>PP</span>가 constituent임을 입증.</span>
       </div>
     </div>
     <div class="exam">
@@ -478,7 +518,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
         <div class="grid-item">
           <div class="gi-title"><span class='kw4'>Complement</span></div>
           <div class="gi-body">
-            <span>head가 <span class='kw2'>의무적</span>으로 요구</span>
+            <span>head가 선택하는 요소. 생략 가능 여부는 head와 구문에 따라 다름</span>
             <span>head와 가장 <span class='kw2'>가까이</span> 위치 (sister to head)</span>
             <span>의미적으로 head에 의해 selected</span>
             <span>do so 대용 시 함께 사라짐</span>
@@ -654,7 +694,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="480" y="118" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f7a8c">PP</text>
       <line x1="480" y1="124" x2="480" y2="160" stroke="#aaa" stroke-width="1.5"/>
       <text x="480" y="178" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a2e">with the telescope</text>
-      <text x="300" y="232" text-anchor="middle" font-size="11" fill="#666">→ PP가 VP의 자매 → 봤던 행위의 도구 (망원경으로 봄)</text>
+      <text x="300" y="232" text-anchor="middle" font-size="11" fill="#666">→ PP가 VP에 붙어 보는 행위의 도구를 나타냄</text>
     </svg>
 
     <svg class="tree-svg" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">

@@ -73,14 +73,16 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .mv-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#c62828;font-weight:700;letter-spacing:1px}
 @media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
+<nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./movement.html">OX 풀기</a></nav>
 <div class="header-wrap">
   <div class="header-topbar">
     <span class="header-sticker">STUDY NOTE</span>
     <span class="header-chapter">Ch.03 · Movement (Transformations)</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <h1 class="header-title">Movement · 개념정리</h1>
   <div class="header-script">Concept Notes · Movement · Transformational Syntax</div>
   <p class="header-sub">합격자 노트 기반 · 기출 포인트 · 이동 변형 수형도</p>
   <div class="header-divider"></div>
@@ -235,7 +237,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
-      <p><strong>메가쌤 기출분석 §Head Movement</strong> — V-movement / affix movement의 차이와 영어 적용 유형 반복 출제 (Head movement 섹션)</p>
+      <p>V-movement와 affix movement를 비교할 때에는 각 분석이 가정하는 이동 방향과 도착 위치를 구별한다.</p>
     </div>
   </div>
 </div>
@@ -327,7 +329,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
-      <p>메가쌤 기출분석 §Head Movement — V-movement와 I-to-C는 head movement 섹션에서 함께 출제 (affixes movement vs V movement 도출 유형)</p>
+      <p>V-movement와 I-to-C는 모두 head movement로 다루지만, 출발점과 도착점이 다르다.</p>
     </div>
   </div>
 </div>
@@ -502,8 +504,8 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">In wh-questions, the wh-phrase moves from its original argument position to <span class='kw1'>Spec,CP</span> (the specifier of CP). This movement is <span class='kw1'>WH MOVEMENT</span>, an instance of A-bar movement (operator movement).</div>
-      <p class="note">D-structure: wh-phrase는 원래 argument 위치에 base-generated (object, subject, PP complement 등).</p>
+      <div class="def">In wh-questions, the wh-phrase moves from its original position (an argument or adjunct position) to <span class='kw1'>Spec,CP</span> (the specifier of CP). This movement is <span class='kw1'>WH MOVEMENT</span>, an instance of A-bar movement (operator movement).</div>
+      <p class="note">D-structure에서 wh-phrase는 원래 argument 또는 adjunct 자리에 있다.</p>
       <p class="note">S-structure: wh-phrase가 <span class='kw2'>Spec,CP</span>로 이동하고 원위치에 <span class='kw2'>wh-trace</span>를 남긴다.</p>
       <p class="note">직접의문문에서는 WH MOVEMENT + I-to-C가 동시에 적용될 수 있다.</p>
     </div>
@@ -613,14 +615,14 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
             <span>NP-movement(passive, raising)에서 생성</span>
             <span>A-position (argument position)에서 A-position으로 이동</span>
             <span>antecedent에 의해 <em>locally</em> A-bound</span>
-            <span>Binding Principle A 적용 대상</span>
+            <span>Binding Principle A 및 ECP 적용 대상 (이 GB 분석)</span>
           </div>
         </div>
         <div class="grid-item">
           <div class="gi-title">Wh-trace</div>
           <div class="gi-body">
             <span>Wh-movement에서 생성</span>
-            <span>A-position → A-bar position (Spec,CP)으로 이동</span>
+            <span>원래 argument/adjunct 자리에서 A-bar position (Spec,CP)으로 이동</span>
             <span>antecedent에 의해 A-bar bound</span>
             <span>ECP (Empty Category Principle) 적용 대상</span>
           </div>

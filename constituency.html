@@ -89,6 +89,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 .quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
 @media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
 <div class="header-wrap">
@@ -96,7 +97,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
     <span class="header-no">NO. 01 <span>—</span> Constituency</span>
     <span class="header-label">Past-Exam Notebook</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <h1 class="header-title">Constituency · OX</h1>
   <div class="header-script">Concept Master · Syntax</div>
   <p class="header-sub">영어학 · Constituency · 임용고시 대비</p>
   <div class="header-divider"></div>
@@ -135,9 +136,9 @@ const Q=[
   {src:"Constituency Test",cat:"Substitution · do so",
    text:"In the sentence \"Marcus repaired the bicycle in the garage, and Helena did so as well,\" the proform <span class='kw1'>did so</span> substitutes for the entire VP <span class='kw2'>repaired the bicycle in the garage</span>, demonstrating that this string is a constituent.",
    ans:true,
-   correct:"<span class='kw1'>do so</span> 대용은 VP 전체를 대용함. 부분 대용은 비문 또는 의미 변화.",
-   why:"<span class='kw1'>do so substitution test</span>는 VP가 <span class='kw2'>constituent</span>임을 보여주는 대표 진단법입니다. <em>did so</em>가 정자연하게 들어가면 그 자리는 VP. 부분만 대용하려 하면 비문이거나 의미가 비논리적이 됩니다.",
-   source:"\"If a string can be replaced by a single proform without loss of grammaticality, it forms a constituent. <em>do so</em> targets VP.\"",
+   correct:"do so는 동사와 complement를 포함하는 단위를 대용한다. Adjunct는 함께 대용되거나 대용 범위 밖에 남을 수 있다.",
+   why:"이 문장에서는 repaired the bicycle in the garage 전체를 did so로 대용할 수 있습니다. Radford/TG의 분석에서는 동사와 complement만 대용하고 adjunct를 남기는 경우도 허용합니다. 따라서 이 예문이 자연스럽다는 사실을 ‘항상 VP 전체만 대용한다’는 규칙으로 확대하면 안 됩니다.",
+   source:"Radford, Transformational Grammar, §5.2, pp.234–235: do so의 대용 범위와 complement/adjunct 구별. 요약이며 직접 인용이 아님.",
    compare:[{title:"<span class='kw1'>VP</span> 대용",desc:"do so / do it / do that"},{title:"<span class='kw1'>NP</span> 대용",desc:"he / she / it / they"}]},
 
   {src:"Constituency Test",cat:"Substitution · pronoun",
@@ -155,11 +156,11 @@ const Q=[
    source:"\"Locative PPs are substituted by <em>there</em>; temporal PPs by <em>then</em>. Substitution by these proforms is a diagnostic for PP constituency.\""},
 
   {src:"Constituency Test",cat:"Substitution · partial replacement",
-   text:"In \"The students examined <span class='kw2'>the manuscript</span> in the archive,\" replacing only <span class='kw2'>the manuscript</span> with <span class='kw1'>it</span> yields the grammatical \"The students examined it in the archive,\" which proves that <span class='kw2'>the manuscript in the archive</span> is <span class='kw1'>not</span> a single NP constituent.",
+   text:"In \"The students examined the manuscript in the archive,\" the grammatical replacement \"The students examined it in the archive\" supports a reading in which in the archive modifies the examining event.",
    ans:true,
-   correct:"<span class='kw1'>it</span>이 <span class='kw2'>the manuscript</span>만을 대용하면 PP는 따로 남는 것이 자연 — 즉 <span class='kw2'>the manuscript</span>만 NP, <span class='kw2'>in the archive</span>는 별도의 VP-attached PP.",
-   why:"<span class='kw1'>Substitution test</span>는 양방향으로 작동합니다. \"the manuscript in the archive\"가 NP라면 <em>it</em>으로 대체 시 PP도 함께 사라져야 자연. <em>it in the archive</em>가 자연스러우면 PP는 NP 외부 — VP에 attached.",
-   source:"\"Asymmetric substitution patterns reveal whether a PP is NP-attached (inside the NP) or VP-attached (sister of V).\""},
+   correct:"이 대용은 in the archive가 동작의 장소를 나타내는 해석을 뒷받침한다. 원문에서 PP가 NP에 붙는 다른 해석까지 배제하지는 않는다.",
+   why:"대용 검사는 특정 구조의 가능성을 보여 주지만, 그 결과만으로 원문의 다른 구조를 모두 부정할 수는 없습니다. 이 예문에서는 PP가 examined에 붙는 해석과 manuscript를 수식하는 해석을 구별해야 합니다.",
+   source:"Syntax and Argumentation, §13.8, pp.240–241: 구조 진단을 함께 사용하고 단일 검사의 역추론을 경계한다. 요약."},
 
   // ── Movement Test (3) ──
   {src:"Constituency Test",cat:"Movement · PP preposing",

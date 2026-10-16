@@ -79,14 +79,16 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .nav-btn.next-btn{font-weight:600}
 @media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
+<nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./semantics.html">OX 풀기</a></nav>
 <div class="header-wrap">
   <div class="header-topbar">
     <span class="header-sticker">STUDY NOTE</span>
     <span class="header-chapter">Ch.07 · Semantics</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <h1 class="header-title">Semantics · 개념정리</h1>
   <div class="header-script">Concept Notes · Semantics · Meaning &amp; Lexical Relations</div>
   <p class="header-sub">sense/reference · lexical relations · entailment/presupposition · thematic roles</p>
   <div class="header-divider"></div>
@@ -120,7 +122,6 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <p>③ <span class='kw3'>Lexical relations</span>: <span class='kw1'>hyponymy</span> 방향(hyponym ⊨ superordinate), <span class='kw1'>gradable</span> vs <span class='kw1'>complementary</span> vs <span class='kw1'>converse</span> antonymy</p>
   <p>④ <span class='kw3'>Reference &amp; deixis</span>: 같은 reference, 다른 sense / proximal vs distal deictic expressions</p>
   <p>⑤ 함정: <span class='kw4'>hyponymy 역방향</span>(superordinate ⊭ hyponym), <span class='kw4'>presupposition은 부정 시 유지</span>(사라진다 X), homonymy(무관) vs polysemy(관련)</p>
-  <p style="font-size:12px;color:#8d4d14;margin-top:6px">※ 검증된 연도 stamp가 없어 본 페이지는 <strong>연도 표기 생략</strong> — 메가쌤 기출 분석의 <strong>출제 각도</strong>만 반영.</p>
 </div>
 
 <!-- ① Sense & Reference -->
@@ -177,7 +178,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="exam">
       <div class="exam-label">📝 출제 각도 (Semantics – Reference / Deixis)</div>
-      <p>같은 referent를 가리키는 두 표현의 <span class='kw1'>sense</span> 차이 식별, person/spatial <span class='kw1'>deixis</span> 식별·deictic shifting이 출제 각도로 보고됨(메가쌤 기출 분석, <em>Pragmatics – Deixis – Deictic Expressions</em>; 검증된 연도 stamp 없음 → 연도 미표기).</p>
+      <p>같은 referent를 가리키는 두 표현의 <span class='kw1'>sense</span> 차이 식별, person/spatial <span class='kw1'>deixis</span> 식별과 deictic shifting을 함께 연습한다.</p>
     </div>
   </div>
 </div>
@@ -217,7 +218,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
           <div class="gi-body"><span>같은 관계를 반대 시점에서</span><span>서로 paraphrase</span><span class="eg-line eg-ok" style="font-size:12px">teacher/student, lend/borrow, in front of/behind</span></div>
         </div>
       </div>
-      <p class="note"><span class='kw3'>markedness</span>: gradable에서 한쪽이 unmarked(중립) 멤버다 — <em>How old is he?</em>는 자연스럽지만 <span class='kw4'>*How young is he?</span>는 어색(중립 질문 불가).</p>
+      <p class="note"><span class='kw3'>markedness</span>: gradable에서 한쪽이 unmarked(중립) 멤버다 — <em>How old is he?</em>는 자연스럽지만 <span class='kw4'>How young is he?</span>는 문법적이지만 젊음을 전제하거나 강조하는 맥락에 더 잘 맞는다.</p>
       <p class="note"><span class='kw4'>함정</span>: <em>hot/cold</em>는 <span class='kw4'>complementary가 아니라 gradable</span>이다 — warm/cool 등 중간값이 존재한다.</p>
     </div>
     <div class="exam">
@@ -352,7 +353,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note"><span class='kw3'>Presupposition triggers</span>: definite expression, factive verb(<em>regret, realize, be aware, be odd</em>), implicative verb(<em>manage, forget</em>), change-of-state verb(<em>stop, begin, continue</em>), iterative(<em>again, return</em>), cleft, wh-question.</p>
     </div>
     <div class="concept">
-      <div class="c-title">Truth-table 변별 (메가쌤 출제 각도)</div>
+      <div class="c-title">Truth-table 변별 </div>
       <div class="tbl-wrap">
         <table class="diag">
           <thead>
@@ -372,7 +373,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="exam">
       <div class="exam-label">📝 출제 각도 (Semantics – Truth Condition – Entailment & Presupposition)</div>
-      <p>두 문장쌍의 의미 관계를 <span class='kw1'>truth-table</span> 기준으로 <strong>판별·설명</strong>: 1a T→1b T / 1b F→1a F = <span class='kw1'>entailment</span>; 2a를 부정해도 2b 유지 = <span class='kw1'>presupposition</span>. 메가쌤 기출 분석 보고 각도(연도 stamp 없음 → 미표기).</p>
+      <p>두 문장쌍의 의미 관계를 <span class='kw1'>truth-table</span> 기준으로 <strong>판별·설명</strong>: 1a T→1b T / 1b F→1a F = <span class='kw1'>entailment</span>; 2a를 부정해도 2b 유지 = <span class='kw1'>presupposition</span>.</p>
     </div>
   </div>
 </div>
@@ -398,7 +399,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
           <div class="gi-body"><span>같은 단어열에 <strong>구성 구조(트리)</strong>가 둘 이상</span><span class="eg-line" style="font-size:12px"><em>The boy saw the man with a telescope.</em> (PP attachment)</span><span class="eg-line" style="font-size:12px"><em>Every student read a book.</em> (scope)</span></div>
         </div>
       </div>
-      <p class="note"><span class='kw4'>변별</span>: 트리가 둘로 갈리면 <span class='kw4'>structural</span>, 단어 하나의 의미가 갈리면 <span class='kw4'>lexical</span>. 예: <em>He saw her duck</em>는 단어 <em>duck</em>의 두 의미 → <span class='kw4'>lexical</span>(structural 아님).</p>
+      <p class="note"><span class='kw4'>변별</span>: 트리가 둘로 갈리면 <span class='kw4'>structural</span>, 단어 하나의 의미가 갈리면 <span class='kw4'>lexical</span>. 두 차이는 함께 나타날 수도 있다. <em>He saw her duck</em>에서는 duck의 명사·동사 해석에 따라 her의 기능과 문장 구조도 달라진다.</p>
     </div>
     <svg class="tree-svg" viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
       <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">Structural ambiguity: "old men and women" — 두 bracketing(구조)</text>
@@ -485,7 +486,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="exam">
       <div class="exam-label">📝 출제 각도 (Syntax – Theta Theory – Thematic Relations & Theta Roles)</div>
-      <p>argument들의 <span class='kw1'>thematic role</span>을 <strong>식별</strong>하고, role이 grammatical function과 독립적임을 설명(같은 NP가 위치 바뀌어도 Theme 유지; <span class='kw1'>Theme vs Instrument</span> 변별). 메가쌤 기출 분석 보고 각도(연도 stamp 없음 → 미표기).</p>
+      <p>argument들의 <span class='kw1'>thematic role</span>을 <strong>식별</strong>하고, role이 grammatical function과 독립적임을 설명(같은 NP가 위치 바뀌어도 Theme 유지; <span class='kw1'>Theme vs Instrument</span> 변별).</p>
     </div>
   </div>
 </div>

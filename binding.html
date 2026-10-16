@@ -91,6 +91,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 .quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
 @media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
 <div class="header-wrap">
@@ -98,7 +99,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
     <span class="header-no">NO. 05 <span>—</span> Binding</span>
     <span class="header-label">Past-Exam Notebook</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <h1 class="header-title">Binding · OX</h1>
   <div class="header-script">Concept Master · Transformational Syntax</div>
   <p class="header-sub">영어학 · Binding · 임용고시 대비</p>
   <div class="header-divider"></div>
@@ -270,7 +271,7 @@ const Q=[
    text:"A <span class='kw1'>pronoun</span> must be bound within its governing category.",
    ans:false,
    correct:"틀리다 — <span class='kw1'>Principle B</span>는 pronoun이 governing category 안에서 <span class='kw2'>free</span>일 것을 요구한다(bound가 아니라).",
-   why:"governing category 안에서 bound돼야 하는 것은 anaphor(Principle A)입니다. pronoun은 정반대로 같은 domain 안에서 free여야 하고(Principle B), domain 밖 선행사와의 coreference만 허용됩니다. 그래서 reflexive와 pronoun은 complementary distribution을 이룹니다.",
+   why:"Anaphor는 자신의 binding domain 안에서 bound되어야 하지만, pronoun은 그 안에서 free여야 합니다. 금지되는 것은 domain 안의 binding입니다. C-command를 하지 않는 표현과의 모든 coreference까지 일괄 금지하는 규칙은 아닙니다.",
    source:"Principle B — a pronoun must be free in its governing category."},
 
   {src:"Principle B",cat:"ECM pronoun bound",
@@ -419,11 +420,11 @@ const Q=[
    source:"In ECM, a pronoun coindexed with the matrix subject violates Principle B."},
 
   {src:"3-way contrast",cat:"기출 각도 — 결합형",
-   text:"When an anaphor sits in the lowest embedded clause and its only possible antecedent is the matrix subject, the sentence is ill-formed because the anaphor cannot be bound in its <span class='kw1'>binding domain</span>.",
+   text:"In a raising chain, the surface distance between an anaphor and its antecedent does not by itself prove a Principle A violation; the lower position of the raised NP must also be considered.",
    ans:true,
-   correct:"맞다 — anaphor이 자신의 binding domain 안에서 bound될 수 없으면 ill-formed다.",
-   why:"anaphor은 자신의 governing category(minimal clause) 안에서 bound돼야 하므로, 유일한 선행사가 멀리 떨어진 matrix subject뿐이면 binding condition을 만족시킬 수 없어 ill-formed입니다. (메가쌤 기출분석에서 확인된 Theta+Binding+Movement 결합형 서술형 각도)",
-   source:"An anaphor whose only antecedent is a distant matrix subject cannot be bound in its binding domain. (기출분석 결합형 각도)"}
+   correct:"표면상 멀리 떨어져 있다는 사실만으로 Principle A 위반을 판정하지 않는다. Raising chain의 낮은 위치와 anaphor의 관계를 확인해야 한다.",
+   why:"2018학년도 전공 B 6번의 raising 예에서는 가장 낮은 위치에서 성립하는 binding 관계를 함께 고려합니다. 다른 subject를 건너뛰는지 등 실제 구조를 확인해야 하며, 모든 상위절 주어가 하위절 anaphor의 선행사가 될 수 있다는 뜻은 아닙니다.",
+   source:"2018학년도 1차 전공 B 6번: raising chain, Theta Criterion, binding 조건의 결합. 문항의 구조 조건을 보존한다."}
 ];
 
 const TOTAL=Q.length;

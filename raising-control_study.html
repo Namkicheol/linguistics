@@ -79,14 +79,16 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .nav-btn.next-btn{font-weight:600}
 @media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
+<nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./raising-control.html">OX 풀기</a></nav>
 <div class="header-wrap">
   <div class="header-topbar">
     <span class="header-sticker">STUDY NOTE</span>
     <span class="header-chapter">Ch.04 · Raising &amp; Control</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">개념 정리</span> 노트</h1>
+  <h1 class="header-title">Raising &amp; Control · 개념정리</h1>
   <div class="header-script">Concept Notes · Raising &amp; Control · Transformational Syntax</div>
   <p class="header-sub">합격자 노트 기반 · 기출 포인트 · SSR / SOR / SC / OC 4분류</p>
   <div class="header-divider"></div>
@@ -146,17 +148,17 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     <div class="grid col2">
       <div class="grid-item">
         <div class="gi-title">Theta Criterion 위반 ①</div>
-        <div class="gi-body"><span>argument가 theta-role을 못 받음 → 비문</span><span style="font-size:12px;color:#b71c1c">*The student put the book.</span><span style="font-size:12px">(put은 NP + PP 두 internal argument 필요)</span></div>
+        <div class="gi-body"><span>필요한 argument가 없어 theta-role이 배정되지 못함 → 비문</span><span style="font-size:12px;color:#b71c1c">*The student put the book.</span><span style="font-size:12px">(put은 NP + PP 두 internal argument 필요)</span></div>
       </div>
       <div class="grid-item">
         <div class="gi-title">Theta Criterion 위반 ②</div>
-        <div class="gi-body"><span>theta-role을 받을 argument가 없음 → 비문</span><span style="font-size:12px;color:#b71c1c">*The student arrived the parcel the office.</span><span style="font-size:12px">(arrive는 internal argument 못 가짐)</span></div>
+        <div class="gi-body"><span>추가 NP가 받을 theta-role이 없음 → 비문</span><span style="font-size:12px;color:#b71c1c">*The student arrived the parcel the office.</span><span style="font-size:12px">(이 구문에서 arrive는 추가 목적어를 허용하지 않음)</span></div>
       </div>
     </div>
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
       <p><strong>2013 1차 Q33</strong> — <span class='kw1'>thematic roles</span>·<span class='kw1'>argument structure</span>: 논항 구조와 의미역 분석</p>
-      <p><strong>2014 1차 서술5</strong> — <span class='kw1'>theta roles</span>·<span class='kw1'>argument structure</span>: 논항 구조와 의미역 분석</p>
+      <p><strong>2014학년도 1차 전공 A 기입형 13번</strong> — <span class='kw1'>theta roles</span>·<span class='kw1'>argument structure</span>: 논항 구조와 의미역 분석</p>
       <p><strong>2025 1차 B-5</strong> — <span class='kw4'>theta-criterion</span>·<span class='kw1'>theta-role</span>·<span class='kw1'>argument</span>: ditransitive <em>put</em>의 argument 누락으로 Theta Criterion 위반 판정</p>
     </div>
   </div>
@@ -337,9 +339,9 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
-      <p><strong>2007 1차</strong> — <span class='kw1'>believe</span> SOR: <em>John believes Bill to be taller</em> — believe는 internal Case 부여 가능(= external theta-role 부여), likely는 Case 부여 불가(<em>*It is likely Bill to be taller</em>) 대조</p>
+      <p><strong>2007 서울·인천 14번</strong> — <span class='kw1'>believe</span> SOR: <em>John believes Bill to be taller</em> — 능동형 believe는 하위절 주어에 Case를 부여할 수 있지만 likely는 그럴 수 없다. Case 부여와 상위절 주어에 대한 theta-role 부여는 서로 다른 속성이다. 비교: <em>*It is likely Bill to be taller</em>.</p>
       <p><strong>2018 1차</strong> — <span class='kw1'>seem</span>·<span class='kw1'>believe</span>·Case: <em>It seems that Tom is believed to admire Mary</em> 류 다층 분석</p>
-      <p><strong>2019 1차 기입3</strong> — <span class='kw1'>SOR</span>·<span class='kw1'>OC</span> 대조: <em>John believed Sue to be obedient</em>(S-O Raising) vs <em>John persuaded Sue to obey</em>(object control)</p>
+      <p><strong>2019학년도 1차 전공 B 6번</strong> — <span class='kw1'>SOR</span>·<span class='kw1'>OC</span> 대조: <em>John believed Sue to be obedient</em>(S-O Raising) vs <em>John persuaded Sue to obey</em>(object control)</p>
       <p><strong>2024 1차 A-7</strong> — <span class='kw4'>Case</span>: <span class='kw4'>*It is believed the team to win</span> → <em>the team</em>이 case-assigned subject 자리로 이동해야 함</p>
     </div>
   </div>
@@ -479,7 +481,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
       <p><strong>2013 1차</strong> — <span class='kw1'>OC</span>: <em>You allowed us to come in</em> / <em>He ordered us to get out</em> 등 object control</p>
-      <p><strong>2019 1차 기입3</strong> — <span class='kw4'>object control</span> vs <span class='kw1'>S-O Raising</span>: <em>John persuaded Sue to obey</em>(OC) vs <em>John believed Sue to be obedient</em>(SOR), <em>John motivated Sue …</em>(OC)</p>
+      <p><strong>2019학년도 1차 전공 B 6번</strong> — <span class='kw4'>object control</span> vs <span class='kw1'>S-O Raising</span>: <em>John persuaded Sue to obey</em>(OC) vs <em>John believed Sue to be obedient</em>(SOR), <em>John motivated Sue …</em>(OC)</p>
     </div>
   </div>
 </div>
@@ -496,7 +498,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     <div class="concept">
       <div class="c-title">Core Definition</div>
       <div class="def"><span class='kw1'>PRO</span> is the phonetically null subject of a non-finite (control) clause — an <span class='kw2'>empty category</span> that bears a theta-role from the embedded predicate. PRO is <span class='kw2'>base-generated</span> (not the result of movement).</div>
-      <p class="note">분포: PRO는 <span class='kw2'>infinitival (to-)clause의 주어 자리</span>에만 나타난다. 정형절 주어나 목적어 자리에는 못 온다.</p>
+      <p class="note">PRO는 to부정사절의 주어뿐 아니라 일부 -ing절의 주어로도 분석된다. 모든 비정형절에서 자유롭게 허용되는 것은 아니며, 구문의 조건을 확인해야 한다. 이 단원에서 다루는 정형절의 주어에는 PRO를 쓸 수 없다.</p>
       <p class="note">예: <em>I will try PRO to solve the problem</em> — PRO는 <em>solve</em>의 Agent argument로 theta-role을 받는다.</p>
     </div>
     <div class="concept">
@@ -528,7 +530,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
       <p><strong>2013 1차 Q34</strong> — <span class='kw1'>control</span>·<span class='kw1'>PRO</span>·<span class='kw1'>raising</span>: PRO 분석과 raising/control 구분</p>
-      <p><strong>2019 1차 기입3</strong> — <span class='kw1'>control verb</span>·<span class='kw1'>PRO</span>·<span class='kw1'>infinitive</span>: controlled PRO vs arbitrary PRO, obligatory vs optional control</p>
+      <p><strong>2019학년도 1차 전공 B 6번</strong> — <span class='kw1'>control verb</span>·<span class='kw1'>PRO</span>·<span class='kw1'>infinitive</span>: controlled PRO vs arbitrary PRO, obligatory vs optional control</p>
     </div>
   </div>
 </div>
@@ -544,18 +546,18 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">4분류 한눈에 비교</div>
-      <p class="note">표면 어순 <em>NP V (NP) to-VP</em>가 같아도 아래 진단으로 SSR / SOR(ECM) / SC / OC가 갈린다. 가장 빈출되는 판별 포인트.</p>
+      <p class="note">표면 어순 <em>NP V (NP) to-VP</em>가 같아도 아래 진단으로 SSR / SOR(ECM) / SC / OC가 갈린다. 구문별로 적용 위치를 구별해야 한다.</p>
       <div class="tbl-wrap">
         <table class="diag">
           <thead>
             <tr><th>진단</th><th>SSR<br>(seem)</th><th>SOR·ECM<br>(believe)</th><th>SC<br>(try)</th><th>OC<br>(persuade)</th></tr>
           </thead>
           <tbody>
-            <tr><th>matrix subject에 theta-role</th><td class="n">No</td><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+            <tr><th>matrix subject에 theta-role</th><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td></tr>
             <tr><th>matrix object에 theta-role</th><td>—</td><td class="n">No(목적격만)</td><td>—</td><td class="y">Yes</td></tr>
             <tr><th>하위절 주어</th><td>NP-trace(이동)</td><td>overt NP(목적격)</td><td>PRO</td><td>PRO</td></tr>
-            <tr><th>expletive there/it</th><td class="y">OK</td><td class="y">OK</td><td class="n">*</td><td class="n">*</td></tr>
-            <tr><th>idiom chunk 보존</th><td class="y">OK</td><td class="y">OK</td><td class="n">*</td><td class="n">*</td></tr>
+            <tr><th>expletive there/it<br>SSR·SC: 상위절 주어<br>ECM·OC: 동사 뒤 NP</th><td class="y">OK</td><td class="y">OK</td><td class="n">*</td><td class="n">*</td></tr>
+            <tr><th>idiom chunk 보존<br>SSR: 상위절 주어<br>ECM: 하위절 주어</th><td class="y">OK</td><td class="y">OK</td><td class="n">*</td><td class="n">*</td></tr>
             <tr><th>voice transparency</th><td class="y">O</td><td class="y">O</td><td>—</td><td class="n">X</td></tr>
             <tr><th>movement</th><td>NP-movement</td><td>없음(Case in situ)</td><td>없음</td><td>없음</td></tr>
           </tbody>
