@@ -36,8 +36,12 @@
   if (!button) {
     button = document.createElement('a');
     button.id = 'back-btn';
-    button.style.cssText = 'position:fixed;right:12px;bottom:16px;z-index:9999;display:inline-flex;align-items:center;justify-content:center;min-height:44px;max-width:calc(100vw - 24px);box-sizing:border-box;padding:10px 14px;border:1px solid #9bb9ca;border-radius:999px;background:#1a5276;color:#fff;box-shadow:0 4px 16px rgba(26,82,118,.28);font:700 13px/1.35 sans-serif;text-align:center;text-decoration:none;';
-    document.body.appendChild(button);
+    button.style.cssText = 'position:relative;margin:24px auto 12px;z-index:9999;display:inline-flex;align-items:center;justify-content:center;min-height:44px;max-width:calc(100vw - 24px);box-sizing:border-box;padding:10px 14px;border:1px solid #9bb9ca;border-radius:999px;background:#1a5276;color:#fff;box-shadow:0 4px 16px rgba(26,82,118,.28);font:700 13px/1.35 sans-serif;text-align:center;text-decoration:none;';
+    var returnArea = document.createElement('nav');
+    returnArea.setAttribute('aria-label', '이전 학습으로 돌아가기');
+    returnArea.style.cssText = 'text-align:center;padding:0 12px;';
+    returnArea.appendChild(button);
+    document.body.appendChild(returnArea);
   }
 
   button.style.minHeight = '44px';

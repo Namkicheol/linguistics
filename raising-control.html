@@ -91,6 +91,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 .quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
 @media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
 <div class="header-wrap">
@@ -98,7 +99,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
     <span class="header-no">NO. 04 <span>—</span> Raising &amp; Control</span>
     <span class="header-label">Past-Exam Notebook</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <h1 class="header-title">Raising &amp; Control · OX</h1>
   <div class="header-script">Concept Master · Transformational Syntax</div>
   <p class="header-sub">영어학 · Raising &amp; Control · 임용고시 대비</p>
   <div class="header-divider"></div>
@@ -262,11 +263,11 @@ const Q=[
    source:"expect takes both a control frame and an ECM/SOR frame."},
 
 {src:"SOR · ECM",cat:"likely vs believe",
-   text:"The contrast between <span class='kw4'>*It is likely Bill to be late</span> and <em>Bill is believed to be late</em> shows that <em>likely</em> cannot assign Case to the embedded subject, whereas <em>believe</em> can.",
+   text:"The contrast between \"*It is likely Bill to be late\" and \"I believe Bill to be late\" shows that active believe can assign Case to the embedded subject in an ECM construction, whereas likely cannot.",
    ans:true,
-   correct:"<em>likely</em>는 하위절 주어에 Case 부여 불가(*It is likely Bill to ~), <em>believe</em>는 가능 — 2007 기출 대조.",
-   why:"<em>likely</em>는 형용사로 하위절 주어에 목적격을 줄 수 없어 raising(<em>Bill is likely to be late</em>)으로만 처리됩니다. <em>believe</em>는 ECM으로 목적격을 부여할 수 있습니다. (2007 1차 출제 각도)",
-   source:"likely cannot Case-mark the embedded subject; believe can (ECM). (2007 1차)"},
+   correct:"능동형 believe는 이 ECM 구문에서 하위절 주어에 목적격을 줄 수 있지만, likely는 줄 수 없다.",
+   why:"I believe Bill to be late에서 Bill은 하위절 술어의 theta-role을 받고 believe로부터 Case를 받습니다. Bill is believed to be late는 별개의 수동 구문입니다. 수동형은 같은 방식으로 목적격을 줄 수 없으므로 Bill이 정형절 주어 자리로 이동합니다.",
+   source:"Radford, Transformational Grammar, §6.7; 2007 서울·인천 14번의 believe/likely 대비. 제시 문장은 학습용 변형이다."},
 
   {src:"SOR · ECM",cat:"*for 차단",
    text:"The sentence <span class='kw4'>*I believe for the witness to be lying</span> is ungrammatical because the complement of an ECM verb like <em>believe</em> is a bare clause without the complementizer <em>for</em>.",
@@ -343,11 +344,11 @@ const Q=[
    source:"persuade (object control) and believe (ECM) differ: matrix object vs embedded subject."},
 
   {src:"Object Control",cat:"finite CP 보문",
-   text:"The grammaticality of <em>The officer persuaded the driver that he should pull over</em> shows that <em>persuade</em> can also take a finite CP complement, unlike an ECM verb.",
+   text:"Persuade permits an NP object followed by a finite that-clause, as in \"The officer persuaded the driver that he should pull over.\" Believe permits a finite that-clause but not the same NP-object-plus-that-clause frame.",
    ans:true,
-   correct:"<em>persuade</em>는 finite CP 보문(<em>… that he should …</em>)도 취한다 — ECM 동사와의 또 다른 차이.",
-   why:"object control verb <em>persuade</em>는 목적어 + 비정형 보문, 또는 목적어 + finite that-clause를 취할 수 있습니다. 반면 ECM 동사는 single clausal complement만 취합니다.",
-   source:"persuade also takes a finite CP complement (persuade NP that S), unlike ECM verbs."},
+   correct:"차이는 finite CP 자체의 허용 여부가 아니라 NP object와 finite CP를 함께 취하는 구문이다. Believe도 finite CP를 취할 수 있다.",
+   why:"Persuade the driver that …에서는 the driver가 persuade의 object입니다. Believe that the driver …에서는 that절 전체가 complement입니다. 두 동사 모두 finite CP를 허용하지만 argument structure는 다릅니다.",
+   source:"Radford, Transformational Grammar, pp.322–323: persuade NP that …와 believe that …의 argument structure 대비. 요약."},
 
   {src:"Object Control",cat:"술어 식별",
    text:"In <em>The principal advised the students to revise their essays</em>, the verb <em>advise</em> is an object control verb, so the understood subject of <em>revise</em> is controlled by <em>the students</em>.",
@@ -368,9 +369,9 @@ const Q=[
   {src:"PRO",cat:"분포",
    text:"PRO can appear freely as the subject of a finite clause, as in <span class='kw4'>*The teacher hopes PRO will arrive early</span>.",
    ans:false,
-   correct:"PRO는 비정형 to-clause의 주어 자리에만 나타난다. 정형절 주어(<em>*PRO will arrive</em>)나 목적어 자리에는 올 수 없다.",
+   correct:"이 정형절의 주어 자리에는 PRO를 쓸 수 없다. PRO의 분포를 to부정사절에만 한정해서도 안 된다. 일부 -ing절에서도 PRO를 설정한다.",
    why:"PRO의 분포는 비정형절 주어로 제한됩니다. <em>*The teacher hopes PRO will arrive early</em>처럼 정형절 주어 자리에는 PRO가 올 수 없습니다.",
-   source:"PRO occurs only as the subject of a non-finite (to-infinitival) clause."},
+   source:"Radford, Transformational Grammar, p.440: without 뒤 -ing절의 PRO 예를 포함한다. 구문별 허용 조건을 구별해야 한다. 요약."},
 
   {src:"PRO",cat:"arbitrary PRO",
    text:"In <em>[PRO to remain silent during the test] is sometimes the wisest choice</em>, the PRO has arbitrary reference (roughly 'for anyone') rather than a specific controller.",

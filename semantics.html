@@ -91,6 +91,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 .quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
 @media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
 <div class="header-wrap">
@@ -98,7 +99,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
     <span class="header-no">NO. 07 <span>—</span> Semantics</span>
     <span class="header-label">Past-Exam Notebook</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <h1 class="header-title">Semantics · OX</h1>
   <div class="header-script">Concept Master · Semantics</div>
   <p class="header-sub">의미론 · Semantics · 임용고시 대비</p>
   <div class="header-divider"></div>
@@ -287,11 +288,11 @@ const Q=[
    source:"PP-attachment ambiguity is structural — one string, two constituent structures."},
 
   {src:"Ambiguity",cat:"lexical 판별",
-   text:"<em>He saw her duck</em> is ambiguous because the word <em>duck</em> has two senses, so this is a case of <span class='kw4'>structural ambiguity</span>.",
+   text:"In \"They walked toward the bank,\" the noun bank can mean a financial institution or the edge of a river. This difference alone is an example of structural ambiguity.",
    ans:false,
-   correct:"한 단어(<em>duck</em>: 명사 '오리' / 동사 '몸을 숙이다')의 의미 때문 → <span class='kw2'>lexical ambiguity</span>이지 structural이 아니다.",
-   why:"중의성이 단일 단어의 여러 의미에서 비롯되면 lexical ambiguity입니다. <em>duck</em>이 명사인지 동사인지에 따라 해석이 갈립니다. 구성 구조(트리)가 둘로 갈릴 때만 structural ambiguity입니다.",
-   source:"Ambiguity from a single word's senses is lexical, not structural.",
+   correct:"이 예문에서 bank의 두 명사 의미가 갈리는 것은 lexical ambiguity다. 두 해석을 위해 서로 다른 문장 구조를 설정할 필요가 없다.",
+   why:"같은 품사의 bank가 서로 다른 뜻을 갖는 경우입니다. 다만 lexical ambiguity와 structural ambiguity가 항상 상호 배타적인 것은 아닙니다. He saw her duck처럼 품사와 구조가 함께 달라지는 예도 있습니다.",
+   source:"Lexical ambiguity와 structural ambiguity를 구별하되 두 차이가 함께 나타날 수 있음을 인정한다. 이 문항은 같은 품사인 bank의 두 의미를 비교한다.",
    compare:[{title:"Lexical",desc:"한 단어의 여러 sense"},{title:"Structural",desc:"한 단어열의 여러 트리"}]},
 
   /* ── ⑦ Thematic / semantic roles ───────────────────────── */

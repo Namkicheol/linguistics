@@ -91,6 +91,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 .quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
 @media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="./learning.css">
 </head>
 <body>
 <div class="header-wrap">
@@ -98,7 +99,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
     <span class="header-no">NO. 03 <span>—</span> Movement</span>
     <span class="header-label">Past-Exam Notebook</span>
   </div>
-  <h1 class="header-title"><span class="title-hl">영어학</span> 개념 마스터</h1>
+  <h1 class="header-title">Movement · OX</h1>
   <div class="header-script">Concept Master · Transformational Syntax</div>
   <p class="header-sub">영어학 · Movement · 임용고시 대비</p>
   <div class="header-divider"></div>
@@ -242,7 +243,7 @@ const Q=[
    source:"I-to-C requires an empty C; a filled C blocks inversion."},
 
   {src:"I-to-C",cat:"HAVE contraction · gap",
-   text:"The ungrammaticality of contraction in <em>Should I *I've called them?</em> supports I-to-C movement analysis because the gap left in I after movement blocks HAVE contraction.",
+   text:"The contrast between \"Should I have contacted them?\" and \"*Should I've contacted them?\" supports the I-to-C analysis in which the gap left by the modal blocks HAVE contraction.",
    ans:true,
    correct:"I-to-C 후 I 위치에 남겨진 gap이 HAVE 축약을 차단한다 — I-to-C 분석의 또 다른 증거.",
    why:"HAVE contraction(<em>I've</em>)은 pronoun과 <em>have</em> 사이에 gap이 없을 때만 가능합니다. I-to-C 분석에서 <em>should</em>는 D-str에서 pronoun과 <em>have</em> 사이에 있으므로 이동 후 그 자리에 gap이 남아 축약을 막습니다.",
@@ -354,19 +355,19 @@ const Q=[
 
   /* ── ⑥ Wh-movement ─────────────────────────────────────── */
   {src:"Wh-movement",cat:"Spec,CP · operator movement",
-   text:"In wh-questions, the wh-phrase moves from its original argument position to <span class='kw4'>Spec,CP</span> (the specifier of CP), leaving a <span class='kw1'>trace</span> (gap) in its original position.",
+   text:"In the movement analysis of wh-questions, the wh-phrase moves from its original position to Spec,CP, leaving a trace in its original position. The original position may be an argument or an adjunct position.",
    ans:true,
-   correct:"wh-phrase는 D-str의 argument position에서 <span class='kw4'>Spec,CP</span>로 이동한다.",
+   correct:"wh-phrase는 원래 위치에서 Spec,CP로 이동한다. 출발점은 argument 자리일 수도 있고 adjunct 자리일 수도 있다.",
    why:"WH MOVEMENT는 wh-phrase를 Spec,CP로 front합니다. 이것은 A-bar movement(operator movement)이며, 원래 위치에 wh-trace를 남깁니다.",
-   source:"Wh-movement fronts the wh-phrase to Spec,CP, the specifier of the CP projection, leaving a trace in the original argument position.",
-   compare:[{title:"D-str",desc:"wh-phrase in argument position (obj, subj, etc.)"},{title:"S-str",desc:"wh-phrase in Spec,CP; trace in original position"}]},
+   source:"Radford, Transformational Grammar, pp.494–495: NP, PP, AP, ADVP의 wh-phrase를 구분한다. 요약.",
+   compare:[{title:"D-str",desc:"wh-phrase in its original argument or adjunct position"},{title:"S-str",desc:"wh-phrase in Spec,CP; trace in original position"}]},
 
   {src:"Wh-movement",cat:"D-structure · wh-phrase origin",
    text:"In \"Which article did the editor approve t?\", the wh-phrase <em>which article</em> is base-generated in the <span class='kw2'>Spec,CP</span> position at D-structure.",
    ans:false,
    correct:"wh-phrase는 D-structure에서 argument position(여기서는 V의 object)에 base-generated되고, WH MOVEMENT에 의해 Spec,CP로 이동한다.",
    why:"wh-phrase의 theta-role은 D-str의 argument position에서 결정됩니다. <em>which article</em>은 <em>approve</em>의 object로 theme theta-role을 받고, WH MOVEMENT에 의해 문두 Spec,CP로 이동합니다.",
-   source:"Wh-phrases originate in argument positions at D-structure; they reach Spec,CP only through WH MOVEMENT."},
+   source:"이 예문의 which article은 approve의 object 자리에서 출발한다. 모든 wh-phrase가 argument 자리에서 출발한다는 뜻은 아니다."},
 
   {src:"Wh-movement",cat:"direct wh-question · I-to-C + WH",
    text:"In a direct wh-question like \"What has the inspector examined t?\", both WH MOVEMENT and I-to-C movement apply: the wh-phrase moves to Spec,CP and the auxiliary moves to C.",
@@ -379,7 +380,7 @@ const Q=[
    text:"In the indirect question \"They asked which project the committee had chosen t\", I-to-C movement applies because the question is embedded under a matrix verb.",
    ans:false,
    correct:"간접의문문에서는 I-to-C가 적용되지 않는다. WH MOVEMENT만 적용되어 wh-phrase가 embedded Spec,CP로 이동한다.",
-   why:"indirect question에서는 C가 wh-phrase 이동 후의 C′를 가지지만, I-to-C는 main clause direct questions에만 의무적으로 적용됩니다. <em>They asked which project the committee had chosen</em>에서 inversion이 없음을 확인할 수 있습니다.",
+   why:"C는 C′ 안의 head이며, wh-phrase는 Spec,CP에 놓입니다. 이 간접의문문에서는 which project가 하위절의 Spec,CP로 이동하지만 주어와 auxiliary의 도치는 일어나지 않습니다.",
    source:"Indirect questions involve WH MOVEMENT to embedded Spec,CP but not I-to-C movement."},
 
   {src:"Wh-movement",cat:"subcategorization argument",
@@ -408,10 +409,10 @@ const Q=[
   {src:"Trace",cat:"NP-trace vs wh-trace",
    text:"An <span class='kw2'>NP-trace</span> (left by passive or raising NP-movement) and a <span class='kw2'>wh-trace</span> (left by WH MOVEMENT) are subject to the same set of binding principles.",
    ans:false,
-   correct:"NP-trace는 A-bound이어야 하며 Binding Principle A의 적용 대상이다. wh-trace는 A-bar bound이며 ECP(Empty Category Principle)의 적용 대상이다.",
-   why:"NP-trace는 A-position에서 A-position으로의 이동 결과이므로 A-bound 요구됩니다. wh-trace는 A-position에서 A-bar position(Spec,CP)으로의 이동 결과이며 ECP에 의해 govern되어야 합니다.",
-   source:"NP-traces are A-bound and subject to Binding Principle A; wh-traces are A-bar bound and subject to the ECP.",
-   compare:[{title:"NP-trace",desc:"A-movement; locally A-bound; Principle A"},{title:"Wh-trace",desc:"A-bar movement; A-bar bound; ECP"}]},
+   correct:"이 GB 분석에서 NP-trace는 A-bound이고 wh-trace는 A′-bound이다. 두 trace의 binding 속성은 다르지만 ECP를 wh-trace에만 적용되는 원리로 구별해서는 안 된다.",
+   why:"NP-movement와 wh-movement는 도착 위치 및 binding 속성이 다릅니다. 여기서 사용하는 GB의 ECP는 NP-trace와 A′-bound trace 모두에 적용됩니다. PRO와 pro의 조건은 이와 구별합니다.",
+   source:"GB의 Empty Category Principle과 A/A′ binding 구별. ECP 적용 여부만으로 두 trace를 서로 배타적으로 나누지 않는다.",
+   compare:[{title:"NP-trace",desc:"A-movement; locally A-bound; Principle A; ECP"},{title:"Wh-trace",desc:"A-bar movement; A-bar bound; ECP"}]},
 
   {src:"Trace",cat:"that-trace effect",
    text:"The sentence <span class='kw4'>*Who do you think that t saw the professor?</span> is ungrammatical because the complementizer <em>that</em> adjacent to the subject trace prevents the trace from being properly governed, violating the <span class='kw3'>That-trace Effect</span>.",
