@@ -50,7 +50,7 @@ expletive <span style="color:#319795">*there*</span>는 theta-role을 갖지 않
 
 ### Q10. *The cat seems to be out of the bag* — idiom chunk — ❌ X
 
-<span style="color:#c53030">**⚠️ 함정**</span>. 비문이 아니라 정문입니다. <span style="color:#3182ce">**idiom chunk**</span>가 raising verb의 subject로 나타날 수 있다는 것이 raising의 증거입니다. raising verb는 subject의 의미 내용을 선택하지 않으므로 idiom chunk(<em>the cat … out of the bag</em>)가 그대로 보존됩니다. control verb였다면 idiom 의미가 깨져 비문이 됩니다.
+<span style="color:#c53030">**⚠️ 함정**</span>. 비문이 아니라 정문입니다. <span style="color:#3182ce">**idiom chunk**</span>가 raising verb의 subject로 나타날 수 있다는 것이 raising의 증거입니다. raising verb는 subject의 의미 내용을 선택하지 않으므로 idiom chunk(<em>the cat … out of the bag</em>)가 그대로 보존됩니다. control verb에서는 해당 idiom 해석이 유지되지 않습니다. 실제 고양이를 가리키는 literal reading의 가능성은 별도로 판단해야 합니다.
 
 ### Q11. *It is believed the team to win* — Case 미수령 — ✅ O
 
@@ -186,7 +186,7 @@ matrix에 control할 NP가 없는 환경에서 <span style="color:#3182ce">**PRO
 
 ### Q39. idiom chunk가 네 술어 유형 모두에서 정문? — ❌ X
 
-<span style="color:#c53030">**⚠️ 오답 포인트**</span>. <span style="color:#3182ce">**idiom chunk**</span> subject는 raising(<em>seem</em>)·ECM(<em>believe</em>)에서만 정문이고, control(<em>try</em>·<em>persuade</em>)에서는 비문입니다. raising·ECM 술어는 그 자리에 theta-role을 주지 않아 idiom chunk를 보존하지만, control 술어(<em>try</em>=subject, <em>persuade</em>=object)는 theta-role을 부여해 idiom 의미를 깨뜨립니다. theta-role 안 줌 → <span style="color:#319795">*seem, believe*</span> OK / theta-role 줌 → <span style="color:#c53030">*try, persuade*</span> 비문.
+<span style="color:#c53030">**⚠️ 오답 포인트**</span>. <span style="color:#3182ce">**idiom chunk**</span> subject의 해당 idiom 해석은 raising(<em>seem</em>)·ECM(<em>believe</em>)에서는 유지되지만, control(<em>try</em>·<em>persuade</em>)에서는 유지되지 않습니다. 실제 고양이처럼 독립적인 지시 대상을 가진 NP의 literal reading까지 모두 비문이라는 뜻은 아닙니다. raising·ECM 술어는 그 자리에 theta-role을 주지 않아 idiom chunk를 보존하지만, control 술어(<em>try</em>=subject, <em>persuade</em>=object)는 theta-role을 부여해 idiom 의미를 깨뜨립니다. theta-role 안 줌 → <span style="color:#319795">*seem, believe*</span> idiom 해석 유지 / theta-role 줌 → <span style="color:#c53030">*try, persuade*</span> 해당 idiom 해석 불가.
 
 ### Q40. raising vs control의 궁극적 기준 — ✅ O
 
