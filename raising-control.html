@@ -429,11 +429,11 @@ const Q=[
    compare:[{title:"idiom 해석 유지",desc:"seem, believe"},{title:"해당 idiom 해석 불가",desc:"try, persuade"}]},
 
   {src:"Diagnostics",cat:"핵심 기준",
-   text:"Raising constructions and control constructions are ultimately distinguished by whether the matrix predicate assigns a theta-role to the relevant matrix position.",
+   text:"Raising constructions and control constructions are distinguished by whether the relevant NP receives a theta-role from the matrix predicate.",
    ans:true,
-   correct:"raising vs control의 궁극적 기준 = matrix 자리에 theta-role이 할당되는가.",
-   why:"raising 술어는 matrix subject에 theta-role을 주지 않아(non-theta position) NP-movement·expletive·idiom·voice transparency를 허용합니다. control 술어는 matrix subject/object에 theta-role을 주어(theta-position) 이들을 막습니다. 모든 진단이 이 한 기준으로 환원됩니다.",
-   source:"The raising/control distinction reduces to whether the matrix position is a theta-position."}
+   correct:"raising vs control의 핵심 기준 = 비교하는 NP가 상위 술어의 theta-role을 받는가.",
+   why:"SSR에서는 matrix subject가 seem 같은 상위 술어의 theta-role을 받지 않습니다. ECM에서는 believe의 matrix subject가 아니라, 그 뒤에 오는 하위절 subject NP가 believe로부터 별도 theta-role을 받지 않는다는 점이 핵심입니다. 반면 subject control의 matrix subject와 object control의 matrix object는 해당 control 술어의 argument이며 PRO를 control합니다. expletive·idiom·voice 진단에서는 비교하는 NP와 구문을 먼저 특정해야 합니다.",
+   source:"적용 기준 · SSR subject / ECM embedded subject"}
 ];
 
 const TOTAL=Q.length;

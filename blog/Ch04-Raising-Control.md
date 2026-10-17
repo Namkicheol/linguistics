@@ -2,7 +2,7 @@
 
 # Ch.4 Raising and Control — seem·try·believe·persuade 4분류 완전 정복 | 임용영어학 개념 정리
 
-통사론에서 <span style="color:#3182ce;">**Raising**</span>과 <span style="color:#3182ce;">**Control**</span>은 표면 어순이 똑같은 *NP V (NP) to-VP*가 전혀 다른 두 구조에서 나온다는 점을 다룹니다. 핵심은 단 하나 — matrix 자리에 <span style="color:#3182ce;">**theta-role**</span>이 할당되는가입니다. 이 글은 <span style="color:#3182ce;">**SSR**</span>(seem) / <span style="color:#3182ce;">**SOR·ECM**</span>(believe) / <span style="color:#3182ce;">**SC**</span>(try) / <span style="color:#3182ce;">**OC**</span>(persuade) 4분류를 **① 개념 정의** → **② 기출 맥락** → **③ 키텀 비교** → **④ 수험 팁** 흐름으로 풀고, <span style="color:#3182ce;">**expletive**</span>·<span style="color:#3182ce;">**idiom chunk**</span>·<span style="color:#3182ce;">**voice transparency**</span> 진단으로 시험장에서 둘을 갈라내는 법을 정리합니다.
+통사론에서 <span style="color:#3182ce;">**Raising**</span>과 <span style="color:#3182ce;">**Control**</span>은 표면 어순이 똑같은 *NP V (NP) to-VP*가 전혀 다른 두 구조에서 나온다는 점을 다룹니다. 핵심은 비교하는 NP가 상위 술어의 <span style="color:#3182ce;">**theta-role**</span>을 받는지 확인하는 것입니다. 이 글은 <span style="color:#3182ce;">**SSR**</span>(seem) / <span style="color:#3182ce;">**SOR·ECM**</span>(believe) / <span style="color:#3182ce;">**SC**</span>(try) / <span style="color:#3182ce;">**OC**</span>(persuade) 4분류를 **① 개념 정의** → **② 기출 맥락** → **③ 키텀 비교** → **④ 수험 팁** 흐름으로 풀고, <span style="color:#3182ce;">**expletive**</span>·<span style="color:#3182ce;">**idiom chunk**</span>·<span style="color:#3182ce;">**voice transparency**</span> 진단으로 시험장에서 둘을 갈라내는 법을 정리합니다.
 
 ---
 
@@ -16,10 +16,10 @@
 
 theta-role을 받는 자리는 <span style="color:#319795;">**theta-position**</span>, 받지 않는 자리는 <span style="color:#319795;">**non-theta position**</span>입니다. 바로 이 한 가지 구분이 Raising과 Control을 가르는 토대입니다.
 
-- <span style="color:#3182ce;">**Raising verb**</span>(seem, appear …)의 matrix subject 자리는 <span style="color:#319795;">**non-theta position**</span> — 술어가 그 자리에 theta-role을 주지 않으므로, 의미가 빈 NP(<span style="color:#3182ce;">**expletive**</span>, <span style="color:#3182ce;">**idiom chunk**</span>)도 올 수 있다.
+- <span style="color:#3182ce;">**SSR verb**</span>(seem, appear …)의 matrix subject 자리는 <span style="color:#319795;">**non-theta position**</span> — 술어가 그 자리에 theta-role을 주지 않으므로, 의미가 빈 NP(<span style="color:#3182ce;">**expletive**</span>, <span style="color:#3182ce;">**idiom chunk**</span>)도 올 수 있다.
 - <span style="color:#3182ce;">**Control verb**</span>(try, persuade …)의 matrix subject/object 자리는 <span style="color:#319795;">**theta-position**</span> — 술어가 theta-role을 주므로, 의미가 빈 NP는 못 온다.
 
-결국 raising과 control의 모든 진단은 "matrix 자리에 theta-role이 할당되는가"로 환원됩니다.
+비교하는 NP를 먼저 특정해야 합니다. SSR에서는 matrix subject, ECM에서는 동사 뒤의 하위절 subject NP가 상위 술어로부터 theta-role을 받지 않습니다. ECM의 matrix subject는 별도의 argument입니다.
 
 ---
 
@@ -147,7 +147,7 @@ Raising and Control 챕터는 임용 통사론의 단골 출제 영역입니다.
 
 | 진단 | SSR (seem) | SOR·ECM (believe) | SC (try) | OC (persuade) |
 |---|---|---|---|---|
-| matrix subject에 theta-role | No | No | Yes | Yes |
+| matrix subject에 theta-role | No | Yes | Yes | Yes |
 | matrix object에 theta-role | — | No (목적격만) | — | Yes |
 | 하위절 주어 | NP-trace (이동) | overt NP (목적격) | PRO | PRO |
 | expletive there/it | OK | OK | <span style="color:#c53030;">\*</span> | <span style="color:#c53030;">\*</span> |
@@ -189,7 +189,7 @@ Raising and Control 챕터는 임용 통사론의 단골 출제 영역입니다.
 
 임용 Raising/Control 문항의 표준 답안 패턴입니다. 영어 그대로 외워 두면 서술형에서 바로 씁니다.
 
-> **Raising**: *"The matrix predicate assigns no theta-role to its subject; the embedded subject NP undergoes NP-movement to matrix Spec,IP and retains its embedded theta-role."*
+> **SSR**: *"The matrix predicate assigns no theta-role to its subject; the embedded subject NP undergoes NP-movement to matrix Spec,IP and retains its embedded theta-role."*
 
 > **SOR·ECM**: *"The matrix verb assigns objective Case to the embedded subject across the clause boundary; the NP behaves as the subject of the infinitival clause (expletive / idiom / voice transparency)."*
 

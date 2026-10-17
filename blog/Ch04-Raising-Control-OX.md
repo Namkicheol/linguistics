@@ -190,7 +190,7 @@ matrix에 control할 NP가 없는 환경에서 <span style="color:#3182ce">**PRO
 
 ### Q40. raising vs control의 궁극적 기준 — ✅ O
 
-<span style="color:#3182ce">**Raising**</span>과 <span style="color:#3182ce">**Control**</span>은 궁극적으로 matrix predicate가 relevant matrix position에 theta-role을 부여하는가로 구별됩니다. raising 술어는 matrix subject에 theta-role을 주지 않아(<span style="color:#3182ce">**non-theta position**</span>) NP-movement·expletive·idiom·voice transparency를 허용합니다. control 술어는 matrix subject/object에 theta-role을 주어(<span style="color:#3182ce">**theta-position**</span>) 이들을 막습니다. <span style="color:#dd6b20">**현직쌤 팁**: 모든 진단이 이 한 기준으로 환원된다 — 헷갈리면 "이 자리가 theta-role을 받나?"만 물어라.</span>
+<span style="color:#3182ce">**Raising**</span>과 <span style="color:#3182ce">**Control**</span>은 비교하는 NP가 상위 술어의 theta-role을 받는지 구별해야 합니다. SSR에서는 matrix subject가 seem 같은 상위 술어의 theta-role을 받지 않습니다. ECM에서는 believe의 matrix subject가 아니라, 그 뒤에 오는 하위절 subject NP가 believe로부터 별도 theta-role을 받지 않는다는 점이 핵심입니다. 반면 subject control의 matrix subject와 object control의 matrix object는 해당 control 술어의 argument이며 PRO를 control합니다. expletive·idiom·voice 진단에서는 비교하는 NP와 구문을 먼저 특정해야 합니다.
 
 ---
 
