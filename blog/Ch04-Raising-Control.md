@@ -71,7 +71,7 @@ theta-role을 받는 자리는 <span style="color:#319795;">**theta-position**</
 
 ### SC — Subject Control (try)
 
-> **Subject control verbs** (*try, plan, decide, hope, intend, threaten, prefer, refuse, be keen, be relieved*) **assign a theta-role to their subject**. The embedded infinitival clause has a **PRO** subject controlled by the matrix subject. **No movement.**
+> **Subject control verbs** (*try, plan, decide, hope, intend, threaten (위협 의미), prefer, refuse, be keen, be relieved*) **assign a theta-role to their subject**. The embedded infinitival clause has a **PRO** subject controlled by the matrix subject. **No movement.**
 
 <span style="color:#3182ce;">**SC**</span>에서 matrix subject 자리는 <span style="color:#319795;">**theta-position**</span>이므로 expletive·idiom chunk가 올 수 없습니다. 하위절 주어는 이동의 흔적이 아니라 base-generated된 <span style="color:#3182ce;">**PRO**</span>이며, matrix subject와 <span style="color:#3182ce;">**coindex**</span>(control)됩니다.
 
@@ -83,7 +83,7 @@ theta-role을 받는 자리는 <span style="color:#319795;">**theta-position**</
 - <span style="color:#319795;">*The candidate was keen to support his opponent.*</span>
 - <span style="color:#319795;">*I threatened to leave.*</span>
 
-`planned` · `be keen` · `threaten` 모두 subject control — matrix subject에 theta-role을 부여합니다.
+위 예문의 `planned` · `be keen` · `threatened`는 subject control로, matrix subject에 theta-role을 부여합니다. 다만 threaten은 위협 행위의 의미와 어떤 일이 일어날 조짐을 나타내는 raising 용법을 구별해야 합니다 (Radford, p.443).
 
 ---
 
@@ -100,7 +100,7 @@ theta-role을 받는 자리는 <span style="color:#319795;">**theta-position**</
 - <span style="color:#c53030;">**\*Ed persuaded there to be a party.**</span> (expletive 불허 — 목적어가 theta-position)
 - <span style="color:#319795;">*Ed believes there to be a problem.*</span> (expletive 허용 — 하위절 주어)
 - <span style="color:#319795;">*Ed persuaded Brian to interview Melanie.*</span> ≠ <span style="color:#319795;">*Ed persuaded Melanie to be interviewed by Brian.*</span> — 두 문장 다 정문이지만 **의미가 다름**(≠). voice transparency 실패 — persuade가 목적어를 theta-mark하기 때문.
-- <span style="color:#319795;">*John persuaded Sue that she should obey her parents.*</span> — persuade는 finite CP 보문도 취함 (SOR와 또 다른 차이).
+- <span style="color:#319795;">*Lena persuaded Max that he should obey his supervisor.*</span> — 기출 구조를 바탕으로 만든 변형 예문입니다. persuade는 NP 목적어와 finite CP를 함께 취합니다. believe도 *believe that Max …*처럼 finite CP를 취하지만, 이때 that절 전체가 보문입니다 (2019학년도 전공 B 6번; Radford, pp.322–323).
 
 ---
 
@@ -108,7 +108,7 @@ theta-role을 받는 자리는 <span style="color:#319795;">**theta-position**</
 
 > **PRO** is the phonetically null subject of a non-finite (control) clause — an **empty category** that bears a theta-role from the embedded predicate. PRO is **base-generated** (not the result of movement).
 
-<span style="color:#3182ce;">**PRO**</span>는 <span style="color:#3182ce;">**non-finite**</span>(infinitival to-)clause의 주어 자리에만 나타나며, 정형절 주어나 목적어 자리에는 못 옵니다. 예: <span style="color:#319795;">*I will try PRO to solve the problem.*</span> — PRO는 *solve*의 Agent argument로 theta-role을 받습니다.
+<span style="color:#3182ce;">**PRO**</span>는 to부정사절뿐 아니라 일부 -ing절의 주어로도 분석됩니다. 모든 non-finite 절에서 자유롭게 허용되는 것은 아니며, 이 단원에서 다루는 정형절의 주어에는 쓸 수 없습니다 (Radford, p.440). 예: <span style="color:#319795;">*I will try PRO to solve the problem.*</span> — PRO는 *solve*의 Agent argument로 theta-role을 받습니다.
 
 | | Controlled PRO | Arbitrary PRO (PRO_arb) |
 |---|---|---|
@@ -123,11 +123,11 @@ theta-role을 받는 자리는 <span style="color:#319795;">**theta-position**</
 
 Raising and Control 챕터는 임용 통사론의 단골 출제 영역입니다.
 
-<span style="color:#c53030;">**2013 1차 Q34**</span> — control·PRO·raising: control 구문과 PRO, raising/control 구분.
+<span style="color:#c53030;">**2013학년도 1차 34번**</span> — infinitive complementation: *V to-V*, *V NP to-V*, *V for NP to-V*의 세 구조 분류. control과 연결해 복습할 수 있지만, PRO를 직접 판별하는 문항은 아닙니다.
 
-<span style="color:#c53030;">**2014 1차 서술5**</span> — theta roles·argument structure: argument structure와 theta-role 분석.
+<span style="color:#c53030;">**2014학년도 1차 전공 A 기입형 13번**</span> — theta roles·argument structure: argument structure와 theta-role 분석.
 
-<span style="color:#c53030;">**2019 1차 기입3**</span> — control verb·PRO·infinitive: *John believed Sue to be obedient*(SOR) vs *John persuaded Sue to obey*(OC) 대조, controlled PRO vs arbitrary PRO.
+<span style="color:#c53030;">**2019학년도 1차 전공 B 6번**</span> — control verb·PRO·infinitive: 변형 예문 *Lena believed Max to be obedient to his supervisor*(SOR) vs *Lena persuaded Max to obey his supervisor*(OC) 대조, controlled PRO vs arbitrary PRO.
 
 <span style="color:#c53030;">**2024 1차 A-7**</span> — Case Filter·external argument·NP-movement: raising/passive 술어가 외부논항이 없어 accusative Case 부여 불가 → NP가 case-assigned subject 자리로 이동.
 
@@ -179,7 +179,7 @@ Raising and Control 챕터는 임용 통사론의 단골 출제 영역입니다.
 | NP의 자격 | 하위절 주어 (목적격만 받음) | matrix 진짜 목적어 (theta-role 받음) |
 | expletive | <span style="color:#319795;">OK</span> | <span style="color:#c53030;">\*</span> |
 | voice transparency | <span style="color:#319795;">동의 O</span> | <span style="color:#c53030;">동의 X (의미 바뀜)</span> |
-| finite CP 보문 | <span style="color:#c53030;">불가</span> | <span style="color:#319795;">가능</span> (*persuade Sue that …*) |
+| finite CP 구문 | *believe that Max …*: that절 전체가 보문 | *persuade Max that …*: NP 목적어 + that절 |
 
 ---
 
@@ -200,7 +200,7 @@ Raising and Control 챕터는 임용 통사론의 단골 출제 영역입니다.
 1. **Expletive 넣어 보기**: *there / it*가 들어가면 raising(SSR·SOR), 비문이면 control(SC·OC). 가장 빠른 1차 필터.
 2. **Idiom chunk 넣어 보기**: *the cat … out of the bag*, *the coast … clear*가 관용 의미를 유지하면 raising.
 3. **Voice transparency**: 하위절을 능동↔수동으로 바꿔 동의면 raising/ECM, 의미가 달라지면 object control(persuade).
-4. **finite CP 보문 가능?**: *V + NP + that-clause*가 가능하면 control(persuade), 불가면 ECM(believe).
+4. **believe와 persuade의 argument structure 비교**: *believe that Max …*와 *persuade Max that …*에서 Max가 각각 어느 절에 속하는지 확인합니다. finite CP의 허용 여부만으로 raising/control을 판별하지 않습니다.
 
 ### 함정 정리
 
@@ -217,7 +217,7 @@ Raising and Control 챕터는 임용 통사론의 단골 출제 영역입니다.
 ### 복습 포인트
 
 - raising = matrix theta-role 無 → NP-movement(SSR) 또는 ECM Case(SOR). control = matrix theta-role 有 → PRO.
-- 동사 빠른 분류: **seem·appear·be likely·turn out·be unlikely·prove**(SSR) / **believe·expect·want·report·consider·know**(SOR·ECM) / **try·plan·decide·hope·intend·threaten·prefer·refuse·be keen**(SC) / **persuade·order·force·allow·motivate·advise·remind·tell**(OC).
+- 동사 빠른 분류: **seem·appear·be likely·turn out·be unlikely·prove**(SSR) / **believe·expect·want·report·consider·know**(SOR·ECM) / **try·plan·decide·hope·intend·threaten(위협 의미)·prefer·refuse·be keen**(SC) / **persuade·order·force·allow·motivate·advise·remind·tell**(OC).
 - 판별 3종(expletive·idiom chunk·voice transparency)은 전부 "matrix 자리에 theta-role이 있는가"를 묻는 같은 질문의 다른 형태임을 기억할 것.
 
 ---
@@ -229,3 +229,4 @@ Raising and Control 챕터는 임용 통사론의 단골 출제 영역입니다.
 ---
 
 **태그**: 임용고시, 중등영어, 전공영어, 영어학, 통사론, syntax, Raising, Control, PRO, ECM, Theta Criterion, A-movement, subject control, object control, expletive, 서브노트, 기출분석
+
