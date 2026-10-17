@@ -10,7 +10,7 @@
 
 ### Q1. Binding의 정의 — c-command + coindexation — ✅ O
 
-<span style="color:#3182ce">**Binding**</span>은 단순한 동일 지시(<span style="color:#3182ce">**coindexation**</span>)만으로 성립하지 않습니다. A binds B if and only if A <span style="color:#3182ce">**c-commands**</span> B and A and B are coindexed. 선행사 A가 B를 c-command하면서 동시에 coindex돼야 binding이 성립합니다. 두 조건 중 하나라도 빠지면 그 요소는 <span style="color:#319795">free</span>입니다.
+<span style="color:#3182ce">**Binding**</span>은 단순한 동일 지시(<span style="color:#3182ce">**coindexation**</span>)만으로 성립하지 않습니다. A binds B if and only if A <span style="color:#3182ce">**c-commands**</span> B and A and B are coindexed. 선행사 A가 B를 c-command하면서 동시에 coindex돼야 binding이 성립합니다. 어느 한 조건이 빠지면 A는 B를 bind하지 못합니다. B가 해당 영역에서 <span style="color:#319795">free</span>인지 판단하려면, 그 영역 안에 두 조건을 모두 만족하는 다른 선행사도 없는지 확인해야 합니다.
 
 ### Q2. free의 정의 — ✅ O
 
