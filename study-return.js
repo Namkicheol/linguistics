@@ -19,7 +19,11 @@
   revealLinkedSection();
   if (window.addEventListener) {
     window.addEventListener('hashchange', revealLinkedSection);
-    window.addEventListener('pageshow', revealLinkedSection);
+    window.addEventListener('pageshow', function (event) {
+      // BFCache already restores the reader's scroll and disclosure state.
+      if (event.persisted) return;
+      revealLinkedSection();
+    });
   }
 
   function allowedReturnUrl(value) {
