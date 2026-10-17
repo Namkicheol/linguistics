@@ -209,7 +209,7 @@ const Q=[
    text:"The sentence <em>The cat seems to be out of the bag</em> is ungrammatical, because idiom chunk NPs can never be the subjects of raising verbs.",
    ans:false,
    correct:"오히려 정문이다. idiom chunk가 raising verb의 subject로 나타날 수 있다는 것이 raising의 증거다.",
-   why:"raising verb는 subject의 의미 내용을 선택하지 않으므로 idiom chunk(<em>the cat … out of the bag</em>)가 그대로 보존됩니다. control verb였다면 idiom 의미가 깨져 비문이 됩니다.",
+   why:"raising verb는 subject의 의미 내용을 선택하지 않으므로 idiom chunk(<em>the cat … out of the bag</em>)가 그대로 보존됩니다. control verb에서는 해당 idiom 해석이 유지되지 않습니다. 실제 고양이를 가리키는 literal reading의 가능성은 별도로 판단해야 합니다.",
    source:"Idiom chunk subjects are licensed by raising verbs, evidencing the raising analysis."},
 
   {src:"SSR",cat:"기출 — Case",
@@ -423,10 +423,10 @@ const Q=[
   {src:"Diagnostics",cat:"idiom chunk 적용 범위",
    text:"An idiom chunk subject is grammatical with all four predicate types — <em>seem</em>, <em>believe</em>, <em>try</em>, and <em>persuade</em> — because idioms are fixed expressions.",
    ans:false,
-   correct:"idiom chunk는 raising(seem)·ECM(believe)에서만 OK, control(try·persuade)에서는 비문이다.",
+   correct:"해당 idiom 해석은 raising(seem)·ECM(believe)에서는 유지되지만 control(try·persuade)에서는 유지되지 않는다. literal reading까지 모두 비문이라는 뜻은 아니다.",
    why:"raising·ECM 술어는 그 자리에 theta-role을 주지 않아 idiom chunk를 보존하지만, control 술어(try=subject, persuade=object)는 theta-role을 부여해 idiom 의미를 깨뜨립니다.",
-   source:"Idiom chunk subjects: OK with raising/ECM, blocked with control verbs.",
-   compare:[{title:"OK (theta-role 안 줌)",desc:"seem, believe"},{title:"비문 (theta-role 줌)",desc:"try, persuade"}]},
+   source:"Radford, Transformational Grammar, §8.5, p.442: idiomatic and literal readings must be distinguished.",
+   compare:[{title:"idiom 해석 유지",desc:"seem, believe"},{title:"해당 idiom 해석 불가",desc:"try, persuade"}]},
 
   {src:"Diagnostics",cat:"핵심 기준",
    text:"Raising constructions and control constructions are ultimately distinguished by whether the matrix predicate assigns a theta-role to the relevant matrix position.",

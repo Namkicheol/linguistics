@@ -33,7 +33,8 @@ assert.equal(details.length, 3);
 for (const detail of details) {
   assert(detail.includes('변형 예문'));
   assert(detail.includes('2019학년도 1차 전공 B 6번'));
-  assert(detail.includes('img_2019_B_p04.png'));
+  assert(detail.includes('https://etwiki.net/index.html?id=linguistics_2019_B06'));
+  assert(!detail.includes('github.com/Namkicheol/testmaster'), 'public lesson must not link private originals');
   assert(!detail.includes('John') && !detail.includes('Sue'), 'new examples must be adapted');
 }
 assert.equal((study.match(/CP 층은 생략했다/g) || []).length, 2);
@@ -45,4 +46,8 @@ assert.equal(questions.length, 40);
 assert.equal(questions[23].ans, true);
 assert.equal(questions[28].ans, true);
 assert.equal(questions[31].ans, false);
+assert.equal(questions[38].ans, false);
+assert(questions[38].correct.includes('literal reading'));
+assert(oxBlog.includes('literal reading까지 모두 비문이라는 뜻은 아닙니다'));
+assert(!study.includes('class="eg-line eg-bad">*The analyst'));
 console.log('PASS: original-exam references, CP/PRO consistency, 40 OX explanations, stable anchors.');
