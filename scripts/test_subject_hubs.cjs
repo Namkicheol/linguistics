@@ -17,6 +17,12 @@ for (const file of pages) {
     const target = decodeURIComponent(url.pathname.slice(1));
     assert(fs.existsSync(target), `${file}: missing ${target}`);
     if (url.hash) assert(read(target).includes(`id="${decodeURIComponent(url.hash.slice(1))}"`), `${file}: missing anchor ${href}`);
+    const returnTo = url.searchParams.get('returnTo');
+    if (returnTo) {
+      const back = new URL(returnTo, url);
+      assert(fs.existsSync(back.pathname.slice(1)), `${file}: missing return target`);
+      if (back.hash) assert(read(back.pathname.slice(1)).includes(`id="${back.hash.slice(1)}"`), `${file}: missing return anchor`);
+    }
     checked++;
   }
   if (file !== 'index.html') {
