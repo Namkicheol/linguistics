@@ -1,6 +1,31 @@
 (function () {
   'use strict';
 
+  // Open a linked concept before scrolling, including legacy collapsed sections.
+  function revealLinkedSection() {
+    if (!window.location.hash) return;
+    var id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (_) { return; }
+    var target = document.getElementById(id);
+    if (!target) return;
+    var node = target;
+    while (node && node !== document.body) {
+      if (node.classList && node.classList.contains('sec')) node.classList.add('open');
+      if (node.tagName === 'DETAILS') node.open = true;
+      node = node.parentElement;
+    }
+    if (target.scrollIntoView) target.scrollIntoView({block: 'start'});
+  }
+  revealLinkedSection();
+  if (window.addEventListener) {
+    window.addEventListener('hashchange', revealLinkedSection);
+    window.addEventListener('pageshow', function (event) {
+      // BFCache already restores the reader's scroll and disclosure state.
+      if (event.persisted) return;
+      revealLinkedSection();
+    });
+  }
+
   function allowedReturnUrl(value) {
     if (!value) return null;
     try {
@@ -31,6 +56,29 @@
   var label = explicitReturn && params.get('returnLabel');
   if (!label && !explicitReturn && params.get('from')) label = params.get('from');
   label = (label || (explicitReturn || referrer ? '이전 페이지' : legacyReturn ? '전공기출 문제' : fallbackLabel)).trim().slice(0, 80);
+  // A nested lesson must return to this page with its own return route intact.
+  // Only enrich authored links that already point back to this exact page.
+  var currentUrl = new URL(window.location.href);
+  if (document.querySelectorAll) {
+    document.querySelectorAll('a[href]').forEach(function (link) {
+      try {
+        var next = new URL(link.getAttribute('href'), currentUrl);
+        if (next.origin !== currentUrl.origin) return;
+        var nestedValue = next.searchParams.get('returnTo');
+        if (!nestedValue) return;
+        var nested = new URL(nestedValue, next);
+        if (nested.origin !== currentUrl.origin || nested.pathname !== currentUrl.pathname) return;
+        // Keep the authored section hash, plus the validated route and its label.
+        nested.search = currentUrl.search;
+        nested.searchParams.set('returnTo', destination);
+        nested.searchParams.set('returnLabel', label);
+        next.searchParams.set('returnTo', nested.href);
+        link.href = next.href;
+      } catch (_) {
+        // Leave malformed or unrelated links untouched.
+      }
+    });
+  }
   var button = document.getElementById('back-btn') || document.getElementById('testmaster-return-btn');
 
   if (!button) {
