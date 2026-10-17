@@ -159,9 +159,12 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
         </div>
       </div>
     </div>
-    <details class="concept"><summary>NP의 이동 전후 위치와 theta-role</summary>
+    <details class="concept"><summary>자세히 보기 · 구조 표기부터 이동 전후의 역할까지</summary>
+<p><strong>먼저 표기 읽기:</strong> NP는 명사구, VP는 동사구다. IP는 주어와 시제·일치 정보를 담당하는 I, 그리고 VP를 묶은 절이다. Spec은 그 구의 head와 구별되는 자리 이름이므로, Spec,IP는 이 분석의 주어 자리다. CP는 그 절 바깥에서 that 같은 C와 wh-phrase의 자리를 포함한다. Spec,CP에 놓이는 wh-phrase와 C에 놓이는 조동사를 같은 자리로 보지 않는다.</p>
+<p><a href="https://etwiki.net/concept.html?term=theta-role">theta-role</a>은 ‘누가 했는가(Agent), 무엇이 영향을 받았는가(Theme)’ 같은 술어와 참여자의 의미 관계다. <a href="https://etwiki.net/concept.html?term=argument%20structure">argument structure</a>는 그 술어가 어떤 참여자 자리를 요구하는지 나타낸다. 주어·목적어라는 문법적 자리와 의미 관계는 구별한다. t(trace)는 이동한 표현의 원래 자리를 표시하며, 같은 아래첨자 i는 앞의 표현과 t가 하나의 이동 관계임을 보여 준다. 이동했다고 argument나 의미 관계가 사라지는 것은 아니다.</p>
+
 <p><strong>연습 예문:</strong> The technician repaired the scanner. / The scanner was repaired by the technician.</p><ol><li>먼저 repair의 Theme인 the scanner를 찾는다. 두 문장 모두 수리된 대상은 scanner다.</li><li>verbal passive에서는 [VP repaired [NP the scanner]]의 NP가 [Spec,IP]로 이동한다고 분석한다.</li><li>S-structure에서 subject가 되었다고 Agent가 되지는 않는다. theta-role과 grammatical function을 따로 적어야 한다.</li></ol><p><strong>비교:</strong> active의 technician = subject/Agent, passive의 scanner = subject/Theme. D-structure는 단순히 ‘능동문 문장’을 복사한 것이 아니라 passive morphology와 빈 subject 자리를 포함한 underlying representation이다.</p><p><strong>자가 점검:</strong> “subject이므로 Agent”가 왜 틀렸는가? → subject는 구조적 자리이고 theta-role은 predicate와의 의미 관계이기 때문이다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 위 예문은 학습용으로 새로 구성했다.</p></details>
+<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
   </div>
 </div>
 
@@ -241,7 +244,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <details class="concept"><summary>어순이 같아도 분석이 같은 것은 아니다</summary>
 <p><strong>독립 연습:</strong> The curator checks the inventory. I→V의 Affix movement 분석은 checks를 VP 안에 둔다. V→I 가정은 checks를 I에 두고 V 자리에 trace를 둔다. 이 문장 하나의 어순으로 두 구조 중 하나를 확정할 수 없다.</p><p><strong>추가 진단:</strong> The curator has not checked the inventory. / The curator will not have checked the inventory.</p><ol><li>첫 문장에서는 finite have가 not 앞에 나타난다.</li><li>둘째 문장에서는 modal will이 I에 있고 have는 not 뒤에 남는다.</li><li>이 대조는 have/be raising의 근거다. “modal이 없으면 영어의 모든 lexical verb가 똑같이 행동한다”라는 일반화의 근거는 아니다.</li></ol><p><strong>함정:</strong> *The curator will checks the inventory. modal 뒤의 lexical verb는 base form check여야 한다. 이 형태 제약과 특정 movement 이론의 선택을 구별한다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 위 예문은 학습용으로 새로 구성했다.</p></details>
+<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
   </div>
 </div>
 
@@ -336,7 +339,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <details class="concept"><summary>C head와 Spec,CP의 위치 구분</summary>
 <p><strong>연습:</strong> Which parcel will the courier collect? / I asked which parcel the courier would collect.</p><ol><li>두 문장에서 which parcel은 collect의 object 자리와 연결되고 Spec,CP에 놓인다.</li><li>직접의문문의 will은 I에서 C로 이동한다. which parcel과 will은 서로 다른 위치를 차지한다.</li><li>embedded question에서는 would가 subject 뒤에 남는다. wh-phrase가 Spec,CP에 있다고 C head까지 채워진 것은 아니다.</li></ol><p><strong>비교:</strong> I asked if the courier would arrive.에서는 if가 C를 채운다. I asked which parcel the courier would collect.에서는 overt complementizer가 없어도 표준 embedded question의 subject–auxiliary inversion은 일어나지 않는다.</p><p><strong>답안 기준:</strong> “간접의문문은 모두 overt C가 있어서 inversion 불가” 대신, 해당 예문의 clause type과 C/Spec,CP 위치를 각각 설명한다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 위 예문은 학습용으로 새로 구성했다.</p></details>
+<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
   </div>
 </div>
 
@@ -425,7 +428,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <details class="concept"><summary>Complement 선택과 passive movement의 조건</summary>
 <p><strong>연습:</strong> The archivist placed the folder on the trolley. → The folder was placed on the trolley.</p><ol><li>place는 이 용법에서 NP와 location PP를 요구한다. passive가 되어도 on the trolley는 필요하다.</li><li>the folder는 V의 internal argument 위치에서 Theme를 받고, verbal passive의 Case 조건 아래 subject 자리로 이동한다.</li><li>*The folder was placed the envelope on the trolley.는 이동한 NP의 object 자리를 다른 NP로 다시 채운 형태다.</li></ol><p><strong>범위 주의:</strong> “passive에는 object가 절대 없다”로 외우지 않는다. The intern was given a badge.처럼 다른 complement가 남는 구조도 있다. gap은 이동한 특정 NP의 자리다.</p><p><strong>형태 대조:</strong> The audience remained very impressed.는 adjectival 환경의 진단이다. -ed 형태만 보고 verbal passive와 동일한 이동을 부여하지 않는다. 위 요약의 adjectival/verbal 구분은 TG §8.4의 분석을 따른다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 위 예문은 학습용으로 새로 구성했다.</p></details>
+<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
   </div>
 </div>
 
@@ -486,9 +489,17 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
         <span class="eg-note">이 대조는 idiomatic reading에 관한 것이다. 실제 대상을 가리키는 literal reading까지 금지하지 않는다.</span>
       </div>
     </div>
-    <details class="concept"><summary>Raising과 Control: theta-role·dummy pronoun·voice 비교</summary>
-<p><strong>연습:</strong> The nurse seems to have comforted the child. / The nurse tried to comfort the child.</p><ol><li>seem은 nurse에 별도의 theta-role을 주지 않는다. nurse는 embedded comfort의 Agent이며 한 NP-chain으로 연결된다.</li><li>try는 matrix subject에 theta-role을 준다. embedded subject PRO는 별도 argument이며 nurse가 control한다. 같은 사람을 가리킨다고 두 자리가 하나의 이동 chain인 것은 아니다.</li><li>There seems to be a spare seat. / *There tried to be a spare seat. expletive there는 try의 subject에 부여되는 theta-role을 받을 수 없다.</li></ol><p><strong>Voice transparency:</strong> The nurse seems to have comforted the child.와 The child seems to have been comforted by the nurse.는 seem의 complement가 나타내는 사건과 참여자들의 역할이 같다. The nurse tried to comfort the child.와 The child tried to be comforted by the nurse.는 시도한 사람이 달라진다.</p><p><strong>기출 연결: 2025 1차 A-7.</strong> 원문은 ordinary/raised subject를 dummy pronoun과 voice transparency로 구분하도록 한다. Case Filter를 직접 묻는 문항으로 분류하지 않는다. 위 문장들은 학습용 새 예문이다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 위 예문은 학습용으로 새로 구성했다.</p></details>
+    <details class="concept"><summary>자세히 보기 · Raising과 Control: theta-role·dummy pronoun·voice 비교</summary>
+<p><strong>연습:</strong> The nurse seems to have comforted the child. / The nurse tried to comfort the child.</p><ol><li>seem은 nurse에 별도의 theta-role을 주지 않는다. nurse는 embedded comfort의 Agent이며 한 NP-chain으로 연결된다.</li><li>try는 matrix subject에 theta-role을 준다. embedded subject PRO는 별도 argument이며 nurse가 control한다. 같은 사람을 가리킨다고 두 자리가 하나의 이동 chain인 것은 아니다.</li><li>There seems to be a spare seat. / *There tried to be a spare seat. expletive there는 try의 subject에 부여되는 theta-role을 받을 수 없다.</li></ol><p><strong>Voice transparency:</strong> The nurse seems to have comforted the child.와 The child seems to have been comforted by the nurse.는 seem의 complement가 나타내는 사건과 참여자들의 역할이 같다. The nurse tried to comfort the child.와 The child tried to be comforted by the nurse.는 시도한 사람이 달라진다.</p><div class="exam"><div class="exam-label">2025학년도 전공 A 7번 · 실제 문항 따라 풀기</div>
+<p><a href="https://etwiki.net/index.html?id=linguistics_2025_A07">원문과 해설</a> · 아래 (4a/b)는 문제지의 문장을 인용했다. 대괄호·PRO·t는 풀이를 위해 추가한 표기다.</p>
+<p>(4a) The fire fighter <u>attempted</u> to save the man.<br>(4b) The fire fighter <u>happened</u> to save the man.</p>
+<ol><li>먼저 save의 두 참여자를 찾는다. 구조와 무관하게 구조된 사람은 the man이고, 구조하는 사람은 the fire fighter다. 다음으로 ‘시도한 사람’이라는 별도 역할이 있는지 묻는다.</li>
+<li>(4a)는 fire fighter가 시도한 사람이다. [The fire fighter]<sub>i</sub> attempted [PRO<sub>i</sub> to save the man]에서 PRO는 발음되지 않는 하위절 주어다. 상위 NP와 PRO는 같은 사람을 가리켜도 각 술어의 별도 argument다. (4b)는 ‘우연히 그런 일이 일어났다’는 뜻으로, happen이 fire fighter에게 별도의 행위자 역할을 주지 않는다. [The fire fighter]<sub>i</sub> happened [t<sub>i</sub> to save the man]처럼 하위절 주어와 이동 관계를 이룬다.</li>
+<li>따라서 빈칸은 지문 용어대로 <strong>① ordinary, ② raised</strong>다. 단, 분류 이름만 쓰면 발문의 나머지 요구를 충족하지 못한다.</li>
+<li>발문이 지정한 <u>to rain</u>으로 (4b)를 검사한다. 답안용 진단 문장 <em>It happened to rain.</em>에서 it은 사람·물건을 가리키지 않는다. 이 dummy를 허용한다는 것이 happen이 상위 주어에 의미 역할을 요구하지 않는다는 근거다. 원문 (2b)의 there 문장을 그대로 쓰면 지정된 rain 틀을 놓친다.</li>
+<li>(4a)의 voice 진단 문장은 <em>The man attempted to be saved by the fire fighter.</em>다. save의 구조자·피구조자는 그대로지만 <u>시도한 사람이 fire fighter에서 man으로 바뀐다</u>. 두 문장은 문법적이어도 같은 의미가 아니므로 voice transparency가 성립하지 않는다. ‘수동문이 비문’이라는 설명은 틀리다.</li></ol>
+<p><strong>조건을 바꾸면?</strong> 위 수동 진단문의 attempted만 happened로 바꾸면, (4b)와 구조 사건·참여자 역할이 같아 voice transparency가 성립한다. 비교 대상은 두 문장의 문법성만이 아니라 의미의 유지 여부다. 이 마지막 비교는 원문 (4b)를 바탕으로 만든 학습용 변형이다.</p></div>
+<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
   </div>
 </div>
 
@@ -585,9 +596,16 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <div class="exam-label">📋 적용 포인트</div>
       <p><strong>2026 1차 B-9</strong> — <span class='kw4'>That-trace effect</span>·<span class='kw1'>Wh-movement</span>: embedded subject의 wh-trace 바로 앞에 <em>that</em>이 남으면 비문</p>
     </div>
-    <details class="concept"><summary>Wh-movement와 relative clause의 빈자리</summary>
-<p><strong>연습:</strong> Which portrait did the gallery display? → [Which portrait]<sub>i</sub> did the gallery display t<sub>i</sub>?</p><ol><li>display 뒤의 gap을 찾아 object 출발점을 정한다.</li><li>wh-phrase의 도착점은 Spec,CP이고 did의 도착점은 C다.</li><li>fronting은 display의 Theme 관계를 없애지 않는다. Spec,CP 자체에서 새로운 object theta-role을 받는 것이 아니다.</li></ol><p><strong>Relative 비교:</strong> The portrait which the gallery displayed was restored. / The portrait the gallery displayed was restored. 두 경우 모두 displayed 뒤의 object gap이 필요하다. *The portrait which the gallery displayed it was restored.는 여기서 다루는 표준 relative movement 구조에서 그 자리를 it으로 다시 채웠다.</p><p><strong>기출 연결: 2025 1차 B-5.</strong> 실제 문제에서는 Theta Criterion을 기준으로 필수 argument가 빠진 구조와 relative trace 자리에 overt pronoun이 추가된 구조를 설명해야 한다. Subjacency 문항으로 표시하지 않는다.</p><p><strong>함정:</strong> idiom을 의문문으로 바꾸면 언제나 비문이라는 규칙은 없다. 문법성, idiomatic reading의 유지, literal reading을 분리한다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 위 예문은 학습용으로 새로 구성했다.</p></details>
+    <details class="concept"><summary>자세히 보기 · Wh-movement와 relative clause의 빈자리</summary>
+<p><strong>연습:</strong> Which portrait did the gallery display? → [Which portrait]<sub>i</sub> did the gallery display t<sub>i</sub>?</p><ol><li>display 뒤의 gap을 찾아 object 출발점을 정한다.</li><li>wh-phrase의 도착점은 Spec,CP이고 did의 도착점은 C다.</li><li>fronting은 display의 Theme 관계를 없애지 않는다. Spec,CP 자체에서 새로운 object theta-role을 받는 것이 아니다.</li></ol><p><strong>Relative 비교:</strong> The portrait which the gallery displayed was restored. / The portrait the gallery displayed was restored. 두 경우 모두 displayed 뒤의 object gap이 필요하다. *The portrait which the gallery displayed it was restored.는 여기서 다루는 표준 relative movement 구조에서 그 자리를 it으로 다시 채웠다.</p><div class="exam"><div class="exam-label">2025학년도 전공 B 5번 · 없는 argument와 남는 argument</div>
+<p><a href="https://etwiki.net/index.html?id=linguistics_2025_B05">원문과 해설</a> · 원문: (a) *Susan put the book. / (b) *The ball John hit it broke the window.</p>
+<ol><li>발문은 두 비문을 <a href="https://etwiki.net/concept.html?term=theta-criterion">Theta Criterion</a>으로 설명하라고 한다. 지문의 두 조건은 (i) 각 argument가 하나의 theta-role을 받을 것, (ii) 각 theta-role이 하나의 argument에 배정될 것이다. 발음되는 명사구 개수만 세지 말고 빈자리도 포함하여 대응을 확인한다.</li>
+<li>(a): put은 이 용법에서 ‘놓는 사람 + 놓는 물건 + 놓는 곳’을 요구한다. Susan과 the book은 있지만 <u>놓는 곳에 해당하는 필수 complement가 없다</u>. 따라서 그 theta-role이 배정되지 않아 <strong>조건 (ii)를 위반</strong>한다. 단순히 ‘목적어가 없다’고 하면 이미 있는 the book을 놓친다.</li>
+<li>(b): 먼저 주절 <em>The ball … broke the window</em>와 그 안의 관계절 <em>John hit …</em>를 나눈다. 지문은 관계사가 안 보일 때도 silent relative pronoun(Ø<sub>wh</sub>)이 이동한다고 명시한다. 정상 구조는 the ball [Ø<sub>wh,i</sub> John hit t<sub>i</sub>]이며, hit은 John에 Agent, 관계사와 연결된 object 자리에 Theme를 준다.</li>
+<li>원문의 <u>it은 그 object 자리를 다시 채운 추가 argument</u>다. hit이 줄 역할은 이미 배정되어 it이 받을 theta-role이 없으므로 <strong>조건 (i)를 위반</strong>한다. ‘관계사가 보이지 않으니 it으로 보충한다’는 분석은 지문의 silent movement 가정과 충돌한다. 이동한 관계사와 t는 별도 참여자 두 명으로 세지 않는다.</li></ol>
+<p><strong>답안 핵심:</strong> (a)는 배정되지 못한 theta-role, (b)는 theta-role을 받지 못한 it을 각각 명시한다. 두 문장을 모두 ‘argument 수가 틀리다’로 끝내면 위반 방향이 드러나지 않는다.</p>
+<p><strong>조건 변경 연습(새 예문):</strong> The porter put the suitcase <u>beside the desk</u>.에서는 필요한 위치 complement가 채워진다. The suitcase which the porter moved was heavy.에서 which를 발음하지 않아도 moved의 object gap은 유지된다. 그 gap에 it을 넣으면 다시 같은 문제가 생긴다. 관계사의 발음 여부와 object 자리가 비어 있어야 한다는 조건은 별개다.</p></div><p><strong>함정:</strong> idiom을 의문문으로 바꾸면 언제나 비문이라는 규칙은 없다. 문법성, idiomatic reading의 유지, literal reading을 분리한다.</p>
+<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
   </div>
 </div>
 
@@ -645,9 +663,18 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <div class="exam-label">📋 적용 포인트</div>
       <p><strong>2026 1차 B-9</strong> — <span class='kw4'>That-trace effect</span>: embedded subject의 wh-trace 바로 앞에 <em>that</em>이 남으면 비문임을 식별하는 유형</p>
     </div>
-    <details class="concept"><summary>That-trace effect와 subject gap의 위치</summary>
+    <details class="concept"><summary>자세히 보기 · That-trace effect와 subject gap의 위치</summary>
 <p><strong>독립 최소 대조:</strong></p><p>Which actor does Lina think (that) the director praised t<sub>i</sub>?<br>Which actor does Lina think t<sub>i</sub> praised the director?<br>*Which actor does Lina think that t<sub>i</sub> praised the director?</p><ol><li>첫 문장의 trace는 praised의 object다. that이 있어도 이 대조에서 문제가 없다.</li><li>둘째·셋째 문장의 trace는 embedded subject다. 바로 앞의 overt that이 있는 셋째가 that-trace 대조의 비문이다.</li><li>문장에 that과 wh-phrase가 있다는 사실만으로 판단하지 말고, 각 embedded clause의 subject 자리를 표시한다.</li></ol><p><strong>Relative 확장:</strong> the actor Lina thinks will win / *the actor Lina thinks that will win. 관계절에서도 win의 subject gap 바로 앞에 that이 남는지 본다. 이는 2026 1차 B-9 원문의 wh-question/relative clause 비교와 연결되며, 위 예문은 별도로 작성했다.</p><p><strong>자가 점검:</strong> object extraction에서 that 삭제는 필수인가? → 이 that-trace 대조에서는 필수가 아니다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 위 예문은 학습용으로 새로 구성했다.</p></details>
+<div class="exam"><div class="exam-label">2026학년도 전공 B 9번 · 다섯 후보의 빈자리 비교</div>
+<p><a href="https://etwiki.net/index.html?id=linguistics_2026_B09">원문과 해설</a> · 발문은 비문 <u>두 개</u>와 이유를 요구한다. 다음은 원문의 필요한 부분만 인용하고 [ ]와 ___를 분석용으로 덧붙였다. ___는 이동과 연결된 발음되지 않는 자리이며 새 단어가 아니다.</p>
+<ol><li>(a) Who do you think that they told me <u>that [___ would come]</u>? → come의 주어가 없고 who와 연결된다. 앞의 they는 told의 주어이므로 이 낮은 빈자리를 채우지 못한다. 문제가 되는 것은 <strong>두 번째 that 뒤의 subject gap</strong>이다.</li>
+<li>(b) a program [I feel [<u>___ will help</u> improve your English]] → help의 주어는 program과 연결되지만, 그 절을 도입하는 overt that이 없다. subject gap이 있다는 것만으로 비문은 아니다.</li>
+<li>(c) What assurance do I have ___ [that <u>this food</u> is actually good for my body]? → what assurance는 have의 object와 연결된다. that절은 this food라는 주어가 이미 있으며, 그 안에서 주어를 추출한 구조가 아니다.</li>
+<li>(d) … to get me to <u>hire ___</u> → 문두 who는 hire의 목적어와 연결된다. 절이 여러 개라는 이유로 subject extraction이라 판단하지 않는다.</li>
+<li>(e) a legal system [critics said <u>that [___ appeared</u> troubled by arrogance]] → appeared의 주어가 legal system과 연결되는 관계절 구조다. overt that 뒤에 subject gap이 있으므로 (a)와 같은 제약을 위반한다.</li></ol>
+<p><strong>정답은 (a), (e).</strong> 각각 낮은 절의 주어 위치에서 wh/relative movement가 일어났고, 그 subject trace 앞에 overt that이 남아 that-trace effect를 위반한다고 설명한다. 이 문항의 판정 근거는 문장 길이나 단순한 that의 존재가 아니다.</p>
+<p><strong>한 조건만 바꾸기:</strong> (a)에서 첫 번째 that만 지우면 두 번째 that + subject gap은 남으므로 문제가 해결되지 않는다. 반대로 두 번째 that을 지우면 해당 that-trace 위반이 해소된다. (b)에서는 feel 다음에 that을 넣으면 새로 같은 위반이 생긴다. 이는 원문을 바탕으로 한 조건 변경 연습이다.</p></div>
+<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
   </div>
 </div>
 
@@ -710,7 +737,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <details class="concept"><summary>Subjacency: 이동 단계별 bounding node의 수</summary>
 <p><strong>연습:</strong> Which blueprint did Mira say that the engineer revised?</p><p>object gap → embedded Spec,CP → matrix Spec,CP의 경로를 그린다. 이 페이지의 IP/NP bounding-node 분석에서 각 단계는 하나의 IP만 빠져나간다. 긴 문장이라는 이유만으로 위반이 아니다.</p><p><strong>이용할 수 없는 중간 Spec,CP:</strong> *How did Mira wonder which blueprint the engineer revised? 여기서는 how를 revise의 manner로 해석하는 extraction을 검사한다. embedded Spec,CP가 which blueprint로 차 있어 그 자리를 경유할 수 없고, 한 단계에 embedded IP와 matrix IP를 넘어야 한다.</p><p><strong>핵심 비교:</strong> landing site인 Spec,CP와 bounding node인 IP/NP는 다른 개념이다. CP가 보인다고 그것을 IP 대신 세지 않는다.</p><p><strong>Subject 내부와 subject 자체:</strong> Who repaired the machine?은 subject NP 전체를 묻는다. *What did [pictures of t] surprise the curator?는 subject NP 내부에서만 추출한다. 후자의 경로는 NP와 IP를 모두 빠져나간다.</p><p><strong>Coordinate 범위:</strong> 한 conjunct에서만 추출한 예와 across-the-board extraction을 구분한다. “coordination이면 어떤 이동도 불가”라는 확대 해석은 피한다.</p>
-<p class="note">근거: Radford, Transformational Grammar, §10.8, pp. 569–574 (Bounding Condition, successive cyclic movement, filled intermediate Spec,CP). 위 예문은 학습용으로 새로 구성했다.</p></details>
+<p class="note">근거: Radford, Transformational Grammar, §10.8, pp. 569–574 (Bounding Condition, successive cyclic movement, filled intermediate Spec,CP). 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
   </div>
 </div>
 
