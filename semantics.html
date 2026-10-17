@@ -359,7 +359,7 @@ function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Mat
 function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
 function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
 function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
-function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}catch(e){/* Keep the quiz usable when storage is unavailable or full. */}}
 function clearProgress(){localStorage.removeItem(SAVE_KEY);}
 function getScore(){return answers.filter(a=>a&&a.correct).length;}
 function renderNav(){
@@ -445,6 +445,7 @@ function pick(val){
   document.getElementById('xb').disabled=true;
   const ok=val===q.ans;
   answers[cur]={picked:val,correct:ok};
+  saveProgress();
   if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
   const bd=document.getElementById('bd');
   bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;

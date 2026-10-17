@@ -437,7 +437,7 @@ function updateModeUI(){document.getElementById('btn-normal').classList.toggle('
 function setMode(m){if(mode===m)return;mode=m;initOrder(m);cur=0;answers=new Array(TOTAL).fill(null);localStorage.removeItem(SAVE_KEY);document.getElementById('rb').style.display='none';document.getElementById('sc').classList.remove('show');updateModeUI();renderNav();render();}
 
 function getScore(){return answers.filter(a=>a&&a.correct).length;}
-function saveProgress(){localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}
+function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}catch(e){/* Keep the quiz usable when storage is unavailable or full. */}}
 function clearProgress(){localStorage.removeItem(SAVE_KEY);}
 
 function freshStart(){
@@ -534,6 +534,7 @@ function pick(val){
   document.getElementById('xb').disabled=true;
   const ok=val===q.ans;
   answers[cur]={picked:val,correct:ok};
+  saveProgress();
   if(ok){if(typeof playOk==='function')playOk();}else{if(typeof playNg==='function')playNg();}
   const bd=document.getElementById('bd');
   bd.textContent=ok?'✅ 정답!':`❌ 오답! 정답은 ${q.ans?'O':'X'}`;
