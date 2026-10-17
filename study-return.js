@@ -56,6 +56,29 @@
   var label = explicitReturn && params.get('returnLabel');
   if (!label && !explicitReturn && params.get('from')) label = params.get('from');
   label = (label || (explicitReturn || referrer ? '이전 페이지' : legacyReturn ? '전공기출 문제' : fallbackLabel)).trim().slice(0, 80);
+  // A nested lesson must return to this page with its own return route intact.
+  // Only enrich authored links that already point back to this exact page.
+  var currentUrl = new URL(window.location.href);
+  if (document.querySelectorAll) {
+    document.querySelectorAll('a[href]').forEach(function (link) {
+      try {
+        var next = new URL(link.getAttribute('href'), currentUrl);
+        if (next.origin !== currentUrl.origin) return;
+        var nestedValue = next.searchParams.get('returnTo');
+        if (!nestedValue) return;
+        var nested = new URL(nestedValue, next);
+        if (nested.origin !== currentUrl.origin || nested.pathname !== currentUrl.pathname) return;
+        // Keep the authored section hash, plus the validated route and its label.
+        nested.search = currentUrl.search;
+        nested.searchParams.set('returnTo', destination);
+        nested.searchParams.set('returnLabel', label);
+        next.searchParams.set('returnTo', nested.href);
+        link.href = next.href;
+      } catch (_) {
+        // Leave malformed or unrelated links untouched.
+      }
+    });
+  }
   var button = document.getElementById('back-btn') || document.getElementById('testmaster-return-btn');
 
   if (!button) {

@@ -91,3 +91,64 @@ assert(state.detail.open && state.classes.has('open'),'Fresh hash navigation sti
 assert.equal(state.getScrolled(),scrolledBeforeRestore+1);
 for (const hash of ['', '#missing', '#%E0%A4']) assert.equal(runHash(hash).getScrolled(),0);
 console.log('PASS: initial hash, hashchange and fresh pageshow reveal sections; BFCache preserves reader state; missing/malformed hashes are safe.');
+
+// Follow real authored links through both generated return buttons, not history.back().
+const origin = 'https://namkicheol.github.io';
+const base = origin + '/linguistics/';
+function navigationPage(href, referrer = '', source = script, extraLinks = []) {
+  const location = new URL(href);
+  const file = location.pathname.split('/').pop();
+  const links = [...read(file).matchAll(/\bhref="([^"]+)"/g)].map(m => m[1].replaceAll('&amp;', '&')).concat(extraLinks)
+    .map(href => ({href, getAttribute(k) { return this[k]; }}));
+  const element = () => ({style:{}, appendChild(){}, setAttribute(k,v){this[k]=v;}, getAttribute(k){return this[k];}});
+  const button = element();
+  const document = {body:element(), referrer, currentScript:null, getElementById:id => id === 'back-btn' ? button : null,
+    querySelectorAll:() => links};
+  if (read(file).includes('src="./study-return.js"')) {
+    vm.runInNewContext(source, {document, window:{location,addEventListener(){}}, URL, URLSearchParams});
+  }
+  return {links,button};
+}
+let chains = 0;
+for (const [hub, lesson] of [['school-grammar.html','school-grammar_study.html'], ['syntax.html','syntax-diagnostics_study.html']]) {
+  const hubUrl = base + hub;
+  const hubPage = navigationPage(hubUrl);
+  const entry = hubPage.links.find(a => new URL(a.href,hubUrl).pathname.endsWith('/' + lesson));
+  assert(entry, `${hub}: authored lesson entry`);
+  const lessonUrl = new URL(entry.href,hubUrl).href;
+  const first = navigationPage(lessonUrl,hubUrl);
+  const nestedLinks = first.links.filter(a => {
+    const url = new URL(a.href,lessonUrl);
+    const back = url.searchParams.get('returnTo');
+    return back && new URL(back,url).pathname.endsWith('/' + lesson);
+  });
+  assert.equal(nestedLinks.length, hub === 'syntax.html' ? 4 : 1);
+  for (const link of nestedLinks) {
+    const nextUrl = new URL(link.href,lessonUrl).href;
+    const next = navigationPage(nextUrl,lessonUrl);
+    const returnedUrl = new URL(next.button.href);
+    assert.equal(returnedUrl.pathname, new URL(lessonUrl).pathname);
+    assert(returnedUrl.hash, 'Return preserves the authored lesson section');
+    assert.equal(returnedUrl.searchParams.get('returnTo'),hubUrl);
+    const returned = navigationPage(returnedUrl.href,nextUrl);
+    assert.equal(returned.button.href,hubUrl,'Second generated return must reach the original hub, never the child');
+    assert.equal(returned.button.textContent,first.button.textContent,'Hub label survives the round trip');
+    // Reload/new-tab entry must not rely on a referrer or browser history.
+    assert.equal(navigationPage(returnedUrl.href).button.href,hubUrl);
+    const repeated = returned.links.find(a => new URL(a.href,returnedUrl).pathname === new URL(nextUrl).pathname);
+    assert.equal(new URL(repeated.href,returnedUrl).searchParams.get('returnTo'),returnedUrl.href,'Repeated round trips do not grow the chain');
+    chains++;
+  }
+}
+// Legacy card and direct/external entries retain the same allowed destination policy.
+for (const search of ['', '?return=linguistics_2018_B06', '?returnTo=' + encodeURIComponent('https://etwiki.net/index.html?id=linguistics_2018_B06'), '?returnTo=javascript%3Aalert(1)']) {
+  const pageUrl = base + 'school-grammar_study.html' + search;
+  const page = navigationPage(pageUrl);
+  const nextUrl = page.links.find(a => new URL(a.href,pageUrl).pathname.endsWith('/movement_study.html')).href;
+  const next = navigationPage(nextUrl,pageUrl);
+  assert.equal(navigationPage(next.button.href,nextUrl).button.href,page.button.href);
+}
+const untouched = ['https://evil.test/x?returnTo=school-grammar_study.html', './movement_study.html?returnTo=syntax.html', '#passive-discourse'];
+const sample = navigationPage(base + 'school-grammar_study.html?returnTo=school-grammar.html','',script,untouched);
+assert.deepEqual(sample.links.slice(-untouched.length).map(a=>a.href),untouched);
+console.log(`PASS: ${chains} nested reading/OX return chains reach their original hubs, preserve section/label, survive reload, and remain stable on repeat; legacy/direct/unsafe routes covered.`);
