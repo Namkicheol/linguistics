@@ -136,231 +136,369 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 <script src="./sounds.js"></script>
 <script>
 const Q=[
-
-  /* ── ① Sense vs Reference (denotation / connotation, deixis) ── */
-  {src:"Sense / Reference",cat:"definition",
-   text:"The expressions <em>the morning star</em> and <em>the evening star</em> share the same <span class='kw1'>reference</span> (the planet Venus) yet differ in <span class='kw1'>sense</span>.",
-   ans:true,
-   correct:"같은 <span class='kw1'>reference</span>(Venus)라도 <span class='kw1'>sense</span>는 다를 수 있다 — Frege의 고전적 구분.",
-   why:"sense는 표현이 referent를 제시하는 방식(개념적 의미)이고 reference는 실세계 대상과의 관계입니다. 두 표현이 같은 대상(Venus)을 가리켜도 그것을 떠올리는 방식(아침에 보이는 별 / 저녁에 보이는 별)이 달라 sense가 구별됩니다.",
-   source:"Two expressions can share a referent but differ in sense (Frege's morning/evening star).",
-   compare:[{title:"Sense",desc:"내적·개념적 의미 (제시 방식)"},{title:"Reference",desc:"실세계 referent와의 관계"}]},
-
-  {src:"Sense / Reference",cat:"sense vs reference",
-   text:"If two expressions pick out the same <span class='kw1'>referent</span> in the world, then they must also have the same <span class='kw4'>sense</span>.",
-   ans:false,
-   correct:"같은 reference라도 sense는 다를 수 있다 — <em>Venus</em> / <em>the morning star</em>처럼 동일 referent, 다른 sense.",
-   why:"reference의 동일성이 sense의 동일성을 보장하지 않습니다. 한 referent를 서로 다른 방식으로 제시하는 표현들은 reference가 같아도 sense가 다릅니다. 이것이 Frege가 지적한 핵심입니다.",
-   source:"Sameness of reference does not entail sameness of sense."},
-
-  {src:"Sense / Reference",cat:"denotation / connotation",
-   text:"In standard usage, <span class='kw4'>denotation</span> and <span class='kw4'>connotation</span> are synonyms that pick out exactly the same aspect of a word's meaning.",
-   ans:false,
-   correct:"둘은 다르다. <span class='kw2'>denotation</span>=문자적·중심 의미, <span class='kw2'>connotation</span>=그 위에 얹히는 정서적·문화적 함축.",
-   why:"denotation은 단어가 적용되는 대상의 집합, 즉 문자적 중심 의미입니다. connotation은 그것을 넘어서는 정서적·문화적 overtone입니다. 예를 들어 <em>thrifty</em>와 <em>stingy</em>는 denotation은 비슷하나 connotation이 정반대입니다.",
-   source:"Denotation = literal central meaning; connotation = affective/cultural overtones. They are distinct.",
-   compare:[{title:"Denotation",desc:"문자적·중심 의미"},{title:"Connotation",desc:"정서적·문화적 함축"}]},
-
-  {src:"Sense / Reference",cat:"deixis",
-   text:"The expressions <em>here</em>, <em>now</em>, and <em>this</em> are <span class='kw1'>deictic expressions</span> that signal proximity (proximal) to the speaker.",
-   ans:true,
-   correct:"<em>here / now / this</em>는 화자에 가까움(<span class='kw2'>proximal</span>)을 나타내는 deictic expression이다.",
-   why:"deictic expression은 발화 맥락에 의존해 지시 대상이 정해집니다. <em>here, now, this</em>는 proximal(화자에 가까움)을, <em>there, then, that</em>은 distal(화자에서 멈)을 나타냅니다.",
-   source:"here/now/this are proximal deictic expressions anchored to the speaker."},
-
-  /* ── ② Synonymy & Antonymy ─────────────────────────────── */
-  {src:"Antonymy",cat:"complementary",
-   text:"<em>alive</em> and <em>dead</em> are <span class='kw1'>complementary antonyms</span>: negating one entails the positive of the other, with no middle ground.",
-   ans:true,
-   correct:"<em>alive/dead</em>는 <span class='kw1'>complementary antonym</span> — 한쪽의 부정이 다른쪽의 긍정을 함의하고 중간값이 없다.",
-   why:"complementary(binary) antonym은 한쪽을 부정하면 곧 다른쪽이 됩니다. <em>not alive</em> = <em>dead</em>이며 중간 단계가 없어 정도 부사·비교급이 부자연스럽습니다. <em>pass/fail</em>, <em>present/absent</em>도 같은 부류입니다.",
-   source:"Complementary antonyms — negation of one entails the other; no intermediate values.",
-   compare:[{title:"Complementary",desc:"alive/dead, pass/fail — 중간 없음"},{title:"Gradable",desc:"hot/cold, rich/poor — 중간값 있음"}]},
-
-  {src:"Antonymy",cat:"converse (relational)",
-   text:"<em>employer</em> and <em>employee</em> are <span class='kw1'>converse (relational) antonyms</span>: <em>A is B's employer</em> and <em>B is A's employee</em> paraphrase each other.",
-   ans:true,
-   correct:"<em>employer/employee</em>는 <span class='kw1'>converse(relational)</span> antonym — 같은 관계를 반대 시점에서 보며 서로 paraphrase가 된다.",
-   why:"converse antonym은 두 entity 사이의 관계를 정반대 시점에서 기술합니다. <em>A is B's employer</em>가 참이면 <em>B is A's employee</em>도 반드시 참이어서 서로 paraphrase입니다. <em>buy/sell</em>, <em>above/below</em>도 같습니다.",
-   source:"Converse (relational) antonyms describe a relation from opposite viewpoints and paraphrase each other."},
-
-  {src:"Antonymy",cat:"gradable 판별",
-   text:"<em>hot</em> and <em>cold</em> are <span class='kw4'>complementary antonyms</span>, so there can be no intermediate value between them.",
-   ans:false,
-   correct:"<em>hot/cold</em>는 <span class='kw2'>gradable antonym</span>이다 — <em>warm, cool</em> 같은 중간값이 존재하고 비교급·정도 부사가 가능하다.",
-   why:"gradable antonym은 척도상의 대립으로 중간값을 허용합니다. <em>hot–warm–cool–cold</em>처럼 단계가 있고 <em>hotter</em>, <em>very cold</em> 같은 비교급·정도 표현이 자연스럽습니다. complementary(중간 없음)와 구별됩니다.",
-   source:"hot/cold are gradable, not complementary — intermediate values exist (warm, cool)."},
-
-  /* ── ③ Hyponymy, Meronymy, Prototype ───────────────────── */
-  {src:"Hyponymy",cat:"entailment direction",
-   text:"<em>sparrow</em> is a hyponym of <em>bird</em>, and <em>I saw a sparrow</em> entails <em>I saw a bird</em>.",
-   ans:true,
-   correct:"<em>sparrow</em>는 <em>bird</em>의 <span class='kw1'>hyponym</span>이고, hyponym은 superordinate를 <span class='kw2'>entail</span>한다.",
-   why:"hyponymy는 의미 포함(종류 관계)입니다. hyponym(<em>sparrow</em>)이 superordinate(<em>bird</em>)를 entail합니다 — 참새를 봤다면 새를 본 것입니다. 역방향(새를 봤다고 참새를 본 것은 아님)은 성립하지 않습니다.",
-   source:"A hyponym entails its superordinate (sparrow ⊨ bird), but not vice versa."},
-
-  {src:"Hyponymy",cat:"방향 함정",
-   text:"Because <em>rose</em> is a hyponym of <em>flower</em>, the sentence <em>I bought a flower</em> entails <span class='kw4'>I bought a rose</span>.",
-   ans:false,
-   correct:"방향이 반대다. superordinate(<em>flower</em>)는 hyponym(<em>rose</em>)을 entail하지 <strong>않는다</strong>. 꽃을 샀다고 장미를 산 것은 아니다.",
-   why:"entailment는 hyponym→superordinate 한 방향입니다. <em>I bought a rose</em>는 <em>I bought a flower</em>를 entail하지만 역은 성립하지 않습니다 — 카네이션을 샀을 수도 있기 때문입니다.",
-   source:"A superordinate does not entail its hyponym (flower ⊭ rose)."},
-
-  {src:"Meronymy",cat:"meronymy vs hyponymy",
-   text:"A <em>wheel</em> is a hyponym of <em>car</em>, since a wheel is a kind of car.",
-   ans:false,
-   correct:"<em>wheel</em>은 <em>car</em>의 부분이지 종류가 아니다 → hyponymy가 아니라 <span class='kw2'>meronymy</span>(부분–전체) 관계.",
-   why:"meronymy는 부분–전체 관계이고 hyponymy는 종류 관계입니다. <em>wheel</em>은 <em>car</em>의 <strong>부분</strong>(meronym)이지 <em>car</em>의 한 <strong>종류</strong>가 아닙니다. <em>page∈book</em>, <em>petal∈flower</em>도 meronymy입니다.",
-   source:"wheel is a part of a car (meronymy), not a kind of car (hyponymy).",
-   compare:[{title:"Hyponymy",desc:"kind-of (sparrow ⊂ bird)"},{title:"Meronymy",desc:"part-of (wheel ∈ car)"}]},
-
-  {src:"Prototype",cat:"graded membership",
-   text:"In prototype theory, every member of a category is an <span class='kw4'>equally typical</span> example of that category.",
-   ans:false,
-   correct:"범주 소속은 <span class='kw2'>graded</span>다 — 어떤 멤버는 다른 멤버보다 더 전형적이다(<em>robin</em>이 <em>penguin</em>보다 더 prototypical한 bird).",
-   why:"prototype theory에서 범주 멤버십은 정도 문제입니다. 모든 멤버가 동등하게 전형적인 것이 아니라, 더 중심적·대표적인 prototype과 주변적인 멤버가 있습니다. <em>robin/sparrow</em>는 <em>bird</em>의 전형, <em>penguin/ostrich</em>는 주변적입니다.",
-   source:"Category membership is graded; some members are more prototypical than others."},
-
-  /* ── ④ Homonymy vs Polysemy ────────────────────────────── */
-  {src:"Homonymy",cat:"unrelated senses",
-   text:"<em>bank</em> 'edge of a river' and <em>bank</em> 'financial institution' have unrelated meanings, so they are a case of <span class='kw1'>homonymy</span> listed as separate dictionary entries.",
-   ans:true,
-   correct:"의미가 무관 → <span class='kw1'>homonymy</span>. 사전에 별도 entry로 오른다.",
-   why:"homonymy는 형태가 같고 의미가 무관한 경우로, 사전에 별개의 entry로 등재됩니다. <em>bank</em>(강가) / <em>bank</em>(은행)는 역사적·의미적으로 무관하여 homonym입니다.",
-   source:"Homonymy = one form, unrelated meanings, separate dictionary entries.",
-   compare:[{title:"Homonymy",desc:"무관한 의미 · 별도 entry"},{title:"Polysemy",desc:"관련된 의미 · 단일 entry"}]},
-
-  {src:"Polysemy",cat:"related senses",
-   text:"The <em>foot</em> in <em>the foot of the mountain</em> is related in meaning to the body-part <em>foot</em>, making this a case of <span class='kw1'>polysemy</span>.",
-   ans:true,
-   correct:"의미가 관련됨(아랫부분이라는 공통 의미) → <span class='kw1'>polysemy</span>, 단일 entry.",
-   why:"polysemy는 한 형태가 서로 관련된 여러 의미를 갖는 경우로, 사전에 단일 entry 아래 묶입니다. <em>foot</em>(발) / <em>foot of the mountain</em>(산기슭)은 '아래·바닥'이라는 의미적 연결이 있어 polysemy입니다.",
-   source:"Polysemy = one form, multiple related meanings under a single entry."},
-
-  {src:"Homonymy",cat:"polysemy 혼동",
-   text:"<em>bright</em> 'intelligent' and <em>bright</em> 'shining' have unrelated meanings, so the pair is a clear case of <span class='kw4'>homonymy</span>.",
-   ans:false,
-   correct:"두 의미는 관련됨(밝음 → 영리함의 은유적 연결) → <span class='kw2'>polysemy</span>이지 homonymy가 아니다.",
-   why:"<em>bright</em>의 '빛나는'과 '영리한'은 은유적으로 연결된 관련 의미라 polysemy입니다. 의미가 무관할 때만 homonymy입니다. 의미의 관련성 여부가 둘을 가르는 핵심 기준입니다.",
-   source:"bright 'intelligent'/'shining' are related senses → polysemy, not homonymy."},
-
-  /* ── ⑤ Entailment vs Presupposition ────────────────────── */
-  {src:"Entailment",cat:"truth-based definition",
-   text:"In an <span class='kw1'>entailment</span> relation, if p is true then q must be true, and if q is false then p must be false.",
-   ans:true,
-   correct:"<span class='kw1'>entailment</span>의 정의: p 참 → q 참, q 거짓 → p 거짓.",
-   why:"entailment는 진리값으로 정의됩니다: p가 참일 때 q가 반드시 참이고, q가 거짓일 때 p가 반드시 거짓이면 p가 q를 entail합니다. 이 관계는 어휘·통사 구조가 보장합니다.",
-   source:"p entails q iff (p true → q true) and (q false → p false)."},
-
-  {src:"Entailment",cat:"p-false 함정",
-   text:"If p entails q, then whenever p is false, q must also be <span class='kw4'>false</span>.",
-   ans:false,
-   correct:"p가 거짓이면 q는 <span class='kw2'>미정</span>이다 — entailment는 p 거짓일 때 q의 진리값을 결정하지 않는다.",
-   why:"entailment는 p 참→q 참, q 거짓→p 거짓만 보장합니다. p가 거짓이라고 q가 거짓이 되는 것은 아닙니다. 예를 들어 <em>I bought a dog</em>(거짓)이라도 <em>I bought an animal</em>은 참일 수 있습니다(고양이를 샀을 경우).",
-   source:"When p is false, nothing follows about q under entailment."},
-
-  {src:"Presupposition",cat:"constancy under negation",
-   text:"<em>Liam stopped jogging</em> and <em>Liam didn't stop jogging</em> both presuppose <em>Liam had been jogging</em> (constancy under negation).",
-   ans:true,
-   correct:"<span class='kw1'>presupposition</span>은 문장을 부정해도 유지된다 — change-of-state verb <em>stop</em>의 trigger.",
-   why:"presupposition은 화자가 참으로 깔고 가는 배경 가정으로, 문장을 부정해도 살아남습니다(constancy under negation). <em>stop</em>은 change-of-state trigger라 긍정·부정 모두 <em>Liam had been jogging</em>을 전제합니다.",
-   source:"A presupposition survives negation (change-of-state verb stop triggers it).",
-   compare:[{title:"Entailment",desc:"부정하면 사라짐 (원문장에 딸림)"},{title:"Presupposition",desc:"부정해도 유지됨"}]},
-
-  {src:"Presupposition",cat:"negation test 함정",
-   text:"A <span class='kw1'>presupposition</span> disappears as soon as the sentence carrying it is <span class='kw4'>negated</span>.",
-   ans:false,
-   correct:"반대다. presupposition은 부정해도 <span class='kw2'>유지</span>된다(constancy under negation) — 이것이 entailment와의 핵심 변별점이다.",
-   why:"presupposition의 진단 기준이 바로 constancy under negation입니다. <em>My car is a wreck</em>와 <em>My car is not a wreck</em>는 둘 다 <em>I have a car</em>를 전제합니다. 부정 시 사라지는 것은 (원문장에만 딸린) entailment입니다.",
-   source:"Presuppositions survive negation; the negation test is the diagnostic, not a canceller."},
-
-  {src:"Paraphrase",cat:"mutual entailment",
-   text:"An active sentence and its passive counterpart do <span class='kw4'>not</span> entail each other.",
-   ans:false,
-   correct:"능동·수동문은 서로를 entail한다(<span class='kw2'>mutual entailment</span>) — 이것이 곧 paraphrase 관계다.",
-   why:"paraphrase는 mutual entailment, 즉 서로를 entail하는 관계입니다. <em>The committee approved the plan</em>과 <em>The plan was approved by the committee</em>는 진리조건이 같아 서로를 entail합니다.",
-   source:"Active and passive are paraphrases — they mutually entail each other."},
-
-  /* ── ⑥ Ambiguity — lexical vs structural ───────────────── */
-  {src:"Ambiguity",cat:"structural (PP)",
-   text:"<em>I saw the astronomer with the telescope</em> is structurally ambiguous, because the PP <em>with the telescope</em> can attach to either the NP or the VP.",
-   ans:true,
-   correct:"같은 단어열에 구성 구조(트리)가 둘 → <span class='kw1'>structural ambiguity</span> (PP attachment).",
-   why:"structural ambiguity는 동일한 단어열에 둘 이상의 구성 구조가 배정되어 생깁니다. <em>with the telescope</em>가 NP(천문학자가 망원경 소지)에 붙거나 VP(망원경으로 봄)에 붙을 수 있어 두 해석이 나옵니다.",
-   source:"PP-attachment ambiguity is structural — one string, two constituent structures."},
-
-  {src:"Ambiguity",cat:"lexical 판별",
-   text:"In \"They walked toward the bank,\" the noun bank can mean a financial institution or the edge of a river. This difference alone is an example of structural ambiguity.",
-   ans:false,
-   correct:"이 예문에서 bank의 두 명사 의미가 갈리는 것은 lexical ambiguity다. 두 해석을 위해 서로 다른 문장 구조를 설정할 필요가 없다.",
-   why:"같은 품사의 bank가 서로 다른 뜻을 갖는 경우입니다. 다만 lexical ambiguity와 structural ambiguity가 항상 상호 배타적인 것은 아닙니다. He saw her duck처럼 품사와 구조가 함께 달라지는 예도 있습니다.",
-   source:"Lexical ambiguity와 structural ambiguity를 구별하되 두 차이가 함께 나타날 수 있음을 인정한다. 이 문항은 같은 품사인 bank의 두 의미를 비교한다.",
-   compare:[{title:"Lexical",desc:"한 단어의 여러 sense"},{title:"Structural",desc:"한 단어열의 여러 트리"}]},
-
-  /* ── ⑦ Thematic / semantic roles ───────────────────────── */
-  {src:"Thematic Roles",cat:"Agent / Instrument",
-   text:"In <em>The thief broke the window with a brick</em>, <em>the thief</em> bears the <span class='kw1'>Agent</span> role and <em>a brick</em> bears the <span class='kw1'>Instrument</span> role.",
-   ans:true,
-   correct:"<em>the thief</em>=<span class='kw1'>Agent</span>(행위 주체), <em>a brick</em>=<span class='kw1'>Instrument</span>(수단).",
-   why:"thematic role은 의미로 부여됩니다. 행위를 일으키는 <em>the thief</em>는 Agent, 그 수단인 <em>a brick</em>은 Instrument입니다. role은 grammatical function과 독립적입니다.",
-   source:"Agent = instigator; Instrument = the means by which the action is carried out."},
-
-  {src:"Thematic Roles",cat:"role independence",
-   text:"In both <em>The vase broke</em> and <em>Tom broke the vase</em>, <em>the vase</em> bears the <span class='kw1'>Theme</span> role even though it is subject in one and object in the other.",
-   ans:true,
-   correct:"같은 NP가 subject↔object로 위치가 바뀌어도 thematic role(<span class='kw1'>Theme</span>)은 유지된다.",
-   why:"thematic role은 grammatical function(subject/object)과 독립적으로 의미에 의해 부여됩니다. <em>the vase</em>는 깨짐을 겪는 대상이므로 위치에 관계없이 Theme입니다. role과 문법기능이 분리됨을 보여주는 표준 사례입니다.",
-   source:"Thematic role is assigned by meaning, independent of grammatical function.",
-   compare:[{title:"The vase broke",desc:"the vase = Theme (subject)"},{title:"Tom broke the vase",desc:"the vase = Theme (object)"}]},
-
-  {src:"Thematic Roles",cat:"Experiencer 함정",
-   text:"In <em>Sarah feared the storm</em>, <em>Sarah</em> bears the <span class='kw4'>Agent</span> role.",
-   ans:false,
-   correct:"<em>Sarah</em>는 심리 상태를 겪는 <span class='kw2'>Experiencer</span>이지 Agent가 아니다.",
-   why:"Agent는 행위를 능동적으로 일으키는 주체입니다. <em>fear</em>는 심리 상태를 나타내는 동사이고 <em>Sarah</em>는 그 상태를 경험하는 Experiencer입니다. 의도적 행위가 없으므로 Agent가 아닙니다.",
-   source:"The subject of a psychological verb like fear is an Experiencer, not an Agent."},
-
-  {src:"Thematic Roles",cat:"Goal 함정",
-   text:"In <em>Noah handed the key to the guard</em>, <em>the guard</em> bears the <span class='kw4'>Source</span> role.",
-   ans:false,
-   correct:"<em>the guard</em>는 이동의 도착점이므로 <span class='kw2'>Goal</span>이다 — Source(출발점)가 아니다.",
-   why:"Goal은 무언가가 이동해 가는 도착점, Source는 출발점입니다. <em>the key</em>가 <em>the guard</em>에게로 이동하므로 <em>the guard</em>는 Goal입니다. Source라면 <em>from</em>으로 표시되는 출발점이어야 합니다.",
-   source:"The endpoint of motion is the Goal; the Source is the starting point.",
-   compare:[{title:"Goal",desc:"도착점 (to the guard)"},{title:"Source",desc:"출발점 (from Madrid)"}]},
-
-  /* ── ⑧ Componential analysis / semantic features (truth conditions) ── */
-  {src:"Semantic Features",cat:"componential analysis",
-   text:"In componential analysis, <em>man</em> and <em>boy</em> differ only in the value of the single feature <span class='kw1'>[±adult]</span>.",
-   ans:true,
-   correct:"<em>man</em>과 <em>boy</em>는 오직 <span class='kw1'>[±adult]</span> 자질 값에서만 차이가 난다(둘 다 [+human, +male]).",
-   why:"componential analysis는 단어 의미를 이진 semantic feature로 분해합니다. <em>man</em>=[+human,+adult,+male], <em>boy</em>=[+human,−adult,+male]로, 둘은 [±adult] 한 자질에서만 다릅니다.",
-   source:"man and boy are distinguished by a single feature, [±adult]."},
-
-  {src:"Truth Conditions",cat:"analytic sentence",
-   text:"<em>A bachelor is unmarried</em> is an <span class='kw1'>analytic sentence</span> — true solely by virtue of the meanings of its words.",
-   ans:true,
-   correct:"<em>A bachelor is unmarried</em>는 단어 의미만으로 필연적으로 참 → <span class='kw1'>analytic sentence</span>.",
-   why:"analytic sentence는 세계를 확인하지 않고 단어 의미만으로 참이 보장되는 문장입니다. <em>bachelor</em>의 의미 자체가 '결혼하지 않은'을 포함하므로 필연적으로 참입니다. <em>A triangle has three sides</em>도 같습니다.",
-   source:"An analytic sentence is necessarily true by virtue of word meanings.",
-   compare:[{title:"Analytic",desc:"단어 의미만으로 필연적 참"},{title:"Synthetic",desc:"세계 상태로 참·거짓 판정"}]},
-
-  {src:"Truth Conditions",cat:"synthetic 함정",
-   text:"<em>The mayor owns three cars</em> is an <span class='kw4'>analytic sentence</span>, true purely by virtue of word meanings.",
-   ans:false,
-   correct:"세계 상태를 확인해야 참·거짓을 알 수 있으므로 <span class='kw2'>synthetic sentence</span>이지 analytic이 아니다.",
-   why:"synthetic sentence는 단어 의미만으로 진리값이 정해지지 않고 세계의 실제 상태에 따라 참·거짓이 결정됩니다. 시장이 차를 세 대 소유했는지는 현실을 확인해야 알 수 있으므로 synthetic입니다.",
-   source:"A sentence whose truth depends on the state of the world is synthetic, not analytic."}
+  {
+    "src": "Sense / Reference",
+    "cat": "definition",
+    "text": "The expressions <em>the morning star</em> and <em>the evening star</em> share the same <span class='kw1'>reference</span> (the planet Venus) yet differ in <span class='kw1'>sense</span>.",
+    "ans": true,
+    "correct": "같은 <span class='kw1'>reference</span>(Venus)라도 <span class='kw1'>sense</span>는 다를 수 있다 — Frege의 고전적 구분.",
+    "why": "sense는 표현이 referent를 제시하는 방식(개념적 의미)이고 reference는 실세계 대상과의 관계입니다. 두 표현이 같은 대상(Venus)을 가리켜도 그것을 떠올리는 방식(아침에 보이는 별 / 저녁에 보이는 별)이 달라 sense가 구별됩니다.",
+    "source": "Two expressions can share a referent but differ in sense (Frege's morning/evening star).",
+    "compare": [
+      {
+        "title": "Sense",
+        "desc": "내적·개념적 의미 (제시 방식)"
+      },
+      {
+        "title": "Reference",
+        "desc": "실세계 referent와의 관계"
+      }
+    ]
+  },
+  {
+    "src": "Sense / Reference",
+    "cat": "sense vs reference",
+    "text": "If two expressions pick out the same <span class='kw1'>referent</span> in the world, then they must also have the same <span class='kw4'>sense</span>.",
+    "ans": false,
+    "correct": "같은 reference라도 sense는 다를 수 있다 — <em>Venus</em> / <em>the morning star</em>처럼 동일 referent, 다른 sense.",
+    "why": "reference의 동일성이 sense의 동일성을 보장하지 않습니다. 한 referent를 서로 다른 방식으로 제시하는 표현들은 reference가 같아도 sense가 다릅니다. 이것이 Frege가 지적한 핵심입니다.",
+    "source": "Sameness of reference does not entail sameness of sense."
+  },
+  {
+    "src": "Sense / Reference",
+    "cat": "denotation / connotation",
+    "text": "In standard usage, <span class='kw4'>denotation</span> and <span class='kw4'>connotation</span> are synonyms that pick out exactly the same aspect of a word's meaning.",
+    "ans": false,
+    "correct": "둘은 다르다. <span class='kw2'>denotation</span>=문자적·중심 의미, <span class='kw2'>connotation</span>=그 단어와 연결되는 정서적·문화적 함축.",
+    "why": "denotation은 단어가 적용되는 대상의 집합, 즉 문자적 중심 의미입니다. connotation은 그것을 넘어서는 정서적·문화적 함축입니다. 예를 들어 <em>thrifty</em>와 <em>stingy</em>는 denotation은 비슷하나 connotation이 정반대입니다.",
+    "source": "Denotation = literal central meaning; connotation = affective/cultural overtones. They are distinct.",
+    "compare": [
+      {
+        "title": "Denotation",
+        "desc": "문자적·중심 의미"
+      },
+      {
+        "title": "Connotation",
+        "desc": "정서적·문화적 함축"
+      }
+    ]
+  },
+  {
+    "src": "Sense / Reference",
+    "cat": "deixis",
+    "text": "The expressions <em>here</em>, <em>now</em>, and <em>this</em> are <span class='kw1'>deictic expressions</span> that signal proximity (proximal) to the speaker.",
+    "ans": true,
+    "correct": "<em>here / now / this</em>는 화자에 가까움(<span class='kw2'>proximal</span>)을 나타내는 deictic expression이다.",
+    "why": "deictic expression은 발화 맥락에 의존해 지시 대상이 정해집니다. <em>here, now, this</em>는 proximal(화자에 가까움)을, <em>there, then, that</em>은 distal(화자에게서 멂)을 나타냅니다.",
+    "source": "here/now/this are proximal deictic expressions anchored to the speaker."
+  },
+  {
+    "src": "Antonymy",
+    "cat": "complementary",
+    "text": "For a living organism in the ordinary literal alive/dead classification at one time, <em>alive</em> and <em>dead</em> are complementary antonyms: negating one entails the other.",
+    "ans": true,
+    "correct": "<em>alive/dead</em>는 <span class='kw1'>complementary antonym</span> — 한쪽의 부정이 다른쪽의 긍정을 함의하고 중간값이 없다.",
+    "why": "같은 생물·시점의 literal alive/dead 분류를 고정한 설명입니다. 중간값을 갖는 gradable antonym과 구별합니다. 돌처럼 원래 생명 분류가 적용되지 않는 대상까지 not alive=dead를 확대하지 않습니다. 비유적 정도 표현만으로 이 literal 분류를 바꾸지도 않습니다.",
+    "source": "Complementary antonyms — negation of one entails the other; no intermediate values.",
+    "compare": [
+      {
+        "title": "Complementary",
+        "desc": "alive/dead, pass/fail — 중간 없음"
+      },
+      {
+        "title": "Gradable",
+        "desc": "hot/cold, rich/poor — 중간값 있음"
+      }
+    ]
+  },
+  {
+    "src": "Antonymy",
+    "cat": "converse (relational)",
+    "text": "<em>employer</em> and <em>employee</em> are <span class='kw1'>converse (relational) antonyms</span>: <em>A is B's employer</em> and <em>B is A's employee</em> paraphrase each other.",
+    "ans": true,
+    "correct": "<em>employer/employee</em>는 <span class='kw1'>converse(relational)</span> antonym — 같은 관계를 반대 관점에서 보며 서로 paraphrase가 된다.",
+    "why": "converse antonym은 두 대상 사이의 관계를 반대 관점에서 기술합니다. <em>A is B's employer</em>가 참이면 <em>B is A's employee</em>도 반드시 참이어서 서로 paraphrase입니다. <em>buy/sell</em>, <em>above/below</em>도 같습니다.",
+    "source": "Converse (relational) antonyms describe a relation from opposite viewpoints and paraphrase each other."
+  },
+  {
+    "src": "Antonymy",
+    "cat": "gradable 판별",
+    "text": "<em>hot</em> and <em>cold</em> are <span class='kw4'>complementary antonyms</span>, so there can be no intermediate value between them.",
+    "ans": false,
+    "correct": "<em>hot/cold</em>는 <span class='kw2'>gradable antonym</span>이다 — <em>warm, cool</em> 같은 중간값이 존재하고 비교급·정도 부사가 가능하다.",
+    "why": "gradable antonym은 척도상의 대립으로 중간값을 허용합니다. <em>hot–warm–cool–cold</em>처럼 단계가 있고 <em>hotter</em>, <em>very cold</em> 같은 비교급·정도 표현이 자연스럽습니다. complementary(중간 없음)와 구별됩니다.",
+    "source": "hot/cold are gradable, not complementary — intermediate values exist (warm, cool)."
+  },
+  {
+    "src": "Hyponymy",
+    "cat": "entailment direction",
+    "text": "<em>sparrow</em> is a hyponym of <em>bird</em>, and <em>I saw a sparrow</em> entails <em>I saw a bird</em>.",
+    "ans": true,
+    "correct": "<em>sparrow</em>는 <em>bird</em>의 <span class='kw1'>hyponym</span>이고, hyponym은 superordinate를 <span class='kw2'>entail</span>한다.",
+    "why": "hyponymy는 의미 포함(종류 관계)입니다. hyponym(<em>sparrow</em>)이 superordinate(<em>bird</em>)를 entail합니다 — 참새를 봤다면 새를 본 것입니다. 역방향(새를 봤다고 참새를 본 것은 아님)은 성립하지 않습니다. 단, 이 방향은 제시된 positive existential 문장에서 확인한 것입니다. I saw no birds → I saw no sparrows처럼 negation 환경에서는 포함 관계를 문장에 적용하는 방향이 달라집니다.",
+    "source": "Fromkin, Rodman & Hyams, An Introduction to Language, 10th ed., Ch.4: hyponymy and entailment; example-specific application."
+  },
+  {
+    "src": "Hyponymy",
+    "cat": "방향 함정",
+    "text": "Because <em>rose</em> is a hyponym of <em>flower</em>, the sentence <em>I bought a flower</em> entails <span class='kw4'>I bought a rose</span>.",
+    "ans": false,
+    "correct": "방향이 반대다. superordinate(<em>flower</em>)는 hyponym(<em>rose</em>)을 entail하지 <strong>않는다</strong>. 꽃을 샀다고 장미를 산 것은 아니다.",
+    "why": "entailment는 hyponym→superordinate 한 방향입니다. <em>I bought a rose</em>는 <em>I bought a flower</em>를 entail하지만 역은 성립하지 않습니다 — 카네이션을 샀을 수도 있기 때문입니다.",
+    "source": "A superordinate does not entail its hyponym (flower ⊭ rose)."
+  },
+  {
+    "src": "Meronymy",
+    "cat": "meronymy vs hyponymy",
+    "text": "A <em>wheel</em> is a hyponym of <em>car</em>, since a wheel is a kind of car.",
+    "ans": false,
+    "correct": "<em>wheel</em>은 <em>car</em>의 부분이지 종류가 아니다 → hyponymy가 아니라 <span class='kw2'>meronymy</span>(부분–전체) 관계.",
+    "why": "meronymy는 부분–전체 관계이고 hyponymy는 종류 관계입니다. <em>wheel</em>은 <em>car</em>의 <strong>부분</strong>(meronym)이지 <em>car</em>의 한 <strong>종류</strong>가 아닙니다. <em>page–book</em>, <em>petal–flower</em>도 meronymy입니다.",
+    "source": "wheel is a part of a car (meronymy), not a kind of car (hyponymy).",
+    "compare": [
+      {
+        "title": "Hyponymy",
+        "desc": "kind-of: sparrow는 bird의 종류"
+      },
+      {
+        "title": "Meronymy",
+        "desc": "part-of: wheel은 car의 부분"
+      }
+    ]
+  },
+  {
+    "src": "Prototype",
+    "cat": "graded typicality",
+    "text": "In prototype theory, every member of a category is an <span class='kw4'>equally typical</span> example of that category.",
+    "ans": false,
+    "correct": "모든 category member가 동등하게 전형적인 것은 아니다. Graded typicality와 membership 자체를 구별한다.",
+    "why": "어떤 화자에게 sparrow가 penguin보다 bird의 전형적인 예일 수 있습니다. 그렇다고 penguin이 bird인 사실이 약해지는 것은 아닙니다. 문항이 묻는 것은 각 member의 typicality가 동일한지 여부이며, 모든 범주의 membership이 반드시 흐릿하다는 주장과 다릅니다.",
+    "source": "Prototype theory: category members can differ in typicality; typicality is not identical to category membership."
+  },
+  {
+    "src": "Homonymy",
+    "cat": "unrelated senses",
+    "text": "<em>bank</em> 'edge of a river' and <em>bank</em> 'financial institution' have unrelated lexical meanings, so they are a case of <span class='kw1'>homonymy</span>.",
+    "ans": true,
+    "correct": "같은 form의 무관한 lexical meanings를 대비하므로 homonymy다.",
+    "why": "이 예문의 bank는 각각 강둑과 금융 기관을 뜻합니다. 사전의 별도 entry는 보조 정보이며 entry 수나 품사 차이 자체가 결정적 의미 진단은 아닙니다.",
+    "source": "Fromkin, Rodman & Hyams, An Introduction to Language, 10th ed., Ch.4: homonymy versus polysemy.",
+    "compare": [
+      {
+        "title": "Homonymy",
+        "desc": "동일 form·무관한 meanings"
+      },
+      {
+        "title": "Polysemy",
+        "desc": "서로 관련된 senses"
+      }
+    ]
+  },
+  {
+    "src": "Polysemy",
+    "cat": "related senses",
+    "text": "The <em>foot</em> in <em>the foot of the mountain</em> is related in meaning to the body-part <em>foot</em>, making this a case of <span class='kw1'>polysemy</span>.",
+    "ans": true,
+    "correct": "신체 부위인 foot과 산기슭을 뜻하는 foot은 아래쪽에서 받치는 부분이라는 의미로 연결되므로 polysemy다.",
+    "why": "두 senses의 관련성이 핵심입니다. 사전에서 흔히 함께 묶이지만 편집 방식이나 entry 수를 보편적인 판정법으로 삼지 않습니다.",
+    "source": "Polysemy involves conceptually or historically related meanings; dictionary layout alone is not the definition."
+  },
+  {
+    "src": "Homonymy",
+    "cat": "polysemy 혼동",
+    "text": "<em>bright</em> 'intelligent' and <em>bright</em> 'shining' have unrelated meanings, so the pair is a clear case of <span class='kw4'>homonymy</span>.",
+    "ans": false,
+    "correct": "두 의미는 관련됨(밝음 → 영리함의 은유적 연결) → <span class='kw2'>polysemy</span>이지 homonymy가 아니다.",
+    "why": "<em>bright</em>의 '빛나는'과 '영리한'은 은유적으로 연결된 관련 의미라 polysemy입니다. 의미가 무관할 때만 homonymy입니다. 의미의 관련성 여부가 둘을 가르는 핵심 기준입니다.",
+    "source": "bright 'intelligent'/'shining' are related senses → polysemy, not homonymy."
+  },
+  {
+    "src": "Entailment",
+    "cat": "truth-based definition",
+    "text": "In an <span class='kw1'>entailment</span> relation, if p is true then q must be true, and if q is false then p must be false.",
+    "ans": true,
+    "correct": "<span class='kw1'>entailment</span>의 정의: p 참 → q 참, q 거짓 → p 거짓.",
+    "why": "entailment는 진리값으로 정의됩니다: p가 참일 때 q가 반드시 참이고, q가 거짓일 때 p가 반드시 거짓이면 p가 q를 entail합니다. 이 관계는 어휘·통사 구조가 보장합니다.",
+    "source": "p entails q iff (p true → q true) and (q false → p false)."
+  },
+  {
+    "src": "Entailment",
+    "cat": "p-false 함정",
+    "text": "If p entails q, then whenever p is false, q must also be <span class='kw4'>false</span>.",
+    "ans": false,
+    "correct": "p가 거짓이라는 사실만으로 q도 거짓이라고 할 수 없다. 제시된 entailment 방향만으로는 그 결론이 보장되지 않는다.",
+    "why": "entailment는 p 참→q 참, q 거짓→p 거짓만 보장합니다. p가 거짓이라고 q가 거짓이 되는 것은 아닙니다. 예를 들어 <em>I bought a dog</em>(거짓)이라도 <em>I bought an animal</em>은 참일 수 있습니다(고양이를 샀을 경우).",
+    "source": "Fromkin, Rodman & Hyams, An Introduction to Language, 10th ed., Ch.4: p entails q excludes p true/q false; it does not license denying the antecedent."
+  },
+  {
+    "src": "Presupposition",
+    "cat": "constancy under negation",
+    "text": "On the ordinary background-preserving reading, <em>Liam stopped jogging</em> and <em>Liam didn't stop jogging</em> both presuppose that Liam had been jogging.",
+    "ans": true,
+    "correct": "stop의 ordinary reading에서는 이전에 조깅했다는 내용이 긍정문과 부정문 모두의 배경이다.",
+    "why": "부정은 조깅을 중단했는지에 적용되고, 이전에 조깅했다는 내용은 보통 배경으로 유지됩니다. 배경 자체를 명시적으로 거부하는 발화나 다른 embedding까지 자동으로 일반화하지 않습니다. Trigger와 문맥을 고정하고 constancy under negation을 확인합니다.",
+    "source": "Fromkin, Rodman & Hyams, An Introduction to Language, 10th ed., Ch.4: presupposition and ordinary negation.",
+    "compare": [
+      {
+        "title": "Entailment",
+        "desc": "p true/q false 반례 가능성 검사"
+      },
+      {
+        "title": "Presupposition",
+        "desc": "ordinary negation에서도 배경 유지"
+      }
+    ]
+  },
+  {
+    "src": "Presupposition",
+    "cat": "negation test 함정",
+    "text": "A <span class='kw1'>presupposition</span> disappears as soon as the sentence carrying it is <span class='kw4'>negated</span>.",
+    "ans": false,
+    "correct": "Ordinary negation은 보통 presupposition을 유지한다. Negation이 즉시 모든 presupposition을 없앤다는 주장은 틀리다.",
+    "why": "My car is damaged / My car is not damaged는 ordinary reading에서 car의 존재를 배경으로 둡니다. 단, 부정에서도 남는 모든 추론을 presupposition으로 분류하거나, entailment는 어떤 경우든 부정하면 사라진다고 기계적으로 외우지 않습니다.",
+    "source": "Presupposition is diagnosed using background assumptions and ordinary projection, not a universal negation-only classifier."
+  },
+  {
+    "src": "Paraphrase",
+    "cat": "mutual entailment",
+    "text": "With the same participants, time and literal reading, <em>The panel accepted the proposal</em> and <em>The proposal was accepted by the panel</em> do <span class='kw4'>not</span> entail each other.",
+    "ans": false,
+    "correct": "제시된 능동·수동쌍은 같은 truth conditions를 가지므로 mutual entailment다.",
+    "why": "누가 무엇을 받아들였는지가 두 문장에서 같습니다. 따라서 한 문장이 참이고 다른 문장이 거짓인 상황을 만들 수 없습니다. 이 예의 결론을 quantifier scope나 idiomatic reading이 달라지는 모든 능동·수동문에 무조건 확대하지 않습니다.",
+    "source": "Fromkin, Rodman & Hyams, An Introduction to Language, 10th ed., Ch.4: paraphrase as mutual entailment; fixed-reading active/passive comparison."
+  },
+  {
+    "src": "Ambiguity",
+    "cat": "structural (PP)",
+    "text": "<em>I saw the astronomer with the telescope</em> is structurally ambiguous, because the PP <em>with the telescope</em> can attach to either the NP or the VP.",
+    "ans": true,
+    "correct": "같은 단어열에 구성 구조(트리)가 둘 → <span class='kw1'>structural ambiguity</span> (PP attachment).",
+    "why": "structural ambiguity는 동일한 단어열에 둘 이상의 구성 구조가 배정되어 생깁니다. <em>with the telescope</em>가 NP(천문학자가 망원경 소지)에 붙거나 VP(망원경으로 봄)에 붙을 수 있어 두 해석이 나옵니다.",
+    "source": "PP-attachment ambiguity is structural — one string, two constituent structures."
+  },
+  {
+    "src": "Ambiguity",
+    "cat": "lexical 판별",
+    "text": "In \"They walked toward the bank,\" the noun bank can mean a financial institution or the edge of a river. This difference alone is an example of structural ambiguity.",
+    "ans": false,
+    "correct": "이 예문에서 bank의 두 명사 의미가 갈리는 것은 lexical ambiguity다. 두 해석을 위해 서로 다른 문장 구조를 설정할 필요가 없다.",
+    "why": "같은 품사의 bank가 서로 다른 뜻을 갖는 경우입니다. 다만 lexical ambiguity와 structural ambiguity가 항상 상호 배타적인 것은 아닙니다. He saw her duck처럼 품사와 구조가 함께 달라지는 예도 있습니다.",
+    "source": "Lexical ambiguity와 structural ambiguity를 구별하되 두 차이가 함께 나타날 수 있음을 인정한다. 이 문항은 같은 품사인 bank의 두 의미를 비교한다.",
+    "compare": [
+      {
+        "title": "Lexical",
+        "desc": "한 단어의 여러 sense"
+      },
+      {
+        "title": "Structural",
+        "desc": "한 단어열의 여러 트리"
+      }
+    ]
+  },
+  {
+    "src": "Thematic Roles",
+    "cat": "Agent / Instrument",
+    "text": "In <em>The thief broke the window with a brick</em>, <em>the thief</em> bears the <span class='kw1'>Agent</span> role and <em>a brick</em> bears the <span class='kw1'>Instrument</span> role.",
+    "ans": true,
+    "correct": "<em>the thief</em>=<span class='kw1'>Agent</span>(행위 주체), <em>a brick</em>=<span class='kw1'>Instrument</span>(수단).",
+    "why": "thematic role은 의미로 부여됩니다. 행위를 일으키는 <em>the thief</em>는 Agent, 그 수단인 <em>a brick</em>은 Instrument입니다. role은 grammatical function과 독립적입니다.",
+    "source": "Agent = instigator; Instrument = the means by which the action is carried out."
+  },
+  {
+    "src": "Thematic Roles",
+    "cat": "role independence",
+    "text": "Using Theme for an affected entity, as in this chapter, <em>the vase</em> is Theme in both <em>The vase broke</em> and <em>Tom broke the vase</em>, although it is subject in one and object in the other.",
+    "ans": true,
+    "correct": "같은 NP가 subject↔object로 위치가 바뀌어도 thematic role(<span class='kw1'>Theme</span>)은 유지된다.",
+    "why": "이 장은 Theme를 affected entity까지 포함하는 넓은 용법으로 사용합니다. 두 문장에서 vase는 같은 사건 속 관계를 유지하지만 surface function은 달라집니다. Role과 grammatical function이 같지 않다는 뜻이지 predicate meaning과 argument structure가 무관하다는 뜻은 아닙니다.",
+    "source": "Thematic role is assigned by meaning, independent of grammatical function.",
+    "compare": [
+      {
+        "title": "The vase broke",
+        "desc": "the vase = Theme (subject)"
+      },
+      {
+        "title": "Tom broke the vase",
+        "desc": "the vase = Theme (object)"
+      }
+    ]
+  },
+  {
+    "src": "Thematic Roles",
+    "cat": "Experiencer 함정",
+    "text": "In <em>Sarah feared the storm</em>, <em>Sarah</em> bears the <span class='kw4'>Agent</span> role.",
+    "ans": false,
+    "correct": "<em>Sarah</em>는 심리 상태를 겪는 <span class='kw2'>Experiencer</span>이지 Agent가 아니다.",
+    "why": "Agent는 행위를 능동적으로 일으키는 주체입니다. <em>fear</em>는 심리 상태를 나타내는 동사이고 <em>Sarah</em>는 그 상태를 경험하는 Experiencer입니다. 의도적 행위가 없으므로 Agent가 아닙니다.",
+    "source": "The subject of a psychological verb like fear is an Experiencer, not an Agent."
+  },
+  {
+    "src": "Thematic Roles",
+    "cat": "Goal 함정",
+    "text": "In <em>Noah handed the key to the guard</em>, <em>the guard</em> bears the <span class='kw4'>Source</span> role.",
+    "ans": false,
+    "correct": "<em>the guard</em>는 이동의 도착점이므로 <span class='kw2'>Goal</span>이다 — Source(출발점)가 아니다.",
+    "why": "이 문장에서 key의 도착 대상인 the guard는 Goal입니다. Source는 출발점이며 from the office 같은 예로 비교할 수 있습니다. 다만 전치사 형태만으로 모든 문장의 role을 결정하지 않고 predicate가 나타내는 관계를 확인해야 합니다.",
+    "source": "The endpoint of motion is the Goal; the Source is the starting point.",
+    "compare": [
+      {
+        "title": "Goal",
+        "desc": "도착점 (to the guard)"
+      },
+      {
+        "title": "Source",
+        "desc": "출발점 (from Madrid)"
+      }
+    ]
+  },
+  {
+    "src": "Semantic Features",
+    "cat": "componential analysis",
+    "text": "In the simplified matrix man=[+human,+adult,+male] and boy=[+human,−adult,+male], the two entries differ only in the value of [±adult].",
+    "ans": true,
+    "correct": "제시된 세 가지 feature의 표에서는 [adult] 값만 다르다.",
+    "why": "[human]과 [male] 값은 같고 [adult]만 다릅니다. 이것은 명시된 matrix를 비교하는 문항이며 모든 lexical sense·connotation이나 사람의 정체성을 이 세 feature로 완전히 표현한다는 주장이 아닙니다.",
+    "source": "Componential analysis compares selected lexical senses within an explicitly stated feature matrix."
+  },
+  {
+    "src": "Truth Conditions",
+    "cat": "analytic sentence",
+    "text": "<em>A bachelor is unmarried</em> is an <span class='kw1'>analytic sentence</span> — true solely by virtue of the meanings of its words.",
+    "ans": true,
+    "correct": "<em>A bachelor is unmarried</em>는 단어 의미만으로 필연적으로 참 → <span class='kw1'>analytic sentence</span>.",
+    "why": "analytic sentence는 세계를 확인하지 않고 단어 의미만으로 참이 보장되는 문장입니다. <em>bachelor</em>의 의미 자체가 '결혼하지 않은'을 포함하므로 필연적으로 참입니다. <em>A triangle has three sides</em>도 같습니다.",
+    "source": "An analytic sentence is necessarily true by virtue of word meanings.",
+    "compare": [
+      {
+        "title": "Analytic",
+        "desc": "단어 의미만으로 필연적 참"
+      },
+      {
+        "title": "Synthetic",
+        "desc": "세계 상태로 참·거짓 판정"
+      }
+    ]
+  },
+  {
+    "src": "Truth Conditions",
+    "cat": "synthetic 함정",
+    "text": "<em>The mayor owns three cars</em> is an <span class='kw4'>analytic sentence</span>, true purely by virtue of word meanings.",
+    "ans": false,
+    "correct": "세계 상태를 확인해야 참·거짓을 알 수 있으므로 <span class='kw2'>synthetic sentence</span>이지 analytic이 아니다.",
+    "why": "synthetic sentence는 단어 의미만으로 진리값이 정해지지 않고 세계의 실제 상태에 따라 참·거짓이 결정됩니다. 시장이 차를 세 대 소유했는지는 현실을 확인해야 알 수 있으므로 synthetic입니다.",
+    "source": "A sentence whose truth depends on the state of the world is synthetic, not analytic."
+  }
 ];
 
 const TOTAL=Q.length;
-const SAVE_KEY='linguistics_semantics_quiz_v1';
+const SAVE_KEY='linguistics_semantics_quiz_v2';
 let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
 function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
 function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
 function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}catch(e){/* Keep the quiz usable when storage is unavailable or full. */}}
-function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){/* Storage can be disabled. */}}
 function getScore(){return answers.filter(a=>a&&a.correct).length;}
 function renderNav(){
   document.getElementById('nav').innerHTML=answers.map((_,i)=>{
@@ -460,7 +598,16 @@ function pick(val){
 function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
 function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
 (function(){
-  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
+  let saved=null;
+  try { saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null'); } catch(e) { saved=null; }
+  const valid=saved && Number.isInteger(saved.cur) && saved.cur>=0 && saved.cur<TOTAL
+    && ['normal','random'].includes(saved.mode)
+    && Array.isArray(saved.answers) && saved.answers.length===TOTAL
+    && saved.answers.every(a=>a===null||(a&&typeof a.picked==='boolean'&&typeof a.correct==='boolean'))
+    && Array.isArray(saved.order) && saved.order.length===TOTAL && new Set(saved.order).size===TOTAL
+    && saved.order.every(i=>Number.isInteger(i)&&i>=0&&i<TOTAL);
+  if(!valid) saved=null;
+  if(saved) saved.answers=saved.answers.map((a,i)=>a===null?null:{picked:a.picked,correct:a.picked===Q[saved.order[i]].ans});
   if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
     cur=saved.cur;answers=saved.answers;
     if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
@@ -476,3 +623,4 @@ function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();doc
 <script src="./study-return.js" data-hub-label="영어학 허브"></script>
 </body>
 </html>
+

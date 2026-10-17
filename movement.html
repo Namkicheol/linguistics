@@ -172,14 +172,14 @@ const Q=[
    text:"D-structure and S-structure are always identical for any grammatical sentence because movement rules are optional.",
    ans:false,
    correct:"D-structure와 S-structure가 같은 것은 movement가 전혀 적용되지 않는 경우뿐이다.",
-   why:"active declarative 문장(예: <em>The assistant wrote the report.</em>)처럼 movement가 적용되지 않는 경우에만 D-structure와 S-structure가 일치합니다. passive, questions 등에서는 움직임이 있어 두 층위가 달라집니다.",
+   why:"관련 movement transformation이 하나도 적용되지 않은 경우에만 두 representation이 일치합니다. active declarative라는 사실만으로 movement가 없다고 판단하면 안 됩니다. TG §8.2의 V-to-I 분석에서는 finite lexical V의 head movement도 따져야 합니다.",
    source:"D-structure and S-structure coincide only when no movement transformation applies."},
 
   /* ── ② V-movement ──────────────────────────────────────── */
   {src:"V-movement",cat:"V-to-I · finite clause",
-   text:"When there is no Modal in I and I is empty, the finite V of the VP raises to the empty I position by <span class='kw1'>V-to-I Movement</span>, acquiring Tense and Agreement features from I.",
+   text:"Under the V-to-I analysis introduced in TG §8.2, when finite I has no lexical occupant, the finite V of the VP raises to the empty I position by <span class='kw1'>V-to-I Movement</span>, acquiring Tense and Agreement features from I.",
    ans:true,
-   correct:"Modal이 없을 때 V가 I로 이동해 Tense/Agreement를 얻는다. 이것이 <span class='kw1'>V-to-I Movement</span>다.",
+   correct:"TG §8.2에서 소개하는 V-to-I 분석에서는 Modal이 없고 finite I가 lexically empty일 때 V가 I로 이동해 Tense/Agreement를 얻는다. 이것이 <span class='kw1'>V-to-I Movement</span>다.",
    why:"Modal이 I를 채우면 V는 VP head에 남습니다. Modal이 없을 때 I는 비어 있고, Tense/Agreement feature를 VP의 V에 전달해야 합니다. V-movement 분석에서는 V가 I로 올라가 이 features를 얻습니다.",
    source:"When I is empty of a Modal, V raises to I to acquire Tense/Agreement under the V-movement analysis.",
    compare:[{title:"Modal 있음",desc:"Modal in I; V stays in VP"},{title:"Modal 없음",desc:"V raises to empty I"}]},
@@ -195,7 +195,7 @@ const Q=[
    text:"V-movement is said to apply <span class='kw2'>vacuously</span> in English because I and V are adjacent, so whether V moves to I or I affixes move to V produces the same surface word order.",
    ans:true,
    correct:"영어에서 I와 V가 인접하므로 V-movement는 표면 어순에 observable한 변화를 만들지 않는다 — 따라서 <span class='kw2'>vacuous application</span>이라 한다.",
-   why:"Koopman(1984)이 제시한 논점으로, 영어에서는 두 분석의 차이를 word order로 판별할 수 없습니다. 비인접 언어(예: Vata)에서는 V-movement가 명시적 word-order 변화를 만들어 증거를 제공합니다.",
+   why:"Koopman(1984)이 제시한 논점으로, I와 V가 인접한 이 단순 예문의 어순만으로는 두 분석을 판별할 수 없습니다. 비인접 언어(예: Vata)에서는 V-movement가 명시적 word-order 변화를 만들어 증거를 제공합니다.",
    source:"In English, V-movement applies vacuously; cross-linguistic evidence from V-I non-adjacent languages distinguishes the analyses."},
 
   {src:"V-movement",cat:"affix movement · comparison",
@@ -226,21 +226,21 @@ const Q=[
    text:"The sentence <span class='kw4'>*Will she could leave?</span> is ungrammatical because after I-to-C moves <em>will</em> to C, the vacated I position cannot be refilled by another Modal.",
    ans:true,
    correct:"I-to-C 적용 후 남겨진 I 위치는 다른 Modal로 채울 수 없다 — no-refilling condition.",
-   why:"이것이 I-to-C 분석의 핵심 증거인 gap argument입니다. I 위치는 originally <em>will</em>로 채워져 있었고, <em>will</em>이 C로 이동한 후 그 자리는 비어 있습니다. <em>could</em>로 재채움하면 subcategorization violation이 발생합니다.",
+   why:"이것이 I-to-C 분석의 핵심 증거인 gap argument입니다. I 위치에는 원래 <em>will</em>이 있었고, <em>will</em>이 C로 이동한 후 그 자리는 비어 있습니다. <em>could</em>를 다시 넣으면 subcategorization violation이 발생합니다.",
    source:"The no-refilling convention prevents another Modal from occupying the gap left in I after I-to-C movement."},
 
   {src:"I-to-C",cat:"direct vs indirect question",
    text:"I-to-C movement applies in indirect questions as well as direct questions, producing auxiliary inversion in both structures.",
    ans:false,
-   correct:"I-to-C는 직접의문문에만 적용된다. 간접의문문에서는 C가 이미 채워져 있어 I-to-C가 적용되지 않는다.",
+   correct:"표준 영어의 embedded question에서는 subject–auxiliary inversion이 일어나지 않는다. overt complementizer가 없는 embedded wh-question도 이 패턴을 따른다.",
    why:"<em>I wonder if she will stay.</em>에서 C는 <em>if</em>가 채우고 있어 Modal이 이동할 자리가 없습니다. <em>*I wonder will she stay</em>가 비문인 이유입니다.",
-   source:"I-to-C applies only in direct questions; in indirect questions C is already filled by a complementizer.",
+   source:"In standard embedded questions inversion does not occur; this is not proof that every embedded C contains an overt complementizer.",
    compare:[{title:"Direct Q",desc:"I-to-C 적용: Can she leave? → C=can"},{title:"Indirect Q",desc:"I-to-C 불가: I wonder if she can leave. (C=if)"}]},
 
   {src:"I-to-C",cat:"I-to-C · filled C",
-   text:"In the indirect question \"She asked whether he had finished the assignment,\" I-to-C movement does not apply because the C position is already occupied by <em>whether</em>.",
+   text:"In the indirect question \"She asked if he had finished the assignment,\" I-to-C movement does not apply because the C position is already occupied by <em>if</em>.",
    ans:true,
-   correct:"C가 <em>whether</em>로 채워져 있으면 I-to-C Movement가 적용될 수 없다.",
+   correct:"C가 <em>if</em>로 채워져 있으면 I-to-C Movement가 적용될 수 없다.",
    why:"I-to-C의 landing site는 empty C입니다. C가 already lexicalized된 경우 inversion은 불가능합니다. 따라서 간접의문문의 word order는 declarative word order와 동일합니다.",
    source:"I-to-C requires an empty C; a filled C blocks inversion."},
 
@@ -289,10 +289,10 @@ const Q=[
    source:"The gap left in object position after passive NP-movement cannot be refilled by another lexical NP."},
 
   {src:"NP-movement (Passive)",cat:"idiom chunk · passive",
-   text:"Idiom chunk NPs such as <em>tabs</em> can appear as the subjects of passive sentences (e.g., <em>Tabs were kept on all visitors</em>), which supports the claim that idiom chunk NPs originate in object position at D-structure.",
+   text:"Some idiom chunk NPs such as <em>tabs</em> can appear as the subjects of passive sentences (e.g., <em>Tabs were kept on all visitors</em>), which supports the claim that idiom chunk NPs originate in object position at D-structure.",
    ans:true,
    correct:"passive subject로 idiom chunk가 나타날 수 있다 → D-structure에서 verb 바로 뒤 object 위치에 base-generated됨을 지지하는 증거.",
-   why:"idiom chunk NP는 특정 동사 바로 뒤에만 허용됩니다. passive subject로 등장할 수 있다는 것은 D-structure에서 그 NP가 V 뒤 object position에 있었음을 의미합니다.",
+   why:"이 idiom의 NP는 D-structure에서 해당 predicate의 complement 관계를 유지합니다. passive subject로 등장할 수 있다는 것은 D-structure에서 그 NP가 V 뒤 object position에 있었음을 의미합니다.",
    source:"Idiom chunk NPs as passive subjects confirm their D-structure object origin, supporting NP-movement analysis."},
 
   {src:"NP-movement (Passive)",cat:"adjectival vs verbal passive",
@@ -308,11 +308,11 @@ const Q=[
    ans:true,
    correct:"<span class='kw4'>Case Filter</span>가 NP-movement의 근본 동기다.",
    why:"passive morphology가 V의 acc Case 부여 능력을 제거하면, object NP는 acc Case를 받지 못해 Case Filter를 위반합니다. 이를 피하기 위해 NP가 nominative Case를 받을 수 있는 Spec,IP로 이동합니다.",
-   source:"The Case Filter (*NP without Case) motivates passive NP-movement to a Case-marked subject position. (2025 1차 A-7 출제 각도)"},
+   source:"The Case Filter (*NP without Case) motivates passive NP-movement to a Case-marked subject position."},
 
   /* ── ⑤ NP-movement: Raising ────────────────────────────── */
   {src:"NP-movement (Raising)",cat:"raising verb · no theta-role",
-   text:"<span class='kw1'>Raising verbs</span> like <em>seem</em> and <em>appear</em> do not assign a theta-role to their surface subjects; the surface subject receives its only theta-role from the embedded predicate.",
+   text:"<span class='kw1'>Raising verbs</span> like <em>seem</em> and <em>appear</em> do not assign a theta-role to their surface subjects; a referential surface subject receives its theta-role from the embedded predicate (expletives have no theta-role).",
    ans:true,
    correct:"<span class='kw1'>raising verb</span>는 matrix subject에 theta-role을 부여하지 않는다. subject의 theta-role은 embedded predicate에서 온다.",
    why:"이것이 raising verb를 정의하는 핵심입니다. <em>The plan seems to be feasible</em>에서 <em>the plan</em>의 theta-role(theme/patient)은 <em>feasible</em>에서 옵니다. <em>seem</em>은 theta-role을 부여하지 않습니다.",
@@ -335,10 +335,10 @@ const Q=[
    compare:[{title:"Raising",desc:"There seem to be problems. ✓"},{title:"Control",desc:"*There want to be problems. ✗"}]},
 
   {src:"NP-movement (Raising)",cat:"idiom chunk · raising",
-   text:"The grammaticality of <em>Tabs tend to be kept on new arrivals</em> is evidence that <em>tend</em> is a raising verb, because idiom chunk NPs can surface as subjects only of raising verbs.",
+   text:"The grammaticality of <em>Tabs tend to be kept on new arrivals</em> is evidence that <em>tend</em> is a raising verb, because the idiomatic interpretation survives with a matrix predicate that assigns no subject theta-role.",
    ans:true,
    correct:"idiom chunk NP(<em>tabs</em>)가 raising verb의 subject로 나타날 수 있다 → raising 증거.",
-   why:"idiom chunk NP는 의미적 자유도가 없습니다. control verb는 subject에 의미역을 부여해 idiom chunk의 고정성을 깨므로, idiom chunk subject는 허용되지 않습니다. raising verb는 theta-role을 부여하지 않으므로 idiom chunk가 subject로 올 수 있습니다.",
+   why:"idiom chunk NP는 의미적 자유도가 없습니다. control verb는 subject에 의미역을 부여해 idiom chunk의 고정성을 깨므로, 이 예문의 idiomatic reading이 유지되지 않습니다. literal reading의 가능성과는 별개입니다. raising verb는 theta-role을 부여하지 않으므로 idiom chunk가 subject로 올 수 있습니다.",
    source:"Idiom chunk subjects are permitted with raising verbs because raising verbs don't select for the thematic content of the subject."},
 
   {src:"NP-movement (Raising)",cat:"control verb · theta-role",
@@ -374,9 +374,9 @@ const Q=[
   {src:"Wh-movement",cat:"direct wh-question · I-to-C + WH",
    text:"In a direct wh-question like \"What has the inspector examined t?\", both WH MOVEMENT and I-to-C movement apply: the wh-phrase moves to Spec,CP and the auxiliary moves to C.",
    ans:true,
-   correct:"직접 wh-의문문에서 <span class='kw1'>WH MOVEMENT</span>와 <span class='kw1'>I-to-C</span>가 동시에 적용된다.",
+   correct:"이 object wh-question에서 <span class='kw1'>WH MOVEMENT</span>와 <span class='kw1'>I-to-C</span>가 동시에 적용된다.",
    why:"Spec,CP는 wh-phrase의 자리이고 C는 inverted auxiliary(I-to-C 적용)의 자리입니다. 두 자리가 다르므로 두 movement가 동시에 적용될 수 있습니다.",
-   source:"Direct wh-questions involve simultaneous WH MOVEMENT (to Spec,CP) and I-to-C movement (to C)."},
+   source:"The illustrated direct object wh-question involves WH MOVEMENT (to Spec,CP) and I-to-C movement (to C); ordinary subject wh-questions do not require subject–auxiliary inversion."},
 
   {src:"Wh-movement",cat:"indirect question · no I-to-C",
    text:"In the indirect question \"They asked which project the committee had chosen t\", I-to-C movement applies because the question is embedded under a matrix verb.",
@@ -436,13 +436,13 @@ const Q=[
    ans:true,
    correct:"<span class='kw4'>Subjacency</span>: movement이 한 번에 두 개 이상의 bounding node(IP, NP)를 교차하면 비문이 된다.",
    why:"영어에서 bounding node는 IP(= TP, S)와 NP입니다. long movement는 intermediate Spec,CP를 경유하는 successive cyclic movement로 처리되어 각 단계마다 하나의 bounding node만 교차합니다.",
-   source:"Subjacency prohibits crossing more than one bounding node per movement step; in English, bounding nodes are IP and NP. (2025 1차 B-5 출제)"},
+   source:"Subjacency prohibits crossing more than one bounding node per movement step; in English, bounding nodes are IP and NP."},
 
   {src:"Subjacency",cat:"complex NP island",
    text:"The sentence <span class='kw4'>*Which report did she meet a professor who had reviewed t?</span> is ungrammatical because extraction from a complex NP (relative clause) crosses more than one bounding node, violating Subjacency.",
    ans:true,
    correct:"relative clause(complex NP) 내부에서 wh-phrase 추출 → complex NP island 위반 → Subjacency 위반 → 비문.",
-   why:"<em>[NP a professor [CP who had reviewed t]]</em>에서 <em>which report</em>를 추출하면 NP와 CP(IP) 두 개의 bounding node를 교차합니다. Subjacency 위반으로 비문이 됩니다.",
+   why:"<em>[NP a professor [CP who had reviewed t]]</em>에서 <em>which report</em>를 추출하면 NP와 IP 두 개의 bounding node를 교차합니다. Subjacency 위반으로 비문이 됩니다.",
    source:"Extraction from a complex NP (relative clause or noun complement) crosses two bounding nodes and violates Subjacency."},
 
   {src:"Subjacency",cat:"subject island",
@@ -450,13 +450,13 @@ const Q=[
    ans:true,
    correct:"NP subject 내부에서 추출 → subject island(Subject Condition) 위반 → Subjacency 위반 → 비문.",
    why:"<em>[NP pictures of t]</em>는 matrix subject 위치에 있습니다. 이 NP 내부에서 wh-phrase를 추출하면 NP와 IP를 동시에 교차하여 Subjacency를 위반합니다. 이것이 subject island constraint입니다.",
-   source:"Subject Island (Subject Condition): extraction from inside an NP subject violates Subjacency by crossing two bounding nodes. (2025 1차 B-5 출제)"},
+   source:"Subject Island (Subject Condition): extraction from inside an NP subject violates Subjacency by crossing two bounding nodes."},
 
   {src:"Subjacency",cat:"wh-island",
-   text:"In the sentence <span class='kw4'>*What does he wonder who bought t?</span>, the extraction of <em>what</em> from an embedded wh-clause is grammatical because wh-phrases can always move to the matrix Spec,CP.",
+   text:"In the sentence <span class='kw4'>*How does she wonder which lock he opened t?</span>, the extraction of manner <em>how</em> from the embedded <em>opened</em> clause is grammatical because wh-phrases can always move to the matrix Spec,CP.",
    ans:false,
    correct:"embedded wh-clause 내부에서 다른 wh-phrase를 추출하면 <span class='kw3'>wh-island</span> 위반 → 비문.",
-   why:"<em>who bought what</em>에서 <em>what</em>을 추출하려면 embedded CP(이미 <em>who</em>가 Spec,CP를 채운)를 교차해야 합니다. 이 embedded CP는 bounding node 역할을 하여 Subjacency 위반을 만들어 냅니다.",
+   why:"<em>how</em>를 embedded <em>opened</em>의 manner로 해석할 때, embedded Spec,CP는 <em>which lock</em>으로 이미 채워져 있습니다. 중간 Spec,CP를 이용할 수 없어 한 단계에서 embedded IP와 matrix IP를 교차합니다. 여기서 bounding node는 CP가 아니라 IP와 NP입니다.",
    source:"Wh-island constraint: extraction from an embedded wh-clause is blocked because the filled Spec,CP of the embedded clause acts as an island barrier."},
 
   {src:"Subjacency",cat:"successive cyclic movement",
@@ -468,14 +468,14 @@ const Q=[
 ];
 
 const TOTAL=Q.length;
-const SAVE_KEY='linguistics_movement_quiz_v1';
+const SAVE_KEY='linguistics_movement_quiz_v2';
 let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
 function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
 function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
 function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}catch(e){/* Keep the quiz usable when storage is unavailable or full. */}}
-function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){}}
 function getScore(){return answers.filter(a=>a&&a.correct).length;}
 function renderNav(){
   document.getElementById('nav').innerHTML=answers.map((_,i)=>{
@@ -497,7 +497,7 @@ function renderExp(q,isCorrect){
     <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
     <div class="exp-body">
       <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
-      <div class="sec-label">📌 Source</div>
+      <div class="sec-label">📌 개념 근거 요약 (원문 인용 아님)</div>
       <div class="def-box"><p>${q.source}</p></div>
       ${cmp}
     </div>
@@ -575,10 +575,17 @@ function pick(val){
 function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
 function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
 (function(){
-  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
-  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
-    cur=saved.cur;answers=saved.answers;
-    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+  let saved=null;
+  try { saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null'); } catch(e) {}
+  const valid=saved && Number.isInteger(saved.cur) && saved.cur>=0 && saved.cur<TOTAL
+    && Array.isArray(saved.answers) && saved.answers.length===TOTAL
+    && saved.answers.every(a=>a===null||(a&&typeof a.picked==='boolean'&&typeof a.correct==='boolean'))
+    && ['normal','random'].includes(saved.mode) && Array.isArray(saved.order)
+    && saved.order.length===TOTAL && new Set(saved.order).size===TOTAL
+    && saved.order.every(i=>Number.isInteger(i)&&i>=0&&i<TOTAL);
+  if(valid){
+    cur=saved.cur; mode=saved.mode; order=saved.order;
+    answers=saved.answers.map((a,i)=>a===null?null:{picked:a.picked,correct:a.picked===Q[order[i]].ans});
     const done=answers.filter(a=>a!==null).length;
     if(done>0){
       document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
@@ -591,3 +598,4 @@ function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();doc
 <script src="./study-return.js" data-hub-label="영어학 허브"></script>
 </body>
 </html>
+

@@ -110,8 +110,8 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
   <a href="./index.html">영어학 허브</a><a href="./morphology_study.html">개념 학습</a><a href="https://etwiki.net/index.html">기출 WIKI</a><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a><a href="https://etwiki.net/keyterm-quiz.html">영교론 키텀</a>
 </nav>
 <div class="prog-wrap">
-  <div class="prog-info"><span id="pt">1 / 28</span><span id="ps">정답 0개</span></div>
-  <div class="bar"><div class="bar-fill" id="bf" style="width:3.6%"></div></div>
+  <div class="prog-info"><span id="pt">1 / 30</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:3.3%"></div></div>
 </div>
 <div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
   <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
@@ -127,7 +127,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 <div class="wrap">
   <div id="qa"></div>
   <div class="score-card" id="sc">
-    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/28</span></div>
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total">/30</span></div>
     <h2 id="rm"></h2><p id="rs"></p>
     <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
   </div>
@@ -136,229 +136,377 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 <script src="./sounds.js"></script>
 <script>
 const Q=[
-
-  /* ── ① Morpheme — free/bound ───────────────────────────── */
-  {src:"Morpheme",cat:"definition",
-   text:"A <span class='kw1'>bound morpheme</span> cannot stand alone as a word and must attach to another form, as with <em>-ness</em> in <em>brightness</em> or <em>re-</em> in <em>reopen</em>.",
-   ans:true,
-   correct:"<span class='kw1'>bound morpheme</span>의 정의로 정확하다 — 단독 단어로 설 수 없고 다른 형태에 붙어야 한다.",
-   why:"bound morpheme은 혼자 단어가 되지 못하고 반드시 base에 부착됩니다. <em>-ness</em>·<em>re-</em>처럼 모든 affix가 여기에 속합니다. 반대로 <em>bright</em>·<em>open</em>은 단독으로 설 수 있는 free morpheme입니다.",
-   source:"A bound morpheme cannot stand alone and must attach to another form (e.g., -ness, re-).",
-   compare:[{title:"Free morpheme",desc:"bright, open — 단독 단어 가능"},{title:"Bound morpheme",desc:"-ness, re- — 부착 필수"}]},
-
-  {src:"Morpheme",cat:"affixes are bound",
-   text:"In English, every affix — both <span class='kw1'>prefixes</span> and <span class='kw1'>suffixes</span> — is a bound morpheme.",
-   ans:true,
-   correct:"영어의 모든 affix(prefix·suffix)는 <span class='kw2'>bound morpheme</span>이다.",
-   why:"영어에서 affix는 prefix이든 suffix이든 단독으로 단어가 될 수 없어 항상 base에 붙어야 합니다. 따라서 모든 affix는 정의상 bound morpheme입니다.",
-   source:"All affixes (prefixes and suffixes) in English are bound morphemes."},
-
-  {src:"Morpheme",cat:"definition trap",
-   text:"A morpheme is best defined as <span class='kw4'>the smallest unit that can always stand alone as an independent word</span>.",
-   ans:false,
-   correct:"morpheme은 의미·문법 기능의 <span class='kw2'>최소 단위</span>일 뿐이며, bound morpheme은 단독으로 설 수 없다.",
-   why:"morpheme은 minimal unit of meaning or grammatical function으로 정의됩니다. 단독으로 설 수 있는 것은 free morpheme에 한정되며, <em>-ed</em>·<em>un-</em> 같은 bound morpheme은 독립 단어가 될 수 없습니다.",
-   source:"A morpheme is the minimal unit of meaning/function; bound morphemes cannot stand alone."},
-
-  /* ── ② Inflection vs Derivation ────────────────────────── */
-  {src:"Inflection",cat:"inventory · suffix",
-   text:"English has exactly <span class='kw1'>eight inflectional morphemes</span>, and all of them are suffixes.",
-   ans:true,
-   correct:"영어 inflection은 정확히 <span class='kw2'>8개</span>이며 모두 suffix다.",
-   why:"영어의 8 inflections는 noun <em>-'s</em>(possessive)·<em>-s</em>(plural), verb <em>-s</em>(3sg)·<em>-ing</em>·<em>-ed</em>·<em>-en</em>, adjective <em>-er</em>(comparative)·<em>-est</em>(superlative)이며, 모두 suffix입니다. inflectional prefix는 없습니다.",
-   source:"English has exactly 8 inflectional morphemes, all suffixes.",
-   compare:[{title:"Noun",desc:"-'s, -s"},{title:"Verb · Adj",desc:"-s, -ing, -ed, -en / -er, -est"}]},
-
-  {src:"Inflection",cat:"category-preserving",
-   text:"An <span class='kw1'>inflectional morpheme</span> never changes the grammatical category of the word it attaches to.",
-   ans:true,
-   correct:"inflection은 <span class='kw2'>category-preserving</span> — 품사를 절대 바꾸지 않는다.",
-   why:"inflection은 수·시제·비교·소유 같은 문법 기능만 표시하고 품사를 유지합니다. <em>walk → walks/walked/walking</em>은 모두 verb로 남고, <em>tall → taller/tallest</em>는 모두 adjective입니다.",
-   source:"Inflection is category-preserving; it never changes the part of speech."},
-
-  {src:"Derivation",cat:"class-changing suffix",
-   text:"The suffix <em>-ize</em> in <em>standardize</em> is a <span class='kw1'>class-changing</span> derivational affix.",
-   ans:true,
-   correct:"<em>-ize</em>는 품사를 바꾸는 <span class='kw2'>class-changing</span> derivational suffix다 (A/N→V).",
-   why:"<em>standard</em>(N/A) + <em>-ize</em> → <em>standardize</em>(V)로 품사가 바뀝니다. 이렇게 새 단어를 만들고 품사를 바꾸는 affix는 derivational이며, 그중 품사를 바꾸는 것을 class-changing이라 합니다.",
-   source:"-ize is a class-changing derivational suffix (N/A → V)."},
-
-  {src:"Inflection",cat:"-er homophony trap",
-   text:"The <em>-er</em> in <em>painter</em> is an <span class='kw4'>inflectional</span> morpheme, just like the <em>-er</em> in <em>shorter</em>.",
-   ans:false,
-   correct:"<em>painter</em>의 <em>-er</em>는 agentive <span class='kw2'>derivational</span>(V→N)이고, <em>shorter</em>의 <em>-er</em>는 comparative inflection이다 — 동음이지만 다른 morpheme.",
-   why:"<em>paint</em>(V) + agentive <em>-er</em> → <em>painter</em>(N)는 품사를 바꾸는 derivation입니다. 반면 <em>short</em> → <em>shorter</em>의 <em>-er</em>는 comparative inflection(adj→adj)으로 품사를 유지합니다. 형태는 같아도 서로 다른 morpheme입니다.",
-   source:"Agentive -er (painter) is derivational (V→N); comparative -er (shorter) is inflectional.",
-   compare:[{title:"derivational -er",desc:"painter (V→N), agentive"},{title:"inflectional -er",desc:"shorter (adj), comparative"}]},
-
-  {src:"Inflection",cat:"un- is not inflection",
-   text:"The <em>un-</em> in <em>unfriendly</em> is an <span class='kw4'>inflectional prefix</span>.",
-   ans:false,
-   correct:"<em>un-</em>는 <span class='kw2'>derivational</span> prefix다. 영어 inflection에는 prefix가 없다(모두 suffix).",
-   why:"영어의 inflection 8개는 모두 suffix이므로 inflectional prefix는 존재하지 않습니다. <em>un-</em>는 새 단어를 만드는 derivational prefix(adj→adj)입니다.",
-   source:"English has no inflectional prefixes; un- is derivational."},
-
-  {src:"Inflection",cat:"count trap",
-   text:"English has <span class='kw4'>twelve inflectional morphemes</span>, several of which are prefixes.",
-   ans:false,
-   correct:"영어 inflection은 <span class='kw2'>8개</span>이며 모두 suffix다 — prefix는 하나도 없다.",
-   why:"영어의 inflection은 정확히 8개이고 전부 suffix입니다. '12개'·'prefix 포함'은 모두 틀린 진술입니다.",
-   source:"English has exactly 8 inflections, all suffixes — none are prefixes."},
-
-  /* ── ③ Word-formation processes ────────────────────────── */
-  {src:"Conversion",cat:"zero-derivation",
-   text:"In <em>They will salt the soup</em>, <em>salt</em> is formed by <span class='kw1'>conversion (zero-derivation)</span>, with no affix added.",
-   ans:true,
-   correct:"<em>salt</em>(N→V)는 affix 없이 품사만 바뀐 <span class='kw2'>conversion</span>의 예다.",
-   why:"명사 <em>salt</em>를 동사로 그대로 쓰는 것은 affix를 더하지 않고 품사만 바꾸는 conversion(zero-derivation, functional shift)입니다. 형태 변화 없이 syntactic category만 바뀝니다.",
-   source:"Conversion assigns a word to a new category without adding an affix (N→V salt)."},
-
-  {src:"Blending",cat:"process ID",
-   text:"<em>Smog</em>, from <em>smoke</em> + <em>fog</em>, is formed by <span class='kw1'>blending</span>.",
-   ans:true,
-   correct:"<em>smog</em>는 두 단어의 비형태소적 조각을 합친 <span class='kw2'>blending</span>이다.",
-   why:"blending은 두 단어의 non-morphemic 조각(보통 앞 단어 앞부분 + 뒤 단어 뒷부분)을 결합합니다. <em>smoke</em>의 앞부분과 <em>fog</em>의 뒷부분이 합쳐져 <em>smog</em>가 됩니다.",
-   source:"Blending combines non-morphemic parts of two words (smoke + fog → smog)."},
-
-  {src:"Backformation",cat:"process ID",
-   text:"<em>Edit</em> was created from <em>editor</em> by <span class='kw1'>backformation</span>.",
-   ans:true,
-   correct:"<em>edit</em>은 <em>editor</em>에서 추정 affix를 떼어 만든 <span class='kw2'>backformation</span>이다.",
-   why:"backformation은 실제 또는 추정 affix를 제거해 새 단어를 만드는 과정입니다. <em>editor</em>를 '<em>edit</em> + 행위자 <em>-or</em>'로 재분석해 동사 <em>edit</em>을 만들어낸 것이 그 예입니다.",
-   source:"Backformation removes a (supposed) affix (editor → edit)."},
-
-  {src:"Clipping",cat:"clipping vs blending",
-   text:"<em>Brunch</em> (from <em>breakfast</em> + <em>lunch</em>) is formed by <span class='kw4'>clipping</span>.",
-   ans:false,
-   correct:"<em>brunch</em>는 두 단어 조각을 섞은 <span class='kw2'>blending</span>이다. clipping은 한 단어를 줄이는 것이다.",
-   why:"clipping은 한 다음절 단어의 음절을 잘라내는 것입니다(<em>professor → prof</em>). <em>brunch</em>는 <em>breakfast</em>와 <em>lunch</em> 두 단어의 조각을 합친 것이므로 blending입니다.",
-   source:"brunch (breakfast+lunch) is blending, not clipping (clipping shortens one word).",
-   compare:[{title:"Clipping",desc:"한 단어 줄임: advertisement → ad"},{title:"Blending",desc:"두 단어 조각: breakfast+lunch → brunch"}]},
-
-  {src:"Acronym",cat:"acronym vs initialism",
-   text:"<em>FBI</em>, pronounced as separate letters, is an <span class='kw4'>acronym</span>.",
-   ans:false,
-   correct:"글자를 따로 읽으면 <span class='kw2'>initialism</span>이다. acronym은 머리글자를 단어처럼 발음한다(<em>NATO</em>).",
-   why:"acronym은 구의 머리글자를 한 단어처럼 발음하는 것입니다(<em>NATO</em>, <em>radar</em>). <em>FBI</em>처럼 글자를 하나하나 따로 읽으면 initialism(abbreviation)입니다.",
-   source:"Acronym = letters pronounced as a word (NATO); FBI (separate letters) is an initialism.",
-   compare:[{title:"Acronym",desc:"NATO, laser — 단어처럼 발음"},{title:"Initialism",desc:"FBI, USA — 글자 따로 발음"}]},
-
-  {src:"Conversion",cat:"conversion vs derivation",
-   text:"<em>Standardize</em> is an example of <span class='kw4'>conversion (zero-derivation)</span>.",
-   ans:false,
-   correct:"<em>standardize</em>는 suffix <em>-ize</em>를 더한 <span class='kw2'>derivation</span>이지 conversion이 아니다.",
-   why:"conversion은 affix를 더하지 않고 품사만 바꾸는 것입니다. <em>standardize</em>는 <em>-ize</em>라는 derivational suffix가 추가되었으므로 derivation에 해당합니다.",
-   source:"standardize adds -ize → derivation, not conversion (no affix)."},
-
-  {src:"Compounding",cat:"derivation vs compounding",
-   text:"<em>Loveseat</em> (love + seat) is formed by <span class='kw4'>derivation</span>.",
-   ans:false,
-   correct:"<em>loveseat</em>은 두 free word를 합친 <span class='kw2'>compounding</span>이다. derivation은 affix를 더하는 과정이다.",
-   why:"derivation은 base에 derivational affix를 붙입니다. <em>loveseat</em>은 <em>love</em>와 <em>seat</em>라는 두 독립 단어를 결합한 것이므로 compounding입니다.",
-   source:"loveseat (love+seat) is compounding (two free words), not derivation."},
-
-  /* ── ④ Allomorphy ──────────────────────────────────────── */
-  {src:"Allomorphy",cat:"plural allomorphs",
-   text:"[s], [z], and [əz] are three <span class='kw1'>phonologically conditioned allomorphs</span> of the English plural morpheme.",
-   ans:true,
-   correct:"plural morpheme의 세 allomorph <span class='kw2'>[s]/[z]/[əz]</span>는 음운 환경에 따라 갈린다.",
-   why:"plural <em>-s</em>는 무성음 뒤 [s](<em>maps</em>), 유성음 뒤 [z](<em>beds</em>), sibilant 뒤 [əz](<em>buzzes</em>)로 실현됩니다. 의미·기능은 같고 소리만 조건에 따라 달라지는 phonologically conditioned allomorph입니다.",
-   source:"[s]/[z]/[əz] are phonologically conditioned allomorphs of the plural morpheme."},
-
-  {src:"Allomorphy",cat:"negative prefix",
-   text:"The negative prefix appears as <em>im-</em> before bilabial sounds, as in <em>imbalance</em>.",
-   ans:true,
-   correct:"negative prefix는 bilabial 앞에서 <span class='kw2'>im-</span>로 실현된다 (place assimilation).",
-   why:"negative <em>in-</em>는 후행 자음의 조음 위치에 동화됩니다. bilabial /b, p, m/ 앞에서는 <em>im-</em>(<em>imbalance, impossible</em>), /l/ 앞 <em>il-</em>, /r/ 앞 <em>ir-</em>, 그 밖에서는 <em>in-</em>입니다.",
-   source:"The negative prefix becomes im- before bilabials (impossible, imbalance).",
-   compare:[{title:"im- / il- / ir-",desc:"bilabial / /l/ / /r/ 앞"},{title:"in-",desc:"그 밖의 환경"}]},
-
-  {src:"Allomorphy",cat:"conditioning trap",
-   text:"The plural allomorph [əz] occurs after voiceless stops such as the /t/ in <em>mats</em>.",
-   ans:false,
-   correct:"<em>mats</em>의 plural은 <span class='kw2'>[s]</span>다. [əz]는 sibilant 뒤(<em>bushes</em>)에만 나타난다.",
-   why:"[əz]는 sibilant(/s, z, ʃ, ʒ, tʃ, dʒ/) 뒤에서만 쓰입니다. <em>mats</em>는 무성음 /t/로 끝나므로 plural이 [s]로 실현됩니다.",
-   source:"[əz] occurs after sibilants (bushes); mats takes [s]."},
-
-  {src:"Allomorphy",cat:"same meaning",
-   text:"Two <span class='kw1'>allomorphs</span> of one morpheme <span class='kw4'>differ in meaning</span> from each other.",
-   ans:false,
-   correct:"allomorph는 같은 morpheme의 변이형으로 의미·기능이 <span class='kw2'>동일</span>하고 소리(형태)만 다르다.",
-   why:"allomorph는 한 morpheme이 음운 환경에 따라 다른 형태로 실현된 것입니다. 의미·문법 기능은 같고 소리만 조건에 따라 달라집니다. [s]/[z]/[əz]는 모두 '복수'라는 같은 기능을 합니다.",
-   source:"Allomorphs share the same meaning/function and differ only in form."},
-
-  /* ── ⑤ Compounding — headedness ────────────────────────── */
-  {src:"Compounding",cat:"rightmost head",
-   text:"In English compounds, the <span class='kw1'>rightmost element is the head</span> and determines the grammatical category of the whole.",
-   ans:true,
-   correct:"영어 compound의 head는 <span class='kw2'>오른쪽 요소</span>로, 전체의 품사를 결정한다.",
-   why:"영어 compound에서 head는 rightmost element입니다. <em>handmade</em>(N+A→A)처럼 마지막 요소의 품사가 전체 품사를 결정하고, 대략적 의미도 head가 좌우합니다.",
-   source:"In English compounds the rightmost element is the head and fixes the category.",
-   compare:[{title:"head = rightmost",desc:"handmade → A (made)"},{title:"의미",desc:"head가 broad meaning 결정"}]},
-
-  {src:"Compounding",cat:"endocentric",
-   text:"<em>Teapot</em> is an <span class='kw1'>endocentric compound</span> because it denotes a kind of pot.",
-   ans:true,
-   correct:"<em>teapot</em>은 head(<em>pot</em>)의 하위어 — a kind of pot이므로 <span class='kw2'>endocentric</span>이다.",
-   why:"endocentric compound는 head의 hyponym으로, head가 가리키는 것의 한 종류를 뜻합니다. <em>teapot</em>은 일종의 pot이므로 endocentric입니다(<em>raincoat</em> = a kind of coat도 동일).",
-   source:"An endocentric compound is a hyponym of its head (teapot = a kind of pot)."},
-
-  {src:"Compounding",cat:"exocentric",
-   text:"<em>Pickpocket</em> is an <span class='kw1'>exocentric compound</span> because it denotes a person, not a kind of pocket.",
-   ans:true,
-   correct:"<em>pickpocket</em>은 어느 요소의 하위어도 아닌 <span class='kw2'>exocentric</span>이다 — pocket의 한 종류가 아니라 사람을 가리킨다.",
-   why:"exocentric(headless) compound는 두 요소 중 어느 것의 하위어도 아닙니다. <em>pickpocket</em>은 pocket의 한 종류가 아니라 '소매치기(사람)'를 가리키므로 exocentric입니다(<em>scarecrow</em>도 동일).",
-   source:"An exocentric compound denotes neither element's kind (pickpocket = a person)."},
-
-  {src:"Compounding",cat:"head trap",
-   text:"In the English compound <em>overflow</em>, <em>over</em> is the <span class='kw4'>head</span>.",
-   ans:false,
-   correct:"영어 compound의 head는 rightmost이므로 <em>overflow</em>의 head는 <span class='kw2'>flow</span>다.",
-   why:"영어 compound head는 항상 오른쪽 요소입니다. <em>overflow</em>는 <em>over</em>(preposition) + <em>flow</em>(verb)로, head는 <em>flow</em>이고 전체가 verb가 됩니다.",
-   source:"The English compound head is rightmost; in overflow the head is flow."},
-
-  {src:"Compounding",cat:"compound vs phrase",
-   text:"<em>Greenhouse</em> and <em>green house</em> have <span class='kw4'>identical stress and meaning</span>.",
-   ans:false,
-   correct:"compound <em>gréenhouse</em>(온실)는 첫 요소 강세, phrase <em>green hóuse</em>(초록 집)는 둘째 강세로 <span class='kw2'>강세·의미가 다르다</span>.",
-   why:"compound는 보통 첫 요소에 강세(<em>gréenhouse</em> '온실')가 오고, 대응하는 phrase는 둘째 요소에 강세(<em>green hóuse</em> '초록색으로 칠한 집')가 옵니다. 강세 위치가 둘을 구별합니다.",
-   source:"Compounds stress the first element (gréenhouse); phrases stress the second (green hóuse).",
-   compare:[{title:"Compound",desc:"gréenhouse '온실' (첫 요소 강세)"},{title:"Phrase",desc:"green hóuse '초록 집' (둘째 강세)"}]},
-
-  {src:"Compounding",cat:"inflection placement",
-   text:"The plural of <em>toothbrush</em> is <span class='kw4'>teethbrush</span>, inflecting the first element.",
-   ans:false,
-   correct:"복수 표지는 첫 요소가 아니라 <span class='kw2'>복합어 전체</span>에 붙는다 → <em>toothbrushes</em>.",
-   why:"compound의 inflection은 첫 요소가 아니라 복합어 전체에 부착됩니다. 따라서 복수형은 <em>*teethbrush</em>가 아니라 <em>toothbrushes</em>입니다.",
-   source:"Inflection attaches to the whole compound (toothbrushes), not the first element."},
-
-  /* ── ⑥ Word structure — tree / bracketing ──────────────── */
-  {src:"Word structure",cat:"bracketing ambiguity",
-   text:"<em>Unbuttonable</em> is structurally ambiguous between <span class='kw1'>[un-[buttonable]]</span> ('not able to be buttoned') and <span class='kw1'>[[unbutton]-able]</span> ('able to be unbuttoned').",
-   ans:true,
-   correct:"두 종류의 <em>un-</em> 때문에 <em>unbuttonable</em>은 <span class='kw2'>bracketing ambiguity</span>를 보인다.",
-   why:"<em>un-</em>는 두 morpheme입니다: adjectival <em>un-</em>(adj→adj 'not')와 verbal <em>un-</em>(V→V 'reverse'). 전자가 <em>buttonable</em>에 붙으면 '단추를 채울 수 없는', 후자가 <em>button</em>에 먼저 붙어 <em>unbutton</em>이 되고 <em>-able</em>이 붙으면 '단추를 풀 수 있는'이 됩니다.",
-   source:"unbuttonable is ambiguous: [un-[buttonable]] vs [[unbutton]-able] (two un- morphemes).",
-   compare:[{title:"[un-[buttonable]]",desc:"'not able to be buttoned'"},{title:"[[unbutton]-able]",desc:"'able to be unbuttoned'"}]},
-
-  {src:"Word structure",cat:"ordering by selection",
-   text:"<em>Rewashable</em> must be analyzed as <span class='kw4'>[re-[washable]]</span>, with <em>re-</em> attaching to the adjective <em>washable</em>.",
-   ans:false,
-   correct:"<em>re-</em>는 verb에만 붙으므로 <span class='kw2'>[[rewash]-able]</span>이 맞다 — adjective <em>washable</em>에는 부착 불가.",
-   why:"<em>re-</em>는 verb를 입력으로 선택하므로 <em>rewash</em>(V)를 먼저 만들고 그 위에 <em>-able</em>이 붙습니다(<em>[[rewash]-able]</em>). <em>washable</em>은 adjective라서 <em>re-</em>가 붙을 수 없어 <em>*[re-[washable]]</em>는 불가능합니다.",
-   source:"re- selects verbs, so rewashable = [[rewash]-able], not [re-[washable]]."}
-
+  {
+    "src": "Morpheme",
+    "cat": "definition",
+    "text": "A <span class='kw1'>bound morpheme</span> cannot stand alone as a word and must attach to another form, as with <em>-ness</em> in <em>brightness</em> or <em>re-</em> in <em>reopen</em>.",
+    "ans": true,
+    "correct": "<span class='kw1'>bound morpheme</span>의 정의로 정확하다 — 독립된 단어로 쓰일 수 없고 다른 형태에 붙어야 한다.",
+    "why": "bound morpheme은 혼자 단어가 되지 못하고 반드시 base에 부착됩니다. <em>-ness</em>·<em>re-</em>처럼 모든 affix가 여기에 속합니다. 반대로 <em>bright</em>·<em>open</em>은 독립된 단어로 쓰일 수 있는 free morpheme입니다.",
+    "source": "A bound morpheme cannot stand alone and must attach to another form (e.g., -ness, re-).",
+    "compare": [
+      {
+        "title": "Free morpheme",
+        "desc": "bright, open — 단독 단어 가능"
+      },
+      {
+        "title": "Bound morpheme",
+        "desc": "-ness, re- — 부착 필수"
+      }
+    ]
+  },
+  {
+    "src": "Morpheme",
+    "cat": "affixes are bound",
+    "text": "In English, every affix — both <span class='kw1'>prefixes</span> and <span class='kw1'>suffixes</span> — is a bound morpheme.",
+    "ans": true,
+    "correct": "영어의 모든 affix(prefix·suffix)는 <span class='kw2'>bound morpheme</span>이다.",
+    "why": "영어에서 affix는 prefix이든 suffix이든 단독으로 단어가 될 수 없어 항상 base에 붙어야 합니다. 따라서 모든 affix는 정의상 bound morpheme입니다.",
+    "source": "All affixes (prefixes and suffixes) in English are bound morphemes."
+  },
+  {
+    "src": "Morpheme",
+    "cat": "definition trap",
+    "text": "A morpheme is best defined as <span class='kw4'>the smallest unit that can always stand alone as an independent word</span>.",
+    "ans": false,
+    "correct": "morpheme은 의미·문법 기능의 <span class='kw2'>최소 단위</span>일 뿐이며, bound morpheme은 독립된 단어로 쓰일 수 없다.",
+    "why": "morpheme은 minimal unit of meaning or grammatical function으로 정의됩니다. 독립된 단어로 쓰일 수 있는 것은 free morpheme에 한정되며, <em>-ed</em>·<em>un-</em> 같은 bound morpheme은 독립 단어가 될 수 없습니다.",
+    "source": "A morpheme is the minimal unit of meaning/function; bound morphemes cannot stand alone."
+  },
+  {
+    "src": "Inflection",
+    "cat": "inventory · suffix",
+    "text": "The traditional teaching inventory of Modern English lists <span class=\"kw1\">eight inflectional suffixes</span>.",
+    "ans": true,
+    "correct": "전통적 목록은 grammatical function에 따라 8개의 inflectional suffix를 구별한다.",
+    "why": "영어의 8 inflections는 noun <em>-'s</em>(possessive)·<em>-s</em>(plural), verb <em>-s</em>(3sg)·<em>-ing</em>·<em>-ed</em>·<em>-en</em>, adjective <em>-er</em>(comparative)·<em>-est</em>(superlative)이며, 모두 suffix입니다. inflectional prefix는 없습니다. 이 목록을 모든 inflected form이 규칙적 suffix 추가로만 만들어진다는 뜻으로 해석하지 않습니다. <em>brought</em> 같은 irregular past도 inflection입니다.",
+    "source": "The traditional eight-suffix inventory does not exclude irregular inflected forms.",
+    "compare": [
+      {
+        "title": "Noun",
+        "desc": "-'s, -s"
+      },
+      {
+        "title": "Verb · Adj",
+        "desc": "-s, -ing, -ed, -en / -er, -est"
+      }
+    ]
+  },
+  {
+    "src": "Inflection",
+    "cat": "category-preserving",
+    "text": "An <span class='kw1'>inflectional morpheme</span> never changes the grammatical category of the word it attaches to.",
+    "ans": true,
+    "correct": "inflection은 <span class='kw2'>category-preserving</span> — 품사를 절대 바꾸지 않는다.",
+    "why": "inflection은 수·시제·비교·소유 같은 문법 기능만 표시하고 품사를 유지합니다. <em>walk → walks/walked/walking</em>은 모두 verb로 남고, <em>tall → taller/tallest</em>는 모두 adjective입니다.",
+    "source": "Inflection is category-preserving; it never changes the part of speech."
+  },
+  {
+    "src": "Derivation",
+    "cat": "class-changing suffix",
+    "text": "The suffix <em>-ize</em> in <em>standardize</em> is a <span class='kw1'>class-changing</span> derivational affix.",
+    "ans": true,
+    "correct": "<em>-ize</em>는 품사를 바꾸는 <span class='kw2'>class-changing</span> derivational suffix다 (A/N→V).",
+    "why": "<em>standard</em>(N/A) + <em>-ize</em> → <em>standardize</em>(V)로 품사가 바뀝니다. 이렇게 새 단어를 만들고 품사를 바꾸는 affix는 derivational이며, 그중 품사를 바꾸는 것을 class-changing이라 합니다.",
+    "source": "-ize is a class-changing derivational suffix (N/A → V)."
+  },
+  {
+    "src": "Inflection",
+    "cat": "-er homophony trap",
+    "text": "The <em>-er</em> in <em>painter</em> is an <span class='kw4'>inflectional</span> morpheme, just like the <em>-er</em> in <em>shorter</em>.",
+    "ans": false,
+    "correct": "<em>painter</em>의 <em>-er</em>는 agentive <span class='kw2'>derivational</span>(V→N)이고, <em>shorter</em>의 <em>-er</em>는 comparative inflection이다 — 동음이지만 다른 morpheme.",
+    "why": "<em>paint</em>(V) + agentive <em>-er</em> → <em>painter</em>(N)는 품사를 바꾸는 derivation입니다. 반면 <em>short</em> → <em>shorter</em>의 <em>-er</em>는 comparative inflection(adj→adj)으로 품사를 유지합니다. 형태는 같아도 서로 다른 morpheme입니다.",
+    "source": "Agentive -er (painter) is derivational (V→N); comparative -er (shorter) is inflectional.",
+    "compare": [
+      {
+        "title": "derivational -er",
+        "desc": "painter (V→N), agentive"
+      },
+      {
+        "title": "inflectional -er",
+        "desc": "shorter (adj), comparative"
+      }
+    ]
+  },
+  {
+    "src": "Inflection",
+    "cat": "un- is not inflection",
+    "text": "The <em>un-</em> in <em>unfriendly</em> is an <span class='kw4'>inflectional prefix</span>.",
+    "ans": false,
+    "correct": "<em>un-</em>는 <span class='kw2'>derivational</span> prefix다. 영어 inflection에는 prefix가 없다(모두 suffix).",
+    "why": "영어의 inflection 8개는 모두 suffix이므로 inflectional prefix는 존재하지 않습니다. <em>un-</em>는 새 단어를 만드는 derivational prefix(adj→adj)입니다.",
+    "source": "English has no inflectional prefixes; un- is derivational."
+  },
+  {
+    "src": "Inflection",
+    "cat": "count trap",
+    "text": "The traditional English inflectional-affix inventory contains <span class=\"kw4\">twelve suffixes and several prefixes</span>.",
+    "ans": false,
+    "correct": "이 전통적 목록은 8개 suffix이며, prefix를 포함하지 않는다.",
+    "why": "plural·possessive, 3sg·progressive·past·past participle, comparative·superlative의 8가지 suffix를 구별하는 목록입니다. irregular form의 존재와 목록의 개수를 구별합니다.",
+    "source": "The traditional inventory lists eight inflectional suffixes."
+  },
+  {
+    "src": "Conversion",
+    "cat": "zero-derivation",
+    "text": "In <em>They will salt the soup</em>, <em>salt</em> is formed by <span class='kw1'>conversion (zero-derivation)</span>, with no affix added.",
+    "ans": true,
+    "correct": "<em>salt</em>(N→V)는 affix 없이 품사만 바뀐 <span class='kw2'>conversion</span>의 예다.",
+    "why": "명사 <em>salt</em>를 동사로 그대로 쓰는 것은 affix를 더하지 않고 품사만 바꾸는 conversion(zero-derivation, functional shift)입니다. 형태 변화 없이 syntactic category만 바뀝니다.",
+    "source": "Conversion assigns a word to a new category without adding an affix (N→V salt)."
+  },
+  {
+    "src": "Blending",
+    "cat": "process ID",
+    "text": "<em>Smog</em>, from <em>smoke</em> + <em>fog</em>, is formed by <span class='kw1'>blending</span>.",
+    "ans": true,
+    "correct": "<em>smog</em>는 두 단어의 비형태소적 조각을 합친 <span class='kw2'>blending</span>이다.",
+    "why": "blending은 두 단어의 non-morphemic 조각(보통 앞 단어 앞부분 + 뒤 단어 뒷부분)을 결합합니다. <em>smoke</em>의 앞부분과 <em>fog</em>의 뒷부분이 합쳐져 <em>smog</em>가 됩니다.",
+    "source": "Blending combines non-morphemic parts of two words (smoke + fog → smog)."
+  },
+  {
+    "src": "Backformation",
+    "cat": "process ID",
+    "text": "<em>Edit</em> was created from <em>editor</em> by <span class='kw1'>backformation</span>.",
+    "ans": true,
+    "correct": "<em>edit</em>은 <em>editor</em>에서 추정 affix를 떼어 만든 <span class='kw2'>backformation</span>이다.",
+    "why": "backformation은 실제 또는 추정 affix를 제거해 새 단어를 만드는 과정입니다. <em>editor</em>를 '<em>edit</em> + 행위자 <em>-or</em>'로 재분석해 동사 <em>edit</em>을 만들어낸 것이 그 예입니다.",
+    "source": "Backformation removes a (supposed) affix (editor → edit)."
+  },
+  {
+    "src": "Clipping",
+    "cat": "clipping vs blending",
+    "text": "<em>Brunch</em> (from <em>breakfast</em> + <em>lunch</em>) is formed by <span class='kw4'>clipping</span>.",
+    "ans": false,
+    "correct": "<em>brunch</em>는 두 단어 조각을 섞은 <span class='kw2'>blending</span>이다. clipping은 한 단어를 줄이는 것이다.",
+    "why": "clipping은 한 다음절 단어의 음절을 잘라내는 것입니다(<em>professor → prof</em>). <em>brunch</em>는 <em>breakfast</em>와 <em>lunch</em> 두 단어의 조각을 합친 것이므로 blending입니다.",
+    "source": "brunch (breakfast+lunch) is blending, not clipping (clipping shortens one word).",
+    "compare": [
+      {
+        "title": "Clipping",
+        "desc": "한 단어 줄임: advertisement → ad"
+      },
+      {
+        "title": "Blending",
+        "desc": "두 단어 조각: breakfast+lunch → brunch"
+      }
+    ]
+  },
+  {
+    "src": "Acronym",
+    "cat": "acronym vs initialism",
+    "text": "<em>FBI</em>, pronounced as separate letters, is an <span class='kw4'>acronym</span>.",
+    "ans": false,
+    "correct": "글자를 따로 읽으면 <span class='kw2'>initialism</span>이다. acronym은 머리글자를 단어처럼 발음한다(<em>NATO</em>).",
+    "why": "acronym은 구의 머리글자를 한 단어처럼 발음하는 것입니다(<em>NATO</em>, <em>radar</em>). <em>FBI</em>처럼 글자를 하나하나 따로 읽으면 initialism(abbreviation)입니다.",
+    "source": "Acronym = letters pronounced as a word (NATO); FBI (separate letters) is an initialism.",
+    "compare": [
+      {
+        "title": "Acronym",
+        "desc": "NATO, laser — 단어처럼 발음"
+      },
+      {
+        "title": "Initialism",
+        "desc": "FBI, USA — 글자 따로 발음"
+      }
+    ]
+  },
+  {
+    "src": "Conversion",
+    "cat": "conversion vs derivation",
+    "text": "<em>Standardize</em> is an example of <span class='kw4'>conversion (zero-derivation)</span>.",
+    "ans": false,
+    "correct": "<em>standardize</em>는 suffix <em>-ize</em>를 더한 <span class='kw2'>derivation</span>이지 conversion이 아니다.",
+    "why": "conversion은 affix를 더하지 않고 품사만 바꾸는 것입니다. <em>standardize</em>는 <em>-ize</em>라는 derivational suffix가 추가되었으므로 derivation에 해당합니다.",
+    "source": "standardize adds -ize → derivation, not conversion (no affix)."
+  },
+  {
+    "src": "Compounding",
+    "cat": "derivation vs compounding",
+    "text": "<em>Loveseat</em> (love + seat) is formed by <span class='kw4'>derivation</span>.",
+    "ans": false,
+    "correct": "<em>loveseat</em>은 두 free word를 합친 <span class='kw2'>compounding</span>이다. derivation은 affix를 더하는 과정이다.",
+    "why": "derivation은 base에 derivational affix를 붙입니다. <em>loveseat</em>은 <em>love</em>와 <em>seat</em>라는 두 독립 단어를 결합한 것이므로 compounding입니다.",
+    "source": "loveseat (love+seat) is compounding (two free words), not derivation."
+  },
+  {
+    "src": "Allomorphy",
+    "cat": "plural allomorphs",
+    "text": "[s], [z], and [əz] are three <span class='kw1'>phonologically conditioned allomorphs</span> of the English plural morpheme.",
+    "ans": true,
+    "correct": "plural morpheme의 세 allomorph <span class='kw2'>[s]/[z]/[əz]</span>는 음운 환경에 따라 갈린다.",
+    "why": "regular plural에서 sibilant 뒤는 먼저 [əz] 또는 [ɪz]로 분리합니다(<em>buzzes</em>). 나머지 non-sibilant 중 voiceless 뒤는 [s](<em>maps</em>), voiced 뒤는 [z](<em>beds</em>)입니다. vowel도 voiced이므로 <em>keys</em>는 [z]입니다.",
+    "source": "[s]/[z]/[əz] are phonologically conditioned allomorphs of the plural morpheme."
+  },
+  {
+    "src": "Allomorphy",
+    "cat": "negative prefix",
+    "text": "Within the negative <em>in-</em> family, <em>im-</em> occurs before bilabials, as in <em>imbalance</em>.",
+    "ans": true,
+    "correct": "negative in- 계열은 bilabial 앞에서 <span class='kw2'>im-</span>로 실현된다 (place assimilation).",
+    "why": "negative <em>in-</em>는 후행 자음의 조음 위치에 동화됩니다. bilabial /b, p, m/ 앞에서는 <em>im-</em>(<em>imbalance, impossible</em>), /l/ 앞 <em>il-</em>, /r/ 앞 <em>ir-</em>, 그 밖에서는 <em>in-</em>입니다. 이 계열 안의 alternation을 설명한 것입니다. <em>unmarked</em>처럼 다른 negative prefix가 선택되는 단어까지 im-을 강제하지 않습니다.",
+    "source": "The negative prefix becomes im- before bilabials (impossible, imbalance).",
+    "compare": [
+      {
+        "title": "im- / il- / ir-",
+        "desc": "bilabial / /l/ / /r/ 앞"
+      },
+      {
+        "title": "in-",
+        "desc": "그 밖의 환경"
+      }
+    ]
+  },
+  {
+    "src": "Allomorphy",
+    "cat": "conditioning trap",
+    "text": "The plural allomorph [əz] occurs after voiceless stops such as the /t/ in <em>mats</em>.",
+    "ans": false,
+    "correct": "<em>mats</em>의 plural은 <span class='kw2'>[s]</span>다. [əz]는 sibilant 뒤(<em>bushes</em>)에만 나타난다.",
+    "why": "[əz]는 sibilant(/s, z, ʃ, ʒ, tʃ, dʒ/) 뒤에서만 쓰입니다. base인 <em>mat</em>는 /t/로 끝나고, /t/는 voiceless non-sibilant이므로 plural이 [s]로 실현됩니다.",
+    "source": "[əz] occurs after sibilants (bushes); mats takes [s]."
+  },
+  {
+    "src": "Allomorphy",
+    "cat": "same meaning",
+    "text": "Two <span class='kw1'>allomorphs</span> of one morpheme <span class='kw4'>differ in meaning</span> from each other.",
+    "ans": false,
+    "correct": "allomorph는 같은 morpheme의 변이형으로 의미·기능이 <span class='kw2'>동일</span>하고 소리(형태)만 다르다.",
+    "why": "allomorph는 한 morpheme의 서로 다른 실현형이므로 의미·기능은 같습니다. regular plural [s]/[z]/[əz]는 phonologically conditioned인 대표 사례입니다. 그러나 <em>oxen</em> 같은 irregular plural을 같은 마지막 소리 규칙으로 예측할 수는 없습니다. phonological conditioning만을 allomorph의 정의로 삼지 않습니다.",
+    "source": "Allomorphs share the same meaning/function and differ only in form."
+  },
+  {
+    "src": "Compounding",
+    "cat": "rightmost head",
+    "text": "In the endocentric compound <em>snowball</em>, the rightmost element <em>ball</em> determines the category and denotes the kind of entity involved.",
+    "ans": true,
+    "correct": "<em>snowball</em>은 ball의 한 종류인 N이므로 오른쪽 <em>ball</em>이 head다.",
+    "why": "snow(N)+ball(N)로 이루어진 전체는 N이고 ball의 한 종류를 뜻합니다. 따라서 snowball은 오른쪽 ball을 head로 하는 endocentric compound입니다. <em>pickpocket</em>처럼 어느 요소의 한 종류도 아닌 exocentric compound까지 같은 의미 규칙으로 일반화하지 않습니다.",
+    "source": "In snowball, ball is the rightmost head; snowball is a kind of ball.",
+    "compare": [
+      {
+        "title": "Endocentric",
+        "desc": "snowball: a kind of ball"
+      },
+      {
+        "title": "Exocentric",
+        "desc": "pickpocket: a person, not a pocket"
+      }
+    ]
+  },
+  {
+    "src": "Compounding",
+    "cat": "endocentric",
+    "text": "<em>Teapot</em> is an <span class='kw1'>endocentric compound</span> because it denotes a kind of pot.",
+    "ans": true,
+    "correct": "<em>teapot</em>은 head(<em>pot</em>)의 하위어 — a kind of pot이므로 <span class='kw2'>endocentric</span>이다.",
+    "why": "endocentric compound는 head의 hyponym으로, head가 가리키는 것의 한 종류를 뜻합니다. <em>teapot</em>은 일종의 pot이므로 endocentric입니다(<em>raincoat</em> = a kind of coat도 동일).",
+    "source": "An endocentric compound is a hyponym of its head (teapot = a kind of pot)."
+  },
+  {
+    "src": "Compounding",
+    "cat": "exocentric",
+    "text": "<em>Pickpocket</em> is an <span class='kw1'>exocentric compound</span> because it denotes a person, not a kind of pocket.",
+    "ans": true,
+    "correct": "<em>pickpocket</em>은 어느 요소의 하위어도 아닌 <span class='kw2'>exocentric</span>이다 — pocket의 한 종류가 아니라 사람을 가리킨다.",
+    "why": "exocentric(headless) compound는 두 요소 중 어느 것의 하위어도 아닙니다. <em>pickpocket</em>은 pocket의 한 종류가 아니라 '소매치기(사람)'를 가리키므로 exocentric입니다(<em>scarecrow</em>도 동일).",
+    "source": "An exocentric compound denotes neither element's kind (pickpocket = a person)."
+  },
+  {
+    "src": "Compounding",
+    "cat": "head trap",
+    "text": "In the endocentric compound <em>snowball</em>, <em>snow</em> is the head because it supplies the first part of the word.",
+    "ans": false,
+    "correct": "이 compound의 head는 오른쪽 <em>ball</em>이다.",
+    "why": "snowball은 snow의 한 종류가 아니라 ball의 한 종류입니다. 첫 위치가 head의 기준이 아닙니다. category와 a-kind-of 관계를 함께 확인하며, 이 분석을 모든 compound의 보편 규칙으로 확대하지 않습니다.",
+    "source": "Snowball is a kind of ball; the rightmost element is the head in this example."
+  },
+  {
+    "src": "Compounding",
+    "cat": "compound vs phrase",
+    "text": "<em>Greenhouse</em> and <em>green house</em> have <span class='kw4'>identical stress and meaning</span>.",
+    "ans": false,
+    "correct": "compound <em>gréenhouse</em>(온실)는 첫 요소 강세, phrase <em>green hóuse</em>(초록 집)는 둘째 강세로 <span class='kw2'>강세·의미가 다르다</span>.",
+    "why": "compound는 보통 첫 요소에 강세(<em>gréenhouse</em> '온실')가 오고, 대응하는 phrase는 둘째 요소에 강세(<em>green hóuse</em> '초록색으로 칠한 집')가 옵니다. 강세 위치가 둘을 구별합니다.",
+    "source": "Compounds stress the first element (gréenhouse); phrases stress the second (green hóuse).",
+    "compare": [
+      {
+        "title": "Compound",
+        "desc": "gréenhouse '온실' (첫 요소 강세)"
+      },
+      {
+        "title": "Phrase",
+        "desc": "green hóuse '초록 집' (둘째 강세)"
+      }
+    ]
+  },
+  {
+    "src": "Compounding",
+    "cat": "inflection placement",
+    "text": "The plural of <em>toothbrush</em> is <span class='kw4'>teethbrush</span>, inflecting the first element.",
+    "ans": false,
+    "correct": "<em>toothbrush</em>의 복수는 전체에 plural suffix를 붙인 <em>toothbrushes</em>다.",
+    "why": "이 단어의 plural은 <em>toothbrushes</em>이며 <em>*teethbrush</em>가 아닙니다. 하지만 첫 요소의 -s가 모든 compound에서 금지된다는 주장은 아닙니다. <em>sports car</em>처럼 내부에 -s를 포함하는 관습적 compound도 있습니다.",
+    "source": "The plural of toothbrush is toothbrushes. This does not ban internal plurals in every compound."
+  },
+  {
+    "src": "Word structure",
+    "cat": "bracketing ambiguity",
+    "text": "<em>Unbuttonable</em> is structurally ambiguous between <span class='kw1'>[un-[buttonable]]</span> ('not able to be buttoned') and <span class='kw1'>[[unbutton]-able]</span> ('able to be unbuttoned').",
+    "ans": true,
+    "correct": "두 종류의 <em>un-</em> 때문에 <em>unbuttonable</em>은 <span class='kw2'>bracketing ambiguity</span>를 보인다.",
+    "why": "<em>un-</em>는 두 morpheme입니다: adjectival <em>un-</em>(adj→adj 'not')와 verbal <em>un-</em>(V→V 'reverse'). 전자가 <em>buttonable</em>에 붙으면 '단추를 채울 수 없는', 후자가 <em>button</em>에 먼저 붙어 <em>unbutton</em>이 되고 <em>-able</em>이 붙으면 '단추를 풀 수 있는'이 됩니다.",
+    "source": "unbuttonable is ambiguous: [un-[buttonable]] vs [[unbutton]-able] (two un- morphemes).",
+    "compare": [
+      {
+        "title": "[un-[buttonable]]",
+        "desc": "'not able to be buttoned'"
+      },
+      {
+        "title": "[[unbutton]-able]",
+        "desc": "'able to be unbuttoned'"
+      }
+    ]
+  },
+  {
+    "src": "Word structure",
+    "cat": "ordering by selection",
+    "text": "<em>Rewashable</em> must be analyzed as <span class='kw4'>[re-[washable]]</span>, with <em>re-</em> attaching to the adjective <em>washable</em>.",
+    "ans": false,
+    "correct": "이 반복 의미 re- 분석에서는 <em>rewash</em>(V)를 먼저 만든 뒤 -able이 붙는다: [[rewash]-able].",
+    "why": "이 예의 반복 의미 re-는 V를 입력으로 선택합니다. wash(V) → rewash(V) → rewashable(A)의 순서가 됩니다. [re-[washable]]은 이 V-selecting re-를 A에 붙이므로 이 예의 분석에 맞지 않습니다. 이를 re-로 시작하는 모든 단어에 적용되는 규칙으로 확대해서는 안 됩니다.",
+    "source": "In this productive repetitive re- analysis, rewashable is [[rewash]-able]."
+  },
+  {
+    "src": "Affix types",
+    "cat": "position vs category",
+    "text": "Because <em>en-</em> is a prefix, it cannot change the category of <em>rich</em> in <em>enrich</em>.",
+    "ans": false,
+    "correct": "<em>rich</em>(A) → <em>enrich</em>(V)는 category-changing prefixation이다.",
+    "why": "prefix/suffix는 붙는 위치를, class-changing/class-maintaining은 품사의 변화 여부를 나타냅니다. en-은 앞에 붙지만 이 예에서 A를 V로 바꿉니다. suffix인 -hood도 child → childhood에서는 N을 유지하므로 붙는 위치와 품사 변화 여부를 따로 확인해야 합니다.",
+    "source": "Affix position and category effect are distinct: rich(A) → enrich(V)."
+  },
+  {
+    "src": "Productivity",
+    "cat": "necessary vs sufficient",
+    "text": "If a base satisfies a derivational affix’s phonological restriction, that fact alone guarantees a conventional derived word.",
+    "ans": false,
+    "correct": "발음 조건에 맞는다고 해서 그 파생형이 실제 단어로 쓰이는 것은 아니다.",
+    "why": "phonological restriction은 발음 조건에 맞지 않는 base를 제외합니다. 조건에 맞더라도 품사·의미·어휘적 제약을 더 확인해야 합니다. -en의 대표 패턴에서는 calm의 마지막 /m/과 curious의 여러 syllable이 각각 다른 실패 이유지만, 두 조건에 맞는 모든 base에 -en을 붙일 수 있다는 뜻은 아닙니다.",
+    "source": "A necessary phonological restriction is not a sufficient guarantee of derivational productivity."
+  }
 ];
 
 const TOTAL=Q.length;
-const SAVE_KEY='linguistics_morphology_quiz_v1';
+const SAVE_KEY='linguistics_morphology_quiz_v2';
 let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
 function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
 function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
 function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}catch(e){/* Keep the quiz usable when storage is unavailable or full. */}}
-function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){/* Storage may be unavailable. */}}
 function getScore(){return answers.filter(a=>a&&a.correct).length;}
 function renderNav(){
   document.getElementById('nav').innerHTML=answers.map((_,i)=>{
@@ -380,7 +528,7 @@ function renderExp(q,isCorrect){
     <div class="exp-answer"><div class="ans-label">핵심 정리</div><div class="ans-text">${q.correct}</div></div>
     <div class="exp-body">
       <div class="sec-label">📖 상세 설명</div><p>${q.why}</p>
-      <div class="sec-label">📌 Source</div>
+      <div class="sec-label">📌 핵심 원리 (재서술)</div>
       <div class="def-box"><p>${q.source}</p></div>
       ${cmp}
     </div>
@@ -458,15 +606,20 @@ function pick(val){
 function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
 function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
 (function(){
-  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
-  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
-    cur=saved.cur;answers=saved.answers;
-    if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
+  let saved=null;
+  try{saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');}catch(e){}
+  const valid=saved && Number.isInteger(saved.cur) && saved.cur>=0 && saved.cur<TOTAL
+    && ['normal','random'].includes(saved.mode)
+    && Array.isArray(saved.answers) && saved.answers.length===TOTAL
+    && saved.answers.every(a=>a===null || (typeof a==='object' && typeof a.picked==='boolean' && typeof a.correct==='boolean'))
+    && Array.isArray(saved.order) && saved.order.length===TOTAL && new Set(saved.order).size===TOTAL
+    && saved.order.every(i=>Number.isInteger(i)&&i>=0&&i<TOTAL)
+    && (saved.mode!=='normal' || saved.order.every((x,i)=>x===i));
+  if(valid){
+    cur=saved.cur;mode=saved.mode;order=saved.order;
+    answers=saved.answers.map((a,i)=>a===null?null:{picked:a.picked,correct:a.picked===Q[order[i]].ans});
     const done=answers.filter(a=>a!==null).length;
-    if(done>0){
-      document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;
-      document.getElementById('rb').style.display='block';
-    }
+    if(done>0){document.getElementById('rb-msg').textContent=`이어서 풀기 중 · ${done}/${TOTAL} 문제 완료 (정답 ${getScore()}개)`;document.getElementById('rb').style.display='block';}
   }
   updateModeUI();renderNav();render();
 })();
@@ -474,3 +627,4 @@ function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();doc
 <script src="./study-return.js" data-hub-label="영어학 허브"></script>
 </body>
 </html>
+
