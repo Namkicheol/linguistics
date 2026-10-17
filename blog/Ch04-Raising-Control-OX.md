@@ -114,7 +114,7 @@ idiom chunk는 고정 표현의 일부라 독립적 theta-role을 받을 수 없
 
 ### Q24. *threaten* — subject control 술어 식별 — ✅ O
 
-<em>The intern threatened to resign before the deadline</em>에서 <em>threaten</em>은 <span style="color:#3182ce">**subject control verb**</span>이므로 <em>resign</em>의 understood subject는 <em>the intern</em>이 control하는 <span style="color:#3182ce">**PRO**</span>입니다. <em>threaten, plan, prefer, be keen, be relieved</em>는 subject control 술어로, matrix subject가 하위절 PRO를 control하며 theta-role을 받습니다.
+<em>The intern threatened to resign before the deadline</em>에서 <em>threaten</em>은 <span style="color:#3182ce">**subject control verb**</span>이므로 <em>resign</em>의 understood subject는 <em>the intern</em>이 control하는 <span style="color:#3182ce">**PRO**</span>입니다. 위협 행위를 나타내는 이 문장에서는 matrix subject가 PRO를 control합니다. threaten을 항상 control로 분류하지는 않습니다. expletive there를 허용하며 어떤 일이 일어날 조짐을 나타내는 용법은 raising입니다 (Radford, p.443).
 
 ---
 
@@ -138,7 +138,7 @@ idiom chunk는 고정 표현의 일부라 독립적 theta-role을 받을 수 없
 
 ### Q29. *persuade NP that S* — finite CP 보문 — ✅ O
 
-<em>The officer persuaded the driver that he should pull over</em>의 정문성은 <em>persuade</em>가 finite CP complement도 취할 수 있음을 보여줍니다 — <span style="color:#3182ce">**ECM**</span> 동사와의 또 다른 차이입니다. object control verb <em>persuade</em>는 목적어 + 비정형 보문, 또는 목적어 + finite that-clause를 취할 수 있지만, ECM 동사는 single clausal complement만 취합니다.
+<em>The officer persuaded the driver that he should pull over</em>에서 <em>persuade</em>는 NP 목적어와 finite CP를 함께 취합니다. <em>believe that the driver …</em>도 finite CP를 허용하지만, that절 전체가 보문입니다. 차이는 finite CP의 허용 여부가 아니라 NP의 소속과 argument structure입니다 (Radford, pp.322–323).
 
 ### Q30. *advise* — object control 술어 식별 — ✅ O
 
@@ -154,7 +154,7 @@ idiom chunk는 고정 표현의 일부라 독립적 theta-role을 받을 수 없
 
 ### Q32. *The teacher hopes PRO will arrive* — PRO 분포 — ❌ X
 
-<span style="color:#c53030">**⚠️ 오답 포인트**</span>. <span style="color:#3182ce">**PRO**</span>는 비정형 to-clause의 주어 자리에만 나타납니다. 정형절 주어나 목적어 자리에는 올 수 없습니다. <span style="color:#c53030">*The teacher hopes PRO will arrive early.*</span>처럼 정형절 주어 자리에는 PRO가 올 수 없습니다.
+<span style="color:#c53030">**⚠️ 오답 포인트**</span>. <span style="color:#3182ce">**PRO**</span>는 to부정사절뿐 아니라 일부 -ing절의 주어로도 분석됩니다. 모든 non-finite 절에서 자유롭게 허용되는 것은 아닙니다 (Radford, p.440). <span style="color:#c53030">*The teacher hopes PRO will arrive early.*</span>처럼 정형절 주어 자리에는 PRO가 올 수 없습니다.
 
 ### Q33. *[PRO to remain silent] is wise* — arbitrary PRO — ✅ O
 
@@ -201,3 +201,4 @@ matrix에 control할 NP가 없는 환경에서 <span style="color:#3182ce">**PRO
 ---
 
 **태그**: 임용고시, 중등영어, 전공영어, 영어학, 통사론, syntax, Raising, Control, PRO, ECM, OX, 기출분석, 서브노트
+
