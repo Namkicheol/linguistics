@@ -1,6 +1,27 @@
 (function () {
   'use strict';
 
+  // Open a linked concept before scrolling, including legacy collapsed sections.
+  function revealLinkedSection() {
+    if (!window.location.hash) return;
+    var id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (_) { return; }
+    var target = document.getElementById(id);
+    if (!target) return;
+    var node = target;
+    while (node && node !== document.body) {
+      if (node.classList && node.classList.contains('sec')) node.classList.add('open');
+      if (node.tagName === 'DETAILS') node.open = true;
+      node = node.parentElement;
+    }
+    if (target.scrollIntoView) target.scrollIntoView({block: 'start'});
+  }
+  revealLinkedSection();
+  if (window.addEventListener) {
+    window.addEventListener('hashchange', revealLinkedSection);
+    window.addEventListener('pageshow', revealLinkedSection);
+  }
+
   function allowedReturnUrl(value) {
     if (!value) return null;
     try {
