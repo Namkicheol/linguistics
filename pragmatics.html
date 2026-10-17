@@ -150,14 +150,14 @@ const Q=[
    text:"The <span class='kw1'>perlocutionary act</span> refers to the speaker's intention or communicative force, independent of any effect on the hearer.",
    ans:false,
    correct:"perlocutionary act는 발화가 청자에게 일으키는 <span class='kw2'>effect</span>다 — 화자의 force/의도는 <span class='kw2'>illocutionary act</span>다.",
-   why:"perlocutionary act는 발화가 청자에게 실제로 일으키는 의도된 효과(설득됨·놀람·문 닫음 등)입니다. 화자의 communicative force/의도는 illocutionary act에 해당합니다. 둘을 바꿔 진술했으므로 거짓입니다.",
+   why:"perlocutionary act는 발화가 청자에게 실제로 일으킨 효과입니다. 화자가 의도한 효과뿐 아니라 의도하지 않은 놀람이나 행동도 포함할 수 있습니다. communicative force는 illocutionary act이므로 두 층위를 바꾼 진술은 거짓입니다.",
    source:"The perlocutionary act = the effect on the hearer; the speaker's force = the illocutionary act."},
 
   {src:"Speech Acts",cat:"locutionary act",
    text:"Producing the basic, meaningful linguistic expression itself — its sounds, words, and structure — is the <span class='kw1'>locutionary act</span>.",
    ans:true,
    correct:"<span class='kw1'>locutionary act</span> = 의미 있는 언어 표현(소리·단어·구조)을 산출하는 기본 발화 행위. 정확하다.",
-   why:"locutionary act는 sense와 reference를 가진 의미 있는 언어 표현 자체를 만들어 내는 기본 발화 행위입니다. 외국어를 못 만들거나 혀가 굳으면 바로 이 locutionary act가 실패합니다.",
+   why:"locutionary act는 sense와 reference를 가진 의미 있는 언어 표현 자체를 만들어 내는 기본 발화 행위입니다. 여기서는 무엇을 말했는지를 확인하며, 그 발화로 수행한 요청이나 실제로 생긴 효과와 구별합니다.",
    source:"The locutionary act is the basic act of uttering a meaningful linguistic expression."},
 
   {src:"Speech Acts",cat:"perlocutionary · 효과",
@@ -171,7 +171,7 @@ const Q=[
    text:"The same locutionary act can carry different <span class='kw1'>illocutionary forces</span> depending on context, e.g. <em>It's cold in here</em> as a statement or as a request to close a window.",
    ans:true,
    correct:"동일한 locutionary act가 맥락에 따라 다른 illocutionary force(진술 또는 요청)를 가질 수 있다. 정확하다.",
-   why:"같은 문장 <em>It's cold in here</em>가 단순 진술일 수도, 난방·창문에 대한 간접 요청일 수도 있습니다. illocutionary force는 맥락에 따라 결정되므로, 하나의 locutionary act가 여러 force를 운반할 수 있습니다.",
+   why:"같은 문장 <em>It's cold in here</em>가 단순 진술일 수도, 난방·창문에 대한 간접 요청일 수도 있습니다. illocutionary force는 맥락에 따라 결정되므로, 하나의 locutionary act가 서로 다른 force를 가질 수 있습니다.",
    source:"One locutionary act may carry different illocutionary forces by context."},
 
   /* ── B. Direct vs indirect speech act ── */
@@ -179,7 +179,7 @@ const Q=[
    text:"Using an interrogative such as <em>Could you close the window?</em> to make a request is an <span class='kw1'>indirect speech act</span>.",
    ans:true,
    correct:"의문형식을 능력 질문이 아니라 요청으로 쓰면 <span class='kw1'>indirect speech act</span>다. 정확하다.",
-   why:"interrogative의 기본 기능은 질문입니다. <em>Could you…?</em>를 능력을 묻는 게 아니라 요청으로 쓰면 sentence type을 다른 기능으로 쓴 것이므로 indirect speech act입니다. 이런 간접 발화가 일반적으로 더 공손합니다.",
+   why:"interrogative의 기본 기능은 question입니다. 능력을 확인하는 질문이 아니라 창문을 닫아 달라는 request로 사용한 상황이므로 indirect speech act입니다. 이런 형식은 공손하게 받아들여질 수 있지만 실제 판단에는 어조와 관계도 관여합니다.",
    source:"An interrogative used as a request is an indirect speech act.",
    compare:[{title:"direct",desc:"sentence type ↔ 기본 기능"},{title:"indirect",desc:"sentence type ↔ 다른 기능"}]},
 
@@ -191,11 +191,11 @@ const Q=[
    source:"A declarative used to state is a direct speech act, not indirect."},
 
   {src:"Direct/Indirect",cat:"politeness",
-   text:"Indirect speech acts are generally perceived as <span class='kw2'>more polite</span> than their direct (imperative) counterparts.",
+   text:"In ordinary request contexts, an interrogative such as <em>Could you lower your voice?</em> is often perceived as more polite than a bare imperative such as <em>Lower your voice.</em>",
    ans:true,
-   correct:"indirect speech act는 대응되는 direct(명령형) 발화보다 일반적으로 더 공손하게 느껴진다. 정확하다.",
-   why:"<em>Could you lower your voice?</em> 같은 간접 요청은 <em>Lower your voice.</em> 같은 직접 명령보다 상대의 face를 덜 위협해 더 공손하게 인식됩니다. 다만 청자가 문자 그대로 반응하면 의도된 force를 놓칠 위험이 있습니다.",
-   source:"Indirect speech acts are generally felt to be more polite than direct imperatives."},
+   correct:"일상적인 요청에서는 interrogative 형식이 bare imperative보다 공손하게 받아들여지는 경우가 많다.",
+   why:"상대의 선택 여지를 남기는 형식으로 요청을 완화할 수 있습니다. 다만 indirectness와 politeness는 같은 개념이 아닙니다. 비꼬는 어조나 긴급한 상황에서는 문장 형식만으로 공손성을 판단할 수 없습니다.",
+   source:"The Teacher’s Grammar of English, Imperative Sentences: request forms and social context."},
 
   {src:"Direct/Indirect",cat:"primary force 누락",
    text:"In an indirect request like <em>Do you know what time it is?</em>, answering only <em>Yes</em> successfully fulfills the speaker's intended (primary) force.",
@@ -205,20 +205,20 @@ const Q=[
    source:"Answering only Yes responds to the literal force and misses the intended request."},
 
   /* ── C. Performative / felicity ── */
-  {src:"Performative",cat:"performative sense 4조건",
-   text:"For a performative verb to have its performative sense, the utterance must be positive, present tense, first-person, and refer to a specific event.",
+  {src:"Performative",cat:"typical explicit performative",
+   text:"A typical explicit performative such as <em>I hereby promise to return the tablet</em> is affirmative, first-person and present-tense, and concerns a particular act.",
    ans:true,
-   correct:"performative sense의 4조건(positive · present · first-person · specific event)으로 정확하다.",
-   why:"performative verb가 행위를 수행하는 의미를 가지려면 positive·present tense·first-person agent·specific event 네 조건을 모두 충족해야 합니다. 하나라도 어기면 그 발화는 행위 수행이 아니라 단지 상태 기술(representative)이 됩니다. <em>hereby</em> 삽입 가능 여부가 보조 진단입니다.",
-   source:"Performative sense requires positive, present tense, first-person, and a specific event.",
-   compare:[{title:"performative",desc:"positive·present·1st person·specific"},{title:"위반 시",desc:"merely describes a state (representative)"}]},
+   correct:"지금 특정 약속을 하는 전형적인 explicit performative 형식이다.",
+   why:"이 특징은 전형적 explicit performative를 식별하는 데 유용합니다. 그러나 모든 speech act의 필요충분조건은 아닙니다. 명시적인 performative verb 없이도 request나 warning을 수행할 수 있고, 적절한 권한과 상황도 필요할 수 있습니다.",
+   source:"Fromkin, Rodman & Hyams, An Introduction to Language, 10th ed., Speech Acts: typical performative sentences.",
+   compare:[{"title": "explicit performative", "desc": "행위를 명시하는 전형적 형식"}, {"title": "context", "desc": "실제 행위의 성립 조건도 확인"}]},
 
   {src:"Performative",cat:"past tense · 함정",
-   text:"<em>I promised to bring the documents</em> (past tense) is a felicitous performative that constitutes a promise in the act of being uttered.",
+   text:"In an ordinary report of a past event, <em>I promised to bring the documents</em> itself constitutes a new explicit promise in the act of being uttered.",
    ans:false,
-   correct:"과거시제라 performative sense가 없다 — 약속을 수행하는 게 아니라 과거 약속을 <span class='kw2'>기술</span>할 뿐이다.",
-   why:"performative sense는 present tense를 요구합니다. <em>I promised…</em>는 과거시제이므로 발화로 약속을 수행하는 게 아니라 이미 한 약속을 진술하는 representative입니다. <em>I promise to bring…</em>이라야 발화가 곧 약속 행위가 됩니다.",
-   source:"A past-tense 'I promised' lacks performative sense; it describes, not performs."},
+   correct:"과거 사건의 보고로 사용했다면 새 약속을 수행한 것으로 보지 않는다.",
+   why:"이 맥락에서 I promised는 과거 약속을 보고하는 statement입니다. 지금 약속하는 전형적 explicit performative인 I promise와 구별합니다. 과거 보고도 statement라는 speech act이며, 다른 맥락의 간접적인 재확약 가능성까지 부정하는 것은 아닙니다.",
+   source:"Past-event reports and present explicit performatives must be distinguished in context."},
 
   {src:"Performative",cat:"general condition",
    text:"If the hearer cannot understand the language of the utterance, the speech act fails the <span class='kw1'>general (felicity) condition</span>.",
@@ -229,10 +229,10 @@ const Q=[
 
   /* ── D. Maxim identification (which maxim is flouted) ── */
   {src:"Maxims",cat:"Quantity",
-   text:"Answering <em>Food.</em> to <em>What did you make for dinner?</em> flouts the maxim of <span class='kw1'>Quantity</span> by giving less information than required.",
+   text:"When the speaker obviously withholds the requested details about the meal, answering <em>Food.</em> to <em>What did you make for dinner?</em> flouts the maxim of <span class='kw1'>Quantity</span> by giving less information than required.",
    ans:true,
-   correct:"필요한 정보보다 적게 주었으므로 maxim of <span class='kw1'>Quantity</span> flouting이다. 정확하다.",
-   why:"Quantity는 필요한 만큼의 정보를 제공하라는 maxim입니다. <em>Food.</em>는 무엇을 만들었는지에 비해 정보가 명백히 부족하므로 Quantity를 어겨, 더 말하기 싫다는 등의 implicature를 전달합니다.",
+   correct:"필요한 세부 정보를 의도적으로 주지 않았으므로 maxim of <span class='kw1'>Quantity</span> flouting이다. 정확하다.",
+   why:"음식 종류를 묻는다는 것을 B가 알고도 Food라고 회피한다면 요구된 정보가 부족하므로 Quantity flouting으로 해석할 수 있습니다. 말하기 싫다는 뜻은 그 맥락에서 얻는 추론이며 Food 자체의 고정된 의미는 아닙니다.",
    source:"Under-informative answers flout the maxim of Quantity."},
 
   {src:"Maxims",cat:"Quality · 혼동",
@@ -243,17 +243,17 @@ const Q=[
    source:"Saying what one believes false (irony) flouts Quality, not Relation."},
 
   {src:"Maxims",cat:"Relation",
-   text:"Replying <em>The morning paper has already arrived</em> to <em>What time is it?</em> exploits the maxim of <span class='kw1'>Relation</span> to convey an answer indirectly.",
+   text:"If both speakers know the newspaper is delivered at a regular time, replying <em>The morning paper has already arrived</em> to <em>What time is it?</em> can exploit the maxim of Relation to answer indirectly.",
    ans:true,
    correct:"직접 답 대신 관련 정보로 시간을 추론하게 하므로 maxim of <span class='kw1'>Relation</span> 활용이다. 정확하다.",
-   why:"Relation은 관련성 있는 기여를 하라는 maxim입니다. 시간을 직접 말하지 않고 관련 사실(신문 배달)을 제시하면, 청자는 협력을 가정해 대략의 시간을 추론합니다 — Relation을 통한 indirect answer입니다.",
+   why:"신문 배달 시각에 관한 공유 지식이 있을 때 도착 사실은 시간 질문과 관련됩니다. 청자는 Relation에 따라 대략적인 시간을 추론할 수 있습니다. 그 배경이 없다면 같은 답에서 특정 시간을 추론할 근거가 부족합니다.",
    source:"An indirectly relevant reply exploits the maxim of Relation."},
 
   {src:"Maxims",cat:"Manner · 혼동",
    text:"Deliberately spelling out a word letter by letter so that children cannot follow flouts the maxim of <span class='kw1'>Quality</span>.",
    ans:false,
    correct:"일부러 모호·장황하게 말해 명확성을 깨뜨린 것은 maxim of <span class='kw2'>Manner</span>다 — Quality가 아니다.",
-   why:"Manner는 명료하게(모호·중의·장황 회피) 말하라는 maxim입니다. 특정 청자가 못 알아듣게 일부러 철자를 풀어 말하는 것은 명확성을 의도적으로 위배한 Manner flouting입니다. Quality는 진실성에 관한 maxim이라 무관합니다.",
+   why:"철자를 풀어 말하는 것은 표현의 명확성과 관련되므로 Manner를 검토합니다. 성인 청자가 숨기려는 뜻을 알아채는 상황과 아이가 단어를 이해하지 못하는 상황을 구별해야 합니다. 전자가 알아채는 암시를 후자도 이해했다고 볼 수는 없습니다. 진술의 진실성에 관한 Quality와는 구별됩니다.",
    source:"Deliberate obscurity flouts the maxim of Manner, not Quality."},
 
   /* ── E. Implicature vs entailment; conversational vs conventional; scalar ── */
@@ -261,7 +261,7 @@ const Q=[
    text:"A <span class='kw1'>conversational implicature</span> is cancellable: <em>Some applicants passed — in fact, all of them did</em> removes the <em>not all</em> inference without contradiction.",
    ans:true,
    correct:"conversational implicature는 <span class='kw2'>cancellable</span>하다 — <em>in fact, all</em>로 모순 없이 취소된다. 정확하다.",
-   why:"conversational implicature는 CP·maxim·맥락으로 calculable하며, 명시적으로 cancel할 수 있는(defeasible) 성질을 갖습니다. <em>some</em>의 함축(not all)을 <em>in fact, all of them did</em>로 모순 없이 취소할 수 있다는 점이 이를 보여 줍니다.",
+   why:"conversational implicature는 CP·maxim·맥락으로 calculable하며, 명시적으로 취소할 수 있는(defeasible) 성질을 갖습니다. <em>some</em>의 함축(not all)을 <em>in fact, all of them did</em>로 모순 없이 취소할 수 있다는 점이 이를 보여 줍니다.",
    source:"Conversational implicatures are cancellable without contradiction.",
    compare:[{title:"conversational",desc:"calculable · cancellable"},{title:"entailment",desc:"진리조건 · not cancellable"}]},
 
@@ -269,59 +269,59 @@ const Q=[
    text:"An <span class='kw1'>entailment</span> can be cancelled by adding <em>…but in fact not</em>, just like a conversational implicature.",
    ans:false,
    correct:"entailment는 진리조건의 일부라 <span class='kw2'>not cancellable</span>하다 — 취소하면 모순이다.",
-   why:"entailment는 문장의 진리조건에 속하므로 p가 참이면 q가 반드시 참입니다. <em>…but in fact not</em>으로 취소하려 하면 모순이 생깁니다. 취소 가능한 것은 conversational implicature뿐이며, 이 cancel 가능 여부가 둘의 핵심 변별점입니다.",
+   why:"같은 reference와 sense를 유지할 때 p가 q를 entail한다면 p가 참이고 q가 거짓인 경우는 불가능합니다. 따라서 p를 그대로 유지하며 q를 부정하면 모순이 생깁니다. conversational implicature의 취소와 구별해야 합니다.",
    source:"Entailments are part of truth conditions and are not cancellable."},
 
   {src:"Implicature",cat:"conventional implicature",
    text:"The contrast meaning carried by <em>but</em> in <em>He is brilliant but lazy</em> is a <span class='kw1'>conventional implicature</span> and is not cancellable.",
    ans:true,
    correct:"<em>but</em>의 대조 함축은 단어에 관습적으로 묶인 <span class='kw1'>conventional implicature</span>로 취소 불가다. 정확하다.",
-   why:"conventional implicature는 특정 lexical item(<em>but/therefore/even</em>)에 관습적으로 결합된 비진리조건적 함축으로, 맥락과 무관하고 취소되지 않습니다. <em>but</em>이 운반하는 대조 함축은 conversational implicature와 달리 cancel할 수 없습니다.",
+   why:"입문적인 conventional implicature 분석에서 but의 대조는 어휘적으로 표시되지만 truth conditions에는 포함되지 않는 의미입니다. 같은 용법을 유지하면서 이 대조를 단순 취소하기는 어렵습니다. 다만 두 성질이 왜 대조되는지는 맥락이 관여하므로 모든 해석이 맥락과 무관하다는 뜻은 아닙니다.",
    source:"The contrast meaning of 'but' is a conventional, non-cancellable implicature."},
 
   {src:"Implicature",cat:"scalar · 방향 오류",
    text:"On the scale ⟨all, most, some⟩, asserting <em>some</em> generates the <span class='kw1'>scalar implicature</span> that <span class='kw4'>all</span> of them hold.",
    ans:false,
    correct:"scalar implicature는 상위 항의 <span class='kw2'>부정</span>이다 — <em>some</em>은 <em>not all</em>을 함축한다.",
-   why:"scalar implicature는 scale에서 약한 항을 주장하면 강한 항을 부정하는 함축입니다. ⟨all, most, some⟩에서 <em>some</em>을 쓰면 <em>not all</em>을 함축합니다. <em>all</em>을 함축한다고 했으므로 방향이 반대라 거짓입니다.",
+   why:"일반적인 scalar 추론의 방향은 관련된 더 강한 대안의 부정입니다. 화자가 전체 결과를 알고 있다는 가정 등이 주어지면 some에서 not all을 추론할 수 있습니다. all을 함축한다는 진술은 방향이 반대입니다. 화자의 지식과 대화 목적을 빼고 not all이 언제나 따라온다고 일반화하지 않습니다.",
    source:"Asserting 'some' scalar-implicates 'not all', the negation of the stronger item."},
 
   {src:"Implicature",cat:"entailment vs implicature",
-   text:"From <em>The chef seasoned every dish</em>, the inference <em>The chef seasoned a dish</em> is a cancellable <span class='kw1'>conversational implicature</span>.",
+   text:"Assume there is at least one dish in the relevant domain. From <em>The chef seasoned every dish</em>, <em>The chef seasoned a dish</em> is merely a cancellable conversational implicature.",
    ans:false,
    correct:"이것은 진리조건의 일부인 <span class='kw2'>entailment</span>다 — 취소 불가이지 cancellable conversational implicature가 아니다.",
-   why:"<em>every dish</em>를 양념했다면 <em>a dish</em>를 양념한 것은 진리상 반드시 따라옵니다(p 참 → q 참). 따라서 이는 entailment이며 취소 시 모순이 생깁니다. cancellable한 conversational implicature가 아닙니다.",
-   source:"'seasoned a dish' from 'seasoned every dish' is an entailment, not a cancellable implicature."},
+   why:"해당 domain에 요리가 하나 이상 있다는 조건 아래 every dish를 양념했다면 a dish를 양념했다는 내용이 따라옵니다. 이 조건에서 entailment이며 취소하면 모순입니다. 존재 조건 없이 every에서 some으로 가는 추론을 일반화하지 않습니다.",
+   source:"Universal-to-existential inference requires a nonempty restrictor domain."},
 
   /* ── F. Presupposition + triggers + negation test ── */
   {src:"Presupposition",cat:"constancy under negation",
    text:"A presupposition survives the <span class='kw1'>constancy under negation</span> test: <em>Owen has / hasn't quit smoking</em> both presuppose <em>Owen used to smoke</em>.",
    ans:true,
    correct:"긍정문과 부정문이 모두 같은 전제를 유지하므로 <span class='kw1'>constancy under negation</span>을 통과한다. 정확하다.",
-   why:"presupposition은 문장을 부정·의문화해도 유지됩니다. <em>quit</em>은 change-of-state trigger로, 긍정 <em>has quit</em>과 부정 <em>hasn't quit</em> 모두 <em>Owen used to smoke</em>를 전제합니다 — constancy under negation을 통과합니다.",
+   why:"quit을 일반적인 change-of-state 용법으로 해석하면 긍정과 ordinary negation 아래 모두 이전에 흡연했다는 배경을 유지합니다. 이 진단은 전형적인 presupposition을 찾는 데 유용하지만, 모든 복합문에서 그 배경 내용이 항상 유지된다는 규칙은 아닙니다.",
    source:"Presuppositions remain constant under negation (change-of-state trigger).",
-   compare:[{title:"presupposition",desc:"부정해도 유지"},{title:"entailment",desc:"부정하면 사라짐"}]},
+   compare:[{"title": "presupposition", "desc": "ordinary negation 아래 보통 유지"}, {"title": "entailment", "desc": "같은 q가 not-p에서도 보장되는지 별도 검사"}]},
 
   {src:"Presupposition",cat:"non-factive 함정",
    text:"The verb <em>believe</em> in <em>She believes that the vault is empty</em> is a <span class='kw1'>factive</span> presupposition trigger guaranteeing the vault is empty.",
    ans:false,
    correct:"<em>believe</em>는 <span class='kw2'>non-factive</span>라 보문의 참을 전제하지 않는다 — factive trigger가 아니다.",
-   why:"factive verb(regret, realize, be aware)는 보문이 참임을 전제하지만, <em>believe, think, claim, maintain</em> 같은 non-factive 술어는 보문의 참을 전제하지 않습니다. <em>She believes the vault is empty</em>는 금고가 실제로 비었는지 전제하지 않으므로 거짓입니다.",
+   why:"factive verb(regret, realize, be aware)는 보문이 참임을 전제하지만, <em>believe, think, claim, maintain</em> 같은 non-factive 술어는 보문의 참을 전제하지 않습니다. <em>She believes the vault is empty</em>는 금고가 실제로 비었다고 전제하지 않습니다. 따라서 believe가 factive trigger라는 문항의 진술은 거짓입니다.",
    source:"'believe' is non-factive and triggers no presupposition about its complement."},
 
   {src:"Presupposition",cat:"cleft trigger",
    text:"The cleft <em>It was the curator who unlocked the case</em> carries <span class='kw4'>no presupposition</span>, since clefts only assert and never presuppose.",
    ans:false,
    correct:"cleft는 presupposition trigger다 — <em>It was X that…</em>는 <span class='kw2'>누군가 그 일을 했다</span>를 전제한다.",
-   why:"cleft 구문 <em>It was X that/who…</em>는 <em>someone unlocked the case</em>를 전제하는 trigger입니다. 부정문 <em>It wasn't the curator who unlocked the case</em>에서도 누군가 열었다는 전제는 유지됩니다. cleft가 전제를 운반하지 않는다는 진술은 거짓입니다.",
+   why:"cleft 구문 <em>It was X that/who…</em>는 <em>someone unlocked the case</em>를 전제하는 trigger입니다. 부정문 <em>It wasn't the curator who unlocked the case</em>에서도 누군가 열었다는 전제는 유지됩니다. cleft에 전제가 없다는 진술은 거짓입니다.",
    source:"Clefts are presupposition triggers (It was X that … presupposes someone did it)."},
 
   {src:"Presupposition",cat:"entailment vs presupposition",
-   text:"Negating an entailing sentence leaves the entailment intact, exactly as negation leaves a presupposition intact.",
+   text:"<em>The courier delivered a parcel</em> entails <em>The courier delivered something</em>. Negating the first sentence necessarily preserves that same entailment.",
    ans:false,
-   correct:"부정은 <span class='kw2'>entailment를 제거</span>한다 — 부정 아래 유지되는 것은 presupposition뿐이다.",
-   why:"presupposition만 constancy under negation을 통과합니다. entailment는 문장을 부정하면 보장이 사라집니다(부정문에서 같은 함의가 따라오지 않음). 따라서 entailment가 부정 아래 유지된다는 진술은 거짓이며, 이것이 둘을 가르는 진단입니다.",
-   source:"Negation removes an entailment but a presupposition survives."},
+   correct:"<em>The courier did not deliver a parcel</em>만으로는 무언가 배달했다고 결론 내릴 수 없다.",
+   why:"부정문은 소포를 배달하지 않았다는 내용이지 다른 무언가를 배달했다는 보장이 아닙니다. 비교하는 q를 고정해야 하며, 부정문에 어떤 entailment도 없다는 뜻은 아닙니다. presupposition의 전형적인 ordinary-negation 진단과 대조합니다.",
+   source:"Negating p need not preserve a particular q entailed by p; compare ordinary presupposition projection."},
 
   /* ── G. Conventional implicature / face / politeness / deixis ── */
   {src:"Politeness",cat:"face",
@@ -336,27 +336,27 @@ const Q=[
    text:"A <span class='kw1'>face-threatening act (FTA)</span> is one that protects the hearer's face, such as a sincere compliment intended to please.",
    ans:false,
    correct:"FTA는 상대의 face를 <span class='kw2'>위협</span>하는 행위(요청·명령·거절·비판)다 — 보호하는 행위가 아니다.",
-   why:"face-threatening act는 본질적으로 상대의 face를 위협하는 행위입니다(요청·명령·거절·비판 등). 화자는 indirectness·hedge·존대 같은 politeness 전략으로 이 위협을 완화합니다. FTA가 face를 보호한다는 진술은 정의가 반대라 거짓입니다.",
+   why:"FTA는 face를 위협하는 행위입니다. request는 상대의 행동 자유와, criticism은 인정 욕구와 충돌할 수 있습니다. 이 이론에서는 화자 자신의 face와 관련된 위협도 다룹니다. compliment도 상황에 따라 부담을 줄 수 있으므로 겉으로 긍정적인 말이면 언제나 face 보호라고 단정하지 않습니다.",
    source:"An FTA threatens face; speakers mitigate it with politeness strategies."},
 
   {src:"Deixis",cat:"deictic shifting",
-   text:"When John's <em>I'll see her here tomorrow</em> is re-reported the next day at another place, <span class='kw1'>deictic shifting</span> changes <em>here</em> and <em>tomorrow</em> (e.g. to <em>there</em>, <em>the next day</em>), while proper names stay constant.",
+   text:"When a different speaker reports Mina’s Wednesday utterance <em>I will meet you here tomorrow</em> from another place on Thursday, expressions of person, place and time must be interpreted so that the original referents are preserved.",
    ans:true,
    correct:"보고 시점과 장소가 달라질 때 원래 지시 대상을 유지하도록 표현을 조정한다. 모든 deictic expression이 매번 바뀌는 것은 아니다.",
-   why:"원래 발화의 사람·시간·장소를 새 보고 맥락에서도 정확히 가리켜야 합니다. Here나 tomorrow를 바꿀 필요가 있는지는 보고 위치와 시점에 달려 있습니다. 같은 날 다시 보고한다면 yesterday나 five years ago는 그대로 유지할 수 있습니다. I는 원화자를 가리키는 이름이나 대명사로 표현합니다.",
-   source:"Deictic shifting changes context-dependent deictics while proper names stay constant.",
+   why:"간접 보고에서 I의 대상은 Mina, here의 대상은 원래 장소, tomorrow의 대상은 목요일입니다. 새 보고 맥락에서는 이름·장소명·today 등을 사용할 수 있습니다. 같은 날의 yesterday처럼 조정이 필요 없는 표현도 있으므로 모든 표현을 기계적으로 바꾸지 않습니다. 직접 인용과 원화자 자신의 재보고는 구별합니다.",
+   source:"Fromkin, Rodman & Hyams, An Introduction to Language, 10th ed., Pronouns and Other Deictic Words.",
    compare:[{title:"맥락에 따라 조정",desc:"보고 시점·장소를 확인"},{title:"유지",desc:"같은 날의 yesterday 등은 유지 가능"}]}
 ];
 
 const TOTAL=Q.length;
-const SAVE_KEY='linguistics_pragmatics_quiz_v1';
+const SAVE_KEY='linguistics_pragmatics_quiz_v2';
 let cur=0,answers=new Array(TOTAL).fill(null),mode='normal',order=[...Array(TOTAL).keys()];
 function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function freshStart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();if(mode==='random')order=shuffle([...Array(TOTAL).keys()]);saveProgress();document.getElementById('rb').style.display='none';render();}
 function setMode(m){if(mode===m)return;mode=m;order=m==='random'?shuffle([...Array(TOTAL).keys()]):[...Array(TOTAL).keys()];cur=0;answers=new Array(TOTAL).fill(null);clearProgress();updateModeUI();render();}
 function updateModeUI(){document.getElementById('btn-normal').classList.toggle('active',mode==='normal');document.getElementById('btn-random').classList.toggle('active',mode==='random');}
 function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({cur,answers,mode,order}));}catch(e){/* Keep the quiz usable when storage is unavailable or full. */}}
-function clearProgress(){localStorage.removeItem(SAVE_KEY);}
+function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){/* Storage can be disabled. */}}
 function getScore(){return answers.filter(a=>a&&a.correct).length;}
 function renderNav(){
   document.getElementById('nav').innerHTML=answers.map((_,i)=>{
@@ -456,9 +456,10 @@ function pick(val){
 function next(){cur++;if(cur>=TOTAL){clearProgress();}else{saveProgress();}render();}
 function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();document.getElementById('sc').classList.remove('show');document.getElementById('rb').style.display='none';document.getElementById('qa').style.display='block';renderNav();render();}
 (function(){
-  const saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
-  if(saved&&saved.answers&&saved.cur>=0&&saved.cur<TOTAL){
-    cur=saved.cur;answers=saved.answers;
+  let saved=null;
+  try{saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');}catch(e){/* Start fresh if storage is blocked or malformed. */}
+  if(saved&&Array.isArray(saved.answers)&&saved.answers.length===TOTAL&&saved.answers.every(a=>a===null||(a&&typeof a.picked==='boolean'&&typeof a.correct==='boolean'))&&Number.isInteger(saved.cur)&&saved.cur>=0&&saved.cur<TOTAL&&(saved.mode==='normal'||saved.mode==='random')&&Array.isArray(saved.order)&&saved.order.length===TOTAL&&new Set(saved.order).size===TOTAL&&saved.order.every(i=>Number.isInteger(i)&&i>=0&&i<TOTAL)){
+    cur=saved.cur;answers=saved.answers.map((a,i)=>a===null?null:{picked:a.picked,correct:a.picked===Q[saved.order[i]].ans});
     if(saved.mode){mode=saved.mode;order=saved.order||[...Array(TOTAL).keys()];}
     const done=answers.filter(a=>a!==null).length;
     if(done>0){
@@ -472,3 +473,4 @@ function restart(){cur=0;answers=new Array(TOTAL).fill(null);clearProgress();doc
 <script src="./study-return.js" data-hub-label="영어학 허브"></script>
 </body>
 </html>
+
