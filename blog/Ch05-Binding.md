@@ -12,7 +12,7 @@
 
 > **An antecedent is the expression that another expression takes its reference from. Two expressions sharing the same index (e.g., `_i`) are coindexed and refer to the same entity. A binds B if and only if (i) A c-commands B and (ii) A and B are coindexed. An expression is free if it is not bound.**
 
-<span style="color:#3182ce;">**Binding**</span>은 단순히 "같은 대상을 가리킨다"가 아닙니다. 두 조건을 **동시에** 만족해야 binding이 성립합니다 — <span style="color:#3182ce;">**coindexation**</span>(같은 index)과 <span style="color:#3182ce;">**c-command**</span>. 둘 중 하나라도 빠지면 그 요소는 <span style="color:#319795;">**free**</span>입니다. Binding Theory는 <span style="color:#3182ce;">**anaphor**</span> / <span style="color:#3182ce;">**pronoun**</span> / <span style="color:#3182ce;">**R-expression**</span> 세 부류가 각각 어디서 <span style="color:#319795;">**bound**</span>여야 하고 어디서 <span style="color:#319795;">**free**</span>여야 하는지를 Principle A·B·C로 규정합니다.
+<span style="color:#3182ce;">**Binding**</span>은 단순히 "같은 대상을 가리킨다"가 아닙니다. 두 조건을 **동시에** 만족해야 binding이 성립합니다 — <span style="color:#3182ce;">**coindexation**</span>(같은 index)과 <span style="color:#3182ce;">**c-command**</span>. 어느 한 조건이 빠지면 그 후보는 해당 요소를 bind하지 못합니다. 해당 영역 안에 두 조건을 모두 만족하는 선행사가 하나도 없을 때 그 요소는 그 영역에서 <span style="color:#319795;">**free**</span>입니다. Binding Theory는 <span style="color:#3182ce;">**anaphor**</span> / <span style="color:#3182ce;">**pronoun**</span> / <span style="color:#3182ce;">**R-expression**</span> 세 부류가 각각 어디서 <span style="color:#319795;">**bound**</span>여야 하고 어디서 <span style="color:#319795;">**free**</span>여야 하는지를 Principle A·B·C로 규정합니다.
 
 - <span style="color:#319795;">*Daniel_i hurt himself_i.*</span> — Daniel이 himself를 c-command하고 coindex → himself는 **bound** (정문).
 - <span style="color:#319795;">*Daniel_i said he_i was tired.*</span> — he는 Daniel과 coindex이지만 다른 절에 있어 자기 절 안에서는 free → 문장 차원의 coreference 허용 (정문).
@@ -177,7 +177,7 @@ Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 
 
 1. **요소부터 분류**: anaphor(reflexive·reciprocal) / pronoun / R-expression 중 무엇인지 먼저 결정. Principle이 자동으로 정해집니다 — A / B / C.
 2. **c-command 확인**: antecedent가 요소를 c-command하는가. 소유격(possessor) 안의 NP나 부사절 안의 요소는 바깥을 c-command하지 못하므로, 여기서 비문/정문이 갈립니다.
-3. **binding domain 확정**: 요소를 포함하는 가장 작은 절을 잡되, ECM(`believe X to VP`)이면 domain이 matrix subject까지 확장됨을 기억.
+3. **binding domain 확정**: 문항이 제시하는 domain 정의와 검사할 요소의 위치를 확인. 고전 GB 분석에서 ECM 보문의 **주어 X**(`believe X to VP`)는 matrix subject를 포함하는 domain을 갖지만, 그 보문의 **목적어**까지 무조건 같은 domain을 갖는 것은 아님.
 4. **bound/free 판정**: anaphor은 domain 안 bound여야 정문, pronoun은 domain 안 free여야 정문, R-expression은 어디서나 free여야 정문.
 
 ### 함정 정리
@@ -188,14 +188,14 @@ Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 
 
 ECM에서는 검사할 요소의 위치를 먼저 봅니다. `Nora believes herself to be qualified`의 주어 herself와 `Nora believes Mary to admire herself`의 목적어 herself는 domain이 다릅니다.
 
-<span style="color:#c53030;">**⚠️ Principle B는 "절 안에서만" free를 요구한다**</span>: pronoun이 문장 전체에서 antecedent를 못 가지는 것이 아닙니다. <span style="color:#319795;">*Megan said that Paula admired her.*</span>(her = Megan)처럼 domain **밖** antecedent와의 coreference는 허용됩니다.
+<span style="color:#c53030;">**⚠️ Principle B는 "자기 binding domain 안에서" free를 요구한다**</span>: pronoun이 문장 전체에서 antecedent를 못 가지는 것이 아닙니다. <span style="color:#319795;">*Megan said that Paula admired her.*</span>(her = Megan)처럼 domain **밖** antecedent와의 coreference는 허용됩니다.
 
 <span style="color:#c53030;">**⚠️ Principle C는 절이 달라도 적용된다**</span>: R-expression은 c-commanding antecedent가 다른 절에 있어도 bound될 수 없습니다. <span style="color:#c53030;">**\*She said that Diana was promoted.**</span>(She = Diana)는 비문입니다.
 
 ### 복습 포인트
 
 - anaphor = domain 안 bound, pronoun = domain 안 free, R-expression = 어디서나 free. 이 한 줄이 Principle A·B·C 전부입니다.
-- binding = c-command **and** coindexation. 둘 중 하나라도 빠지면 free.
+- binding = c-command **and** coindexation. 어느 한 조건이 빠지면 그 후보는 binder가 아님. 해당 영역 안에 두 조건을 모두 만족하는 binder가 없어야 그 영역에서 free.
 - 전형적인 목적어 자리에서 동일한 선행사를 가리킬 때 anaphor과 pronoun의 complementary distribution을 확인한다.
 - 고전 GB의 governing category에서는 요소·governor·적절한 subject를 구별한다. ECM 주어의 domain과 하위절 목적어의 domain을 혼동하지 않는다.
 
