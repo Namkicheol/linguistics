@@ -16,13 +16,17 @@
 
 <span style="color:#3182ce">**free**</span> = not bound. 어떤 요소를 c-command하면서 coindex된 선행사가 없으면 그 요소는 <span style="color:#319795">free</span>입니다. bound와 free는 상보적이며, <span style="color:#3182ce">**Principle B**</span>·<span style="color:#3182ce">**Principle C**</span>는 특정 영역에서 요소가 free일 것을 요구합니다.
 
-### Q3. c-command의 표준 정의 — ✅ O
+### Q3. A node c-commands its sisters and all of their descendants. — ✅ O
 
-A node <span style="color:#3182ce">**c-commands**</span> its sisters and all of their descendants. X 위로 처음 갈라지는 first branching node가 지배하는 모든 요소를 X가 c-command합니다. 직관적으로 X는 자신의 sister와 그 후손들을 c-command합니다 — <span style="color:#319795">subject DP가 VP 내부 object를 c-command하는 것</span>이 전형적 예입니다.
+<span style="color:#3182ce">c-command</span>의 표준 정의 — 어떤 node는 자신의 sister와 그 sister가 지배하는 모든 것을 c-command한다.
 
-### Q4. *The witness' testimony exposed themselves* — possessor c-command 실패 — ❌ X
+X 위의 first branching node가 Y를 지배하고, X와 Y가 서로를 지배하지 않는지 확인합니다. 단순한 분지 구조에서는 sister와 그 내부를 보는 방법으로 판별할 수 있습니다. X 자신이나 X 내부까지 모두 c-command한다고 읽으면 안 됩니다.
 
-<span style="color:#c53030">**⚠️ 핵심 함정**</span>. 소유격 specifier <em>the witness'</em>는 큰 subject DP 내부에 갇혀 있어 그 위 first branching node가 <em>themselves</em>를 dominate하지 못합니다 → <em>themselves</em>를 <span style="color:#c53030">c-command하지 못함</span> → 적법한 선행사 부재. <span style="color:#c53030">*The witness' testimony exposed themselves.*</span> is ungrammatical because <span style="color:#3182ce">**Principle A**</span> is violated — the anaphor has no c-commanding antecedent within its governing category. 정문은 <span style="color:#319795">*The witnesses exposed themselves.*</span>
+### Q4. In \*The witnesses' testimony exposed themselves, the possessor the witnesses' c-commands themselves. — ❌ X
+
+<em>the witnesses'</em>는 소유격 specifier 안에 갇혀 <em>themselves</em>를 <span style="color:#319795">c-command하지 못한다</span> → 적법한 선행사 부재 → 비문.
+
+소유격 specifier(<em>the witnesses'</em>)는 큰 subject DP 내부에 갇혀 있어 그 위 first branching node가 <em>themselves</em>를 dominate하지 못합니다. The sentence is ungrammatical because Principle A is violated — the anaphor has no c-commanding antecedent within its governing category.
 
 ### Q5. *The witnesses exposed themselves* — subject c-command — ✅ O
 
@@ -36,33 +40,43 @@ subject DP <em>the witnesses</em> 위 first branching node(TP)가 VP와 그 안�
 
 ## ② Principle A — anaphors (Q7–Q16)
 
-### Q7. *The actress blamed himself* — gender agreement 위반 — ❌ X
+### Q7. The sentence \*The actress blamed himself is grammatical. — ❌ X
 
-<span style="color:#c53030">**⚠️ 함정**</span>. reflexive는 선행사와 person·number·gender에서 일치해야 합니다. <em>the actress</em>(여성)와 <em>himself</em>(남성)는 <span style="color:#c53030">gender가 어긋나므로</span> 적법한 c-commanding antecedent가 없는 것과 같습니다. <span style="color:#c53030">*The actress blamed himself.*</span> is ungrammatical because <span style="color:#3182ce">**Principle A**</span> is violated — the anaphor is not properly bound in its governing category.
+비문이다. anaphor <em>himself</em>가 선행사 <em>the actress</em>와 <span style="color:#319795">gender agreement</span>에 실패한다.
+
+통상적인 해석에서 actress와 himself는 gender 자질이 맞지 않습니다. 주어가 목적어를 c-command한다는 구조적 관계는 성립하지만, 적절한 reflexive–antecedent 관계를 이루지 못합니다. Agreement의 실패를 c-command의 부재와 혼동하지 않습니다.
 
 ### Q8. *Brian hopes that Karen will forgive himself* — Principle A 위반 — ✅ O
 
 <em>himself</em>의 <span style="color:#3182ce">**governing category**</span>는 종속절(<em>Karen will forgive himself</em>)이고 그 안에는 적법한 선행사가 없습니다. 선행사 <em>Brian</em>은 절 밖에 있어 너무 멀리 있습니다. <span style="color:#c53030">*Brian hopes that Karen will forgive himself.*</span> is ungrammatical because <span style="color:#3182ce">**Principle A**</span> is violated — the anaphor is not bound within its governing category.
 
-### Q9. *The juror distrusts each other* — reciprocal number 위반 — ❌ X
+### Q9. The sentence \*The juror distrusts each other is grammatical. — ❌ X
 
-<span style="color:#c53030">**⚠️ 오답 포인트**</span>. reciprocal <em>each other</em>는 의미상 복수 선행사를 필요로 합니다. 단수 <em>the juror</em>는 이를 만족시키지 못합니다. <span style="color:#c53030">*The juror distrusts each other.*</span> is ungrammatical because <span style="color:#3182ce">**Principle A**</span> is violated — the anaphor lacks an appropriate plural antecedent in its governing category.
+비문이다. reciprocal <em>each other</em>는 복수 선행사를 요구하는데 <em>the juror</em>는 단수다.
+
+Each other는 서로 관계를 맺는 복수의 참여자를 필요로 합니다. The juror가 한 사람을 가리키는 이 예에서는 적절한 선행사가 될 수 없습니다. 단수 주어도 목적어를 c-command할 수 있으므로, c-command 부재가 아니라 reciprocal의 선행사 조건 문제입니다.
 
 ### Q10. *Each other resigned* — anaphor에 선행사 부재 — ❌ X
 
 anaphor은 독립 지시를 가질 수 없어 반드시 c-commanding 선행사가 필요합니다. 주어 자리의 <em>each other</em>는 선행사가 전혀 없습니다. <span style="color:#c53030">*Each other resigned.*</span> is ungrammatical because <span style="color:#3182ce">**Principle A**</span> is violated — the anaphor is not bound (it has no c-commanding antecedent).
 
-### Q11. finite 종속절 anaphor이 상위 절 선행사 가능? — ❌ X
+### Q11. In Brian hopes that Karen will forgive himself, the object reflexive himself may take Brian as its antecedent. — ❌ X
 
-<span style="color:#c53030">**⚠️ 함정**</span>. <span style="color:#3182ce">**finite**</span> 종속절은 그 자체로 anaphor의 <span style="color:#3182ce">**governing category**</span>를 형성하므로 anaphor은 그 절 안에서 bound돼야 합니다. 상위 절의 선행사는 너무 멀어 <span style="color:#3182ce">**Principle A**</span>를 위반합니다. (ECM 비정형 보문에서는 domain이 확장되지만, finite 절에서는 닫혀 있습니다.)
+틀리다. 이 예의 목적어 himself는 하위절 안에서 local하게 bound되어야 하므로 Brian을 선행사로 삼을 수 없다.
 
-### Q12. *Nora believes herself to be qualified* — ECM domain 확장 — ✅ O
+Himself는 forgive의 목적어이고 하위절 주어는 Karen입니다. Brian은 himself를 c-command하지만 그 local domain 밖에 있습니다. 이 문항은 별도의 주어가 있는 finite 절의 목적어를 다루며, NP 내부의 특수한 reflexive 용법까지 일반화하지 않습니다.
 
-<span style="color:#3182ce">**ECM**</span> 보문(<em>believe X to VP</em>)에서는 하위 subject 자리에 적법한 subject-binder가 없어 anaphor의 <span style="color:#3182ce">**governing category**</span>가 matrix subject까지 확장됩니다. 따라서 <em>Nora</em>가 <em>herself</em>를 같은 domain 안에서 c-command·bind → <span style="color:#3182ce">**Principle A**</span> 충족 → <span style="color:#319795">*Nora believes herself to be qualified.*</span> 정문. 반면 <span style="color:#c53030">*Nora believes her to be qualified.*</span> (her=Nora)는 비문입니다.
+### Q12. Nora believes herself to be qualified is grammatical. — ✅ O
 
-### Q13. *The committee elected herself* — agreement + 선행사 부재 — ❌ X
+정문이다 — <span style="color:#3182ce">ECM</span> 구문에서 matrix subject <em>Nora</em>가 <em>herself</em>의 governing category 안에서 bind한다.
 
-<span style="color:#c53030">**⚠️ 오답 포인트**</span>. <em>the committee</em>는 <em>herself</em>를 c-command하지만 의미·자질 면에서 적법한 선행사가 되지 못하고, anaphor은 governing category 안에서 bound될 적절한 선행사를 찾지 못합니다. <span style="color:#c53030">*The committee elected herself.*</span> is ungrammatical because <span style="color:#3182ce">**Principle A**</span> is violated — the anaphor is not properly bound in its governing category.
+ECM 보문의 주어인 herself의 governor를 상위 동사 believes로 보는 고전 GB 분석에서는, governor를 포함하는 domain이 상위절까지 이릅니다. 그 안의 Nora가 herself를 c-command하고 coindex되므로 local binding이 성립합니다. 하위절 목적어인 reflexive까지 모두 이 domain을 갖는 것은 아닙니다.
+
+### Q13. The sentence \*The committee elected herself is grammatical. — ❌ X
+
+통상적인 해석에서는 비문이다. Committee는 herself가 요구하는 여성 단수 인물을 가리키지 않는다.
+
+The committee는 목적어 herself를 c-command하지만, 이 예의 통상적인 해석에서는 herself에 적절한 선행사가 아닙니다. Committee와 herself가 둘 다 형태상 단수일 수 있으므로 단순한 number 불일치라고만 설명하지 않습니다. 이 문항은 해당 지시·자질 조건을 검사합니다.
 
 ### Q14. reflexive는 선행사와 gender 달라도 되나? — ❌ X
 
@@ -88,9 +102,11 @@ reflexive와 reciprocal은 둘 다 anaphor로 <span style="color:#3182ce">**Prin
 
 <em>her</em>의 <span style="color:#3182ce">**governing category**</span>는 종속절(<em>Paula admired her</em>)이고 그 안에서는 <span style="color:#319795">free</span>입니다(Paula에 bound 안 됨). 절 밖의 <em>Megan</em>과 coreference는 <span style="color:#3182ce">**Principle B**</span>를 위반하지 않으므로 her=Megan 독해가 가능합니다.
 
-### Q19. pronoun이 governing category 안에서 bound돼야 한다? — ❌ X
+### Q19. A pronoun must be bound within its governing category. — ❌ X
 
-<span style="color:#c53030">**⚠️ 핵심 함정**</span>. governing category 안에서 bound돼야 하는 것은 anaphor(<span style="color:#3182ce">**Principle A**</span>)입니다. pronoun은 정반대로 같은 domain 안에서 <span style="color:#319795">free</span>여야 하고(<span style="color:#3182ce">**Principle B**</span>), domain 밖 선행사와의 coreference만 허용됩니다. 그래서 reflexive와 pronoun은 <span style="color:#3182ce">**complementary distribution**</span>을 이룹니다.
+틀리다 — <span style="color:#3182ce">Principle B</span>는 pronoun이 governing category 안에서 <span style="color:#319795">free</span>일 것을 요구한다(bound가 아니라).
+
+Anaphor는 자신의 binding domain 안에서 bound되어야 하지만, pronoun은 그 안에서 free여야 합니다. 금지되는 것은 domain 안의 binding입니다. C-command를 하지 않는 표현과의 모든 coreference까지 일괄 금지하는 규칙은 아닙니다.
 
 ### Q20. *The senator believes him to be honest* (him=the senator) — ECM pronoun bound — ❌ X
 
@@ -100,9 +116,11 @@ reflexive와 reciprocal은 둘 다 anaphor로 <span style="color:#3182ce">**Prin
 
 <em>him</em>의 <span style="color:#3182ce">**governing category**</span> 안에서는 <em>Sarah</em>에 bound되지 않아 <span style="color:#319795">free</span>입니다. matrix subject <em>Oliver</em>는 그 domain 밖에 있으므로 him=Oliver coreference가 <span style="color:#3182ce">**Principle B**</span>를 위반하지 않습니다 → 가능.
 
-### Q22. reflexive와 pronoun은 complementary distribution — ✅ O
+### Q22. In Victor defended himself/him, with both forms intended to refer to Victor, the reflexive is allowed and the pronoun is excluded. — ✅ O
 
-<span style="color:#3182ce">**Principle A**</span>는 anaphor이 governing category 안에서 bound될 것을, <span style="color:#3182ce">**Principle B**</span>는 pronoun이 같은 domain에서 free일 것을 요구합니다. 따라서 한 자리에서 한쪽이 정문이면 다른 쪽은 비문이 되어 <span style="color:#3182ce">**complementary distribution**</span>을 이룹니다: <span style="color:#319795">*Victor defended himself.*</span> ✓ / <span style="color:#c53030">*Victor defended him.*</span> (him=Victor) ✗.
+맞다. 이 목적어 자리에서 Victor와 같은 사람을 가리키면 himself는 허용되고 him은 Principle B를 위반한다.
+
+Victor가 같은 domain 안의 목적어를 c-command합니다. Himself는 local하게 bound되어 Principle A를 만족하지만, him은 local하게 bound되므로 Principle B를 위반합니다. 이 전형적 대조를 모든 위치의 reflexive와 pronoun이 예외 없이 상보적이라는 주장으로 확대하지 않습니다.
 
 ### Q23. *Victor defended him* (him=Victor) — pronoun locally bound — ❌ X
 
@@ -156,21 +174,30 @@ matrix subject <em>She</em>는 종속절 안 <em>Diana</em>를 <span style="colo
 
 ## ⑤ governing category / binding domain / locality (Q34–Q37)
 
-### Q34. binding domain의 정의 — ✅ O
+### Q34. In Mary praised herself, the single clause provides the local binding domain for the object reflexive. — ✅ O
 
-<span style="color:#3182ce">**binding domain**</span>(= <span style="color:#3182ce">**governing category**</span>)은 그 요소와 subject를 포함하는 가장 작은 절입니다. locality는 <span style="color:#3182ce">**Principle A**</span>·<span style="color:#3182ce">**Principle B**</span>가 적용되는 '어디까지'를 정합니다. anaphor은 이 안에서 bound, pronoun은 이 안에서 free여야 합니다.
+맞다. 이 문장의 목적어 herself는 같은 절의 주어 Mary에 의해 local하게 bound된다.
 
-### Q35. reflexive와 선행사는 clause-bounded — ✅ O
+이 예에서는 herself, 그 governor인 praised, 주어 Mary가 한 절 안에 있습니다. 다만 이것을 모든 구문에서 binding domain이 언제나 가장 작은 절이라는 정의로 확대하지 않습니다. ECM 보문의 주어와 NP 내부 표현은 별도로 분석해야 합니다.
 
-anaphor은 자신의 <span style="color:#3182ce">**governing category**</span> 안에서 bound돼야 하므로 선행사와 <span style="color:#3182ce">**clause-mate**</span>여야 합니다(finite 절 기준). 선행사가 다른 절에 있으면 <span style="color:#3182ce">**Principle A**</span> 위반입니다. (ECM 비정형 보문에서는 domain이 위로 확장됩니다.)
+### Q35. The clausemate generalization needs qualification for ECM subject reflexives and for antecedents that have undergone raising. — ✅ O
 
-### Q36. ECM에서 matrix subject가 X의 binding domain 안 — ✅ O
+맞다. ECM 보문의 주어와 raising chain은 표면상의 같은 절 여부만으로 판정할 수 없다.
 
-비정형/<span style="color:#3182ce">**ECM**</span> 보문(<em>believe X to be…</em>)에서는 하위 subject 자리에 적법한 subject-binder가 없어 X의 <span style="color:#3182ce">**binding domain**</span>이 matrix subject까지 확장됩니다. 그래서 <span style="color:#319795">*Nora believes herself to be…*</span>는 정문(anaphor bound), <span style="color:#c53030">*Nora believes her to be…*</span>는 비문(pronoun bound)입니다.
+Nora believes herself to be qualified에서는 ECM 주어의 domain에 상위절 Nora가 포함됩니다. John seems to have hurt himself에서는 John의 낮은 주어 위치도 binding 판단에 관련됩니다. 단순 목적어 예문의 clause-mate 요약을 모든 구조에 그대로 적용하면 두 경우를 잘못 판정하게 됩니다.
 
-### Q37. governing category와 binding domain은 충돌하는 다른 개념? — ❌ X
+### Q36. In an ECM structure like believe X to be..., the matrix subject lies within the binding domain of X. — ✅ O
 
-<span style="color:#c53030">**⚠️ 함정**</span>. 둘은 같은 개념의 표준 <span style="color:#3182ce">**동의어(synonyms)**</span>입니다. <em>governing category</em>는 GB 고전 용어, <em>binding domain</em>은 같은 개념의 운영 용어로, 둘 다 '요소와 그 binder가 될 수 있는 subject를 포함하는 가장 작은 절'을 가리킵니다. 충돌하는 개념이 아니라 같은 것을 부르는 두 이름입니다.
+맞다 — ECM에서는 하위 subject 자리 요소 X의 binding domain이 matrix subject까지 확장된다.
+
+ECM 보문의 주어인 X의 governor를 상위 동사 believes로 보는 고전 GB 분석에서는, governor를 포함하는 domain이 상위절까지 이릅니다. 그 안의 Nora가 X와 coindex되면 X를 local하게 bind합니다. X가 reflexive이면 허용되지만 pronoun이면 Principle B 위반입니다. 하위절 목적어인 reflexive까지 모두 이 domain을 갖는 것은 아닙니다.
+
+### Q37. The terms governing category and binding domain have exactly the same definition in every theory. — ❌ X
+
+틀리다. Governing category는 고전 GB의 분석 장치이고, binding domain의 구체적인 정의는 이론과 문항에 따라 확인해야 한다.
+
+두 용어는 같은 local 영역을 가리키는 맥락에서 함께 쓰이지만, 언제나 완전히 같은 정의인 것은 아닙니다. 고전 GB의 governing category는 해당 요소와 governor, 적절한 subject 등의 조건을 사용합니다. Subject와 governor는 동의어가 아닙니다.
+
 
 ---
 
@@ -184,9 +211,12 @@ anaphor은 자신의 <span style="color:#3182ce">**governing category**</span> �
 
 <span style="color:#c53030">**⚠️ 핵심 함정**</span>. <span style="color:#3182ce">**ECM**</span> 구문에서 <span style="color:#3182ce">**binding domain**</span>이 matrix까지 확장되므로, pronoun <em>her</em>가 그 domain 안 matrix subject <em>Nora</em>에 bound되면 위반입니다. <span style="color:#c53030">*Nora believes her to be qualified.*</span> (her=Nora) is ungrammatical on that reading because <span style="color:#3182ce">**Principle B**</span> is violated — the pronoun is not free in its governing category. 같은 자리에서 anaphor <em>herself</em>는 <span style="color:#319795">정문</span>, pronoun <em>her</em>는 비문이라 <span style="color:#3182ce">**complementarity**</span>가 ECM 환경에서도 성립합니다.
 
-### Q40. anaphor의 유일한 선행사가 먼 matrix subject뿐이면 ill-formed — ✅ O
+### Q40. In a raising chain, the surface distance between an anaphor and its antecedent does not by itself prove a Principle A violation; the lower position of the raised NP must also be considered. — ✅ O
 
-anaphor은 자신의 <span style="color:#3182ce">**governing category**</span>(minimal clause) 안에서 bound돼야 하므로, 유일한 선행사가 멀리 떨어진 matrix subject뿐이면 binding condition을 만족시킬 수 없어 ill-formed입니다. <span style="color:#dd6b20">**현직쌤 팁**: 기출에서는 Theta+Binding+Movement 결합형 서술형으로 출제되니, anaphor을 보면 항상 "이 binding domain 안에 적법한 c-commanding 선행사가 있나?"부터 물어라.</span>
+표면상 멀리 떨어져 있다는 사실만으로 Principle A 위반을 판정하지 않는다. Raising chain의 낮은 위치와 anaphor의 관계를 확인해야 한다.
+
+2018학년도 전공 B 6번의 raising 예에서는 가장 낮은 위치에서 성립하는 binding 관계를 함께 고려합니다. 다른 subject를 건너뛰는지 등 실제 구조를 확인해야 하며, 모든 상위절 주어가 하위절 anaphor의 선행사가 될 수 있다는 뜻은 아닙니다.
+
 
 ---
 
@@ -197,3 +227,4 @@ anaphor은 자신의 <span style="color:#3182ce">**governing category**</span>(m
 ---
 
 **태그**: 임용고시, 중등영어, 전공영어, 영어학, 통사론, syntax, Binding, Principle A, Principle B, Principle C, c-command, anaphor, OX, 기출분석, 서브노트
+

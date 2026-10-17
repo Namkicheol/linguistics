@@ -43,9 +43,9 @@ possessor가 c-command에 실패하는 대조가 핵심입니다.
 
 ### Principle A — anaphors
 
-> **An anaphor must be bound within its binding domain (the minimal clause / minimal CP-or-DP containing the anaphor and its closest subject).**
+> **An anaphor must be bound within its binding domain.**
 
-<span style="color:#3182ce;">**Anaphor**</span>은 독립 지시(independent reference)를 가질 수 없는 표현입니다 — <span style="color:#3182ce;">**reflexives**</span>(myself, himself, herself, themselves …)와 <span style="color:#3182ce;">**reciprocals**</span>(each other, one another). 따라서 반드시 antecedent가 있어야 하고, 그 antecedent는 (i) anaphor을 c-command해야 하며 (ii) 같은 <span style="color:#3182ce;">**binding domain**</span>(대략 minimal clause) 안에 있어야 합니다. domain 밖의 antecedent로는 bound될 수 없습니다. <span style="color:#3182ce;">**governing category**</span>라는 표준 용어도 같은 뜻입니다.
+<span style="color:#3182ce;">**Anaphor**</span>은 독립 지시(independent reference)를 가질 수 없는 표현입니다 — <span style="color:#3182ce;">**reflexives**</span>(myself, himself, herself, themselves …)와 <span style="color:#3182ce;">**reciprocals**</span>(each other, one another). 따라서 반드시 antecedent가 있어야 하고, 그 antecedent는 (i) anaphor을 c-command해야 하며 (ii) 같은 <span style="color:#3182ce;">**binding domain**</span>(대략 minimal clause) 안에 있어야 합니다. domain 밖의 antecedent로는 bound될 수 없습니다. <span style="color:#3182ce;">**governing category**</span>는 고전 GB에서 local domain을 정하는 용어입니다.
 
 - <span style="color:#319795;">*The actress_i blamed herself_i.*</span> — herself가 같은 절 안에서 c-commanding antecedent에 bound → 정문.
 - <span style="color:#c53030;">**\*Brian_i hopes that Karen will forgive himself_i.**</span> — himself의 antecedent Brian이 종속절 밖(다른 binding domain)에 있음 → 비문 (Principle A 위반: anaphor not bound in its binding domain).
@@ -58,9 +58,9 @@ possessor가 c-command에 실패하는 대조가 핵심입니다.
 
 ### Principle B — pronouns
 
-> **A pronoun must be free in its binding domain. It may not be bound by a coindexed antecedent within its minimal clause, but it may be bound outside it.**
+> **A pronoun must be free in its binding domain. It may not be bound by a coindexed antecedent within its binding domain, but it may be bound outside that domain.**
 
-<span style="color:#3182ce;">**Pronoun**</span>(he, she, it, they, him, her, them …)은 anaphor과 **정확히 반대**입니다. 같은 binding domain 안에서는 antecedent에 bound되면 **안 됩니다**(free여야 함). 단 domain **밖**의 antecedent와의 coreference는 허용됩니다. 그래서 reflexive와 pronoun은 같은 자리에서 <span style="color:#3182ce;">**complementary distribution**</span>을 이룹니다 — 한쪽이 정문이면 다른 쪽은 그 antecedent로 비문입니다.
+<span style="color:#3182ce;">**Pronoun**</span>(he, she, it, they, him, her, them …)은 anaphor과 **정확히 반대**입니다. 같은 binding domain 안에서는 antecedent에 bound되면 **안 됩니다**(free여야 함). 단 domain **밖**의 antecedent와의 coreference는 허용됩니다. 그래서 아래의 목적어 예문에서 같은 선행사를 가리키는 reflexive와 pronoun은 <span style="color:#3182ce;">**complementary distribution**</span>을 이룹니다 — 한쪽이 정문이면 다른 쪽은 그 antecedent로 비문입니다.
 
 - <span style="color:#c53030;">**\*Megan_i criticized her_i.**</span> — her가 같은 절 subject Megan에 bound → Principle B 위반 → 비문 (her는 다른 사람만 지시 가능).
 - <span style="color:#319795;">*Megan_i said that Paula admired her_i.*</span> — her가 자기 binding domain(종속절) 안에서는 free, 절 밖 Megan과 coreference → 정문.
@@ -91,11 +91,11 @@ possessor가 c-command에 실패하는 대조가 핵심입니다.
 
 ### Governing category / Binding domain — locality
 
-> **The binding domain (= governing category) of an element is the smallest clause (minimal CP/TP) — or DP — containing that element and a subject (governor) that could serve as its binder.**
+> **Binding domain은 Principle A·B의 local 조건을 적용하는 영역이다. 고전 GB의 governing category는 해당 요소, 그 governor, 적절한 subject를 포함하는 최소 영역을 찾는다. Subject와 governor는 별개다.**
 
-<span style="color:#3182ce;">**locality**</span>는 Principle A·B의 "어디까지"를 정합니다. 대략 **anaphor / pronoun을 포함하는 가장 작은 절**이 그 <span style="color:#3182ce;">**binding domain**</span>입니다. Anaphor은 이 domain **안에서** bound, pronoun은 이 domain **안에서** free여야 합니다. <span style="color:#3182ce;">**governing category**</span>와 <span style="color:#3182ce;">**binding domain**</span>은 같은 개념의 다른 이름일 뿐입니다.
+<span style="color:#3182ce;">**locality**</span>는 Principle A·B의 "어디까지"를 정합니다. 대략 **anaphor / pronoun을 포함하는 가장 작은 절**이 그 <span style="color:#3182ce;">**binding domain**</span>입니다. Anaphor은 이 domain **안에서** bound, pronoun은 이 domain **안에서** free여야 합니다. <span style="color:#3182ce;">**governing category**</span>와 <span style="color:#3182ce;">**binding domain**</span>은 고전 GB의 local domain을 설명할 때 함께 쓰이지만, 모든 이론에서 정의가 같은 것은 아닙니다.
 
-여기서 ECM이 domain을 위로 확장하는 점을 반드시 함께 잡아야 모순이 없습니다. binding domain은 "요소 + 그 binder가 될 수 있는 subject를 포함하는 가장 작은 절"입니다. 따라서 <span style="color:#3182ce;">**finite 종속절**</span>에서는 anaphor의 domain이 그 종속절에 닫혀 상위 절 antecedent를 가질 수 없습니다. 그러나 비정형/ECM 보문(`believe / expect X to VP`)에서는 하위 subject 자리의 요소가 그 절 안에 적법한 subject-binder를 갖지 못하므로 domain이 **matrix subject까지 확장**됩니다. 그 결과 `Nora believes herself to be...`(anaphor)는 정문, <span style="color:#c53030;">**\*Nora believes her to be...**</span>(pronoun, 같은 지시)는 비문입니다. 즉 "clause-bounded"는 finite 절 기준의 평이한 특성화이고, ECM에서는 domain이 위로 확장된다는 점을 함께 적어야 합니다.
+ECM 보문의 주어와 목적어를 구별해야 합니다. `Nora believes herself to be qualified`의 herself는 하위절 주어이고, 상위 동사 believes가 governor이므로 고전 GB식 domain이 상위절까지 이릅니다. 반면 `Nora believes Mary to admire herself`의 목적어 herself는 하위절 주어 Mary를 선행사로 삼습니다. 비정형절의 모든 요소가 상위절 선행사를 허용하는 것은 아닙니다.
 
 - <span style="color:#319795;">*Helen_i convinced herself_i.*</span> (domain = 단일 절, anaphor bound → 정문)
 - <span style="color:#c53030;">**\*Helen_i convinced her_i.**</span> (같은 domain에서 pronoun bound → 비문)
@@ -107,11 +107,11 @@ possessor가 c-command에 실패하는 대조가 핵심입니다.
 
 Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 c-command를 묻는 핵심 영역입니다.
 
-<span style="color:#dd6b20;">**메가쌤 기출분석에서 확인된 결합형 서술형 각도**</span>가 대표적입니다. <span style="color:#3182ce;">**Theta role**</span> + <span style="color:#3182ce;">**Binding condition**</span> + <span style="color:#3182ce;">**Movement constraint**</span>를 한 서술형 문항에서 동시에 적용시키는 고난도 유형으로, Binding 부분의 핵심은 anaphor(himself)가 **lowest embedded clause** 안에 있고 antecedent(matrix subject)가 멀리 있을 때 anaphor이 bound될 수 있는지를 판정·설명하게 하는 것입니다. 표준 답안 방향은 — anaphor은 자신의 binding domain(minimal clause) 안에서 bound되어야 하므로, antecedent가 다른 절에 있으면 binding condition 위반으로 ill-formed라는 것입니다.
+**2018학년도 1차 전공 B 6번**은 Theta role, binding condition, movement constraint를 함께 적용합니다. Tom이 가장 낮은 brag 절의 주어 위치에서 출발해 위로 이동하는 raising chain을 고려해야 합니다. 낮은 위치에서 himself와 local binding이 성립하므로 표면상 다른 절에 있다는 이유만으로 ill-formed라고 판정하지 않습니다. 문항 (5)는 세 조건을 만족하는 well-formed 분석입니다.
 
 토픽 색인 수준에서는 `binding theory`, `anaphora`, `pronoun`, `Principle A/B/C`가 출제 토픽으로 등재되어 있습니다.
 
-> 연도가 검증되지 않은 항목은 연도를 표기하지 않았습니다. 위 결합형 각도는 메가쌤 기출분석에서 확인된 각도이되 해당 자료에서 연도가 확인되지 않아 연도 표기를 생략합니다.
+> 위 결합형 예는 2018학년도 1차 전공 B 6번에 해당합니다. 표면상의 거리와 raising chain의 낮은 위치를 구별해 읽습니다.
 
 ---
 
@@ -126,29 +126,29 @@ Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 
 | 독립 지시 가능? | 불가 — 반드시 antecedent 필요 | 가능(deictic) 또는 antecedent | 가능 — 스스로 지시 |
 | 적용 Principle | **A** | **B** | **C** |
 | 요건 | binding domain 안에서 **bound** | binding domain 안에서 **free** | 어디서나 **free** |
-| 같은 절 내 c-commanding antecedent | **필수** (없으면 비문) | **금지** (있으면 비문) | **금지** (있으면 비문) |
-| 절 밖 c-commanding antecedent | 불가 (too far) | 허용 | 금지 |
+| domain 안의 c-commanding·coindexed antecedent | **필수** (없으면 비문) | **금지** (있으면 비문) | **금지** (있으면 비문) |
+| domain 밖의 c-commanding·coindexed antecedent | 불가 (too far) | 허용 | 금지 |
 
 한 줄 요약 — anaphor은 가까이서 bound, pronoun은 가까이선 free·멀리선 OK, R-expression은 언제나 free.
 
 ### Principle A vs Principle B — complementary distribution
 
-같은 자리에서 anaphor과 pronoun은 정반대로 갈립니다. 이것이 두 Principle이 만드는 <span style="color:#3182ce;">**complementary distribution**</span>입니다.
+아래의 전형적 목적어 자리에서 같은 선행사를 가리키면 anaphor과 pronoun은 정반대로 갈립니다. Picture-NP 등 모든 위치에 그대로 일반화하지는 않습니다. 이것이 두 Principle이 만드는 <span style="color:#3182ce;">**complementary distribution**</span>입니다.
 
 | 자리 | Anaphor | Pronoun |
 |---|---|---|
-| 같은 절(binding domain) 안 c-commanding subject | <span style="color:#319795;">정문 (Principle A 충족 — bound)</span> | <span style="color:#c53030;">비문 (Principle B 위반 — bound)</span> |
-| 절 밖 antecedent와 coreference | <span style="color:#c53030;">불가 (too far)</span> | <span style="color:#319795;">허용 (domain 안에서는 free)</span> |
+| 같은 domain 안 c-commanding·coindexed subject | <span style="color:#319795;">정문 (Principle A 충족 — bound)</span> | <span style="color:#c53030;">비문 (Principle B 위반 — bound)</span> |
+| domain 밖 antecedent와의 binding | <span style="color:#c53030;">불가 (too far)</span> | <span style="color:#319795;">허용 (domain 안에서는 free)</span> |
 | 예 | <span style="color:#319795;">*Victor defended himself.*</span> | <span style="color:#c53030;">**\*Victor defended him.**</span> (him = Victor) |
 
 ### governing category / binding domain — finite vs ECM
 
-`governing category`와 `binding domain`은 같은 개념의 표준 동의어입니다. 핵심은 finite 절과 ECM 보문에서 domain의 범위가 달라진다는 점입니다.
+`Governing category`는 고전 GB의 local domain 분석 장치입니다. ECM에서는 하위절 주어와 목적어를 구별하고, 각 요소의 governor와 관련 subject를 확인합니다.
 
 | 구조 | binding domain 범위 | anaphor | pronoun (같은 지시) |
 |---|---|---|---|
-| finite 종속절 | 그 종속절에 닫힘 | 상위 절 antecedent 불가 | 상위 절과 coreference 허용 |
-| ECM (`believe X to VP`) | matrix subject까지 확장 | <span style="color:#319795;">*Nora believes herself to be qualified.*</span> | <span style="color:#c53030;">**\*Nora believes her to be qualified.**</span> |
+| finite 종속절의 목적어 | 그 종속절에 닫힘 | 상위 절 antecedent 불가 | 상위 절과 coreference 허용 |
+| ECM 보문의 주어 X (`believe X to VP`) | matrix subject까지 확장 | <span style="color:#319795;">*Nora believes herself to be qualified.*</span> | <span style="color:#c53030;">**\*Nora believes her to be qualified.**</span> |
 
 ### anaphor·pronoun·R-expression 진단 순서
 
@@ -156,7 +156,7 @@ Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 
 |---|---|
 | 1. 요소 분류 | 문제의 표현이 anaphor / pronoun / R-expression 중 무엇인가 |
 | 2. c-command 확인 | antecedent가 그 요소를 c-command하는가 (소유격·부사절은 c-command 못 함) |
-| 3. binding domain 확정 | 요소 + 그 binder가 될 수 있는 subject를 포함하는 가장 작은 절 (ECM은 위로 확장) |
+| 3. binding domain 확정 | 문제에서 제시한 domain 정의 확인. 고전 GB에서는 요소·governor·적절한 subject를 구별하고 ECM 주어와 목적어를 따로 판단 |
 | 4. Principle 적용 | A → domain 안 bound 요구 &#124; B → domain 안 free 요구 &#124; C → 어디서나 free 요구 |
 
 ---
@@ -167,9 +167,9 @@ Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 
 
 임용 Binding 문항의 표준 답안 패턴입니다. 영어 그대로 외워 두면 서술형에서 바로 씁니다.
 
-> **Principle A**: *"Sentence X is ungrammatical because Principle A is violated — the anaphor is not bound in its binding domain (its only possible antecedent lies outside the minimal clause)."*
+> **Principle A**: *"Sentence X is ungrammatical because Principle A is violated — the anaphor is not bound in its binding domain."*
 
-> **Principle B**: *"Sentence X is ungrammatical because Principle B is violated — the pronoun is not free in its binding domain (it is bound by a coindexed c-commanding antecedent within its minimal clause)."*
+> **Principle B**: *"Sentence X is ungrammatical because Principle B is violated — the pronoun is not free in its binding domain (it is bound by a coindexed c-commanding antecedent within its binding domain)."*
 
 > **Principle C**: *"Sentence X is ungrammatical because Principle C is violated — the R-expression is not free (it is bound by a c-commanding coindexed antecedent)."*
 
@@ -186,7 +186,7 @@ Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 
 
 <span style="color:#c53030;">**⚠️ 소유격·부사절은 바깥을 c-command 못 한다**</span>: <span style="color:#c53030;">**\*The witnesses' testimony exposed themselves.**</span>는 비문, <span style="color:#319795;">*His mother adores Trevor.*</span>(His = Trevor)는 정문. c-command 실패가 정/비문을 가릅니다.
 
-<span style="color:#c53030;">**⚠️ finite 절과 ECM을 한 진술로 묶지 말 것**</span>: "anaphor은 종속절 antecedent를 못 가진다"는 finite 종속절에서만 참입니다. ECM 보문에서는 domain이 확장되어 <span style="color:#319795;">*Nora believes herself to be qualified.*</span>가 정문이 됩니다.
+ECM에서는 검사할 요소의 위치를 먼저 봅니다. `Nora believes herself to be qualified`의 주어 herself와 `Nora believes Mary to admire herself`의 목적어 herself는 domain이 다릅니다.
 
 <span style="color:#c53030;">**⚠️ Principle B는 "절 안에서만" free를 요구한다**</span>: pronoun이 문장 전체에서 antecedent를 못 가지는 것이 아닙니다. <span style="color:#319795;">*Megan said that Paula admired her.*</span>(her = Megan)처럼 domain **밖** antecedent와의 coreference는 허용됩니다.
 
@@ -196,8 +196,8 @@ Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 
 
 - anaphor = domain 안 bound, pronoun = domain 안 free, R-expression = 어디서나 free. 이 한 줄이 Principle A·B·C 전부입니다.
 - binding = c-command **and** coindexation. 둘 중 하나라도 빠지면 free.
-- anaphor과 pronoun은 같은 자리에서 complementary distribution — 한쪽이 정문이면 다른 쪽은 비문.
-- `governing category` = `binding domain` = 요소 + 그 binder 될 subject를 포함하는 가장 작은 절. finite 절은 닫히고, ECM은 matrix subject까지 확장.
+- 전형적인 목적어 자리에서 동일한 선행사를 가리킬 때 anaphor과 pronoun의 complementary distribution을 확인한다.
+- 고전 GB의 governing category에서는 요소·governor·적절한 subject를 구별한다. ECM 주어의 domain과 하위절 목적어의 domain을 혼동하지 않는다.
 
 ---
 
@@ -208,3 +208,4 @@ Binding은 임용 통사론에서 anaphor / pronoun / R-expression의 분포와 
 ---
 
 **태그**: 임용고시, 중등영어, 전공영어, 영어학, 통사론, syntax, Binding, Principle A, Principle B, Principle C, c-command, anaphor, pronoun, R-expression, governing category, 서브노트, 기출분석
+

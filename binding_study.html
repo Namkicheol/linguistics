@@ -78,6 +78,8 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
 @media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+
+.binding-depth{margin:16px 0 6px;border:1px solid #c5c8e8;border-radius:10px;background:#f7f8ff;padding:12px 14px;min-width:0}.binding-depth>summary{cursor:pointer;font-weight:700;color:#2a2e6e;line-height:1.6}.binding-depth p{font-size:16px;line-height:1.85;margin:12px 0 0;overflow-wrap:anywhere}.binding-depth>summary:focus-visible{outline:3px solid #3b3f86;outline-offset:4px}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
@@ -120,9 +122,9 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="exam-label">📝 기출분석 포인트 (Ch.5 Binding)</div>
   <p>① <span class='kw4'>Principle A / B / C</span>: <span class='kw1'>anaphor</span>·<span class='kw1'>pronoun</span>·<span class='kw1'>R-expression</span> 세 부류가 각각 어디서 bound/free여야 하는가</p>
   <p>② <span class='kw4'>c-command + coindexation</span>: binding 성립의 두 조건을 트리로 판별</p>
-  <p>③ <span class='kw3'>binding domain</span> (= <span class='kw3'>governing category</span>): finite 종속절은 닫힌 domain / ECM 보문은 matrix subject까지 확장</p>
-  <p>④ <span class='kw3'>complementary distribution</span>: 같은 자리에서 anaphor(정문) ↔ pronoun(비문)</p>
-  <p>⑤ 함정: 소유격(possessor) 안 NP는 바깥을 <span class='kw4'>c-command 못 함</span> → antecedent 자격 없음</p>
+  <p>③ <span class='kw3'>binding domain</span>: 목적어와 ECM 보문 주어를 구별하고, 각 요소의 local domain을 확인</p>
+  <p>④ <span class='kw3'>complementary distribution</span>: 전형적인 목적어 자리에서 같은 선행사를 가리킬 때 anaphor(정문) ↔ pronoun(비문)</p>
+  <p>⑤ 함정: 소유격(possessor) 안 NP는 바깥을 <span class='kw4'>c-command 못 함</span> → 바깥 anaphor를 bind하지 못함</p>
 </div>
 
 <!-- ① Binding Theory Overview -->
@@ -149,6 +151,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <span class="eg-line eg-bad">Himself<sub>i</sub> resigned.</span>
       <span class="eg-note">himself에 c-commanding antecedent가 없음 → <strong>free</strong> → Principle A 위반.</span>
     </div>
+    <details class="binding-depth"><summary>자세히 보기 · 같은 사람을 가리키면 모두 binding일까?</summary><p>먼저 두 표현이 누구를 가리키는지 정하고, 다음으로 문장 구조를 본다. Daniel<sub>i</sub> hurt himself<sub>i</sub>에서는 Daniel과 himself가 같은 사람을 가리키고, 주어 Daniel이 목적어 himself를 c-command한다. 두 조건을 모두 갖추므로 Daniel이 himself를 bind한다.</p><p>His<sub>i</sub> mother adores Trevor<sub>i</sub>는 다르다. His와 Trevor가 같은 사람을 가리켜도 His는 주어 전체 His mother 안에 들어 있다. His가 목적어 Trevor를 c-command하지 못하므로 두 표현 사이에 binding은 없다. 같은 지시가 가능하다는 말과 binding이 성립한다는 말을 구별해야 하는 이유다.</p><p>Free라고 할 때는 어느 영역에서 free인지도 확인한다. Daniel<sub>i</sub> said he<sub>i</sub> was tired에서 he는 상위절 Daniel에 bound될 수 있지만, 자기 local domain 안에서는 free다. 그래서 Principle B를 위반하지 않는다.</p></details>
   </div>
 </div>
 
@@ -164,14 +167,14 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     <div class="concept">
       <div class="c-title">Core Definition</div>
       <div class="def"><span class='kw1'>c-command</span>: <em>X c-commands Y iff the first branching node dominating X also dominates Y, and neither X nor Y dominates the other.</em> Equivalently, <em>a node c-commands its sisters and all of their descendants.</em></div>
-      <p class="note">c-command는 binding의 구조적 핵심이다. 어떤 node X 위로 처음 갈라지는(<span class='kw2'>first branching node</span>) node를 찾고, 그 node가 지배하는 모든 것을 X가 c-command한다.</p>
+      <p class="note">c-command는 binding의 구조적 핵심이다. 어떤 node X 위로 처음 갈라지는(<span class='kw2'>first branching node</span>) node를 찾고, 그 node가 Y를 지배하는지 확인한다. 단, X와 Y가 서로를 지배하는 경우는 제외한다.</p>
       <p class="note">subject NP는 VP 안의 object를 c-command하지만, 소유격(<span class='kw4'>possessor</span>) 안에 든 NP는 그 바깥을 c-command하지 <strong>못한다</strong> — binding antecedent 판별의 단골 함정.</p>
     </div>
     <div class="concept">
       <div class="c-title">Tree test 절차</div>
       <p class="note">① anaphor/pronoun node를 찾는다.</p>
       <p class="note">② 후보 antecedent node를 찾는다.</p>
-      <p class="note">③ antecedent 위 first branching node가 anaphor을 dominate하는가? → 그렇다면 c-command 성립.</p>
+      <p class="note">③ antecedent 위 first branching node가 anaphor를 dominate하는가? 두 요소가 서로를 dominate하지 않는가? → 두 조건을 모두 확인한다.</p>
     </div>
     <svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -204,7 +207,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <text x="600" y="186" text-anchor="start" font-size="10" fill="#c62828">i</text>
       <!-- failed c-command: possessor DP cannot reach themselves -->
       <path d="M 120,192 Q 330,250 540,192" stroke="#c62828" stroke-width="1.6" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowB1)"/>
-      <text x="330" y="248" text-anchor="middle" font-size="11" fill="#c62828">✗ first branching node of possessor = inner DP → does not dominate themselves</text>
+      <text x="330" y="248" text-anchor="middle" font-size="11" fill="#c62828">✗ first branching node = subject DP → does not dominate themselves</text>
     </svg>
     <div class="eg">
       <span class="eg-line eg-ok">The witnesses<sub>i</sub> exposed themselves<sub>i</sub>.</span>
@@ -212,6 +215,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <span class="eg-line eg-bad">The witnesses'<sub>i</sub> testimony exposed themselves<sub>i</sub>.</span>
       <span class="eg-note"><strong>The witnesses'</strong>는 소유격 specifier 안에 갇혀 themselves를 c-command하지 못함 → anaphor에 적법한 c-commanding antecedent 없음 → 비문.</span>
     </div>
+    <details class="binding-depth"><summary>자세히 보기 · 소유격이 들어간 주어를 트리에서 읽는 법</summary><p>The witnesses’ testimony에서 주어 전체는 ‘증언’이고, the witnesses’는 그 안에 들어 있는 possessor다. 위 트리에서 possessor DP를 출발점으로 삼아 위로 올라가면, 처음 가지가 갈라지는 곳은 주어 전체를 나타내는 바깥 DP다. 이 DP 아래에는 testimony까지 들어가지만, 동사 exposed나 목적어 themselves는 들어가지 않는다.</p><p>따라서 possessor인 the witnesses’는 themselves를 c-command하지 못한다. 주어 전체 The witnesses’ testimony는 목적어를 c-command하지만, ‘증언’은 themselves가 요구하는 복수의 사람들을 가리키지 않는다. 구조 조건을 만족하는 표현과 지시·자질이 맞는 표현을 따로 확인해야 한다.</p><p>반면 The witnesses exposed themselves에서는 The witnesses 자체가 주어다. 그 위의 IP가 VP와 목적어까지 포함하므로 c-command가 성립한다. 두 예문은 단어의 앞뒤 순서보다 NP/DP가 어디에 들어 있는지가 중요하다는 것을 보여 준다.</p></details>
   </div>
 </div>
 
@@ -226,7 +230,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def"><span class='kw1'>Principle A</span>: <em>An anaphor must be bound within its binding domain</em> (the minimal clause / minimal CP-or-DP containing the anaphor and its closest subject).</div>
+      <div class="def"><span class='kw1'>Principle A</span>: <em>An anaphor must be bound within its binding domain</em> — domain은 해당 구문과 채택한 분석에 따라 정한다. 아래 ECM 대조를 함께 확인한다.</div>
       <p class="note">An <span class='kw1'>anaphor</span> cannot have independent reference: <span class='kw2'>reflexives</span> (myself, himself, herself, themselves …) and <span class='kw2'>reciprocals</span> (each other, one another).</p>
       <p class="note">Anaphor은 독립 지시(independent reference)를 가질 수 없으므로 반드시 선행사가 있어야 하고, 그 선행사는 (i) anaphor을 <span class='kw4'>c-command</span>해야 하며 (ii) 같은 <span class='kw3'>binding domain</span>(대략 minimal clause) 안에 있어야 한다.</p>
       <p class="note"><span class='kw1'>reflexive</span> vs <span class='kw1'>reciprocal</span> 의미차: <em>They<sub>i</sub> admire themselves<sub>i</sub></em> = 각자 자기 자신 / <em>They<sub>i</sub> admire each other<sub>i</sub></em> = 서로 상대를. 둘 다 anaphor로서 Principle A 적용은 동일.</p>
@@ -312,6 +316,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p><strong>2018학년도 1차 전공 B 6번</strong> — Theta Criterion, Binding condition, Movement constraint를 함께 적용한다.</p>
       <p>Raising chain에서는 표면상 멀리 떨어진 선행사와 anaphor의 관계를 거리만으로 판단하지 않는다. 이동한 NP의 낮은 위치에서 성립하는 binding 관계를 확인해야 한다. 모든 상위절 주어가 하위절 anaphor를 bind할 수 있다는 뜻은 아니다.</p>
     </div>
+    <details class="binding-depth"><summary>자세히 보기 · 선행사가 보이는데도 Principle A를 어기는 이유</summary><p>Brian<sub>i</sub> hopes that Karen will forgive himself<sub>i</sub>에서 Brian은 himself를 c-command한다. 문제는 c-command의 부재가 아니라 locality다. Himself가 들어 있는 하위절의 주어는 Karen이고, Brian은 그 local domain 밖에 있다. ‘Brian이 앞에 있으니 선행사다’라고 판단하면 이 차이를 놓친다.</p><p>Nora<sub>i</sub> believes herself<sub>i</sub> to be qualified의 herself는 하위절 목적어가 아니라 주어다. 이 ECM 주어의 domain에는 상위절 Nora가 포함된다. 그래서 위의 finite 절 목적어 예문과 결과가 다르다.</p><p>또한 agreement와 c-command는 별개로 확인한다. The actress blamed himself에서는 주어가 목적어를 c-command한다는 구조적 사실은 바뀌지 않는다. 통상적인 해석에서 어긋나는 것은 actress와 himself의 자질이다. ‘자질이 맞지 않으므로 c-command도 없다’고 설명하지 않는다.</p><p>2018학년도 전공 B 6번은 이동까지 함께 보게 한다. Raising chain의 낮은 주어 위치에서 성립하는 local binding을 확인해야 하므로, 표면상의 거리만 보고 Principle A 위반이라고 결론내릴 수 없다. 아래는 그 출제 원리를 유지하고 어휘를 바꾼 예문이다.</p><div class="eg"><span class="eg-line">2018학년도 전공 B 6번의 출제 원리를 바탕으로 만든 변형 예문</span><span class="eg-line">Lena<sub>i</sub> seems to Alex to be expected by her teammates to defend herself<sub>i</sub>.</span></div><p>이 문장은 세 단계로 나누어 읽는다. 가장 낮은 <em>defend herself</em> 절에서 Lena는 defend의 주어이며 의미역을 받는다. 중간의 <em>be expected</em>와 가장 바깥의 <em>seems</em>를 거치면서 Lena는 상위 주어 위치로 이동한다. <em>to Alex</em>와 <em>by her teammates</em>의 명사구는 각각 PP 안에 있으므로, 이동 경로를 가로막는 별도의 절 주어가 아니다.</p><p>Binding도 가장 낮은 위치를 함께 본다. 그 위치의 Lena와 herself는 같은 절 안에서 c-command·coindex 관계를 맺는다. 따라서 표면 문장에서 Lena가 멀리 떨어져 있다는 이유만으로 binding 실패라고 판단하면 안 된다. 이 변형 예문도 well-formed 판정에 더해 의미역, 이동 경로, binding의 세 근거를 각각 설명해야 한다.</p><div class="eg"><span class="eg-line eg-ok">Leo<sub>i</sub> seems to have injured himself<sub>i</sub>.</span><span class="eg-line eg-bad">Leo<sub>i</sub> says that Maya has injured himself<sub>i</sub>.</span><span class="eg-note">학습용 대조 예문: 첫 문장은 Leo가 하위절 주어 위치에서 이동한 raising 구조이고, 두 번째는 하위절에 Maya라는 별도 주어가 있다.</span></div><p>첫 문장에서 Leo의 낮은 위치는 himself를 local하게 bind할 수 있다. 두 번째에서는 Maya가 하위절 주어이고 Leo가 그 자리에서 이동한 것이 아니다. Himself를 Leo로 해석하면 local domain 밖의 선행사에 의존하므로 Principle A를 위반한다. 두 예문을 가르는 것은 겉으로 보이는 거리보다 ‘하위절 주어 자리에 무엇이 있는가’다.</p></details>
   </div>
 </div>
 
@@ -326,10 +331,10 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def"><span class='kw1'>Principle B</span>: <em>A pronoun must be free in its binding domain</em> — it may not be bound by a coindexed antecedent within its minimal clause, though it may be bound outside it.</div>
+      <div class="def"><span class='kw1'>Principle B</span>: <em>A pronoun must be free in its binding domain</em> — it may not be bound by a coindexed antecedent within its binding domain, though it may be bound outside that domain.</div>
       <p class="note">A <span class='kw1'>pronoun</span> (pronominal) = he, she, it, they, him, her, them, etc.</p>
       <p class="note">Pronoun은 anaphor과 <strong>정확히 반대</strong>다. 같은 binding domain 안에서는 선행사에 bound되면 <strong>안 된다</strong>(free여야 함). 단 domain <strong>밖</strong>의 선행사와 coreference는 허용된다.</p>
-      <p class="note">그래서 reflexive와 pronoun은 같은 자리에서 <span class='kw4'>complementary distribution</span>을 이룬다: 한쪽이 정문이면 다른 쪽은 그 선행사로 비문.</p>
+      <p class="note">그래서 아래처럼 동사의 목적어 자리에서 같은 선행사를 가리키는 reflexive와 pronoun은 <span class='kw4'>complementary distribution</span>을 이룬다: 한쪽이 정문이면 다른 쪽은 그 선행사로 비문.</p>
     </div>
     <div class="concept">
       <div class="c-title">Complementarity 대조 (핵심)</div>
@@ -354,6 +359,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <span class="eg-line eg-ok">Oliver<sub>i</sub> wants Sarah to support him<sub>i</sub>.</span>
       <span class="eg-note">him은 종속절 안에서 free(Sarah가 선행사 아님), matrix Oliver와 coreference 허용 → 정문.</span>
     </div>
+    <details class="binding-depth"><summary>자세히 보기 · Free는 선행사가 아예 없다는 뜻일까?</summary><p>Megan<sub>i</sub> criticized her<sub>i</sub>에서는 주어 Megan이 같은 domain 안의 her를 c-command하고, 두 표현은 같은 지시를 갖는다. Her가 local하게 bound되므로 Principle B를 위반한다. Her가 다른 사람을 가리키는 해석까지 비문이라는 뜻은 아니다.</p><p>Megan<sub>i</sub> said that Paula admired her<sub>i</sub>에서는 her의 local domain이 하위절이다. 그 안의 Paula와 her는 coindex되지 않는다. 상위절 Megan과의 관계가 있더라도 local binding은 아니므로 Principle B가 허용한다.</p><p>Victor defended himself와 Victor defended him의 대조는 같은 목적어 자리와 같은 선행사를 고정했을 때 분명하게 드러난다. 다만 이 대조를 모든 reflexive·pronoun의 모든 위치로 확대하면 안 된다. Picture-NP 같은 구조에서는 둘의 분포가 겹치기도 하며, 세부 분석은 이 기본 목적어 대조보다 복잡하다.</p></details>
   </div>
 </div>
 
@@ -417,6 +423,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <span class="eg-line eg-ok">When she<sub>i</sub> arrived, Diana<sub>i</sub> smiled.</span>
       <span class="eg-note">부사절 안 she가 주절 Diana를 c-command하지 못함 → 정문.</span>
     </div>
+    <details class="binding-depth"><summary>자세히 보기 · 이름이 뒤에 나오면 항상 Principle C 위반일까?</summary><p>He<sub>i</sub> thinks Trevor<sub>i</sub> will win에서는 He가 하위절의 Trevor를 c-command한다. 같은 지시를 주면 이름 Trevor가 bound되므로 Principle C 위반이다. 두 표현이 서로 다른 절에 있다는 사실은 이를 구제하지 못한다.</p><p>His<sub>i</sub> mother adores Trevor<sub>i</sub>에서는 His가 주어 DP 안에 들어 있어 Trevor를 c-command하지 못한다. 따라서 같은 사람을 가리킬 수 있다. 핵심은 ‘pronoun가 먼저 나오고 이름이 뒤에 나온다’는 순서가 아니라, 이름을 c-command하는 coindexed 표현이 있느냐는 것이다.</p><p>답안에서도 Principle B와 표현을 구별한다. B는 pronoun이 자기 domain 안에서 free인지 묻지만, C는 R-expression이 bound되는 것 자체를 금지한다. C의 위반 사유를 ‘자기 domain 안에서 free가 아니다’로만 한정해 쓰지 않는다.</p></details>
   </div>
 </div>
 
@@ -431,16 +438,16 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">The <span class='kw1'>binding domain</span> (= <span class='kw1'>governing category</span>) of an element is the <em>smallest clause (minimal CP/IP) — or DP — containing that element and a subject (governor) that could serve as its binder.</em></div>
-      <p class="note">Plain characterization: a reflexive and its antecedent must be <span class='kw2'>clause-mates</span> — the relationship is <span class='kw2'>clause-bounded</span>.</p>
+      <div class="def"><span class='kw1'>Binding domain</span>은 Principle A·B의 local 조건을 적용하는 영역이다. 고전 GB의 <span class='kw1'>governing category</span> 분석에서는 해당 요소, 그 <span class='kw2'>governor</span>, 적절한 subject를 포함하는 최소 영역을 찾는다. subject와 governor는 서로 다른 조건이다.</div>
+      <p class="note">동사의 목적어인 reflexive는 보통 같은 절의 선행사를 요구한다. 이 요약을 ECM 보문의 주어인 reflexive나 이동한 선행사에 그대로 적용하지 않는다.</p>
       <p class="note">locality는 Principle A·B의 "어디까지"를 정한다. 대략 anaphor/pronoun을 포함하는 가장 작은 절이 그 domain이다. Anaphor은 이 domain <strong>안에서</strong> bound, pronoun은 이 domain <strong>안에서</strong> free여야 한다.</p>
-      <p class="note"><span class='kw1'>governing category</span>와 <span class='kw1'>binding domain</span>은 같은 개념의 다른 이름이다(표준 동의어).</p>
+      <p class="note"><span class='kw1'>Governing category</span>는 고전 GB에서 local domain을 정하는 이론적 장치다. <span class='kw1'>Binding domain</span>이라는 일반 명칭과 언제나 정의가 같은 것은 아니므로, 문제에서 제시한 정의를 먼저 읽는다.</p>
     </div>
     <div class="concept">
       <div class="c-title">ECM / 비정형 domain 확장 (핵심)</div>
-      <p class="note">binding domain은 "요소 + 그 binder가 될 수 있는 subject를 포함하는 가장 작은 절"이다. 따라서 <span class='kw3'>finite 종속절</span>에서는 anaphor의 domain이 그 종속절에 닫혀 상위 절 선행사를 못 가진다.</p>
-      <p class="note">그러나 <span class='kw4'>비정형/ECM 보문</span>(<em>believe/expect X to VP</em>)에서, 하위 subject 자리의 요소는 그 절 안에 적법한 subject-binder가 없으므로 domain이 <strong>matrix subject까지 확장</strong>된다.</p>
-      <p class="note">→ <em>Nora believes herself to be...</em>(anaphor)는 정문이고 <em>*Nora believes her to be...</em>(pronoun, 같은 지시)는 비문. 즉 "clause-bounded"는 finite 절 기준의 평이한 특성화이고, ECM에서는 domain이 위로 확장된다.</p>
+      <p class="note"><em>Nora expects Julia to defend herself</em>에서 목적어 <em>herself</em>는 하위절 주어 Julia를 선행사로 삼는다. 이 경우 비정형절이어도 Nora를 선행사로 삼을 수 없다.</p>
+      <p class="note">반면 <span class='kw4'>ECM 보문의 주어</span>(<em>Nora believes herself to be qualified</em>의 herself)는 다르다. 고전 GB 분석에서는 상위 동사 believes가 이 주어의 governor이므로, governor까지 포함하는 domain은 상위절에 이른다. 그 안의 Nora가 herself를 bind할 수 있다.</p>
+      <p class="note">→ <em>Nora believes herself to be...</em>(anaphor)는 정문이고 <em>*Nora believes her to be...</em>(pronoun, 같은 지시)는 비문. ECM이라고 하위절의 모든 요소가 상위절 선행사를 허용하는 것은 아니다. 먼저 그 요소가 하위절 주어인지, 목적어인지 구별한다.</p>
     </div>
     <div class="eg">
       <span class="eg-line eg-ok">Helen<sub>i</sub> convinced herself<sub>i</sub>.</span>
@@ -450,6 +457,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <span class="eg-line eg-ok">Helen<sub>i</sub> knew that the doctor trusted her<sub>i</sub>.</span>
       <span class="eg-note">her의 domain = 종속절; 그 안에서 free, 절 밖 Helen과 coreference → 정문.</span>
     </div>
+    <details class="binding-depth"><summary>자세히 보기 · ECM의 주어와 목적어를 나눠서 판단하기</summary><p>두 문장을 나란히 보면 domain을 왜 구별해야 하는지 알 수 있다. Nora<sub>i</sub> believes herself<sub>i</sub> to be qualified에서는 herself가 비정형절의 주어다. 반면 Nora<sub>i</sub> believes Mary to admire herself<sub>j</sub>에서는 herself가 admire의 목적어이고, Mary<sub>j</sub>가 하위절 주어다. 두 번째 문장의 herself는 Mary를 가리킬 수 있지만 Nora를 가리킬 수는 없다.</p><p>고전 GB식 설명에서 첫 번째 herself의 governor는 상위 동사 believes다. 이 governor를 포함해야 하므로 domain이 상위절까지 커진다. 두 번째 herself의 governor는 하위 동사 admire이고, 같은 하위절에 주어 Mary도 있다. 따라서 그 하위절 안에서 필요한 조건을 갖춘다. ‘비정형절이면 무조건 domain이 커진다’는 규칙은 성립하지 않는다.</p><p>여기서 governor를 subject나 antecedent와 같은 말로 생각하면 안 된다. Governor는 government 관계를 맺는 요소이고, binder는 c-command와 coindexation 조건을 만족하는 표현이다. 문항에서 binding domain을 단순한 ‘최소 절’로 제시했다면 우선 그 문항의 자료와 정의를 따라 분석하고, 다른 이론의 정의를 섞어 쓰지 않는다.</p></details>
   </div>
 </div>
 
@@ -474,8 +482,8 @@ table.diag td.n{color:#b71c1c;font-weight:700}
             <tr><th>independent reference?</th><td class="n">✗ 불가 (선행사 필수)</td><td>△ 가능(deictic) 또는 선행사</td><td class="y">✓ 스스로 지시</td></tr>
             <tr><th>Principle</th><td>A</td><td>B</td><td>C</td></tr>
             <tr><th>요건</th><td>binding domain 안 bound</td><td>binding domain 안 free</td><td>어디서나 free</td></tr>
-            <tr><th>같은 절 내 c-commanding 선행사</th><td class="y">필수 (없으면 비문)</td><td class="n">금지 (있으면 비문)</td><td class="n">금지 (있으면 비문)</td></tr>
-            <tr><th>절 밖 c-commanding 선행사</th><td class="n">불가 (too far)</td><td class="y">허용</td><td class="n">금지</td></tr>
+            <tr><th>domain 안의 c-commanding·coindexed 선행사</th><td class="y">필수 (없으면 비문)</td><td class="n">금지 (있으면 비문)</td><td class="n">금지 (있으면 비문)</td></tr>
+            <tr><th>domain 밖의 c-commanding·coindexed 선행사</th><td class="n">불가 (local binding 필요)</td><td class="y">허용</td><td class="n">금지</td></tr>
           </tbody>
         </table>
       </div>
@@ -486,8 +494,11 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="concept">
       <div class="c-title">답안 작성 패턴</div>
-      <p class="note"><em>"Sentence X is ungrammatical because Principle [A/B/C] is violated — the [anaphor/pronoun/R-expression] is [not bound / not free] in its binding domain."</em></p>
+      <p class="note"><em>Principle A: The anaphor is not bound in its binding domain.</em></p>
+      <p class="note"><em>Principle B: The pronoun is not free in its binding domain.</em></p>
+      <p class="note"><em>Principle C: The R-expression is bound by a c-commanding, coindexed expression.</em> Principle C는 local domain에 한정되지 않는다.</p>
     </div>
+    <details class="binding-depth"><summary>자세히 보기 · 세 원리를 적용하는 순서</summary><p>① 먼저 검사할 표현을 정한다. Himself라면 Principle A, him이라면 Principle B, Trevor 같은 이름이라면 Principle C를 적용한다. ② 같은 index를 가진 후보가 그 표현을 c-command하는지 확인한다. ③ A·B는 해당 domain 안인지까지 확인하고, C는 local 여부와 관계없이 binding이 생기는지 본다.</p><p>비교표에서 ‘domain 안’과 ‘같은 절 안’을 바꿔 읽으면 ECM에서 모순이 생긴다. Nora believes herself to be qualified에서는 두 표현이 서로 다른 절에 있어도 관련 domain 안에서 binding이 성립한다. 반대로 domain 밖에 선행사가 있다는 사실만으로 anaphor가 허용되는 것은 아니다.</p><p>마지막으로 별표가 어느 해석에 붙는지 밝힌다. Victor defended him은 him이 Victor와 같은 사람을 가리킬 때 Principle B 위반이다. 다른 사람을 가리키는 일반적인 해석은 가능하다. 답안에는 가능·불가능을 말할 때 지시 관계도 함께 적는다.</p></details>
   </div>
 </div>
 
@@ -503,3 +514,4 @@ function openSec(id){ const s=document.getElementById(id); s.classList.add('open
 <script src="./study-return.js" data-hub-label="영어학 허브"></script>
 </body>
 </html>
+
