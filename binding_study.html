@@ -77,13 +77,29 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
-@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
 
 .binding-depth{margin:16px 0 6px;border:1px solid #c5c8e8;border-radius:10px;background:#f7f8ff;padding:12px 14px;min-width:0}.binding-depth>summary{cursor:pointer;font-weight:700;color:#2a2e6e;line-height:1.6}.binding-depth p{font-size:16px;line-height:1.85;margin:12px 0 0;overflow-wrap:anywhere}.binding-depth>summary:focus-visible{outline:3px solid #3b3f86;outline-offset:4px}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
-</head>
+<style>
+.tip-line{display:block}.header-tip,details.concept>summary{word-break:keep-all;overflow-wrap:break-word;line-height:1.7}
+details.concept{padding:14px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff}
+details.concept>summary{cursor:pointer}
+details.concept>p{margin-top:10px;line-height:1.8}
+.tree-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tree-scroll:focus-visible{outline:2px solid #3b3f86;outline-offset:3px}
+.tree-scroll-hint{font-size:13px;color:#555;margin:8px 0}
+.reference-fold{padding:10px 14px;margin-top:12px;border:1px solid #c5c8e8;border-radius:8px;background:#fff}
+.reference-fold>summary{cursor:pointer;font-size:14px;line-height:1.6;color:#3b3f86}
+.reference-fold>.note{margin-top:10px}
+.dictionary-keyword{text-decoration:none}
+.dictionary-keyword:hover,.dictionary-keyword:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.exam-year{display:inline-block;color:#b71c1c;font-weight:700;font-size:14px;padding:1px 5px;text-decoration:none;letter-spacing:0}
+.exam-year:hover,.exam-year:focus-visible{text-decoration:underline}.c-title{flex-wrap:wrap}
+@media(max-width:640px){.tree-scroll .tree-svg{min-width:780px;max-width:none;width:780px}}
+</style><style>table.diag{table-layout:fixed;min-width:700px;font-size:15px}table.diag thead th{font-size:14px}table.diag th:first-child{position:sticky;left:0;z-index:1;width:160px;white-space:normal;overflow-wrap:break-word;background:#f3f4ff}table.diag thead th:first-child{z-index:2;background:#e4e6f5}</style></head>
 <body class="etwiki-learning">
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
 <nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./binding.html">OX 풀기</a></nav>
@@ -96,7 +112,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="header-script">Concept Notes · Binding Theory · Transformational Syntax</div>
   <p class="header-sub">합격자 노트 기반 · 기출 포인트 · Principle A / B / C + c-command + binding domain</p>
   <div class="header-divider"></div>
-  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기 &nbsp;·&nbsp; 핵심: anaphor=가까이서 bound / pronoun=가까이선 free / R-expression=언제나 free</p>
+  <p class="header-tip"><span class="tip-line">목차를 누르면 해당 설명으로 이동해요.</span><span class="tip-line">섹션 제목을 누르면 열고 닫을 수 있어요.</span></p>
 </div>
 <div class="wrap">
 <div class="toc">
@@ -113,14 +129,14 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 </div>
 <div class="legend">
   <span class="legend-title">키워드</span>
-  <span class="legend-item"><span class="kw4">★★★ 최빈출</span></span>
-  <span class="legend-item"><span class="kw3">★★ 빈출</span></span>
+  <span class="legend-item"><span class="kw4">핵심 진단</span></span>
+  <span class="legend-item"><span class="kw3">주요 개념</span></span>
   <span class="legend-item"><span class="kw1">★ 기본개념</span></span>
   <span class="legend-item"><span class="kw2">부키워드</span></span>
 </div>
 <div class="exam" style="margin-bottom:20px">
   <div class="exam-label">📝 기출분석 포인트 (Ch.5 Binding)</div>
-  <p>① <span class='kw4'>Principle A / B / C</span>: <span class='kw1'>anaphor</span>·<span class='kw1'>pronoun</span>·<span class='kw1'>R-expression</span> 세 부류가 각각 어디서 bound/free여야 하는가</p>
+  <p>① <span class='kw4'>Principle A / B / C</span>: <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=anaphor">anaphor</a> <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2018_B06" aria-label="2018학년도 전공 B 6번">18</a>·<span class='kw1'>pronoun</span>·<span class='kw1'>R-expression</span> 세 부류가 각각 어디서 bound/free여야 하는가</p>
   <p>② <span class='kw4'>c-command + coindexation</span>: binding 성립의 두 조건을 트리로 판별</p>
   <p>③ <span class='kw3'>binding domain</span>: 목적어와 ECM 보문 주어를 구별하고, 각 요소의 local domain을 확인</p>
   <p>④ <span class='kw3'>complementary distribution</span>: 전형적인 목적어 자리에서 같은 선행사를 가리킬 때 anaphor(정문) ↔ pronoun(비문)</p>
@@ -138,9 +154,9 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def"><span class='kw1'>Binding</span>: <em>A binds B if and only if (i) A c-commands B, and (ii) A and B are coindexed.</em> An expression that is not bound (no c-commanding coindexed antecedent) is <span class='kw1'>free</span>.</div>
-      <p class="note">An <span class='kw1'>antecedent</span> is the expression that another expression takes its reference from. <span class='kw1'>Coindexation</span>이란 두 표현이 같은 subscript index(예: <span class='kw2'>_i</span>)를 공유해 같은 대상을 지시함을 뜻한다 — 다른 index면 다른 지시 대상.</p>
-      <p class="note">Binding은 단순한 "같은 지시" 이상이다. <span class='kw4'>coindexation</span>과 <span class='kw4'>c-command</span> 두 조건을 <strong>동시에</strong> 만족해야 binding이 성립한다. 어느 한 조건이 빠지면 그 후보는 해당 요소를 bind하지 못한다. 해당 영역 안에 두 조건을 모두 만족하는 선행사가 <strong>하나도 없을 때</strong> 그 요소는 그 영역에서 <span class='kw1'>free</span>다.</p>
+      <div class="def"><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Binding">Binding</a>: <em>A binds B if and only if (i) A c-commands B, and (ii) A and B are coindexed.</em> An expression that is not bound (no c-commanding coindexed antecedent) is <span class='kw1'>free</span>.</div>
+      <p class="note">An <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=antecedent">antecedent</a> is the expression that another expression takes its reference from. <span class='kw1'>Coindexation</span>이란 두 표현이 같은 subscript index(예: <span class='kw2'>_i</span>)를 공유해 같은 대상을 지시함을 뜻한다 — 다른 index면 다른 지시 대상.</p>
+      <p class="note">Binding은 단순한 "같은 지시" 이상이다. <span class='kw4'>coindexation</span>과 <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=c-command">c-command</a> 두 조건을 <strong>동시에</strong> 만족해야 binding이 성립한다. 어느 한 조건이 빠지면 그 후보는 해당 요소를 bind하지 못한다. 해당 영역 안에 두 조건을 모두 만족하는 선행사가 <strong>하나도 없을 때</strong> 그 요소는 그 영역에서 <span class='kw1'>free</span>다.</p>
       <p class="note">Binding Theory는 <span class='kw1'>anaphor</span> / <span class='kw1'>pronoun</span> / <span class='kw1'>R-expression</span> 세 부류가 각각 어디서 bound/free여야 하는지를 <span class='kw3'>Principle A · B · C</span>로 규정한다.</p>
     </div>
     <div class="eg">
@@ -151,7 +167,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <span class="eg-line eg-bad">Himself<sub>i</sub> resigned.</span>
       <span class="eg-note">himself에 c-commanding antecedent가 없음 → <strong>free</strong> → Principle A 위반.</span>
     </div>
-    <details class="binding-depth"><summary>자세히 보기 · 같은 사람을 가리키면 모두 binding일까?</summary><p>먼저 두 표현이 누구를 가리키는지 정하고, 다음으로 문장 구조를 본다. Daniel<sub>i</sub> hurt himself<sub>i</sub>에서는 Daniel과 himself가 같은 사람을 가리키고, 주어 Daniel이 목적어 himself를 c-command한다. 두 조건을 모두 갖추므로 Daniel이 himself를 bind한다.</p><p>His<sub>i</sub> mother adores Trevor<sub>i</sub>는 다르다. His와 Trevor가 같은 사람을 가리켜도 His는 주어 전체 His mother 안에 들어 있다. His가 목적어 Trevor를 c-command하지 못하므로 두 표현 사이에 binding은 없다. 두 표현이 같은 대상을 가리킬 수 있다는 것과 binding이 성립한다는 것은 이처럼 다르다.</p><p>Mina<sub>i</sub> says that Clara<sub>j</sub> praised herself<sub>j</sub>를 보자. Mina와 herself는 지표가 다르므로(coindex되지 않으므로) Mina는 herself를 bind하지 않는다. 그렇다고 herself가 free인 것은 아니다. 하위절의 Clara가 herself를 c-command하고 두 표현의 지표도 같으므로 Clara가 local binder가 된다. 특정 표현이 binder가 아니라는 것과 binder가 전혀 없다는 것은 구별해야 한다.</p><p>Free라고 할 때는 어느 영역에서 free인지도 확인한다. Daniel<sub>i</sub> said he<sub>i</sub> was tired에서 he는 상위절 Daniel에 bound될 수 있지만, 자기 local domain 안에서는 free다. 그래서 Principle B를 위반하지 않는다.</p></details>
+    <details class="binding-depth"><summary>자세히 보기 · 같은 지시와 binding 구별</summary><p>먼저 두 표현이 누구를 가리키는지 정하고, 다음으로 문장 구조를 본다. Daniel<sub>i</sub> hurt himself<sub>i</sub>에서는 Daniel과 himself가 같은 사람을 가리키고, 주어 Daniel이 목적어 himself를 c-command한다. 두 조건을 모두 갖추므로 Daniel이 himself를 bind한다.</p><p>His<sub>i</sub> mother adores Trevor<sub>i</sub>는 다르다. His와 Trevor가 같은 사람을 가리켜도 His는 주어 전체 His mother 안에 들어 있다. His가 목적어 Trevor를 c-command하지 못하므로 두 표현 사이에 binding은 없다. 두 표현이 같은 대상을 가리킬 수 있다는 것과 binding이 성립한다는 것은 이처럼 다르다.</p><p>Mina<sub>i</sub> says that Clara<sub>j</sub> praised herself<sub>j</sub>를 보자. Mina와 herself는 지표가 다르므로(coindex되지 않으므로) Mina는 herself를 bind하지 않는다. 그렇다고 herself가 free인 것은 아니다. 하위절의 Clara가 herself를 c-command하고 두 표현의 지표도 같으므로 Clara가 local binder가 된다. 특정 표현이 binder가 아니라는 것과 binder가 전혀 없다는 것은 구별해야 한다.</p><p>Free라고 할 때는 어느 영역에서 free인지도 확인한다. Daniel<sub>i</sub> said he<sub>i</sub> was tired에서 he는 상위절 Daniel에 bound될 수 있지만, 자기 local domain 안에서는 free다. 그래서 Principle B를 위반하지 않는다.</p></details>
   </div>
 </div>
 
@@ -176,7 +192,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note">② 후보 antecedent node를 찾는다.</p>
       <p class="note">③ antecedent 위 first branching node가 anaphor를 dominate하는가? 두 요소가 서로를 dominate하지 않는가? → 두 조건을 모두 확인한다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Binding 구조 그림 1" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowB1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#c62828"/></marker>
       </defs>
@@ -208,7 +224,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <!-- failed c-command: possessor DP cannot reach themselves -->
       <path d="M 120,192 Q 330,250 540,192" stroke="#c62828" stroke-width="1.6" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowB1)"/>
       <text x="330" y="248" text-anchor="middle" font-size="11" fill="#c62828">✗ first branching node = subject DP → does not dominate themselves</text>
-    </svg>
+    </svg></div>
     <div class="eg">
       <span class="eg-line eg-ok">The witnesses<sub>i</sub> exposed themselves<sub>i</sub>.</span>
       <span class="eg-note"><strong>The witnesses</strong>가 subject로서 themselves를 c-command → 정문.</span>
@@ -230,12 +246,12 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def"><span class='kw1'>Principle A</span>: <em>An anaphor must be bound within its binding domain</em> — domain은 해당 구문과 채택한 분석에 따라 정한다. 아래 ECM 대조를 함께 확인한다.</div>
+      <div class="def"><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Principle%20A">Principle A</a>: <em>An anaphor must be bound within its binding domain</em> — domain은 해당 구문과 채택한 분석에 따라 정한다. 아래 ECM 대조를 함께 확인한다.</div>
       <p class="note">An <span class='kw1'>anaphor</span> cannot have independent reference: <span class='kw2'>reflexives</span> (myself, himself, herself, themselves …) and <span class='kw2'>reciprocals</span> (each other, one another).</p>
       <p class="note">Anaphor은 독립 지시(independent reference)를 가질 수 없으므로 반드시 선행사가 있어야 하고, 그 선행사는 (i) anaphor을 <span class='kw4'>c-command</span>해야 하며 (ii) 같은 <span class='kw3'>binding domain</span>(대략 minimal clause) 안에 있어야 한다.</p>
       <p class="note"><span class='kw1'>reflexive</span> vs <span class='kw1'>reciprocal</span> 의미차: <em>They<sub>i</sub> admire themselves<sub>i</sub></em> = 각자 자기 자신 / <em>They<sub>i</sub> admire each other<sub>i</sub></em> = 서로 상대를. 둘 다 anaphor로서 Principle A 적용은 동일.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Binding 구조 그림 2" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowB2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#1f7a4a"/></marker>
       </defs>
@@ -260,8 +276,8 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <!-- coindex / binding arrow -->
       <path d="M 195,134 Q 360,235 540,194" stroke="#1f7a4a" stroke-width="1.6" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowB2)"/>
       <text x="345" y="232" text-anchor="middle" font-size="11" fill="#1f7a4a">bind (c-command + coindex, 같은 binding domain)</text>
-    </svg>
-    <svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+    </svg></div>
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Binding 구조 그림 3" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowB3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#c62828"/></marker>
       </defs>
@@ -300,7 +316,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <!-- failed binding: Brian outside domain -->
       <path d="M 155,110 Q 360,200 620,326" stroke="#c62828" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowB3)"/>
       <text x="320" y="150" text-anchor="middle" font-size="11" fill="#c62828">✗ Brian은 domain 밖 → not bound in its binding domain</text>
-    </svg>
+    </svg></div>
     <div class="eg">
       <span class="eg-line eg-ok">The actress<sub>i</sub> blamed herself<sub>i</sub>.</span>
       <span class="eg-note">herself가 같은 절 안에서 c-commanding antecedent에 bound → 정문.</span>
@@ -313,10 +329,10 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
-      <p><strong>2018학년도 1차 전공 B 6번</strong> — Theta Criterion, Binding condition, Movement constraint를 함께 적용한다.</p>
+      <p><a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2018_B06">2018학년도 1차 전공 B 6번</a> — Theta Criterion, Binding condition, Movement constraint를 함께 적용한다.</p>
       <p>Raising chain에서는 표면상 멀리 떨어진 선행사와 anaphor의 관계를 거리만으로 판단하지 않는다. 이동한 NP의 낮은 위치에서 성립하는 binding 관계를 확인해야 한다. 모든 상위절 주어가 하위절 anaphor를 bind할 수 있다는 뜻은 아니다.</p>
     </div>
-    <details class="binding-depth"><summary>자세히 보기 · c-command와 locality 조건의 차이</summary><p>Brian<sub>i</sub> hopes that Karen will forgive himself<sub>i</sub>에서 Brian은 himself를 c-command한다. 이 문장은 c-command 조건은 만족하지만 locality 조건을 만족하지 못한다. Himself가 들어 있는 하위절의 주어는 Karen이고, Brian은 그 local domain 밖에 있다. ‘Brian이 앞에 있으니 선행사다’라고 판단하면 이 차이를 놓친다.</p><p>Nora<sub>i</sub> believes herself<sub>i</sub> to be qualified의 herself는 하위절 목적어가 아니라 주어다. 이 ECM 주어의 domain에는 상위절 Nora가 포함된다. 그래서 위의 finite 절 목적어 예문과 결과가 다르다.</p><p><strong>Control 구문과도 비교해 보자.</strong> 하위절에 발음되는 주어가 없다는 이유만으로 모두 raising이나 ECM으로 분류할 수는 없다. 다음은 PRO를 가정하는 분석에 따른 학습용 변형 예문이다.</p><div class="eg"><span class="eg-line eg-ok">Ethan<sub>i</sub> promised Zoe<sub>j</sub> [PRO<sub>i</sub> to defend himself<sub>i</sub>].</span><span class="eg-line eg-bad">Ethan<sub>i</sub> persuaded Zoe<sub>j</sub> [PRO<sub>j</sub> to defend himself<sub>i</sub>].</span><span class="eg-line eg-ok">Ethan<sub>i</sub> persuaded Zoe<sub>j</sub> [PRO<sub>j</sub> to defend herself<sub>j</sub>].</span></div><p>Promise에서는 ‘누가 방어할 것인가’의 답이 Ethan이다. 하위절의 발음되지 않는 주어 PRO는 Ethan을 가리키며 himself의 local binder가 된다. Persuade로 바꾸면 설득을 받은 Zoe가 그 행동의 주체이므로 PRO도 Zoe를 가리킨다. 그러므로 두 번째 문장에서 himself를 Ethan으로 해석할 수 없고, 세 번째처럼 herself로 바꾸면 Zoe를 가리키는 local binding이 성립한다.</p><p>여기서 상위절의 controller와 reflexive를 직접 bind하는 하위절 PRO를 구별한다. Raising에서는 이동한 NP의 낮은 위치를 살피지만, control에서는 하위절의 PRO와 그 controller를 살핀다. Reflexive가 허용된다는 사실 하나만으로 raising임을 입증할 수는 없다. 이 비교는 Radford §6.6–6.7·§8.5와 정태구 11장의 PRO·control 설명을 바탕으로 예문과 풀이를 새로 구성했다.</p><p>또한 agreement와 c-command는 별개로 확인한다. The actress blamed himself에서는 주어가 목적어를 c-command한다는 구조적 사실은 바뀌지 않는다. 통상적인 해석에서 어긋나는 것은 actress와 himself의 자질이다. ‘자질이 맞지 않으므로 c-command도 없다’고 설명하지 않는다.</p><p>2018학년도 전공 B 6번을 분석할 때는 이동도 함께 고려해야 한다. Raising chain의 낮은 주어 위치에서 성립하는 local binding을 확인해야 하므로, 표면상의 거리만 보고 Principle A 위반이라고 결론내릴 수 없다. 아래는 그 출제 원리를 유지하고 어휘를 바꾼 예문이다.</p><div class="eg"><span class="eg-line">2018학년도 전공 B 6번의 출제 원리를 바탕으로 만든 변형 예문</span><span class="eg-line">Lena<sub>i</sub> seems to Alex to be expected by her teammates to defend herself<sub>i</sub>.</span></div><p>이 문장은 세 단계로 나누어 읽는다. 가장 낮은 <em>defend herself</em> 절에서 Lena는 defend의 주어이며 의미역을 받는다. 중간의 <em>be expected</em>와 가장 바깥의 <em>seems</em>를 거치면서 Lena는 상위 주어 위치로 이동한다. <em>to Alex</em>와 <em>by her teammates</em>의 명사구는 각각 PP 안에 있으므로, 이동 경로를 가로막는 별도의 절 주어가 아니다.</p><p>Binding을 판단할 때도 가장 낮은 주어 위치를 확인한다. 그 위치의 Lena는 같은 절 안의 herself를 c-command하며, 두 표현은 같은 지표를 갖는다. 따라서 표면 문장에서 Lena가 멀리 떨어져 있다는 이유만으로 binding이 성립하지 않는다고 판단하면 안 된다. 이 변형 예문이 문법적이라고 판단할 때에도 의미역, 이동 경로, binding을 각각 근거로 설명해야 한다.</p><div class="eg"><span class="eg-line eg-ok">Leo<sub>i</sub> seems to have injured himself<sub>i</sub>.</span><span class="eg-line eg-bad">Leo<sub>i</sub> says that Maya has injured himself<sub>i</sub>.</span><span class="eg-note">학습용 대조 예문: 첫 문장은 Leo가 하위절 주어 위치에서 이동한 raising 구조이고, 두 번째는 하위절에 Maya라는 별도 주어가 있다.</span></div><p>첫 문장에서는 Leo가 이동하기 전의 하위절 주어 위치에서 himself에 대한 local binding이 성립한다. 두 번째에서는 Maya가 하위절 주어이고 Leo가 그 자리에서 이동한 것이 아니다. Himself를 Leo로 해석하면 local domain 밖의 선행사에 의존하므로 Principle A를 위반한다. 두 예문을 가르는 것은 겉으로 보이는 거리보다 ‘하위절 주어 자리에 무엇이 있는가’다.</p></details>
+    <details class="binding-depth"><summary>자세히 보기 · c-command와 locality 조건의 차이</summary><p>Brian<sub>i</sub> hopes that Karen will forgive himself<sub>i</sub>에서 Brian은 himself를 c-command한다. 이 문장은 c-command 조건은 만족하지만 locality 조건을 만족하지 못한다. Himself가 들어 있는 하위절의 주어는 Karen이고, Brian은 그 local domain 밖에 있다. ‘Brian이 앞에 있으니 선행사다’라고 판단하면 이 차이를 놓친다.</p><p>Nora<sub>i</sub> believes herself<sub>i</sub> to be qualified의 herself는 하위절 목적어가 아니라 주어다. 이 ECM 주어의 domain에는 상위절 Nora가 포함된다. 그래서 위의 finite 절 목적어 예문과 결과가 다르다.</p><p><strong>Control 구문과도 비교해 보자.</strong> 하위절에 발음되는 주어가 없다는 이유만으로 모두 raising이나 ECM으로 분류할 수는 없다. 다음은 PRO를 가정하는 분석에 따른 학습용 변형 예문이다.</p><div class="eg"><span class="eg-line eg-ok">Ethan<sub>i</sub> promised Zoe<sub>j</sub> [PRO<sub>i</sub> to defend himself<sub>i</sub>].</span><span class="eg-line eg-bad">Ethan<sub>i</sub> persuaded Zoe<sub>j</sub> [PRO<sub>j</sub> to defend himself<sub>i</sub>].</span><span class="eg-line eg-ok">Ethan<sub>i</sub> persuaded Zoe<sub>j</sub> [PRO<sub>j</sub> to defend herself<sub>j</sub>].</span></div><p>Promise에서는 ‘누가 방어할 것인가’의 답이 Ethan이다. 하위절의 발음되지 않는 주어 PRO는 Ethan을 가리키며 himself의 local binder가 된다. Persuade로 바꾸면 설득을 받은 Zoe가 그 행동의 주체이므로 PRO도 Zoe를 가리킨다. 그러므로 두 번째 문장에서 himself를 Ethan으로 해석할 수 없고, 세 번째처럼 herself로 바꾸면 Zoe를 가리키는 local binding이 성립한다.</p><p>여기서 상위절의 controller와 reflexive를 직접 bind하는 하위절 PRO를 구별한다. Raising에서는 이동한 NP의 낮은 위치를 살피지만, control에서는 하위절의 PRO와 그 controller를 살핀다. Reflexive가 허용된다는 사실 하나만으로 raising임을 입증할 수는 없다. 이 비교의 예문과 풀이는 PRO·control 및 raising의 구조를 설명하도록 새로 구성했다.</p><p>또한 agreement와 c-command는 별개로 확인한다. The actress blamed himself에서는 주어가 목적어를 c-command한다는 구조적 사실은 바뀌지 않는다. 통상적인 해석에서 어긋나는 것은 actress와 himself의 자질이다. ‘자질이 맞지 않으므로 c-command도 없다’고 설명하지 않는다.</p><p>2018학년도 전공 B 6번을 분석할 때는 이동도 함께 고려해야 한다. Raising chain의 낮은 주어 위치에서 성립하는 local binding을 확인해야 하므로, 표면상의 거리만 보고 Principle A 위반이라고 결론내릴 수 없다. 아래는 그 출제 원리를 유지하고 어휘를 바꾼 예문이다.</p><div class="eg"><span class="eg-line">2018학년도 전공 B 6번의 출제 원리를 바탕으로 만든 변형 예문</span><span class="eg-line">Lena<sub>i</sub> seems to Alex to be expected by her teammates to defend herself<sub>i</sub>.</span></div><p>이 문장은 세 단계로 나누어 읽는다. 가장 낮은 <em>defend herself</em> 절에서 Lena는 defend의 주어이며 의미역을 받는다. 중간의 <em>be expected</em>와 가장 바깥의 <em>seems</em>를 거치면서 Lena는 상위 주어 위치로 이동한다. <em>to Alex</em>와 <em>by her teammates</em>의 명사구는 각각 PP 안에 있으므로, 이동 경로를 가로막는 별도의 절 주어가 아니다.</p><p>Binding을 판단할 때도 가장 낮은 주어 위치를 확인한다. 그 위치의 Lena는 같은 절 안의 herself를 c-command하며, 두 표현은 같은 지표를 갖는다. 따라서 표면 문장에서 Lena가 멀리 떨어져 있다는 이유만으로 binding이 성립하지 않는다고 판단하면 안 된다. 이 변형 예문이 문법적이라고 판단할 때에도 의미역, 이동 경로, binding을 각각 근거로 설명해야 한다.</p><div class="eg"><span class="eg-line eg-ok">Leo<sub>i</sub> seems to have injured himself<sub>i</sub>.</span><span class="eg-line eg-bad">Leo<sub>i</sub> says that Maya has injured himself<sub>i</sub>.</span><span class="eg-note">학습용 대조 예문: 첫 문장은 Leo가 하위절 주어 위치에서 이동한 raising 구조이고, 두 번째는 하위절에 Maya라는 별도 주어가 있다.</span></div><p>첫 문장에서는 Leo가 이동하기 전의 하위절 주어 위치에서 himself에 대한 local binding이 성립한다. 두 번째에서는 Maya가 하위절 주어이고 Leo가 그 자리에서 이동한 것이 아니다. Himself를 Leo로 해석하면 local domain 밖의 선행사에 의존하므로 Principle A를 위반한다. 두 예문을 가르는 것은 겉으로 보이는 거리보다 ‘하위절 주어 자리에 무엇이 있는가’다.</p></details>
   </div>
 </div>
 
@@ -378,7 +394,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note">An <span class='kw1'>R-expression</span> (referential expression) = a name or a definite description that picks out a referent on its own: <em>Diana, the manager, that student</em>.</p>
       <p class="note">R-expression은 스스로 지시를 가지므로 어떤 c-commanding 선행사에도 bound될 수 없다 — domain 안이든 밖이든 전부. 단, c-command가 없으면 같은 index도 허용될 수 있다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Binding 구조 그림 4" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowB4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#c62828"/></marker>
       </defs>
@@ -412,7 +428,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <!-- illicit binding: He c-commands Trevor -->
       <path d="M 155,110 Q 360,200 505,272" stroke="#c62828" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowB4)"/>
       <text x="320" y="150" text-anchor="middle" font-size="11" fill="#c62828">✗ He가 Trevor를 c-command·coindex → R-expression bound</text>
-    </svg>
+    </svg></div>
     <div class="eg">
       <span class="eg-line eg-bad">He<sub>i</sub> thinks Trevor<sub>i</sub> will win.</span>
       <span class="eg-note">matrix subject He가 종속절의 이름 Trevor를 c-command·coindex → Principle C 위반 → 비문.</span>
@@ -502,6 +518,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   </div>
 </div>
 
+<details class="reference-fold"><summary>원서 출처 · 분석 기준 펼치기</summary><p class="note">Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §3.3 (c-command), §§6.6–6.7 (PRO·control·ECM), §8.5 (raising). 예문은 학습용으로 재구성했으며, 기출 기반 변형 예문은 본문에 따로 표시했다.</p></details>
 <div class="nav-bottom">
   <a class="nav-btn" href="./raising-control_study.html">← Ch.4 Raising &amp; Control</a>
   <a class="nav-btn next-btn" href="./binding.html">📝 Ch.5 Binding OX 40문항 풀러 가기 →</a>
