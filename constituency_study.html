@@ -84,10 +84,22 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
 
-@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
+<style>
+/* Chapter-local readability fixes: preserve the original concept layout. */
+details.concept > summary.c-title{display:block;word-break:keep-all;overflow-wrap:break-word;line-height:1.65;letter-spacing:0;text-transform:none}
+details.concept > summary.c-title::before{content:"▸ ";color:#3b3f86}
+details.concept[open] > summary.c-title::before{content:"▾ "}
+details.concept > div{padding:4px 10px 8px}
+.tree-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tree-scroll:focus-visible{outline:2px solid #3b3f86;outline-offset:3px}
+.tree-scroll-hint{font-size:13px;color:#555;margin:8px 0}
+.reference-fold{padding:14px 18px;border:1px solid #c5c8e8;border-radius:10px;background:#fff}
+@media(max-width:640px){.tree-scroll .tree-svg{min-width:720px;max-width:none;width:720px}}
+</style>
 </head>
 <body class="etwiki-learning">
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
@@ -463,7 +475,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       </div>
     </div>
 
-    <svg class="tree-svg" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 1" tabindex="0"><svg class="tree-svg" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg">
       <text x="270" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">Phrasal V — [VP put off the decision]</text>
       <text x="270" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">VP</text>
       <line x1="270" y1="64" x2="160" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -481,9 +493,9 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <line x1="380" y1="124" x2="380" y2="208" stroke="#aaa" stroke-width="1.5"/>
       <text x="380" y="224" text-anchor="middle" font-size="13" fill="#1a1a2e" font-style="italic">the decision</text>
       <text x="270" y="280" text-anchor="middle" font-size="11" fill="#666">→ V 노드 안에 [V Prt] 결합 / NP는 형제(sister)</text>
-    </svg>
+    </svg></div>
 
-    <svg class="tree-svg" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 2" tabindex="0"><svg class="tree-svg" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg">
       <text x="270" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">Prepositional V — [VP climb [PP down the ladder]]</text>
       <text x="270" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">VP</text>
       <line x1="270" y1="64" x2="160" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -501,7 +513,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <line x1="440" y1="184" x2="440" y2="208" stroke="#aaa" stroke-width="1.5"/>
       <text x="440" y="224" text-anchor="middle" font-size="13" fill="#1a1a2e" font-style="italic">the ladder</text>
       <text x="270" y="280" text-anchor="middle" font-size="11" fill="#666">→ P가 NP와 결합해 PP 형성 / VP는 V + PP</text>
-    </svg>
+    </svg></div>
 
     <div class="exam">
       <div class="exam-label">🔑 핵심 구분 표</div>
@@ -527,7 +539,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <p class="note">모든 phrase는 동일한 위계: <span class='kw2'>head</span> · <span class='kw2'>complement</span> · <span class='kw2'>adjunct</span> · <span class='kw2'>specifier</span></p>
     </div>
 
-    <svg class="tree-svg" viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 3" tabindex="0"><svg class="tree-svg" viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg">
       <text x="280" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">X-bar 일반 도식 (XP)</text>
       <text x="280" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">XP</text>
       <line x1="280" y1="64" x2="140" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -543,7 +555,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="240" y="258" text-anchor="middle" font-size="14" font-weight="bold" fill="#3b3f86">X</text>
       <text x="400" y="258" text-anchor="middle" font-size="13" fill="#1f7a8c" font-style="italic" font-weight="600">Complement</text>
       <text x="280" y="312" text-anchor="middle" font-size="11" fill="#666">→ Head X + Complement = X′ / X′에 Adjunct 부가 = X′ / Specifier 추가 = XP</text>
-    </svg>
+    </svg></div>
 
     <div class="concept">
       <div class="c-title">Complement vs Adjunct 구분 <span class="badge-ex">기출 포인트</span></div>
@@ -579,7 +591,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       </div>
     </div>
 
-    <svg class="tree-svg" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 4" tabindex="0"><svg class="tree-svg" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
       <text x="300" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">[NP the [N′ [N′ student of physics] with long hair]]</text>
       <text x="300" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">NP</text>
       <line x1="300" y1="64" x2="120" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -605,7 +617,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <line x1="390" y1="274" x2="390" y2="290" stroke="#aaa" stroke-width="1.5"/>
       <text x="390" y="308" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a2e">of physics</text>
       <text x="300" y="345" text-anchor="middle" font-size="11" fill="#666">→ Complement(of physics)는 N과 sister(가장 안쪽). Adjunct(with long hair)는 N′에 부가.</text>
-    </svg>
+    </svg></div>
 
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
@@ -658,7 +670,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       </div>
     </div>
 
-    <svg class="tree-svg" viewBox="0 0 540 300" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 5" tabindex="0"><svg class="tree-svg" viewBox="0 0 540 300" xmlns="http://www.w3.org/2000/svg">
       <text x="270" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">[S [NP₁ The teacher] [VP praised [NP₂ himself]]]</text>
       <text x="270" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">S</text>
       <line x1="270" y1="64" x2="140" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -676,7 +688,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <line x1="460" y1="184" x2="460" y2="218" stroke="#aaa" stroke-width="1.5"/>
       <text x="460" y="236" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a2e">himself</text>
       <text x="270" y="278" text-anchor="middle" font-size="11" fill="#c0392b" font-style="italic">→ NP₁의 첫 분기 노드 S가 NP₂를 dominate → NP₁ c-commands NP₂ (Binding A 충족)</text>
-    </svg>
+    </svg></div>
 
     <div class="concept">
       <div class="c-title">예시 — NPI Licensing</div>
@@ -712,7 +724,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       </div>
     </div>
 
-    <svg class="tree-svg" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 6" tabindex="0"><svg class="tree-svg" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
       <text x="300" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">Reading 1 (VP-attachment) — 망원경으로 봤다 (instrument)</text>
       <text x="300" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">VP</text>
       <line x1="300" y1="64" x2="120" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -728,9 +740,9 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <line x1="480" y1="124" x2="480" y2="160" stroke="#aaa" stroke-width="1.5"/>
       <text x="480" y="178" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a2e">with the telescope</text>
       <text x="300" y="232" text-anchor="middle" font-size="11" fill="#666">→ PP가 VP에 붙어 보는 행위의 도구를 나타냄</text>
-    </svg>
+    </svg></div>
 
-    <svg class="tree-svg" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 7" tabindex="0"><svg class="tree-svg" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
       <text x="300" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">Reading 2 (NP-attachment) — 망원경 든 해적을 봤다</text>
       <text x="300" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">VP</text>
       <line x1="300" y1="64" x2="160" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -748,7 +760,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <line x1="500" y1="184" x2="500" y2="218" stroke="#aaa" stroke-width="1.5"/>
       <text x="500" y="236" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a2e">with the telescope</text>
       <text x="300" y="280" text-anchor="middle" font-size="11" fill="#666">→ PP가 NP "the pirate" 안에 부가 → 망원경 든 해적을 본 것</text>
-    </svg>
+    </svg></div>
 
     <div class="concept">
       <div class="c-title">예시 — Coordination scope</div>
@@ -759,7 +771,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       </div>
     </div>
 
-    <svg class="tree-svg" viewBox="0 0 540 280" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 8" tabindex="0"><svg class="tree-svg" viewBox="0 0 540 280" xmlns="http://www.w3.org/2000/svg">
       <text x="270" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">Reading 1 — [NP old [N′ men and women]] (늙은 남녀)</text>
       <text x="270" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">NP</text>
       <line x1="270" y1="64" x2="120" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -775,9 +787,9 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="380" y="178" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a2e">and</text>
       <text x="460" y="178" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a2e">women</text>
       <text x="270" y="236" text-anchor="middle" font-size="11" fill="#666">→ "old"가 "men and women" 전체를 수식 → 남녀 모두 늙음</text>
-    </svg>
+    </svg></div>
 
-    <svg class="tree-svg" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="통사 구조 그림 9" tabindex="0"><svg class="tree-svg" viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg">
       <text x="270" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3b3f86">Reading 2 — [NP [NP old men] and [NP women]] (늙은 남자 + 여자 (나이 미지정))</text>
       <text x="270" y="58" text-anchor="middle" font-size="16" font-weight="bold" fill="#3b3f86">NP</text>
       <line x1="270" y1="64" x2="140" y2="100" stroke="#aaa" stroke-width="1.5"/>
@@ -799,12 +811,12 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <line x1="400" y1="124" x2="400" y2="160" stroke="#aaa" stroke-width="1.5"/>
       <text x="400" y="178" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a2e">women</text>
       <text x="270" y="280" text-anchor="middle" font-size="11" fill="#666">→ "old"가 "men"만 수식 → 늙은 남자 + 여자 (women의 나이는 이 구조만으로 정해지지 않음)</text>
-    </svg>
+    </svg></div>
 <details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 두 해석의 구조적 차이를 답안에 설명하기</summary><div style="margin-top:12px"><p class="note">망원경 예문의 두 해석은 saw의 뜻을 바꾼 것이 아니다. with the telescope가 어느 노드에 붙는지가 달라진다. NP-attachment이면 pirate를 한정하고, VP-attachment이면 보는 행위를 수식한다.</p><p class="note">NP에 붙는 해석에서는 [the pirate with the telescope] 전체를 him으로 대용할 수 있다. 도구를 나타내는 해석에서는 saw [him] [with the telescope]처럼 PP를 남길 수 있다. 대용 전후에 같은 해석을 유지했는지 확인한다.</p><div class="eg">The PP modifies the noun in the NP-attached structure, but modifies the seeing event in the VP-attached structure. The two attachment sites yield different interpretations.</div><p class="note">답안에는 ① target string ② test와 변형 결과 ③ 구조상 범위 ④ 해석을 쓴다. 뜻을 자연스럽게 풀어 쓰기만 하거나, 괄호만 제시하고 왜 그 범위인지 생략하지 않는다.</p></div></details>
   </div>
 </div>
 
-<div class="concept"><div class="c-title">참고 문헌 · 분석 기준</div><p class="note">Radford, A. (1988). <em>Transformational Grammar: A First Course</em>, Chapters 2, 3, 5. Aarts, B. (2018). <em>English Syntax and Argumentation</em>, 5th ed., Chapters 12–13. 예문은 진단 구조를 유지하여 새로 구성했다. 문법성 표시는 제시된 해석과 문맥을 기준으로 한다.</p></div>
+<details class="concept reference-fold"><summary class="c-title">원서 출처 · 분석 기준 펼치기</summary><div><p class="note">Radford, A. (1988). <em>Transformational Grammar: A First Course</em>, Chapters 2, 3, 5. Aarts, B. (2018). <em>English Syntax and Argumentation</em>, 5th ed., Chapters 12–13. 예문은 진단 구조를 유지하여 새로 구성했다. 문법성 표시는 제시된 해석과 문맥을 기준으로 한다.</p></div></details>
 <div class="nav-bottom">
   <a class="nav-btn" href="./index.html">← 목차</a>
   <a class="nav-btn next-btn" href="./constituency.html">OX 풀러 가기 →</a>
