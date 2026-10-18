@@ -77,11 +77,27 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
-@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
-</head>
+<style>
+.tip-line{display:block}.header-tip,details.concept>summary{word-break:keep-all;overflow-wrap:break-word;line-height:1.7}
+details.concept{padding:14px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff}
+details.concept>summary{cursor:pointer}
+details.concept>p{margin-top:10px;line-height:1.8}
+.tree-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tree-scroll:focus-visible{outline:2px solid #3b3f86;outline-offset:3px}
+.tree-scroll-hint{font-size:13px;color:#555;margin:8px 0}
+.reference-fold{padding:10px 14px;margin-top:12px;border:1px solid #c5c8e8;border-radius:8px;background:#fff}
+.reference-fold>summary{cursor:pointer;font-size:14px;line-height:1.6;color:#3b3f86}
+.reference-fold>.note{margin-top:10px}
+.dictionary-keyword{text-decoration:none}
+.dictionary-keyword:hover,.dictionary-keyword:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.exam-year{display:inline-block;color:#b71c1c;font-weight:700;font-size:14px;padding:1px 5px;text-decoration:none;letter-spacing:0}
+.exam-year:hover,.exam-year:focus-visible{text-decoration:underline}.c-title{flex-wrap:wrap}
+@media(max-width:640px){.tree-scroll .tree-svg{min-width:780px;max-width:none;width:780px}}
+</style><style>.tbl-wrap:focus-visible{outline:2px solid #3b3f86;outline-offset:3px}table.diag{font-size:15px}table.diag thead th{font-size:14px}</style></head>
 <body class="etwiki-learning">
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
 <nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./morphology.html">OX 풀기</a></nav>
@@ -94,7 +110,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="header-script">Concept Notes · Morphology · Word Structure</div>
   <p class="header-sub">morpheme · inflection / derivation · word-formation · compounding · bracketing</p>
   <div class="header-divider"></div>
-  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기 &nbsp;·&nbsp; 핵심: 품사가 바뀌거나 새 단어가 생기면 derivation / 같은 단어의 문법형이면 inflection</p>
+  <p class="header-tip"><span class="tip-line">목차를 누르면 해당 설명으로 이동해요.</span><span class="tip-line">섹션 제목을 누르면 열고 닫을 수 있어요.</span></p>
 </div>
 <div class="wrap">
 <div class="toc">
@@ -121,10 +137,10 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 <div class="exam" style="margin-bottom:20px">
   <div class="exam-label">📝 학습 포인트 (Ch.6 Morphology · 개념 위주)</div>
   <p>① <span class='kw4'>morpheme 분류</span>: free vs bound, lexical vs functional</p>
-  <p>② <span class='kw4'>inflection vs derivation</span>: lexeme·문법 기능을 먼저 확인하고 category-change를 보조 진단으로 사용</p>
-  <p>③ <span class='kw3'>word-formation process</span> 식별: derivation / compounding / conversion / clipping / blending / acronym / backformation</p>
+  <p>② <span class='kw4'>inflection vs derivation</span> <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2021_A02" aria-label="2021학년도 전공 A 2번">21</a>: lexeme·문법 기능을 먼저 확인하고 category-change를 보조 진단으로 사용</p>
+  <p>③ <span class='kw3'>word-formation process</span> <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2021_A02" aria-label="2021학년도 전공 A 2번">21</a> 식별: derivation / compounding / conversion / clipping / blending / acronym / backformation</p>
   <p>④ <span class='kw3'>allomorphy</span>: plural <span class='kw1'>[s]/[z]/[əz]</span>, negative prefix <span class='kw1'>in-/im-/il-/ir-</span> 의 phonological conditioning</p>
-  <p>⑤ 함정: 동음 <span class='kw4'>-er</span>(comparative inflection vs agentive derivation), <span class='kw4'>bracketing ambiguity</span>(<em>unbuttonable</em>), compound <span class='kw4'>head</span>(대표적인 endocentric compound는 rightmost)</p>
+  <p>⑤ 함정: 동음 <span class='kw4'>-er</span>(comparative inflection vs agentive derivation), <span class='kw4'>bracketing ambiguity</span>(<em>unbuttonable</em>), compound <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=head">head</a>(대표적인 endocentric compound는 rightmost)</p>
 </div>
 
 <!-- ① Morpheme -->
@@ -138,10 +154,10 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">A <span class='kw1'>morpheme</span> is the minimal unit of meaning or grammatical function. A <span class='kw1'>free morpheme</span> can stand alone as a word; a <span class='kw1'>bound morpheme</span> must attach to another form. <span class='kw4'>All affixes in English — prefixes and suffixes — are bound morphemes.</span></div>
+      <div class="def">A <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=morpheme">morpheme</a> is the minimal unit of meaning or grammatical function. A <span class='kw1'>free morpheme</span> can stand alone as a word; a <span class='kw1'>bound morpheme</span> must attach to another form. <span class='kw4'>All affixes in English — prefixes and suffixes — are bound morphemes.</span></div>
       <p class="note"><span class='kw1'>morpheme</span>(형태소)은 의미·문법 기능을 가지는 최소 단위다. 독립된 단어로 쓰일 수 있으면 <span class='kw2'>free</span>, 반드시 다른 형태에 붙어야 하면 <span class='kw2'>bound</span>다.</p>
-      <p class="note"><span class='kw1'>root</span>는 더 쪼갤 수 없는 핵심 의미 형태, <span class='kw1'>stem</span>/<span class='kw1'>base</span>는 affix가 붙는 대상이다. root는 가장 안쪽 핵심이고, stem·base는 affix가 붙는 시점의 형태라는 점을 구분한다.</p>
-      <p class="note"><span class='kw1'>affix</span>는 bound morpheme으로, base 앞에 붙으면 <span class='kw2'>prefix</span>, 뒤에 붙으면 <span class='kw2'>suffix</span>다.</p>
+      <p class="note"><span class='kw1'>root</span>는 더 쪼갤 수 없는 핵심 의미 형태, <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=stem">stem</a>/<span class='kw1'>base</span>는 affix가 붙는 대상이다. root는 가장 안쪽 핵심이고, stem·base는 affix가 붙는 시점의 형태라는 점을 구분한다.</p>
+      <p class="note"><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=affix">affix</a>는 bound morpheme으로, base 앞에 붙으면 <span class='kw2'>prefix</span>, 뒤에 붙으면 <span class='kw2'>suffix</span>다.</p>
     </div>
     <div class="grid col2">
       <div class="grid-item">
@@ -217,11 +233,11 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def"><span class='kw1'>Inflection</span> marks grammatical function only and <span class='kw4'>never changes grammatical category</span>; the traditional teaching inventory lists <span class='kw4'>eight inflectional suffixes</span>; irregular inflected forms also exist. <span class='kw1'>Derivation</span> makes a <span class='kw4'>new word</span>, may change category, and uses prefixes or suffixes.</div>
+      <div class="def"><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Inflection">Inflection</a> marks grammatical function only and <span class='kw4'>never changes grammatical category</span>; the traditional teaching inventory lists <span class='kw4'>eight inflectional suffixes</span>; irregular inflected forms also exist. <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Derivation">Derivation</a> makes a <span class='kw4'>new word</span>, may change category, and uses prefixes or suffixes.</div>
       <p class="note">핵심 판별: <span class='kw3'>품사가 바뀌거나 새 단어가 생기면 derivation, 같은 단어의 문법형이면 inflection.</span></p>
       <p class="note"><span class='kw1'>inflection</span>은 수·시제·비교·소유 같은 문법 기능만 표시하며 새 단어를 만들지 않는다. <span class='kw1'>derivation</span>은 새 lexical word를 만들고 품사를 바꿀 수 있다.</p>
     </div>
-    <div class="tbl-wrap">
+    <p class="tree-scroll-hint">표를 좌우로 밀어 비교할 수 있어요.</p><div class="tbl-wrap" role="region" aria-label="Inflection과 Derivation 비교표" tabindex="0">
       <table class="diag">
         <thead>
           <tr><th>기준</th><th>Inflection</th><th>Derivation</th></tr>
@@ -318,7 +334,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">An <span class='kw1'>allomorph</span> is one of the variant phonetic forms of the <span class='kw4'>same morpheme</span> (same meaning/function). The variants are typically <span class='kw1'>phonologically conditioned</span> — the surrounding sounds decide which form appears.</div>
+      <div class="def">An <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=allomorph">allomorph</a> is one of the variant phonetic forms of the <span class='kw4'>same morpheme</span> (same meaning/function). The variants are typically <span class='kw1'>phonologically conditioned</span> — the surrounding sounds decide which form appears.</div>
       <p class="note">한 morpheme이 서로 다른 형태로 실현될 때 그 변이형들이 <span class='kw3'>allomorph</span>다. <span class='kw4'>같은 의미·기능을 나타내지만 실현되는 형태가 다르다.</span></p>
     </div>
     <div class="grid col3">
@@ -401,8 +417,8 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="eg">
       <span class="eg-line"><em>automation → automate</em> : <span class='kw3'>backformation</span> (suffix 제거)</span>
-      <span class="eg-line"><em>information + entertainment → infotainment</em> : <span class='kw3'>blending</span></span>
-      <span class="eg-line"><em>(to) comb your hair</em> (from <em>the comb</em>) : <span class='kw3'>conversion</span> (N→V, affix 없음)</span>
+      <span class="eg-line"><em>information + entertainment → infotainment</em> : <a class="kw3 dictionary-keyword" href="https://etwiki.net/concept.html?term=blending">blending</a></span>
+      <span class="eg-line"><em>(to) comb your hair</em> (from <em>the comb</em>) : <a class="kw3 dictionary-keyword" href="https://etwiki.net/concept.html?term=conversion">conversion</a> (N→V, affix 없음)</span>
       <span class="eg-line"><em>random access memory → RAM</em> : <span class='kw3'>acronym</span></span>
       <span class="eg-note"><strong>판별 핵심:</strong> clipping은 한 단어를 줄임 / blending은 두 단어의 non-morphemic 조각을 합침 / acronym은 구의 머리글자(단어처럼 발음). <em>brunch</em>는 clipping이 아니라 <span class='kw4'>blending</span>(breakfast+lunch).</span>
     </div>
@@ -434,7 +450,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note"><span class='kw3'>exocentric</span> compound (headless)는 어느 요소의 하위어도 아니다 — <em>pickpocket</em> = a person, not a pocket.</p>
       <p class="note"><span class='kw2'>category determination</span>: 대표적인 right-headed compound에서는 <span class='kw4'>오른쪽(final)</span> 요소가 전체 품사를 결정한다. exocentric의 의미를 이 규칙만으로 예측하지 않는다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="단어 구조 그림 1" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
       <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">Compound head = rightmost: handmade (N + A → A), head는 made</text>
       <!-- root A -->
       <text x="330" y="58" text-anchor="middle" font-size="16" font-weight="700" fill="#3b3f86">A</text>
@@ -451,7 +467,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <line x1="450" y1="138" x2="450" y2="168" stroke="#999" stroke-width="1.5"/>
       <text x="450" y="188" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">made</text>
       <text x="330" y="216" text-anchor="middle" font-size="11" fill="#4a4d6a">→ 전체 품사 = head(made)의 품사 = Adjective</text>
-    </svg>
+    </svg></div>
     <div class="grid col2">
       <div class="grid-item">
         <div class="gi-title">Endocentric (head의 하위어)</div>
@@ -471,7 +487,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="exam">
       <div class="exam-label">📋 개념 확인</div>
-      <p><span class='kw1'>compounding</span>을 다른 word-formation process와 구별하고, 예문에서 head를 찾는다.</p>
+      <p><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=compounding">compounding</a>을 다른 word-formation process와 구별하고, 예문에서 head를 찾는다.</p>
     </div>
     <details class="exam"><summary>compound의 head와 의미 확인</summary>
 <p class="note"><em>snowball</em>은 ball의 한 종류이므로 endocentric이고 오른쪽 N이 category와 의미 범주를 정한다. <em>pickpocket</em>은 N이지만 pocket의 한 종류가 아니므로 exocentric이다. 오른쪽 요소와 전체의 품사가 같더라도, 전체가 그 요소의 한 종류를 뜻하는지는 따로 확인해야 한다.</p><p class="note">기존 <em>blackboard / black board</em> 대조에서 compound는 관습적 명칭이고 phrase는 색을 기술한다. 강세는 유용한 단서지만, 강세 하나만으로 모든 compound와 phrase를 구별할 수는 없다. 띄어쓰기·hyphen도 단독 판별 기준이 아니다.</p><p class="note"><em>toothbrushes</em>의 -es는 전체 compound의 plural이다. 이를 ‘compound 내부에는 plural이 절대 없다’로 확대하지 않는다. <em>sports car</em>처럼 첫 요소에 -s가 있는 관습적 compound도 있다.</p>
@@ -495,7 +511,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note">두 중간 형태(V-able과 un-V)가 모두 허용되면 <em>un + V + able</em>은 두 구조에 따른 <span class='kw4'>ambiguity</span>를 가질 수 있다. bracketing이 의미를 가른다는 점이 핵심이다.</p>
     </div>
     <div class="c-title" style="margin-top:6px">Bracketing ambiguity: <em>unbuttonable</em></div>
-    <svg class="tree-svg" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="단어 구조 그림 2" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
       <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">두 reading — bracketing이 의미를 가른다</text>
       <!-- LEFT reading: [un-[button-able]] = 'not able to be buttoned' -->
       <text x="165" y="48" text-anchor="middle" font-size="12" font-weight="700" fill="#3b3f86">[un-[button-able]]</text>
@@ -537,9 +553,9 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <text x="560" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">-able</text>
       <text x="560" y="160" text-anchor="middle" font-size="9" fill="#8d4d14">V→A</text>
       <text x="495" y="258" text-anchor="middle" font-size="10" fill="#4a4d6a">verbal un- 이 V에 먼저, 그 뒤 -able</text>
-    </svg>
+    </svg></div>
     <div class="c-title" style="margin-top:10px">Ordering fixed by selection: <em>rewashable</em></div>
-    <svg class="tree-svg" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="단어 구조 그림 3" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
       <text x="330" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#4a4d6a">[[re-wash]-able] — 이 예의 분석 (반복 의미 re-는 V 선택)</text>
       <!-- top A -->
       <text x="330" y="52" text-anchor="middle" font-size="15" font-weight="700" fill="#b71c1c">A</text>
@@ -557,7 +573,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <text x="430" y="110" text-anchor="middle" font-size="12" font-weight="700" fill="#8d4d14">-able</text>
       <text x="430" y="124" text-anchor="middle" font-size="9" fill="#8d4d14">V→A</text>
       <text x="330" y="210" text-anchor="middle" font-size="10" fill="#4a4d6a"><tspan font-style="italic">washable</tspan> 은 이미 A → 이 예의 re-(V 선택)는 A에 부착 불가 → *re-[washable] 불가</text>
-    </svg>
+    </svg></div>
     <div class="eg">
       <span class="eg-line"><strong>Bracketing ambiguity:</strong> <em>unbuttonable</em> = [un-[button-able]] 'not able to be buttoned' vs [[un-button]-able] 'able to be unbuttoned'</span>
       <span class="eg-line"><strong>Ordering fixed:</strong> <em>unwearable</em> = [un-[wear-able]] only (<em>-able</em> 가 동사 <em>wear</em>에 먼저 붙어야 함; 그 뒤 adjectival <em>un-</em> 이 형용사 <em>wearable</em>에 부착)</span>
@@ -616,11 +632,12 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <details class="exam"><summary>발음 조건만으로 파생형을 만들 수는 없다</summary>
 <p class="note"><em>dark → darken</em>은 monosyllabic·obstruent-final base의 표준 예다. <em>calm</em>은 마지막 /m/이 sonorant여서 이 -en 패턴에 맞지 않고, <em>curious</em>는 polysyllabic이다. 두 실패를 같은 이유로 처리하지 않는다.</p><p class="note">발음 조건에 맞더라도 해당 affix가 그 품사와 의미의 base에 실제로 붙는지 확인해야 한다. 필요조건은 맞지 않는 예를 걸러 주지만, 조건에 맞는 모든 결합이 실제 단어로 쓰인다는 뜻은 아니다.</p><p class="note">N-forming -al의 final-stress 조건은 <em>arrive → arrival</em>과 <em>refuse → refusal</em> 같은 패턴을 설명한다. 하지만 final stress만으로 모든 verb가 -al을 허용하지 않는다. 또 <em>musical</em>의 A-forming -al과 input/output category가 다르므로 하나의 규칙으로 합치지 않는다.</p><p class="note">lexicalization은 관습화된 의미를 개별 학습해야 하는 경우와 연결된다. 낮은 productivity, phonological 조건 위반, 기존 단어에 의한 blocking은 서로 구분해서 설명한다.</p>
-    <p class="note">개념 근거: Fromkin, Rodman &amp; Hyams, <em>An Introduction to Language</em>, 10th ed., Ch. 2 (pp. 36–60), Ch. 6 (pp. 226–229); Cowan, <em>The Teacher’s Grammar of English</em> (2008), Negation (pp. 100–101). 위 예문 설명은 원리를 바탕으로 재서술했다.</p>
+    
     </details>
   </div>
 </div>
 
+<details class="reference-fold"><summary>원서 출처 · 분석 기준 펼치기</summary><p class="note">개념 근거: Fromkin, Rodman &amp; Hyams, <em>An Introduction to Language</em>, 10th ed., Ch. 2 (pp. 36–60), Ch. 6 (pp. 226–229); Cowan, <em>The Teacher’s Grammar of English</em> (2008), Negation (pp. 100–101). 위 예문 설명은 원리를 바탕으로 재서술했다.</p></details>
 <div class="nav-bottom">
   <a class="nav-btn" href="./index.html">← 챕터 목록</a>
   <a class="nav-btn next-btn" href="./morphology.html">📝 Ch.6 Morphology OX 30문항 풀러 가기 →</a>
