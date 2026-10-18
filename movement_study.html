@@ -71,11 +71,27 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
 .mv-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#c62828;font-weight:700;letter-spacing:1px}
-@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
-</head>
+<style>
+.header-tip,details.concept>summary{word-break:keep-all;overflow-wrap:break-word;line-height:1.7}
+details.concept{padding:14px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff}
+details.concept>summary{cursor:pointer}
+details.concept>p{margin-top:10px;line-height:1.8}
+.tree-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tree-scroll:focus-visible{outline:2px solid #3b3f86;outline-offset:3px}
+.tree-scroll-hint{font-size:13px;color:#555;margin:8px 0}
+.reference-fold{padding:10px 14px;margin-top:12px;border:1px solid #c5c8e8;border-radius:8px;background:#fff}
+.reference-fold>summary{cursor:pointer;font-size:14px;line-height:1.6;color:#3b3f86}
+.reference-fold>.note{margin-top:10px}
+.dictionary-keyword{text-decoration:none}
+.dictionary-keyword:hover,.dictionary-keyword:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.exam-year{display:inline-block;color:#b71c1c;font-weight:700;font-size:14px;padding:1px 5px;text-decoration:none;letter-spacing:0}
+.exam-year:hover,.exam-year:focus-visible{text-decoration:underline}.c-title{flex-wrap:wrap}
+@media(max-width:640px){.tree-scroll .tree-svg{min-width:780px;max-width:none;width:780px}}
+</style></head>
 <body class="etwiki-learning">
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
 <nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./movement.html">OX 풀기</a></nav>
@@ -113,11 +129,11 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 </div>
 <div class="exam" style="margin-bottom:20px">
   <div class="exam-label">📝 기출분석 포인트 (Ch.3 Movement)</div>
-  <p>① <span class='kw4'>NP-movement</span>: passive·raising 구문에서 D-structure와 S-structure의 차이</p>
-  <p>② <span class='kw4'>Wh-movement</span>: wh-phrase가 <span class='kw4'>Spec,CP</span>로 이동하는 과정과 island constraint 위반</p>
+  <p>① <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=NP-movement">NP-movement</a>: passive·raising <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2025_A07" aria-label="2025학년도 관련 기출">25</a> 구문에서 D-structure와 S-structure의 차이</p>
+  <p>② <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=Wh-movement">Wh-movement</a>: wh-phrase가 <span class='kw4'>Spec,CP</span>로 이동하는 과정과 island constraint 위반</p>
   <p>③ <span class='kw3'>V-movement / I-to-C</span>: finite V가 I로, I가 C로 이동하는 head movement</p>
-  <p>④ <span class='kw3'>Subjacency</span>: 한 단계에서 bounding node를 두 개 이상 넘는 movement는 비문</p>
-  <p>⑤ <span class='kw3'>That-trace effect</span>: wh-movement 후 <em>that</em>이 subject wh-trace 앞에 남으면 비문</p>
+  <p>④ <a class="kw3 dictionary-keyword" href="https://etwiki.net/concept.html?term=Subjacency">Subjacency</a>: 한 단계에서 bounding node를 두 개 이상 넘는 movement는 비문</p>
+  <p>⑤ <a class="kw3 dictionary-keyword" href="https://etwiki.net/concept.html?term=That-trace%20effect">That-trace effect</a>: wh-movement 후 <em>that</em>이 subject wh-trace 앞에 남으면 비문 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2026_B09" aria-label="2026학년도 관련 기출">26</a></p>
 </div>
 
 <!-- ① D-structure & S-structure -->
@@ -164,7 +180,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 <p><a href="https://etwiki.net/concept.html?term=theta-role">theta-role</a>은 ‘누가 했는가(Agent), 무엇이 영향을 받았는가(Theme)’ 같은 술어와 참여자의 의미 관계다. <a href="https://etwiki.net/concept.html?term=argument%20structure">argument structure</a>는 그 술어가 어떤 참여자 자리를 요구하는지 나타낸다. 주어·목적어라는 문법적 자리와 의미 관계는 구별한다. t(trace)는 이동한 표현의 원래 자리를 표시하며, 같은 아래첨자 i는 앞의 표현과 t가 하나의 이동 관계임을 보여 준다. 이동했다고 argument나 의미 관계가 사라지는 것은 아니다.</p>
 
 <p><strong>연습 예문:</strong> The technician repaired the scanner. / The scanner was repaired by the technician.</p><ol><li>먼저 repair의 Theme인 the scanner를 찾는다. 두 문장 모두 수리된 대상은 scanner다.</li><li>verbal passive에서는 [VP repaired [NP the scanner]]의 NP가 [Spec,IP]로 이동한다고 분석한다.</li><li>S-structure에서 subject가 되었다고 Agent가 되지는 않는다. theta-role과 grammatical function을 따로 적어야 한다.</li></ol><p><strong>비교:</strong> active의 technician = subject/Agent, passive의 scanner = subject/Theme. D-structure는 단순히 ‘능동문 문장’을 복사한 것이 아니라 passive morphology와 빈 subject 자리를 포함한 underlying representation이다.</p><p><strong>자가 점검:</strong> “subject이므로 Agent”가 왜 틀렸는가? → subject는 구조적 자리이고 theta-role은 predicate와의 의미 관계이기 때문이다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
 </div>
 
@@ -190,7 +206,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <p class="note"><span class='kw1'>V-movement</span>: V가 I로 올라간다 → inflected V가 I 위치에 있다.</p>
       <p class="note">I와 V가 인접한 단순 예문에서는 두 분석의 표면 어순이 같을 수 있다 (vacuous application). Vata의 어순 증거만으로 영어의 모든 lexical verb에 V-to-I를 확정하지 않는다. 영어 내부의 have/be와 negation 대조를 따로 확인한다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Movement 구조 그림 1" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowMv1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
           <path d="M0,0 L0,6 L6,3 z" fill="#c62828"/>
@@ -229,7 +245,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="600" y="302" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">the notes</text>
       <!-- movement arrow -->
       <path d="M 380,242 Q 310,200 368,192" stroke="#c62828" stroke-width="1.8" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowMv1)"/>
-    </svg>
+    </svg></div>
     <div class="concept">
       <div class="c-title">기출 포인트: Affix movement vs V-movement</div>
       <div class="eg">
@@ -244,7 +260,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <details class="concept"><summary>어순이 같아도 분석이 같은 것은 아니다</summary>
 <p><strong>독립 연습:</strong> The curator checks the inventory. I→V의 Affix movement 분석은 checks를 VP 안에 둔다. V→I 가정은 checks를 I에 두고 V 자리에 trace를 둔다. 이 문장 하나의 어순으로 두 구조 중 하나를 확정할 수 없다.</p><p><strong>추가 진단:</strong> The curator has not checked the inventory. / The curator will not have checked the inventory.</p><ol><li>첫 문장에서는 finite have가 not 앞에 나타난다.</li><li>둘째 문장에서는 modal will이 I에 있고 have는 not 뒤에 남는다.</li><li>이 대조는 have/be raising의 근거다. “modal이 없으면 영어의 모든 lexical verb가 똑같이 행동한다”라는 일반화의 근거는 아니다.</li></ol><p><strong>함정:</strong> *The curator will checks the inventory. modal 뒤의 lexical verb는 base form check여야 한다. 이 형태 제약과 특정 movement 이론의 선택을 구별한다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
 </div>
 
@@ -264,7 +280,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <p class="note">S-structure: <span class='kw2'>[CP [C Will]] [IP she [I t] [VP leave]]</span>?</p>
       <p class="note">I 위치가 비면 다른 요소로 채울 수 없다 (no-refilling convention). — 이것이 gap argument의 핵심.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Movement 구조 그림 2" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowMv2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
           <path d="M0,0 L0,6 L6,3 z" fill="#c62828"/>
@@ -300,7 +316,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="610" y="298" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">VP</text>
       <!-- movement arrow: C ← I position -->
       <path d="M 510,296 Q 430,240 204,238" stroke="#c62828" stroke-width="1.8" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowMv2)"/>
-    </svg>
+    </svg></div>
     <div class="concept">
       <div class="c-title">Gap Argument (4가지 근거)</div>
       <div class="grid col2">
@@ -339,7 +355,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <details class="concept"><summary>C head와 Spec,CP의 위치 구분</summary>
 <p><strong>연습:</strong> Which parcel will the courier collect? / I asked which parcel the courier would collect.</p><ol><li>두 문장에서 which parcel은 collect의 object 자리와 연결되고 Spec,CP에 놓인다.</li><li>직접의문문의 will은 I에서 C로 이동한다. which parcel과 will은 서로 다른 위치를 차지한다.</li><li>embedded question에서는 would가 subject 뒤에 남는다. wh-phrase가 Spec,CP에 있다고 C head까지 채워진 것은 아니다.</li></ol><p><strong>비교:</strong> I asked if the courier would arrive.에서는 if가 C를 채운다. I asked which parcel the courier would collect.에서는 overt complementizer가 없어도 표준 embedded question의 subject–auxiliary inversion은 일어나지 않는다.</p><p><strong>답안 기준:</strong> “간접의문문은 모두 overt C가 있어서 inversion 불가” 대신, 해당 예문의 clause type과 C/Spec,CP 위치를 각각 설명한다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
 </div>
 
@@ -356,10 +372,10 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <div class="c-title">Why NP Moves</div>
       <div class="def">In passive sentences, the passive verb cannot assign <span class='kw1'>accusative Case</span> to its object NP. The object NP therefore moves to the <span class='kw1'>empty subject position</span> (Spec,IP) to receive <span class='kw1'>nominative Case</span> from I.</div>
       <p class="note">passive morphology (be + past participle)는 동사의 <span class='kw2'>external argument</span>(= agent theta-role)를 흡수하고, 동사의 <span class='kw2'>accusative Case 부여 능력</span>도 제거한다.</p>
-      <p class="note">object NP는 Case를 받지 못하면 <span class='kw1'>Case Filter</span> 위반으로 비문. 따라서 Case를 받기 위해 subject 위치로 이동한다.</p>
+      <p class="note">object NP는 Case를 받지 못하면 <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Case%20Filter">Case Filter</a> 위반으로 비문. 따라서 Case를 받기 위해 subject 위치로 이동한다.</p>
       <p class="note">subject 위치는 D-structure에서 비어 있다 (no external argument). NP-movement의 landing site는 <span class='kw2'>Spec,IP</span>.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 350" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Movement 구조 그림 3" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 350" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowMv3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
           <path d="M0,0 L0,6 L6,3 z" fill="#c62828"/>
@@ -397,7 +413,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="619" y="294" text-anchor="start" font-size="10" fill="#c62828">i</text>
       <!-- movement arrow: trace → Spec,IP -->
       <path d="M 612,296 Q 560,200 218,172" stroke="#c62828" stroke-width="1.8" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowMv3)"/>
-    </svg>
+    </svg></div>
     <div class="concept">
       <div class="c-title">3가지 증거 (Radford)</div>
       <div class="grid col3">
@@ -428,7 +444,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <details class="concept"><summary>Complement 선택과 passive movement의 조건</summary>
 <p><strong>연습:</strong> The archivist placed the folder on the trolley. → The folder was placed on the trolley.</p><ol><li>place는 이 용법에서 NP와 location PP를 요구한다. passive가 되어도 on the trolley는 필요하다.</li><li>the folder는 V의 internal argument 위치에서 Theme를 받고, verbal passive의 Case 조건 아래 subject 자리로 이동한다.</li><li>*The folder was placed the envelope on the trolley.는 이동한 NP의 object 자리를 다른 NP로 다시 채운 형태다.</li></ol><p><strong>범위 주의:</strong> “passive에는 object가 절대 없다”로 외우지 않는다. The intern was given a badge.처럼 다른 complement가 남는 구조도 있다. gap은 이동한 특정 NP의 자리다.</p><p><strong>형태 대조:</strong> The audience remained very impressed.는 adjectival 환경의 진단이다. -ed 형태만 보고 verbal passive와 동일한 이동을 부여하지 않는다. 위 요약의 adjectival/verbal 구분은 TG §8.4의 분석을 따른다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
 </div>
 
@@ -443,13 +459,13 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def"><span class='kw1'>Raising</span> constructions involve NP-movement of the embedded clause subject to the matrix subject position, because the matrix verb (e.g., <em>seem</em>, <em>appear</em>) does not assign a theta-role to its surface subject.</div>
+      <div class="def"><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Raising">Raising</a> constructions involve NP-movement of the embedded clause subject to the matrix subject position, because the matrix verb (e.g., <em>seem</em>, <em>appear</em>) does not assign a theta-role to its surface subject.</div>
       <p class="note">raising verb는 matrix subject position에 theta-role을 할당하지 않는다.</p>
       <p class="note">NP는 embedded TP의 Spec,TP (embedded subject position)에서 matrix Spec,IP로 이동한다.</p>
       <p class="note"><span class='kw1'>Theta preservation</span>: NP는 이동 후에도 embedded verb의 theta-role을 보유한다.</p>
     </div>
     <div class="concept">
-      <div class="c-title">Raising vs Control 구분</div>
+      <div class="c-title">Raising vs Control 구분 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2025_A07" aria-label="2025학년도 관련 기출">25</a></div>
       <div class="grid col2">
         <div class="grid-item">
           <div class="gi-title">Raising verb</div>
@@ -499,7 +515,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 <li>발문이 지정한 <u>to rain</u>으로 (4b)를 검사한다. 답안용 진단 문장 <em>It happened to rain.</em>에서 it은 사람·물건을 가리키지 않는다. 이 dummy를 허용한다는 것이 happen이 상위 주어에 의미 역할을 요구하지 않는다는 근거다. 원문 (2b)의 there 문장을 그대로 쓰면 지정된 rain 틀을 놓친다.</li>
 <li>(4a)의 voice 진단 문장은 <em>The man attempted to be saved by the fire fighter.</em>다. save의 구조자·피구조자는 그대로지만 <u>시도한 사람이 fire fighter에서 man으로 바뀐다</u>. 두 문장은 문법적이어도 같은 의미가 아니므로 voice transparency가 성립하지 않는다. ‘수동문이 비문’이라는 설명은 틀리다.</li></ol>
 <p><strong>조건을 바꾸면?</strong> 위 수동 진단문의 attempted만 happened로 바꾸면, (4b)와 구조 사건·참여자 역할이 같아 voice transparency가 성립한다. 비교 대상은 두 문장의 문법성만이 아니라 의미의 유지 여부다. 이 마지막 비교는 원문 (4b)를 바탕으로 만든 학습용 변형이다.</p></div>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
 </div>
 
@@ -519,7 +535,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <p class="note">S-structure: wh-phrase가 <span class='kw2'>Spec,CP</span>로 이동하고 원위치에 <span class='kw2'>wh-trace</span>를 남긴다.</p>
       <p class="note">직접의문문에서는 WH MOVEMENT + I-to-C가 동시에 적용될 수 있다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Movement 구조 그림 4" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowMv4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
           <path d="M0,0 L0,6 L6,3 z" fill="#c62828"/>
@@ -561,7 +577,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="630" y="348" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">buy t_i</text>
       <!-- movement arrow: trace in VP → Spec,CP -->
       <path d="M 630,346 Q 500,280 208,172" stroke="#c62828" stroke-width="1.8" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowMv4)"/>
-    </svg>
+    </svg></div>
     <div class="concept">
       <div class="c-title">4가지 증거</div>
       <div class="grid col2">
@@ -605,7 +621,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 <li>원문의 <u>it은 그 object 자리를 다시 채운 추가 argument</u>다. hit이 줄 역할은 이미 배정되어 it이 받을 theta-role이 없으므로 <strong>조건 (i)를 위반</strong>한다. ‘관계사가 보이지 않으니 it으로 보충한다’는 분석은 지문의 silent movement 가정과 충돌한다. 이동한 관계사와 t는 별도 참여자 두 명으로 세지 않는다.</li></ol>
 <p><strong>답안 핵심:</strong> (a)는 배정되지 못한 theta-role, (b)는 theta-role을 받지 못한 it을 각각 명시한다. 두 문장을 모두 ‘argument 수가 틀리다’로 끝내면 위반 방향이 드러나지 않는다.</p>
 <p><strong>조건 변경 연습(새 예문):</strong> The porter put the suitcase <u>beside the desk</u>.에서는 필요한 위치 complement가 채워진다. The suitcase which the porter moved was heavy.에서 which를 발음하지 않아도 moved의 object gap은 유지된다. 그 gap에 it을 넣으면 다시 같은 문제가 생긴다. 관계사의 발음 여부와 object 자리가 비어 있어야 한다는 조건은 별개다.</p></div><p><strong>함정:</strong> idiom을 의문문으로 바꾸면 언제나 비문이라는 규칙은 없다. 문법성, idiomatic reading의 유지, literal reading을 분리한다.</p>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
 </div>
 
@@ -620,7 +636,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">When a constituent moves, it leaves behind an <span class='kw1'>empty category</span> called a <span class='kw1'>trace</span> (t) in its original position. The moved element and its trace are <span class='kw2'>coindexed</span> (share the same subscript index).</div>
+      <div class="def">When a constituent moves, it leaves behind an <span class='kw1'>empty category</span> called a <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=trace">trace</a> (t) in its original position. The moved element and its trace are <span class='kw2'>coindexed</span> (share the same subscript index).</div>
       <p class="note">trace는 음성 실현 없이 original position에 남아 D-structure의 정보를 보존한다.</p>
       <p class="note">coindexing: 이동한 요소를 X_i, 남겨진 trace를 t_i로 표기한다.</p>
     </div>
@@ -648,7 +664,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       </div>
     </div>
     <div class="concept">
-      <div class="c-title">That-trace Effect</div>
+      <div class="c-title">That-trace Effect <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2026_B09" aria-label="2026학년도 관련 기출">26</a></div>
       <div class="def">If overt <em>that</em> immediately precedes the embedded subject trace left by wh-movement, the standard that-trace contrast is ungrammatical. In this GB account, the subject trace fails the proper-government requirement of the ECP.</div>
       <div class="eg">
         <span class="eg-line eg-ok">Who do you think Mary saw t_i?</span>
@@ -674,7 +690,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 <li>(e) a legal system [critics said <u>that [___ appeared</u> troubled by arrogance]] → appeared의 주어가 legal system과 연결되는 관계절 구조다. overt that 뒤에 subject gap이 있으므로 (a)와 같은 제약을 위반한다.</li></ol>
 <p><strong>정답은 (a), (e).</strong> 각각 낮은 절의 주어 위치에서 wh/relative movement가 일어났고, 그 subject trace 앞에 overt that이 남아 that-trace effect를 위반한다고 설명한다. 이 문항의 판정 근거는 문장 길이나 단순한 that의 존재가 아니다.</p>
 <p><strong>한 조건만 바꾸기:</strong> (a)에서 첫 번째 that만 지우면 두 번째 that + subject gap은 남으므로 문제가 해결되지 않는다. 반대로 두 번째 that을 지우면 해당 that-trace 위반이 해소된다. (b)에서는 feel 다음에 that을 넣으면 새로 같은 위반이 생긴다. 이는 원문을 바탕으로 한 조건 변경 연습이다.</p></div>
-<p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
 </div>
 
@@ -689,7 +705,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Subjacency Principle</div>
-      <div class="def">A moved element cannot cross more than one <span class='kw1'>bounding node</span> in a single movement step. In English, the bounding nodes are <span class='kw2'>IP</span> (= TP, S) and <span class='kw2'>NP</span>.</div>
+      <div class="def">A moved element cannot cross more than one <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=bounding%20node">bounding node</a> in a single movement step. In English, the bounding nodes are <span class='kw2'>IP</span> (= TP, S) and <span class='kw2'>NP</span>.</div>
       <p class="note">movement이 두 개 이상의 bounding node를 한 번에 넘으면 <span class='kw4'>Subjacency 위반</span>으로 비문.</p>
       <p class="note">long movement는 중간 Spec,CP를 거치는 successive cyclic movement로 처리한다.</p>
     </div>
@@ -737,7 +753,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <details class="concept"><summary>Subjacency: 이동 단계별 bounding node의 수</summary>
 <p><strong>연습:</strong> Which blueprint did Mira say that the engineer revised?</p><p>object gap → embedded Spec,CP → matrix Spec,CP의 경로를 그린다. 이 페이지의 IP/NP bounding-node 분석에서 각 단계는 하나의 IP만 빠져나간다. 긴 문장이라는 이유만으로 위반이 아니다.</p><p><strong>이용할 수 없는 중간 Spec,CP:</strong> *How did Mira wonder which blueprint the engineer revised? 여기서는 how를 revise의 manner로 해석하는 extraction을 검사한다. embedded Spec,CP가 which blueprint로 차 있어 그 자리를 경유할 수 없고, 한 단계에 embedded IP와 matrix IP를 넘어야 한다.</p><p><strong>핵심 비교:</strong> landing site인 Spec,CP와 bounding node인 IP/NP는 다른 개념이다. CP가 보인다고 그것을 IP 대신 세지 않는다.</p><p><strong>Subject 내부와 subject 자체:</strong> Who repaired the machine?은 subject NP 전체를 묻는다. *What did [pictures of t] surprise the curator?는 subject NP 내부에서만 추출한다. 후자의 경로는 NP와 IP를 모두 빠져나간다.</p><p><strong>Coordinate 범위:</strong> 한 conjunct에서만 추출한 예와 across-the-board extraction을 구분한다. “coordination이면 어떤 이동도 불가”라는 확대 해석은 피한다.</p>
-<p class="note">근거: Radford, Transformational Grammar, §10.8, pp. 569–574 (Bounding Condition, successive cyclic movement, filled intermediate Spec,CP). 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, §10.8, pp. 569–574 (Bounding Condition, successive cyclic movement, filled intermediate Spec,CP). 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
 </div>
 
