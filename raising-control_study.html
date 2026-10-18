@@ -77,11 +77,27 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
-@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
-</head>
+<style>
+.tip-line{display:block}.header-tip,details.concept>summary{word-break:keep-all;overflow-wrap:break-word;line-height:1.7}
+details.concept{padding:14px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff}
+details.concept>summary{cursor:pointer}
+details.concept>p{margin-top:10px;line-height:1.8}
+.tree-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tree-scroll:focus-visible{outline:2px solid #3b3f86;outline-offset:3px}
+.tree-scroll-hint{font-size:13px;color:#555;margin:8px 0}
+.reference-fold{padding:10px 14px;margin-top:12px;border:1px solid #c5c8e8;border-radius:8px;background:#fff}
+.reference-fold>summary{cursor:pointer;font-size:14px;line-height:1.6;color:#3b3f86}
+.reference-fold>.note{margin-top:10px}
+.dictionary-keyword{text-decoration:none}
+.dictionary-keyword:hover,.dictionary-keyword:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.exam-year{display:inline-block;color:#b71c1c;font-weight:700;font-size:14px;padding:1px 5px;text-decoration:none;letter-spacing:0}
+.exam-year:hover,.exam-year:focus-visible{text-decoration:underline}.c-title{flex-wrap:wrap}
+@media(max-width:640px){.tree-scroll .tree-svg{min-width:780px;max-width:none;width:780px}}
+</style></head>
 <body class="etwiki-learning">
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
 <nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./raising-control.html">OX 풀기</a></nav>
@@ -94,7 +110,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="header-script">Concept Notes · Raising &amp; Control · Transformational Syntax</div>
   <p class="header-sub">합격자 노트 기반 · 기출 포인트 · SSR / SOR / SC / OC 4분류</p>
   <div class="header-divider"></div>
-  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기 &nbsp;·&nbsp; 핵심: raising은 의미역 안 주고 NP 이동 / control은 의미역 주고 PRO</p>
+  <p class="header-tip"><span class="tip-line">목차를 누르면 해당 설명으로 이동해요.</span><span class="tip-line">섹션 제목을 누르면 열고 닫을 수 있어요.</span></p>
 </div>
 <div class="wrap">
 <div class="toc">
@@ -118,10 +134,10 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 </div>
 <div class="exam" style="margin-bottom:20px">
   <div class="exam-label">📝 기출분석 포인트 (Ch.4 Raising &amp; Control)</div>
-  <p>① <span class='kw4'>Raising vs Control</span>: 같은 표면 어순 <em>NP V to-VP</em>를 <span class='kw1'>expletive</span>·<span class='kw1'>idiom chunk</span>·<span class='kw1'>voice transparency</span>로 판별</p>
+  <p>① <span class='kw4'>Raising vs Control</span> <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2025_A07" aria-label="2025학년도 전공 A 7번">25</a>: 같은 표면 어순 <em>NP V to-VP</em>를 <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=expletive">expletive</a>·<span class='kw1'>idiom chunk</span>·<span class='kw1'>voice transparency</span>로 판별</p>
   <p>② <span class='kw4'>4분류</span>: <span class='kw1'>SSR</span>(seem) / <span class='kw1'>SOR·ECM</span>(believe) / <span class='kw1'>SC</span>(try) / <span class='kw1'>OC</span>(persuade)</p>
-  <p>③ <span class='kw3'>PRO</span>: controlled vs arbitrary PRO, obligatory vs optional control</p>
-  <p>④ <span class='kw3'>Theta Criterion</span> &amp; <span class='kw3'>Case</span>: SSR 술어는 matrix subject에 theta-role을 주지 않음 / ECM 술어는 하위절 subject NP에 별도 theta-role 없이 목적격 부여</p>
+  <p>③ <a class="kw3 dictionary-keyword" href="https://etwiki.net/concept.html?term=PRO">PRO</a>: controlled vs arbitrary PRO, obligatory vs optional control</p>
+  <p>④ <span class='kw3'>Theta Criterion</span> &amp; <a class="kw3 dictionary-keyword" href="https://etwiki.net/concept.html?term=Case">Case</a>: SSR 술어는 matrix subject에 theta-role을 주지 않음 / ECM 술어는 하위절 subject NP에 별도 theta-role 없이 목적격 부여</p>
   <p>⑤ 함정: <span class='kw4'>*probable</span> raising 불가, <span class='kw4'>persuade</span>는 expletive·voice transparency 불허</p>
 </div>
 
@@ -137,7 +153,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     <div class="concept">
       <div class="c-title">Core Definition</div>
       <div class="def"><span class='kw1'>Theta Criterion</span> (Chomsky 1981): <em>Each argument bears one and only one theta-role, and each theta-role is assigned to one and only one argument.</em></div>
-      <p class="note">argument(논항)는 정확히 하나의 <span class='kw1'>theta-role</span>(의미역: Agent, Theme, Goal, Experiencer 등)을 받고, 각 theta-role도 정확히 하나의 argument에만 할당된다.</p>
+      <p class="note">argument(논항)는 정확히 하나의 <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=theta-role">theta-role</a>(의미역: Agent, Theme, Goal, Experiencer 등)을 받고, 각 theta-role도 정확히 하나의 argument에만 할당된다.</p>
       <p class="note"><span class='kw1'>theta-role</span>은 <span class='kw2'>D-structure</span>(심층구조)에서 할당되며, movement 후에도 보존된다.</p>
       <p class="note">한 자리가 theta-role을 받는 자리이면 <span class='kw2'>theta-position</span>, 받지 않는 자리이면 <span class='kw2'>non-theta position</span>이다.</p>
     </div>
@@ -147,7 +163,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 <p>IP는 주어와 I(시제·일치 정보), VP를 묶은 절이며, Spec,IP는 이 분석의 주어 자리다. Spec은 head와 구별되는 자리 이름이다. NP가 matrix(상위절) Spec,IP로 올라간다는 말은 embedded(하위절) 주어였던 NP가 상위절 주어가 된다는 뜻이다. Case는 명사구가 허용되는 구조적 조건이고 theta-role은 의미 관계이므로 별도로 검사한다.</p>
 <p><strong>조건 변경:</strong> guard를 dummy it으로 바꾸고 하위절을 to rain으로 바꾸면 <em>It seems to rain.</em>은 가능하지만 시도 의미의 <em>*It tries to rain.</em>은 이 진단에서 허용되지 않는다. 단순히 ‘주어가 비었다’보다 상위 술어가 어떤 참여자를 요구하는지가 중요하다.</p>
 <p>개념 사전: <a href="https://etwiki.net/concept.html?term=control%20vs%20raising">control vs raising</a> · <a href="https://etwiki.net/concept.html?term=theta-criterion">Theta Criterion</a>. 실제 발문의 dummy·voice 요구를 적용하는 과정은 <a href="./movement_study.html?returnTo=raising-control_study.html%23theta-criterion#np-movement-raising">Movement의 2025 A-7 풀이</a>에서, 필수 argument와 추가 pronoun의 차이는 <a href="./movement_study.html?returnTo=raising-control_study.html%23theta-criterion#wh-movement">2025 B-5 풀이</a>에서 확인한다.</p>
-<p class="note">개념 근거: Radford 교수의 『Transformational Grammar』 §7.14, §8.5, §9.11, §10.6. 위 guard 예문은 기출 인용이 아닌 학습용 새 예문이다.</p>
+<details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">개념 근거: Radford 교수의 『Transformational Grammar』 §7.14, §8.5, §9.11, §10.6. 위 guard 예문은 기출 인용이 아닌 학습용 새 예문이다.</p></details>
 </details>
     <div class="concept">
       <div class="c-title">왜 Raising / Control 구분의 토대인가</div>
@@ -189,7 +205,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note">matrix subject 자리는 <span class='kw2'>non-theta position</span>이므로, NP는 이동 후에도 embedded predicate의 theta-role을 그대로 보유한다.</p>
       <p class="note"><span class='kw2'>dummy-it</span> paraphrase와 동의: <em>It seems that John is working</em> ≈ <em>John seems to be working.</em></p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Raising Control 구조 그림 1" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowRc1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#c62828"/></marker>
       </defs>
@@ -230,9 +246,9 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <text x="650" y="336" text-anchor="middle" font-size="11" font-style="italic" fill="#1a1a1a">win</text>
       <!-- movement arrow: t_i → Spec,IP -->
       <path d="M 535,278 Q 360,235 165,168" stroke="#c62828" stroke-width="1.8" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowRc1)"/>
-    </svg>
+    </svg></div>
     <div class="concept">
-      <div class="c-title">진단 (Raising 증거)</div>
+      <div class="c-title">진단 (Raising 증거) <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2025_A07" aria-label="2025학년도 전공 A 7번">25</a></div>
       <div class="grid col2">
         <div class="grid-item">
           <div class="gi-title">① Expletive there / it</div>
@@ -281,7 +297,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note">핵심: matrix verb는 그 NP에 <span class='kw4'>theta-role을 주지 않는다</span>. theta-role은 하위절 전체에 부여되므로, NP는 <span class='kw2'>하위절의 주어</span>로 행동한다.</p>
       <p class="note">표면상 <em>believe + NP + to-VP</em>는 object control(persuade)과 같지만, 아래 진단으로 명확히 갈린다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Raising Control 구조 그림 2" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowRc2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#1f7a8c"/></marker>
       </defs>
@@ -313,7 +329,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <!-- Case arrow: V → embedded subject -->
       <path d="M 452,210 Q 495,245 528,268" stroke="#1f7a8c" stroke-width="1.6" fill="none" stroke-dasharray="4,3" marker-end="url(#arrowRc2)"/>
       <text x="455" y="250" text-anchor="middle" font-size="10" fill="#1f7a8c">Exceptional Case</text>
-    </svg>
+    </svg></div>
     <div class="concept">
       <div class="c-title">진단: NP가 하위절 주어임을 보임</div>
       <div class="grid col2">
@@ -371,7 +387,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note">matrix subject 자리는 <span class='kw2'>theta-position</span>이므로 expletive가 올 수 없다. 하위절 술어와 이루던 idiomatic reading은 유지되지 않지만, 같은 NP의 literal reading은 별도로 판단한다.</p>
       <p class="note">하위절 주어는 <span class='kw1'>PRO</span>이며 matrix subject와 <span class='kw2'>coindex</span>(control)된다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Raising Control 구조 그림 3" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowRc3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#8d4d14"/></marker>
       </defs>
@@ -399,10 +415,10 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <!-- control line: John → PRO -->
       <path d="M 195,112 Q 360,140 535,272" stroke="#8d4d14" stroke-width="1.5" fill="none" stroke-dasharray="3,3" marker-end="url(#arrowRc3)"/>
       <text x="335" y="135" text-anchor="middle" font-size="10" fill="#8d4d14">control</text>
-    </svg>
+    </svg></div>
     <p class="note">간략 수형도: CP 층은 생략했다. PRO는 하위 IP의 주어이고, I′에는 to와 VP가 포함된다. 생략하지 않은 구조는 [CP C [IP PRO [I′ to VP]]]이다.</p>
     <div class="concept">
-      <div class="c-title">진단 (Control 증거 — raising과 반대)</div>
+      <div class="c-title">진단 (Control 증거 — raising과 반대) <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2025_A07" aria-label="2025학년도 전공 A 7번">25</a></div>
       <div class="grid col2">
         <div class="grid-item">
           <div class="gi-title">① Expletive 불허</div>
@@ -422,7 +438,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <details class="concept">
       <summary class="c-title">기출 변형 예문 · 목적어가 있는 subject control 구문</summary>
-      <p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p>
+      <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p></details>
       <div class="eg">
         <span class="eg-line">(a) The director motivated the assistant to work more carefully.</span>
         <span class="eg-line">(b) The director reported the assistant to be unreliable.</span>
@@ -456,7 +472,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note">matrix object 자리는 <span class='kw2'>theta-position</span>이다. NP는 상위 동사의 theta-role을 받으므로 expletive가 올 수 없다. 하위절 술어와 이루던 idiomatic reading의 유지 여부는 같은 NP의 literal reading과 구별한다.</p>
       <p class="note">이것이 <span class='kw4'>persuade(OC)</span> vs <span class='kw4'>believe(SOR)</span>를 가르는 핵심 — 둘 다 표면 <em>V + NP + to-VP</em>이지만 NP의 자격이 다르다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Raising Control 구조 그림 4" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowRc4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#8d4d14"/></marker>
       </defs>
@@ -487,7 +503,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <!-- control line: Mary → PRO -->
       <path d="M 490,228 Q 530,248 545,272" stroke="#8d4d14" stroke-width="1.5" fill="none" stroke-dasharray="3,3" marker-end="url(#arrowRc4)"/>
       <text x="552" y="250" text-anchor="middle" font-size="10" fill="#8d4d14">control</text>
-    </svg>
+    </svg></div>
     <p class="note">간략 수형도: CP 층은 생략했다. PRO는 하위 IP의 주어이고, I′에는 to와 VP가 포함된다. 생략하지 않은 구조는 [CP C [IP PRO [I′ to VP]]]이다.</p>
     <div class="concept">
       <div class="c-title">persuade(OC) vs believe(SOR) — 핵심 대조</div>
@@ -503,7 +519,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <details class="concept">
       <summary class="c-title">기출 변형 예문 · V NP to-V에서 NP의 문법적 역할</summary>
-      <p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p>
+      <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p></details>
       <div class="eg">
         <span class="eg-line">(a) Lena persuaded Max to obey his supervisor.</span>
         <span class="eg-line">(b) Lena believed Max to be obedient to his supervisor.</span>
@@ -572,7 +588,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <details class="concept">
       <summary class="c-title">기출 변형 예문 · PRO의 지시 대상</summary>
-      <p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p>
+      <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p></details>
       <div class="eg">
         <span class="eg-line">(a) Mina<sub>i</sub> believes that it is important [PRO<sub>i/j</sub> to stay calm].</span>
         <span class="eg-line">(b) [PRO to prepare himself for the interview], Alex should consider coaching.</span>
@@ -642,7 +658,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       </div>
     </div>
     <div class="concept">
-      <div class="c-title">답안 작성 패턴 (합격자 노트)</div>
+      <div class="c-title">답안 작성 패턴</div>
       <p class="note"><strong>SSR</strong>: "The matrix predicate assigns no theta-role to its subject; the embedded subject NP undergoes NP-movement to matrix Spec,IP and retains its embedded theta-role."</p>
       <p class="note"><strong>SOR·ECM</strong>: "The matrix verb assigns objective Case to the embedded subject across the clause boundary; the NP behaves as the subject of the infinitival clause (expletive/idiom/voice transparency)."</p>
       <p class="note"><strong>Control</strong>: "The matrix verb assigns a theta-role to its subject(SC)/object(OC); the embedded infinitival clause has a PRO subject controlled by the matrix subject/object; no movement."</p>
