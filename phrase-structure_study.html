@@ -70,11 +70,25 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
-@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
-</head>
+<style>
+details.concept>summary{word-break:keep-all;overflow-wrap:break-word;line-height:1.65}
+.tree-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tree-scroll:focus-visible{outline:2px solid #3b3f86;outline-offset:3px}
+.tree-scroll-hint{font-size:13px;color:#555;margin:8px 0}
+.reference-fold{padding:10px 14px;margin-top:12px;border:1px solid #c5c8e8;border-radius:8px;background:#fff}
+.reference-fold>summary{cursor:pointer;font-size:14px;line-height:1.6;color:#3b3f86}
+.reference-fold>.note{margin-top:10px}
+.dictionary-keyword{text-decoration:none}
+.dictionary-keyword:hover,.dictionary-keyword:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.exam-year{display:inline-block;color:#b71c1c;font-weight:700;font-size:14px;padding:1px 5px;text-decoration:none;letter-spacing:0}
+.exam-year:hover,.exam-year:focus-visible{text-decoration:underline}
+.c-title{flex-wrap:wrap}
+@media(max-width:640px){.tree-scroll .tree-svg{min-width:720px;max-width:none;width:720px}}
+</style></head>
 <body class="etwiki-learning">
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
 <nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./phrase-structure.html">OX 풀기</a></nav>
@@ -113,7 +127,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 <div class="exam" style="margin-bottom:20px">
   <div class="exam-label">📝 기출분석 포인트 (Ch.2 Phrase Structure)</div>
   <p>① <span class='kw4'>phrase structure rules</span>와 <span class='kw4'>tree diagram</span>의 대응 관계</p>
-  <p>② <span class='kw4'>X-bar theory</span>에서 head · complement · adjunct · specifier 위계</p>
+  <p>② <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=X-bar%20theory">X-bar theory</a>에서 head · complement · adjunct · specifier 위계; complement·adjunct 판별 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2022_A07" aria-label="2022학년도 전공 A 7번">22</a></p>
   <p>③ <span class='kw3'>DP hypothesis</span>와 determiner의 head status</p>
   <p>④ <span class='kw3'>CP / IP / TP</span> 같은 functional projection의 필요성</p>
   <p>⑤ <span class='kw3'>VP-internal subject hypothesis</span>로 subject origin 설명</p>
@@ -148,7 +162,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <p><strong>구조 연습</strong> — rule의 오른쪽 항목을 mother 바로 아래에 배치하고, immediate dominance를 확인한다.</p>
       <p><strong>개념 연결</strong> — 단순 PS rule과 X-bar schema가 표시하는 projection 수준을 구별한다.</p>
     </div>
-    <details class="concept"><summary><strong>설명 더 보기 · Phrase structure rule과 문장의 계층 구조</strong></summary><h3 class="c-title">같은 문장의 rule과 괄호 구조 비교</h3><div class="eg"><span class="eg-line">The mechanic repaired the engine.</span><span class="eg-line">[S [NP the mechanic] [VP [V repaired] [NP the engine]]]</span></div><p class="note">이 축약 tree에서 S → NP VP는 두 NP 모두를 S의 daughter로 두라는 뜻이 아니다. subject NP와 VP만 S의 immediate daughters다. object NP는 VP 아래에 들어가며, VP → V NP가 그 내부 관계를 지정한다. the mechanic과 the engine의 내부 구조는 여기서 생략했다.</p><p class="note">VP → V NP는 모든 verb가 object를 가져야 한다는 뜻도 아니다. repaired처럼 이 예에서 object를 취한 V의 구조를 기술한다. The mechanic slept에서는 slept의 complement 선택이 다르므로 이 규칙을 억지로 적용해 빈 object를 넣지 않는다.</p><h3 class="c-title">embedding과 recursion을 구분하기</h3><div class="eg"><span class="eg-line">the portrait [PP of [NP the curator]]</span><span class="eg-line">the portrait [PP of [NP the curator [PP of [NP the museum]]]]</span></div><p class="note">NP 안 PP, PP 안 NP가 다시 나타나는 cycle은 반복 가능한 embedding을 보여 준다. 단순히 ‘PP가 NP 안에 있다’는 한 단계의 포함 관계만으로 recursion을 설명하면 부족하다. 같은 category를 다시 포함할 수 있는 rule의 연결을 찾아야 한다.</p><p class="note">확인: 위 첫 문장의 V와 subject NP는 sister인가? 아니다. V의 mother는 VP, subject NP의 mother는 S다. 단어 사이 거리로 sisterhood를 판정하지 않는다.</p><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §§3.2, 3.5. 예문은 학습용 재구성이다.</p></details>
+    <details class="concept"><summary><strong>설명 더 보기 · Phrase structure rule과 문장의 계층 구조</strong></summary><h3 class="c-title">같은 문장의 rule과 괄호 구조 비교</h3><div class="eg"><span class="eg-line">The mechanic repaired the engine.</span><span class="eg-line">[S [NP the mechanic] [VP [V repaired] [NP the engine]]]</span></div><p class="note">이 축약 tree에서 S → NP VP는 두 NP 모두를 S의 daughter로 두라는 뜻이 아니다. subject NP와 VP만 S의 immediate daughters다. object NP는 VP 아래에 들어가며, VP → V NP가 그 내부 관계를 지정한다. the mechanic과 the engine의 내부 구조는 여기서 생략했다.</p><p class="note">VP → V NP는 모든 verb가 object를 가져야 한다는 뜻도 아니다. repaired처럼 이 예에서 object를 취한 V의 구조를 기술한다. The mechanic slept에서는 slept의 complement 선택이 다르므로 이 규칙을 억지로 적용해 빈 object를 넣지 않는다.</p><h3 class="c-title">embedding과 recursion을 구분하기</h3><div class="eg"><span class="eg-line">the portrait [PP of [NP the curator]]</span><span class="eg-line">the portrait [PP of [NP the curator [PP of [NP the museum]]]]</span></div><p class="note">NP 안 PP, PP 안 NP가 다시 나타나는 cycle은 반복 가능한 embedding을 보여 준다. 단순히 ‘PP가 NP 안에 있다’는 한 단계의 포함 관계만으로 recursion을 설명하면 부족하다. 같은 category를 다시 포함할 수 있는 rule의 연결을 찾아야 한다.</p><p class="note">확인: 위 첫 문장의 V와 subject NP는 sister인가? 아니다. V의 mother는 VP, subject NP의 mother는 S다. 단어 사이 거리로 sisterhood를 판정하지 않는다.</p><details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §§3.2, 3.5. 예문은 학습용 재구성이다.</p></details></details>
   </div>
 </div>
 
@@ -166,7 +180,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <p class="note">mother가 daughter를 지배하고, 같은 mother를 공유하면 sister relation이다.</p>
       <p class="note">terminal node는 daughter가 없는 노드이며, 여기서는 단어를 표시한다. nonterminal node에는 N·V 같은 word-level category와 NP·VP 같은 phrase category가 모두 포함된다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="구조 그림 1" tabindex="0"><svg class="tree-svg" viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg">
       <text x="310" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">S → NP VP</text>
       <text x="310" y="58" text-anchor="middle" font-size="18" font-weight="700" fill="#3b3f86">S</text>
       <line x1="310" y1="64" x2="190" y2="102" stroke="#999" stroke-width="1.6"/>
@@ -183,7 +197,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="500" y="188" text-anchor="middle" font-size="15" font-weight="700" fill="#3b3f86">NP</text>
       <line x1="500" y1="194" x2="500" y2="224" stroke="#999" stroke-width="1.6"/>
       <text x="500" y="244" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">the article</text>
-    </svg>
+    </svg></div>
     <div class="concept">
       <div class="c-title">해석 포인트</div>
       <p class="note">NP와 VP는 S의 daughter이면서 서로 sister다.</p>
@@ -193,7 +207,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <div class="exam-label">📋 개념 연결</div>
       <p><strong>구조 연습</strong> — rule의 오른쪽 항목을 mother 바로 아래에 배치하고, immediate dominance를 확인한다.</p>
     </div>
-    <details class="concept"><summary><strong>설명 더 보기 · dominance · precedence · sisterhood를 따로 계산하기</strong></summary><h3 class="c-title">위 tree의 네 관계</h3><p class="note">① S는 object NP를 dominate하지만 immediately dominate하지 않는다. 사이에 VP가 있기 때문이다. ② VP는 V와 object NP를 immediately dominate한다. ③ V와 object NP는 mother VP를 공유하므로 sister다. ④ subject NP는 VP를 precede하지만 dominate하지 않는다.</p><p class="note">dominate 관계의 두 노드는 precedence 관계로 다시 묶지 않는다. 도식에서 이름표가 왼쪽에 표시되었다는 사실만으로는 판단할 수 없다. 먼저 가지 연결을 읽고, 서로 포함하지 않는 노드 사이에서 left-to-right order를 확인한다.</p><h3 class="c-title">축약 표시는 내부 구조 부재가 아니다</h3><p class="note">위 SVG에서 NP 아래의 The student와 the article은 내부가 생략된 phrase다. 두 단어 전체가 하나의 lexical terminal이라는 뜻이 아니다. 내부를 펼치면 determiner와 noun 및 필요한 projection이 추가된다. V도 단어 read와는 다른 category node다.</p><div class="eg"><span class="eg-line">분석 오류: S가 read를 dominate하므로 read는 S의 daughter다.</span><span class="eg-line">교정: S → VP → V → read라는 경로를 따라 dominate한다. read의 immediate mother는 V다.</span></div><p class="note">답안에서는 ‘아래에 있다’ 대신 immediately dominates / dominates / is sister to를 구별해서 쓴다. 근거: Radford, <cite>Transformational Grammar</cite>, §3.2, pp.109–113.</p></details>
+    <details class="concept"><summary><strong>설명 더 보기 · dominance · precedence · sisterhood를 따로 계산하기</strong></summary><h3 class="c-title">위 tree의 네 관계</h3><p class="note">① S는 object NP를 dominate하지만 immediately dominate하지 않는다. 사이에 VP가 있기 때문이다. ② VP는 V와 object NP를 immediately dominate한다. ③ V와 object NP는 mother VP를 공유하므로 sister다. ④ subject NP는 VP를 precede하지만 dominate하지 않는다.</p><p class="note">dominate 관계의 두 노드는 precedence 관계로 다시 묶지 않는다. 도식에서 이름표가 왼쪽에 표시되었다는 사실만으로는 판단할 수 없다. 먼저 가지 연결을 읽고, 서로 포함하지 않는 노드 사이에서 left-to-right order를 확인한다.</p><h3 class="c-title">축약 표시는 내부 구조 부재가 아니다</h3><p class="note">위 SVG에서 NP 아래의 The student와 the article은 내부가 생략된 phrase다. 두 단어 전체가 하나의 lexical terminal이라는 뜻이 아니다. 내부를 펼치면 determiner와 noun 및 필요한 projection이 추가된다. V도 단어 read와는 다른 category node다.</p><div class="eg"><span class="eg-line">분석 오류: S가 read를 dominate하므로 read는 S의 daughter다.</span><span class="eg-line">교정: S → VP → V → read라는 경로를 따라 dominate한다. read의 immediate mother는 V다.</span></div><p class="note">답안에서는 ‘아래에 있다’ 대신 immediately dominates / dominates / is sister to를 구별해서 쓴다.</p><details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">Radford, <cite>Transformational Grammar</cite>, §3.2, pp.109–113.</p></details></details>
   </div>
 </div>
 
@@ -210,7 +224,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <div class="def">In <span class='kw1'>X-bar theory</span>, the head X projects to <span class='kw2'>X′</span>, and <span class='kw2'>X′</span> projects to <span class='kw2'>XP</span>.</div>
       <p class="note">여기 제시한 기본 schema에서 complement는 X의 sister, adjunct는 X′의 sister이자 X′의 daughter, specifier는 X′의 sister이자 XP의 daughter다. 선형 위치보다 sister와 mother를 함께 확인한다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 620 330" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="구조 그림 2" tabindex="0"><svg class="tree-svg" viewBox="0 0 620 330" xmlns="http://www.w3.org/2000/svg">
       <text x="310" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#3b3f86">XP with Specifier, Head, Complement, Adjunct</text>
       <text x="310" y="58" text-anchor="middle" font-size="18" font-weight="700" fill="#3b3f86">XP</text>
       <line x1="310" y1="64" x2="170" y2="104" stroke="#999" stroke-width="1.6"/>
@@ -233,7 +247,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <text x="390" y="260" text-anchor="middle" font-size="15" font-weight="700" fill="#1f7a8c">Complement</text>
       <line x1="390" y1="266" x2="390" y2="300" stroke="#999" stroke-width="1.6"/>
       <text x="390" y="322" text-anchor="middle" font-size="12" font-style="italic" fill="#1a1a1a">selected phrase</text>
-    </svg>
+    </svg></div>
     <div class="grid col2">
       <div class="grid-item"><div class="gi-title">Head</div><div class="gi-body"><span>projection의 범주 결정</span></div></div>
       <div class="grid-item"><div class="gi-title">Complement</div><div class="gi-body"><span>head의 직접 sister</span></div></div>
@@ -244,7 +258,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <div class="exam-label">📋 개념 연결</div>
       <p><strong>개념 연결</strong> — 단순 PS rule과 X-bar schema가 표시하는 projection 수준을 구별한다.</p>
     </div>
-    <details class="concept"><summary><strong>설명 더 보기 · X′의 sister인 specifier와 adjunct 구분</strong></summary><h3 class="c-title">mother까지 확인하는 세 단계</h3><div class="eg"><span class="eg-line">Complement: [X′ X Complement]</span><span class="eg-line">Adjunct: [X′ X′ Adjunct]</span><span class="eg-line">Specifier: [XP Specifier X′]</span></div><p class="note">complement와 adjunct는 모두 X′의 daughter일 수 있다. 따라서 mother만 보고 분류하지 않는다. 반대로 adjunct와 specifier는 둘 다 X′의 sister이므로 sister만 보고 분류하지 않는다. sister와 mother를 동시에 확인하면 세 관계를 구별할 수 있다.</p><h3 class="c-title">head와 complement의 category는 달라도 된다</h3><div class="eg"><span class="eg-line">[AP proud [PP of the orchestra]]</span><span class="eg-line">[PP beside [NP the fountain]]</span></div><p class="note">첫 phrase의 head는 proud(A), complement는 PP다. 둘째 phrase의 head는 beside(P), complement는 NP다. phrase category는 포함된 모든 단어의 품사를 합쳐 정하지 않고 head의 projection으로 정한다. 위 괄호는 내부 bar-level을 생략한 표시다.</p><p class="note">X′는 intermediate projection, XP는 maximal projection이다. XP의 P를 ‘bar가 없는 head’라는 뜻으로 읽지 않는다. 이 장의 N′/NP 표기는 TG의 N-bar/N-double-bar 구별에 대응한다.</p><p class="note">head–complement–adjunct는 먼저 구조적 결합 순서다. 이를 모든 언어·모든 modifier의 고정 어순으로 외우면 안 된다. English의 앞쪽 adjective adjunct와 뒤쪽 PP adjunct도 같은 선형 자리에 있지 않다.</p><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §§4.4, 5.1–5.6. 학습용 예문 재구성.</p></details>
+    <details class="concept"><summary><strong>설명 더 보기 · X′의 sister인 specifier와 adjunct 구분</strong></summary><h3 class="c-title">mother까지 확인하는 세 단계</h3><div class="eg"><span class="eg-line">Complement: [X′ X Complement]</span><span class="eg-line">Adjunct: [X′ X′ Adjunct]</span><span class="eg-line">Specifier: [XP Specifier X′]</span></div><p class="note">complement와 adjunct는 모두 X′의 daughter일 수 있다. 따라서 mother만 보고 분류하지 않는다. 반대로 adjunct와 specifier는 둘 다 X′의 sister이므로 sister만 보고 분류하지 않는다. sister와 mother를 동시에 확인하면 세 관계를 구별할 수 있다.</p><h3 class="c-title">head와 complement의 category는 달라도 된다</h3><div class="eg"><span class="eg-line">[AP proud [PP of the orchestra]]</span><span class="eg-line">[PP beside [NP the fountain]]</span></div><p class="note">첫 phrase의 head는 proud(A), complement는 PP다. 둘째 phrase의 head는 beside(P), complement는 NP다. phrase category는 포함된 모든 단어의 품사를 합쳐 정하지 않고 head의 projection으로 정한다. 위 괄호는 내부 bar-level을 생략한 표시다.</p><p class="note">X′는 intermediate projection, XP는 maximal projection이다. XP의 P를 ‘bar가 없는 head’라는 뜻으로 읽지 않는다. 이 장의 N′/NP 표기는 TG의 N-bar/N-double-bar 구별에 대응한다.</p><p class="note">head–complement–adjunct는 먼저 구조적 결합 순서다. 이를 모든 언어·모든 modifier의 고정 어순으로 외우면 안 된다. English의 앞쪽 adjective adjunct와 뒤쪽 PP adjunct도 같은 선형 자리에 있지 않다.</p><details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §§4.4, 5.1–5.6. 학습용 예문 재구성.</p></details></details>
   </div>
 </div>
 
@@ -257,8 +271,8 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
   </div>
   <div class="sec-body">
     <div class="concept">
-      <div class="c-title">핵심 구분</div>
-      <div class="def">A <span class='kw1'>complement</span> is selected by the head, whereas an <span class='kw1'>adjunct</span> is an optional modifier attached outside the head-complement core.</div>
+      <div class="c-title">핵심 구분 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2022_A07" aria-label="2022학년도 전공 A 7번">22</a></div>
+      <div class="def">A <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=complement">complement</a> is selected by the head, whereas an <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=adjunct">adjunct</a> is an optional modifier attached outside the head-complement core.</div>
     </div>
     <div class="grid col2">
       <div class="grid-item">
@@ -281,7 +295,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     </div>
     <div class="exam">
       <div class="exam-label">📋 확인된 기출</div>
-      <p><strong>2022학년도 전공 A 7번</strong> — (i)은 <span class='kw1'>coordination</span>으로 Korean의 complement 기능과 language 해석을, (ii)는 <span class='kw1'>one-replacement</span>로 adjunct 기능과 nationality 해석을 판정한다.</p>
+      <p><strong>2022학년도 전공 A 7번</strong> — (i)은 <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=coordination">coordination</a>으로 Korean의 complement 기능과 language 해석을, (ii)는 <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=one-replacement">one-replacement</a>로 adjunct 기능과 nationality 해석을 판정한다.</p>
     </div>
     <p class="note">Complement도 생략될 수 있으므로 생략 가능성만으로 adjunct라고 판단하지 않는다. 아래 one-replacement 설명은 <span class="kw1">NP의 X-bar 분석</span>에 한정한다.</p>
     <details class="concept" id="complement-adjunct-depth">
@@ -342,7 +356,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Specifier Position</div>
-      <div class="def">A <span class='kw1'>specifier</span> occupies the outer edge of a projection and combines with <span class='kw2'>X′</span> to form <span class='kw2'>XP</span>.</div>
+      <div class="def">A <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=specifier">specifier</a> occupies the outer edge of a projection and combines with <span class='kw2'>X′</span> to form <span class='kw2'>XP</span>.</div>
       <p class="note">complement와 달리 head의 직접 자매가 아니다.</p>
       <p class="note">classical NP analysis의 determiner, TP/IP의 subject, CP의 wh-phrase처럼 projection별로 다른 specifier 예시가 있다.</p>
     </div>
@@ -355,7 +369,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <div class="exam-label">📋 개념 연결</div>
       <p><strong>Movement 연결</strong> — wh-phrase의 Spec CP와 auxiliary의 head C를 구별한다.</p>
     </div>
-    <details class="concept"><summary><strong>설명 더 보기 · 구조적 위치와 범주 이름 구분</strong></summary><h3 class="c-title">specifier는 품사 이름이 아니다</h3><p class="note">NP·PP·CP는 category label이고 specifier·complement·adjunct는 구조적 관계다. NP가 언제나 specifier이거나 PP가 언제나 adjunct인 것이 아니다. subject NP가 Spec IP에 놓인 tree에서는 그 NP가 I′의 sister이자 IP의 daughter라는 관계가 중요하다.</p><div class="eg"><span class="eg-line">[CP which portrait [C′ will [IP the curator …]]]</span></div><p class="note">이 의문문 구조의 which portrait는 phrase로서 Spec CP에, will은 head로서 C에 놓인다. 둘이 모두 문장 앞에 있다는 이유로 같은 위치라고 할 수 없다. which portrait 전체가 CP의 head라는 설명도 틀리다. CP의 head는 C다.</p><h3 class="c-title">이 장의 표기 범위</h3><p class="note">앞의 기본 NP 분석은 determiner가 N′와 결합하는 TG Ch.4의 출발점을 따른다. TG §5.6은 determiner 자체가 DP로 확장되어 NP 안의 specifier가 되는 분석을 논의한다. 다음 절의 DP hypothesis는 nominal phrase 전체의 head를 D로 두는 별도 비교다. ‘DP가 있다’는 사실만으로 둘을 동일시하지 않는다.</p><p class="note">확인: adjunct와 specifier는 X′의 sister라는 공통점이 있다. 두 위치를 구별하는 추가 조건은? adjunct의 mother는 X′, specifier의 mother는 XP다.</p><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §§4.4, 5.6 및 Ch.10의 CP 분석. 예문은 재구성.</p></details>
+    <details class="concept"><summary><strong>설명 더 보기 · 구조적 위치와 범주 이름 구분</strong></summary><h3 class="c-title">specifier는 품사 이름이 아니다</h3><p class="note">NP·PP·CP는 category label이고 specifier·complement·adjunct는 구조적 관계다. NP가 언제나 specifier이거나 PP가 언제나 adjunct인 것이 아니다. subject NP가 Spec IP에 놓인 tree에서는 그 NP가 I′의 sister이자 IP의 daughter라는 관계가 중요하다.</p><div class="eg"><span class="eg-line">[CP which portrait [C′ will [IP the curator …]]]</span></div><p class="note">이 의문문 구조의 which portrait는 phrase로서 Spec CP에, will은 head로서 C에 놓인다. 둘이 모두 문장 앞에 있다는 이유로 같은 위치라고 할 수 없다. which portrait 전체가 CP의 head라는 설명도 틀리다. CP의 head는 C다.</p><h3 class="c-title">이 장의 표기 범위</h3><p class="note">앞의 기본 NP 분석은 determiner가 N′와 결합하는 TG Ch.4의 출발점을 따른다. TG §5.6은 determiner 자체가 DP로 확장되어 NP 안의 specifier가 되는 분석을 논의한다. 다음 절의 DP hypothesis는 nominal phrase 전체의 head를 D로 두는 별도 비교다. ‘DP가 있다’는 사실만으로 둘을 동일시하지 않는다.</p><p class="note">확인: adjunct와 specifier는 X′의 sister라는 공통점이 있다. 두 위치를 구별하는 추가 조건은? adjunct의 mother는 X′, specifier의 mother는 XP다.</p><details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §§4.4, 5.6 및 Ch.10의 CP 분석. 예문은 재구성.</p></details></details>
   </div>
 </div>
 
@@ -377,7 +391,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <p class="note">nominal phrase의 distribution이 determiner 체계와 강하게 연결된다는 점을 설명하기 쉽다.</p>
       <p class="note">functional category를 명시적으로 도입하는 modern phrase structure와 잘 맞는다.</p>
     </div>
-    <details class="concept"><summary><strong>설명 더 보기 · The violin의 NP 분석과 DP 분석 비교</strong></summary><div class="eg"><span class="eg-line">NP 분석: [NP the [N′ [N violin]]]</span><span class="eg-line">DP hypothesis: [DP [D′ [D the] [NP violin]]]</span></div><p class="note">첫 분석은 N이 nominal phrase의 head이고 the가 NP 내부에서 N′와 결합한다. 둘째 분석은 the가 더 큰 DP의 head D이며 NP를 complement로 취한다. violin은 여전히 내부 NP의 head다. D가 head가 되었다고 N이 head의 지위를 잃는 것은 아니다.</p><p class="note">둘째 괄호에서 the는 Spec DP가 아니다. D′ 아래에서 NP와 sister인 head다. 따라서 ‘determiner니까 언제나 specifier’와 ‘D와 NP가 함께 있으니 둘 다 head’라는 설명을 피한다. 어느 projection의 head를 묻는지 먼저 확인한다.</p><h3 class="c-title">근거와 비교 범위</h3><p class="note">Abney의 DP 분석은 nominal phrase를 functional head D가 이끄는 구조로 다루며, clause의 inflectional structure와의 평행성을 논의한다. 이는 TG §5.6에서 NP 안 determiner의 phrasal expansion을 DP로 부르는 것과 구별된다. 이 절은 기존 DP hypothesis 항목을 비교 학습용으로 유지한 것이며 앞의 NP 분석을 소급하여 바꾸지 않는다.</p><p class="note">overt article이 안 보이는 bare plural을 만났을 때에는 먼저 문제의 분석 가정을 따른다. ‘발음된 the가 없으므로 phrase가 아니다’라고 결론 내리지 않는다. 실제 시험의 category label을 임의로 NP에서 DP로 교체하지 않는다.</p><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §5.6, pp.263–264; Abney (1987), <a href="https://mitwpl.mit.edu/catalog/abne01" target="_blank" rel="noopener"><cite>The English Noun Phrase in Its Sentential Aspect</cite>, abstract</a>. 비교 예시는 학습용.</p></details>
+    <details class="concept"><summary><strong>설명 더 보기 · The violin의 NP 분석과 DP 분석 비교</strong></summary><div class="eg"><span class="eg-line">NP 분석: [NP the [N′ [N violin]]]</span><span class="eg-line">DP hypothesis: [DP [D′ [D the] [NP violin]]]</span></div><p class="note">첫 분석은 N이 nominal phrase의 head이고 the가 NP 내부에서 N′와 결합한다. 둘째 분석은 the가 더 큰 DP의 head D이며 NP를 complement로 취한다. violin은 여전히 내부 NP의 head다. D가 head가 되었다고 N이 head의 지위를 잃는 것은 아니다.</p><p class="note">둘째 괄호에서 the는 Spec DP가 아니다. D′ 아래에서 NP와 sister인 head다. 따라서 ‘determiner니까 언제나 specifier’와 ‘D와 NP가 함께 있으니 둘 다 head’라는 설명을 피한다. 어느 projection의 head를 묻는지 먼저 확인한다.</p><h3 class="c-title">근거와 비교 범위</h3><p class="note">Abney의 DP 분석은 nominal phrase를 functional head D가 이끄는 구조로 다루며, clause의 inflectional structure와의 평행성을 논의한다. 이는 TG §5.6에서 NP 안 determiner의 phrasal expansion을 DP로 부르는 것과 구별된다. 이 절은 기존 DP hypothesis 항목을 비교 학습용으로 유지한 것이며 앞의 NP 분석을 소급하여 바꾸지 않는다.</p><p class="note">overt article이 안 보이는 bare plural을 만났을 때에는 먼저 문제의 분석 가정을 따른다. ‘발음된 the가 없으므로 phrase가 아니다’라고 결론 내리지 않는다. 실제 시험의 category label을 임의로 NP에서 DP로 교체하지 않는다.</p><details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §5.6, pp.263–264; Abney (1987), <a href="https://mitwpl.mit.edu/catalog/abne01" target="_blank" rel="noopener"><cite>The English Noun Phrase in Its Sentential Aspect</cite>, abstract</a>. 비교 예시는 학습용.</p></details></details>
   </div>
 </div>
 
@@ -405,7 +419,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
       <div class="exam-label">📋 개념 연결</div>
       <p><strong>Movement 연결</strong> — wh-phrase의 Spec CP와 auxiliary의 head C를 구별한다.</p>
     </div>
-    <details class="concept"><summary><strong>설명 더 보기 · finite clause · infinitival clause · small clause 비교</strong></summary><div class="eg"><span class="eg-line">We believe [that the violinist is talented].</span><span class="eg-line">We believe [the violinist to be talented].</span><span class="eg-line">We consider [the violinist talented].</span></div><p class="note">첫째 괄호 안에는 overt C that과 finite is가 있다. 둘째에는 infinitival to와 be가 있으므로 finite verb가 없다는 이유만으로 small clause라고 부르지 않는다. 셋째 괄호 안에서는 NP the violinist가 AP talented의 subject인 predication을 이루고, overt I/T와 copular be가 없다. 이 장의 small-clause 분석은 셋째에 적용한다.</p><p class="note">talented는 the violinist의 속성을 서술한다. 단어가 나란히 나타났다는 이유로 [the violinist talented] 전체를 NP라고 부르거나, consider가 NP와 AP 두 object를 갖는다고 단정하지 않는다. 이 분석에서는 괄호 안 전체가 selected small-clause complement다.</p><h3 class="c-title">C와 I/T를 구별하기</h3><p class="note">CP의 head C와 그 complement인 IP/TP는 같은 노드가 아니다. I/T는 그 내부의 inflectional head다. 이 장의 IP/TP 병기는 inflectional layer를 비교하기 위한 것으로, 모든 tree에 IP 위 TP를 추가하라는 지시가 아니다. 실제 문항의 I·T 표기를 일관되게 따른다.</p><p class="note">확인: ‘finite verb가 없으면 small clause’는 왜 불충분한가? to be talented처럼 nonfinite verb와 overt infinitival marker를 가진 절도 있기 때문이다. 먼저 괄호 안의 head와 predication을 확인한다.</p><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §§6.2, 6.7–6.8; Aarts, <cite>English Syntax and Argumentation</cite>, Ch.5 small-clause discussion. 예문 재구성.</p></details>
+    <details class="concept"><summary><strong>설명 더 보기 · finite clause · infinitival clause · small clause 비교</strong></summary><div class="eg"><span class="eg-line">We believe [that the violinist is talented].</span><span class="eg-line">We believe [the violinist to be talented].</span><span class="eg-line">We consider [the violinist talented].</span></div><p class="note">첫째 괄호 안에는 overt C that과 finite is가 있다. 둘째에는 infinitival to와 be가 있으므로 finite verb가 없다는 이유만으로 small clause라고 부르지 않는다. 셋째 괄호 안에서는 NP the violinist가 AP talented의 subject인 predication을 이루고, overt I/T와 copular be가 없다. 이 장의 small-clause 분석은 셋째에 적용한다.</p><p class="note">talented는 the violinist의 속성을 서술한다. 단어가 나란히 나타났다는 이유로 [the violinist talented] 전체를 NP라고 부르거나, consider가 NP와 AP 두 object를 갖는다고 단정하지 않는다. 이 분석에서는 괄호 안 전체가 selected small-clause complement다.</p><h3 class="c-title">C와 I/T를 구별하기</h3><p class="note">CP의 head C와 그 complement인 IP/TP는 같은 노드가 아니다. I/T는 그 내부의 inflectional head다. 이 장의 IP/TP 병기는 inflectional layer를 비교하기 위한 것으로, 모든 tree에 IP 위 TP를 추가하라는 지시가 아니다. 실제 문항의 I·T 표기를 일관되게 따른다.</p><p class="note">확인: ‘finite verb가 없으면 small clause’는 왜 불충분한가? to be talented처럼 nonfinite verb와 overt infinitival marker를 가진 절도 있기 때문이다. 먼저 괄호 안의 head와 predication을 확인한다.</p><details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, <cite>Transformational Grammar</cite>, §§6.2, 6.7–6.8; Aarts, <cite>English Syntax and Argumentation</cite>, Ch.5 small-clause discussion. 예문 재구성.</p></details></details>
   </div>
 </div>
 
@@ -420,14 +434,14 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
     <div class="concept">
       <div class="c-title">Main Idea</div>
       <div class="def">The <span class='kw1'>VP-internal subject hypothesis</span> places the thematic subject within the VP domain at its origin; in the finite transitive pattern studied here, it moves to a higher subject position.</div>
-      <p class="note">기저 위치와 표면 위치을 분리하는 분석이다.</p>
+      <p class="note">기저 위치와 표면 위치를 분리하는 분석이다.</p>
       <p class="note">phrase structure와 movement가 만나는 핵심 챕터이므로 Raising/Control, Movement 단원과 연결된다.</p>
     </div>
     <div class="exam">
       <div class="exam-label">📋 개념 연결</div>
       <p><strong>Subject position 연결</strong> — thematic origin과 surface subject position을 따로 표시한다.</p>
     </div>
-    <details class="concept"><summary><strong>설명 더 보기 · Subject의 기저 위치와 표면 위치 구분</strong></summary><div class="eg"><span class="eg-line">The curator will inspect the portrait.</span><span class="eg-line">[IP the curatorᵢ [I′ will [VP tᵢ [V′ inspect the portrait]]]]</span></div><p class="note">이 학습용 finite transitive 분석에서 the curator가 처음 놓이는 위치는 Spec VP다. V′ 안의 inspect와 object the portrait는 head–complement 관계이고, VP 안의 subject는 V′와 결합한다. 따라서 VP 안의 subject가 lexical V의 직접 sister라는 설명은 맞지 않는다.</p><p class="note">표면 subject는 Spec IP에 놓인다. tᵢ는 같은 NP가 출발한 위치를 표시하며 새로운 인물을 뜻하지 않는다. ‘어디에서 thematic relation을 맺는가’와 ‘finite clause의 subject가 어디에서 발음되는가’를 따로 표시하면 두 위치가 필요한 이유가 드러난다.</p><h3 class="c-title">가설과 증거를 구별하기</h3><p class="note">위 괄호 구조은 가설에 따라 문장 구조를 표시한 것이며, 그 자체가 독립적인 증거는 아니다. 근거를 묻는 문제에서는 주어진 자료의 word order·subject/predicate 관계 등 관찰 사실이 왜 VP 안에서 시작하는 분석을 뒷받침하는지 추가로 설명해야 한다. 단순히 ‘tree에서 VP 안에 그렸기 때문’이라고 답하면 순환 설명이다.</p><p class="note">이 절의 schematic transitive 분석을 expletive there, 모든 intransitive subject, 모든 언어의 surface position에 그대로 확대하지 않는다. 핵심은 thematic 기저 위치와 표면 위치의 구별이다. 앞의 TG Ch.3 단순 S → NP VP tree는 이 이동 과정을 표시하지 않은 기초 도식이다.</p><p class="note">확장 근거: Koopman &amp; Sportiche (1991), <a href="https://linguistics.ucla.edu/wp-content/uploads/2017/04/The-position-of-subjects.pdf" target="_blank" rel="noopener"><cite>The position of subjects</cite>, opening proposal</a>. 이 절의 예문과 bracket은 학습용 재구성이다.</p></details>
+    <details class="concept"><summary><strong>설명 더 보기 · Subject의 기저 위치와 표면 위치 구분</strong></summary><div class="eg"><span class="eg-line">The curator will inspect the portrait.</span><span class="eg-line">[IP the curatorᵢ [I′ will [VP tᵢ [V′ inspect the portrait]]]]</span></div><p class="note">이 학습용 finite transitive 분석에서 the curator가 처음 놓이는 위치는 Spec VP다. V′ 안의 inspect와 object the portrait는 head–complement 관계이고, VP 안의 subject는 V′와 결합한다. 따라서 VP 안의 subject가 lexical V의 직접 sister라는 설명은 맞지 않는다.</p><p class="note">표면 subject는 Spec IP에 놓인다. tᵢ는 같은 NP가 출발한 위치를 표시하며 새로운 인물을 뜻하지 않는다. ‘어디에서 thematic relation을 맺는가’와 ‘finite clause의 subject가 어디에서 발음되는가’를 따로 표시하면 두 위치가 필요한 이유가 드러난다.</p><h3 class="c-title">가설과 증거를 구별하기</h3><p class="note">위 괄호 구조는 가설에 따라 문장 구조를 표시한 것이며, 그 자체가 독립적인 증거는 아니다. 근거를 묻는 문제에서는 주어진 자료의 word order·subject/predicate 관계 등 관찰 사실이 왜 VP 안에서 시작하는 분석을 뒷받침하는지 추가로 설명해야 한다. 단순히 ‘tree에서 VP 안에 그렸기 때문’이라고 답하면 순환 설명이다.</p><p class="note">이 절의 schematic transitive 분석을 expletive there, 모든 intransitive subject, 모든 언어의 surface position에 그대로 확대하지 않는다. 핵심은 thematic 기저 위치와 표면 위치의 구별이다. 앞의 TG Ch.3 단순 S → NP VP tree는 이 이동 과정을 표시하지 않은 기초 도식이다.</p><details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">확장 근거: Koopman &amp; Sportiche (1991), <cite>The position of subjects</cite>, opening proposal. 이 절의 예문과 bracket은 학습용 재구성이다.</p></details></details>
   </div>
 </div>
 
