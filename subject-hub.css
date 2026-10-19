@@ -25,7 +25,7 @@
 .depth-unit .condition-mark{font-weight:700;text-decoration:underline;text-decoration-color:#c18c2b;text-decoration-thickness:2px;text-underline-offset:4px;color:#624b26}
 .depth-unit .condition-label{display:inline-block;font-size:11px;line-height:1.5;background:#fff2d8;color:#775b25;border:1px solid #efd8b3;border-radius:4px;padding:2px 6px;margin-right:5px;font-weight:750;vertical-align:middle}
 .depth-unit a{color:#2e7d52;text-underline-offset:3px}.depth-unit table caption{text-align:left;font-size:13px;font-weight:700;color:#2e7d52;padding:0 0 8px}
-.learning-figure{margin:18px 0;padding:16px;background:#f8fcfa;border:1px solid #c8ead8;border-radius:12px}.learning-figure svg{display:block;width:100%;height:auto}.learning-figure figcaption{font-size:12px;line-height:1.7;color:#557862;margin-top:10px}.diagram-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.diagram-pair .learning-figure{margin:0}.depth-unit .summary-compare{font-size:13px}.summary-compare td:first-child{font-weight:700;color:#2e7d52}
-@media(max-width:640px){.diagram-pair{grid-template-columns:1fr}.learning-figure{padding:12px}.depth-unit .summary-compare{font-size:12px}}
+.learning-figure{margin:18px 0;padding:16px;background:#f8fcfa;border:1px solid #c8ead8;border-radius:12px}.learning-figure svg{display:block;width:100%;height:auto}.learning-figure figcaption{font-size:12px;line-height:1.7;color:#557862;margin-top:10px}.diagram-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.diagram-pair .learning-figure{margin:0}.depth-unit .summary-compare{font-size:14px;line-height:1.75}.summary-compare td:first-child{font-weight:700;color:#2e7d52}
+@media(max-width:640px){.diagram-pair{grid-template-columns:1fr}.learning-figure{padding:12px}.depth-unit .summary-compare{font-size:14px}}
 
 .passive-figure svg{max-width:320px;margin:auto}
