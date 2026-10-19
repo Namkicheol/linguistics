@@ -77,11 +77,27 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .nav-btn{display:inline-block;padding:9px 18px;border:1px solid #c5c8e8;border-radius:8px;text-decoration:none;font-size:13px;color:#3b3f86;background:#fff;transition:background .15s}
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
-@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}.tree-svg text{font-size:12px}svg{display:block;max-width:100%;height:auto}}
+@media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
-</head>
+<style>
+.tip-line{display:block}.header-tip,details.concept>summary{word-break:keep-all;overflow-wrap:break-word;line-height:1.7}
+details.concept{padding:14px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff}
+details.concept>summary{cursor:pointer}
+details.concept>p{margin-top:10px;line-height:1.8}
+.tree-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tree-scroll:focus-visible{outline:2px solid #3b3f86;outline-offset:3px}
+.tree-scroll-hint{font-size:13px;color:#555;margin:8px 0}
+.reference-fold{padding:10px 14px;margin-top:12px;border:1px solid #c5c8e8;border-radius:8px;background:#fff}
+.reference-fold>summary{cursor:pointer;font-size:14px;line-height:1.6;color:#3b3f86}
+.reference-fold>.note{margin-top:10px}
+.dictionary-keyword{text-decoration:none}
+.dictionary-keyword:hover,.dictionary-keyword:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.exam-year{display:inline-block;color:#b71c1c;font-weight:700;font-size:14px;padding:1px 5px;text-decoration:none;letter-spacing:0}
+.exam-year:hover,.exam-year:focus-visible{text-decoration:underline}.c-title{flex-wrap:wrap}
+@media(max-width:640px){.tree-scroll .tree-svg{min-width:780px;max-width:none;width:780px}}
+</style><style>details.concept{margin-top:16px}details.concept>summary.c-title{display:block;letter-spacing:0;text-transform:none}table.diag{font-size:15px}</style></head>
 <body class="etwiki-learning">
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
 <nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./pragmatics.html">OX 풀기</a></nav>
@@ -94,7 +110,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="header-script">Concept Notes · Pragmatics · Speech Acts &amp; Implicature</div>
   <p class="header-sub">speech acts · Cooperative Principle · implicature · presupposition · deixis</p>
   <div class="header-divider"></div>
-  <p class="header-tip">📌 목차 버튼 클릭 → 해당 섹션으로 이동 &nbsp;·&nbsp; ▼ 섹션 제목 클릭 → 열고 닫기 &nbsp;·&nbsp; 핵심: illocutionary = 화자의 force/의도, perlocutionary = 청자에게 미친 effect / presupposition은 보통 ordinary negation 아래 유지된다(constancy under negation)</p>
+  <p class="header-tip"><span class="tip-line">목차를 누르면 해당 설명으로 이동해요.</span><span class="tip-line">섹션 제목을 누르면 열고 닫을 수 있어요.</span></p>
 </div>
 <div class="wrap">
 <div class="toc">
@@ -119,10 +135,10 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 </div>
 <div class="exam" style="margin-bottom:20px">
   <div class="exam-label">📝 기출분석 포인트 (Ch.8 Pragmatics)</div>
-  <p>① <span class='kw4'>Speech acts</span>: locutionary / illocutionary / perlocutionary 3-way 구분 + 빈칸에 illocutionary 채우기. "speaker's intent(praise/criticize/warn/threaten)" = <span class='kw1'>illocutionary</span>로 식별.</p>
-  <p>② <span class='kw4'>Primary / indirect illocutionary force</span>: 선언 형식이 request, 명령 형식이 expressive인 발화에서 <span class='kw1'>primary force</span> 고르기.</p>
-  <p>③ <span class='kw3'>Maxim of Relation</span>: 직접 요청 없이 관련 발화로 의도가 전달되는 대화에서 어떤 maxim이 작동하는지 식별.</p>
-  <p>④ <span class='kw3'>Deixis / deictic shifting</span>: 보고 맥락 전환 시 shift가 필요한 deictic expression 찾기 + 이유 설명(고유명사·절대 시간은 유지).</p>
+  <p>① <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=Speech%20acts">Speech acts</a>: locutionary / illocutionary / perlocutionary 3-way 구분 + 빈칸에 illocutionary 채우기. "speaker's intent(praise/criticize/warn/threaten)" = <span class='kw1'>illocutionary</span>로 식별. <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2009_X35" aria-label="2009학년도 관련 기출">09</a></p>
+  <p>② <span class='kw4'>Primary / indirect illocutionary force</span>: interrogative 형식의 request, imperative 형식의 expressive처럼 형식과 기능이 다른 발화에서 <span class='kw1'>primary force</span> 고르기. <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2012_X34" aria-label="2012학년도 관련 기출">12</a></p>
+  <p>③ <a class="kw3 dictionary-keyword" href="https://etwiki.net/concept.html?term=Maxim%20of%20Relation">Maxim of Relation</a>: 직접 요청 없이 관련 발화로 의도가 전달되는 대화에서 어떤 maxim이 작동하는지 식별. <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2009_X35" aria-label="2009학년도 관련 기출">09</a></p>
+  <p>④ <span class='kw3'>Deixis / deictic shifting</span>: 보고 맥락 전환 시 shift가 필요한 deictic expression 찾기 + 이유 설명(고유명사·절대 시간은 유지). <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2010_X34" aria-label="2010학년도 관련 기출">10</a></p>
   <p>⑤ <span class='kw4'>Entailment vs Presupposition</span>: 문장쌍의 의미 관계를 truth 조건으로 분류 — ordinary negation 뒤에도 같은 배경 내용이 유지되는지 확인(constancy under negation).</p>
 </div>
 
@@ -137,11 +153,11 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">A <span class='kw1'>speech act</span> is the action a speaker performs by producing an utterance. Austin distinguishes three aspects of speech acts: the <span class='kw1'>locutionary act</span>, the <span class='kw4'>illocutionary act</span>, and the <span class='kw4'>perlocutionary act</span>.</div>
+      <div class="def">A <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=speech%20act">speech act</a> is the action a speaker performs by producing an utterance. Austin distinguishes three aspects of speech acts: the <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=locutionary%20act">locutionary act</a>, the <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=illocutionary%20act">illocutionary act</a>, and the <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=perlocutionary%20act">perlocutionary act</a>.</div>
       <p class="note"><span class='kw1'>speech act</span>는 발화로 수행하는 행위다. Austin의 구분은 발화·force·effect를 분석하는 세 층위다. 의도한 effect가 반드시 실현되는 것은 아니다.</p>
     </div>
     <div class="concept">
-      <div class="c-title">3 components</div>
+      <div class="c-title">3 components <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2009_X35" aria-label="2009학년도 관련 기출">09</a></div>
       <div class="grid col3">
         <div class="grid-item">
           <div class="gi-title">Locutionary act</div>
@@ -158,7 +174,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       </div>
       <p class="note"><span class='kw4'>변별 핵심</span>: <span class='kw4'>illocutionary = 화자의 force/의도</span>, <span class='kw4'>perlocutionary = 청자에게 미친 결과/effect</span>. 둘을 바꿔 진술하면 X.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="화용 개념 그림 1" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowP1" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#3b3f86"/></marker>
       </defs>
@@ -178,7 +194,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <rect x="150" y="184" width="360" height="46" rx="8" fill="#eafaf0" stroke="#1f7a4a" stroke-width="1.5"/>
       <text x="330" y="204" text-anchor="middle" font-size="14" font-weight="700" fill="#1f7a4a">③ PERLOCUTIONARY (effect = 청자 결과)</text>
       <text x="330" y="222" text-anchor="middle" font-size="11" fill="#1f7a4a">청자가 창문을 닫음</text>
-    </svg>
+    </svg></div>
     <div class="concept">
       <div class="c-title">예문 — 세 층위 배정 (아래 effect가 실제 발생한 상황)</div>
       <div class="eg">
@@ -263,12 +279,12 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">A <span class='kw1'>direct speech act</span> uses a sentence type with its canonical function; an <span class='kw4'>indirect speech act</span> uses a sentence type to perform a <em>different</em> function. The literal force is <span class='kw2'>secondary</span>; the intended force is <span class='kw4'>primary</span>.</div>
+      <div class="def">A <span class='kw1'>direct speech act</span> uses a sentence type with its canonical function; an <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=indirect%20speech%20act">indirect speech act</a> uses a sentence type to perform a <em>different</em> function. The literal force is <span class='kw2'>secondary</span>; the intended force is <span class='kw4'>primary</span>.</div>
       <p class="note">문장 유형은 각각 기본 기능과 짝지어진다 — <span class='kw1'>declarative–statement</span>, <span class='kw1'>interrogative–question</span>, <span class='kw1'>imperative–command/request</span>. 기본 기능대로 쓰면 <span class='kw1'>direct</span>, 다른 기능으로 쓰면 <span class='kw4'>indirect</span> speech act다.</p>
       <p class="note"><span class='kw3'>indirect가 일반적으로 더 공손</span>하게 느껴진다. 다만 청자가 문자 그대로(direct) 반응하면 의도된 force를 놓칠 수 있다.</p>
     </div>
     <div class="concept">
-      <div class="c-title">Sentence type ↔ function</div>
+      <div class="c-title">Sentence type ↔ function <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2012_X34" aria-label="2012학년도 관련 기출">12</a></div>
       <div class="tbl-wrap">
         <table class="diag">
           <thead>
@@ -306,7 +322,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p><strong>원문 선택 조건에 적용:</strong> 발문은 primary이면서 <u>indirect인 경우만 모두</u> 고르게 한다. a는 개회를 직접 선언하므로 제외한다. b는 개회 예고를 통한 조용히 해 달라는 요청, c는 능력 질문을 통한 전등 켜기 요청, d는 명령형을 통한 회복 기원이므로 포함한다. a에도 primary force가 있지만 <u>indirect 조건까지 만족하지는 않는다.</u> 따라서 원문의 글자 기준으로 b, c, d를 묶는다.</p>
       <p>변형 문장을 일정 질문에 대한 답으로 바꾸면 무엇이 달라질까? 문장 형식은 declarative 그대로지만, 청중의 잡담이라는 단서가 없어져 ‘조용히 해 달라’는 추론의 근거가 사라진다. 이때는 statement가 자연스럽다. <strong>같은 형태라도 맥락을 바꾸면 primary force가 달라질 수 있다.</strong></p>
       <p>연결: <a href="https://etwiki.net/index.html?id=linguistics_2012_X34">2012학년도 1차 34번 원문과 해설</a> · <a href="https://etwiki.net/concept.html?term=illocutionary%20force">illocutionary force 사전</a></p>
-      <p>개념 근거: Fromkin, Rodman &amp; Hyams, <cite>An Introduction to Language</cite>, 10th ed., Ch. 4, “Speech Acts” (pp. 174–175). 맥락과 발화 목적의 관계를 재서술했으며, 개별 선택지는 원문 조건에 따라 분석했다.</p>
+      
     </details>
   </div>
 </div>
@@ -322,11 +338,11 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Cooperative Principle (Grice)</div>
-      <div class="def">Grice's <span class='kw1'>Cooperative Principle</span>: make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose of the talk exchange — i.e. participants are assumed to <span class='kw1'>cooperate</span>.</div>
+      <div class="def">Grice's <a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Cooperative%20Principle">Cooperative Principle</a>: make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose of the talk exchange — i.e. participants are assumed to <span class='kw1'>cooperate</span>.</div>
       <p class="note"><span class='kw1'>Cooperative Principle</span>는 대화 참여자가 대화 목적에 맞게 협력한다는 가정이다. 화자가 maxim을 글자 그대로 지키는 게 아니라, 청자가 <em>마치</em> 지켜진 것처럼 해석한다 — maxim이 깨진 듯 보이면 청자는 협력을 복원하는 추론(implicature)을 끌어낸다.</p>
     </div>
     <div class="concept">
-      <div class="c-title">Four Maxims</div>
+      <div class="c-title">Four Maxims <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2009_X35" aria-label="2009학년도 관련 기출">09</a></div>
       <div class="grid col2">
         <div class="grid-item"><div class="gi-title">Quantity</div><div class="gi-body"><span>필요한 만큼만 정보 — 과다·과소 금지</span></div></div>
         <div class="grid-item"><div class="gi-title">Quality</div><div class="gi-body"><span>참이라 믿고 근거 있는 것만 말함</span></div></div>
@@ -365,7 +381,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">A <span class='kw4'>conversational implicature</span> is an unstated proposition the hearer infers from the CP and maxims plus context, <em>over and above</em> the literal meaning. It is <span class='kw1'>calculable</span> (CP+maxim으로 추론 가능) and <span class='kw4'>cancellable / defeasible</span> (명시적으로 취소 가능).</div>
+      <div class="def">A <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=conversational%20implicature">conversational implicature</a> is an unstated proposition the hearer infers from the CP and maxims plus context, <em>over and above</em> the literal meaning. It is <span class='kw1'>calculable</span> (CP+maxim으로 추론 가능) and <span class='kw4'>cancellable / defeasible</span> (명시적으로 취소 가능).</div>
       <p class="note"><span class='kw4'>conversational implicature</span>는 글자 그대로의 의미를 넘어 CP·maxim·맥락으로 청자가 추론하는 함축이다.</p>
     </div>
     <div class="concept">
@@ -425,7 +441,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Scalar implicature</div>
-      <div class="def"><span class='kw1'>Scalar implicature</span> (a generalized conversational implicature): using a weaker alternative can implicate the <strong>negation of a relevant stronger alternative</strong>, when the speaker is assumed to know whether it holds. On ⟨all, most, many, some⟩, using <em>some</em> implicates <em>not all</em>. It is <span class='kw4'>cancellable</span>.</div>
+      <div class="def"><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Scalar%20implicature">Scalar implicature</a> (a generalized conversational implicature): using a weaker alternative can implicate the <strong>negation of a relevant stronger alternative</strong>, when the speaker is assumed to know whether it holds. On ⟨all, most, many, some⟩, using <em>some</em> implicates <em>not all</em>. It is <span class='kw4'>cancellable</span>.</div>
       <p class="note">관련 scale와 화자의 지식이 주어지면 약한 항 사용에서 강한 항의 <span class='kw4'>부정</span>을 추론할 수 있다(⟨all…some⟩에서 some → not all). generalized conversational implicature의 하위이고 cancellable하다.</p>
     </div>
     <div class="concept">
@@ -480,11 +496,11 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def">A <span class='kw4'>presupposition</span> is background information the speaker takes for granted as already true. It is identified by the <span class='kw1'>constancy under negation</span> test: under ordinary negation (and often questions), the background assumption typically <strong>persists</strong>.</div>
+      <div class="def">A <a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=presupposition">presupposition</a> is background information the speaker takes for granted as already true. It is identified by the <span class='kw1'>constancy under negation</span> test: under ordinary negation (and often questions), the background assumption typically <strong>persists</strong>.</div>
       <p class="note"><span class='kw4'>presupposition</span>은 화자가 발화 시 이미 참이라고 전제하는 배경 정보다. <span class='kw1'>constancy under negation</span> test로 판별한다 — ordinary negation 아래 보통 같은 배경 내용이 유지되는지 본다. 문장이 다른 구문 안에 들어가도 그 배경 내용이 항상 유지된다는 뜻은 아니다.</p>
       <p class="note"><span class='kw4'>함정</span>: 일반적인 trigger 용법에서 presupposition은 ordinary negation 아래 <span class='kw4'>유지</span>된다.</p>
     </div>
-    <svg class="tree-svg" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
+    <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="화용 개념 그림 2" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowP2" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#1f7a4a"/></marker>
       </defs>
@@ -504,7 +520,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <rect x="190" y="156" width="280" height="44" rx="8" fill="#eafaf0" stroke="#1f7a4a" stroke-width="1.5"/>
       <text x="330" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#1f7a4a">P: Owen used to smoke.</text>
       <text x="330" y="192" text-anchor="middle" font-size="10" fill="#1f7a4a">긍정·부정 모두 P를 presuppose → 유지</text>
-    </svg>
+    </svg></div>
     <div class="concept">
       <div class="c-title">Presupposition triggers</div>
       <div class="grid col2">
@@ -562,7 +578,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
     </div>
     <div class="concept">
       <div class="c-title">Deixis</div>
-      <div class="def"><span class='kw1'>Deixis</span> = expressions whose reference depends on the utterance context (Greek 'pointing via language'). 핵심 3종 + 확장 2종.</div>
+      <div class="def"><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=Deixis">Deixis</a> = expressions whose reference depends on the utterance context (Greek 'pointing via language'). 핵심 3종 + 확장 2종.</div>
       <div class="grid col3">
         <div class="grid-item"><div class="gi-title">Person deixis</div><div class="gi-body"><span><em>I, you, she</em></span></div></div>
         <div class="grid-item"><div class="gi-title">Spatial deixis</div><div class="gi-body"><span><em>here, there, this</em></span><span>proximal ↔ distal</span></div></div>
@@ -572,7 +588,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
       <p class="note"><span class='kw4'>proximal</span>(화자에 가까움): <em>this / here / now</em> &nbsp;↔&nbsp; <span class='kw4'>distal</span>(화자에서 멂): <em>that / there / then</em>.</p>
     </div>
     <div class="concept">
-      <div class="c-title">Deictic shifting</div>
+      <div class="c-title">Deictic shifting <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2010_X34" aria-label="2010학년도 관련 기출">10</a></div>
       <p class="note">Deictic shifting에서는 새 보고 맥락에서도 원래의 사람·시간·장소를 가리키도록 표현을 조정한다. 보고하는 날이나 장소가 같은지에 따라 yesterday, five years ago 등이 그대로 유지될 수 있다. 다른 사람이 간접 보고한다면 I를 원화자를 가리키는 이름이나 대명사로 조정한다. 원화자 자신의 재보고나 직접 인용은 구별한다.</p>
 
     </div>
@@ -590,6 +606,7 @@ table.diag td.n{color:#b71c1c;font-weight:700}
   </div>
 </div>
 
+<details class="reference-fold"><summary>Speech Acts 원서 출처 펼치기</summary><p>개념 근거: Fromkin, Rodman &amp; Hyams, <cite>An Introduction to Language</cite>, 10th ed., Ch. 4, “Speech Acts” (pp. 174–175). 맥락과 발화 목적의 관계를 재서술했으며, 개별 선택지는 원문 조건에 따라 분석했다.</p></details>
 <div class="nav-bottom">
   <a class="nav-btn" href="./index.html">← 챕터 목록</a>
   <a class="nav-btn next-btn" href="./pragmatics.html">📝 Ch.8 Pragmatics OX 28문항 풀러 가기 →</a>
