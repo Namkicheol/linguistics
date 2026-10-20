@@ -158,7 +158,7 @@ const Q=[
    text:"<span class='kw1'>Theta-roles</span> (thematic roles such as Agent, Theme, Goal) are assigned at D-structure, so the relationship between a predicate and its arguments is established before movement.",
    ans:true,
    correct:"theta-role는 D-structure에서 결정되므로 movement 후에도 argument의 의미역 관계는 original position에서 계산된다.",
-   why:"이것이 D-structure를 설정하는 핵심 이유 중 하나입니다. passive 구문에서 surface subject가 agent가 아닌 theme인 이유도 theta-role이 D-str object position에서 할당되기 때문입니다.",
+   why:"이것이 D-structure를 설정하는 핵심 이유 중 하나입니다. passive subject는 원래 internal argument의 theta-role을 유지합니다. 그 역할은 항상 Theme인 것은 아닙니다. 예를 들어 The visitor was given a map에서 the visitor는 Goal이며, subject로 이동했다고 Agent가 되지 않습니다.",
    source:"Theta-role assignment occurs at D-structure, preserving thematic relations across movement."},
 
   {src:"D/S-structure",cat:"transformation · mapping",
@@ -192,11 +192,11 @@ const Q=[
    source:"Under V-movement, the inflected verb occupies the I position at S-structure, not the VP-head position."},
 
   {src:"V-movement",cat:"V-to-I · vacuous application",
-   text:"V-movement is said to apply <span class='kw2'>vacuously</span> in English because I and V are adjacent, so whether V moves to I or I affixes move to V produces the same surface word order.",
+   text:"V-movement is said to apply <span class='kw2'>vacuously</span> in a simple English clause where I and V are adjacent: V-to-I and I-to-V affix movement yield the same surface word order.",
    ans:true,
-   correct:"영어에서 I와 V가 인접하므로 V-movement는 표면 어순에 observable한 변화를 만들지 않는다 — 따라서 <span class='kw2'>vacuous application</span>이라 한다.",
+   correct:"I와 V가 인접한 이 단순 구문에서는 V-movement가 표면 어순에 observable한 변화를 만들지 않는다 — 따라서 <span class='kw2'>vacuous application</span>이라 한다.",
    why:"Koopman(1984)이 제시한 논점으로, I와 V가 인접한 이 단순 예문의 어순만으로는 두 분석을 판별할 수 없습니다. 비인접 언어(예: Vata)에서는 V-movement가 명시적 word-order 변화를 만들어 증거를 제공합니다.",
-   source:"In English, V-movement applies vacuously; cross-linguistic evidence from V-I non-adjacent languages distinguishes the analyses."},
+   source:"Radford, Transformational Grammar, §8.2, pp.403–405: I와 V가 인접한 단순 구문에서는 표면 어순만으로 V-to-I와 affix movement를 구별할 수 없음. 요약이며 직접 인용이 아님."},
 
   {src:"V-movement",cat:"affix movement · comparison",
    text:"Under the <span class='kw2'>affix movement</span> analysis, the Tense/Agreement affixes in I move down to the leftmost V of VP, leaving the inflected V in VP-head position at S-structure.",
@@ -233,7 +233,7 @@ const Q=[
    text:"I-to-C movement applies in indirect questions as well as direct questions, producing auxiliary inversion in both structures.",
    ans:false,
    correct:"표준 영어의 embedded question에서는 subject–auxiliary inversion이 일어나지 않는다. overt complementizer가 없는 embedded wh-question도 이 패턴을 따른다.",
-   why:"<em>I wonder if she will stay.</em>에서 C는 <em>if</em>가 채우고 있어 Modal이 이동할 자리가 없습니다. <em>*I wonder will she stay</em>가 비문인 이유입니다.",
+   why:"<em>I wonder if she will stay.</em>에서는 <em>if</em>가 C를 채웁니다. 그러나 <em>*I wonder will she stay</em>에는 overt <em>if</em>가 없습니다. 이 비문은 표준 embedded question에 subject–auxiliary inversion을 적용한 결과입니다. overt C가 없는 <em>I wonder which room she will choose.</em>에서도 will은 I에 남습니다.",
    source:"In standard embedded questions inversion does not occur; this is not proof that every embedded C contains an overt complementizer.",
    compare:[{title:"Direct Q",desc:"I-to-C 적용: Can she leave? → C=can"},{title:"Indirect Q",desc:"I-to-C 불가: I wonder if she can leave. (C=if)"}]},
 
@@ -271,7 +271,7 @@ const Q=[
    text:"In the passive sentence \"The analysis was conducted by the research team,\" <em>the analysis</em> is base-generated as the subject at D-structure.",
    ans:false,
    correct:"passive 구문의 surface subject는 D-structure에서 object(internal argument) position에 base-generated된다.",
-   why:"D-structure에서 passive verb는 external argument(agent)를 갖지 않습니다. internal argument <em>the analysis</em>는 V 뒤 object position에 base-generated되고, NP-movement에 의해 Spec,IP로 이동합니다.",
+   why:"이 verbal passive 분석에서 D-structure의 subject 자리는 비어 있으며 passive verb는 그 자리에 external theta-role을 부여하지 않습니다. internal argument <em>the analysis</em>는 V 뒤 object position에 base-generated되고, NP-movement에 의해 Spec,IP로 이동합니다.",
    source:"The passive subject originates in the object position at D-structure and moves to Spec,IP at S-structure."},
 
   {src:"NP-movement (Passive)",cat:"subcategorization · argument",

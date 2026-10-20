@@ -174,7 +174,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
     <div class="grid col2">
       <div class="grid-item">
         <div class="gi-title">Theta Criterion 위반 ①</div>
-        <div class="gi-body"><span>필요한 argument가 없어 theta-role이 배정되지 못함 → 비문</span><span style="font-size:12px;color:#b71c1c">*The student put the book.</span><span style="font-size:12px">(put은 NP + PP 두 internal argument 필요)</span></div>
+        <div class="gi-body"><span>필요한 argument가 없어 theta-role이 배정되지 못함 → 비문</span><span style="font-size:12px;color:#b71c1c">*The student put the book.</span><span style="font-size:12px">(이 put 용법에는 Theme와 Location argument가 필요)</span></div>
       </div>
       <div class="grid-item">
         <div class="gi-title">Theta Criterion 위반 ②</div>
@@ -357,7 +357,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
         <span class="eg-line eg-ok">The story is believed to be false by Ed.</span>
         <span class="eg-note"><strong>believe</strong>: main clause passivize 가능. <span style="color:#b71c1c">*for</span> 차단(<em>*I believe for the story to be false</em>).</span>
         <span class="eg-line eg-bad">*Robert was wanted by Jean to go over there.</span>
-        <span class="eg-note"><strong>want</strong>: 숨은 <em>for</em>(Case) 때문에 main clause passivize 불가. 단 expletive·voice transparency는 believe와 같음.</span>
+        <span class="eg-note"><strong>want</strong>: 이 infinitival 구문에서는 하위절 subject를 상위절 passive subject로 옮기는 형태가 허용되지 않는다. expletive·하위절 voice transparency는 believe와 같아도 상위절 수동화까지 같지는 않다. (Aarts, <cite>English Syntax and Argumentation</cite>, §14.2.2, pp.251–253)</span>
         <span class="eg-line eg-ok">George expects to win. &nbsp;/&nbsp; George expects Sue to win.</span>
         <span class="eg-note"><strong>expect</strong>: subject control(앞)과 SOR(뒤) 둘 다 가능.</span>
       </div>
@@ -512,7 +512,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
         <span class="eg-line eg-ok">Ed believes there to be a problem.</span>
         <span class="eg-note">expletive: persuade 불허(목적어 theta-position) / believe 허용(하위절 주어)</span>
         <span class="eg-line">Ed persuaded Brian to interview Melanie.  ≠  Ed persuaded Melanie to be interviewed by Brian.</span>
-        <span class="eg-note">voice transparency 실패: 두 문장 모두 정문이지만 <strong>의미가 다름</strong>(≠) — persuade가 목적어를 theta-mark하기 때문. ECM(believe)에서만 능동·수동 하위절이 동의</span>
+        <span class="eg-note">voice transparency 실패: 두 문장 모두 정문이지만 <strong>의미가 다름</strong>(≠) — persuade가 목적어를 theta-mark하기 때문. 이 persuade/believe 대조에서 voice transparency를 보이는 것은 believe다. SSR(seem)도 앞 절에서 확인했듯 voice transparency를 보인다</span>
         <span class="eg-line eg-ok">Lena persuaded Max that he should obey his supervisor.</span>
         <span class="eg-note">위 문장은 기출 구조를 바탕으로 만든 변형 예문이다. persuade NP that …와 believe that …는 모두 finite CP를 포함한다. 차이는 persuade의 NP가 별도 목적어인 반면, believe에서는 that절 전체가 보문이라는 점이다. (2019학년도 전공 B 6번; Radford, pp.322–323)</span>
       </div>
@@ -626,12 +626,13 @@ details.concept>p{margin-top:10px;line-height:1.8}
           </thead>
           <tbody>
             <tr><th>matrix subject에 theta-role</th><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td></tr>
-            <tr><th>matrix object에 theta-role</th><td>—</td><td class="n">No(목적격만)</td><td>—</td><td class="y">Yes</td></tr>
+            <tr><th>동사 뒤 NP에 matrix theta-role</th><td>—</td><td class="n">No(하위절 주어)</td><td>—</td><td class="y">Yes</td></tr>
             <tr><th>하위절 주어</th><td>NP-trace(이동)</td><td>overt NP(목적격)</td><td>PRO</td><td>PRO</td></tr>
             <tr><th>expletive there/it<br>SSR·SC: 상위절 주어<br>ECM·OC: 동사 뒤 NP</th><td class="y">OK</td><td class="y">OK</td><td class="n">*</td><td class="n">*</td></tr>
             <tr><th>idiom chunk 보존<br>SSR: 상위절 주어<br>ECM: 하위절 주어</th><td class="y">OK</td><td class="y">OK</td><td class="n">*</td><td class="n">*</td></tr>
-            <tr><th>voice transparency</th><td class="y">O</td><td class="y">O</td><td>—</td><td class="n">X</td></tr>
+            <tr><th>voice transparency</th><td class="y">O</td><td class="y">O</td><td class="n">X</td><td class="n">X</td></tr>
             <tr><th>movement</th><td>NP-movement</td><td>없음(Case in situ)</td><td>없음</td><td>없음</td></tr>
+            <tr><th>voice transparency의 X</th><td colspan="4">비문이라는 뜻이 아니라 능동·수동 대조에서 의미가 같지 않다는 뜻이다. SC에서는 시도한 사람, OC에서는 설득받은 사람이 달라진다.</td></tr>
           </tbody>
         </table>
       </div>
