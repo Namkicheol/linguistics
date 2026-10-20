@@ -45,7 +45,8 @@ for (const [file, ids] of Object.entries(lessonIds)) {
   }
   assert.equal((html.match(/class="core-definition"/g)||[]).length, ids.length);
   assert.equal((html.match(/class="condition-label"/g)||[]).length, ids.length);
-  assert.equal((html.match(/class="source-note"/g)||[]).length, ids.length);
+  const sourceNotesPerUnit = file === 'school-grammar_study.html' ? 2 : 1;
+  assert.equal((html.match(/class="source-note"/g)||[]).length, ids.length * sourceNotesPerUnit);
   assert(html.includes('학습용 예문'));
   for (const svg of html.matchAll(/<svg([\s\S]*?)<\/svg>/g)) {
     assert(svg[1].includes('role="img"'));
@@ -99,11 +100,11 @@ function navigationPage(href, referrer = '', source = script, extraLinks = []) {
   const location = new URL(href);
   const file = location.pathname.split('/').pop();
   const links = [...read(file).matchAll(/\bhref="([^"]+)"/g)].map(m => m[1].replaceAll('&amp;', '&')).concat(extraLinks)
-    .map(href => ({href, getAttribute(k) { return this[k]; }}));
+    .map(href => ({href, authoredHref:href, getAttribute(k) { return this[k]; }, hasAttribute(k) { return Object.hasOwn(this,k); }, removeAttribute(k) { delete this[k]; }, closest() { return null; }}));
   const element = () => ({style:{}, appendChild(){}, setAttribute(k,v){this[k]=v;}, getAttribute(k){return this[k];}});
   const button = element();
   const document = {body:element(), referrer, currentScript:null, getElementById:id => id === 'back-btn' ? button : null,
-    querySelectorAll:() => links};
+    querySelectorAll:selector => selector === 'a[href]' ? links : [], addEventListener(){}};
   if (read(file).includes('src="./study-return.js"')) {
     vm.runInNewContext(source, {document, window:{location,addEventListener(){}}, URL, URLSearchParams});
   }
@@ -118,11 +119,11 @@ for (const [hub, lesson] of [['school-grammar.html','school-grammar_study.html']
   const lessonUrl = new URL(entry.href,hubUrl).href;
   const first = navigationPage(lessonUrl,hubUrl);
   const nestedLinks = first.links.filter(a => {
-    const url = new URL(a.href,lessonUrl);
+    const url = new URL(a.authoredHref,lessonUrl);
     const back = url.searchParams.get('returnTo');
     return back && new URL(back,url).pathname.endsWith('/' + lesson);
   });
-  assert.equal(nestedLinks.length, hub === 'syntax.html' ? 4 : 1);
+  assert.equal(nestedLinks.length, hub === 'syntax.html' ? 7 : 1);
   for (const link of nestedLinks) {
     const nextUrl = new URL(link.href,lessonUrl).href;
     const next = navigationPage(nextUrl,lessonUrl);
