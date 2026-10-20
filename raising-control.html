@@ -216,7 +216,7 @@ const Q=[
    text:"The sentence <span class='kw4'>*It is believed the team to win the championship</span> is ungrammatical because <em>the team</em> fails to receive Case in that position and must move to the case-assigned subject position of the finite matrix clause.",
    ans:true,
    correct:"<em>the team</em>이 Case를 못 받는 자리에 있어 비문 — case-assigned subject 자리(<em>The team is believed to win</em>)로 이동해야 한다.",
-   why:"raising/passive 술어는 외부논항이 없어 그 NP에 Case를 부여할 통로가 막혀 있습니다. 따라서 <em>the team</em>은 정형 matrix clause의 nominative subject 자리로 이동해야 합니다. (2024 1차 A-7 출제 각도)",
+   why:"2024 A07이 제시한 분석에서 external argument가 없는 passive/raising 술어는 accusative Case를 줄 수 없습니다. 이 예문의 passive believed도 하위절 주어에 목적격을 주지 못합니다. 따라서 <em>the team</em>은 정형 matrix clause의 nominative subject 자리로 이동해야 합니다. (2024 1차 A-7 출제 각도)",
    source:"The NP must move to a case-assigned subject position; raising predicates lack an external argument. (2024 1차 A-7)"},
 
   /* ── ③ Subject-to-Object Raising & ECM (SOR) ───────────── */
@@ -245,9 +245,9 @@ const Q=[
   {src:"SOR · ECM",cat:"single complement",
    text:"The sentence <span class='kw4'>*The manager believes Tom that he has resigned</span> is grammatical because <em>believe</em> can take both an NP object and a finite clause.",
    ans:false,
-   correct:"비문이다. ECM 동사는 <span class='kw2'>single clausal complement</span>만 취하며 두 개의 internal argument(NP + that-clause)를 허용하지 않는다.",
-   why:"<em>believe</em>는 <em>John believes Bill to have slept</em>처럼 하나의 절 보문만 취합니다. NP와 that-clause를 동시에 취하는 <em>*believes Tom that …</em>은 비문입니다.",
-   source:"ECM verbs allow only a single clausal complement, not NP + that-clause.",
+   correct:"이 believe 구문은 비문이다. <span class='kw2'>single clausal complement</span>를 취하는 believe와, 목적어 NP 및 that절을 함께 취하는 persuade의 argument structure를 구별한다.",
+   why:"이 대조의 <em>believe</em>는 <em>John believes [Bill to have slept]</em>나 <em>John believes [that Bill has slept]</em>처럼 절 보문을 취합니다. <em>*believes Tom that …</em>에서 Tom을 persuade의 목적어처럼 따로 두는 구조는 허용되지 않습니다. 이 believe의 선택 제약을 모든 ECM 술어의 모든 용법으로 확대하지 않습니다.",
+   source:"적용 범위: 이 문항의 believe와 persuade의 argument-structure 대조. believe의 선택 제약을 모든 ECM 술어의 용법으로 일반화하지 않음.",
    compare:[{title:"정문",desc:"John believes Bill to have slept."},{title:"비문",desc:"*John believes Bill that he has slept."}]},
 
   {src:"SOR · ECM",cat:"want · main passive",
@@ -275,7 +275,7 @@ const Q=[
    text:"The sentence <span class='kw4'>*I believe for the witness to be lying</span> is ungrammatical because the complement of an ECM verb like <em>believe</em> is a bare clause without the complementizer <em>for</em>.",
    ans:true,
    correct:"ECM 동사 <em>believe</em>의 보문에는 complementizer <em>for</em>가 올 수 없다 → <em>*believe for NP to VP</em>는 비문.",
-   why:"ECM 구문의 보문은 complementizer 없는 절이어서 matrix verb가 직접 하위절 주어에 Case를 부여합니다. <em>for</em>가 들어가면 그 Case 부여 통로가 막혀 비문이 됩니다.",
+   why:"이 believe의 ECM 보문은 overt complementizer가 없는 절로 분석하며, matrix verb가 하위절 주어에 Case를 줍니다. <em>for</em>를 넣은 CP는 이 용법의 believe가 선택하는 보문 구조와 맞지 않습니다. for 자체가 언제나 NP의 Case를 차단한다는 뜻은 아닙니다.",
    source:"ECM complements lack the complementizer for; *believe for NP to VP."},
 
   /* ── ④ Subject Control (SC) ────────────────────────────── */

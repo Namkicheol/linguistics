@@ -177,10 +177,10 @@ details.concept > div{padding:4px 10px 8px}
     <div class="concept">
       <div class="c-title">Why constituency matters</div>
       <p class="note">constituent 구조는 이동·대용·특정 생략 구문을 설명하는 근거. 의미상 한 덩어리라는 직감만으로 판정하지 않음</p>
-      <p class="note">비문(*)/정문 판별의 출발점 — 잘못된 단어 묶음을 묶으려 하면 비문</p>
+      <p class="note">비문(*)/정문 판별의 출발점 — 검사할 문자열의 구조와 해당 구문의 독립 조건을 함께 확인한다</p>
     </div>
     
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 노드와 단어 수, constituent 검사 방법</summary><div style="margin-top:12px"><p class="note">[NP birds]와 [NP the birds near the pond]는 길이가 달라도 NP 자리에 올 수 있다. constituent는 “두 단어 이상”이라는 길이 조건으로 정의하지 않는다.</p><div class="eg">[S [NP The guide] [VP greeted [NP the visitors]]]</div><p class="note">the visitors는 NP 노드의 모든 말단을 포함한다. guide greeted는 서로 다른 가지의 일부를 모은 연속 문자열이므로 이 구조의 constituent가 아니다. 단어들이 연속해서 나타난다는 사실만으로는 constituent라고 할 수 없다.</p><p class="note">검사 순서: ① 원문에서 검사할 문자열을 표시한다. ② 해석을 유지한 채 적절한 구문에 넣는다. ③ 실제로 이동·대용된 범위를 확인한다. ④ 다른 진단으로 교차 확인한다. 실패했다면 category·담화·selection 등의 독립 조건을 먼저 살핀다.</p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 노드와 단어 수, constituent 검사 방법</summary><div style="margin-top:12px"><p class="note">[NP birds]와 [NP the birds near the pond]는 길이가 달라도 NP 자리에 올 수 있다. constituent는 “두 단어 이상”이라는 길이 조건으로 정의하지 않는다.</p><div class="eg">[S [NP The guide] [VP greeted [NP the visitors]]]</div><p class="note">the visitors는 NP 노드의 모든 말단을 포함한다. guide greeted는 서로 다른 가지의 일부를 모은 연속 문자열이므로 이 구조의 constituent가 아니다. 단어들이 연속해서 나타난다는 사실만으로는 constituent라고 할 수 없다.</p><p class="note">검사 순서: ① 원문에서 검사할 문자열을 표시한다. ② 해석을 유지한 채 적절한 구문에 넣는다. ③ 실제로 이동·대용된 범위를 확인한다. ④ 다른 진단으로 교차 확인한다. <u>실패했다면 category·담화·selection 등의 독립 조건을 먼저 살핀다.</u></p></div></details>
   </div>
 </div>
 
@@ -274,7 +274,7 @@ details.concept > div{padding:4px 10px 8px}
       </div>
     </div>
     
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 대용된 범위를 정확히 찾기</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Nora greeted [the pilot with the blue scarf]. → Nora greeted [her].</span><span class="eg-line eg-bad">Nora greeted the her with the blue scarf.</span></div><p class="note">her는 pilot이라는 N만 바꾸는 표현이 아니라 목적어 NP 자리를 차지한다. scarf를 쓴 pilot이라는 동일한 대상을 가리키는 문맥을 유지해야 한다.</p><div class="eg"><span class="eg-line">I hope [the train arrives soon].</span><span class="eg-line eg-bad">I hope it. (같은 complement 자리에서 직접 대용)</span></div><p class="note">it 대용이 실패해도 대괄호 안 절은 constituent이다. hope가 이 용법에서 NP complement를 허용하지 않기 때문이다. I hope so는 가능하다. “대용 실패 → nonconstituent”라는 역추론은 성립하지 않는다.</p><div class="eg"><span class="eg-line">Nora will [repair the bicycle], and Leo will [∅] too.</span></div><p class="note">VP ellipsis에서는 생략된 repair the bicycle이 문맥에서 회복되고 auxiliary will은 남는다. do so라는 소리 있는 대용 표현과 ellipsis를 구분한다. do so의 범위는 위 도식처럼 complement를 포함하고 adjunct를 포함하거나 제외할 수 있다.</p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 대용된 범위를 정확히 찾기</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Nora greeted [the pilot with the blue scarf]. → Nora greeted [her].</span><span class="eg-line eg-bad">Nora greeted the her with the blue scarf.</span></div><p class="note">her는 pilot이라는 N만 바꾸는 표현이 아니라 목적어 NP 자리를 차지한다. scarf를 쓴 pilot이라는 동일한 대상을 가리키는 문맥을 유지해야 한다.</p><div class="eg"><span class="eg-line">I hope [the train arrives soon].</span><span class="eg-line eg-bad">I hope it. (같은 complement 자리에서 직접 대용)</span></div><p class="note">it 대용이 실패해도 대괄호 안 절은 constituent이다. hope가 이 용법에서 NP complement를 허용하지 않기 때문이다. I hope so는 가능하다. <u>“대용 실패 → nonconstituent”라는 역추론은 성립하지 않는다.</u></p><div class="eg"><span class="eg-line">Nora will [repair the bicycle], and Leo will [∅] too.</span></div><p class="note">VP ellipsis에서는 생략된 repair the bicycle이 문맥에서 회복되고 auxiliary will은 남는다. do so라는 소리 있는 대용 표현과 ellipsis를 구분한다. do so의 범위는 위 도식처럼 complement를 포함하고 adjunct를 포함하거나 제외할 수 있다.</p></div></details>
   </div>
 </div>
 
@@ -309,7 +309,7 @@ details.concept > div{padding:4px 10px 8px}
       </div>
     </div>
     
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 조건을 일정하게 유지한 movement 검사</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Context: Which notes will Mina read, the old ones or the new ones?</span><span class="eg-line">[The new notes], Mina will read __.</span><span class="eg-line eg-bad">[The new], Mina will read __ notes.</span></div><p class="note">두 문장은 같은 auxiliary와 목적어 해석을 유지한다. 첫 문장은 목적어 NP 전체를 옮겼지만 둘째는 determiner와 adjective만 떼어 냈다. 단순히 어순이 이상한 문장을 만드는 것보다 한 조건만 바꾼 대조가 구조적 차이를 확인하는 데 더 적절하다.</p><p class="note">VP-preposing은 auxiliary를 남기는 형태로 검사한다: Mina said she would [read the notes], and [read the notes] she would __. read만 옮기고 the notes를 남기는 결과와 비교한다.</p><p class="note">movement는 담화와 구문에 제약된다. constituent라고 모든 위치로 이동할 수 있는 것은 아니다. 이 절의 topicalization은 phrase 진단이며, head movement까지 “phrase만 이동”으로 묶지 않는다.</p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 조건을 일정하게 유지한 movement 검사</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Context: Which notes will Mina read, the old ones or the new ones?</span><span class="eg-line">[The new notes], Mina will read __.</span><span class="eg-line eg-bad">[The new], Mina will read __ notes.</span></div><p class="note">두 문장은 같은 auxiliary와 목적어 해석을 유지한다. 첫 문장은 목적어 NP 전체를 옮겼지만 둘째는 determiner와 adjective만 떼어 냈다. 단순히 어순이 이상한 문장을 만드는 것보다 한 조건만 바꾼 대조가 구조적 차이를 확인하는 데 더 적절하다.</p><p class="note">VP-preposing은 auxiliary를 남기는 형태로 검사한다: Mina said she would [read the notes], and [read the notes] she would __. read만 옮기고 the notes를 남기는 결과와 비교한다.</p><p class="note">movement는 담화와 구문에 제약된다. <u>constituent라고 모든 위치로 이동할 수 있는 것은 아니다.</u> 이 절의 topicalization은 phrase 진단이며, head movement까지 “phrase만 이동”으로 묶지 않는다.</p></div></details>
   </div>
 </div>
 
@@ -352,7 +352,7 @@ details.concept > div{padding:4px 10px 8px}
 <div class="eg" lang="en"><span class="eg-line">(4) I am feeling thirsty.</span><span class="eg-line">(5) Should I save my last cola till later?</span><span class="eg-line">(6) [I am feeling thirsty] but [should I save my last cola till later]?</span></div>
 <p class="note">대괄호는 학습을 위해 추가했다. <strong>but 양옆에서 연결되는 단위는 각각 절 전체다.</strong> (4)는 진술, (5)는 질문이지만, 발화가 하는 일이 다르다는 사실만으로 서로 다른 통사 범주라고 결론 내릴 수 없다.</p>
 <h3 class="c-title">2. 범주와 기능, TP와 CP를 먼저 구별한다</h3>
-<p class="note">Category는 AP(형용사구), AdvP(부사구), NP/DP(명사 표현), TP, CP처럼 ‘어떤 종류의 통사 단위인가’를 표시한다. Function은 subject·complement·adjunct처럼 ‘다른 요소와 어떤 관계를 맺는가’를 표시한다. 2018 문항은 category를, <a href="./phrase-structure_study.html?returnTo=constituency_study.html%23coordination-exam-depth#complement-adjunct-depth">2022 A7은 complement/adjunct 기능과 one 대용 범위</a>를 중심으로 묻는다. 같은 coordination이라도 문제의 조건을 먼저 읽어야 한다.</p>
+<p class="note">Category는 AP(형용사구), AdvP(부사구), NP/DP(명사 표현), TP, CP처럼 ‘어떤 종류의 통사 단위인가’를 표시한다. Function은 subject·complement·adjunct처럼 ‘다른 요소와 어떤 관계를 맺는가’를 표시한다. <u>2018 문항은 category를,</u> <a href="./phrase-structure_study.html?returnTo=constituency_study.html%23coordination-exam-depth#complement-adjunct-depth">2022 A7은 complement/adjunct 기능과 one 대용 범위</a>를 중심으로 묻는다. 같은 coordination이라도 문제의 조건을 먼저 읽어야 한다.</p>
 <p class="note">TP(Tense Phrase)는 주어와 시제·조동사, 술어를 포함하는 절의 층이다. <span lang="en">Mary likes poems</span>의 likes에는 현재시제·일치 형태가 나타난다. CP는 그 TP 바깥에 C(complementizer) 층을 더한 구조다. 원문 (3)의 <span lang="en">that Mary likes poems</span>에서는 that이 C이고 Mary likes poems가 그 안의 TP다. <a href="https://etwiki.net/concept.html?term=CP&amp;return=linguistics_2018_A12">CP 사전 항목</a>에서 용어를 확인할 수 있다.</p>
 <div class="eg"><span class="eg-line">[CP [C′ [C that] [TP Mary likes poems]]]</span><span class="eg-note">CP와 TP는 경쟁하는 두 이름만이 아니다. 하나의 CP 안에 TP가 포함된다. 바깥 경계까지 묻는지, 안쪽 층만 묻는지 확인한다.</span></div>
 <h3 class="c-title">3. 제시문의 정문·비문은 무엇을 비교하는가?</h3>
@@ -415,7 +415,7 @@ details.concept > div{padding:4px 10px 8px}
         <span class="eg-note">→ NP·PP 등 단일 phrase만 focus position에 들어감.</span>
       </div>
     </div>
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 짧은 답과 생략된 절 / cleft와 pseudocleft</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Who will check the tickets? — [The guard].</span><span class="eg-line">Who will check the tickets? — [The guard will ∅].</span></div><p class="note">첫 답은 NP fragment로 분석한다. 둘째 답에는 check the tickets라는 VP가 생략된 절이 있으므로 the guard will이라는 표면 문자열 자체가 별도 constituent임을 입증하지 않는다.</p><div class="eg"><span class="eg-line">Nora repaired [the bicycle]. → It was [the bicycle] that Nora repaired.</span><span class="eg-line">Nora [repaired the bicycle]. → What Nora did was [repair the bicycle].</span></div><p class="note">it-cleft와 pseudocleft의 focus 자리에는 동일한 category 제약이 적용되는 것이 아니다. VP를 검사하려면 what … did … 구문이 적절하다. 한 종류의 cleft에 들어가지 못했다는 이유로 nonconstituent라고 판정하지 않는다.</p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 짧은 답과 생략된 절 / cleft와 pseudocleft</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Who will check the tickets? — [The guard].</span><span class="eg-line">Who will check the tickets? — [The guard will ∅].</span></div><p class="note">첫 답은 NP fragment로 분석한다. 둘째 답에는 check the tickets라는 VP가 생략된 절이 있으므로 the guard will이라는 표면 문자열 자체가 별도 constituent임을 입증하지 않는다.</p><div class="eg"><span class="eg-line">Nora repaired [the bicycle]. → It was [the bicycle] that Nora repaired.</span><span class="eg-line">Nora [repaired the bicycle]. → What Nora did was [repair the bicycle].</span></div><p class="note">it-cleft와 pseudocleft의 focus 자리에는 동일한 category 제약이 적용되는 것이 아니다. VP를 검사하려면 what … did … 구문이 적절하다. <u>한 종류의 cleft에 들어가지 못했다는 이유로 nonconstituent라고 판정하지 않는다.</u></p></div></details>
   </div>
 </div>
 
@@ -432,7 +432,7 @@ details.concept > div{padding:4px 10px 8px}
       <div class="c-title">두 동사 유형 구분 <span class="badge-ex">진단 대조</span></div>
       <div class="grid col2">
         <div class="grid-item">
-          <div class="gi-title"><span class='kw4'>Phrasal Verb</span> (V + Particle)</div>
+          <div class="gi-title"><a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=phrasal%20verb">Phrasal Verb</a> (여기서는 separable 유형)</div>
           <div class="gi-body">
             <span>여기 제시한 TG 분석의 V–particle–NP 어순에서는 V와 particle이 결합</span>
             <span>NP 목적어가 particle <span class='kw2'>앞·뒤</span> 모두 가능</span>
@@ -442,7 +442,7 @@ details.concept > div{padding:4px 10px 8px}
           </div>
         </div>
         <div class="grid-item">
-          <div class="gi-title"><span class='kw4'>Prepositional Verb</span> (V + PP)</div>
+          <div class="gi-title"><a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=prepositional%20verb">Prepositional Verb</a> (V + PP)</div>
           <div class="gi-body">
             <span>Preposition은 NP와 결합해 PP를 형성</span>
             <span>이 기본 어순에서 NP는 P <span class='kw2'>뒤</span></span>
@@ -520,7 +520,8 @@ details.concept > div{padding:4px 10px 8px}
       <p>Phrasal: NP shift ✅ / Pronoun shift ✅ / 부사 삽입 ❌ / Particle fronting ❌</p>
       <p>Prepositional: NP shift ❌ / Pronoun shift ❌ / 부사 삽입 ✅ / 적절한 PP fronting ✅</p>
     </div>
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 이동 범위와 동사의 의미를 일정하게 유지하기</summary><div style="margin-top:12px"><p class="note">put off는 여기서 ‘연기하다’, climb down은 사다리를 내려가는 의미로 고정한다. 문자 그대로의 위치 의미나 다른 idiom으로 해석을 바꾸면 같은 구조를 검사한 것이 아니다.</p><p class="note">put off the decision → put the decision off는 두 어순의 대조이며, 이 관찰만으로 어떤 요소가 어떻게 이동했는지에 관한 분석까지 확정하지 않는다. 기본 대명사형 put it off와 *put off it도 함께 비교한다.</p><p class="note">위 tree는 particle이 목적어 앞에 있는 TG 분석이다. particle이 목적어 뒤에 놓인 구조까지 이 tree와 완전히 같다고 단정하지 않는다. TG는 분리된 particle의 분석을 별도로 논의한다.</p><p class="note">부사 삽입과 PP fronting은 어휘·담화·부사 종류의 영향을 받는다. 네 진단은 이 표준 예문들의 대조를 설명하며 모든 multiword verb에 일률적으로 적용할 수 있는 분류 기준은 아니다.</p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 이동 범위와 동사의 의미를 일정하게 유지하기</summary><div style="margin-top:12px"><p class="note">put off는 여기서 ‘연기하다’, climb down은 사다리를 내려가는 의미로 고정한다. 문자 그대로의 위치 의미나 다른 idiom으로 해석을 바꾸면 같은 구조를 검사한 것이 아니다.</p><p class="note">put off the decision → put the decision off는 두 어순의 대조이며, 이 관찰만으로 어떤 요소가 어떻게 이동했는지에 관한 분석까지 확정하지 않는다. 기본 대명사형 put it off와 *put off it도 함께 비교한다.</p><p class="note">위 tree는 particle이 목적어 앞에 있는 TG 분석이다. particle이 목적어 뒤에 놓인 구조까지 이 tree와 완전히 같다고 단정하지 않는다. TG는 분리된 particle의 분석을 별도로 논의한다.</p><p class="note">부사 삽입과 PP fronting은 어휘·담화·부사 종류의 영향을 받는다. <u>네 진단은 이 표준 예문들의 대조를 설명하며 모든 multiword verb에 일률적으로 적용할 수 있는 분류 기준은 아니다.</u></p>
+<p class="note"><a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2011_X34" aria-label="2011학년도 34번 관련 기출 문제">11</a> 2011 X34의 look into(조사하다)는 위의 separable put off와 다르다. 문항의 idiomatic reading에서는 into를 의문사와 함께 앞으로 옮길 수 없고, *look it into처럼 V와 into 사이에 목적어를 둘 수도 없다. <u>fronting과 분리 가능성을 별도로 확인</u>해야 하며, 비분리성 하나만으로 look at과 같은 유형이라고 결론 내리지 않는다. 문항의 come across(우연히 발견하다)와 go over(검토하다)도 이 두 조건으로 비교한다.</p></div></details>
   </div>
 </div>
 
@@ -624,6 +625,10 @@ details.concept > div{padding:4px 10px 8px}
       <div class="exam-label">📋 기출 이력</div>
       <p><a href="./phrase-structure_study.html?returnTo=constituency_study.html%23s7#complement-adjunct-depth"><strong>2022학년도 전공 A 7번 · 풀이 보기</strong></a> — (i)은 <span class='kw3'>coordination</span>으로 <span class='kw4'>complement</span>를, (ii)는 <span class='kw3'>one-replacement</span>로 <span class='kw4'>adjunct</span>를 판정한다. Korean의 의미는 각각 language와 nationality이다.</p>
     </div>
+    <details class="concept"><summary class="c-title">자세히 · NP와 N′의 대용 범위 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2014_A04" aria-label="2014학년도 전공 A 4번 관련 기출 문제">14</a></summary><div style="margin-top:12px">
+      <p class="note">2014 A04에서 [the reviewers of Bill’s new book]은 NP 전체이므로 them으로 대용한다. [young composers of jazz]는 뒤의 adjunct인 from Asia를 제외한 N′이며, ones로 대용한 뒤 from America를 붙일 수 있다.</p>
+      <p class="note"><a class="kw4 dictionary-keyword" href="https://etwiki.net/concept.html?term=one-replacement">one-replacement</a>에서는 <u>head가 선택한 complement까지 포함한 N′를 대용하고, determiner나 adjunct가 대용 범위 밖에 남는지</u> 확인한다. 한 단어만 바뀐 것처럼 보여도 N과 N′를 철자 수로 구분하지 않는다. 2022 A07의 Korean one도 같은 범위 판단을 사용한다.</p>
+    </div></details>
     <p class="note"><a href="./phrase-structure_study.html?returnTo=constituency_study.html%23s7#complement-adjunct-depth">Ch.2 ④에서 설명 더 보기 · 생략 가능성과 one-replacement, coordination</a></p>
   </div>
 </div>
@@ -640,7 +645,7 @@ details.concept > div{padding:4px 10px 8px}
     <div class="concept">
       <div class="c-title">Definition (Reinhart 1976)</div>
       <div class="def">Node A <span class='kw1'>c-commands</span> node B iff: (i) A does not dominate B, (ii) B does not dominate A, (iii) the <span class='kw2'>first branching node</span> dominating A also dominates B.</div>
-      <p class="note">간단히: A의 <span class='kw2'>sister</span> node 안에 B가 있으면 A가 B를 c-command한다</p>
+      <p class="note">기본 분기 구조에서는 A의 <span class='kw2'>sister 자체와 그 아래의 node</span>를 살핀다. 최종 판단에는 위의 first branching node 조건과 상호 비지배 조건을 함께 적용한다.</p>
     </div>
     <div class="concept">
       <div class="c-title">Asymmetric vs Symmetric C-command</div>
@@ -813,7 +818,7 @@ details.concept > div{padding:4px 10px 8px}
       <text x="400" y="178" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a2e">women</text>
       <text x="270" y="280" text-anchor="middle" font-size="11" fill="#666">→ "old"가 "men"만 수식 → 늙은 남자 + 여자 (women의 나이는 이 구조만으로 정해지지 않음)</text>
     </svg></div>
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 두 해석의 구조적 차이를 답안에 설명하기</summary><div style="margin-top:12px"><p class="note">망원경 예문의 두 해석은 saw의 뜻을 바꾼 것이 아니다. with the telescope가 어느 노드에 붙는지가 달라진다. NP-attachment이면 pirate를 한정하고, VP-attachment이면 보는 행위를 수식한다.</p><p class="note">NP에 붙는 해석에서는 [the pirate with the telescope] 전체를 him으로 대용할 수 있다. 도구를 나타내는 해석에서는 saw [him] [with the telescope]처럼 PP를 남길 수 있다. 대용 전후에 같은 해석을 유지했는지 확인한다.</p><div class="eg">The PP modifies the noun in the NP-attached structure, but modifies the seeing event in the VP-attached structure. The two attachment sites yield different interpretations.</div><p class="note">답안에는 ① target string ② test와 변형 결과 ③ 구조상 범위 ④ 해석을 쓴다. 뜻을 자연스럽게 풀어 쓰기만 하거나, 괄호만 제시하고 왜 그 범위인지 생략하지 않는다.</p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 두 해석의 구조적 차이를 답안에 설명하기</summary><div style="margin-top:12px"><p class="note">망원경 예문의 두 해석은 saw의 뜻을 바꾼 것이 아니다. with the telescope가 어느 노드에 붙는지가 달라진다. NP-attachment이면 pirate를 한정하고, VP-attachment이면 보는 행위를 수식한다.</p><p class="note">NP에 붙는 해석에서는 [the pirate with the telescope] 전체를 him으로 대용할 수 있다. 도구를 나타내는 해석에서는 saw [him] [with the telescope]처럼 PP를 남길 수 있다. <u>대용 전후에 같은 해석을 유지했는지 확인한다.</u></p><div class="eg">The PP modifies the noun in the NP-attached structure, but modifies the seeing event in the VP-attached structure. The two attachment sites yield different interpretations.</div><p class="note">답안에는 ① target string ② test와 변형 결과 ③ 구조상 범위 ④ 해석을 쓴다. 뜻을 자연스럽게 풀어 쓰기만 하거나, 괄호만 제시하고 왜 그 범위인지 생략하지 않는다.</p></div></details>
   </div>
 </div>
 

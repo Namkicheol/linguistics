@@ -207,10 +207,10 @@ const Q=[
    compare:[{title:"Affix movement",desc:"I → V (affix 내려감); V stays in VP"},{title:"V-movement",desc:"V → I (V 올라감); trace in VP"}]},
 
   {src:"V-movement",cat:"V-to-I · Modal co-occurrence",
-   text:"A sentence like <span class='kw4'>*She will reads the report</span> is ungrammatical because when a Modal occupies I, V-movement cannot place a second inflected V in the same I position.",
+   text:"Under the TG §8.2 V-to-I analysis used here, a sentence like <span class='kw4'>*She will reads the report</span> is ungrammatical because a Modal already occupies I and the lexical verb must remain in its base form.",
    ans:true,
    correct:"Modal이 I를 이미 채우고 있으면 V는 I로 이동할 수 없다. V는 uninflected base form으로 VP에 남는다.",
-   why:"<em>will reads</em>가 비문인 이유는 I를 Modal <em>will</em>이 이미 차지하고 있기 때문입니다. VP의 V는 uninflected base form(<em>read</em>)이어야 합니다. <em>*will reads</em>는 V가 이동했거나 V가 독립적으로 inflected된 경우인데, 둘 다 허용되지 않습니다.",
+   why:"이 V-to-I 분석에서 <em>will</em>이 I를 채우면 V는 그 자리에 올라갈 수 없고, modal 뒤에는 base form <em>read</em>가 필요합니다. <em>*will reads</em>라는 형태 오류만으로 실제 V-movement가 일어났다고 역추론하지는 않습니다.",
    source:"When I contains a Modal, V stays uninflected in VP; an inflected V alongside a Modal violates I-structure."},
 
   /* ── ③ I-to-C ──────────────────────────────────────────── */
@@ -226,7 +226,7 @@ const Q=[
    text:"The sentence <span class='kw4'>*Will she could leave?</span> is ungrammatical because after I-to-C moves <em>will</em> to C, the vacated I position cannot be refilled by another Modal.",
    ans:true,
    correct:"I-to-C 적용 후 남겨진 I 위치는 다른 Modal로 채울 수 없다 — no-refilling condition.",
-   why:"이것이 I-to-C 분석의 핵심 증거인 gap argument입니다. I 위치에는 원래 <em>will</em>이 있었고, <em>will</em>이 C로 이동한 후 그 자리는 비어 있습니다. <em>could</em>를 다시 넣으면 subcategorization violation이 발생합니다.",
+   why:"이것이 I-to-C 분석의 핵심 증거인 gap argument입니다. I 위치에는 원래 <em>will</em>이 있었고, <em>will</em>이 C로 이동한 후 그 자리는 비어 있습니다. <em>could</em>를 다시 넣으면 이 분석의 no-refilling condition을 위반합니다. modal이 뒤 VP의 동사 형태를 제한하는 subcategorization argument와는 구별합니다.",
    source:"The no-refilling convention prevents another Modal from occupying the gap left in I after I-to-C movement."},
 
   {src:"I-to-C",cat:"direct vs indirect question",
@@ -432,10 +432,10 @@ const Q=[
 
   /* ── ⑧ Subjacency & Islands ────────────────────────────── */
   {src:"Subjacency",cat:"bounding node · constraint",
-   text:"The <span class='kw4'>Subjacency Principle</span> states that a moved element cannot cross more than one <span class='kw2'>bounding node</span> (IP and NP in English) in a single movement step.",
+   text:"In the IP/NP bounding-node analysis used in this chapter, the <span class='kw4'>Subjacency Principle</span> prohibits a moved element from crossing more than one <span class='kw2'>bounding node</span> in a single movement step.",
    ans:true,
    correct:"<span class='kw4'>Subjacency</span>: movement이 한 번에 두 개 이상의 bounding node(IP, NP)를 교차하면 비문이 된다.",
-   why:"영어에서 bounding node는 IP(= TP, S)와 NP입니다. long movement는 intermediate Spec,CP를 경유하는 successive cyclic movement로 처리되어 각 단계마다 하나의 bounding node만 교차합니다.",
+   why:"이 장의 TG식 설명은 IP(= TP, S)와 NP를 세고, intermediate Spec,CP를 경유하는 successive cyclic movement를 적용합니다. 2022 B05처럼 TP·NP·CP와 별도 제외 조건을 주는 문항에서는 그 문항의 목록과 조건으로 다시 계산합니다.",
    source:"Subjacency prohibits crossing more than one bounding node per movement step; in English, bounding nodes are IP and NP."},
 
   {src:"Subjacency",cat:"complex NP island",
