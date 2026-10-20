@@ -13,7 +13,7 @@ for(const x of q){for(const k of ['text','correct','why','source'])assert(x[k]?.
 const ids=[...study.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
 assert.equal(ids.length,new Set(ids).size);
 for(const id of ['binding-overview','c-command','principle-a','principle-b','principle-c','governing-category','binding-three-way']) assert(ids.includes(id));
-assert.equal((study.match(/<details class="binding-depth">/g)||[]).length,7);
+assert.equal((study.match(/<details class="binding-depth">/g)||[]).length,9);
 assert(!/<details[^>]*\bopen\b/.test(study));
 assert.equal((study.match(/자세히 보기 ·/g)||[]).length,7);
 assert(study.includes('first branching node = subject DP'));
