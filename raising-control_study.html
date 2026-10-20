@@ -159,7 +159,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
     </div>
     <details class="concept"><summary>자세히 보기 · argument, theta-role, 이동과 PRO 읽기</summary>
 <p><a href="https://etwiki.net/concept.html?term=argument%20structure">argument structure</a>는 술어가 요구하는 참여자 자리를 나타낸다. <a href="https://etwiki.net/concept.html?term=theta-role">theta-role</a>은 그 참여자가 술어와 맺는 의미 관계다. 예를 들어 <em>The guard opened the gate.</em>에서 guard는 여는 사람(Agent), gate는 열리는 대상(Theme)이다. ‘주어’라는 자리 이름과 ‘Agent’라는 역할 이름을 같은 뜻으로 외우지 않는다.</p>
-<p><strong>학습용 비교:</strong> The guard seems [___ to open the gate]. / The guard tries [___ to open the gate]. 두 빈칸 모두 ‘문을 여는 사람’은 guard지만, tries에는 ‘시도하는 사람’이라는 상위 술어의 역할도 있다. Raising은 guard<sub>i</sub> … t<sub>i</sub>처럼 한 NP의 이동 관계로, control은 guard<sub>i</sub> … PRO<sub>i</sub>처럼 두 argument의 지시 관계로 표현한다. t(trace)는 이동 전 자리, PRO는 처음부터 발음되지 않는 하위절 주어다. 같은 i는 같은 사람과 연결된다는 표시이지, 언제나 같은 구조라는 뜻은 아니다.</p>
+<p><strong>학습용 비교:</strong> The guard seems [___ to open the gate]. / The guard tries [___ to open the gate]. 두 빈칸 모두 ‘문을 여는 사람’은 guard지만, tries에는 ‘시도하는 사람’이라는 상위 술어의 역할도 있다. Raising은 guard<sub>i</sub> … t<sub>i</sub>처럼 한 NP의 이동 관계로, control은 guard<sub>i</sub> … PRO<sub>i</sub>처럼 두 argument의 지시 관계로 표현한다. t(trace)는 이동 전 자리, PRO는 처음부터 발음되지 않는 하위절 주어다. <u>같은 i는 같은 사람과 연결된다는 표시이지, 언제나 같은 구조라는 뜻은 아니다.</u></p>
 <p>IP는 주어와 I(시제·일치 정보), VP를 묶은 절이며, Spec,IP는 이 분석의 주어 자리다. Spec은 head와 구별되는 자리 이름이다. NP가 matrix(상위절) Spec,IP로 올라간다는 말은 embedded(하위절) 주어였던 NP가 상위절 주어가 된다는 뜻이다. Case는 명사구가 허용되는 구조적 조건이고 theta-role은 의미 관계이므로 별도로 검사한다.</p>
 <p><strong>조건 변경:</strong> guard를 dummy it으로 바꾸고 하위절을 to rain으로 바꾸면 <em>It seems to rain.</em>은 가능하지만 시도 의미의 <em>*It tries to rain.</em>은 이 진단에서 허용되지 않는다. 단순히 ‘주어가 비었다’보다 상위 술어가 어떤 참여자를 요구하는지가 중요하다.</p>
 <p>개념 사전: <a href="https://etwiki.net/concept.html?term=control%20vs%20raising">control vs raising</a> · <a href="https://etwiki.net/concept.html?term=theta-criterion">Theta Criterion</a>. 실제 발문의 dummy·voice 요구를 적용하는 과정은 <a href="./movement_study.html?returnTo=raising-control_study.html%23theta-criterion#np-movement-raising">Movement의 2025 A-7 풀이</a>에서, 필수 argument와 추가 pronoun의 차이는 <a href="./movement_study.html?returnTo=raising-control_study.html%23theta-criterion#wh-movement">2025 B-5 풀이</a>에서 확인한다.</p>
@@ -279,6 +279,12 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><strong>2012 1차</strong> — <span class='kw1'>SSR</span>: appeared / turned out / be unlikely / be found 등 raising 술어를 control 술어(planned, preferred, keen)와 분류</p>
       <p><strong>2024 1차 A-7</strong> — <span class='kw4'>Case Filter</span>·<span class='kw1'>external argument</span>·<span class='kw1'>NP-movement</span>: raising 술어가 외부논항 없어 acc Case 부여 불가 → NP가 case-assigned subject 자리로 이동</p>
     </div>
+    <details class="concept"><summary>기출 적용 · Case와 theta-role을 나누어 확인하기 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2024_A07" aria-label="2024학년도 전공 A 7번 관련 기출 문제">24</a></summary>
+      <p class="note">2024 A07은 external argument가 없는 passive/raising 술어가 accusative Case를 줄 수 없다는 분석을 제시한다. 다음 대조에서는 <u>it이 상위절 주어 자리를 채우는 것과 하위절 NP가 Case를 받는 것</u>이 별개다.</p>
+      <div class="eg" lang="en"><span class="eg-line">It is believed [that the team will win].</span><span class="eg-line eg-bad">It is believed [the team to win].</span><span class="eg-line">The teamᵢ is believed [tᵢ to win].</span></div>
+      <p class="note">finite that절의 the team은 그 절 안에서 nominative Case를 받는다. infinitival to는 같은 Case를 줄 수 없고 passive believed도 목적격을 주지 못한다. 따라서 expletive it을 넣는 대신 the team을 finite matrix subject 자리로 옮긴다. <strong>절을 finite로 바꾸어 문제를 없애기보다 원래 절 유형을 유지하며 Case를 받는 위치를 찾는 것</strong>이 출제 포인트다.</p>
+      <p class="note"><a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2018_B06" aria-label="2018학년도 전공 B 6번 관련 기출 문제">18</a> 여러 절을 거치는 raising에서는 Case만 보지 않는다. 문항의 Tom appears to Mary to be believed by his friends to brag about himself에서 <u>theta-role의 출처는 가장 낮은 brag</u>다. to Mary와 by his friends는 PP 내부 NP이므로 중간 subject로 세지 않는다. 낮은 subject 자리와 연결된 chain이 himself의 binding도 충족하는지 확인한다. 이 문항의 underlying-position 분석을 기준으로 판단한다.</p>
+    </details>
   </div>
 </div>
 
@@ -293,7 +299,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def"><em>believe, expect, want, report, consider, know</em>류 동사는 infinitival 보문을 취하고, 하위절 주어 NP에 <span class='kw1'>objective/accusative Case</span>(목적격)를 예외적으로 부여한다 — <span class='kw1'>Exceptional Case Marking</span> (ECM). 임용에서는 <span class='kw1'>Subject-to-Object Raising</span> (SOR)으로도 부른다.</div>
+      <div class="def"><em>believe, expect, want, report, consider, know</em>류 동사는 infinitival 보문을 취하고, 하위절 주어 NP에 <span class='kw1'>objective/accusative Case</span>(목적격)를 예외적으로 부여한다 — <span class='kw1'>Exceptional Case Marking</span> (ECM). 일부 자료는 이 구문을 Subject-to-Object Raising (SOR)으로 분류한다. 아래 그림과 비교표는 NP가 하위절 주어 자리에 남아 Case를 받는 ECM 분석을 따른다.</div>
       <p class="note">핵심: matrix verb는 그 NP에 <span class='kw4'>theta-role을 주지 않는다</span>. theta-role은 하위절 전체에 부여되므로, NP는 <span class='kw2'>하위절의 주어</span>로 행동한다.</p>
       <p class="note">표면상 <em>believe + NP + to-VP</em>는 object control(persuade)과 같지만, 아래 진단으로 명확히 갈린다.</p>
     </div>
@@ -446,7 +452,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       </div>
       <p class="note"><strong>(a) object control:</strong> 더 신중하게 일하는 사람은 the assistant다. The director motivated the assistant<sub>i</sub> [PRO<sub>i</sub> to work more carefully]에서 the assistant는 motivate의 목적어이면서 PRO의 controller다.</p>
       <p class="note"><strong>(b) Raising/ECM:</strong> 신뢰할 수 없는 사람이라고 보고되는 대상은 the assistant다. the assistant가 하위절의 overt subject이므로 PRO를 넣지 않는다. 원문의 발문은 control constructions만 고르라고 했으므로 이 문장은 제외한다.</p>
-      <p class="note"><strong>(c) subject control:</strong> 해고하겠다고 위협한 사람은 the director이고, 해고의 대상인 her는 the assistant다. The director<sub>j</sub> threatened the assistant<sub>i</sub> [PRO<sub>j</sub> to dismiss her<sub>i</sub>]로 읽는다. 동사 뒤에 the assistant가 보인다는 이유만으로 object control이라고 판단하면 안 된다.</p>
+      <p class="note"><strong>(c) subject control:</strong> 해고하겠다고 위협한 사람은 the director이고, 해고의 대상인 her는 the assistant다. The director<sub>j</sub> threatened the assistant<sub>i</sub> [PRO<sub>j</sub> to dismiss her<sub>i</sub>]로 읽는다. <u>동사 뒤에 the assistant가 보인다는 이유만으로 object control이라고 판단하면 안 된다.</u></p>
       <p class="note"><strong>threaten의 두 용법:</strong> 위협 행위를 나타내는 위 변형 예문은 subject control이다. 반면 <em>There threatens to be a shortage of clean water.</em>는 부족 사태가 생길 조짐을 나타내는 raising 용법의 변형 예문이다. expletive there를 쓸 수 있다는 점이 raising으로 분석하는 근거다. Radford, p.443, (144j)도 이 용법을 raising으로 제시한다.</p>
     </details>
     <div class="exam">
@@ -530,7 +536,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
         <span class="eg-line">(c) Lena persuaded Max that he should obey his supervisor.</span>
         <span class="eg-line">(d) Lena believed that Max was obedient to his supervisor.</span>
       </div>
-      <p class="note">두 문장을 finite clause로 바꿔 표현하면 차이가 분명해진다. (c)의 Max는 that절 밖의 목적어이고, (d)의 Max는 that절 안의 주어다. 두 동사 모두 finite CP를 허용하므로 ‘that절 가능 여부’만 외우면 구별할 수 없다.</p>
+      <p class="note">두 문장을 finite clause로 바꿔 표현하면 차이가 분명해진다. (c)의 Max는 that절 밖의 목적어이고, (d)의 Max는 that절 안의 주어다. <u>두 동사 모두 finite CP를 허용하므로 ‘that절 가능 여부’만 외우면 구별할 수 없다.</u></p>
       <div class="eg">
         <span class="eg-line eg-ok">The analyst believes there to be a mismatch in the figures.</span>
         <span class="eg-line eg-bad">The analyst persuaded there to be a mismatch in the figures.</span>
@@ -542,6 +548,11 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><strong>2013 1차</strong> — <span class='kw1'>OC</span>: <em>You allowed us to come in</em> / <em>He ordered us to get out</em> 등 object control</p>
       <p><strong>2019학년도 1차 전공 B 6번</strong> — <span class='kw4'>object control</span> vs <span class='kw1'>S-O Raising</span>: 변형 예문 <em>Lena persuaded Max to obey his supervisor</em>(OC) vs <em>Lena believed Max to be obedient to his supervisor</em>(SOR), <em>The director motivated the assistant …</em>(OC)</p>
     </div>
+    <details class="concept"><summary>기출 대조 · Passive라고 control 관계가 사라지지는 않는다 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2009_X29" aria-label="2009학년도 29번 관련 기출 문제">09</a></summary>
+      <div class="eg" lang="en"><span class="eg-line">Johnᵢ was said [tᵢ to have solved all of the questions].</span><span class="eg-line">Johnᵢ was told [PROᵢ to solve all of the questions].</span><span class="eg-note" lang="ko">괄호는 하위절 주어의 차이를 보이는 축약 표기다. 둘째 문장의 passive object-movement trace는 여기서 생략했다.</span></div>
+      <p class="note">두 문장 모두 surface subject가 있지만, <u>said의 John은 하위절 subject와 이동 관계이고 told의 John은 ‘지시를 받은 대상’으로서 하위절 PRO를 control</u>한다. tell의 목적어가 passive subject로 이동했다고 해서 하위절 PRO까지 raising trace로 바뀌는 것은 아니다.</p>
+      <p class="note">원문의 The earthquake was said to have hit the city는 가능하지만 *The earthquake was told to hit the city는 해당 지시 의미에서 허용되지 않는다. 지진이 도시를 덮쳤다는 내용은 보고할 수 있어도 지진을 지시받는 참여자로 선택할 수 없기 때문이다. <strong>상위 술어가 그 NP를 의미상 선택하는가</strong>를 비교하면 -ed 형태만으로 분류하는 오류를 피할 수 있다.</p>
+    </details>
   </div>
 </div>
 
@@ -594,7 +605,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
         <span class="eg-line">(b) [PRO to prepare himself for the interview], Alex should consider coaching.</span>
         <span class="eg-line">(c) Mina is difficult [PRO to work with].</span>
       </div>
-      <p class="note"><strong>(a) optional control:</strong> 기출에서 제시한 optional control의 기준을 적용하면, PRO는 Mina를 가리킬 수도 있고 일반적인 사람들을 가리킬 수도 있다. 문장에 Mina라는 NP가 존재한다는 사실만으로 obligatory control이 되지는 않는다.</p>
+      <p class="note"><strong>(a) optional control:</strong> 기출에서 제시한 optional control의 기준을 적용하면, PRO는 Mina를 가리킬 수도 있고 일반적인 사람들을 가리킬 수도 있다. <u>문장에 Mina라는 NP가 존재한다는 사실만으로 obligatory control이 되지는 않는다.</u></p>
       <p class="note"><strong>(b) non-arbitrary, obligatory control:</strong> 면접을 준비하는 사람은 Alex 자신이다. 목적을 나타내는 절의 PRO는 Alex를 가리키며, himself 역시 그 해석을 뒷받침한다. ‘누구든 Alex를 준비시킨다’라는 arbitrary 해석으로 답하지 않는다.</p>
       <p class="note"><strong>(c) arbitrary PRO:</strong> Mina는 함께 일하는 상대다. work with 뒤의 목적어 자리와 Mina가 연결되고, PRO는 일반적으로 Mina와 함께 일하는 사람으로 해석된다. 따라서 matrix subject가 Mina라고 해서 PRO=Mina로 두면 안 된다.</p>
       <p class="note"><strong>풀이 순서:</strong> 먼저 하위 술어의 의미상 주어를 찾고, 반드시 특정 matrix NP를 가리켜야 하는지 확인한다. 원문이 제시한 arbitrary/non-arbitrary 및 obligatory/optional 구분에 맞춰 답한다. 이 문항의 분류 기준을 다른 모든 PRO 구문에 무조건 일반화하지 않는다.</p>
