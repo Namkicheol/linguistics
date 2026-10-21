@@ -31,6 +31,13 @@ for (const id of ['theta-criterion', 'ssr', 'sor-ecm', 'subject-control', 'objec
 const tree = require('./html-structure.cjs')(study);
 const concepts = tree.all(tree.root, n => n.tag === 'details' && tree.hasClass(n, 'concept'));
 const summary = n => n.children.find(c => c.tag === 'summary');
+const bodyText = n => n.children.filter(c => c !== summary(n))
+  .map(c => tree.text(c)).join(' ').replace(/&(?:nbsp|#160|#xA0);/gi, ' ').trim();
+const exampleContracts = {
+  'subject-control': ['The director motivated the assistant', 'The director reported the assistant', 'threatened the assistant'],
+  'object-control': ['Lena persuaded Max to obey', 'Lena believed Max to be obedient', 'The analyst believes there'],
+  pro: ['Mina', 'to prepare himself for the interview', 'Mina is difficult']
+};
 for (const sectionId of ['subject-control', 'object-control', 'pro']) {
   const section = tree.all(tree.root, n => n.attrs.id === sectionId);
   assert.equal(section.length, 1, sectionId + ': unique section');
@@ -39,6 +46,7 @@ for (const sectionId of ['subject-control', 'object-control', 'pro']) {
       summary(n) && tree.hasClass(summary(n), 'c-title') && tree.text(summary(n)).includes('기출 변형 예문'));
   assert.equal(examples.length, 1, sectionId + ': one original adapted-example disclosure');
   const detail = tree.source(examples[0]);
+  for (const marker of exampleContracts[sectionId]) assert(detail.includes(marker), sectionId + ': owns adapted content ' + marker);
   assert(detail.includes('변형 예문'));
   assert(detail.includes('2019학년도 1차 전공 B 6번'));
   assert(detail.includes('https://etwiki.net/index.html?id=linguistics_2019_B06'));
@@ -49,7 +57,7 @@ for (const sectionId of ['subject-control', 'object-control', 'pro']) {
 // Additional concept disclosures are valid, but each must have a summary and content.
 for (const concept of concepts) {
   assert(summary(concept) && tree.text(summary(concept)).trim(), 'nonempty direct summary');
-  assert(concept.children.some(n => n !== summary(concept)), 'disclosure has body content');
+  assert(bodyText(concept), 'disclosure has meaningful body content');
   assert(!tree.source(concept).includes('github.com/Namkicheol/testmaster'), 'no private original links');
 }
 for (const [sectionId, title] of [
@@ -65,9 +73,12 @@ for (const [sectionId, title] of [
   assert(tree.all(added[0], n => n.tag === 'p').length > 0, sectionId + ': explanatory body');
 }
 for (const topic of ['ssr', 'sor-ecm', 'subject-control', 'object-control']) {
-  const folds = tree.all(tree.root, n => n.tag === 'details' && tree.hasClass(n, 'types-examples') && n.attrs['data-topic'] === topic);
+  const matchingSection = tree.all(tree.root, n => n.attrs.id === topic);
+  assert.equal(matchingSection.length, 1, topic + ': unique owning section');
+  const folds = tree.all(matchingSection[0], n => n.tag === 'details' && tree.hasClass(n, 'types-examples') && n.attrs['data-topic'] === topic);
   assert.equal(folds.length, 1, topic + ': unique new examples');
   assert(summary(folds[0]) && tree.text(summary(folds[0])).includes('종류와 예문'));
+  assert(bodyText(folds[0]), topic + ': meaningful example body');
   assert(tree.all(folds[0], n => tree.hasClass(n, 'types-source') && n.tag === 'details').length === 1, topic + ': folded source');
   assert(tree.all(folds[0], n => n.tag === 'strong').length > 0, topic + ': marked examples');
   assert(!tree.source(folds[0]).includes('github.com/Namkicheol/testmaster'), topic + ': no private original links');
