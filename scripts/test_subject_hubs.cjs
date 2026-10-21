@@ -32,10 +32,10 @@ for (const file of pages) {
   }
 }
 assert.equal((read('syntax.html').match(/class="chapter-row"/g) || []).length, 5);
-assert.equal((read('school-grammar.html').match(/class="chapter-row"/g) || []).length, 7);
+assert.equal((read('school-grammar.html').match(/class="chapter-row"/g) || []).length, 8);
 const lessonIds = {
   'syntax-diagnostics_study.html': ['constituent-tests', 'raising-control-diagnostics'],
-  'school-grammar_study.html': ['tense-aspect', 'modals-negation', 'passive-discourse', 'relative-content', 'tough-extraposition', 'inversion', 'multiword-verbs'],
+  'school-grammar_study.html': ['tense-aspect', 'modals-negation', 'passive-discourse', 'relative-content', 'tough-extraposition', 'inversion', 'multiword-verbs', 'definite-reference'],
 };
 for (const [file, ids] of Object.entries(lessonIds)) {
   const html = read(file);
@@ -45,7 +45,7 @@ for (const [file, ids] of Object.entries(lessonIds)) {
   }
   assert.equal((html.match(/class="core-definition"/g)||[]).length, ids.length);
   assert.equal((html.match(/class="condition-label"/g)||[]).length, ids.length);
-  const expectedSourceNotes = file === 'school-grammar_study.html' ? 10 : ids.length;
+  const expectedSourceNotes = file === 'school-grammar_study.html' ? 11 : ids.length;
   assert.equal((html.match(/class="source-note"/g)||[]).length, expectedSourceNotes);
   assert(html.includes('학습용 예문'));
   for (const svg of html.matchAll(/<svg([\s\S]*?)<\/svg>/g)) {
@@ -58,7 +58,7 @@ for (const [file, ids] of Object.entries(lessonIds)) {
 for (const id of ['lexical-aspect','future-time-clauses','given-new-contract','end-weight']) assert(read('school-grammar_study.html').includes(`id="${id}"`));
 for (const id of ['linguistics_2018_B04','linguistics_2026_A09','linguistics_2024_B05','linguistics_2026_B04']) assert(read('school-grammar_study.html').includes('https://etwiki.net/index.html?id=' + id));
 assert(read('school-grammar_study.html').includes('viewBox="0 0 320 340"'));
-console.log(`PASS: ${checked} local links/anchors; 9 source-backed lesson units, 4 accessible SVGs, exact exam links, private source boundary.`);
+console.log(`PASS: ${checked} local links/anchors; 10 source-backed lesson units, 4 accessible SVGs, exact exam links, private source boundary.`);
 
 // Execute the actual shared script against DOM-shaped mocks, including nested disclosures.
 const script = read('study-return.js');
