@@ -32,10 +32,10 @@ for (const file of pages) {
   }
 }
 assert.equal((read('syntax.html').match(/class="chapter-row"/g) || []).length, 5);
-assert.equal((read('school-grammar.html').match(/class="chapter-row"/g) || []).length, 8);
+assert.equal((read('school-grammar.html').match(/class="chapter-row"/g) || []).length, 9);
 const lessonIds = {
   'syntax-diagnostics_study.html': ['constituent-tests', 'raising-control-diagnostics'],
-  'school-grammar_study.html': ['tense-aspect', 'modals-negation', 'passive-discourse', 'relative-content', 'tough-extraposition', 'inversion', 'multiword-verbs', 'definite-reference'],
+  'school-grammar_study.html': ['tense-aspect', 'modals-negation', 'passive-discourse', 'relative-content', 'tough-extraposition', 'inversion', 'multiword-verbs', 'definite-reference', 'adjective-distribution'],
 };
 for (const [file, ids] of Object.entries(lessonIds)) {
   const html = read(file);
@@ -45,7 +45,7 @@ for (const [file, ids] of Object.entries(lessonIds)) {
   }
   assert.equal((html.match(/class="core-definition"/g)||[]).length, ids.length);
   assert.equal((html.match(/class="condition-label"/g)||[]).length, ids.length);
-  const expectedSourceNotes = file === 'school-grammar_study.html' ? 11 : ids.length;
+  const expectedSourceNotes = file === 'school-grammar_study.html' ? 12 : ids.length;
   assert.equal((html.match(/class="source-note"/g)||[]).length, expectedSourceNotes);
   assert(html.includes('학습용 예문'));
   for (const svg of html.matchAll(/<svg([\s\S]*?)<\/svg>/g)) {
@@ -58,7 +58,7 @@ for (const [file, ids] of Object.entries(lessonIds)) {
 for (const id of ['lexical-aspect','future-time-clauses','given-new-contract','end-weight']) assert(read('school-grammar_study.html').includes(`id="${id}"`));
 for (const id of ['linguistics_2018_B04','linguistics_2026_A09','linguistics_2024_B05','linguistics_2026_B04']) assert(read('school-grammar_study.html').includes('https://etwiki.net/index.html?id=' + id));
 assert(read('school-grammar_study.html').includes('viewBox="0 0 320 340"'));
-console.log(`PASS: ${checked} local links/anchors; 10 source-backed lesson units, 4 accessible SVGs, exact exam links, private source boundary.`);
+console.log(`PASS: ${checked} local links/anchors; 11 source-backed lesson units, 4 accessible SVGs, exact exam links, private source boundary.`);
 
 // Execute the actual shared script against DOM-shaped mocks, including nested disclosures.
 const script = read('study-return.js');
@@ -247,3 +247,25 @@ assert.equal(multiwordReturn.pathname, multiwordUrl.pathname);
 assert.equal(multiwordReturn.hash, '#multiword-verbs');
 assert.equal(multiwordReturn.searchParams.get('returnTo'), 'school-grammar.html');
 console.log('PASS: UNIT07 exact hub, return and dictionary study-note routes.');
+
+// UNIT09 follows the same actual navigation script and dictionary return contract.
+const adjectiveEntry = relativeHub.links.find(a => new URL(a.href, base + 'school-grammar.html').hash === '#adjective-distribution');
+assert(adjectiveEntry);
+const adjectiveUrl = new URL(adjectiveEntry.href, base + 'school-grammar.html');
+const adjectivePage = navigationPage(adjectiveUrl.href, base + 'school-grammar.html');
+assert.equal(adjectivePage.button.href, base + 'school-grammar.html');
+for (const term of ['attributive-only adjective','degree modifier']) {
+  const keyword = adjectivePage.links.find(a => new URL(a.href, adjectiveUrl).searchParams.get('term') === term);
+  assert(keyword);
+  const dictionary = new URL(keyword.href, adjectiveUrl);
+  assert.equal(dictionary.origin, 'https://etwiki.net');
+  assert.equal(dictionary.pathname, '/concept.html');
+  const back = new URL(dictionary.searchParams.get('studyNoteReturn'));
+  assert.equal(back.origin, origin);
+  assert.equal(back.pathname, adjectiveUrl.pathname);
+  assert.equal(back.hash, '#adjective-distribution');
+  assert.equal(back.searchParams.get('returnTo'), 'school-grammar.html');
+  const restored = navigationPage(back.href, dictionary.href);
+  assert.equal(restored.button.href, base + 'school-grammar.html');
+}
+console.log('PASS: UNIT09 hub entry and both dictionary round trips preserve the exact source unit and hub.');
