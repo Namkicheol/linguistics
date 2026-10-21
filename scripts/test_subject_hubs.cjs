@@ -140,11 +140,14 @@ for (const [hub, lesson] of [['school-grammar.html','school-grammar_study.html']
     for (const route of routes) {
       const matches = [...new Set(blocks.flatMap(block => tree.all(block, n => n.tag === 'a' && n.attrs.href)))].filter(n => {
         const target = new URL(n.attrs.href.replaceAll('&amp;', '&'), lessonUrl);
-        return target.pathname.split('/').pop() + target.hash === route;
+        const expected = new URL(route, lessonUrl);
+        return target.origin === expected.origin && target.pathname === expected.pathname && target.hash === expected.hash;
       });
       assert.equal(matches.length, 1, unitId + '/' + role + ': unique required route ' + route);
       const target = new URL(matches[0].attrs.href.replaceAll('&amp;', '&'), lessonUrl);
+      assert(target.searchParams.has('returnTo'), 'required route has return destination');
       const back = new URL(target.searchParams.get('returnTo'), target);
+      assert.equal(back.origin, new URL(lessonUrl).origin, 'Return keeps the source origin');
       assert.equal(back.pathname, new URL(lessonUrl).pathname);
       assert.equal(back.hash, '#' + unitId, 'Return identifies the actual authored source unit');
     }
