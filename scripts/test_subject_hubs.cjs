@@ -123,7 +123,32 @@ for (const [hub, lesson] of [['school-grammar.html','school-grammar_study.html']
     const back = url.searchParams.get('returnTo');
     return back && new URL(back,url).pathname.endsWith('/' + lesson);
   });
-  assert.equal(nestedLinks.length, hub === 'syntax.html' ? 7 : 1);
+  // Check required routes in their authored unit/role, not the whole-page total.
+  const tree = require('./html-structure.cjs')(read(lesson));
+  const contracts = hub === 'syntax.html' ? [
+    ['constituent-tests', 'exam-links', ['constituency_study.html#s2', 'constituency.html']],
+    ['constituent-tests', 'detail-content', ['constituency_study.html#s4', 'phrase-structure_study.html#complement-adjunct']],
+    ['raising-control-diagnostics', 'exam-links', ['raising-control_study.html#ssr', 'raising-control.html']],
+    ['raising-control-diagnostics', 'detail-content', ['raising-control_study.html#ssr']],
+    ['raising-control-diagnostics', 'types-examples', ['raising-control_study.html#subject-control']],
+  ] : [['passive-discourse', 'detail-content', ['movement_study.html#np-movement-passive']]];
+  for (const [unitId, role, routes] of contracts) {
+    const units = tree.all(tree.root, n => n.attrs.id === unitId);
+    assert.equal(units.length, 1, unitId + ': unique source unit');
+    const blocks = tree.all(units[0], n => tree.hasClass(n, role));
+    assert(blocks.length > 0, unitId + ': has ' + role);
+    for (const route of routes) {
+      const matches = [...new Set(blocks.flatMap(block => tree.all(block, n => n.tag === 'a' && n.attrs.href)))].filter(n => {
+        const target = new URL(n.attrs.href.replaceAll('&amp;', '&'), lessonUrl);
+        return target.pathname.split('/').pop() + target.hash === route;
+      });
+      assert.equal(matches.length, 1, unitId + '/' + role + ': unique required route ' + route);
+      const target = new URL(matches[0].attrs.href.replaceAll('&amp;', '&'), lessonUrl);
+      const back = new URL(target.searchParams.get('returnTo'), target);
+      assert.equal(back.pathname, new URL(lessonUrl).pathname);
+      assert.equal(back.hash, '#' + unitId, 'Return identifies the actual authored source unit');
+    }
+  }
   for (const link of nestedLinks) {
     const nextUrl = new URL(link.href,lessonUrl).href;
     const next = navigationPage(nextUrl,lessonUrl);
