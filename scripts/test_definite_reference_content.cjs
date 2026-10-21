@@ -44,12 +44,12 @@ const dictionaries = anchors.filter(n => n.attrs.href?.includes('/concept.html?t
 assert.deepEqual(dictionaries.map(n => new URL(n.attrs.href).searchParams.get('term')).sort(), ['associative use','definite article']);
 const hubHtml = fs.readFileSync('school-grammar.html','utf8');
 const hub = parse(hubHtml);
-assert.equal(hub.all(hub.root,n => hub.hasClass(n,'chapter-row')).length,8);
-assert(hubHtml.includes('핵심 8개 단원') && hubHtml.includes('위의 8개 단원'));
+assert.equal(hub.all(hub.root,n => hub.hasClass(n,'chapter-row')).length,9);
+assert(hubHtml.includes('핵심 9개 단원') && hubHtml.includes('위의 9개 단원'));
 const route = hub.all(hub.root,n => n.tag === 'a' && n.attrs.href?.includes('#definite-reference'));
 assert.equal(route.length,1);
 const u = new URL(route[0].attrs.href.replaceAll('&amp;','&'),'https://namkicheol.github.io/linguistics/');
 assert.equal(u.pathname,'/linguistics/school-grammar_study.html');
 assert.equal(u.searchParams.get('returnTo'),'school-grammar.html');
 assert.equal(u.searchParams.get('returnLabel'),'학교문법 심화');
-console.log('PASS: UNIT08 four closed sections, four original comparison sets, nested bibliography, five exact labels, semantic limits, verified routes and eight-unit hub.');
+console.log('PASS: UNIT08 four closed sections, four original comparison sets, nested bibliography, five exact labels, semantic limits, verified routes and nine-unit hub.');
