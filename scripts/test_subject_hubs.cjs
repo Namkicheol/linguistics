@@ -32,10 +32,10 @@ for (const file of pages) {
   }
 }
 assert.equal((read('syntax.html').match(/class="chapter-row"/g) || []).length, 5);
-assert.equal((read('school-grammar.html').match(/class="chapter-row"/g) || []).length, 5);
+assert.equal((read('school-grammar.html').match(/class="chapter-row"/g) || []).length, 6);
 const lessonIds = {
   'syntax-diagnostics_study.html': ['constituent-tests', 'raising-control-diagnostics'],
-  'school-grammar_study.html': ['tense-aspect', 'modals-negation', 'passive-discourse', 'relative-content', 'tough-extraposition'],
+  'school-grammar_study.html': ['tense-aspect', 'modals-negation', 'passive-discourse', 'relative-content', 'tough-extraposition', 'inversion'],
 };
 for (const [file, ids] of Object.entries(lessonIds)) {
   const html = read(file);
@@ -45,7 +45,7 @@ for (const [file, ids] of Object.entries(lessonIds)) {
   }
   assert.equal((html.match(/class="core-definition"/g)||[]).length, ids.length);
   assert.equal((html.match(/class="condition-label"/g)||[]).length, ids.length);
-  const expectedSourceNotes = file === 'school-grammar_study.html' ? 8 : ids.length;
+  const expectedSourceNotes = file === 'school-grammar_study.html' ? 9 : ids.length;
   assert.equal((html.match(/class="source-note"/g)||[]).length, expectedSourceNotes);
   assert(html.includes('학습용 예문'));
   for (const svg of html.matchAll(/<svg([\s\S]*?)<\/svg>/g)) {
@@ -58,7 +58,7 @@ for (const [file, ids] of Object.entries(lessonIds)) {
 for (const id of ['lexical-aspect','future-time-clauses','given-new-contract','end-weight']) assert(read('school-grammar_study.html').includes(`id="${id}"`));
 for (const id of ['linguistics_2018_B04','linguistics_2026_A09','linguistics_2024_B05','linguistics_2026_B04']) assert(read('school-grammar_study.html').includes('https://etwiki.net/index.html?id=' + id));
 assert(read('school-grammar_study.html').includes('viewBox="0 0 320 340"'));
-console.log(`PASS: ${checked} local links/anchors; 7 source-backed lesson units, 4 accessible SVGs, exact exam links, private source boundary.`);
+console.log(`PASS: ${checked} local links/anchors; 8 source-backed lesson units, 4 accessible SVGs, exact exam links, private source boundary.`);
 
 // Execute the actual shared script against DOM-shaped mocks, including nested disclosures.
 const script = read('study-return.js');
@@ -202,3 +202,25 @@ assert.equal(returnNote.pathname, toughUrl.pathname);
 assert.equal(returnNote.hash, '#tough-extraposition');
 assert.equal(returnNote.searchParams.get('returnTo'), 'school-grammar.html');
 console.log('PASS: UNIT05 hub return and dictionary study-note return preserve the authored source section.');
+
+// UNIT06: inspect the authored unit and its own entry, not global link counts.
+const inversionTree = require('./html-structure.cjs')(read('school-grammar_study.html'));
+const inversionUnits = inversionTree.all(inversionTree.root, n => n.attrs.id === 'inversion');
+assert.equal(inversionUnits.length, 1);
+const inversionUnit = inversionUnits[0];
+for (const id of ['inversion-so-types','inversion-negative-types','inversion-locative-types','inversion-discourse','inversion-there-boundary','inversion-comparisons','inversion-sources']) {
+  const ds = inversionTree.all(inversionUnit, n => n.tag === 'details' && n.attrs.id === id);
+  assert.equal(ds.length, 1, id + ': unique disclosure in UNIT06');
+  assert(!Object.hasOwn(ds[0].attrs, 'open'), id + ': initially closed');
+}
+assert.equal(inversionTree.all(inversionUnit, n => inversionTree.hasClass(n, 'self-check')).length, 0);
+assert.equal(inversionTree.all(inversionUnit, n => n.tag === 'u').length, 0);
+const inversionEntry = relativeHub.links.filter(a => new URL(a.href, base).hash === '#inversion');
+assert.equal(inversionEntry.length, 1);
+const inversionUrl = new URL(inversionEntry[0].href, base);
+assert.equal(inversionUrl.pathname, '/linguistics/school-grammar_study.html');
+assert.equal(navigationPage(inversionUrl.href, base + 'school-grammar.html').button.href, base + 'school-grammar.html');
+const inversionLinks = inversionTree.all(inversionUnit, n => n.tag === 'a' && n.attrs.href).map(n => new URL(n.attrs.href.replaceAll('&amp;', '&'), inversionUrl));
+for (const id of ['linguistics_2010_X31','linguistics_2013_X32','linguistics_2017_A12','linguistics_2021_A07']) assert(inversionLinks.some(u => u.hostname === 'etwiki.net' && u.searchParams.get('id') === id));
+assert(inversionLinks.some(u => u.pathname === inversionUrl.pathname && u.hash === '#passive-discourse'));
+console.log('PASS: UNIT06 scoped disclosures, explanatory comparisons, four exam routes, UNIT03 connection and hub return.');
