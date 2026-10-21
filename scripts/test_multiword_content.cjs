@@ -25,8 +25,13 @@ for (const [id, expected] of [['multiword-object-placement', 1], ['multiword-fro
   const sets = examples(id);
   assert.equal(sets.length, expected, id + ': examples belong to this section');
   for (const set of sets) {
-    assert(tree.text(set).includes('학습용 대조 예문'));
-    assert(tree.text(set).includes('새로 작성'));
+    if (id === 'multiword-fronting' && set === sets[1]) {
+      assert(tree.text(set).includes('기출 변형 예문 · 2011학년도 1차 34번'));
+      assert(!tree.text(set).includes('새로 작성'));
+    } else {
+      assert(tree.text(set).includes('학습용 대조 예문'));
+      assert(tree.text(set).includes('새로 작성'));
+    }
     assert(tree.all(set, n => n.tag === 'strong').length >= 2);
   }
 }
@@ -71,8 +76,8 @@ assert.equal(entry.origin, base.origin);
 assert.equal(entry.pathname, base.pathname);
 assert.equal(entry.searchParams.get('returnTo'), 'school-grammar.html');
 assert.equal(entry.searchParams.get('returnLabel'), '학교문법 심화');
-assert.equal(hub.all(hub.root, n => hub.hasClass(n, 'chapter-row')).length, 7);
+assert.equal(hub.all(hub.root, n => hub.hasClass(n, 'chapter-row')).length, 8);
 const hubHtml = fs.readFileSync('school-grammar.html', 'utf8');
-assert(hubHtml.includes('핵심 7개 단원') && hubHtml.includes('위의 7개 단원'));
-assert(!/핵심 [1-6]개 단원|위의 [1-6]개 단원/.test(hubHtml));
-console.log('PASS: UNIT07 four closed scoped disclosures, four authored comparison sets, two diagnostics, scoped table, lexical/analysis limits, exact exam/dictionary routes and seven-unit hub.');
+assert(hubHtml.includes('핵심 8개 단원') && hubHtml.includes('위의 8개 단원'));
+assert(!/핵심 [1-7]개 단원|위의 [1-7]개 단원/.test(hubHtml));
+console.log('PASS: UNIT07 four closed scoped disclosures, four comparison sets with exact provenance labels, two diagnostics, scoped table, lexical/analysis limits, exact exam/dictionary routes and eight-unit hub.');
