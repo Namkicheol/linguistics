@@ -32,10 +32,10 @@ for (const file of pages) {
   }
 }
 assert.equal((read('syntax.html').match(/class="chapter-row"/g) || []).length, 5);
-assert.equal((read('school-grammar.html').match(/class="chapter-row"/g) || []).length, 3);
+assert.equal((read('school-grammar.html').match(/class="chapter-row"/g) || []).length, 5);
 const lessonIds = {
   'syntax-diagnostics_study.html': ['constituent-tests', 'raising-control-diagnostics'],
-  'school-grammar_study.html': ['tense-aspect', 'modals-negation', 'passive-discourse'],
+  'school-grammar_study.html': ['tense-aspect', 'modals-negation', 'passive-discourse', 'relative-content', 'tough-extraposition'],
 };
 for (const [file, ids] of Object.entries(lessonIds)) {
   const html = read(file);
@@ -45,8 +45,8 @@ for (const [file, ids] of Object.entries(lessonIds)) {
   }
   assert.equal((html.match(/class="core-definition"/g)||[]).length, ids.length);
   assert.equal((html.match(/class="condition-label"/g)||[]).length, ids.length);
-  const sourceNotesPerUnit = file === 'school-grammar_study.html' ? 2 : 1;
-  assert.equal((html.match(/class="source-note"/g)||[]).length, ids.length * sourceNotesPerUnit);
+  const expectedSourceNotes = file === 'school-grammar_study.html' ? 8 : ids.length;
+  assert.equal((html.match(/class="source-note"/g)||[]).length, expectedSourceNotes);
   assert(html.includes('학습용 예문'));
   for (const svg of html.matchAll(/<svg([\s\S]*?)<\/svg>/g)) {
     assert(svg[1].includes('role="img"'));
@@ -58,7 +58,7 @@ for (const [file, ids] of Object.entries(lessonIds)) {
 for (const id of ['lexical-aspect','future-time-clauses','given-new-contract','end-weight']) assert(read('school-grammar_study.html').includes(`id="${id}"`));
 for (const id of ['linguistics_2018_B04','linguistics_2026_A09','linguistics_2024_B05','linguistics_2026_B04']) assert(read('school-grammar_study.html').includes('https://etwiki.net/index.html?id=' + id));
 assert(read('school-grammar_study.html').includes('viewBox="0 0 320 340"'));
-console.log(`PASS: ${checked} local links/anchors; 5 source-backed lesson units, 3 accessible SVGs, exact exam links, private source boundary.`);
+console.log(`PASS: ${checked} local links/anchors; 7 source-backed lesson units, 4 accessible SVGs, exact exam links, private source boundary.`);
 
 // Execute the actual shared script against DOM-shaped mocks, including nested disclosures.
 const script = read('study-return.js');
@@ -153,3 +153,27 @@ const untouched = ['https://evil.test/x?returnTo=school-grammar_study.html', './
 const sample = navigationPage(base + 'school-grammar_study.html?returnTo=school-grammar.html','',script,untouched);
 assert.deepEqual(sample.links.slice(-untouched.length).map(a=>a.href),untouched);
 console.log(`PASS: ${chains} nested reading/OX return chains reach their original hubs, preserve section/label, survive reload, and remain stable on repeat; legacy/direct/unsafe routes covered.`);
+
+// Follow the new authored unit entry through the existing return helper.
+const relativeHub = navigationPage(base + 'school-grammar.html');
+const relativeEntry = relativeHub.links.find(a => new URL(a.href, base).hash === '#relative-content');
+assert(relativeEntry, 'Relative/content unit has an authored hub entry');
+const relativeUrl = new URL(relativeEntry.href, base);
+assert.equal(relativeUrl.pathname, '/linguistics/school-grammar_study.html');
+assert.equal(navigationPage(relativeUrl.href, base + 'school-grammar.html').button.href, base + 'school-grammar.html');
+console.log('PASS: relative/content hub entry retains its section and returns to school grammar.');
+
+// New authored UNIT05 route and its actual decorated dictionary link.
+const toughEntry = relativeHub.links.find(a => new URL(a.href, base).hash === '#tough-extraposition');
+assert(toughEntry, 'Tough unit has an authored hub entry');
+const toughUrl = new URL(toughEntry.href, base);
+const toughPage = navigationPage(toughUrl.href, base + 'school-grammar.html');
+assert.equal(toughPage.button.href, base + 'school-grammar.html');
+const toughKeyword = toughPage.links.find(a => new URL(a.href, toughUrl).searchParams.get('term') === 'tough movement');
+assert(toughKeyword);
+const dictUrl = new URL(toughKeyword.href, toughUrl);
+const returnNote = new URL(dictUrl.searchParams.get('studyNoteReturn'));
+assert.equal(returnNote.pathname, toughUrl.pathname);
+assert.equal(returnNote.hash, '#tough-extraposition');
+assert.equal(returnNote.searchParams.get('returnTo'), 'school-grammar.html');
+console.log('PASS: UNIT05 hub return and dictionary study-note return preserve the authored source section.');
