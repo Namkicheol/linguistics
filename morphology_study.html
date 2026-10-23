@@ -78,6 +78,9 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .nav-btn:hover{background:#f7f8ff}
 .nav-btn.next-btn{font-weight:600}
 @media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
+
+/* Matched examples: local, responsive comparison blocks. */
+.example-comparison{max-width:100%;overflow-x:auto;margin:14px 0;border:1px solid #c5c8e8;border-radius:10px;background:#fff}.example-comparison table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.7;table-layout:auto}.example-comparison caption{text-align:left;padding:10px 12px;font-weight:700;color:#2a2e6e;background:#f3f4fa}.example-comparison th,.example-comparison td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #e0e3ef;white-space:normal;overflow-wrap:anywhere}.example-comparison th{background:#f6f7fb}.example-comparison td strong{color:#176044;font-weight:700}.example-comparison tr:last-child td{border-bottom:0}.example-comparison td:first-child{min-width:88px}@media(max-width:600px){.example-comparison table{font-size:13px}.example-comparison th,.example-comparison td{padding:8px}}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
@@ -277,7 +280,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><span class='kw1'>derivational vs inflectional morpheme</span> 구분이 핵심 판별 기준이다.</p>
     </div>
     <details class="exam"><summary>품사가 같아도 derivation일 수 있다</summary>
-<p class="note"><em>pack → repack</em>은 V→V지만 새 lexeme을 만드는 derivation이다. <em>pack → packed</em>는 문장 속 past form을 만드는 inflection이다. 품사가 그대로라는 이유만으로 inflection이라고 판단하면 안 된다.</p><p class="note"><em>gardeners</em>는 [[garden-er]-s]로 분석한다. 사람을 나타내는 N을 만든 뒤 plural을 표시하므로 -er는 derivation, -s는 inflection이다. <em>colder</em>의 -er는 comparative이므로 같은 소리라도 다른 morpheme이다.</p><p class="note">8개 목록은 기능별 suffix 목록이다. <em>brought</em> 같은 irregular past도 inflection이므로 ‘inflection = 눈에 보이는 suffix를 하나 더하기’로 정의하지 않는다. <em>They are painting</em>의 painting은 verbal form이다. -ing 철자만 보고 모든 문맥의 품사를 확정하지 않는다.</p>
+<div class="example-comparison"><table><caption>같은 품사라도 과정은 다르다</caption><thead><tr><th scope="col">예</th><th scope="col">기준 1</th><th scope="col">기준 2</th></tr></thead><tbody><tr><td>pack → <strong>re</strong>pack</td><td>V → V</td><td>Derivation: 새 lexeme</td></tr><tr><td>pack → pack<strong>ed</strong></td><td>V → V</td><td>Inflection: past form</td></tr></tbody></table></div><p>품사가 그대로라는 이유만으로 inflection이라고 판단하면 안 된다.</p><p class="note"><em>gardeners</em>는 [[garden-er]-s]로 분석한다. 사람을 나타내는 N을 만든 뒤 plural을 표시하므로 -er는 derivation, -s는 inflection이다. <em>colder</em>의 -er는 comparative이므로 같은 소리라도 다른 morpheme이다.</p><p class="note">8개 목록은 기능별 suffix 목록이다. <em>brought</em> 같은 irregular past도 inflection이므로 ‘inflection = 눈에 보이는 suffix를 하나 더하기’로 정의하지 않는다. <em>They are painting</em>의 painting은 verbal form이다. -ing 철자만 보고 모든 문맥의 품사를 확정하지 않는다.</p>
     </details>
     <details class="exam"><summary>기출 대조 · 같은 철자보다 단어 안의 기능 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2013_X31" aria-label="2013학년도 31번">13</a> <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2026_B01" aria-label="2026학년도 전공 B 1번">26</a></summary>
       <p>love(N) → lovely(A) → lovelier(A)에서 -ly는 adjective를 만드는 <a class="dictionary-keyword" href="https://etwiki.net/concept.html?term=derivational%20affix">derivational affix</a>, -er는 comparative를 표시하는 <a class="dictionary-keyword" href="https://etwiki.net/concept.html?term=inflectional%20affix">inflectional affix</a>다. lovely의 -ly를 adverb-forming -ly로 읽으면 안 된다. <u>접사마다 입력 품사·출력 품사·문법 기능을 따로 확인한다.</u></p>
@@ -322,7 +325,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><span class='kw1'>derivation / affixation</span> 과 단어 형성, 부정 prefix 선택을 예문에서 판별한다.</p>
     </div>
     <details class="exam"><summary>prefix/suffix와 품사 변화는 별개</summary>
-<p class="note"><em>rich → enrich</em>: prefix en-, A→V, derivation. <em>child → childhood</em>: suffix -hood, N→N, derivation. prefix이면 품사가 절대 안 바뀌거나 suffix이면 반드시 바뀐다는 규칙은 없다.</p><p class="note"><em>dark → darken</em>의 -en은 A→V derivation이고 <em>has eaten</em>의 -en은 past-participle inflection이다. affix의 철자 대신 base의 category, 결과 category, 문장 속 기능을 함께 쓴다.</p>
+<div class="example-comparison"><table><caption>위치와 category change를 따로 비교하기</caption><thead><tr><th scope="col">예</th><th scope="col">기준 1</th><th scope="col">기준 2</th></tr></thead><tbody><tr><td>rich → <strong>en</strong>rich</td><td>Prefix</td><td>A → V</td></tr><tr><td>child → child<strong>hood</strong></td><td>Suffix</td><td>N → N</td></tr></tbody></table></div><p>Prefix이면 품사가 절대 안 바뀌거나 suffix이면 반드시 바뀐다는 규칙은 없다.</p><div class="example-comparison"><table><caption>같은 철자 -en, 다른 기능</caption><thead><tr><th scope="col">예</th><th scope="col">기준 1</th><th scope="col">기준 2</th></tr></thead><tbody><tr><td>dark → dark<strong>en</strong></td><td>A → V</td><td>Derivation</td></tr><tr><td>has eat<strong>en</strong></td><td>V의 participle</td><td>Inflection</td></tr></tbody></table></div><p>Affix의 철자 대신 base의 category, 결과 category, 문장 속 기능을 함께 쓴다.</p>
     </details>
   </div>
 </div>

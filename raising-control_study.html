@@ -92,6 +92,9 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 .types-examples th,.types-examples td{padding:12px;border:1px solid #c2d3c6;text-align:left;vertical-align:top;font-size:16px}
 .types-examples th{background:#eaf2e9}.types-examples :focus-visible{outline:3px solid #537f5b;outline-offset:3px}
 .types-examples u{text-decoration-thickness:1px;text-underline-offset:4px}.types-examples .types-source{margin-top:16px;padding-top:10px;border-top:1px solid #c2d3c6}.types-examples .types-source>summary{cursor:pointer;min-height:44px;line-height:1.7;font-size:16px}
+
+/* Matched examples: local, responsive comparison blocks. */
+.example-comparison{max-width:100%;overflow-x:auto;margin:14px 0;border:1px solid #c5c8e8;border-radius:10px;background:#fff}.example-comparison table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.7;table-layout:auto}.example-comparison caption{text-align:left;padding:10px 12px;font-weight:700;color:#2a2e6e;background:#f3f4fa}.example-comparison th,.example-comparison td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #e0e3ef;white-space:normal;overflow-wrap:anywhere}.example-comparison th{background:#f6f7fb}.example-comparison td strong{color:#176044;font-weight:700}.example-comparison tr:last-child td{border-bottom:0}.example-comparison td:first-child{min-width:88px}@media(max-width:600px){.example-comparison table{font-size:13px}.example-comparison th,.example-comparison td{padding:8px}}
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
@@ -227,7 +230,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p class="note">왜 NP가 이동하나? 하위 <span class='kw2'>infinitival I</span>(to)는 nominative Case를 주지 못한다. NP는 Case를 받기 위해 matrix Spec,IP로 이동한다.</p>
       <p class="note">matrix subject 자리는 <span class='kw2'>non-theta position</span>이므로, NP는 이동 후에도 embedded predicate의 theta-role을 그대로 보유한다.</p>
       <p class="note"><span class='kw2'>dummy-it</span> paraphrase와 동의: <em>It seems that John is working</em> ≈ <em>John seems to be working.</em></p>
-    </div>
+    </div><div class="example-comparison"><table><caption>Subject raising · 술어별 학습용 예문</caption><thead><tr><th scope="col">Predicate</th><th scope="col">예문</th></tr></thead><tbody><tr><td>seem</td><td>Nari <strong>seems</strong> to know the answer.</td></tr><tr><td>appear</td><td>Nari <strong>appears</strong> to know the answer.</td></tr><tr><td>happen</td><td>Nari <strong>happened</strong> to find the key.</td></tr><tr><td>turn out</td><td>The key <strong>turned out</strong> to be a copy.</td></tr><tr><td>prove</td><td>There <strong>proved</strong> to be a fault in the sensor.</td></tr><tr><td>be likely</td><td>The parcel <strong>is likely</strong> to arrive today.</td></tr><tr><td>be unlikely</td><td>The parcel <strong>is unlikely</strong> to arrive today.</td></tr></tbody></table></div><p class="note">모두 위 정의의 raising 용법이다. <strong>Appear / prove</strong>의 다른 뜻이나 모든 complement 형태를 같은 틀로 분류하지 않는다. Dummy의 허용은 아래에서 하위절의 조건까지 함께 비교한다.</p>
     <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Raising Control 구조 그림 1" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowRc1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#c62828"/></marker>
@@ -320,18 +323,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
 </ul>
 <p><a class="types-exam" href="https://etwiki.net/index.html?id=linguistics_2025_A07">(2025, 전공 A 7번)</a> — 두 문장에서 there는 장소를 가리키지 않는 dummy다. 하위 existential be는 there를 허용하지만, 원문의 want 용법은 ‘원하는 참여자’를 요구한다.</p>
 <p>학습용 창작 예문:</p>
-<ul>
-<li lang="en">It <strong>appears</strong> to be raining.</li>
-<li lang="en">*It <strong>tries</strong> to be raining.</li>
-<li lang="en">It <strong>appears</strong> that Nari is waiting outside.</li>
-<li lang="en">Nari <strong>appears</strong> to be waiting outside.</li>
-</ul>
+<div class="example-comparison"><table><caption>학습용 대조</caption><thead><tr><th scope="col">구분</th><th scope="col">예문</th></tr></thead><tbody><tr><td>Weather dummy 허용</td><td>It <strong>appears</strong> to be raining.</td></tr><tr><td>Control에서 dummy 불허</td><td>*It <strong>tries</strong> to be raining.</td></tr><tr><td>Finite CP</td><td>It <strong>appears</strong> that Nari is waiting outside.</td></tr><tr><td>Nonfinite raising</td><td>Nari <strong>appears</strong> to be waiting outside.</td></tr></tbody></table></div>
 <p>첫 대조의 it은 weather dummy다. 마지막 두 문장은 finite that-clause와 nonfinite raising clause를 비교한다. 두 구문 모두 가능하다는 사실과, 각 절의 subject가 어느 위치에서 Case를 받는지는 별도로 확인한다. <u>there 진단도 하위절의 조건을 만족해야 한다</u>. <code>*There <strong>seems</strong> to repair the printer</code>는 repair가 existential there를 자기 주어로 허용하지 않기 때문에 실패한다.</p>
 <p>변형 예문 · Radford의 existential there 진단을 어휘 변형:</p>
-<ul>
-<li lang="en">Rina <strong>threatened</strong> to resign. — 학습용 창작; 사람이 사임하겠다고 위협하는 subject-control 의미.</li>
-<li lang="en">There <strong>threatens</strong> to be a shortage of medicine. — Radford §8.5, (144j)의 변형; 사태가 발생할 조짐이라는 raising 의미.</li>
-</ul>
+<div class="example-comparison"><table><caption>학습용 대조</caption><thead><tr><th scope="col">구분</th><th scope="col">예문</th></tr></thead><tbody><tr><td>Subject control 의미</td><td>Rina <strong>threatened</strong> to resign. — 학습용 창작; 사람이 사임하겠다고 위협하는 subject-control 의미.</td></tr><tr><td>Raising 의미</td><td>There <strong>threatens</strong> to be a shortage of medicine. — Radford §8.5, (144j)의 변형; 사태가 발생할 조짐이라는 raising 의미.</td></tr></tbody></table></div>
 <p>threaten도 어떤 의미와 frame인지에 따라 구별한다.</p><details class="types-source"><summary>출처·분석 범위</summary><p>Radford, A. (1988), Transformational Grammar: A First Course, §8.5 pp.439–443. Aarts, B. (2018), English Syntax and Argumentation, 5th ed., §9.3 pp.148–150. Cowan, R. (2008), The Teacher’s Grammar of English, Ch20 pp.480–481; turn out의 실제 용례는 Ch12 p.244와 Ch24 p.579. 기출 원문: 2012학년도 1차21, 2025학년도 전공 A7. threaten의 raising 예문은 Radford (144j)의 어휘 변형.</p></details>
 </details>
 </div>
@@ -351,7 +346,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <div class="def"><em>believe, expect, want, report, consider, know</em>류 동사는 infinitival 보문을 취하고, 하위절 주어 NP에 <span class='kw1'>objective/accusative Case</span>(목적격)를 예외적으로 부여한다 — <span class='kw1'>Exceptional Case Marking</span> (ECM). 일부 자료는 이 구문을 Subject-to-Object Raising (SOR)으로 분류한다. 아래 그림과 비교표는 NP가 하위절 주어 자리에 남아 Case를 받는 ECM 분석을 따른다.</div>
       <p class="note">핵심: matrix verb는 그 NP에 <span class='kw4'>theta-role을 주지 않는다</span>. theta-role은 하위절 전체에 부여되므로, NP는 <span class='kw2'>하위절의 주어</span>로 행동한다.</p>
       <p class="note">표면상 <em>believe + NP + to-VP</em>는 object control(persuade)과 같지만, 아래 진단으로 명확히 갈린다.</p>
-    </div>
+    </div><div class="example-comparison"><table><caption>ECM · 뒤 NP가 하위절 subject인 학습용 예문</caption><thead><tr><th scope="col">Predicate / frame</th><th scope="col">예문</th></tr></thead><tbody><tr><td>believe</td><td>Iris <strong>believes</strong> Noah to be ready.</td></tr><tr><td>consider</td><td>Iris <strong>considers</strong> Noah to be reliable.</td></tr><tr><td>expect</td><td>Iris <strong>expects</strong> Noah to finish the report.</td></tr><tr><td>report</td><td>The investigators <strong>reported</strong> the sample to be contaminated.</td></tr><tr><td>know</td><td>I <strong>have never known</strong> Nari to miss a deadline.</td></tr></tbody></table></div><p class="note"><strong>Know</strong>는 경험을 나타내는 frame, <strong>report</strong>는 보고문 맥락이다. Want의 matrix passive는 아래 believe / want / expect 비교처럼 별도로 확인한다.</p>
     <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Raising Control 구조 그림 2" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowRc2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#1f7a8c"/></marker>
@@ -431,33 +426,24 @@ details.concept>p{margin-top:10px;line-height:1.8}
 <p>Sue의 theta-role은 be obedient에서 오고, John은 believed의 별도 argument다. ‘believe는 subject에 theta-role을 주지 않는다’고 쓰면 <a class="types-term" href="https://etwiki.net/concept.html?term=Exceptional%20Case%20Marking%20%28ECM%29">ECM</a>의 matrix subject John까지 잘못 제외하게 된다. <u>비교 대상은 동사 뒤의 Sue다</u>. 이 하위절에 별도 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 더 넣지 않는다.</p>
 <p>학습용 창작 예문:</p>
 <ul>
-<li lang="en">Iris <strong>expects</strong> Noah to finish the report.</li>
+
 <li lang="en">Iris <strong>expects</strong> it to rain overnight.</li>
 <li lang="en">Iris <strong>expects</strong> there to be two spare seats.</li>
 </ul>
-<p>Noah, weather it, existential there는 모두 해당 하위절의 subject 자리에서 비교한다. Noah는 finish에서 역할을 받지만 dummy it/there에는 같은 <a class="types-term" href="https://etwiki.net/concept.html?term=theta-role">theta-role</a> 설명을 적용하지 않는다. Iris가 기대하는 것은 각 절이 표현하는 내용이다.</p>
+<p>위 표의 Noah와 여기의 weather it, existential there는 모두 해당 하위절의 subject 자리에서 비교한다. Noah는 finish에서 역할을 받지만 dummy it/there에는 같은 <a class="types-term" href="https://etwiki.net/concept.html?term=theta-role">theta-role</a> 설명을 적용하지 않는다. Iris가 기대하는 것은 각 절이 표현하는 내용이다.</p>
 <p>학습용 창작 예문:</p>
-<ul>
-<li lang="en">Iris <strong>believes</strong> that Noah is ready.</li>
-<li lang="en">*Iris <strong>believes</strong> Noah that he is ready.</li>
-<li lang="en">Iris <strong>persuaded</strong> Noah that he should wait.</li>
-</ul>
+<div class="example-comparison"><table><caption>학습용 대조</caption><thead><tr><th scope="col">구분</th><th scope="col">예문</th></tr></thead><tbody><tr><td>Finite CP</td><td>Iris <strong>believes</strong> that Noah is ready.</td></tr><tr><td>별도 object + CP 불허</td><td>*Iris <strong>believes</strong> Noah that he is ready.</td></tr><tr><td>Persuade의 별도 object + CP</td><td>Iris <strong>persuaded</strong> Noah that he should wait.</td></tr></tbody></table></div>
 <p>believe의 해당 finite frame에서는 that-clause 전체가 보문이다. persuade의 Noah는 그 절 밖의 별도 목적어다. 두 동사가 모두 finite CP를 허용하므로 ‘that절이 가능한가’만으로 <a class="types-term" href="https://etwiki.net/concept.html?term=Exceptional%20Case%20Marking%20%28ECM%29">ECM</a>과 control을 구분할 수 없다.</p>
 <p>학습용 창작 대조 · 동일한 Nari와 Bo, 같은 면담 사건을 놓고 비교:</p>
-<ul>
-<li lang="en">The editor <strong>expected</strong> Nari to interview Bo.</li>
-<li lang="en">The editor <strong>expected</strong> Bo to be interviewed by Nari.</li>
-<li lang="en">The editor <strong>persuaded</strong> Nari to interview Bo.</li>
-<li lang="en">The editor <strong>persuaded</strong> Bo to be interviewed by Nari.</li>
-</ul>
+<div class="example-comparison"><table><caption>학습용 대조</caption><thead><tr><th scope="col">구분</th><th scope="col">예문</th></tr></thead><tbody><tr><td>ECM: active complement</td><td>The editor <strong>expected</strong> Nari to interview Bo.</td></tr><tr><td>ECM: passive complement</td><td>The editor <strong>expected</strong> Bo to be interviewed by Nari.</td></tr><tr><td>Control: Nari를 설득</td><td>The editor <strong>persuaded</strong> Nari to interview Bo.</td></tr><tr><td>Control: Bo를 설득</td><td>The editor <strong>persuaded</strong> Bo to be interviewed by Nari.</td></tr></tbody></table></div>
 <p>expect의 두 문장은 같은 예상 내용을 서로 다른 embedded voice로 제시한다. persuade의 두 문장은 모두 문법적이지만 설득받은 사람이 Nari에서 Bo로 달라져 같은 뜻이 아니다. 실제 면담이 이루어졌다고 단정하거나 active/passive의 정보 구조까지 같다고 설명하는 진단은 아니다. believe/expect의 <a class="types-term" href="https://etwiki.net/concept.html?term=Exceptional%20Case%20Marking%20%28ECM%29">ECM</a> 진단을 want에 그대로 확대하여 matrix passive까지 모두 같다고 판단하지도 않는다. want의 차이는 기존 본문에서 이어서 확인한다.</p>
 <p>학습용 창작 비교:</p>
 <ul>
-<li lang="en">The investigators <strong>reported</strong> the sample to be contaminated.</li>
+
 <li lang="en">The sample <strong>was reported</strong> to be contaminated.</li>
-<li lang="en">I <strong>have never known</strong> Nari to miss a deadline.</li>
+
 </ul>
-<p>수동 보고문에서는 보고의 출처를 생략할 수 있고, 이 know 구문은 개인의 경험을 진술한다.</p><details class="types-source"><summary>출처·분석 범위</summary><p>Radford, A. (1988), Transformational Grammar: A First Course, §6.7 pp.317–323. Aarts, B. (2018), English Syntax and Argumentation, 5th ed., Ch14 pp.248–252의 해당 비교. Cowan, R. (2008), The Teacher’s Grammar of English, Ch21 pp.498–500, 502. Cowan의 raising-to-object 도식과 달리, 여기서는 현행 ECM 분석을 유지한다. 기출 원문: 2019학년도 전공 B6. 나머지는 학습용 창작 예문.</p></details>
+<p>수동 보고문에서는 보고의 출처를 생략할 수 있고, 위 표의 know 예문은 개인의 경험을 진술한다.</p><details class="types-source"><summary>출처·분석 범위</summary><p>Radford, A. (1988), Transformational Grammar: A First Course, §6.7 pp.317–323. Aarts, B. (2018), English Syntax and Argumentation, 5th ed., Ch14 pp.248–252의 해당 비교. Cowan, R. (2008), The Teacher’s Grammar of English, Ch21 pp.498–500, 502. Cowan의 raising-to-object 도식과 달리, 여기서는 현행 ECM 분석을 유지한다. 기출 원문: 2019학년도 전공 B6. 나머지는 학습용 창작 예문.</p></details>
 </details>
 </div>
 </div>
