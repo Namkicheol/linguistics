@@ -75,6 +75,16 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 
 /* Matched examples: local, responsive comparison blocks. */
 .example-comparison{max-width:100%;overflow-x:auto;margin:14px 0;border:1px solid #c5c8e8;border-radius:10px;background:#fff}.example-comparison table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.7;table-layout:auto}.example-comparison caption{text-align:left;padding:10px 12px;font-weight:700;color:#2a2e6e;background:#f3f4fa}.example-comparison th,.example-comparison td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #e0e3ef;white-space:normal;overflow-wrap:anywhere}.example-comparison th{background:#f6f7fb}.example-comparison td strong{color:#176044;font-weight:700}.example-comparison tr:last-child td{border-bottom:0}.example-comparison td:first-child{min-width:88px}@media(max-width:600px){.example-comparison table{font-size:13px}.example-comparison th,.example-comparison td{padding:8px}}
+
+/* english-passage-expansion:start */
+.english-passage{margin:12px 0;padding:12px 14px;border:1px solid #d4d9e6;border-left:3px solid #596b98;border-radius:8px;background:#f7f9fd;color:#202b3d;overflow-wrap:anywhere}
+.english-passage .english-label{font-size:12px;font-weight:700;color:#485e86;margin-bottom:6px}
+.english-passage .english-text{font-size:14px;line-height:1.85;margin:0}
+.english-passage strong{font-weight:700;background:#fff1b8;color:inherit;padding:0 2px}
+.english-passage u{text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:#657caa}
+.english-passage .english-source{font-size:11px;line-height:1.6;color:#5c6472;margin:8px 0 0}
+@media(max-width:480px){.english-passage{padding:10px 11px}.english-passage .english-text{font-size:13px}}
+/* english-passage-expansion:end */
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
@@ -179,6 +189,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       </div>
     </div>
     <details class="concept"><summary>자세히 보기 · 구조 표기부터 이동 전후의 역할까지</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">In the transformational model used here, <strong>D-structure</strong> and <strong>S-structure</strong> are related by movement operations. They are not simply two different sentences with similar meanings. <u>Track the same constituent from its initial position to its surface position</u>, and explain which structural relation changes and which argument relation remains connected to the initial position.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §8.1, p.401. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p><strong>먼저 표기 읽기:</strong> NP는 명사구, VP는 동사구다. IP는 주어와 시제·일치 정보를 담당하는 I, 그리고 VP를 묶은 절이다. Spec은 그 구의 head와 구별되는 자리 이름이므로, Spec,IP는 이 분석의 주어 자리다. CP는 그 절 바깥에서 that 같은 C와 wh-phrase의 자리를 포함한다. Spec,CP에 놓이는 wh-phrase와 C에 놓이는 조동사를 같은 자리로 보지 않는다.</p>
 <p><a href="https://etwiki.net/concept.html?term=theta-role">theta-role</a>은 ‘누가 했는가(Agent), 무엇이 영향을 받았는가(Theme)’ 같은 술어와 참여자의 의미 관계다. <a href="https://etwiki.net/concept.html?term=argument%20structure">argument structure</a>는 그 술어가 어떤 참여자 자리를 요구하는지 나타낸다. 주어·목적어라는 문법적 자리와 의미 관계는 구별한다. t(trace)는 이동한 표현의 원래 자리를 표시하며, 같은 아래첨자 i는 앞의 표현과 t가 하나의 이동 관계임을 보여 준다. 이동했다고 argument나 의미 관계가 사라지는 것은 아니다.</p>
 
@@ -362,6 +376,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p>V-movement와 I-to-C는 모두 head movement로 다루지만, 출발점과 도착점이 다르다.</p>
     </div>
     <details class="concept"><summary>C head와 Spec,CP의 위치 구분</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">A fronted <strong>wh-phrase</strong> occupies Spec,CP, whereas an inverted auxiliary occupies the C head. <u>Phrase movement and head movement have different landing sites</u>. Thus the initial wh-phrase does not itself fill C, and its presence in an embedded question does not by itself establish subject–auxiliary inversion.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §9.10, pp.503–505. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p><strong>연습:</strong> Which parcel will the courier collect? / I asked which parcel the courier would collect.</p><ol><li>두 문장에서 which parcel은 collect의 object 자리와 연결되고 Spec,CP에 놓인다.</li><li>직접의문문의 will은 I에서 C로 이동한다. which parcel과 will은 서로 다른 위치를 차지한다.</li><li>embedded question에서는 would가 subject 뒤에 남는다. <u><strong>wh-phrase가 Spec,CP에 있다고 C head까지 채워진 것은 아니다.</strong></u></li></ol><p><strong>비교:</strong> I asked if the courier would arrive.에서는 if가 C를 채운다. I asked which parcel the courier would collect.에서는 overt complementizer가 없어도 표준 embedded question의 subject–auxiliary inversion은 일어나지 않는다.</p><p><strong>답안 기준:</strong> “간접의문문은 모두 overt C가 있어서 inversion 불가” 대신, 해당 예문의 clause type과 C/Spec,CP 위치를 각각 설명한다.</p>
 <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, Ch. 6, §§8.2–8.5, Ch. 9의 관련 구조. 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
   </div>
@@ -514,6 +532,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       </div>
     </div>
     <details class="concept"><summary>자세히 보기 · Raising과 Control: theta-role·dummy pronoun·voice 비교</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">A <strong>raising predicate</strong> does not assign a separate theta-role to its surface subject in the relevant use. A <strong>control predicate</strong> selects a matrix argument that controls the lower PRO. Consequently, <u>changing the embedded voice preserves the proposition with raising but can change the matrix participant with control</u>. Compare meaning as well as grammaticality.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §8.5, pp.439–443. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p><strong>연습:</strong> The nurse seems to have comforted the child. / The nurse tried to comfort the child.</p><ol><li>seem은 nurse에 별도의 theta-role을 주지 않는다. nurse는 embedded comfort의 Agent이며 한 NP-chain으로 연결된다.</li><li>try는 matrix subject에 theta-role을 준다. embedded subject PRO는 별도 argument이며 nurse가 control한다. <u>같은 사람을 가리킨다고 두 자리가 하나의 이동 chain인 것은 아니다.</u></li><li>There seems to be a spare seat. / *There tried to be a spare seat. expletive there는 try의 subject에 부여되는 theta-role을 받을 수 없다.</li></ol><div class="example-comparison"><table><caption>Voice transparency · 같은 사건과 시도자를 구별</caption><thead><tr><th scope="col">구문</th><th scope="col">Active</th><th scope="col">Passive</th></tr></thead><tbody><tr><td>Raising</td><td>The nurse <strong>seems</strong> to have comforted the child.</td><td>The child <strong>seems</strong> to have been comforted by the nurse.</td></tr><tr><td>Control</td><td><strong>The nurse tried</strong> to comfort the child.</td><td><strong>The child tried</strong> to be comforted by the nurse.</td></tr></tbody></table></div><p>Raising 쌍은 seem의 complement가 나타내는 사건과 참여자들의 역할이 같다. Control 쌍은 <strong>시도한 사람</strong>이 달라진다.</p><div class="exam"><div class="exam-label">2025학년도 전공 A 7번 · 실제 문항 따라 풀기</div>
 <p><a href="https://etwiki.net/index.html?id=linguistics_2025_A07">원문과 해설</a> · 아래 (4a/b)는 문제지의 문장을 인용했다. 대괄호·PRO·t는 풀이를 위해 추가한 표기다.</p>
 <p>(4a) The fire fighter <u>attempted</u> to save the man.<br>(4b) The fire fighter <u>happened</u> to save the man.</p>
@@ -621,6 +643,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><strong>2026 1차 B-9</strong> — <span class='kw4'>That-trace effect</span>·<span class='kw1'>Wh-movement</span>: embedded subject의 wh-trace 바로 앞에 <em>that</em>이 남으면 비문</p>
     </div>
     <details class="concept"><summary>자세히 보기 · Wh-movement와 relative clause의 빈자리</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">In the <strong>movement analysis</strong>, a fronted phrase remains linked to its original argument position. <u>The gap is part of that dependency, not a missing participant to be supplied by an extra pronoun</u>. In the relative-clause patterns shown here, leaving the relative pronoun unspoken does not remove the object gap.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §9.7, pp.485–486; §9.10, pp.503–505. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p><strong>연습:</strong> Which portrait did the gallery display? → [Which portrait]<sub>i</sub> did the gallery display t<sub>i</sub>?</p><ol><li>display 뒤의 gap을 찾아 object 출발점을 정한다.</li><li>wh-phrase의 도착점은 Spec,CP이고 did의 도착점은 C다.</li><li>fronting은 display의 Theme 관계를 없애지 않는다. Spec,CP 자체에서 새로운 object theta-role을 받는 것이 아니다.</li></ol><div class="example-comparison"><table><caption>Relative clause · 관계사 발음과 object gap은 별개</caption><thead><tr><th scope="col">조건</th><th scope="col">예문</th></tr></thead><tbody><tr><td>Overt relative pronoun</td><td>The portrait <strong>which</strong> the gallery displayed __ was restored.</td></tr><tr><td>Silent relative pronoun</td><td>The portrait the gallery displayed <strong>__</strong> was restored.</td></tr><tr><td>Object gap을 다시 채움</td><td>*The portrait which the gallery displayed <strong>it</strong> was restored.</td></tr></tbody></table></div><p>__는 기존 예문의 object gap을 드러내는 학습용 표시다. 앞의 두 문장 모두 displayed 뒤의 object gap이 필요하다. 셋째는 여기서 다루는 표준 relative movement 구조에서 그 자리를 it으로 다시 채웠다.</p><div class="exam"><div class="exam-label">2025학년도 전공 B 5번 · 없는 argument와 남는 argument</div>
 <p><a href="https://etwiki.net/index.html?id=linguistics_2025_B05">원문과 해설</a> · 원문: (a) *Susan put the book. / (b) *The ball John hit it broke the window.</p>
 <ol><li>발문은 두 비문을 <a href="https://etwiki.net/concept.html?term=theta-criterion">Theta Criterion</a>으로 설명하라고 한다. 지문의 두 조건은 (i) 각 argument가 하나의 theta-role을 받을 것, (ii) 각 theta-role이 하나의 argument에 배정될 것이다. 발음되는 명사구 개수만 세지 말고 빈자리도 포함하여 대응을 확인한다.</li>
@@ -765,6 +791,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       </div>
     </div>
     <details class="concept"><summary>Subjacency: 이동 단계별 bounding node의 수</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en"><strong>Subjacency</strong> is evaluated for each movement step, not by counting every clause in the entire sentence. Successive-cyclic movement uses intermediate positions so that each step respects the relevant boundary limit. <u>A landing site and a bounding node are different things</u>. Use the node inventory and exceptions specified by the problem before counting crossed boundaries.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §10.8, pp.568–574. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p><strong>연습:</strong> Which blueprint did Mira say that the engineer revised?</p><p>object gap → embedded Spec,CP → matrix Spec,CP의 경로를 그린다. 이 페이지의 IP/NP bounding-node 분석에서 각 단계는 하나의 IP만 빠져나간다. 긴 문장이라는 이유만으로 위반이 아니다.</p><p><strong>이용할 수 없는 중간 Spec,CP:</strong> *How did Mira wonder which blueprint the engineer revised? 여기서는 how를 revise의 manner로 해석하는 extraction을 검사한다. embedded Spec,CP가 which blueprint로 차 있어 그 자리를 경유할 수 없고, 한 단계에 embedded IP와 matrix IP를 넘어야 한다.</p><p><strong>핵심 비교:</strong> <u>landing site인 Spec,CP와 bounding node인 IP/NP는 다른 개념이다.</u> CP가 보인다고 그것을 IP 대신 세지 않는다.</p><p><strong>Subject 내부와 subject 자체:</strong> Who repaired the machine?은 subject NP 전체를 묻는다. *What did [pictures of t] surprise the curator?는 subject NP 내부에서만 추출한다. 후자의 경로는 NP와 IP를 모두 빠져나간다.</p><p><strong>Coordinate 범위:</strong> 한 conjunct에서만 추출한 예와 across-the-board extraction을 구분한다. “coordination이면 어떤 이동도 불가”라는 확대 해석은 피한다.</p>
 <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">근거: Radford, Transformational Grammar, §10.8, pp. 569–574 (Bounding Condition, successive cyclic movement, filled intermediate Spec,CP). 기출 인용으로 표시한 문장 외의 연습 예문은 학습용으로 새로 구성했다.</p></details></details>
     <details class="concept"><summary>기출 적용 · 2022 B05의 bounding-node 조건 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2022_B05" aria-label="2022학년도 전공 B 5번 관련 기출 문제">22</a></summary>
