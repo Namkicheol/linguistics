@@ -95,6 +95,16 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 
 /* Matched examples: local, responsive comparison blocks. */
 .example-comparison{max-width:100%;overflow-x:auto;margin:14px 0;border:1px solid #c5c8e8;border-radius:10px;background:#fff}.example-comparison table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.7;table-layout:auto}.example-comparison caption{text-align:left;padding:10px 12px;font-weight:700;color:#2a2e6e;background:#f3f4fa}.example-comparison th,.example-comparison td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #e0e3ef;white-space:normal;overflow-wrap:anywhere}.example-comparison th{background:#f6f7fb}.example-comparison td strong{color:#176044;font-weight:700}.example-comparison tr:last-child td{border-bottom:0}.example-comparison td:first-child{min-width:88px}@media(max-width:600px){.example-comparison table{font-size:13px}.example-comparison th,.example-comparison td{padding:8px}}
+
+/* english-passage-expansion:start */
+.english-passage{margin:12px 0;padding:12px 14px;border:1px solid #d4d9e6;border-left:3px solid #596b98;border-radius:8px;background:#f7f9fd;color:#202b3d;overflow-wrap:anywhere}
+.english-passage .english-label{font-size:12px;font-weight:700;color:#485e86;margin-bottom:6px}
+.english-passage .english-text{font-size:14px;line-height:1.85;margin:0}
+.english-passage strong{font-weight:700;background:#fff1b8;color:inherit;padding:0 2px}
+.english-passage u{text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:#657caa}
+.english-passage .english-source{font-size:11px;line-height:1.6;color:#5c6472;margin:8px 0 0}
+@media(max-width:480px){.english-passage{padding:10px 11px}.english-passage .english-text{font-size:13px}}
+/* english-passage-expansion:end */
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
@@ -184,6 +194,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p class="note">한 자리가 theta-role을 받는 자리이면 <span class='kw2'>theta-position</span>, 받지 않는 자리이면 <span class='kw2'>non-theta position</span>이다.</p>
     </div>
     <details class="concept"><summary>자세히 보기 · argument, theta-role, 이동과 PRO 읽기</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">A <strong>theta-role</strong> expresses an argument’s semantic relation to a predicate; <strong>Case</strong> concerns its syntactic licensing. Do not identify either with the surface labels subject and object. In a control analysis, <u>the overt controller and PRO are separate arguments</u>, even when both refer to the same person; a raising chain instead connects positions of the moved expression.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §7.14, pp.390–391. Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §6.7, pp.317–324. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p><a href="https://etwiki.net/concept.html?term=argument%20structure">argument structure</a>는 술어가 요구하는 참여자 자리를 나타낸다. <a href="https://etwiki.net/concept.html?term=theta-role">theta-role</a>은 그 참여자가 술어와 맺는 의미 관계다. 예를 들어 <em>The guard opened the gate.</em>에서 guard는 여는 사람(Agent), gate는 열리는 대상(Theme)이다. ‘주어’라는 자리 이름과 ‘Agent’라는 역할 이름을 같은 뜻으로 외우지 않는다.</p>
 <p><strong>학습용 비교:</strong> The guard seems [___ to open the gate]. / The guard tries [___ to open the gate]. 두 빈칸 모두 ‘문을 여는 사람’은 guard지만, tries에는 ‘시도하는 사람’이라는 상위 술어의 역할도 있다. Raising은 guard<sub>i</sub> … t<sub>i</sub>처럼 한 NP의 이동 관계로, control은 guard<sub>i</sub> … PRO<sub>i</sub>처럼 두 argument의 지시 관계로 표현한다. t(trace)는 이동 전 자리, PRO는 처음부터 발음되지 않는 하위절 주어다. <u>같은 i는 같은 사람과 연결된다는 표시이지, 언제나 같은 구조라는 뜻은 아니다.</u></p>
 <p>IP는 주어와 I(시제·일치 정보), VP를 묶은 절이며, Spec,IP는 이 분석의 주어 자리다. Spec은 head와 구별되는 자리 이름이다. NP가 matrix(상위절) Spec,IP로 올라간다는 말은 embedded(하위절) 주어였던 NP가 상위절 주어가 된다는 뜻이다. Case는 명사구가 허용되는 구조적 조건이고 theta-role은 의미 관계이므로 별도로 검사한다.</p>
@@ -313,6 +327,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
     </details>
   
 <details class="types-examples" data-topic="ssr"><summary>종류와 예문 · Subject raising과 dummy subject</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">The raising use of <strong>seem</strong> allows a nonreferential subject because it does not impose an independent thematic requirement on that subject. But <u>the lower clause must still license the expletive</u>: existential <em>there</em> is compatible with an existential predicate, not with every lower verb. Classify a predicate in its particular meaning and frame, not by spelling alone.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §8.5, pp.439–443. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p><a class="types-term" href="https://etwiki.net/concept.html?term=expletive">dummy subject</a> · <a class="types-term" href="https://etwiki.net/concept.html?term=subject%20raising">Subject raising</a> · <strong>seem, appear, happen, turn out, prove, be likely, be unlikely</strong> — <code>NP predicate to-VP</code>에서 matrix predicate가 그 surface subject를 별도의 참여자로 theta-mark하지 않는 용법이다. 여기서 appear는 ‘그렇게 보이다’, prove는 ‘결과적으로 그러한 것으로 드러나다’라는 뜻이다. <code>A crack <strong>appeared</strong></code>의 ‘나타나다’, <code>prove the theorem</code>의 ‘증명하다’까지 같은 frame으로 묶지 않는다.</p>
 <p>기출 원문: The researchers <strong>appeared</strong> to start their project. <a class="types-exam" href="https://etwiki.net/index.html?id=linguistics_2012_X21">(2012, 1차 21번)</a></p>
 <p>앞의 planned와 달리 researchers의 <a class="types-term" href="https://etwiki.net/concept.html?term=theta-role">theta-role</a>은 아래 start에서 온다. 분석용 약식 표기: <code>the researchersᵢ <strong>appeared</strong> [tᵢ to start their project]</code>. 이 lexical subject와 아래의 dummy를 같은 방식으로 설명하지 않는다. expletive 자체는 <a class="types-term" href="https://etwiki.net/concept.html?term=theta-role">theta-role</a>을 받지 않는다.</p>
@@ -421,6 +439,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
     </div>
   
 <details class="types-examples" data-topic="sor-ecm"><summary>종류와 예문 · ECM의 NP는 하위절 subject</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">In <strong>ECM</strong>, the NP following the matrix verb is the subject of the infinitival clause. It receives its thematic interpretation from the lower predicate, while its accusative Case is licensed by the higher verb in this analysis. <u>Do not add PRO beside an overt embedded subject</u>, or treat that subject as an independently selected object of the matrix predicate.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §6.7, pp.317–324. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p><strong>believe, consider, expect, know, report</strong> — <code>NP V [NP to-VP]</code>에서 뒤 NP가 하위절 subject인 틀이다. 여기서는 그 NP가 matrix V에서 accusative Case를 받는 <a href="https://etwiki.net/concept.html?term=Exceptional%20Case%20Marking%20%28ECM%29">ECM</a> 분석을 따른다. SOR라는 이름만 보고 별도 object 이동을 이 tree에 더하지 않는다. know는 경험을 나타내는 <code><strong>have never known</strong> NP to-VP</code>, report는 보고문 맥락에서 비교한다. <code>NP is <strong>reported</strong>/known to-VP</code>라는 수동 보고 틀도 함께 확인하되, 모든 술어를 일상 회화에서 같은 자연스러움으로 교체하는 목록으로 읽지 않는다.</p>
 <p>기출 원문: John <strong>believed</strong> Sue to be obedient to her parents. <a class="types-exam" href="https://etwiki.net/index.html?id=linguistics_2019_B06">(2019, 전공 B 6번)</a></p>
 <p>Sue의 theta-role은 be obedient에서 오고, John은 believed의 별도 argument다. ‘believe는 subject에 theta-role을 주지 않는다’고 쓰면 <a class="types-term" href="https://etwiki.net/concept.html?term=Exceptional%20Case%20Marking%20%28ECM%29">ECM</a>의 matrix subject John까지 잘못 제외하게 된다. <u>비교 대상은 동사 뒤의 Sue다</u>. 이 하위절에 별도 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 더 넣지 않는다.</p>
@@ -515,6 +537,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
     </div>
     <details class="concept">
       <summary class="c-title">자세히 보기 · Subject control 판별과 기출 대조</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">With <strong>subject control</strong>, the matrix subject determines the reference of the infinitive’s PRO. The nearest overt NP is not necessarily the controller: in the <em>promise</em> pattern, an intervening recipient does not become the understood subject of the promised action. <u>Identify who performs the lower action and which argument the matrix predicate selects</u>.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §6.7, pp.317–324. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
       <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p></details>
       <div class="eg">
         <span class="eg-line">(a) The director motivated the assistant to work more carefully.</span>
@@ -609,6 +635,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
     </div>
     <details class="concept">
       <summary class="c-title">자세히 보기 · Object control과 ECM 판별</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">With <strong>object control</strong>, the matrix object controls PRO; with <strong>ECM</strong>, the overt NP itself is the embedded subject. This difference predicts the voice contrast: replacing an active embedded clause with its passive counterpart can preserve the content of a belief, but <u>changing the object of persuasion changes who was persuaded</u>.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §6.7, pp.317–324. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
       <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p></details>
       <div class="eg">
         <span class="eg-line">(a) Lena persuaded Max to obey his supervisor.</span>
