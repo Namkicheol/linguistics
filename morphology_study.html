@@ -81,6 +81,16 @@ table.diag td.n{color:#b71c1c;font-weight:700}
 
 /* Matched examples: local, responsive comparison blocks. */
 .example-comparison{max-width:100%;overflow-x:auto;margin:14px 0;border:1px solid #c5c8e8;border-radius:10px;background:#fff}.example-comparison table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.7;table-layout:auto}.example-comparison caption{text-align:left;padding:10px 12px;font-weight:700;color:#2a2e6e;background:#f3f4fa}.example-comparison th,.example-comparison td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #e0e3ef;white-space:normal;overflow-wrap:anywhere}.example-comparison th{background:#f6f7fb}.example-comparison td strong{color:#176044;font-weight:700}.example-comparison tr:last-child td{border-bottom:0}.example-comparison td:first-child{min-width:88px}@media(max-width:600px){.example-comparison table{font-size:13px}.example-comparison th,.example-comparison td{padding:8px}}
+
+/* english-passage-expansion:start */
+.english-passage{margin:12px 0;padding:12px 14px;border:1px solid #d4d9e6;border-left:3px solid #596b98;border-radius:8px;background:#f7f9fd;color:#202b3d;overflow-wrap:anywhere}
+.english-passage .english-label{font-size:12px;font-weight:700;color:#485e86;margin-bottom:6px}
+.english-passage .english-text{font-size:14px;line-height:1.85;margin:0}
+.english-passage strong{font-weight:700;background:#fff1b8;color:inherit;padding:0 2px}
+.english-passage u{text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:#657caa}
+.english-passage .english-source{font-size:11px;line-height:1.6;color:#5c6472;margin:8px 0 0}
+@media(max-width:480px){.english-passage{padding:10px 11px}.english-passage .english-text{font-size:13px}}
+/* english-passage-expansion:end */
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
@@ -184,6 +194,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p>형태소 분류 — <span class='kw1'>free vs bound</span>, <span class='kw1'>lexical vs functional</span> 구분이 형태론의 기본 분류다.</p>
     </div>
     <details class="exam"><summary>morpheme과 철자·syllable 구분</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">A <strong>morpheme</strong> is identified by a recurrent form–meaning or form–function pairing, not by a convenient cut in the spelling. <u>The number of morphemes need not equal the number of syllables</u>. A root supplies the core, while a base is the form to which the next affix attaches; that base can already contain several morphemes.</p><p class="english-source">개념 근거: Fromkin, V., Rodman, R., &amp; Hyams, N. (2014). <cite>An Introduction to Language</cite>, 10th ed., Ch.2, pp.38–47. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p class="note"><em>repainted</em>를 re- + paint + -ed로 분석하면 반복 의미, paint의 의미, past 기능이 각각 확인된다. 반면 <em>carpet</em>의 철자 car를 잘라 독립적인 ‘자동차’ 의미를 부여할 수는 없다. 같은 형태가 반복될 때 의미나 grammatical function도 일정하게 대응하는지 확인해야 한다.</p><p class="note"><em>repaint</em>는 -ed가 붙을 때 base이고 paint는 root다. base는 결합 단계마다 달라질 수 있다. bound라는 기준은 ‘단독 단어 가능 여부’이므로 bound morpheme에는 affix뿐 아니라 bound root도 있다.</p><p class="note">morpheme 수와 syllable 수를 혼동하지 않는다. <em>giraffe</em>는 여러 syllable을 가지지만 이 분석에서는 하나의 morpheme이고, <em>painted</em>는 paint와 past morpheme을 포함한다.</p>
     </details>
   </div>
@@ -220,6 +234,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><span class='kw1'>lexical vs functional</span> morpheme, open/closed class 구분이 morpheme classification에서 서로 다른 기준이다.</p>
     </div>
     <details class="exam"><summary>free/bound와 lexical/functional 구분</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en"><strong>Free/bound</strong> and <strong>lexical/functional</strong> are different classifications. A free morpheme can occur independently, but it need not be a content word. A bound morpheme must combine with another form, but <u>being bound does not make an element an affix</u>: roots can also be bound. State the criterion used for each label.</p><p class="english-source">개념 근거: Fromkin, V., Rodman, R., &amp; Hyams, N. (2014). <cite>An Introduction to Language</cite>, 10th ed., Ch.2, pp.38–47. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p class="note"><em>river</em>는 free·lexical, <em>the</em>는 free·functional이다. 따라서 free이면 lexical이라는 추론은 틀린다. <em>-ed</em>는 bound이고 past라는 grammatical function을 표시한다.</p><p class="note">open/closed class는 새 구성원을 받아들이는 정도다. open class라고 해서 모든 lexical word가 새 단어라는 뜻은 아니다. functional word에도 의미나 grammatical function이 있다. 이 절의 lexical/functional 표는 free morpheme을 소개하는 분류이며 bound root가 없다는 뜻은 아니다.</p>
     </details>
   </div>
@@ -280,6 +298,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><span class='kw1'>derivational vs inflectional morpheme</span> 구분이 핵심 판별 기준이다.</p>
     </div>
     <details class="exam"><summary>품사가 같아도 derivation일 수 있다</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en"><strong>Derivation</strong> creates a new lexical item; <strong>inflection</strong> supplies a grammatical form of a lexical item. <u>A category change is sufficient evidence against ordinary inflection, but its absence does not prove inflection</u>. In <em>pack → repack</em>, V remains V, yet the new lexical meaning distinguishes derivation from the past form <em>packed</em>.</p><p class="english-source">개념 근거: Fromkin, V., Rodman, R., &amp; Hyams, N. (2014). <cite>An Introduction to Language</cite>, 10th ed., Ch.2, pp.38–47. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <div class="example-comparison"><table><caption>같은 품사라도 과정은 다르다</caption><thead><tr><th scope="col">예</th><th scope="col">기준 1</th><th scope="col">기준 2</th></tr></thead><tbody><tr><td>pack → <strong>re</strong>pack</td><td>V → V</td><td>Derivation: 새 lexeme</td></tr><tr><td>pack → pack<strong>ed</strong></td><td>V → V</td><td>Inflection: past form</td></tr></tbody></table></div><p>품사가 그대로라는 이유만으로 inflection이라고 판단하면 안 된다.</p><p class="note"><em>gardeners</em>는 [[garden-er]-s]로 분석한다. 사람을 나타내는 N을 만든 뒤 plural을 표시하므로 -er는 derivation, -s는 inflection이다. <em>colder</em>의 -er는 comparative이므로 같은 소리라도 다른 morpheme이다.</p><p class="note">8개 목록은 기능별 suffix 목록이다. <em>brought</em> 같은 irregular past도 inflection이므로 ‘inflection = 눈에 보이는 suffix를 하나 더하기’로 정의하지 않는다. <em>They are painting</em>의 painting은 verbal form이다. -ing 철자만 보고 모든 문맥의 품사를 확정하지 않는다.</p>
     </details>
     <details class="exam"><summary>기출 대조 · 같은 철자보다 단어 안의 기능 <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2013_X31" aria-label="2013학년도 31번">13</a> <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2026_B01" aria-label="2026학년도 전공 B 1번">26</a></summary>
@@ -325,6 +347,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><span class='kw1'>derivation / affixation</span> 과 단어 형성, 부정 prefix 선택을 예문에서 판별한다.</p>
     </div>
     <details class="exam"><summary>prefix/suffix와 품사 변화는 별개</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en"><strong>Prefix</strong> and <strong>suffix</strong> describe position, not whether category changes. A prefix may turn an adjective into a verb, and a suffix may produce another noun from a noun. <u>Identify the input category, output category and grammatical contribution separately</u>. The same spelling can represent different affixes in different morphological environments.</p><p class="english-source">개념 근거: Fromkin, V., Rodman, R., &amp; Hyams, N. (2014). <cite>An Introduction to Language</cite>, 10th ed., Ch.2, pp.38–47. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <div class="example-comparison"><table><caption>위치와 category change를 따로 비교하기</caption><thead><tr><th scope="col">예</th><th scope="col">기준 1</th><th scope="col">기준 2</th></tr></thead><tbody><tr><td>rich → <strong>en</strong>rich</td><td>Prefix</td><td>A → V</td></tr><tr><td>child → child<strong>hood</strong></td><td>Suffix</td><td>N → N</td></tr></tbody></table></div><p>Prefix이면 품사가 절대 안 바뀌거나 suffix이면 반드시 바뀐다는 규칙은 없다.</p><div class="example-comparison"><table><caption>같은 철자 -en, 다른 기능</caption><thead><tr><th scope="col">예</th><th scope="col">기준 1</th><th scope="col">기준 2</th></tr></thead><tbody><tr><td>dark → dark<strong>en</strong></td><td>A → V</td><td>Derivation</td></tr><tr><td>has eat<strong>en</strong></td><td>V의 participle</td><td>Inflection</td></tr></tbody></table></div><p>Affix의 철자 대신 base의 category, 결과 category, 문장 속 기능을 함께 쓴다.</p>
     </details>
   </div>
@@ -370,6 +396,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><span class='kw1'>allomorph</span> 와 phonological conditioning (plural -s, negative prefix in-/im-/il-/ir-)을 예문에서 판별한다.</p>
     </div>
     <details class="exam"><summary>plural과 past의 allomorph 선택 순서</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">For regular plural and past-tense <strong>allomorphs</strong>, examine the base’s final sound rather than its final letter. Apply the special syllable-adding environment before the general voicing distinction: sibilants for plurals, and /t, d/ for past tense. <u>The specific condition takes priority over the broader voiced/voiceless division</u>.</p><p class="english-source">개념 근거: Fromkin, V., Rodman, R., &amp; Hyams, N. (2014). <cite>An Introduction to Language</cite>, 10th ed., Ch.6, pp.226–229. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p class="note">regular plural에서는 base가 sibilant /s z ʃ ʒ tʃ dʒ/로 끝나는지 먼저 확인한다: <em>watches</em>의 ending은 [ɪz] 또는 [əz]이다. 그 밖에서 <em>cliffs</em>는 voiceless /f/ 뒤 [s], <em>keys</em>는 voiced vowel 뒤 [z]다. ‘voiceless 뒤 [s]’만 쓰면 voiceless sibilant를 잘못 예측한다.</p><p class="note">regular past에서는 base가 /t,d/로 끝나는지 먼저 확인한다: <em>waited</em>는 [ɪd], <em>laughed</em>는 /f/ 뒤 [t], <em>cleaned</em>는 /n/ 뒤 [d]. 철자 gh가 아니라 실제 마지막 소리를 본다.</p><p class="note"><em>a university</em>와 <em>an hour</em>도 철자 u/h가 아니라 첫 소리 /j/와 vowel로 판단한다. 또 <em>oxen</em>의 plural은 마지막 소리만으로 예측할 수 없다. 따라서 allomorph가 모두 phonological conditioning으로 결정된다고 설명해서는 안 된다.</p><p class="note">in-/im-/il-/ir- 분포는 이 negative-prefix 계열 안에서 설명한다. /m/으로 시작해도 <em>unmarked</em>처럼 un-을 쓰는 단어가 있다. phonological alternation과 어떤 prefix가 그 base에 허용되는지는 별도 문제다.</p>
     </details>
     <details class="exam"><summary>기출 대조 · 같은 소리로 닮는가, 다르게 되는가? <a class="exam-year" href="https://etwiki.net/index.html?id=linguistics_2020_B03" aria-label="2020학년도 전공 B 3번">20</a></summary>
@@ -510,6 +540,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><a class="kw1 dictionary-keyword" href="https://etwiki.net/concept.html?term=compounding">compounding</a>을 다른 word-formation process와 구별하고, 예문에서 head를 찾는다.</p>
     </div>
     <details class="exam"><summary>compound의 head와 의미 확인</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">A <strong>compound</strong> is a lexical unit with internal structure, not simply any adjacent pair of words. Its category and conventional meaning must be examined together. <u>Spelling alone cannot establish compound status</u>: compounds may be written solid, hyphenated or spaced, and their established meaning need not be the literal sum of the component meanings.</p><p class="english-source">개념 근거: Fromkin, V., Rodman, R., &amp; Hyams, N. (2014). <cite>An Introduction to Language</cite>, 10th ed., Ch.2, pp.57–59. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p class="note"><em>snowball</em>은 ball의 한 종류이므로 endocentric이고 오른쪽 N이 category와 의미 범주를 정한다. <em>pickpocket</em>은 N이지만 pocket의 한 종류가 아니므로 exocentric이다. 오른쪽 요소와 전체의 품사가 같더라도, 전체가 그 요소의 한 종류를 뜻하는지는 따로 확인해야 한다.</p><p class="note">기존 <em>blackboard / black board</em> 대조에서 compound는 관습적 명칭이고 phrase는 색을 기술한다. 강세는 유용한 단서지만, 강세 하나만으로 모든 compound와 phrase를 구별할 수는 없다. 띄어쓰기·hyphen도 단독 판별 기준이 아니다.</p><p class="note"><em>toothbrushes</em>의 -es는 전체 compound의 plural이다. 이를 ‘compound 내부에는 plural이 절대 없다’로 확대하지 않는다. <em>sports car</em>처럼 첫 요소에 -s가 있는 관습적 compound도 있다.</p>
     </details>
   </div>
@@ -605,6 +639,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p><span class='kw1'>hierarchical structure / bracketing ambiguity</span> (un-…-able 류)를 예문에서 판별한다.</p>
     </div>
     <details class="exam"><summary>두 해석에 맞는 구조가 모두 가능한가?</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">A complex word has a <strong>hierarchical structure</strong>, not merely an ordered list of morphemes. Each affix combines with a particular base, and that base must meet the affix’s category and meaning restrictions. <u>Two bracketings yield two readings only if both derivations are independently licensed</u>; the appearance of <em>un- … -able</em> does not guarantee ambiguity.</p><p class="english-source">개념 근거: Fromkin, V., Rodman, R., &amp; Hyams, N. (2014). <cite>An Introduction to Language</cite>, 10th ed., Ch.2, pp.49–50. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p class="note">기존 <em>unbuttonable</em>의 왼쪽 tree는 먼저 buttonable(A)를 만들어 ‘채울 수 있는’을 얻고, un-이 이를 부정한다. 오른쪽 tree는 먼저 unbutton(V)을 만들어 ‘풀다’를 얻고, -able이 그 동작의 가능성을 나타낸다. 최종 품사는 둘 다 A지만 un-이 붙는 대상과 의미가 다르다.</p><p class="note"><em>unwearable</em>은 표준 의미에서 wearable(A)에 negative un-이 붙는다. ‘입는 행위를 되돌리다’라는 일반적인 unwear(V)를 먼저 가정하여 두 번째 해석이 있다고 판단하면 안 된다. un…able이라는 겉모양만으로 ambiguity가 있다고 판단하지 않는다.</p><p class="note"><em>rewashable</em>의 반복 의미 re-는 wash(V)를 입력으로 선택한다. wash → rewash → rewashable의 각 단계는 <strong>V → V → A</strong>다. 반대로 [re-[washable]]에서는 re-가 <u>A인 washable을 입력으로 받게 되어</u> 이 반복 의미 re-의 V 선택 조건과 맞지 않는다. 같은 morpheme 목록이라도 <strong>결합 순서와 각 단계의 base 품사</strong>가 맞아야 한다.</p>
     </details>
   </div>
@@ -651,6 +689,10 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p>derivational productivity·constraint 및 lexicalization은 형태론 심화 개념으로 다룬다.</p>
     </div>
     <details class="exam"><summary>발음 조건만으로 파생형을 만들 수는 없다</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">Morphological rules distinguish <strong>possible formations</strong> from combinations that violate structural restrictions. Yet a possible formation need not be an established word. <u>Meeting a phonological condition does not guarantee lexical acceptance</u>; selection, conventional vocabulary and competing forms also matter. Keep these different reasons apart when explaining why a proposed derived word is absent.</p><p class="english-source">개념 근거: Fromkin, V., Rodman, R., &amp; Hyams, N. (2014). <cite>An Introduction to Language</cite>, 10th ed., Ch.2, pp.55–57. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+
 <p class="note"><em>dark → darken</em>은 monosyllabic·obstruent-final base의 표준 예다. <em>calm</em>은 마지막 /m/이 sonorant여서 이 -en 패턴에 맞지 않고, <em>curious</em>는 polysyllabic이다. 두 실패를 같은 이유로 처리하지 않는다.</p><p class="note">발음 조건에 맞더라도 해당 affix가 그 품사와 의미의 base에 실제로 붙는지 확인해야 한다. 필요조건은 맞지 않는 예를 걸러 주지만, 조건에 맞는 모든 결합이 실제 단어로 쓰인다는 뜻은 아니다.</p><p class="note">N-forming -al의 final-stress 조건은 <em>arrive → arrival</em>과 <em>refuse → refusal</em> 같은 패턴을 설명한다. 하지만 final stress만으로 모든 verb가 -al을 허용하지 않는다. 또 <em>musical</em>의 A-forming -al과 input/output category가 다르므로 하나의 규칙으로 합치지 않는다.</p><p class="note">lexicalization은 관습화된 의미를 개별 학습해야 하는 경우와 연결된다. 낮은 productivity, phonological 조건 위반, 기존 단어에 의한 blocking은 서로 구분해서 설명한다.</p>
     
     </details>
