@@ -111,7 +111,16 @@ details.concept>p{margin-top:10px;line-height:1.8}
 .exam-year{display:inline-block;color:#b71c1c;font-weight:700;font-size:14px;padding:1px 5px;text-decoration:none;letter-spacing:0}
 .exam-year:hover,.exam-year:focus-visible{text-decoration:underline}.c-title{flex-wrap:wrap}
 @media(max-width:640px){.tree-scroll .tree-svg{min-width:780px;max-width:none;width:780px}}
-</style></head>
+</style><style>
+/* Directly visible control-verb examples; mobile rows retain their labels. */
+.control-examples{margin:18px 0;padding:14px;border:1px solid #abc5b2;border-radius:10px;background:#f8fbf8;min-width:0}
+.control-examples h3{font-size:18px;color:#265e3c;margin-bottom:8px}
+.control-verb-table{width:100%;border-collapse:collapse;font-size:16px;line-height:1.7;table-layout:fixed}
+.control-verb-table th,.control-verb-table td{padding:10px;border:1px solid #c2d3c6;text-align:left;vertical-align:top;overflow-wrap:break-word}
+.control-verb-table th{background:#eaf2e9}.control-verb-table th:first-child{width:22%}.control-verb-table strong{font-weight:800;color:#265e3c}
+@media(max-width:640px){.control-verb-table,.control-verb-table tbody,.control-verb-table tr,.control-verb-table th,.control-verb-table td{display:block;width:100%!important;max-width:100%}.control-verb-table thead{display:none}.control-verb-table tr{margin:12px 0;border:1px solid #c2d3c6;border-radius:8px;overflow:hidden}.control-verb-table th,.control-verb-table td{border:0;border-bottom:1px solid #dce7df}.control-verb-table td:last-child{border-bottom:0}.control-verb-table td::before{content:attr(data-label);display:block;font-family:'Noto Sans KR',sans-serif;font-weight:700;color:#265e3c;margin-bottom:5px}}
+</style>
+</head>
 <body class="etwiki-learning">
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
 <nav class="learning-links" aria-label="챕터 학습"><a href="./index.html">전체 목차</a><a href="./raising-control.html">OX 풀기</a></nav>
@@ -468,6 +477,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p class="note">matrix subject 자리는 <span class='kw2'>theta-position</span>이므로 expletive가 올 수 없다. 하위절 술어와 이루던 idiomatic reading은 유지되지 않지만, 같은 NP의 literal reading은 별도로 판단한다.</p>
       <p class="note">하위절 주어는 <span class='kw1'>PRO</span>이며 matrix subject와 <span class='kw2'>coindex</span>(control)된다.</p>
     </div>
+    <div class="control-examples"><h3>Subject control · 동사와 예문</h3><p class="note">학습용 예문</p><table class="control-verb-table"><thead><tr><th scope="col">Verb / frame</th><th scope="col">Example</th><th scope="col">판별 포인트</th></tr></thead><tbody><tr><th scope="row">try</th><td data-label="Example" lang="en">Mina <strong>tried</strong> to unlock the cabinet.</td><td data-label="판별 포인트">시도하는 사람과 unlock의 주체 모두 Mina</td></tr><tr><th scope="row">plan</th><td data-label="Example" lang="en">The hikers <strong>planned</strong> to leave before sunrise.</td><td data-label="판별 포인트">계획하는 hikers가 떠남</td></tr><tr><th scope="row">decide</th><td data-label="Example" lang="en">Yuna <strong>decided</strong> to study abroad.</td><td data-label="판별 포인트">결정하는 Yuna가 study의 주체</td></tr><tr><th scope="row">hope</th><td data-label="Example" lang="en">Leo <strong>hopes</strong> to join the orchestra.</td><td data-label="판별 포인트">희망하는 Leo가 join의 주체</td></tr><tr><th scope="row">intend</th><td data-label="Example" lang="en">The volunteers <strong>intend</strong> to clean the beach.</td><td data-label="판별 포인트">의도하는 volunteers가 clean의 주체</td></tr><tr><th scope="row">prefer</th><td data-label="Example" lang="en">Nora <strong>prefers</strong> to travel by train.</td><td data-label="판별 포인트">선호하는 Nora가 travel의 주체</td></tr><tr><th scope="row">refuse</th><td data-label="Example" lang="en">The witness <strong>refused</strong> to answer the question.</td><td data-label="판별 포인트">거절하는 witness가 answer의 주체</td></tr><tr><th scope="row">promise + NP</th><td data-label="Example" lang="en">Mira <strong>promised</strong> Daniel to mail the forms.<br>Mira <strong>persuaded</strong> Daniel to mail the forms.</td><td data-label="판별 포인트">promise: Mira가 mail → SC<br>persuade: Daniel이 mail → OC</td></tr><tr><th scope="row">expect의 두 frame</th><td data-label="Example" lang="en">Iris <strong>expects</strong> to finish the report.<br>Iris <strong>expects</strong> Noah to finish the report.</td><td data-label="판별 포인트">NP V to-VP: Iris가 PRO의 controller<br>NP V NP to-VP: Noah는 overt subject → ECM</td></tr></tbody></table></div>
     <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Raising Control 구조 그림 3" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowRc3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#8d4d14"/></marker>
@@ -518,7 +528,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <span class="eg-note">위 예문의 planned · be keen · threatened는 subject control — matrix subject에 theta-role 부여</span>
     </div>
     <details class="concept">
-      <summary class="c-title">기출 변형 예문 · 목적어가 있는 subject control 구문</summary>
+      <summary class="c-title">자세히 보기 · Subject control 판별과 기출 대조</summary>
       <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p></details>
       <div class="eg">
         <span class="eg-line">(a) The director motivated the assistant to work more carefully.</span>
@@ -529,30 +539,24 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p class="note"><strong>(b) Raising/ECM:</strong> 신뢰할 수 없는 사람이라고 보고되는 대상은 the assistant다. the assistant가 하위절의 overt subject이므로 PRO를 넣지 않는다. 원문의 발문은 control constructions만 고르라고 했으므로 이 문장은 제외한다.</p>
       <p class="note"><strong>(c) subject control:</strong> 해고하겠다고 위협한 사람은 the director이고, 해고의 대상인 her는 the assistant다. The director<sub>j</sub> threatened the assistant<sub>i</sub> [PRO<sub>j</sub> to dismiss her<sub>i</sub>]로 읽는다. <u><u>동사 뒤에 the assistant가 보인다는 이유만으로 object control이라고 판단하면 안 된다.</u></u></p>
       <p class="note"><strong>threaten의 두 용법:</strong> 위협 행위를 나타내는 위 변형 예문은 subject control이다. 반면 <em>There threatens to be a shortage of clean water.</em>는 부족 사태가 생길 조짐을 나타내는 raising 용법의 변형 예문이다. expletive there를 쓸 수 있다는 점이 raising으로 분석하는 근거다. Radford, p.443, (144j)도 이 용법을 raising으로 제시한다.</p>
-    </details>
+    
+<div class="types-examples">
+<h3>동사별 frame과 controller 확인</h3>
+<p><a class="types-term" href="https://etwiki.net/concept.html?term=subject%20control">Subject control</a> · 여기서는 <code>NP V to-VP</code>에서 <u>matrix subject가 하위절의 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 control</u>하는 용법이다. <strong>be anxious</strong>도 해당 subject-control infinitive에서 비교한다. Control이 항상 의도적인 행동을 뜻하는 것은 아니다. 기존 본문의 relieved 같은 감정 술어도 matrix argument 관계로 판단한다.</p>
+<p>기출 원문: The researchers <strong>planned</strong> to start their project. <a class="types-exam" href="https://etwiki.net/index.html?id=linguistics_2012_X21">(2012, 1차 21번)</a></p>
+<p>planned의 subject는 계획하는 사람이고, 하위절에서는 그 사람들과 연결되는 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 둔다. 분석용 약식 표기: <code>the researchersᵢ <strong>planned</strong> [PROᵢ to start their project]</code>. 같은 사람을 가리켜도 matrix NP와 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>는 별도의 argument다.</p>
+<p>위 비교표의 promise 문장에서 mail하는 사람은 <strong>Mira</strong>, persuade 문장에서는 <strong>Daniel</strong>이다. promise 문장의 Daniel은 약속을 받는 상대이지만 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>의 controller는 아니다. 따라서 ‘PRO 바로 앞 NP를 controller로 고른다’는 방법은 통하지 않는다. 약식으로는 <code>Miraᵢ <strong>promised</strong> Daniel [PROᵢ to mail the forms]</code>와 <code>Mira <strong>persuaded</strong> Danielᵢ [PROᵢ to mail the forms]</code>를 구분한다.</p>
+<p>위 비교표의 <code>Iris expects to finish</code>는 subject-control 틀이고, <code>Iris expects Noah to finish</code>는 Noah가 끝낼 것으로 예상하는 <a class="types-term" href="https://etwiki.net/concept.html?term=Exceptional%20Case%20Marking%20%28ECM%29">ECM</a> 틀이다. expect라는 철자만으로 두 문장의 구조를 같게 분류하지 않는다.</p><details class="types-source"><summary>출처·분석 범위</summary><p>Radford, A. (1988), Transformational Grammar: A First Course, §6.7 pp.323–324; Ch8 Exercise VII p.461. Cowan, R. (2008), The Teacher’s Grammar of English, Ch21 pp.498–499, 508. Aarts, B. (2018), English Syntax and Argumentation, 5th ed., Ch17 Exercise2 and answer key p.389.</p></details>
+
+</div>
+</details>
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
       <p><strong>2012 1차</strong> — <span class='kw1'>SC</span>: planned / preferred / be relieved / be keen 등 control 술어를 raising 술어와 분류</p>
       <p><strong>2013학년도 1차 34번</strong> — <span class='kw1'>infinitive complementation</span>: <em>V to-V</em>, <em>V NP to-V</em>, <em>V for NP to-V</em>의 세 구조를 분류한다. <em>The trainee decided to resign</em>처럼 주어와 동작을 바꾼 예문으로 subject control과 연결해 복습할 수 있다.</p>
     </div>
   
-<details class="types-examples" data-topic="subject-control"><summary>종류와 예문 · Subject control과 promise의 controller</summary>
-<p><a class="types-term" href="https://etwiki.net/concept.html?term=subject%20control">Subject control</a> · <strong>try, plan, decide, hope, intend, prefer, refuse, promise</strong> — 여기서는 <code>NP V to-VP</code>에서 <u>matrix subject가 하위절의 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 control</u>하는 용법이다. <strong>be anxious</strong>도 해당 subject-control infinitive에서 비교한다. Control이 항상 의도적인 행동을 뜻하는 것은 아니다. 기존 본문의 relieved 같은 감정 술어도 matrix argument 관계로 판단한다.</p>
-<p>기출 원문: The researchers <strong>planned</strong> to start their project. <a class="types-exam" href="https://etwiki.net/index.html?id=linguistics_2012_X21">(2012, 1차 21번)</a></p>
-<p>planned의 subject는 계획하는 사람이고, 하위절에서는 그 사람들과 연결되는 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 둔다. 분석용 약식 표기: <code>the researchersᵢ <strong>planned</strong> [PROᵢ to start their project]</code>. 같은 사람을 가리켜도 matrix NP와 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>는 별도의 argument다.</p>
-<p>학습용 창작 예문:</p>
-<ul>
-<li lang="en">Mira <strong>promised</strong> Daniel to mail the forms.</li>
-<li lang="en">Mira <strong>persuaded</strong> Daniel to mail the forms.</li>
-</ul>
-<p>첫째에서 mail하는 사람은 <strong>Mira</strong>, 둘째에서는 <strong>Daniel</strong>이다. 첫째의 Daniel은 약속을 받는 상대이지만 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>의 controller는 아니다. 따라서 ‘PRO 바로 앞 NP를 controller로 고른다’는 방법은 통하지 않는다. 약식으로는 <code>Miraᵢ <strong>promised</strong> Daniel [PROᵢ to mail the forms]</code>와 <code>Mira <strong>persuaded</strong> Danielᵢ [PROᵢ to mail the forms]</code>를 구분한다.</p>
-<p>학습용 창작 예문:</p>
-<ul>
-<li lang="en">Iris <strong>expects</strong> to finish the report.</li>
-<li lang="en">Iris <strong>expects</strong> Noah to finish the report.</li>
-</ul>
-<p>첫째는 Iris가 끝낼 것으로 예상하는 subject-control 틀이고, 둘째는 Noah가 끝낼 것으로 예상하는 <a class="types-term" href="https://etwiki.net/concept.html?term=Exceptional%20Case%20Marking%20%28ECM%29">ECM</a> 틀이다. expect라는 철자만으로 두 문장의 구조를 같게 분류하지 않는다.</p><details class="types-source"><summary>출처·분석 범위</summary><p>Radford, A. (1988), Transformational Grammar: A First Course, §6.7 pp.323–324; Ch8 Exercise VII p.461. Cowan, R. (2008), The Teacher’s Grammar of English, Ch21 pp.498–499, 508. Aarts, B. (2018), English Syntax and Argumentation, 5th ed., Ch17 Exercise2 and answer key p.389.</p></details>
-</details>
+
 </div>
 </div>
 
@@ -571,6 +575,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p class="note">matrix object 자리는 <span class='kw2'>theta-position</span>이다. NP는 상위 동사의 theta-role을 받으므로 expletive가 올 수 없다. 하위절 술어와 이루던 idiomatic reading의 유지 여부는 같은 NP의 literal reading과 구별한다.</p>
       <p class="note">이것이 <span class='kw4'>persuade(OC)</span> vs <span class='kw4'>believe(SOR)</span>를 가르는 핵심 — 둘 다 표면 <em>V + NP + to-VP</em>이지만 NP의 자격이 다르다.</p>
     </div>
+    <div class="control-examples"><h3>Object control · 동사와 예문</h3><p class="note">학습용 예문</p><table class="control-verb-table"><thead><tr><th scope="col">Verb / frame</th><th scope="col">Example</th><th scope="col">판별 포인트</th></tr></thead><tbody><tr><th scope="row">persuade</th><td data-label="Example" lang="en">The tutor <strong>persuaded</strong> Nari to revise the essay.<br>Nari <strong>was persuaded</strong> by the tutor to revise the essay.</td><td data-label="판별 포인트">두 문장 모두 설득받은 Nari가 revise의 주체. Matrix passive도 control 유지</td></tr><tr><th scope="row">convince</th><td data-label="Example" lang="en">The coach <strong>convinced</strong> Joon to enter the race.</td><td data-label="판별 포인트">설득받은 Joon이 enter의 주체</td></tr><tr><th scope="row">order</th><td data-label="Example" lang="en">The officer <strong>ordered</strong> the drivers to stop.</td><td data-label="판별 포인트">명령받은 drivers가 stop의 주체</td></tr><tr><th scope="row">tell</th><td data-label="Example" lang="en">A librarian <strong>told</strong> the visitors to lower their voices.</td><td data-label="판별 포인트">지시받은 visitors가 lower의 주체</td></tr><tr><th scope="row">advise</th><td data-label="Example" lang="en">The dentist <strong>advised</strong> Hana to use a softer brush.</td><td data-label="판별 포인트">조언받은 Hana가 use의 주체</td></tr></tbody></table></div>
     <p class="tree-scroll-hint">작은 화면에서는 그림을 좌우로 밀어 볼 수 있어요.</p><div class="tree-scroll" role="region" aria-label="Raising Control 구조 그림 4" tabindex="0"><svg class="tree-svg" viewBox="0 0 660 330" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowRc4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#8d4d14"/></marker>
@@ -617,7 +622,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       </div>
     </div>
     <details class="concept">
-      <summary class="c-title">기출 변형 예문 · V NP to-V에서 NP의 문법적 역할</summary>
+      <summary class="c-title">자세히 보기 · Object control과 ECM 판별</summary>
       <details class="reference-fold"><summary>출처 · 분석 기준 펼치기</summary><p class="note">출처: 2019학년도 1차 전공 B 6번, 문제지 5쪽. 아래 학습 예문은 해당 기출의 출제 구조를 바탕으로 어휘와 상황을 바꿔 만든 변형 예문이다. 원문 인용이 아니다. <a href="https://etwiki.net/index.html?id=linguistics_2019_B06">기출 해설</a></p></details>
       <div class="eg">
         <span class="eg-line">(a) Lena persuaded Max to obey his supervisor.</span>
@@ -635,7 +640,22 @@ details.concept>p{margin-top:10px;line-height:1.8}
         <span class="eg-line eg-bad">The analyst persuaded there to be a mismatch in the figures.</span>
       </div>
       <p class="note">위 두 문장은 진단용 변형 예문이다. expletive there는 믿음의 내용을 나타내는 existential clause의 주어가 될 수 있지만, 설득을 받는 대상은 될 수 없다. 따라서 동사 바로 뒤의 NP가 하위절 주어인지, 상위 동사에서 의미역을 받는 목적어인지 확인해야 한다.</p>
-    </details>
+    
+<div class="types-examples">
+<h3>동사별 frame과 controller 확인</h3>
+<p><a class="types-term" href="https://etwiki.net/concept.html?term=control" title="control 항목의 subject/object 구분">Object control</a> · 여기서는 <code>NP V NP to-VP</code>에서 뒤 NP가 설득·지시·조언의 대상이고, 그 matrix object가 하위절 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 control하는 용법이다. <code>tell a story</code>, <code>convince NP that …</code> 같은 다른 frame을 동일한 infinitival control 구조라고 부르지 않는다.</p>
+<p>기출 원문: John <strong>persuaded</strong> Sue to obey her parents. <a class="types-exam" href="https://etwiki.net/index.html?id=linguistics_2019_B06">(2019, 전공 B 6번)</a></p>
+<p>John이 설득한 대상은 Sue이며, obey의 주체도 Sue로 해석한다. 전통적인 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a> 분석에서는 <code>John <strong>persuaded</strong> Sueᵢ [PROᵢ to obey her parents]</code>처럼 matrix object와 embedded <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 따로 표시한다. Sue라는 하나의 argument에 두 theta-role을 겹쳐 배정하는 표기가 아니다.</p>
+<p>위 비교표의 <code>Nari was persuaded</code>는 matrix passive다. 설득받은 Nari가 surface subject가 되어도 revise의 하위절 주어는 Nari와 연결되는 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>로 분석한다. <u>passive 형태만 보고 하위절을 raising trace 구조로 바꾸지 않는다</u>.</p>
+<p>학습용 창작 대조 · there는 existential dummy:</p>
+<ul>
+<li lang="en">The tutor <strong>expected</strong> there to be a delay.</li>
+<li lang="en">*The tutor <strong>persuaded</strong> there to be a delay.</li>
+</ul>
+<p>expected 뒤 there는 existential clause의 주어다. 반면 persuade의 해당 목적어 자리는 설득받는 참여자를 요구하므로 의미 없는 there로 채울 수 없다. 이를 ‘object control의 모든 목적어는 무조건 사람’이라는 일반 규칙으로 확대하지 않는다. 각 predicate가 요구하는 역할과 해당 의미를 확인한다.</p><details class="types-source"><summary>출처·분석 범위</summary><p>Radford, A. (1988), Transformational Grammar: A First Course, §6.7 pp.320–324. Cowan, R. (2008), The Teacher’s Grammar of English, Ch21 pp.497, 502. 기출 원문: 2019학년도 전공 B 6번. 나머지는 학습용 창작 예문.</p></details>
+
+</div>
+</details>
     <div class="exam">
       <div class="exam-label">📋 기출 이력</div>
       <p><strong>2013 1차</strong> — <span class='kw1'>OC</span>: <em>You allowed us to come in</em> / <em>He ordered us to get out</em> 등 object control</p>
@@ -647,23 +667,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
       <p class="note">원문의 The earthquake was said to have hit the city는 가능하지만 *The earthquake was told to hit the city는 해당 지시 의미에서 허용되지 않는다. 지진이 도시를 덮쳤다는 내용은 보고할 수 있어도 지진을 지시받는 참여자로 선택할 수 없기 때문이다. <strong>상위 술어가 그 NP를 의미상 선택하는가</strong>를 비교하면 -ed 형태만으로 분류하는 오류를 피할 수 있다.</p>
     </details>
   
-<details class="types-examples" data-topic="object-control"><summary>종류와 예문 · Object control은 목적어와 PRO를 구별하기</summary>
-<p><a class="types-term" href="https://etwiki.net/concept.html?term=control" title="control 항목의 subject/object 구분">Object control</a> · <strong>persuade, convince, order, tell, advise</strong> — 여기서는 <code>NP V NP to-VP</code>에서 뒤 NP가 설득·지시·조언의 대상이고, 그 matrix object가 하위절 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 control하는 용법이다. <code>tell a story</code>, <code>convince NP that …</code> 같은 다른 frame을 동일한 infinitival control 구조라고 부르지 않는다.</p>
-<p>기출 원문: John <strong>persuaded</strong> Sue to obey her parents. <a class="types-exam" href="https://etwiki.net/index.html?id=linguistics_2019_B06">(2019, 전공 B 6번)</a></p>
-<p>John이 설득한 대상은 Sue이며, obey의 주체도 Sue로 해석한다. 전통적인 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a> 분석에서는 <code>John <strong>persuaded</strong> Sueᵢ [PROᵢ to obey her parents]</code>처럼 matrix object와 embedded <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>를 따로 표시한다. Sue라는 하나의 argument에 두 theta-role을 겹쳐 배정하는 표기가 아니다.</p>
-<p>학습용 창작 예문:</p>
-<ul>
-<li lang="en">The tutor <strong>persuaded</strong> Nari to revise the essay.</li>
-<li lang="en">Nari <strong>was persuaded</strong> by the tutor to revise the essay.</li>
-</ul>
-<p>둘째는 matrix passive다. 설득받은 Nari가 surface subject가 되어도 revise의 하위절 주어는 Nari와 연결되는 <a class="types-term" href="https://etwiki.net/concept.html?term=PRO">PRO</a>로 분석한다. <u>passive 형태만 보고 하위절을 raising trace 구조로 바꾸지 않는다</u>.</p>
-<p>학습용 창작 대조 · there는 existential dummy:</p>
-<ul>
-<li lang="en">The tutor <strong>expected</strong> there to be a delay.</li>
-<li lang="en">*The tutor <strong>persuaded</strong> there to be a delay.</li>
-</ul>
-<p>expected 뒤 there는 existential clause의 주어다. 반면 persuade의 해당 목적어 자리는 설득받는 참여자를 요구하므로 의미 없는 there로 채울 수 없다. 이를 ‘object control의 모든 목적어는 무조건 사람’이라는 일반 규칙으로 확대하지 않는다. 각 predicate가 요구하는 역할과 해당 의미를 확인한다.</p><details class="types-source"><summary>출처·분석 범위</summary><p>Radford, A. (1988), Transformational Grammar: A First Course, §6.7 pp.320–324. Cowan, R. (2008), The Teacher’s Grammar of English, Ch21 pp.497, 502. 기출 원문: 2019학년도 전공 B 6번. 나머지는 학습용 창작 예문.</p></details>
-</details>
+
 </div>
 </div>
 
