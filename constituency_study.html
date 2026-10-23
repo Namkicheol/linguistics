@@ -85,6 +85,16 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f4f3ed;background-image:r
 .nav-btn.next-btn{font-weight:600}
 
 @media(max-width:640px){body{padding:10px}.grid.col3,.grid.col2{grid-template-columns:1fr}.sec-body{padding:16px}.gi-body{font-size:14px}.sec-header{padding:14px 16px}.sec-title{font-size:14px}.sec-tag{max-width:42%;white-space:normal}.concept,.def,.note,.grid-item,.eg,.exam{min-width:0}.tree-svg{max-width:100%;min-width:0}svg{display:block;max-width:100%;height:auto}}
+
+/* english-passage-expansion:start */
+.english-passage{margin:12px 0;padding:12px 14px;border:1px solid #d4d9e6;border-left:3px solid #596b98;border-radius:8px;background:#f7f9fd;color:#202b3d;overflow-wrap:anywhere}
+.english-passage .english-label{font-size:12px;font-weight:700;color:#485e86;margin-bottom:6px}
+.english-passage .english-text{font-size:14px;line-height:1.85;margin:0}
+.english-passage strong{font-weight:700;background:#fff1b8;color:inherit;padding:0 2px}
+.english-passage u{text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:#657caa}
+.english-passage .english-source{font-size:11px;line-height:1.6;color:#5c6472;margin:8px 0 0}
+@media(max-width:480px){.english-passage{padding:10px 11px}.english-passage .english-text{font-size:13px}}
+/* english-passage-expansion:end */
 </style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
@@ -180,7 +190,11 @@ details.concept > div{padding:4px 10px 8px}
       <p class="note">비문(*)/정문 판별의 출발점 — 검사할 문자열의 구조와 해당 구문의 독립 조건을 함께 확인한다</p>
     </div>
     
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 노드와 단어 수, constituent 검사 방법</summary><div style="margin-top:12px"><p class="note">[NP birds]와 [NP the birds near the pond]는 길이가 달라도 NP 자리에 올 수 있다. constituent는 “두 단어 이상”이라는 길이 조건으로 정의하지 않는다.</p><div class="eg">[S [NP The guide] [VP greeted [NP the visitors]]]</div><p class="note">the visitors는 NP 노드의 모든 말단을 포함한다. guide greeted는 서로 다른 가지의 일부를 모은 연속 문자열이므로 이 구조의 constituent가 아니다. 단어들이 연속해서 나타난다는 사실만으로는 constituent라고 할 수 없다.</p><p class="note">검사 순서: ① 원문에서 검사할 문자열을 표시한다. ② 해석을 유지한 채 적절한 구문에 넣는다. ③ 실제로 이동·대용된 범위를 확인한다. ④ 다른 진단으로 교차 확인한다. <u>실패했다면 category·담화·selection 등의 독립 조건을 먼저 살핀다.</u></p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 노드와 단어 수, constituent 검사 방법</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">A <strong>constituent</strong> is a structural unit, not a string defined by its length. In a tree, it contains <u>all the material dominated by the relevant node</u>. A single word can therefore form a phrase, while several adjacent words may fail to form one constituent. Identify the node and its complete span before applying a test.</p><p class="english-source">개념 근거: Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §3.2, pp.109–114; §3.5, pp.128–129. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+<div style="margin-top:12px"><p class="note">[NP birds]와 [NP the birds near the pond]는 길이가 달라도 NP 자리에 올 수 있다. constituent는 “두 단어 이상”이라는 길이 조건으로 정의하지 않는다.</p><div class="eg">[S [NP The guide] [VP greeted [NP the visitors]]]</div><p class="note">the visitors는 NP 노드의 모든 말단을 포함한다. guide greeted는 서로 다른 가지의 일부를 모은 연속 문자열이므로 이 구조의 constituent가 아니다. 단어들이 연속해서 나타난다는 사실만으로는 constituent라고 할 수 없다.</p><p class="note">검사 순서: ① 원문에서 검사할 문자열을 표시한다. ② 해석을 유지한 채 적절한 구문에 넣는다. ③ 실제로 이동·대용된 범위를 확인한다. ④ 다른 진단으로 교차 확인한다. <u>실패했다면 category·담화·selection 등의 독립 조건을 먼저 살핀다.</u></p></div></details>
   </div>
 </div>
 
@@ -274,7 +288,11 @@ details.concept > div{padding:4px 10px 8px}
       </div>
     </div>
     
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 대용된 범위를 정확히 찾기</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Nora greeted [the pilot with the blue scarf]. → Nora greeted [her].</span><span class="eg-line eg-bad">Nora greeted the her with the blue scarf.</span></div><p class="note">her는 pilot이라는 N만 바꾸는 표현이 아니라 목적어 NP 자리를 차지한다. scarf를 쓴 pilot이라는 동일한 대상을 가리키는 문맥을 유지해야 한다.</p><div class="eg"><span class="eg-line">I hope [the train arrives soon].</span><span class="eg-line eg-bad">I hope it. (같은 complement 자리에서 직접 대용)</span></div><p class="note">it 대용이 실패해도 대괄호 안 절은 constituent이다. hope가 이 용법에서 NP complement를 허용하지 않기 때문이다. I hope so는 가능하다. <u>“대용 실패 → nonconstituent”라는 역추론은 성립하지 않는다.</u></p><div class="eg"><span class="eg-line">Nora will [repair the bicycle], and Leo will [∅] too.</span></div><p class="note">VP ellipsis에서는 생략된 repair the bicycle이 문맥에서 회복되고 auxiliary will은 남는다. do so라는 소리 있는 대용 표현과 ellipsis를 구분한다. do so의 범위는 위 도식처럼 complement를 포함하고 adjunct를 포함하거나 제외할 수 있다.</p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 대용된 범위를 정확히 찾기</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">A <strong>proform</strong> must replace the intended constituent while preserving the relevant interpretation. Replacing an entire NP with a pronoun is different from replacing only its noun. <u>A failed substitution may reflect the selecting verb’s restrictions</u>, rather than nonconstituency. Compare a suitable alternative test before rejecting the analysis.</p><p class="english-source">개념 근거: Aarts, B. (2018). <cite>English Syntax and Argumentation</cite>, 5th ed., §§12.2, 13.2, 13.8, pp.210–211, 230–231, 240–241. Radford, A. (1988). <cite>Transformational Grammar: A First Course</cite>, §§7.3–7.4, pp.339–345. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+<div style="margin-top:12px"><div class="eg"><span class="eg-line">Nora greeted [the pilot with the blue scarf]. → Nora greeted [her].</span><span class="eg-line eg-bad">Nora greeted the her with the blue scarf.</span></div><p class="note">her는 pilot이라는 N만 바꾸는 표현이 아니라 목적어 NP 자리를 차지한다. scarf를 쓴 pilot이라는 동일한 대상을 가리키는 문맥을 유지해야 한다.</p><div class="eg"><span class="eg-line">I hope [the train arrives soon].</span><span class="eg-line eg-bad">I hope it. (같은 complement 자리에서 직접 대용)</span></div><p class="note">it 대용이 실패해도 대괄호 안 절은 constituent이다. hope가 이 용법에서 NP complement를 허용하지 않기 때문이다. I hope so는 가능하다. <u>“대용 실패 → nonconstituent”라는 역추론은 성립하지 않는다.</u></p><div class="eg"><span class="eg-line">Nora will [repair the bicycle], and Leo will [∅] too.</span></div><p class="note">VP ellipsis에서는 생략된 repair the bicycle이 문맥에서 회복되고 auxiliary will은 남는다. do so라는 소리 있는 대용 표현과 ellipsis를 구분한다. do so의 범위는 위 도식처럼 complement를 포함하고 adjunct를 포함하거나 제외할 수 있다.</p></div></details>
   </div>
 </div>
 
@@ -309,7 +327,11 @@ details.concept > div{padding:4px 10px 8px}
       </div>
     </div>
     
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 조건을 일정하게 유지한 movement 검사</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Context: Which notes will Mina read, the old ones or the new ones?</span><span class="eg-line">[The new notes], Mina will read __.</span><span class="eg-line eg-bad">[The new], Mina will read __ notes.</span></div><p class="note">두 문장은 같은 auxiliary와 목적어 해석을 유지한다. 첫 문장은 목적어 NP 전체를 옮겼지만 둘째는 determiner와 adjective만 떼어 냈다. 단순히 어순이 이상한 문장을 만드는 것보다 한 조건만 바꾼 대조가 구조적 차이를 확인하는 데 더 적절하다.</p><p class="note">VP-preposing은 auxiliary를 남기는 형태로 검사한다: Mina said she would [read the notes], and [read the notes] she would __. read만 옮기고 the notes를 남기는 결과와 비교한다.</p><p class="note">movement는 담화와 구문에 제약된다. <u>constituent라고 모든 위치로 이동할 수 있는 것은 아니다.</u> 이 절의 topicalization은 phrase 진단이며, head movement까지 “phrase만 이동”으로 묶지 않는다.</p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 조건을 일정하게 유지한 movement 검사</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">In a <strong>movement test</strong>, keep the sentence and intended interpretation constant and change the scope of the displaced expression. Successful movement supplies evidence that the moved string forms a unit. <u>Failure alone is inconclusive</u>: the construction may independently restrict movement or the kind of phrase it allows.</p><p class="english-source">개념 근거: Aarts, B. (2018). <cite>English Syntax and Argumentation</cite>, 5th ed., §§12.2, 13.2, 13.8, pp.210–211, 230–231, 240–241. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+<div style="margin-top:12px"><div class="eg"><span class="eg-line">Context: Which notes will Mina read, the old ones or the new ones?</span><span class="eg-line">[The new notes], Mina will read __.</span><span class="eg-line eg-bad">[The new], Mina will read __ notes.</span></div><p class="note">두 문장은 같은 auxiliary와 목적어 해석을 유지한다. 첫 문장은 목적어 NP 전체를 옮겼지만 둘째는 determiner와 adjective만 떼어 냈다. 단순히 어순이 이상한 문장을 만드는 것보다 한 조건만 바꾼 대조가 구조적 차이를 확인하는 데 더 적절하다.</p><p class="note">VP-preposing은 auxiliary를 남기는 형태로 검사한다: Mina said she would [read the notes], and [read the notes] she would __. read만 옮기고 the notes를 남기는 결과와 비교한다.</p><p class="note">movement는 담화와 구문에 제약된다. <u>constituent라고 모든 위치로 이동할 수 있는 것은 아니다.</u> 이 절의 topicalization은 phrase 진단이며, head movement까지 “phrase만 이동”으로 묶지 않는다.</p></div></details>
   </div>
 </div>
 
@@ -415,7 +437,11 @@ details.concept > div{padding:4px 10px 8px}
         <span class="eg-note">→ NP·PP 등 단일 phrase만 focus position에 들어감.</span>
       </div>
     </div>
-<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 짧은 답과 생략된 절 / cleft와 pseudocleft</summary><div style="margin-top:12px"><div class="eg"><span class="eg-line">Who will check the tickets? — [The guard].</span><span class="eg-line">Who will check the tickets? — [The guard will ∅].</span></div><p class="note">첫 답은 NP fragment로 분석한다. 둘째 답에는 check the tickets라는 VP가 생략된 절이 있으므로 the guard will이라는 표면 문자열 자체가 별도 constituent임을 입증하지 않는다.</p><div class="eg"><span class="eg-line">Nora repaired [the bicycle]. → It was [the bicycle] that Nora repaired.</span><span class="eg-line">Nora [repaired the bicycle]. → What Nora did was [repair the bicycle].</span></div><p class="note">it-cleft와 pseudocleft의 focus 자리에는 동일한 category 제약이 적용되는 것이 아니다. VP를 검사하려면 what … did … 구문이 적절하다. <u>한 종류의 cleft에 들어가지 못했다는 이유로 nonconstituent라고 판정하지 않는다.</u></p></div></details>
+<details class="concept"><summary class="c-title" style="cursor:pointer">자세히 · 짧은 답과 생략된 절 / cleft와 pseudocleft</summary>
+<!-- english-passage:start -->
+<div class="english-passage"><p class="english-label">영어로 이해하기</p><p class="english-text" lang="en">An <strong>it-cleft</strong> and a <strong>pseudocleft</strong> do not permit exactly the same kinds of focus. A VP may work after <em>What someone did was …</em> but fail in an it-cleft. <u>Test failure must be attributed to the right construction</u>; it does not erase positive evidence from substitution or another suitable test.</p><p class="english-source">개념 근거: Aarts, B. (2018). <cite>English Syntax and Argumentation</cite>, 5th ed., §§12.2, 13.2, 13.8, pp.210–211, 230–231, 240–241. 학습용 재서술.</p></div>
+<!-- english-passage:end -->
+<div style="margin-top:12px"><div class="eg"><span class="eg-line">Who will check the tickets? — [The guard].</span><span class="eg-line">Who will check the tickets? — [The guard will ∅].</span></div><p class="note">첫 답은 NP fragment로 분석한다. 둘째 답에는 check the tickets라는 VP가 생략된 절이 있으므로 the guard will이라는 표면 문자열 자체가 별도 constituent임을 입증하지 않는다.</p><div class="eg"><span class="eg-line">Nora repaired [the bicycle]. → It was [the bicycle] that Nora repaired.</span><span class="eg-line">Nora [repaired the bicycle]. → What Nora did was [repair the bicycle].</span></div><p class="note">it-cleft와 pseudocleft의 focus 자리에는 동일한 category 제약이 적용되는 것이 아니다. VP를 검사하려면 what … did … 구문이 적절하다. <u>한 종류의 cleft에 들어가지 못했다는 이유로 nonconstituent라고 판정하지 않는다.</u></p></div></details>
   </div>
 </div>
 
