@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학교문법 OX · 9 UNIT</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:36px;height:36px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+.quiz-hub-nav{display:flex;align-items:center;gap:6px;max-width:720px;margin:0 auto 18px;padding:0 8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.quiz-hub-nav::-webkit-scrollbar{display:none}
+.quiz-hub-nav a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:36px;padding:7px 11px;border:1px solid #c5c8e8;border-radius:999px;background:#fff;color:#2a2e6e;font-size:11.5px;font-weight:700;text-decoration:none;white-space:nowrap}
+.quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
+@media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
+.quiz-tools{max-width:720px;margin:0 auto 16px;padding:0 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}.quiz-tools select{max-width:100%;min-width:0;flex:1 1 260px;padding:12px;border:1px solid #c5c8e8;border-radius:8px;font:inherit}.quiz-tools p{font-size:13px;line-height:1.7;color:#555}.quiz-tools .restart-btn{padding:10px 14px;font-size:13px}.unit-label{font-size:13px;line-height:1.7;color:#4a4d6a;margin-bottom:14px}.q-text,.exp-body,.ans-text{overflow-wrap:anywhere}.nd{width:40px;height:40px}.quiz-tools button:disabled{opacity:.5;cursor:default}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #1f7a8c;outline-offset:3px}@media(max-width:480px){.compare,.compare.three{grid-template-columns:1fr}.card{padding:18px}.header-label{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}</style>
+<link rel="stylesheet" href="./learning.css">
+<link rel="stylesheet" href="./mint-learning.css">
+</head>
+<body class="etwiki-learning">
+<header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">SCHOOL GRAMMAR</span>
+    <span class="header-label">Practice Notebook</span>
+  </div>
+  <h1 class="header-title">학교문법 · OX</h1>
+  <div class="header-script">Form, Meaning & Use</div>
+  <p class="header-sub">기존 9개 UNIT의 핵심 대조 · 자체 연습 36문항 (원문 기출 아님)</p>
+  <div class="header-divider"></div>
+</div>
+<nav class="quiz-hub-nav" aria-label="전공영어 학습 허브">
+  <a href="./index.html">영어학 허브</a><a href="./school-grammar_study.html">개념 학습</a><a href="https://etwiki.net/index.html">기출 WIKI</a><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a><a href="https://etwiki.net/keyterm-quiz.html">영교론 키텀</a>
+</nav>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">0 / 36 응답</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:0%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div class="quiz-tools"><label for="unit-filter">학습 범위</label><select id="unit-filter" onchange="setUnit(this.value)"><option value="0">전체 9 UNIT · 36문항</option><option value="1">UNIT 01 · Tense / Aspect</option><option value="2">UNIT 02 · Modals / Negation</option><option value="3">UNIT 03 · Passive / Discourse</option><option value="4">UNIT 04 · Relative / Content Clauses</option><option value="5">UNIT 05 · Extraposition / Tough</option><option value="6">UNIT 06 · Inversion</option><option value="7">UNIT 07 · Multiword Verbs</option><option value="8">UNIT 08 · Definite Reference</option><option value="9">UNIT 09 · Adjective Distribution</option></select><button class="restart-btn" onclick="restart()">현재 범위 다시 풀기</button><button class="restart-btn" id="retry-wrong" onclick="retryWrong()" disabled>오답만 다시 풀기</button><p>범위·순서를 바꾸거나 다시 풀면 현재 회차가 새로 시작됩니다. 최고 기록은 전체 36문항 회차만 저장합니다.</p></div><nav id="nav" aria-label="문항 이동"></nav>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total" id="score-total">/36</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const UNIT_NAMES=["Tense / Aspect", "Modals / Negation", "Passive / Discourse", "Relative / Content Clauses", "Extraposition / Tough", "Inversion", "Multiword Verbs", "Definite Reference", "Adjective Distribution"];
+const Q=[
+  {
+    "id": "SG01-01",
+    "unit": 1,
+    "src": "UNIT 01",
+    "cat": "Future time clause",
+    "text": "단순히 미래 시점을 말할 때, <b>We will leave when the rain stops.</b>의 when-clause는 올바른 형태이다.",
+    "ans": true,
+    "correct": "Future <b>adverbial time clause</b>에 present form을 쓸 수 있습니다.",
+    "why": "When-clause는 떠나는 시간을 정합니다. Stops가 present form이라고 해서 전체 상황을 현재로 읽지 않습니다.",
+    "source": "Greenbaum, S., &amp; Quirk, R. <cite>A Student’s Grammar of the English Language</cite>, §4.17; Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.23, p.548. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#tense-aspect",
+    "compare": [
+      {
+        "title": "Time clause",
+        "desc": "We will leave when the rain stops."
+      },
+      {
+        "title": "Indirect question",
+        "desc": "We do not know when the rain will stop."
+      }
+    ],
+    "exam": {
+      "label": "2018 B4 · time clause와 indirect question 비교",
+      "url": "https://etwiki.net/index.html?id=linguistics_2018_B04"
+    }
+  },
+  {
+    "id": "SG01-02",
+    "unit": 1,
+    "src": "UNIT 01",
+    "cat": "VP endpoint",
+    "text": "<b>The mechanic was repairing the bicycle.</b>는 자전거 수리를 완료했다고 말한다.",
+    "ans": false,
+    "correct": "이 <b>progressive</b> 문장만으로 수리 완료를 단정할 수 없습니다.",
+    "why": "Repair the bicycle에는 수리 완료라는 endpoint가 있지만, was repairing은 진행 중인 과정을 제시합니다. 완료를 말하지 않는 것과 완료하지 않았다고 말하는 것도 다릅니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.16, pp.350–354. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#tense-aspect"
+  },
+  {
+    "id": "SG01-03",
+    "unit": 1,
+    "src": "UNIT 01",
+    "cat": "Perfect meaning",
+    "text": "<b>Nora has owned this cottage for ten years and still owns it.</b>는 present perfect가 현재까지 이어지는 상태에 쓰인 예이다.",
+    "ans": true,
+    "correct": "<b>Present perfect</b>는 현재까지 이어지는 상태에도 쓰입니다.",
+    "why": "Has owned는 have + past participle입니다. For ten years는 지속 기간을, still owns it은 현재에도 소유한다는 뜻을 명시합니다. Perfect를 항상 끝난 상태로 읽지 않습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.16, pp.367–369. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#tense-aspect"
+  },
+  {
+    "id": "SG01-04",
+    "unit": 1,
+    "src": "UNIT 01",
+    "cat": "Lexical aspect",
+    "text": "<b>The child was drawing a circle.</b>에서 progressive 형태만으로 여러 개의 원을 반복해서 그렸다고 판단할 수 있다.",
+    "ans": false,
+    "correct": "<b>Progressive</b>만으로 반복을 결정하지 않습니다.",
+    "why": "하나의 원을 그리는 과정 자체가 지속될 수 있습니다. Was drawing은 그 과정 중의 모습을 나타낼 수 있으므로 여러 번의 drawing을 요구하지 않습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.16, pp.350–354. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#tense-aspect"
+  },
+  {
+    "id": "SG02-01",
+    "unit": 2,
+    "src": "UNIT 02",
+    "cat": "Negation scope",
+    "text": "규칙을 전달하는 <b>You must not enter this room.</b>은 들어갈 의무가 없다는 뜻이다.",
+    "ans": false,
+    "correct": "여기서 <b>must not</b>은 출입 금지입니다.",
+    "why": "Deontic necessity의 문맥에서 MUST [NOT enter]입니다. It is necessary that you do not enter this room으로 풀어 씁니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.14, pp.304–305. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#modals-negation",
+    "compare": [
+      {
+        "title": "Prohibition",
+        "desc": "You must not enter. → 들어가면 안 됩니다."
+      },
+      {
+        "title": "No obligation",
+        "desc": "You need not enter. → 들어갈 필요가 없습니다."
+      }
+    ],
+    "exam": {
+      "label": "2024 B5 · deontic necessity와 negation scope",
+      "url": "https://etwiki.net/index.html?id=linguistics_2024_B05"
+    }
+  },
+  {
+    "id": "SG02-02",
+    "unit": 2,
+    "src": "UNIT 02",
+    "cat": "No obligation",
+    "text": "규칙을 전달하는 <b>You need not submit a photograph.</b>은 사진 제출이 필수는 아니라는 뜻이다.",
+    "ans": true,
+    "correct": "<b>Need not</b>은 제출의 필요·의무를 부정합니다.",
+    "why": "NOT [NEED submit]입니다. It is not necessary that you submit a photograph로 풀 수 있습니다. 제출 금지라는 뜻으로 바꾸지 않습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.14, pp.304–305. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#modals-negation"
+  },
+  {
+    "id": "SG02-03",
+    "unit": 2,
+    "src": "UNIT 02",
+    "cat": "Deontic / epistemic",
+    "text": "모든 사무실 불이 켜져 있는 것을 보고 <b>The staff must still be working.</b>이라고 추론한다면, 이 must는 근무 의무를 부과한다.",
+    "ans": false,
+    "correct": "이 문맥의 <b>must</b>는 증거에 근거한 추론입니다.",
+    "why": "불이 켜진 것을 근거로 근무 중이라고 판단하는 epistemic use입니다. 직원에게 근무하라고 요구하는 deontic use와 다릅니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.14, p.305 and notes, pp.327–328. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#modals-negation"
+  },
+  {
+    "id": "SG02-04",
+    "unit": 2,
+    "src": "UNIT 02",
+    "cat": "Modal / lexical need",
+    "text": "<b>She does not need to sign.</b>에서 need는 do-support와 to-infinitive를 사용하는 lexical verb이다.",
+    "ans": true,
+    "correct": "이 문장의 <b>need</b>는 lexical verb입니다.",
+    "why": "Does가 tense와 agreement를 나타내며 need 뒤에는 to sign이 옵니다. Modal need를 쓰는 She need not sign과 형태를 구별합니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.14, p.308. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#modals-negation"
+  },
+  {
+    "id": "SG03-01",
+    "unit": 3,
+    "src": "UNIT 03",
+    "cat": "Given-new contract",
+    "text": "이미 소개한 소포를 계속 이야기하며 <b>The parcel was delivered by a cyclist.</b>라고 하면, passive를 이용해 그 소포를 subject로 유지할 수 있다.",
+    "ans": true,
+    "correct": "<b>Passive</b>는 이미 이야기 중인 대상을 subject로 이어 갈 수 있습니다.",
+    "why": "Parcel을 먼저, 새로 소개하는 cyclist를 뒤에 두는 방식입니다. 이는 given-new 정보 배치의 활용이며 모든 passive의 필수 목적은 아닙니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.17, pp.396–397. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#passive-discourse",
+    "exam": {
+      "label": "2026 B4 · passive의 given-new / end weight",
+      "url": "https://etwiki.net/index.html?id=linguistics_2026_B04"
+    }
+  },
+  {
+    "id": "SG03-02",
+    "unit": 3,
+    "src": "UNIT 03",
+    "cat": "End weight",
+    "text": "<b>End weight</b>에서 heavy NP는 문장에서 의미상 가장 중요한 사람이나 사물을 뜻한다.",
+    "ans": false,
+    "correct": "<b>Heavy NP</b>의 판단에는 표현의 길이와 구조적 복잡성이 관련됩니다.",
+    "why": "중요하다는 뜻과 긴 표현이라는 뜻을 구별합니다. A technician보다 a technician with extensive experience in restoring antique clocks가 구조적으로 더 무겁습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.17, pp.396–397. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#passive-discourse"
+  },
+  {
+    "id": "SG03-03",
+    "unit": 3,
+    "src": "UNIT 03",
+    "cat": "Discourse / grammar",
+    "text": "<b>Given-new contract</b>는 passive를 선택하는 담화상의 경향이지, 모든 active 문장을 비문으로 만드는 규칙은 아니다.",
+    "ans": true,
+    "correct": "담화상의 선호와 <b>grammaticality</b>를 구별합니다.",
+    "why": "누구에 대해 말하는지에 따라 active가 자연스러울 수도 있습니다. What did the cyclist do?에는 The cyclist delivered the parcel처럼 cyclist를 subject로 이어 갈 수 있습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.17, pp.396–397. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#passive-discourse"
+  },
+  {
+    "id": "SG03-04",
+    "unit": 3,
+    "src": "UNIT 03",
+    "cat": "Agent omission",
+    "text": "<b>The vase was damaged during transport.</b>에 by-phrase가 없으므로, 이 문장은 손상을 일으킨 원인이나 행위자가 없었다고 말한다.",
+    "ans": false,
+    "correct": "<b>By-phrase</b> 생략은 그 정보를 문장에 표현하지 않았다는 뜻입니다.",
+    "why": "누가 또는 무엇이 손상시켰는지 모를 수도 있고, 알아도 지금 중요하지 않아 생략할 수 있습니다. 행위자나 원인이 존재하지 않았다는 주장은 아닙니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.17, pp.394–395. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#passive-discourse"
+  },
+  {
+    "id": "SG04-01",
+    "unit": 4,
+    "src": "UNIT 04",
+    "cat": "Relative / content",
+    "text": "<b>The claim that the journalist challenged was surprising.</b>에서 that-clause는 claim의 내용을 그대로 제시하는 content clause이다.",
+    "ans": false,
+    "correct": "Claim은 challenged의 대상에 대응하므로 <b>relative clause</b>입니다.",
+    "why": "The journalist challenged the claim이라는 관계입니다. Claim이 추상명사라는 사실만으로 content clause라고 결정하지 않습니다.",
+    "source": "Aarts, B. (2018). <cite>English Syntax and Argumentation</cite>, 5th ed., Ch.8, exercise 6 answer, pp.360–361. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#relative-content",
+    "compare": [
+      {
+        "title": "Relative",
+        "desc": "the claim that the journalist challenged → claim은 challenge의 대상"
+      },
+      {
+        "title": "Content",
+        "desc": "the claim that the bridge was unsafe → 절은 주장의 내용"
+      }
+    ]
+  },
+  {
+    "id": "SG04-02",
+    "unit": 4,
+    "src": "UNIT 04",
+    "cat": "Infinitival relative",
+    "text": "NP 내부에서 읽는 <b>instructions for the apprentices to follow</b>에서 instructions는 follow의 object에 대응한다.",
+    "ans": true,
+    "correct": "<b>Instructions</b>는 하위 동작의 대상입니다.",
+    "why": "따르는 사람은 for 뒤의 apprentices입니다. Overt subject가 있어도 head인 instructions와 object의 대응은 유지됩니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.18, pp.421–422, 434. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#relative-content"
+  },
+  {
+    "id": "SG04-03",
+    "unit": 4,
+    "src": "UNIT 04",
+    "cat": "P-object relative",
+    "text": "NP 내부에서 읽는 <b>a drawer to keep the receipts in</b>에서 drawer는 keep의 직접목적어에 대응한다.",
+    "ans": false,
+    "correct": "<b>Drawer</b>는 in의 object에 대응합니다.",
+    "why": "Keep의 object는 이미 the receipts로 표현되어 있습니다. Someone keeps the receipts in the drawer라는 관계를 확인합니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.18, pp.421–422, 434. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#relative-content"
+  },
+  {
+    "id": "SG04-04",
+    "unit": 4,
+    "src": "UNIT 04",
+    "cat": "Nonrestrictive relative",
+    "text": "이미 특정한 두 간호사 모두를 가리키며 <b>The nurses, who wore blue uniforms, arrived together.</b>라고 하면, who-clause는 그 두 사람에 대한 부가 정보이다.",
+    "ans": true,
+    "correct": "이 문맥의 절은 <b>nonrestrictive relative</b>입니다.",
+    "why": "두 간호사의 reference가 이미 정해져 있습니다. 제복 정보로 간호사 중 일부만 골라내는 restrictive reading과 구별합니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.18, pp.421–422, 434. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#relative-content"
+  },
+  {
+    "id": "SG05-01",
+    "unit": 5,
+    "src": "UNIT 05",
+    "cat": "Tough role",
+    "text": "<b>The cupboard is difficult for Eli to move.</b>에서 cupboard는 move의 행동 주체이다.",
+    "ans": false,
+    "correct": "<b>Cupboard</b>는 move의 대상입니다.",
+    "why": "옮기는 사람은 Eli입니다. 주절 subject라고 해서 하위절 동작의 행동 주체가 되지는 않습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.20, pp.479–480. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#tough-extraposition"
+  },
+  {
+    "id": "SG05-02",
+    "unit": 5,
+    "src": "UNIT 05",
+    "cat": "Dummy it",
+    "text": "<b>It is easy for the curator to open the crate.</b>의 it은 crate를 가리키는 referential pronoun이다.",
+    "ans": false,
+    "correct": "이 <b>it</b>은 dummy subject입니다.",
+    "why": "평가하는 내용은 curator가 crate를 여는 일입니다. Crate는 open 뒤에 object로 나타나며, 문장 앞 it이 그 상자를 가리키는 것은 아닙니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.20, pp.479–480. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#tough-extraposition"
+  },
+  {
+    "id": "SG05-03",
+    "unit": 5,
+    "src": "UNIT 05",
+    "cat": "P-object correspondence",
+    "text": "<b>This colleague is a pleasure to collaborate with.</b>에서 colleague는 with의 object에 대응한다.",
+    "ans": true,
+    "correct": "<b>Tough construction</b>의 대응은 P-object에도 가능합니다.",
+    "why": "Someone collaborates with this colleague라는 관계입니다. Colleague를 collaborate의 직접목적어로 바꾸지 않습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.20, pp.479–480. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#tough-extraposition"
+  },
+  {
+    "id": "SG05-04",
+    "unit": 5,
+    "src": "UNIT 05",
+    "cat": "Predicate licensing",
+    "text": "<b>The crate is easy for the curator to open.</b>은 crate를 여는 일이 쉽다는 뜻의 올바른 문장이다.",
+    "ans": true,
+    "correct": "<b>Easy</b>는 이 tough pattern을 허용합니다.",
+    "why": "Curator가 여는 사람이고 crate가 여는 대상입니다. It is easy for the curator to open the crate와 비교해 역할을 확인할 수 있습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.20, pp.479–480. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#tough-extraposition"
+  },
+  {
+    "id": "SG06-01",
+    "unit": 6,
+    "src": "UNIT 06",
+    "cat": "Confirming so",
+    "text": "A: <b>You have left the microphone on.</b> B: <b>So I have.</b>에서 B는 앞말이 사실임을 확인한다.",
+    "ans": true,
+    "correct": "<b>So + subject + auxiliary</b>는 앞말의 확인입니다.",
+    "why": "You와 I가 서로 다른 단어여도 화자가 바뀌어 같은 사람을 가리킵니다. 다른 사람에게도 같은 내용이 적용된다는 additive so와 다릅니다.",
+    "source": "Greenbaum, S., &amp; Quirk, R. <cite>A Student’s Grammar of the English Language</cite>, §§12.12–12.13, pp.254–255; §18.17, p.410. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#inversion"
+  },
+  {
+    "id": "SG06-02",
+    "unit": 6,
+    "src": "UNIT 06",
+    "cat": "Additive so",
+    "text": "<b>The violinist can read music, and so can the drummer.</b>의 뒤 절은 drummer도 악보를 읽을 수 있다는 내용을 추가한다.",
+    "ans": true,
+    "correct": "<b>So + auxiliary + subject</b>의 additive use입니다.",
+    "why": "Can이 subject인 the drummer보다 앞에 옵니다. 앞 절의 modal can을 유지하여 같은 능력을 다른 사람에게 추가합니다.",
+    "source": "Greenbaum, S., &amp; Quirk, R. <cite>A Student’s Grammar of the English Language</cite>, §§12.12–12.13, pp.254–255; §18.17, p.410. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#inversion"
+  },
+  {
+    "id": "SG06-03",
+    "unit": 6,
+    "src": "UNIT 06",
+    "cat": "Negative fronting",
+    "text": "사건이 놀랍지 않다는 평가의 <b>Not surprisingly, the librarian kept a copy.</b>에서는 not 때문에 did를 the librarian 앞으로 넣어야 한다.",
+    "ans": false,
+    "correct": "이 <b>not surprisingly</b>는 inversion을 요구하지 않습니다.",
+    "why": "사본을 보관했다는 사건을 부정하는 것이 아니라 그 사건에 대한 평가입니다. Never did the librarian lose a copy처럼 clause 내용을 부정하는 초기 표현과 구별합니다.",
+    "source": "Greenbaum, S., &amp; Quirk, R. <cite>A Student’s Grammar of the English Language</cite>, §§18.16–18.17, pp.409–411. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#inversion"
+  },
+  {
+    "id": "SG06-04",
+    "unit": 6,
+    "src": "UNIT 06",
+    "cat": "Locative inversion",
+    "text": "<b>Under the bench lay a small suitcase.</b>에서 a small suitcase는 lay 뒤에 있으므로 object이다.",
+    "ans": false,
+    "correct": "<b>A small suitcase</b>는 subject입니다.",
+    "why": "A small suitcase lay under the bench와 비교합니다. 이 locative inversion에서도 suitcase는 놓여 있는 대상이며 object로 바뀌지 않습니다.",
+    "source": "Greenbaum, S., &amp; Quirk, R. <cite>A Student’s Grammar of the English Language</cite>, §§18.16–18.17, pp.409–411. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#inversion"
+  },
+  {
+    "id": "SG07-01",
+    "unit": 7,
+    "src": "UNIT 07",
+    "cat": "Pronoun placement",
+    "text": "정보를 찾아본다는 뜻이며 it에 강세가 없을 때, <b>The researcher looked up it.</b>은 올바른 배열이다.",
+    "ans": false,
+    "correct": "<b>Looked it up</b>으로 배열합니다.",
+    "why": "이 separable phrasal verb의 보통 unstressed personal pronoun object는 verb와 particle 사이에 옵니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.9, pp.171–172, 175–177. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#multiword-verbs",
+    "compare": [
+      {
+        "title": "허용",
+        "desc": "The researcher looked it up."
+      },
+      {
+        "title": "불허",
+        "desc": "*The researcher looked up it. (같은 뜻, unstressed it)"
+      }
+    ]
+  },
+  {
+    "id": "SG07-02",
+    "unit": 7,
+    "src": "UNIT 07",
+    "cat": "Short NP placement",
+    "text": "정보를 찾아본다는 뜻에서 <b>The researcher looked the postcode up.</b>은 올바른 배열이다.",
+    "ans": true,
+    "correct": "짧은 <b>full NP object</b>는 look과 up 사이에 올 수 있습니다.",
+    "why": "The researcher looked up the postcode도 가능합니다. 짧은 full NP와 unstressed it의 위치 조건을 구별합니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.9, pp.171–172, 175–177. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#multiword-verbs"
+  },
+  {
+    "id": "SG07-03",
+    "unit": 7,
+    "src": "UNIT 07",
+    "cat": "Inseparable use",
+    "text": "사안을 조사한다는 뜻에서 <b>The detective looked into it.</b>은 올바른 배열이다.",
+    "ans": true,
+    "correct": "<b>Look into</b>의 investigate 용법에서는 object가 into 뒤에 옵니다.",
+    "why": "Look it into로 배열하지 않습니다. Look it up의 배열을 모든 verb + 작은 단어 조합에 적용하지 않습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.9, pp.171–172, 175–177. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#multiword-verbs"
+  },
+  {
+    "id": "SG07-04",
+    "unit": 7,
+    "src": "UNIT 07",
+    "cat": "Particle fronting",
+    "text": "정보를 찾아본다는 뜻의 <b>What did the researcher look up?</b>을 같은 뜻의 <b>Up what did the researcher look?</b>으로 바꿀 수 있다.",
+    "ans": false,
+    "correct": "이 <b>up</b>은 wh-expression과 함께 앞으로 옮기지 않습니다.",
+    "why": "Look up의 particle을 preposition처럼 fronting하면 원래의 find-information 구조가 유지되지 않습니다. 허용형은 What did the researcher look up?입니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.9, pp.171–172, 175–177. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#multiword-verbs"
+  },
+  {
+    "id": "SG08-01",
+    "unit": 8,
+    "src": "UNIT 08",
+    "cat": "Second mention",
+    "text": "<b>A puppy entered the yard. The puppy was wet.</b>에서 the puppy가 같은 강아지를 다시 가리킨다면 second mention이다.",
+    "ans": true,
+    "correct": "같은 대상을 다시 지칭하는 <b>second mention</b>입니다.",
+    "why": "첫 문장의 a puppy가 도입한 개체를 둘째 문장에서 the puppy로 다시 받습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.11, pp.220–222. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#definite-reference"
+  },
+  {
+    "id": "SG08-02",
+    "unit": 8,
+    "src": "UNIT 08",
+    "cat": "Associative reference",
+    "text": "운행 중인 버스 한 대를 먼저 소개한 뒤 그 버스의 운전자를 처음 <b>the driver</b>로 언급하면, driver가 앞에 직접 나왔으므로 second mention이다.",
+    "ans": false,
+    "correct": "운전자를 처음 언급했다면 직접적인 <b>second mention</b>이 아닙니다.",
+    "why": "소개된 bus와 그 driver의 관계를 통해 의도한 대상을 식별하는 associative use입니다. 선행 대상과 연관된 다른 대상을 같은 대상으로 혼동하지 않습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.11, pp.220–222. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#definite-reference"
+  },
+  {
+    "id": "SG08-03",
+    "unit": 8,
+    "src": "UNIT 08",
+    "cat": "Situational reference",
+    "text": "두 사람이 하나뿐인 열린 문을 함께 보고 <b>Please close the door.</b>라고 말한다면, 앞서 door를 말하지 않았어도 the를 쓸 수 있다.",
+    "ans": true,
+    "correct": "공유한 상황이 대상을 식별하게 하는 <b>situational use</b>입니다.",
+    "why": "문이 무엇인지 화자와 청자가 현장에서 알 수 있습니다. The에 반드시 앞선 언어적 언급이 필요한 것은 아닙니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.11, pp.220–222. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#definite-reference"
+  },
+  {
+    "id": "SG08-04",
+    "unit": 8,
+    "src": "UNIT 08",
+    "cat": "Relative clause / article",
+    "text": "<b>I need a tool that cuts glass.</b>는 relative clause 앞에 the가 없다는 이유로 비문이다.",
+    "ans": false,
+    "correct": "<b>Relative clause</b>가 있다고 the가 강제되지는 않습니다.",
+    "why": "이 문장은 유리를 자를 수 있는 도구 하나가 필요하다는 뜻입니다. 뒤의 절이 조건을 제시해도 문맥상 특정 도구를 이미 식별하는 것은 아닙니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.11, pp.220–222. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#definite-reference"
+  },
+  {
+    "id": "SG09-01",
+    "unit": 9,
+    "src": "UNIT 09",
+    "cat": "Attributive / predicative",
+    "text": "<b>A former teammate</b>의 former를 같은 ‘이전에 팀 동료였던’ 뜻으로 <b>The teammate is former.</b>에 옮겨 쓸 수 있다.",
+    "ans": false,
+    "correct": "이 뜻의 <b>former</b>는 predicative 위치로 옮기지 않습니다.",
+    "why": "Former는 그 사람의 일반적 성질보다 teammate 관계가 과거에 성립했음을 나타냅니다. The person used to be my teammate로 뜻을 풀 수 있습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.12, pp.241–243. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#adjective-distribution"
+  },
+  {
+    "id": "SG09-02",
+    "unit": 9,
+    "src": "UNIT 09",
+    "cat": "Frequency meaning",
+    "text": "<b>An occasional visitor</b>에서 occasional은 방문하는 빈도를 나타낼 수 있다.",
+    "ans": true,
+    "correct": "이 <b>occasional</b>은 방문의 frequency를 나타냅니다.",
+    "why": "가끔 찾아오는 방문자라는 뜻입니다. 방문자 자체의 외모나 성격을 나타내는 adjective와 구별합니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.12, pp.241–243. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#adjective-distribution"
+  },
+  {
+    "id": "SG09-03",
+    "unit": 9,
+    "src": "UNIT 09",
+    "cat": "Participial adjective",
+    "text": "<b>The children remained interested in the experiment.</b>에서 interested는 관심 상태를 나타내는 adjective이다.",
+    "ans": true,
+    "correct": "<b>Interested</b>는 유지되는 상태를 서술합니다.",
+    "why": "Remain 뒤의 interested는 아이들의 관심 상태가 계속되었음을 나타냅니다. Very interested도 가능한 이 용법은 gradability 진단으로도 adjective 분석을 뒷받침합니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.12, pp.239–242; Ch.17, pp.402–403. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#adjective-distribution"
+  },
+  {
+    "id": "SG09-04",
+    "unit": 9,
+    "src": "UNIT 09",
+    "cat": "Gradability diagnostic",
+    "text": "어떤 adjective가 <b>very</b>와 결합하지 못한다면, 그 사실 하나만으로 adjective가 아니라고 결론낼 수 있다.",
+    "ans": false,
+    "correct": "<b>Non-gradable adjective</b>는 very 검사에서 실패할 수 있습니다.",
+    "why": "Very는 degree를 요구하므로 그 해석에서 gradable한지도 따로 확인해야 합니다. 품사와 gradability를 같은 조건으로 보지 않습니다.",
+    "source": "Cowan, R. (2008). <cite>The Teacher’s Grammar of English</cite>, Ch.12, pp.239–242; Ch.17, pp.402–403. 원리를 적용한 자체 연습문항이며 원문 기출이 아닙니다.",
+    "study": "./school-grammar_study.html#adjective-distribution"
+  }
+];
+const TOTAL=Q.length;
+const SAVE_KEY='ox_school_grammar_v1';
+let answers=Array(TOTAL).fill(null),cur=0,mode='normal',unit=0,order=Q.map((_,i)=>i),retry=false;
+const el=id=>document.getElementById(id);
+function scopedIds(){return Q.map((_,i)=>i).filter(i=>!unit||Q[i].unit===unit);}
+function getScore(){return order.filter(i=>answers[i]!==null&&answers[i]===Q[i].ans).length;}
+function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({v:1,answers,cur,mode,unit,order,retry}));}catch(e){}}
+function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){}}
+function start(ids,isRetry=false){
+ order=[...ids]; if(!order.length)return;
+ if(mode==='random'){for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}}else order.sort((a,b)=>a-b);
+ answers=Array(TOTAL).fill(null);cur=0;retry=isRetry;el('rb').style.display='none';saveProgress();render();
+}
+function setMode(m){if(!['normal','random'].includes(m)||m===mode)return;mode=m;start(order,retry);}
+function setUnit(value){unit=Number(value);if(!Number.isInteger(unit)||unit<0||unit>9)unit=0;start(scopedIds());}
+function freshStart(){mode='normal';unit=0;clearProgress();start(scopedIds());}
+function restart(){start(order,retry);}
+function retryWrong(){const ids=order.filter(i=>answers[i]!==null&&answers[i]!==Q[i].ans);if(ids.length)start(ids,true);}
+function jumpTo(i){if(!Number.isInteger(i)||i<0||i>=order.length)return;cur=i;saveProgress();render();}
+function renderExp(q){const a=answers[order[cur]],ok=a===q.ans;
+ const cmp=q.compare?`<div class="sec-label">예문 비교</div><div class="compare">${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}</div>`:'';
+ return `<div class="exp show"><div class="exp-header"><span>${ok?'✅ 정답':'❌ 오답'} · 정답 ${q.ans?'O':'X'}</span></div><div class="exp-answer"><div class="ans-text">${q.correct}</div></div><div class="exp-body"><p>${q.why}</p>${cmp}<div class="sec-label">근거 · 자체 연습문항</div><p>${q.source}</p><p><a href="${q.study}">이 UNIT 개념 다시 읽기 →</a></p>${q.exam?`<p><a href="${q.exam.url}">관련 원문 기출: ${q.exam.label} ↗</a></p>`:''}</div></div>`;
+}
+function renderNav(){el('nav').innerHTML=order.map((idx,pos)=>{const a=answers[idx];return `<button class="nd ${pos===cur?'cur':a===null?'':a===Q[idx].ans?'ok':'ng'}" onclick="jumpTo(${pos})" aria-label="${Q[idx].id}${a===null?', 미응답':a===Q[idx].ans?', 정답':', 오답'}" ${pos===cur?'aria-current="step"':''}>${idx+1}</button>`;}).join('');}
+function render(){
+ el('unit-filter').value=String(unit);el('btn-normal').classList.toggle('active',mode==='normal');el('btn-random').classList.toggle('active',mode==='random');
+ const done=order.filter(i=>answers[i]!==null).length,n=order.length,score=getScore();
+ el('pt').textContent=`${retry?'오답 재도전 · ':''}${done} / ${n} 응답`;
+ el('ps').textContent=`정답 ${score}개`;el('bf').style.width=(done/n*100).toFixed(1)+'%';
+ el('retry-wrong').disabled=!order.some(i=>answers[i]!==null&&answers[i]!==Q[i].ans);
+ renderNav();
+ if(cur===n){
+  el('qa').style.display='none';el('sc').classList.add('show');el('fs').textContent=score;el('score-total').textContent='/'+n;
+  el('rm').textContent=score===n?'모두 맞혔습니다!':'해설을 확인하고 다시 도전하세요';
+  el('rs').textContent=`${retry?'오답 재도전':unit?'UNIT '+String(unit).padStart(2,'0'):'전체'} ${n}문제 중 ${score}문제 정답 (${Math.round(score/n*100)}%)`;return;
+ }
+ el('sc').classList.remove('show');el('qa').style.display='block';const idx=order[cur],q=Q[idx],a=answers[idx];
+ el('qa').innerHTML=`<div class="card"><div class="q-meta"><span class="q-num">${q.id}</span><span class="q-src">${cur+1} / ${n}</span><span class="q-cat">${q.cat}</span></div><h2 class="unit-label">${q.src} · ${UNIT_NAMES[q.unit-1]}</h2><div class="q-text">${q.text}</div><div class="ox-btns"><button class="ox-btn o-btn ${a===true?(a===q.ans?'co':'wp'):''}" onclick="pick(true)" ${a!==null?'disabled':''}>O<span class="lb">진술이 맞다</span></button><button class="ox-btn x-btn ${a===false?(a===q.ans?'cx':'wp'):''}" onclick="pick(false)" ${a!==null?'disabled':''}>X<span class="lb">진술이 틀리다</span></button></div><div aria-live="polite">${a!==null?renderExp(q):''}</div>${a!==null?`<button class="next-btn show" onclick="next()">${done===n?'결과 보기 →':'다음 미응답 →'}</button>`:''}</div>`;
+}
+function pick(value){if(typeof value!=='boolean'||cur>=order.length||answers[order[cur]]!==null)return;answers[order[cur]]=value;saveProgress();try{if(value===Q[order[cur]].ans){if(typeof playOk==='function')playOk();}else if(typeof playNg==='function')playNg();}catch(e){}render();}
+function next(){
+ if(cur>=order.length||answers[order[cur]]===null)return;
+ const pending=order.map((_,i)=>(cur+1+i)%order.length).find(pos=>answers[order[pos]]===null);
+ if(pending!==undefined){cur=pending;saveProgress();render();return;}
+ cur=order.length;saveProgress();render();
+ // The shared best-record popup is only comparable for full-bank first attempts.
+ if(!unit&&!retry&&order.length===TOTAL&&typeof window.showScorePopup==='function'){
+  window.showScorePopup(getScore(),TOTAL,{nextText:'해설·오답 다시 보기',onNextClick:()=>{const overlay=el('sp-overlay');if(overlay)overlay.remove();}});
+  const btn=el('sp-retry');if(btn)btn.onclick=()=>{const overlay=el('sp-overlay');if(overlay)overlay.remove();restart();};
+ }
+}
+function validSaved(s){
+ return s&&s.v===1&&Number.isInteger(s.unit)&&s.unit>=0&&s.unit<=9&&['normal','random'].includes(s.mode)&&typeof s.retry==='boolean'&&Array.isArray(s.answers)&&s.answers.length===TOTAL&&s.answers.every(a=>a===null||typeof a==='boolean')&&Array.isArray(s.order)&&s.order.length>0&&s.order.length<=TOTAL&&new Set(s.order).size===s.order.length&&s.order.every(i=>Number.isInteger(i)&&i>=0&&i<TOTAL&&(!s.unit||Q[i].unit===s.unit))&&(s.retry||s.order.length===Q.filter(q=>!s.unit||q.unit===s.unit).length)&&Number.isInteger(s.cur)&&s.cur>=0&&s.cur<=s.order.length&&(s.cur!==s.order.length||s.order.every(i=>s.answers[i]!==null));
+}
+(function(){
+ let loaded=false;try{const s=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');if(validSaved(s)){({answers,cur,mode,unit,order,retry}=s);loaded=true;}}catch(e){}
+ const requested=new URLSearchParams(location.search).get('unit');
+ if(requested!==null&&/^[1-9]$/.test(requested)&&(!loaded||unit!==Number(requested))){unit=Number(requested);start(scopedIds());return;}
+ if(loaded){el('rb-msg').textContent='저장한 학습을 이어서 보여 드립니다.';el('rb').style.display='block';}render();
+})();
+
+</script>
+<script src="./study-return.js" data-hub-label="학교문법 허브"></script>
+</body>
+</html>
