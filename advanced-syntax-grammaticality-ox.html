@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>심화 통사 · 문법성 OX</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:36px;height:36px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+.quiz-hub-nav{display:flex;align-items:center;gap:6px;max-width:720px;margin:0 auto 18px;padding:0 8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.quiz-hub-nav::-webkit-scrollbar{display:none}
+.quiz-hub-nav a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:36px;padding:7px 11px;border:1px solid #c5c8e8;border-radius:999px;background:#fff;color:#2a2e6e;font-size:11.5px;font-weight:700;text-decoration:none;white-space:nowrap}
+.quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
+@media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
+.quiz-tools{max-width:720px;margin:0 auto 16px;padding:0 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}.quiz-tools select{max-width:100%;min-width:0;flex:1 1 260px;padding:12px;border:1px solid #c5c8e8;border-radius:8px;font:inherit}.quiz-tools p{font-size:13px;line-height:1.7;color:#555}.quiz-tools .restart-btn{padding:10px 14px;font-size:13px}.unit-label{font-size:13px;line-height:1.7;color:#4a4d6a;margin-bottom:14px}.q-text,.exp-body,.ans-text{overflow-wrap:anywhere}.nd{width:40px;height:40px}.quiz-tools button:disabled{opacity:.5;cursor:default}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #1f7a8c;outline-offset:3px}@media(max-width:480px){.compare,.compare.three{grid-template-columns:1fr}.card{padding:18px}.header-label{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* This bank keeps the shared best-record badge in document flow. */
+#sp-badge{position:static!important;inset:auto!important;max-width:100%;width:fit-content;margin:10px 0;overflow-wrap:anywhere;pointer-events:none}
+.quiz-return{text-align:center;margin:24px auto;max-width:720px}
+.quiz-return a{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff;color:#2a2e6e;font-weight:700;text-decoration:none}
+.judgment-guide{max-width:720px;margin:12px auto 20px;padding:14px;line-height:1.8;background:#fff;border:1px solid #d1d3e6;border-radius:10px;font-size:14px}.q-context,.analysis-claim{font-size:14px;line-height:1.8;background:#f5f5fa;padding:12px;margin:16px 0;overflow-wrap:anywhere}.analysis-claim{border-left:4px solid #3b3f86;font-size:17px;font-weight:700}.q-text{font-size:clamp(21px,5vw,28px);line-height:1.65;font-weight:600}.answer-focus{padding:10px;margin:12px 0;border-left:4px solid #b03a3a;background:#fff5f5;overflow-wrap:anywhere}.answer-focus.good{border-color:#218574;background:#effaf7}.compare-item p{font-size:17px;line-height:1.7}.q-meta{flex-wrap:wrap}</style>
+<link rel="stylesheet" href="./learning.css">
+<link rel="stylesheet" href="./mint-learning.css">
+</head>
+<body class="etwiki-learning">
+<header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">ADVANCED SYNTAX</span>
+    <span class="header-label">Practice Notebook</span>
+  </div>
+  <h1 class="header-title">심화 통사 · 문법성 OX</h1>
+  <div class="header-script">Sentence Evidence · Exam-driven Practice</div>
+  <p class="header-sub">검증한 기출의 판단 요구를 연습 · 자체 예문 11문항 · 원문 재현 아님</p>
+  <div id="score-badge-slot" aria-label="전체 문항 최고 기록"></div>
+  <div class="header-divider"></div>
+</div>
+<nav class="quiz-hub-nav" aria-label="통사 예문 학습"><a href="./syntax.html">통사론 허브</a><a href="./syntax-analysis-ox.html">구조·해석 OX (문법성 아님)</a><a href="./example-judgment-ox.html">기존 예문 OX 32</a></nav><p class="judgment-guide">영어 문장의 문법성을 명시된 기출 기준에서 판단합니다. O = 문법적 / X = 비문. That-trace 문항은2026 B9가 정한 기준이며 모든 방언의 판단을 일반화하지 않습니다.</p>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">0 / 11 응답</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:0%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div class="quiz-tools"><label for="unit-filter">학습 범위</label><select id="unit-filter" onchange="setUnit(this.value)"><option value="0">전체 11문항</option><option value="1">Subject / Object extraction</option><option value="2">Multi-clause / Null relative</option><option value="3">Finite seem</option><option value="4">Raising chain / Reflexive</option></select><button class="restart-btn" onclick="restart()">현재 범위 다시 풀기</button><button class="restart-btn" id="retry-wrong" onclick="retryWrong()" disabled>오답만 다시 풀기</button><p>범위·순서를 바꾸거나 다시 풀면 현재 회차가 새로 시작됩니다. 최고 기록은 전체 11문항 회차만 저장합니다.</p></div><nav id="nav" aria-label="문항 이동"></nav>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total" id="score-total">/11</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const UNIT_NAMES=["Subject / Object extraction", "Multi-clause / Null relative", "Finite seem", "Raising chain / Reflexive"];
+const Q=[
+  {
+    "id": "ASG01",
+    "unit": 1,
+    "src": "문법성",
+    "cat": "2026 B9 연결",
+    "text": "Which scientist do you think discovered the comet?",
+    "ans": true,
+    "context": "2026 B9가 명시한 that-trace 판단 기준으로 답합니다. 일반 영어의 모든 방언에 대한 단정이 아닙니다. Wh-expression은 가장 아래 절의 subject에 대응합니다.",
+    "focus": "think [__ discovered the comet]",
+    "correct": "문법적입니다.",
+    "why": "아래 절의 subject를 꺼냈고 그 gap 바로 앞에 overt that이 없습니다.",
+    "compare": [
+      {
+        "title": "대조 비문",
+        "desc": "Which scientist do you think that discovered the comet?"
+      }
+    ],
+    "source": "2026 B9 원문 <A>의 that-trace 판단 기준; Radford, Transformational Grammar, Ch.9 wh-movement 분석 보충. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./movement_study.html#wh-movement",
+    "exam": {
+      "label": "2026 B9 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2026_B09"
+    }
+  },
+  {
+    "id": "ASG02",
+    "unit": 1,
+    "src": "문법성",
+    "cat": "2026 B9 연결",
+    "text": "Which musician do you believe that won the award?",
+    "ans": false,
+    "context": "2026 B9가 명시한 that-trace 판단 기준으로 답합니다. 일반 영어의 모든 방언에 대한 단정이 아닙니다. Wh-expression은 가장 아래 절의 subject에 대응합니다.",
+    "focus": "believe that [__ won the award]",
+    "correct": "제시한 판단 기준에서 비문입니다.",
+    "why": "Overt that 바로 뒤의 subject gap이므로 이 기출이 정한 that-trace 제약에 걸립니다.",
+    "compare": [
+      {
+        "title": "수정 예문",
+        "desc": "Which musician do you believe won the award?"
+      }
+    ],
+    "source": "2026 B9 원문 <A>의 that-trace 판단 기준; Radford, Transformational Grammar, Ch.9 wh-movement 분석 보충. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./movement_study.html#wh-movement",
+    "exam": {
+      "label": "2026 B9 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2026_B09"
+    }
+  },
+  {
+    "id": "ASG03",
+    "unit": 1,
+    "src": "문법성",
+    "cat": "2026 B9 연결",
+    "text": "Which report do you think that the assistant filed?",
+    "ans": true,
+    "context": "2026 B9가 명시한 extraction 판단 기준입니다. Which report는 filed의 object에 대응합니다. 인용·resumption 해석은 없습니다.",
+    "focus": "that the assistant filed __",
+    "correct": "문법적입니다.",
+    "why": "Gap은 subject 자리가 아니라 filed의 object 자리입니다. Overt that이 있다는 사실만으로 비문이 되지 않습니다.",
+    "compare": [
+      {
+        "title": "That 생략도 가능 (O)",
+        "desc": "Which report do you think the assistant filed?"
+      }
+    ],
+    "source": "2026 B9 원문 <A>의 that-trace 판단 기준; Radford, Transformational Grammar, Ch.9 wh-movement 분석 보충. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./movement_study.html#wh-movement",
+    "exam": {
+      "label": "2026 B9 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2026_B09"
+    }
+  },
+  {
+    "id": "ASG04",
+    "unit": 2,
+    "src": "문법성",
+    "cat": "2026 B9 연결",
+    "text": "Which researcher do you think that the editor said would receive the prize?",
+    "ans": true,
+    "context": "2026 B9가 명시한 that-trace 판단 기준으로 답합니다. 일반 영어의 모든 방언에 대한 단정이 아닙니다. Wh-expression은 가장 아래 절의 subject에 대응합니다.",
+    "focus": "think that the editor said [__ would receive the prize]",
+    "correct": "문법적입니다.",
+    "why": "위쪽 that 뒤에는 overt subject the editor가 있습니다. 실제 subject gap에 바로 붙은 아래 C는 발음되지 않아 허용됩니다.",
+    "compare": [
+      {
+        "title": "대조 비문",
+        "desc": "Which researcher do you think that the editor said that would receive the prize?"
+      }
+    ],
+    "source": "2026 B9 원문 <A>의 that-trace 판단 기준; Radford, Transformational Grammar, Ch.9 wh-movement 분석 보충. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./movement_study.html#wh-movement",
+    "exam": {
+      "label": "2026 B9 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2026_B09"
+    }
+  },
+  {
+    "id": "ASG05",
+    "unit": 2,
+    "src": "문법성",
+    "cat": "2026 B9 연결",
+    "text": "Which painter do you believe that the critic said that would exhibit new work?",
+    "ans": false,
+    "context": "2026 B9가 명시한 that-trace 판단 기준으로 답합니다. 일반 영어의 모든 방언에 대한 단정이 아닙니다. Wh-expression은 가장 아래 절의 subject에 대응합니다.",
+    "focus": "said that [__ would exhibit new work]",
+    "correct": "제시한 판단 기준에서 비문입니다.",
+    "why": "문장 전체에서 that을 세는 것이 아니라 실제 extraction site를 찾습니다. 아래 that이 subject gap에 인접합니다.",
+    "compare": [
+      {
+        "title": "수정 예문",
+        "desc": "Which painter do you believe that the critic said would exhibit new work?"
+      }
+    ],
+    "source": "2026 B9 원문 <A>의 that-trace 판단 기준; Radford, Transformational Grammar, Ch.9 wh-movement 분석 보충. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./movement_study.html#wh-movement",
+    "exam": {
+      "label": "2026 B9 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2026_B09"
+    }
+  },
+  {
+    "id": "ASG06",
+    "unit": 2,
+    "src": "문법성",
+    "cat": "2026 B9 연결",
+    "text": "I recommend a guide the tutor believes will help beginners.",
+    "ans": true,
+    "context": "2026 B9의 null-relative/that-trace 분석을 따릅니다. Guide/manual은 help의 subject에 대응하며 recommend의 object를 수식하는 integrated relative입니다.",
+    "focus": "a guide [the tutor believes __ will help beginners]",
+    "correct": "문법적입니다.",
+    "why": "Relative marker가 발음되지 않아도 lower subject gap을 연결할 수 있습니다. Gap 앞에 overt that이 없습니다.",
+    "compare": [
+      {
+        "title": "대조 비문",
+        "desc": "I recommend a guide the tutor believes that will help beginners."
+      }
+    ],
+    "source": "2026 B9 원문 <A>의 that-trace 판단 기준; Radford, Transformational Grammar, Ch.9 wh-movement 분석 보충. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./movement_study.html#wh-movement",
+    "exam": {
+      "label": "2026 B9 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2026_B09"
+    }
+  },
+  {
+    "id": "ASG07",
+    "unit": 2,
+    "src": "문법성",
+    "cat": "2026 B9 연결",
+    "text": "I recommend a manual the instructor thinks that will help newcomers.",
+    "ans": false,
+    "context": "2026 B9의 null-relative/that-trace 분석을 따릅니다. Guide/manual은 help의 subject에 대응하며 recommend의 object를 수식하는 integrated relative입니다.",
+    "focus": "thinks that [__ will help newcomers]",
+    "correct": "제시한 판단 기준에서 비문입니다.",
+    "why": "Null relative에서도 lower subject extraction에 인접한 overt that은 제시된 분석에서 허용되지 않습니다.",
+    "compare": [
+      {
+        "title": "수정 예문",
+        "desc": "I recommend a manual the instructor thinks will help newcomers."
+      }
+    ],
+    "source": "2026 B9 원문 <A>의 that-trace 판단 기준; Radford, Transformational Grammar, Ch.9 wh-movement 분석 보충. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./movement_study.html#wh-movement",
+    "exam": {
+      "label": "2026 B9 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2026_B09"
+    }
+  },
+  {
+    "id": "ASG08",
+    "unit": 3,
+    "src": "문법성",
+    "cat": "2018 B6 연결",
+    "text": "It seems that Elena understands the problem.",
+    "ans": true,
+    "context": "Seem의 표준 raising 분석을 따릅니다. Elena와 she는 동일인을 가리키며 parenthetical·인용·방언적 특수 구조가 아닙니다.",
+    "focus": "It seems [that Elena understands the problem]",
+    "correct": "문법적입니다.",
+    "why": "Expletive it이 matrix subject 자리를 채우고 Elena는 finite embedded clause 안에서 자신의 semantic role을 받습니다.",
+    "compare": [
+      {
+        "title": "대조 비문",
+        "desc": "Elena seems that she understands the problem."
+      }
+    ],
+    "source": "2018 B6 원문; Radford, Transformational Grammar, §8.5, pp.436–438. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./raising-control_study.html#ssr",
+    "exam": {
+      "label": "2018 B6 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2018_B06"
+    }
+  },
+  {
+    "id": "ASG09",
+    "unit": 3,
+    "src": "문법성",
+    "cat": "2018 B6 연결",
+    "text": "Elena seems that she understands the problem.",
+    "ans": false,
+    "context": "Seem의 표준 raising 분석을 따릅니다. Elena와 she는 동일인을 가리키며 parenthetical·인용·방언적 특수 구조가 아닙니다.",
+    "focus": "Elena seems [that she understands the problem]",
+    "correct": "제시한 판단 기준에서 비문입니다.",
+    "why": "Seem은 matrix Elena에 별도 theta role을 주지 않습니다. Embedded subject 자리도 she가 차지하므로 이를 정상적인 raising chain으로 분석할 수 없습니다.",
+    "compare": [
+      {
+        "title": "수정 예문",
+        "desc": "It seems that Elena understands the problem."
+      }
+    ],
+    "source": "2018 B6 원문; Radford, Transformational Grammar, §8.5, pp.436–438. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./raising-control_study.html#theta-criterion",
+    "exam": {
+      "label": "2018 B6 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2018_B06"
+    }
+  },
+  {
+    "id": "ASG10",
+    "unit": 4,
+    "src": "문법성",
+    "cat": "2018 B6 연결",
+    "text": "Elena appears to Marcus to be believed by her colleagues to have praised herself.",
+    "ans": true,
+    "context": "2018 B6의 raising-chain 분석을 따릅니다. Herself는 Elena, themselves는 복수인 her colleagues를 가리킵니다. 두 대상은 다릅니다. Ordinary argument reflexive이며 emphatic/logophoric use가 아닙니다.",
+    "focus": "Elena … [__ to have praised herself]",
+    "correct": "문법적입니다.",
+    "why": "Elena는 praised의 subject 위치에서 theta role을 받으며 chain이 그 위치와 연결되어 herself를 locally bind합니다. Marcus와 her colleagues는 PP 안에 있고 intervening clause subjects가 아닙니다. 단순히 더 가까이 있다는 이유로 antecedent가 되지 않습니다.",
+    "compare": [
+      {
+        "title": "대조 비문",
+        "desc": "Elena appears to Marcus to be believed by her colleagues to have praised themselves."
+      }
+    ],
+    "source": "2018 B6 원문 + Radford, Transformational Grammar, §3.3, pp.117–118; §8.5, pp.436–438. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./raising-control_study.html#diagnostics",
+    "exam": {
+      "label": "2018 B6 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2018_B06"
+    }
+  },
+  {
+    "id": "ASG11",
+    "unit": 4,
+    "src": "문법성",
+    "cat": "2018 B6 연결",
+    "text": "Elena appears to Marcus to be believed by her colleagues to have praised themselves.",
+    "ans": false,
+    "context": "2018 B6의 raising-chain 분석을 따릅니다. Herself는 Elena, themselves는 복수인 her colleagues를 가리킵니다. 두 대상은 다릅니다. Ordinary argument reflexive이며 emphatic/logophoric use가 아닙니다.",
+    "focus": "by her colleagues … praised themselves",
+    "correct": "제시한 판단 기준에서 비문입니다.",
+    "why": "By-phrase 안의 her colleagues는 lowest object reflexive를 c-command하는 local subject가 아닙니다. Elena의 chain에 맞는 형태는 herself입니다.",
+    "compare": [
+      {
+        "title": "수정 예문",
+        "desc": "Elena appears to Marcus to be believed by her colleagues to have praised herself."
+      }
+    ],
+    "source": "2018 B6 원문 + Radford, Transformational Grammar, §3.3, pp.117–118; §8.5, pp.436–438. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./binding_study.html#c-command",
+    "exam": {
+      "label": "2018 B6 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2018_B06"
+    }
+  }
+];
+const TOTAL=Q.length;
+const SAVE_KEY='ox_advanced_syntax_grammaticality_v1';
+let answers=Array(TOTAL).fill(null),cur=0,mode='normal',unit=0,order=Q.map((_,i)=>i),retry=false;
+const el=id=>document.getElementById(id);
+function scopedIds(){return Q.map((_,i)=>i).filter(i=>!unit||Q[i].unit===unit);}
+function getScore(){return order.filter(i=>answers[i]!==null&&answers[i]===Q[i].ans).length;}
+function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({v:1,answers,cur,mode,unit,order,retry}));}catch(e){}}
+function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){}}
+function start(ids,isRetry=false){
+ order=[...ids]; if(!order.length)return;
+ if(mode==='random'){for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}}else order.sort((a,b)=>a-b);
+ answers=Array(TOTAL).fill(null);cur=0;retry=isRetry;el('rb').style.display='none';saveProgress();render();
+}
+function setMode(m){if(!['normal','random'].includes(m)||m===mode)return;mode=m;start(order,retry);}
+function setUnit(value){unit=Number(value);if(!Number.isInteger(unit)||unit<0||unit>UNIT_NAMES.length)unit=0;start(scopedIds());}
+function freshStart(){mode='normal';unit=0;clearProgress();start(scopedIds());}
+function restart(){start(order,retry);}
+function retryWrong(){const ids=order.filter(i=>answers[i]!==null&&answers[i]!==Q[i].ans);if(ids.length)start(ids,true);}
+function jumpTo(i){if(!Number.isInteger(i)||i<0||i>=order.length)return;cur=i;saveProgress();render();}
+function renderExp(q){const a=answers[order[cur]],ok=a===q.ans;
+ const cmp=q.compare?`<div class="sec-label">예문 비교</div><div class="compare">${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}</div>`:'';
+ return `<div class="exp show"><div class="exp-header"><span>${ok?'✅ 정답':'❌ 오답'} · 정답 ${q.ans?'O':'X'}</span></div><div class="exp-answer"><div class="ans-text">${q.correct}</div><div class="answer-focus ${q.ans?'good':''}"><b>정답 뒤 구조 확인</b>: ${q.focus}</div></div><div class="exp-body"><p>${q.why}</p>${cmp}<div class="sec-label">근거 · 자체 연습문항</div><p>${q.source}</p><p><a href="${q.study}">관련 개념 다시 읽기 →</a></p>${q.exam?`<p><a href="${q.exam.url}">관련 원문 기출: ${q.exam.label} ↗</a></p>`:''}</div></div>`;
+}
+function renderNav(){el('nav').innerHTML=order.map((idx,pos)=>{const a=answers[idx];return `<button class="nd ${pos===cur?'cur':a===null?'':a===Q[idx].ans?'ok':'ng'}" onclick="jumpTo(${pos})" aria-label="${Q[idx].id}${a===null?', 미응답':a===Q[idx].ans?', 정답':', 오답'}" ${pos===cur?'aria-current="step"':''}>${idx+1}</button>`;}).join('');}
+function render(){
+ el('unit-filter').value=String(unit);el('btn-normal').classList.toggle('active',mode==='normal');el('btn-random').classList.toggle('active',mode==='random');
+ const done=order.filter(i=>answers[i]!==null).length,n=order.length,score=getScore();
+ el('pt').textContent=`${retry?'오답 재도전 · ':''}${done} / ${n} 응답`;
+ el('ps').textContent=`정답 ${score}개`;el('bf').style.width=(done/n*100).toFixed(1)+'%';
+ el('retry-wrong').disabled=!order.some(i=>answers[i]!==null&&answers[i]!==Q[i].ans);
+ renderNav();
+ if(cur===n){
+  el('qa').style.display='none';el('sc').classList.add('show');el('fs').textContent=score;el('score-total').textContent='/'+n;
+  el('rm').textContent=score===n?'모두 맞혔습니다!':'해설을 확인하고 다시 도전하세요';
+  el('rs').textContent=`${retry?'오답 재도전':unit?'SET '+String(unit).padStart(2,'0'):'전체'} ${n}문제 중 ${score}문제 정답 (${Math.round(score/n*100)}%)`;return;
+ }
+ el('sc').classList.remove('show');el('qa').style.display='block';const idx=order[cur],q=Q[idx],a=answers[idx];
+ el('qa').innerHTML=`<div class="card"><div class="q-meta"><span class="q-num">${q.id}</span><span class="q-src">${cur+1} / ${n}</span><span class="q-cat">${q.cat}</span></div><h2 class="unit-label">${q.src} · ${UNIT_NAMES[q.unit-1]}</h2><div class="q-text" lang="en">${q.text}</div><p class="q-context"><b>판단 조건</b> · ${q.context}</p><div class="ox-btns"><button class="ox-btn o-btn ${a===true?(a===q.ans?'co':'wp'):''}" onclick="pick(true)" ${a!==null?'disabled':''}>O<span class="lb">문법적이다</span></button><button class="ox-btn x-btn ${a===false?(a===q.ans?'cx':'wp'):''}" onclick="pick(false)" ${a!==null?'disabled':''}>X<span class="lb">비문이다</span></button></div><div aria-live="polite">${a!==null?renderExp(q):''}</div>${a!==null?`<button class="next-btn show" onclick="next()">${done===n?'결과 보기 →':'다음 미응답 →'}</button>`:''}</div>`;
+}
+function pick(value){if(typeof value!=='boolean'||cur>=order.length||answers[order[cur]]!==null)return;answers[order[cur]]=value;saveProgress();try{if(value===Q[order[cur]].ans){if(typeof playOk==='function')playOk();}else if(typeof playNg==='function')playNg();}catch(e){}render();}
+function next(){
+ if(cur>=order.length||answers[order[cur]]===null)return;
+ const pending=order.map((_,i)=>(cur+1+i)%order.length).find(pos=>answers[order[pos]]===null);
+ if(pending!==undefined){cur=pending;saveProgress();render();return;}
+ cur=order.length;saveProgress();render();
+ // The shared best-record popup is only comparable for full-bank first attempts.
+ if(!unit&&!retry&&order.length===TOTAL&&typeof window.showScorePopup==='function'){
+  window.showScorePopup(getScore(),TOTAL,{nextText:'해설·오답 다시 보기',onNextClick:()=>{const overlay=el('sp-overlay');if(overlay)overlay.remove();}});
+  const btn=el('sp-retry');if(btn)btn.onclick=()=>{const overlay=el('sp-overlay');if(overlay)overlay.remove();restart();};
+ }
+}
+function validSaved(s){
+ return s&&s.v===1&&Number.isInteger(s.unit)&&s.unit>=0&&s.unit<=UNIT_NAMES.length&&['normal','random'].includes(s.mode)&&typeof s.retry==='boolean'&&Array.isArray(s.answers)&&s.answers.length===TOTAL&&s.answers.every(a=>a===null||typeof a==='boolean')&&Array.isArray(s.order)&&s.order.length>0&&s.order.length<=TOTAL&&new Set(s.order).size===s.order.length&&s.order.every(i=>Number.isInteger(i)&&i>=0&&i<TOTAL&&(!s.unit||Q[i].unit===s.unit))&&(s.retry||s.order.length===Q.filter(q=>!s.unit||q.unit===s.unit).length)&&Number.isInteger(s.cur)&&s.cur>=0&&s.cur<=s.order.length&&(s.cur!==s.order.length||s.order.every(i=>s.answers[i]!==null));
+}
+(function(){
+ let loaded=false;try{const s=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');if(validSaved(s)){({answers,cur,mode,unit,order,retry}=s);loaded=true;}}catch(e){}
+ const requested=new URLSearchParams(location.search).get('unit');
+ if(requested!==null&&/^[1-4]$/.test(requested)&&(!loaded||unit!==Number(requested))){unit=Number(requested);start(scopedIds());return;}
+ if(loaded){el('rb-msg').textContent='저장한 학습을 이어서 보여 드립니다.';el('rb').style.display='block';}render();
+})();
+
+</script>
+<nav class="quiz-return" aria-label="통사론 학습 허브"><a id="back-btn" href="./syntax.html">← 통사론 허브로 돌아가기</a></nav>
+<script>
+// score-popup.js registers its badge creation before this listener.
+document.addEventListener('DOMContentLoaded',function(){
+  const badge=document.getElementById('sp-badge');
+  const slot=document.getElementById('score-badge-slot');
+  if(badge&&slot)slot.appendChild(badge);
+},{once:true});
+</script>
+</body>
+</html>
