@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>통사 예문 · 구조·해석 OX</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:repeating-linear-gradient(transparent,transparent 27px,#ddddd0 28px);color:#1a1a1a;min-height:100vh;padding:16px}
+.header-wrap{max-width:720px;margin:0 auto;padding:20px 8px 0}
+.header-topbar{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #1a1a1a;padding-top:8px;margin-bottom:10px}
+.header-no{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;border:2px solid #1a1a1a;padding:3px 10px;border-radius:2px;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.header-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:#888;letter-spacing:1px}
+.header-title{font-size:clamp(30px,7vw,46px);font-weight:900;color:#1a1a1a;line-height:1.1;margin-bottom:5px;letter-spacing:-1px}
+.title-hl{background:#3b3f86;color:#fff;padding:1px 6px}
+.header-script{font-family:'Caveat',cursive;font-size:21px;color:#3b3f86;margin-bottom:4px;font-weight:600}
+.header-sub{font-size:13px;color:#555;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#aaa;margin-bottom:14px}
+.header-divider{border:none;border-top:2.5px solid #1a1a1a;margin-bottom:20px}
+.prog-wrap{max-width:720px;margin:0 auto 24px;padding:0 8px}
+.prog-info{display:flex;justify-content:space-between;font-size:12px;color:#4a4d6a;font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.bar{height:4px;background:#c5c8e8;border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#3b3f86,#7c83d9);border-radius:2px;transition:width .5s ease}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:#fff;border:1.5px solid #c5c8e8;border-radius:14px;padding:26px;animation:up .35s ease;box-shadow:0 2px 8px rgba(59,63,134,.08)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:7px;margin-bottom:14px;flex-wrap:wrap}
+.q-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:#3b3f86;background:rgba(59,63,134,.1);padding:3px 10px;border-radius:8px;font-weight:700}
+.q-src{font-size:11px;color:#4a4d6a;font-family:'JetBrains Mono',monospace}
+.q-cat{font-size:11px;color:#1f7a8c;background:rgba(31,122,140,.1);padding:3px 10px;border-radius:8px;margin-left:auto;font-weight:600}
+.kw1{background:rgba(59,63,134,.18);color:#2a2e6e;padding:2px 7px;border-radius:4px;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em}
+.kw2{color:#1f7a8c;font-weight:700;font-family:'JetBrains Mono',monospace;font-size:.88em;border-bottom:2px solid rgba(31,122,140,.4)}
+.q-text{font-size:clamp(15px,2.2vw,16.5px);line-height:1.9;margin-bottom:24px;color:#1a1f3a}
+.ox-btns{display:flex;gap:12px}
+.ox-btn{flex:1;padding:20px 10px;border-radius:12px;border:2px solid #c5c8e8;background:#f7f8ff;color:#1a1f3a;font-size:30px;cursor:pointer;transition:all .18s ease;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lb{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;letter-spacing:1px;font-weight:600}
+.ox-btn:hover:not(:disabled){transform:translateY(-2px)}
+.o-btn:hover:not(:disabled){border-color:#3b3f86;background:rgba(59,63,134,.08)}
+.x-btn:hover:not(:disabled){border-color:#c62828;background:rgba(198,40,40,.06)}
+.co,.cx{border-color:#3b3f86!important;background:rgba(59,63,134,.1)!important}
+.wp{border-color:#c62828!important;background:rgba(198,40,40,.08)!important}
+.ox-btn:disabled{cursor:default}
+.badge{display:none;margin-top:14px;padding:9px 16px;border-radius:8px;font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.badge.ok{display:inline-block;background:rgba(59,63,134,.1);color:#3b3f86;border:1.5px solid rgba(59,63,134,.3)}
+.badge.ng{display:inline-block;background:rgba(198,40,40,.08);color:#c62828;border:1.5px solid rgba(198,40,40,.25)}
+.exp{display:none;margin-top:18px;border-radius:12px;overflow:hidden;animation:fade .3s ease}
+.exp.show{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.exp-header{background:linear-gradient(135deg,rgba(59,63,134,.12),rgba(124,131,217,.06));border:1.5px solid rgba(59,63,134,.25);border-bottom:none;padding:11px 16px}
+.exp-header span{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.exp-answer{background:rgba(59,63,134,.05);border:1.5px solid rgba(59,63,134,.2);border-top:none;border-bottom:none;padding:14px 16px}
+.ans-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#4a4d6a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:700}
+.ans-text{font-size:16px;color:#1a1f3a;line-height:1.75;font-weight:500}
+.exp-body{background:rgba(59,63,134,.03);border:1.5px solid rgba(59,63,134,.15);border-top:1px solid rgba(59,63,134,.1);padding:14px 16px}
+.sec-label{font-size:11px;font-family:'JetBrains Mono',monospace;color:#1f7a8c;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;margin-top:13px;font-weight:700}
+.sec-label:first-child{margin-top:0}
+.exp-body p{font-size:15px;color:#2a2e6e;line-height:1.8;margin-bottom:5px}
+.def-box{background:rgba(124,131,217,.08);border-left:4px solid #7c83d9;padding:10px 14px;border-radius:0 8px 8px 0;margin:8px 0}
+.def-box p{color:#1a1f3a;font-size:14.5px;font-style:italic;line-height:1.75;font-family:'JetBrains Mono',monospace}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.compare.three{grid-template-columns:1fr 1fr 1fr}
+.compare-item{background:#f7f8ff;border:1.5px solid #c5c8e8;border-radius:8px;padding:11px 14px}
+.ci-title{font-size:11px;font-family:'JetBrains Mono',monospace;color:#2a2e6e;font-weight:700;margin-bottom:5px}
+.compare-item p{font-size:14px;color:#3b3f86;line-height:1.65}
+.next-btn{display:none;width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#3b3f86,#7c83d9);border:none;border-radius:10px;color:white;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s}
+.next-btn:hover{opacity:.88;transform:translateY(-1px)}
+.next-btn.show{display:block;animation:fade .3s ease}
+.score-card{display:none;text-align:center;padding:48px 24px}
+.score-card.show{display:block;animation:up .5s ease}
+.score-circle{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#3b3f86,#7c83d9);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 0 40px rgba(59,63,134,.3)}
+.s-num{font-size:42px;font-weight:700;line-height:1;color:#fff}
+.s-total{font-size:14px;opacity:.85;color:#fff}
+.score-card h2{font-size:24px;margin-bottom:7px;color:#1a1f3a}
+.score-card p{color:#4a4d6a;margin-bottom:24px;font-size:15px}
+.restart-btn{padding:13px 32px;background:#f7f8ff;border:2px solid #3b3f86;border-radius:10px;color:#3b3f86;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.restart-btn:hover{background:rgba(59,63,134,.1)}
+.nd{width:36px;height:36px;border-radius:6px;border:1.5px solid #c5c8e8;background:#f7f8ff;font-size:11px;font-family:'JetBrains Mono',monospace;cursor:pointer;color:#4a4d6a;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;font-weight:600}
+.nd.cur{border-color:#3b3f86;background:#3b3f86;color:white}
+.nd.ok{border-color:#3b3f86;background:rgba(59,63,134,.15);color:#2a2e6e}
+.nd.ng{border-color:#c62828;background:rgba(198,40,40,.1);color:#c62828}
+.nd:hover:not(.cur){opacity:.7}
+#nav{display:flex;flex-wrap:wrap;gap:5px;max-width:720px;margin:0 auto 16px;padding:0 8px}
+.mode-bar{max-width:720px;margin:0 auto 10px;padding:0 8px;display:flex;gap:8px}
+.mode-btn{flex:1;padding:8px 14px;border-radius:8px;border:1.5px solid #c5c8e8;background:#f7f8ff;color:#4a4d6a;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;letter-spacing:.5px}
+.mode-btn.active{background:#3b3f86;border-color:#3b3f86;color:#fff}
+.quiz-hub-nav{display:flex;align-items:center;gap:6px;max-width:720px;margin:0 auto 18px;padding:0 8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.quiz-hub-nav::-webkit-scrollbar{display:none}
+.quiz-hub-nav a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:36px;padding:7px 11px;border:1px solid #c5c8e8;border-radius:999px;background:#fff;color:#2a2e6e;font-size:11.5px;font-weight:700;text-decoration:none;white-space:nowrap}
+.quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
+@media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
+.quiz-tools{max-width:720px;margin:0 auto 16px;padding:0 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}.quiz-tools select{max-width:100%;min-width:0;flex:1 1 260px;padding:12px;border:1px solid #c5c8e8;border-radius:8px;font:inherit}.quiz-tools p{font-size:13px;line-height:1.7;color:#555}.quiz-tools .restart-btn{padding:10px 14px;font-size:13px}.unit-label{font-size:13px;line-height:1.7;color:#4a4d6a;margin-bottom:14px}.q-text,.exp-body,.ans-text{overflow-wrap:anywhere}.nd{width:40px;height:40px}.quiz-tools button:disabled{opacity:.5;cursor:default}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #1f7a8c;outline-offset:3px}@media(max-width:480px){.compare,.compare.three{grid-template-columns:1fr}.card{padding:18px}.header-label{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* This bank keeps the shared best-record badge in document flow. */
+#sp-badge{position:static!important;inset:auto!important;max-width:100%;width:fit-content;margin:10px 0;overflow-wrap:anywhere;pointer-events:none}
+.quiz-return{text-align:center;margin:24px auto;max-width:720px}
+.quiz-return a{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff;color:#2a2e6e;font-weight:700;text-decoration:none}
+.judgment-guide{max-width:720px;margin:12px auto 20px;padding:14px;line-height:1.8;background:#fff;border:1px solid #d1d3e6;border-radius:10px;font-size:14px}.q-context,.analysis-claim{font-size:14px;line-height:1.8;background:#f5f5fa;padding:12px;margin:16px 0;overflow-wrap:anywhere}.analysis-claim{border-left:4px solid #3b3f86;font-size:17px;font-weight:700}.q-text{font-size:clamp(21px,5vw,28px);line-height:1.65;font-weight:600}.answer-focus{padding:10px;margin:12px 0;border-left:4px solid #b03a3a;background:#fff5f5;overflow-wrap:anywhere}.answer-focus.good{border-color:#218574;background:#effaf7}.compare-item p{font-size:17px;line-height:1.7}.q-meta{flex-wrap:wrap}</style>
+<link rel="stylesheet" href="./learning.css">
+<link rel="stylesheet" href="./mint-learning.css">
+</head>
+<body class="etwiki-learning">
+<header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="location">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론</a></nav></header>
+<div class="header-wrap">
+  <div class="header-topbar">
+    <span class="header-no">ADVANCED SYNTAX</span>
+    <span class="header-label">Practice Notebook</span>
+  </div>
+  <h1 class="header-title">통사 예문 · 구조·해석 OX</h1>
+  <div class="header-script">Sentence Evidence · Exam-driven Practice</div>
+  <p class="header-sub">검증한 기출의 판단 요구를 연습 · 자체 예문 8문항 · 원문 재현 아님</p>
+  <div id="score-badge-slot" aria-label="전체 문항 최고 기록"></div>
+  <div class="header-divider"></div>
+</div>
+<nav class="quiz-hub-nav" aria-label="통사 예문 학습"><a href="./syntax.html">통사론 허브</a><a href="./advanced-syntax-grammaticality-ox.html">문법성 OX (정문·비문)</a><a href="./example-judgment-ox.html">기존 예문 OX 32</a></nav><p class="judgment-guide">영어 예문 아래의 분석 진술을 판단합니다. O = 분석이 맞음 / X = 분석이 틀림. X를 골라도 영어 문장 자체가 비문이라는 뜻은 아닙니다.</p>
+<div class="prog-wrap">
+  <div class="prog-info"><span id="pt">0 / 8 응답</span><span id="ps">정답 0개</span></div>
+  <div class="bar"><div class="bar-fill" id="bf" style="width:0%"></div></div>
+</div>
+<div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
+  <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
+    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+  </div>
+</div>
+<div class="mode-bar">
+  <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
+  <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
+</div>
+<div class="quiz-tools"><label for="unit-filter">학습 범위</label><select id="unit-filter" onchange="setUnit(this.value)"><option value="0">전체 8문항</option><option value="1">Complement / Adjunct reading</option><option value="2">CP / TP category</option><option value="3">NP / N′ substitution</option><option value="4">Controller identification</option></select><button class="restart-btn" onclick="restart()">현재 범위 다시 풀기</button><button class="restart-btn" id="retry-wrong" onclick="retryWrong()" disabled>오답만 다시 풀기</button><p>범위·순서를 바꾸거나 다시 풀면 현재 회차가 새로 시작됩니다. 최고 기록은 전체 8문항 회차만 저장합니다.</p></div><nav id="nav" aria-label="문항 이동"></nav>
+<div class="wrap">
+  <div id="qa"></div>
+  <div class="score-card" id="sc">
+    <div class="score-circle"><span class="s-num" id="fs">0</span><span class="s-total" id="score-total">/8</span></div>
+    <h2 id="rm"></h2><p id="rs"></p>
+    <button class="restart-btn" onclick="restart()">🔄 다시 풀기</button>
+  </div>
+</div>
+<script src="./score-popup.js"></script>
+<script src="./sounds.js"></script>
+<script>
+const UNIT_NAMES=["Complement / Adjunct reading", "CP / TP category", "NP / N′ substitution", "Controller identification"];
+const Q=[
+  {
+    "id": "ASA01",
+    "unit": 1,
+    "src": "구조·해석",
+    "cat": "2022 A7 연결",
+    "text": "The new colleague is the phonology and Italian lecturer.",
+    "ans": true,
+    "context": "2022 A7의 complement/adjunct·coordination·one-replacement 분석을 적용합니다. Italian은 언어 또는 국적의 두 읽기만 비교합니다. 문장 자체의 문법성이 아니라 아래 분석을 판단합니다.",
+    "focus": "phonology and Italian",
+    "correct": "제시한 분석이 맞습니다.",
+    "why": "Phonology와 같은 complement 기능으로 연결된 Italian은 가르치는 언어를 뜻합니다.",
+    "compare": [
+      {
+        "title": "분석 확인",
+        "desc": "Italian = the language taught; not the lecturer’s nationality."
+      }
+    ],
+    "source": "2022 A7 원문의 complement/adjunct·one-replacement 분석; Radford, Transformational Grammar, Ch.4, pp.186–187. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./phrase-structure_study.html#complement-adjunct-depth",
+    "exam": {
+      "label": "2022 A7 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2022_A07"
+    },
+    "claim": "Italian은 lecturer가 가르치는 언어를 나타낸다."
+  },
+  {
+    "id": "ASA02",
+    "unit": 1,
+    "src": "구조·해석",
+    "cat": "2022 A7 연결",
+    "text": "Eva is not the Spanish lecturer but the Italian one.",
+    "ans": false,
+    "context": "2022 A7의 complement/adjunct·coordination·one-replacement 분석을 적용합니다. Italian은 언어 또는 국적의 두 읽기만 비교합니다. 문장 자체의 문법성이 아니라 아래 분석을 판단합니다.",
+    "focus": "the Italian one",
+    "correct": "제시한 분석이 틀립니다. 문장 자체가 비문이라는 뜻은 아닙니다.",
+    "why": "이 기출의 one-replacement 분석에서는 one 밖에 남은 Italian이 nationality adjunct입니다. Language complement라면 lecturer만 one으로 바꾼 분석이 되지 않습니다.",
+    "compare": [
+      {
+        "title": "분석 확인",
+        "desc": "Italian = nationality under the stated exam analysis."
+      }
+    ],
+    "source": "2022 A7 원문의 complement/adjunct·one-replacement 분석; Radford, Transformational Grammar, Ch.4, pp.186–187. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./phrase-structure_study.html#complement-adjunct-depth",
+    "exam": {
+      "label": "2022 A7 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2022_A07"
+    },
+    "claim": "Italian은 여기서 lecturer가 가르치는 언어로 해석된다."
+  },
+  {
+    "id": "ASA03",
+    "unit": 2,
+    "src": "구조·해석",
+    "cat": "2018 A12 연결",
+    "text": "I feel tired, but should I finish the report tonight?",
+    "ans": true,
+    "context": "2018 A12의 CP/TP 분석을 사용합니다. 발화 기능과 grammatical category를 구별하며, 보이지 않는 C도 허용합니다.",
+    "focus": "[I feel tired] but [should I finish the report tonight]",
+    "correct": "제시한 분석이 맞습니다.",
+    "why": "첫 conjunct는 null C를 가진 CP, 둘째는 auxiliary가 C에 있는 CP로 분석합니다. Statement/question이라는 발화 기능 차이가 category 차이를 뜻하지 않습니다.",
+    "compare": [
+      {
+        "title": "분석 확인",
+        "desc": "[CP Ø [TP I feel tired]] but [CP should [TP I finish the report tonight]]"
+      }
+    ],
+    "source": "2018 A12 원문의 CP/TP 분석; Radford, Transformational Grammar, §6.4, pp.300–301 (S′ 표기). 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./constituency_study.html#coordination-exam-depth",
+    "exam": {
+      "label": "2018 A12 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2018_A12"
+    },
+    "claim": "But으로 연결된 두 clause 전체는 모두 CP로 분석할 수 있다."
+  },
+  {
+    "id": "ASA04",
+    "unit": 2,
+    "src": "구조·해석",
+    "cat": "2018 A12 연결",
+    "text": "The technician can repair the projector.",
+    "ans": false,
+    "context": "2018 A12의 CP/TP 분석을 사용합니다. 발화 기능과 grammatical category를 구별하며, 보이지 않는 C도 허용합니다.",
+    "focus": "[CP Ø [TP the technician can repair the projector]]",
+    "correct": "제시한 분석이 틀립니다. 문장 자체가 비문이라는 뜻은 아닙니다.",
+    "why": "Overt complementizer가 없다는 이유만으로 CP를 배제할 수 없습니다. 이 분석에서는 null C를 갖는 declarative CP입니다.",
+    "compare": [
+      {
+        "title": "분석 확인",
+        "desc": "Overt C absent ≠ CP absent."
+      }
+    ],
+    "source": "2018 A12 원문의 CP/TP 분석; Radford, Transformational Grammar, §6.4, pp.300–301 (S′ 표기). 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./constituency_study.html#coordination-exam-depth",
+    "exam": {
+      "label": "2018 A12 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2018_A12"
+    },
+    "claim": "That이 발음되지 않으므로 이 문장 전체는 CP일 수 없고 TP여야 한다."
+  },
+  {
+    "id": "ASA05",
+    "unit": 3,
+    "src": "구조·해석",
+    "cat": "2014 A4 연결",
+    "text": "I met [the editors of the new journal] yesterday.",
+    "ans": true,
+    "context": "2014 A4와 Radford의 NP/N′ substitution 분석입니다. 대괄호가 지정한 범위와 replacement 범위만 판단합니다. 전체 문장의 문법성 문제가 아닙니다.",
+    "focus": "[the editors of the new journal] → them",
+    "correct": "제시한 분석이 맞습니다.",
+    "why": "Determiner를 포함한 NP 전체를 personal pronoun them으로 대용합니다. Editors라는 head 하나만 대신하는 것이 아닙니다.",
+    "compare": [
+      {
+        "title": "분석 확인",
+        "desc": "I met them yesterday."
+      }
+    ],
+    "source": "2014 A4 원문; Radford, Transformational Grammar, Ch.4, pp.186–187 (one-pronominalisation). 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./constituency_study.html#s7",
+    "exam": {
+      "label": "2014 A4 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2014_A04"
+    },
+    "claim": "대괄호 안 NP 전체를 them으로 대용할 수 있다."
+  },
+  {
+    "id": "ASA06",
+    "unit": 3,
+    "src": "구조·해석",
+    "cat": "2014 A4 연결",
+    "text": "We met the [young historians of art] from Italy.",
+    "ans": false,
+    "context": "2014 A4와 Radford의 NP/N′ substitution 분석입니다. 대괄호가 지정한 범위와 replacement 범위만 판단합니다. 전체 문장의 문법성 문제가 아닙니다.",
+    "focus": "the [young historians of art] from Italy → the ones from Italy",
+    "correct": "제시한 분석이 틀립니다. 문장 자체가 비문이라는 뜻은 아닙니다.",
+    "why": "이 분석에서 ones는 head에 complement of art를 포함한 N′를 대신합니다. From Italy는 바깥 adjunct로 남을 수 있습니다.",
+    "compare": [
+      {
+        "title": "분석 확인",
+        "desc": "We met the ones from Italy. Ones = young historians of art in this substitution."
+      }
+    ],
+    "source": "2014 A4 원문; Radford, Transformational Grammar, Ch.4, pp.186–187 (one-pronominalisation). 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./constituency_study.html#s7",
+    "exam": {
+      "label": "2014 A4 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2014_A04"
+    },
+    "claim": "The ones from Italy로 바꾸면 ones가 대신한 범위는 historians 한 단어뿐이다."
+  },
+  {
+    "id": "ASA07",
+    "unit": 4,
+    "src": "구조·해석",
+    "cat": "2019 B6 연결",
+    "text": "Maya promised to lock the gate.",
+    "ans": true,
+    "context": "2019 B6의 obligatory-control 분석입니다. Infinitive의 발음되지 않는 subject가 누구인지 판단합니다. Maya와 Owen은 서로 다른 사람입니다.",
+    "focus": "Maya promised [PRO to lock the gate]",
+    "correct": "제시한 분석이 맞습니다.",
+    "why": "이 promise 구조에서는 matrix subject Maya가 PRO를 control합니다.",
+    "compare": [
+      {
+        "title": "분석 확인",
+        "desc": "Maya is understood as the person who will lock the gate."
+      }
+    ],
+    "source": "2019 B6 원문의 control 분석; Cowan, The Teacher’s Grammar of English, Ch.21, pp.497–499. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./raising-control_study.html#subject-control",
+    "exam": {
+      "label": "2019 B6 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2019_B06"
+    },
+    "claim": "To lock의 understood subject는 Maya이다."
+  },
+  {
+    "id": "ASA08",
+    "unit": 4,
+    "src": "구조·해석",
+    "cat": "2019 B6 연결",
+    "text": "Maya persuaded Owen to lock the gate.",
+    "ans": false,
+    "context": "2019 B6의 obligatory-control 분석입니다. Infinitive의 발음되지 않는 subject가 누구인지 판단합니다. Maya와 Owen은 서로 다른 사람입니다.",
+    "focus": "persuaded Owen [PRO to lock the gate]",
+    "correct": "제시한 분석이 틀립니다. 문장 자체가 비문이라는 뜻은 아닙니다.",
+    "why": "Persuade는 object-control입니다. Owen이 설득받고, lock의 understood subject도 Owen입니다.",
+    "compare": [
+      {
+        "title": "분석 확인",
+        "desc": "Owen, not Maya, is understood as the person who will lock the gate."
+      }
+    ],
+    "source": "2019 B6 원문의 control 분석; Cowan, The Teacher’s Grammar of English, Ch.21, pp.497–499. 원문을 재현한 문제가 아니라 구조를 적용한 자체 연습입니다.",
+    "study": "./raising-control_study.html#object-control",
+    "exam": {
+      "label": "2019 B6 · 관련 원문",
+      "url": "https://etwiki.net/index.html?id=linguistics_2019_B06"
+    },
+    "claim": "To lock의 understood subject는 matrix subject Maya이다."
+  }
+];
+const TOTAL=Q.length;
+const SAVE_KEY='ox_advanced_syntax_analysis_v1';
+let answers=Array(TOTAL).fill(null),cur=0,mode='normal',unit=0,order=Q.map((_,i)=>i),retry=false;
+const el=id=>document.getElementById(id);
+function scopedIds(){return Q.map((_,i)=>i).filter(i=>!unit||Q[i].unit===unit);}
+function getScore(){return order.filter(i=>answers[i]!==null&&answers[i]===Q[i].ans).length;}
+function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({v:1,answers,cur,mode,unit,order,retry}));}catch(e){}}
+function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){}}
+function start(ids,isRetry=false){
+ order=[...ids]; if(!order.length)return;
+ if(mode==='random'){for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}}else order.sort((a,b)=>a-b);
+ answers=Array(TOTAL).fill(null);cur=0;retry=isRetry;el('rb').style.display='none';saveProgress();render();
+}
+function setMode(m){if(!['normal','random'].includes(m)||m===mode)return;mode=m;start(order,retry);}
+function setUnit(value){unit=Number(value);if(!Number.isInteger(unit)||unit<0||unit>UNIT_NAMES.length)unit=0;start(scopedIds());}
+function freshStart(){mode='normal';unit=0;clearProgress();start(scopedIds());}
+function restart(){start(order,retry);}
+function retryWrong(){const ids=order.filter(i=>answers[i]!==null&&answers[i]!==Q[i].ans);if(ids.length)start(ids,true);}
+function jumpTo(i){if(!Number.isInteger(i)||i<0||i>=order.length)return;cur=i;saveProgress();render();}
+function renderExp(q){const a=answers[order[cur]],ok=a===q.ans;
+ const cmp=q.compare?`<div class="sec-label">예문 비교</div><div class="compare">${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}</div>`:'';
+ return `<div class="exp show"><div class="exp-header"><span>${ok?'✅ 정답':'❌ 오답'} · 정답 ${q.ans?'O':'X'}</span></div><div class="exp-answer"><div class="ans-text">${q.correct}</div><div class="answer-focus ${q.ans?'good':''}"><b>정답 뒤 구조 확인</b>: ${q.focus}</div></div><div class="exp-body"><p>${q.why}</p>${cmp}<div class="sec-label">근거 · 자체 연습문항</div><p>${q.source}</p><p><a href="${q.study}">관련 개념 다시 읽기 →</a></p>${q.exam?`<p><a href="${q.exam.url}">관련 원문 기출: ${q.exam.label} ↗</a></p>`:''}</div></div>`;
+}
+function renderNav(){el('nav').innerHTML=order.map((idx,pos)=>{const a=answers[idx];return `<button class="nd ${pos===cur?'cur':a===null?'':a===Q[idx].ans?'ok':'ng'}" onclick="jumpTo(${pos})" aria-label="${Q[idx].id}${a===null?', 미응답':a===Q[idx].ans?', 정답':', 오답'}" ${pos===cur?'aria-current="step"':''}>${idx+1}</button>`;}).join('');}
+function render(){
+ el('unit-filter').value=String(unit);el('btn-normal').classList.toggle('active',mode==='normal');el('btn-random').classList.toggle('active',mode==='random');
+ const done=order.filter(i=>answers[i]!==null).length,n=order.length,score=getScore();
+ el('pt').textContent=`${retry?'오답 재도전 · ':''}${done} / ${n} 응답`;
+ el('ps').textContent=`정답 ${score}개`;el('bf').style.width=(done/n*100).toFixed(1)+'%';
+ el('retry-wrong').disabled=!order.some(i=>answers[i]!==null&&answers[i]!==Q[i].ans);
+ renderNav();
+ if(cur===n){
+  el('qa').style.display='none';el('sc').classList.add('show');el('fs').textContent=score;el('score-total').textContent='/'+n;
+  el('rm').textContent=score===n?'모두 맞혔습니다!':'해설을 확인하고 다시 도전하세요';
+  el('rs').textContent=`${retry?'오답 재도전':unit?'SET '+String(unit).padStart(2,'0'):'전체'} ${n}문제 중 ${score}문제 정답 (${Math.round(score/n*100)}%)`;return;
+ }
+ el('sc').classList.remove('show');el('qa').style.display='block';const idx=order[cur],q=Q[idx],a=answers[idx];
+ el('qa').innerHTML=`<div class="card"><div class="q-meta"><span class="q-num">${q.id}</span><span class="q-src">${cur+1} / ${n}</span><span class="q-cat">${q.cat}</span></div><h2 class="unit-label">${q.src} · ${UNIT_NAMES[q.unit-1]}</h2><div class="q-text" lang="en">${q.text}</div><p class="q-context"><b>판단 조건</b> · ${q.context}</p><div class="analysis-claim"><b>판단할 분석</b><br>${q.claim}</div><div class="ox-btns"><button class="ox-btn o-btn ${a===true?(a===q.ans?'co':'wp'):''}" onclick="pick(true)" ${a!==null?'disabled':''}>O<span class="lb">분석이 맞다</span></button><button class="ox-btn x-btn ${a===false?(a===q.ans?'cx':'wp'):''}" onclick="pick(false)" ${a!==null?'disabled':''}>X<span class="lb">분석이 틀리다</span></button></div><div aria-live="polite">${a!==null?renderExp(q):''}</div>${a!==null?`<button class="next-btn show" onclick="next()">${done===n?'결과 보기 →':'다음 미응답 →'}</button>`:''}</div>`;
+}
+function pick(value){if(typeof value!=='boolean'||cur>=order.length||answers[order[cur]]!==null)return;answers[order[cur]]=value;saveProgress();try{if(value===Q[order[cur]].ans){if(typeof playOk==='function')playOk();}else if(typeof playNg==='function')playNg();}catch(e){}render();}
+function next(){
+ if(cur>=order.length||answers[order[cur]]===null)return;
+ const pending=order.map((_,i)=>(cur+1+i)%order.length).find(pos=>answers[order[pos]]===null);
+ if(pending!==undefined){cur=pending;saveProgress();render();return;}
+ cur=order.length;saveProgress();render();
+ // The shared best-record popup is only comparable for full-bank first attempts.
+ if(!unit&&!retry&&order.length===TOTAL&&typeof window.showScorePopup==='function'){
+  window.showScorePopup(getScore(),TOTAL,{nextText:'해설·오답 다시 보기',onNextClick:()=>{const overlay=el('sp-overlay');if(overlay)overlay.remove();}});
+  const btn=el('sp-retry');if(btn)btn.onclick=()=>{const overlay=el('sp-overlay');if(overlay)overlay.remove();restart();};
+ }
+}
+function validSaved(s){
+ return s&&s.v===1&&Number.isInteger(s.unit)&&s.unit>=0&&s.unit<=UNIT_NAMES.length&&['normal','random'].includes(s.mode)&&typeof s.retry==='boolean'&&Array.isArray(s.answers)&&s.answers.length===TOTAL&&s.answers.every(a=>a===null||typeof a==='boolean')&&Array.isArray(s.order)&&s.order.length>0&&s.order.length<=TOTAL&&new Set(s.order).size===s.order.length&&s.order.every(i=>Number.isInteger(i)&&i>=0&&i<TOTAL&&(!s.unit||Q[i].unit===s.unit))&&(s.retry||s.order.length===Q.filter(q=>!s.unit||q.unit===s.unit).length)&&Number.isInteger(s.cur)&&s.cur>=0&&s.cur<=s.order.length&&(s.cur!==s.order.length||s.order.every(i=>s.answers[i]!==null));
+}
+(function(){
+ let loaded=false;try{const s=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');if(validSaved(s)){({answers,cur,mode,unit,order,retry}=s);loaded=true;}}catch(e){}
+ const requested=new URLSearchParams(location.search).get('unit');
+ if(requested!==null&&/^[1-4]$/.test(requested)&&(!loaded||unit!==Number(requested))){unit=Number(requested);start(scopedIds());return;}
+ if(loaded){el('rb-msg').textContent='저장한 학습을 이어서 보여 드립니다.';el('rb').style.display='block';}render();
+})();
+
+</script>
+<nav class="quiz-return" aria-label="통사론 학습 허브"><a id="back-btn" href="./syntax.html">← 통사론 허브로 돌아가기</a></nav>
+<script>
+// score-popup.js registers its badge creation before this listener.
+document.addEventListener('DOMContentLoaded',function(){
+  const badge=document.getElementById('sp-badge');
+  const slot=document.getElementById('score-badge-slot');
+  if(badge&&slot)slot.appendChild(badge);
+},{once:true});
+</script>
+</body>
+</html>
