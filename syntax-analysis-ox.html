@@ -359,9 +359,10 @@ function freshStart(){mode='normal';unit=0;clearProgress();start(scopedIds());}
 function restart(){start(order,retry);}
 function retryWrong(){const ids=order.filter(i=>answers[i]!==null&&answers[i]!==Q[i].ans);if(ids.length)start(ids,true);}
 function jumpTo(i){if(!Number.isInteger(i)||i<0||i>=order.length)return;cur=i;saveProgress();render();}
+function escapeSourceText(value){return String(value).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 function renderExp(q){const a=answers[order[cur]],ok=a===q.ans;
  const cmp=q.compare?`<div class="sec-label">예문 비교</div><div class="compare">${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}</div>`:'';
- return `<div class="exp show"><div class="exp-header"><span>${ok?'✅ 정답':'❌ 오답'} · 정답 ${q.ans?'O':'X'}</span></div><div class="exp-answer"><div class="ans-text">${q.correct}</div><div class="answer-focus ${q.ans?'good':''}"><b>정답 뒤 구조 확인</b>: ${q.focus}</div></div><div class="exp-body"><p>${q.why}</p>${cmp}<div class="sec-label">근거 · 자체 연습문항</div><p>${q.source}</p><p><a href="${q.study}">관련 개념 다시 읽기 →</a></p>${q.exam?`<p><a href="${q.exam.url}">관련 원문 기출: ${q.exam.label} ↗</a></p>`:''}</div></div>`;
+ return `<div class="exp show"><div class="exp-header"><span>${ok?'✅ 정답':'❌ 오답'} · 정답 ${q.ans?'O':'X'}</span></div><div class="exp-answer"><div class="ans-text">${q.correct}</div><div class="answer-focus ${q.ans?'good':''}"><b>정답 뒤 구조 확인</b>: ${q.focus}</div></div><div class="exp-body"><p>${q.why}</p>${cmp}<div class="sec-label">근거 · 자체 연습문항</div><p>${escapeSourceText(q.source)}</p><p><a href="${q.study}">관련 개념 다시 읽기 →</a></p>${q.exam?`<p><a href="${q.exam.url}">관련 원문 기출: ${q.exam.label} ↗</a></p>`:''}</div></div>`;
 }
 function renderNav(){el('nav').innerHTML=order.map((idx,pos)=>{const a=answers[idx];return `<button class="nd ${pos===cur?'cur':a===null?'':a===Q[idx].ans?'ok':'ng'}" onclick="jumpTo(${pos})" aria-label="${Q[idx].id}${a===null?', 미응답':a===Q[idx].ans?', 정답':', 오답'}" ${pos===cur?'aria-current="step"':''}>${idx+1}</button>`;}).join('');}
 function render(){
