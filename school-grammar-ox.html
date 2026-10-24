@@ -88,7 +88,12 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 .quiz-hub-nav a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:36px;padding:7px 11px;border:1px solid #c5c8e8;border-radius:999px;background:#fff;color:#2a2e6e;font-size:11.5px;font-weight:700;text-decoration:none;white-space:nowrap}
 .quiz-hub-nav a:hover{background:#f0f1ff;border-color:#7c83d9}
 @media(max-width:360px){.compare,.compare.three{grid-template-columns:1fr}}
-.quiz-tools{max-width:720px;margin:0 auto 16px;padding:0 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}.quiz-tools select{max-width:100%;min-width:0;flex:1 1 260px;padding:12px;border:1px solid #c5c8e8;border-radius:8px;font:inherit}.quiz-tools p{font-size:13px;line-height:1.7;color:#555}.quiz-tools .restart-btn{padding:10px 14px;font-size:13px}.unit-label{font-size:13px;line-height:1.7;color:#4a4d6a;margin-bottom:14px}.q-text,.exp-body,.ans-text{overflow-wrap:anywhere}.nd{width:40px;height:40px}.quiz-tools button:disabled{opacity:.5;cursor:default}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #1f7a8c;outline-offset:3px}@media(max-width:480px){.compare,.compare.three{grid-template-columns:1fr}.card{padding:18px}.header-label{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}</style>
+.quiz-tools{max-width:720px;margin:0 auto 16px;padding:0 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}.quiz-tools select{max-width:100%;min-width:0;flex:1 1 260px;padding:12px;border:1px solid #c5c8e8;border-radius:8px;font:inherit}.quiz-tools p{font-size:13px;line-height:1.7;color:#555}.quiz-tools .restart-btn{padding:10px 14px;font-size:13px}.unit-label{font-size:13px;line-height:1.7;color:#4a4d6a;margin-bottom:14px}.q-text,.exp-body,.ans-text{overflow-wrap:anywhere}.nd{width:40px;height:40px}.quiz-tools button:disabled{opacity:.5;cursor:default}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #1f7a8c;outline-offset:3px}@media(max-width:480px){.compare,.compare.three{grid-template-columns:1fr}.card{padding:18px}.header-label{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* This bank keeps the shared best-record badge in document flow. */
+#sp-badge{position:static!important;inset:auto!important;max-width:100%;width:fit-content;margin:10px 0;overflow-wrap:anywhere;pointer-events:none}
+.quiz-return{text-align:center;margin:24px auto;max-width:720px}
+.quiz-return a{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff;color:#2a2e6e;font-weight:700;text-decoration:none}
+</style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
 </head>
@@ -102,6 +107,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
   <h1 class="header-title">학교문법 · OX</h1>
   <div class="header-script">Form, Meaning & Use</div>
   <p class="header-sub">기존 9개 UNIT의 핵심 대조 · 자체 연습 36문항 (원문 기출 아님)</p>
+  <div id="score-badge-slot" aria-label="전체 문항 최고 기록"></div>
   <div class="header-divider"></div>
 </div>
 <nav class="quiz-hub-nav" aria-label="전공영어 학습 허브">
@@ -682,6 +688,14 @@ function validSaved(s){
 })();
 
 </script>
-<script src="./study-return.js" data-hub-label="학교문법 허브"></script>
+<nav class="quiz-return" aria-label="학교문법 학습 허브"><a id="back-btn" href="./school-grammar.html">← 학교문법 허브로 돌아가기</a></nav>
+<script>
+// score-popup.js registers its badge creation before this listener.
+document.addEventListener('DOMContentLoaded',function(){
+  const badge=document.getElementById('sp-badge');
+  const slot=document.getElementById('score-badge-slot');
+  if(badge&&slot)slot.appendChild(badge);
+},{once:true});
+</script>
 </body>
 </html>
