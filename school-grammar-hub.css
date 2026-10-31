@@ -1,0 +1,27 @@
+/* School Grammar only: keep the existing mint design and put learning first. */
+.school-grammar-hub .school-quick-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 12px}
+.school-quick-actions a{display:flex;flex-direction:column;justify-content:center;gap:5px;min-height:80px;padding:14px 16px;border:1px solid #b2dfcc;border-radius:12px;background:#fff;color:#2e7d52;text-decoration:none}
+.school-quick-actions a.school-primary{background:#2e7d52;color:#fff;border-color:#2e7d52}
+.school-quick-actions strong{font-size:16px;line-height:1.4}.school-quick-actions span{font-size:12px;line-height:1.5}
+.school-quick-actions a:hover{filter:brightness(.97)}
+.school-grammar-hub a:focus-visible,.school-source>summary:focus-visible{outline:3px solid #2e7d52;outline-offset:3px}
+.school-source{margin:12px 0;border:1px solid #b2dfcc;border-radius:10px;background:#f8fefa}
+.school-source>summary{cursor:pointer;padding:11px 14px;min-height:44px;color:#2e7d52;font-size:13px;font-weight:700}
+.school-source-body{padding:0 16px 14px;color:#426e55;overflow-wrap:anywhere}.school-source-body h2{font-size:16px;line-height:1.6;margin:5px 0}.school-source-body p{font-size:13px;line-height:1.75;margin:6px 0}
+.school-grammar-hub .hub-section-title{margin:20px 0 12px}.school-grammar-hub .chapter-copy .unit-terms{font-size:12px;line-height:1.6}
+.school-grammar-hub .chapter-copy .unit-question{margin-top:5px;font-size:13px;line-height:1.65}
+.school-grammar-hub .chapter-list{scroll-margin-top:16px}
+@media(max-width:640px){
+ .school-grammar-hub.learning-index .page-heading{padding-bottom:16px}
+ .school-grammar-hub .hub-eyebrow{font-size:10px;letter-spacing:1px;margin-bottom:5px}
+ .school-grammar-hub .school-quick-actions{gap:8px}
+ .school-quick-actions a{padding:12px;min-height:82px}
+ .school-quick-actions strong{font-size:15px}
+ .school-quick-actions span{font-size:11px}
+ .school-grammar-hub .chapter-row{grid-template-columns:32px minmax(0,1fr);gap:8px 10px;padding:14px}
+ .school-grammar-hub .chapter-number{width:32px;height:32px;min-width:32px;font-size:14px;border-radius:8px}
+ .school-grammar-hub .chapter-copy h2{font-size:16px;line-height:1.45}
+ .school-grammar-hub .chapter-actions{margin-top:3px}
+ .school-grammar-hub .hub-card-bottom{font-size:11px;padding-top:3px}
+}
+@media(prefers-reduced-motion:reduce){.school-grammar-hub *{scroll-behavior:auto!important}}
