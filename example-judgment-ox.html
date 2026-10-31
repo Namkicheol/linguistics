@@ -93,7 +93,14 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 #sp-badge{position:static!important;inset:auto!important;max-width:100%;width:fit-content;margin:10px 0;overflow-wrap:anywhere;pointer-events:none}
 .quiz-return{text-align:center;margin:24px auto;max-width:720px}
 .quiz-return a{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:1px solid #c5c8e8;border-radius:10px;background:#fff;color:#2a2e6e;font-weight:700;text-decoration:none}
-.judgment-guide{max-width:720px;margin:12px auto 20px;padding:14px;line-height:1.8;background:#fff;border:1px solid #d1d3e6;border-radius:10px;font-size:14px}.q-context{font-size:14px;line-height:1.8;background:#f5f5fa;padding:12px;margin:16px 0;overflow-wrap:anywhere}.q-text{font-size:clamp(21px,5vw,28px);line-height:1.65;font-weight:600}.answer-focus{padding:10px;margin:12px 0;border-left:4px solid #b03a3a;background:#fff5f5;overflow-wrap:anywhere}.answer-focus.good{border-color:#218574;background:#effaf7}.compare-item p{font-size:17px;line-height:1.7}.q-meta{flex-wrap:wrap}</style>
+.judgment-guide{max-width:720px;margin:12px auto 20px;padding:14px;line-height:1.8;background:#fff;border:1px solid #d1d3e6;border-radius:10px;font-size:14px}.q-context{font-size:14px;line-height:1.8;background:#f5f5fa;padding:12px;margin:16px 0;overflow-wrap:anywhere}.q-text{font-size:clamp(21px,5vw,28px);line-height:1.65;font-weight:600}.answer-focus{padding:10px;margin:12px 0;border-left:4px solid #b03a3a;background:#fff5f5;overflow-wrap:anywhere}.answer-focus.good{border-color:#218574;background:#effaf7}.compare-item p{font-size:17px;line-height:1.7}.q-meta{flex-wrap:wrap}
+/* A hint is available on demand, not revealed before the learner chooses it. */
+.q-context.condition-toggle{padding:0;border:1px solid #b2dfcc;border-radius:10px;background:#f5fcf8}
+.condition-toggle>summary{cursor:pointer;min-height:44px;padding:11px 14px;font-size:14px;font-weight:700;color:#2e7d52}
+.condition-toggle>summary:focus-visible{outline:3px solid #2e7d52;outline-offset:3px;border-radius:8px}
+.condition-toggle .condition-body{padding:0 14px 14px;line-height:1.8;color:#294e39;overflow-wrap:anywhere}
+.condition-toggle[open]>summary{border-bottom:1px solid #d4ecde;margin-bottom:10px}
+</style>
 <link rel="stylesheet" href="./learning.css">
 <link rel="stylesheet" href="./mint-learning.css">
 </head>
@@ -862,7 +869,7 @@ function render(){
   el('rs').textContent=`${retry?'오답 재도전':unit?'SET '+String(unit).padStart(2,'0'):'전체'} ${n}문제 중 ${score}문제 정답 (${Math.round(score/n*100)}%)`;return;
  }
  el('sc').classList.remove('show');el('qa').style.display='block';const idx=order[cur],q=Q[idx],a=answers[idx];
- el('qa').innerHTML=`<div class="card"><div class="q-meta"><span class="q-num">${q.id}</span><span class="q-src">${cur+1} / ${n}</span><span class="q-cat">${q.cat}</span></div><p class="unit-label">${CORE_IDS.includes(q.id)?'기출 원문 대조에 직접 연결한 연습':'기반 보강 · 이 예문의 직접 기출 이력은 주장하지 않습니다'}</p><h2 class="unit-label">${q.src} · ${UNIT_NAMES[q.unit-1]}</h2><div class="q-text" lang="en">${q.text}</div><p class="q-context"><b>판단 조건</b> · ${q.context}</p><div class="ox-btns"><button class="ox-btn o-btn ${a===true?(a===q.ans?'co':'wp'):''}" onclick="pick(true)" ${a!==null?'disabled':''}>O<span class="lb">문법적이다</span></button><button class="ox-btn x-btn ${a===false?(a===q.ans?'cx':'wp'):''}" onclick="pick(false)" ${a!==null?'disabled':''}>X<span class="lb">비문이다</span></button></div><div aria-live="polite">${a!==null?renderExp(q):''}</div>${a!==null?`<button class="next-btn show" onclick="next()">${done===n?'결과 보기 →':'다음 미응답 →'}</button>`:''}</div>`;
+ el('qa').innerHTML=`<div class="card"><div class="q-meta"><span class="q-num">${q.id}</span><span class="q-src">${cur+1} / ${n}</span><span class="q-cat">${q.cat}</span></div><p class="unit-label">${CORE_IDS.includes(q.id)?'기출 원문 대조에 직접 연결한 연습':'기반 보강 · 이 예문의 직접 기출 이력은 주장하지 않습니다'}</p><h2 class="unit-label">${q.src} · ${UNIT_NAMES[q.unit-1]}</h2><div class="q-text" lang="en">${q.text}</div><details class="q-context condition-toggle"><summary>판단 조건 보기</summary><div class="condition-body">${q.context}</div></details><div class="ox-btns"><button class="ox-btn o-btn ${a===true?(a===q.ans?'co':'wp'):''}" onclick="pick(true)" ${a!==null?'disabled':''}>O<span class="lb">문법적이다</span></button><button class="ox-btn x-btn ${a===false?(a===q.ans?'cx':'wp'):''}" onclick="pick(false)" ${a!==null?'disabled':''}>X<span class="lb">비문이다</span></button></div><div aria-live="polite">${a!==null?renderExp(q):''}</div>${a!==null?`<button class="next-btn show" onclick="next()">${done===n?'결과 보기 →':'다음 미응답 →'}</button>`:''}</div>`;
 }
 function pick(value){if(typeof value!=='boolean'||cur>=order.length||answers[order[cur]]!==null)return;answers[order[cur]]=value;saveProgress();try{if(value===Q[order[cur]].ans){if(typeof playOk==='function')playOk();}else if(typeof playNg==='function')playNg();}catch(e){}render();}
 function next(){
@@ -898,3 +905,4 @@ document.addEventListener('DOMContentLoaded',function(){
 </script>
 </body>
 </html>
+
