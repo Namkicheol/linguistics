@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>예문 OX · 기출 WIKI</title><link rel="stylesheet" href="./example-ox.css"></head>
+<body><a class="skip" href="#question">문제로 바로가기</a>
+<header class="top"><a class="brand" href="https://etwiki.net/">기출 WIKI</a><a href="./index.html">영어학 목록</a><a href="https://etwiki.net/study.html">학습자료</a></header>
+<main><div class="heading"><p class="eyebrow">PRACTICE</p><h1>예문 OX</h1><p>문장을 비교하고, 자료에서 근거를 찾아 판단하세요.</p></div>
+<nav class="subjects" aria-label="연습 코너"><a class="selected" href="./example-ox.html" aria-current="page">영어학 · 예문·자료</a><a href="https://etwiki.net/keyterm-quiz.html">영교 · Key Terms ↗</a></nav>
+<section class="setup" aria-label="학습 설정"><div class="selects"><label>학습 자료<select id="bank"></select></label><label>단원<select id="unit"></select></label></div>
+<label class="exam-filter"><input id="exam-only" type="checkbox"> 기출 OX만 보기</label>
+<fieldset class="modes"><legend>학습 방식</legend><label><input type="radio" name="mode" value="unit" checked> 단원별</label><label><input type="radio" name="mode" value="random"> 랜덤</label><label><input type="radio" name="mode" value="daily"> 데일리</label></fieldset>
+<div class="start-row"><label id="daily-size-label" hidden>하루 분량<select id="daily-size"><option value="5">5문항</option><option value="10" selected>10문항</option><option value="20">20문항</option></select></label><button id="start" class="primary">학습 시작 / 이어하기</button><span id="scope-count"></span></div><p id="mode-help" class="muted">설정 후 시작하면 해당 범위의 진도를 이어갑니다.</p></section>
+<div class="progress-row"><span id="session-title"></span><span id="progress" aria-live="polite"></span></div><progress id="progress-bar" max="1" value="0" aria-label="응답 진행률"></progress>
+<section id="question" tabindex="-1" aria-label="현재 문제"></section>
+<nav id="question-nav" aria-label="문항 이동"></nav>
+<div class="session-actions"><button id="retry-wrong" disabled>오답만 다시 풀기</button><button id="restart">현재 범위 새로 풀기</button><button id="sound" aria-pressed="false">소리 꺼짐</button></div>
+<p id="storage-status" class="muted" role="status"></p>
+<details class="more"><summary>기존 개념·연습 바로가기</summary><div class="links"><a href="./school-grammar.html">학교문법 단원 목록</a><a href="./syntax.html">Transformational · 통사론</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">AEP · 음성·음운론</a><a href="./morphology.html">Morphology OX</a><a href="./semantics.html">Semantics OX</a><a href="./pragmatics.html">Pragmatics OX</a><a href="https://namkicheol.github.io/englisheducation/">영교 개념·OX</a></div></details>
+<p class="legend"><span class="exam-swatch" aria-hidden="true"></span>노란 테두리: 원문과 대응이 확인된 기출 변환 OX. 파란 대표예문 배지는 핵심 학습용 선정 표시이며, 출처와 별개입니다.</p>
+<noscript>OX 학습에는 JavaScript가 필요합니다. 위 개념·연습 링크는 바로 열 수 있습니다.</noscript></main>
+<script src="./score-popup.js"></script><script src="./sounds.js"></script><script src="./example-ox-data.js"></script><script src="./example-ox.js"></script></body></html>

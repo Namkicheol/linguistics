@@ -1,28 +1,45 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>영어학 학습자료 · 기출 WIKI</title><link rel="stylesheet" href="./learning.css"><link rel="stylesheet" href="./mint-learning.css"><link rel="stylesheet" href="./subject-hub.css">
+<style>
+/* Hub-only hierarchy: shared learning pages and question styles stay unchanged. */
+.hub-home .page-heading{padding-bottom:16px!important}.hub-home .page-heading .english-label{display:inline;font-size:14px;margin-left:10px}.hub-home .page-heading h1{display:inline}
+.hub-home .hub-routes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 28px}.hub-home .hub-route{display:flex;flex-direction:column;gap:5px;padding:17px 18px;background:#fff;border:1px solid var(--ew-border);border-radius:12px;color:var(--ew-text);text-decoration:none;min-height:98px;box-sizing:border-box}.hub-route strong{font-size:19px}.hub-route span{font-size:13px;color:var(--ew-muted)}.hub-home .hub-route:hover{background:#eaf7f0}.hub-home .hub-route.exam-route{border:2px solid #c7a024;background:#fffbee}.hub-route.exam-route span{color:#6c571d}
+.hub-home .hub-block{margin:0 0 26px;scroll-margin-top:16px}.hub-home .hub-block h2{font-size:18px;margin:0 0 12px}.hub-home .hub-subtitle{font-size:13px;color:var(--ew-muted);margin:0 0 12px}
+.hub-home .chapter-list{display:block;border:1px solid var(--ew-border);border-radius:12px;background:#fff;overflow:hidden}.hub-home .chapter-row{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px 14px;border:0;border-bottom:1px solid #d8ebdf;border-radius:0;box-shadow:none}.hub-home .chapter-row:last-child{border-bottom:0}.hub-home .chapter-number{width:30px;height:30px;font-size:13px;border:0;border-radius:7px}.hub-home .chapter-copy h3{font-size:16px;line-height:1.45;margin:0;color:var(--ew-text)}.hub-home .chapter-copy p{font-size:12px;margin:1px 0 0}.hub-home .chapter-actions{grid-column:auto;width:auto;gap:7px;margin:0}.hub-home .chapter-actions a{min-width:64px;min-height:44px;padding:7px 12px;box-sizing:border-box;flex:none;font-size:13px}.hub-home .chapter-actions a:first-child{background:#f0faf4;color:var(--ew-accent)}
+.hub-home .hub-specialists{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.hub-home .hub-specialists a{display:flex;flex-direction:column;gap:3px;padding:14px 16px;border:1px solid var(--ew-border);border-radius:10px;background:#fff;color:var(--ew-text);text-decoration:none;min-height:72px;box-sizing:border-box}.hub-specialists strong{font-size:16px}.hub-specialists span{font-size:12px;color:var(--ew-muted)}.hub-home .hub-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--ew-border)}.hub-tools h2{font-size:15px;margin:0!important}.hub-tools a{min-height:44px;display:inline-flex;align-items:center;color:var(--ew-accent);font-size:14px;text-underline-offset:4px}
+@media(max-width:640px){.hub-home .hub-routes{gap:8px;margin-bottom:22px}.hub-home .hub-route{padding:13px 11px;min-height:100px}.hub-route strong{font-size:16px}.hub-route span{font-size:12px;line-height:1.5}.hub-home .chapter-row{grid-template-columns:26px minmax(0,1fr) auto;padding:10px;gap:8px}.hub-home .chapter-number{width:26px;height:28px}.hub-home .chapter-copy h3{font-size:14px}.hub-home .chapter-actions{gap:5px}.hub-home .chapter-actions a{min-width:44px;padding:8px;font-size:12px}.hub-home .chapter-copy p{font-size:11px}.hub-home .hub-specialists{grid-template-columns:1fr;gap:8px}.hub-home .hub-specialists a{flex-direction:row;align-items:center;justify-content:space-between;min-height:54px;padding:10px 13px}.hub-specialists span{text-align:right;max-width:55%}.hub-home .hub-block{margin-bottom:22px}}
+@media(max-width:360px){.hub-home .chapter-row{grid-template-columns:22px minmax(0,1fr)}.hub-home .chapter-actions{grid-column:2;justify-content:flex-start}.hub-home .hub-routes{grid-template-columns:1fr}.hub-home .hub-route{min-height:64px;flex-direction:row;align-items:center;justify-content:space-between}}
+</style>
 </head>
-<body class="learning-index etwiki-learning">
-<a class="skip-link" href="#chapters">목차로 바로가기</a>
+
+<body class="learning-index etwiki-learning hub-home">
+<a class="skip-link" href="#chapters">단원 목록으로 바로가기</a>
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="page">영어학</a><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운론 심화</a></nav></header>
-<main class="learning-main"><header class="page-heading"><h1>영어학</h1><p class="english-label">English Linguistics</p><p>8개 챕터 · 개념정리와 OX</p></header>
-<section aria-labelledby="deeper-hubs"><div class="hub-section-title"><h2 id="deeper-hubs">영역별 심화 허브</h2><p>기본 단원에서 한 단계 더</p></div><div class="hub-portals">
-<a class="hub-portal" href="https://namkicheol.github.io/phonetics-phonology/phonetics.html"><strong>음성·음운론 심화 ↗</strong><span>소리의 규칙 · 대조 예문 · 실전 연습</span></a>
-<a class="hub-portal" href="./syntax.html"><strong>통사론 심화 →</strong><span>TG 챕터별 자료 · 통사론 진단 심화 · 기본 개념 복습</span></a>
-<a class="hub-portal" href="./school-grammar.html"><strong>학교문법 심화 →</strong><span>The Teacher’s Grammar of English · 형태와 쓰임</span></a>
+<main class="learning-main">
+<header class="page-heading"><h1>영어학</h1><p class="english-label">English Linguistics</p></header>
+<nav class="hub-routes" aria-label="학습 방식 선택">
+<a class="hub-route" href="#chapters"><strong>이론 학습</strong><span>개념부터 차근차근</span></a>
+<a class="hub-route" href="./example-ox.html"><strong>예문 OX</strong><span>단원별 · 랜덤 · 데일리</span></a>
+<a class="hub-route exam-route" href="./example-ox.html?bank=exam&amp;filter=exam&amp;mode=unit"><strong>기출 OX</strong><span>기출 기반 문항만</span></a>
+</nav>
+<section class="hub-block" aria-labelledby="chapter-heading">
+<h2 id="chapter-heading">기본 이론 · 8개 단원</h2>
+<ol class="chapter-list" id="chapters" tabindex="-1">
+<li class="chapter-row"><span class="chapter-number">01</span><div class="chapter-copy"><h3>Constituency</h3><p>구성성분 · X-bar</p></div><div class="chapter-actions"><a href="./constituency_study.html" aria-label="Constituency 개념정리">개념정리</a><a href="./constituency.html" aria-label="Constituency OX">연습</a></div></li>
+<li class="chapter-row"><span class="chapter-number">02</span><div class="chapter-copy"><h3>Phrase Structure</h3><p>구와 문장의 구조</p></div><div class="chapter-actions"><a href="./phrase-structure_study.html" aria-label="Phrase Structure 개념정리">개념정리</a><a href="./phrase-structure.html" aria-label="Phrase Structure OX">연습</a></div></li>
+<li class="chapter-row"><span class="chapter-number">03</span><div class="chapter-copy"><h3>Movement</h3><p>이동</p></div><div class="chapter-actions"><a href="./movement_study.html" aria-label="Movement 개념정리">개념정리</a><a href="./movement.html" aria-label="Movement OX">연습</a></div></li>
+<li class="chapter-row"><span class="chapter-number">04</span><div class="chapter-copy"><h3>Raising &amp; Control</h3><p>Raising · Control 구문</p></div><div class="chapter-actions"><a href="./raising-control_study.html" aria-label="Raising &amp; Control 개념정리">개념정리</a><a href="./raising-control.html" aria-label="Raising &amp; Control OX">연습</a></div></li>
+<li class="chapter-row"><span class="chapter-number">05</span><div class="chapter-copy"><h3>Binding</h3><p>Binding 조건</p></div><div class="chapter-actions"><a href="./binding_study.html" aria-label="Binding 개념정리">개념정리</a><a href="./binding.html" aria-label="Binding OX">연습</a></div></li>
+<li class="chapter-row"><span class="chapter-number">06</span><div class="chapter-copy"><h3>Morphology</h3><p>형태론</p></div><div class="chapter-actions"><a href="./morphology_study.html" aria-label="Morphology 개념정리">개념정리</a><a href="./morphology.html" aria-label="Morphology OX">연습</a></div></li>
+<li class="chapter-row"><span class="chapter-number">07</span><div class="chapter-copy"><h3>Semantics</h3><p>의미론</p></div><div class="chapter-actions"><a href="./semantics_study.html" aria-label="Semantics 개념정리">개념정리</a><a href="./semantics.html" aria-label="Semantics OX">연습</a></div></li>
+<li class="chapter-row"><span class="chapter-number">08</span><div class="chapter-copy"><h3>Pragmatics</h3><p>화용론</p></div><div class="chapter-actions"><a href="./pragmatics_study.html" aria-label="Pragmatics 개념정리">개념정리</a><a href="./pragmatics.html" aria-label="Pragmatics OX">연습</a></div></li>
+</ol></section>
+<section class="hub-block" aria-labelledby="deeper-hubs">
+<h2 id="deeper-hubs">영역별 더 공부하기</h2>
+<div class="hub-specialists">
+<a href="./school-grammar.html"><strong>학교문법 →</strong><span>Teacher’s Grammar</span></a>
+<a href="./syntax.html"><strong>통사론 →</strong><span>Transformational Grammar</span></a>
+<a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html"><strong>음성·음운론 ↗</strong><span>AEP · 소리와 규칙</span></a>
 </div></section>
-<section class="hub-start" aria-labelledby="diagram-learning">
-<div><h2 id="diagram-learning">그림으로 이해하기</h2><p>통사론 · 음성·음운론의 구조와 변화를 그림으로 살펴보세요.</p></div>
-<div class="hub-start-actions"><a href="https://etwiki.net/diagrams.html">그림 목록 보기 ↗</a></div>
-</section>
-<div class="hub-section-title"><h2>영어학 전체 단원</h2><p>기존 개념정리와 OX</p></div>
-<ol class="chapter-list" id="chapters">
-<li class="chapter-row"><span class="chapter-number">01</span><div class="chapter-copy"><h2>Constituency</h2><p>구성성분 · X-bar</p></div><div class="chapter-actions"><a href="./constituency_study.html" aria-label="Constituency 개념정리">개념정리</a><a href="./constituency.html" aria-label="Constituency OX">OX</a></div></li>
-<li class="chapter-row"><span class="chapter-number">02</span><div class="chapter-copy"><h2>Phrase Structure</h2><p>구와 문장의 구조</p></div><div class="chapter-actions"><a href="./phrase-structure_study.html" aria-label="Phrase Structure 개념정리">개념정리</a><a href="./phrase-structure.html" aria-label="Phrase Structure OX">OX</a></div></li>
-<li class="chapter-row"><span class="chapter-number">03</span><div class="chapter-copy"><h2>Movement</h2><p>이동</p></div><div class="chapter-actions"><a href="./movement_study.html" aria-label="Movement 개념정리">개념정리</a><a href="./movement.html" aria-label="Movement OX">OX</a></div></li>
-<li class="chapter-row"><span class="chapter-number">04</span><div class="chapter-copy"><h2>Raising &amp; Control</h2><p>Raising · Control 구문</p></div><div class="chapter-actions"><a href="./raising-control_study.html" aria-label="Raising &amp; Control 개념정리">개념정리</a><a href="./raising-control.html" aria-label="Raising &amp; Control OX">OX</a></div></li>
-<li class="chapter-row"><span class="chapter-number">05</span><div class="chapter-copy"><h2>Binding</h2><p>Binding 조건</p></div><div class="chapter-actions"><a href="./binding_study.html" aria-label="Binding 개념정리">개념정리</a><a href="./binding.html" aria-label="Binding OX">OX</a></div></li>
-<li class="chapter-row"><span class="chapter-number">06</span><div class="chapter-copy"><h2>Morphology</h2><p>형태론</p></div><div class="chapter-actions"><a href="./morphology_study.html" aria-label="Morphology 개념정리">개념정리</a><a href="./morphology.html" aria-label="Morphology OX">OX</a></div></li>
-<li class="chapter-row"><span class="chapter-number">07</span><div class="chapter-copy"><h2>Semantics</h2><p>의미론</p></div><div class="chapter-actions"><a href="./semantics_study.html" aria-label="Semantics 개념정리">개념정리</a><a href="./semantics.html" aria-label="Semantics OX">OX</a></div></li>
-<li class="chapter-row"><span class="chapter-number">08</span><div class="chapter-copy"><h2>Pragmatics</h2><p>화용론</p></div><div class="chapter-actions"><a href="./pragmatics_study.html" aria-label="Pragmatics 개념정리">개념정리</a><a href="./pragmatics.html" aria-label="Pragmatics OX">OX</a></div></li>
-</ol><p class="learning-hint">개념을 읽고, OX로 확인하세요.</p>
+<aside class="hub-tools" aria-labelledby="diagram-learning"><h2 id="diagram-learning">그림으로 이해하기</h2><a href="https://etwiki.net/diagrams.html">그림 목록 ↗</a></aside>
 </main></body></html>
