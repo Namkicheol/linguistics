@@ -1,2 +1,8142 @@
-window.BOOK_ITEMS=[{"sentence": "Your younger brother, I can’t stand", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "NP 전체 [your younger brother]가 prepose되었습니다.", "whyHighlights": [{"start": 0, "end": 5, "text": "NP 전체", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP001", "groupId": "ADG02-01", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Your younger, I can’t stand brother", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "NP의 일부(your younger)만 이동했습니다. Preposing은 whole phrase 전체만 가능합니다.", "whyHighlights": [{"start": 0, "end": 6, "text": "NP의 일부", "style": ["bold", "underline"]}, {"start": 22, "end": 24, "text": "이동", "style": ["bold", "underline"]}, {"start": 30, "end": 39, "text": "Preposing", "style": ["bold", "underline"]}, {"start": 41, "end": 53, "text": "whole phrase", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP002", "groupId": "ADG02-01", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Younger brother, I can’t stand your", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "NP의 일부만 이동했습니다. your가 제자리에 남아있어 비문입니다.", "whyHighlights": [{"start": 0, "end": 6, "text": "NP의 일부", "style": ["bold", "underline"]}, {"start": 8, "end": 10, "text": "이동", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP003", "groupId": "ADG02-01", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-01c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "[Such careless handling], I simply will not tolerate", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "NP 전체 [such careless handling]가 prepose된 문법적인 문장입니다.", "whyHighlights": [{"start": 0, "end": 5, "text": "NP 전체", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP004", "groupId": "ADG02-02", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "[Down the path] Leo ran, as fast as he could", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "PP 전체 [down the path]이 prepose된 문법적인 문장입니다.", "whyHighlights": [], "subLabel": "d", "variantLabel": "", "id": "ADP005", "groupId": "ADG02-02", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-02d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "[Give in to intimidation], I never will!", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "VP 전체 give in to intimidation이 전치되어 문법적인 예문입니다.", "whyHighlights": [{"start": 31, "end": 33, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "e", "variantLabel": "", "id": "ADP006", "groupId": "ADG02-02", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-02e"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Up his uncle, Leo rang", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. ring up은 전화한다는 뜻의 particle 동사로 읽습니다.", "why": "ring up은 이 예문에서 phrasal verb입니다. up his uncle는 constituent가 아니므로 함께 전치할 수 없습니다.", "whyHighlights": [{"start": 68, "end": 70, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP007", "groupId": "ADG02-03", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Maya explained to him [all the technical difficulties that she had encountered]", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "무거운 NP 전체가 postpose되어 문장 뒤로 이동했습니다. Whole phrase이므로 가능합니다.", "whyHighlights": [{"start": 4, "end": 9, "text": "NP 전체", "style": ["bold", "underline"]}, {"start": 28, "end": 30, "text": "이동", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP008", "groupId": "ADG02-04", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-04b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Maya explained all the to him technical difficulties that she had encountered", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "NP의 일부(all the)만 남기고 이동했습니다. Whole phrase 전체가 함께 이동해야 합니다.", "whyHighlights": [{"start": 0, "end": 6, "text": "NP의 일부", "style": ["bold", "underline"]}, {"start": 21, "end": 23, "text": "이동", "style": ["bold", "underline"]}, {"start": 49, "end": 51, "text": "이동", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP009", "groupId": "ADG02-05", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-05"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "A: Where did he go?\nB: Up the stairs", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "[up the stairs]은 완전한 PP constituent입니다. 완전한 phrase는 sentence fragment로 사용 가능합니다.", "whyHighlights": [{"start": 52, "end": 69, "text": "sentence fragment", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP010", "groupId": "ADG02-06", "bookChapter": 2, "ask": "B의 답변은 sentence fragment로 적절하다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-06"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "context"}, {"sentence": "A: Who were you ringing up?\nB: Up my younger brother", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. ring up은 전화한다는 뜻의 particle 동사로 읽습니다.", "why": "ring up은 phrasal verb입니다. up my younger brother는 이 질문에 대응하는 constituent가 아니므로 적절한 답변이 아닙니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP011", "groupId": "ADG02-07", "bookChapter": 2, "ask": "B의 답변은 sentence fragment로 적절하다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-07"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "context"}, {"sentence": "A: Where are you going to?\nB: The museum", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "the museum는 PP 안에 포함되면서도 그 자체로 완전한 NP이므로 이 장소 질문에 답할 수 있습니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP012", "groupId": "ADG02-08", "bookChapter": 2, "ask": "B의 답변은 sentence fragment로 적절하다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-08"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "context"}, {"sentence": "Certainly, the crew can rely on my advice", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.", "why": "certainly(S-adverb)가 S 앞에 위치했습니다. S-adverb는 S node에 부착되므로 문장 앞 위치 가능합니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "certainly", "id": "ADP013", "groupId": "ADG02-09", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-09a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The certainly crew can rely on my advice", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.", "why": "certainly(S-adverb)가 NP 내부에 끼어들었습니다. S-adverb는 NP node에 부착될 수 없습니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "certainly", "id": "ADP014", "groupId": "ADG02-09", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-09b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The crew certainly can rely on my advice", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.", "why": "certainly(S-adverb)가 NP와 M 사이에 위치했습니다. S node에 부착되는 적절한 위치입니다.", "whyHighlights": [], "subLabel": "c", "variantLabel": "certainly", "id": "ADP015", "groupId": "ADG02-09", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-09c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The crew can certainly rely on my advice", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.", "why": "certainly(S-adverb)가 M과 VP 사이에 위치했습니다. S node에 부착되는 적절한 위치입니다.", "whyHighlights": [], "subLabel": "d", "variantLabel": "certainly", "id": "ADP016", "groupId": "ADG02-09", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-09d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The crew can rely certainly on my advice", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.", "why": "certainly(S-adverb)가 VP 내부에 위치했습니다. S-adverb는 VP node에 부착될 수 없습니다.", "whyHighlights": [], "subLabel": "e", "variantLabel": "certainly", "id": "ADP017", "groupId": "ADG02-09", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-09e"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The crew can rely completely on my advice", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.", "why": "completely(VP-adverb)가 VP 내부에 위치했습니다. VP-adverb는 VP node에 부착되므로 적절합니다.", "whyHighlights": [], "subLabel": "e", "variantLabel": "completely", "id": "ADP018", "groupId": "ADG02-09", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-09e"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Completely, the crew can rely on my advice", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.", "why": "completely(VP-adverb)가 문장 앞 S 위치에 왔습니다. VP-adverb는 S node에 부착될 수 없습니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "completely", "id": "ADP019", "groupId": "ADG02-09", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-09a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo rang up his uncle and up his cousin", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. ring up은 전화한다는 뜻의 particle 동사로 읽습니다.", "why": "ring up = Phrasal Verb. \"up his cousin\"는 constituent가 아니므로 등위접속 불가합니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP020", "groupId": "ADG02-10", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-10"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo wrote to Nora and to Owen", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "PP to Nora와 PP to Owen를 등위 접속한 예입니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP021", "groupId": "ADG02-11", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-11a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo wrote a postcard and to Owen", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "이 문맥에서 NP a postcard와 PP to Owen를 같은 자리에 자연스럽게 등위 접속할 수 없습니다.", "whyHighlights": [], "subLabel": "c", "variantLabel": "", "id": "ADP022", "groupId": "ADG02-11", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-11c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Your tutor won’t put (and your mentor is fed) up with your rude interruptions", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 연습문제는 일반적 용법에서 비문으로 가정하며 유머 사용은 별개입니다. 괄호는 공유 문자열 구문의 분석 표시이며 별도의 완결 발화를 삽입한 것으로 읽지 않습니다.", "why": "공유 문자열 up with your rude interruptions가 두 접속절 모두에서 같은 구성성분으로 성립하지 않습니다. put up with와 be fed up with의 표면 문자열 일치만으로 공유 구문을 허용하지 않습니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP023", "groupId": "ADG02-12", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-12"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo rang (and Owen picked) up Nora’s brother", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. ring up은 전화한다는 뜻의 particle 동사로 읽습니다. 괄호는 공유 문자열 구문의 분석 표시이며 별도의 완결 발화를 삽입한 것으로 읽지 않습니다.", "why": "rang up과 picked up에서 up은 각각 동사와 결합합니다. up Nora’s brother 전체는 공유 가능한 구성성분이 아닙니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP024", "groupId": "ADG02-13", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-13"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "A: Have you ever been to Vienna?\nB: No, I have never been there", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "이 예문의 there는 장소 PP to Vienna에 대응하는 pro-PP입니다. Vienna만을 대신하는 pro-NP라는 주장은 틀립니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP025", "groupId": "ADG02-14", "bookChapter": 2, "ask": "\"there\"는 Pro-NP로 Vienna를 대치한다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-14"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "analysis"}, {"sentence": "We hope it", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. it은 앞서 언급된 명제를 가리키려는 대명사이며 hope for it이나 I hope so로 고쳐 읽지 않습니다.", "why": "it은 syntactically NP position에만 올 수 있습니다. hope는 S complement를 취하는데 그 자리에 it이 올 수 없습니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP026", "groupId": "ADG02-15", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-15"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "A: Nora has finished her report\nB: I don’t believe it", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "it은 syntactically NP position에 위치하며, semantically S(절 전체)가 antecedent가 될 수 있습니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP027", "groupId": "ADG02-16", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-16a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo might [leave early], and so might Owen", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "so는 앞서 제시한 VP leave early에 대응하는 pro-VP입니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP028", "groupId": "ADG02-17", "bookChapter": 2, "ask": "\"so\"는 Pro-VP이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-17a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "analysis"}, {"sentence": "Many people consider Leo [remarkably patient], but I’ve never found him so", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "so는 AP [remarkably patient]를 대치하는 Pro-AP입니다.", "whyHighlights": [{"start": 34, "end": 40, "text": "Pro-AP", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP029", "groupId": "ADG02-18", "bookChapter": 2, "ask": "\"so\"는 Pro-AP이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-18"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "analysis"}, {"sentence": "Leo won’t help me with the laundry, but his brother will", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 생략된 VP를 발음하지 않는 형태입니다.", "why": "둘째 절에서 help me with the laundry 전체 VP가 생략됩니다. will은 남아 있으며 앞 절에서 내용을 복원할 수 있습니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP030", "groupId": "ADG02-19", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-19"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo won’t put the juice into the jug, but his brother will put", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 생략된 VP를 발음하지 않는 형태입니다.", "why": "둘째 절의 put은 남기고 목적어와 PP만 생략했으므로 이 책에서 설명한 전체 VP 생략이 아닙니다. put의 필수 보충어가 빠져 비문입니다.", "whyHighlights": [{"start": 65, "end": 68, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "e", "variantLabel": "", "id": "ADP031", "groupId": "ADG02-20", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-20e"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She may arrive early, but then again she may not", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 생략된 VP를 발음하지 않는 형태입니다.", "why": "둘째 절에서 arrive early 전체 VP가 생략되며 앞 문맥에서 복원됩니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP032", "groupId": "ADG02-21", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-21a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Tourists certainly would get off the coach", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사이며 별도 삽입구가 아닙니다.", "why": "certainly(S-adverb)가 NP와 M 사이에 위치했습니다. S node에 부착되는 적절한 위치입니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP033", "groupId": "ADG02-22", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-22a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Tourists would get certainly off the coach", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사이며 별도 삽입구가 아닙니다.", "why": "certainly(S-adverb)가 VP 내부, P(off) 앞에 위치했습니다. S-adverb는 VP 내부에 올 수 없습니다.", "whyHighlights": [], "subLabel": "c", "variantLabel": "", "id": "ADP034", "groupId": "ADG02-22", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-22c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Tourists would get off certainly the coach", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사이며 별도 삽입구가 아닙니다.", "why": "certainly(S-adverb)가 PP 내부에 위치했습니다. S-adverb는 PP/NP 내부에 올 수 없습니다.", "whyHighlights": [], "subLabel": "d", "variantLabel": "", "id": "ADP035", "groupId": "ADG02-22", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-22d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Tourists would get [off the coach] and [on the ferry]", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "off the coach와 on the ferry은 모두 PP 구성성분이므로 등위 접속할 수 있습니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP036", "groupId": "ADG02-23", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-23"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Hecklers would put off the guests and off the hosts", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. put off는 사람에게 불쾌감이나 거부감을 준다는 뜻입니다.", "why": "put off는 이 예문에서 phrasal verb이므로 off the hosts만은 독립된 구성성분이 아닙니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP037", "groupId": "ADG02-24", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-24"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Tourists would get — and porters would fall — off the coach", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.", "why": "[off the coach]는 PP constituent이므로 Shared Constituent Coordination이 성립합니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP038", "groupId": "ADG02-25", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-25"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Hecklers would put — and latecomers would also put — off the guests", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. put off는 사람에게 불쾌감이나 거부감을 준다는 뜻입니다.", "why": "put off = Phrasal Verb. \"off the guests\"는 constituent가 아니므로 공유 불가합니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP039", "groupId": "ADG02-26", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-26"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo will completely finish the report", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 예문의 짧은 NP 조건이며 무거운 NP의 후치와 구별합니다.", "why": "completely가 VP의 처음에 있고 finish와 목적어 the report 사이를 분리하지 않습니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP040", "groupId": "ADG02-27", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-27a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo will finish completely the report", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 예문의 짧은 NP 조건이며 무거운 NP의 후치와 구별합니다.", "why": "completely가 finish와 NP 목적어 the report 사이에 있어 이 장의 Strict Adjacency 조건에 어긋납니다.", "whyHighlights": [{"start": 50, "end": 66, "text": "Strict Adjacency", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP041", "groupId": "ADG02-27", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-27c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo argued [each claim] with the auditor", "ans": true, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 예문의 짧은 NP 조건이며 무거운 NP의 후치와 구별합니다.", "why": "NP 보충어 each claim가 argued 바로 뒤에 있고 with the auditor은 그 뒤에 옵니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP042", "groupId": "ADG02-28", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-28a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo argued with the auditor [each claim]", "ans": false, "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 예문의 짧은 NP 조건이며 무거운 NP의 후치와 구별합니다.", "why": "짧은 NP 보충어 each claim 앞에 with the auditor이 끼어들어 이 예문의 Strict Adjacency 조건에 어긋납니다.", "whyHighlights": [{"start": 6, "end": 9, "text": "보충어", "style": ["bold", "underline"]}, {"start": 53, "end": 69, "text": "Strict Adjacency", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP043", "groupId": "ADG02-28", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-28b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo and Nora think everyone criticizes them.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✓ 정문. them은 대명사로, [Leo and Nora]를 가리킬 수도 있고 문장 밖 다른 사람을 가리킬 수도 있다. 자유 지시(free reference)가 가능하므로 정문.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP044", "groupId": "ADG03-01", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo and Nora criticize themselves.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✓ 정문. themselves는 anaphor(재귀사). [Leo and Nora]가 c-commanding antecedent로 기능하며 복수 선행사이므로 appropriateness 조건도 충족.", "whyHighlights": [{"start": 18, "end": 25, "text": "anaphor", "style": ["bold", "underline"]}, {"start": 48, "end": 57, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP045", "groupId": "ADG03-01", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo and Nora criticize each other.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✓ 정문. each other는 anaphor(상호사). [Leo and Nora]는 두 개체를 지시하므로 appropriateness 조건 충족, c-command도 만족.", "whyHighlights": [{"start": 18, "end": 25, "text": "anaphor", "style": ["bold", "underline"]}, {"start": 83, "end": 92, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP046", "groupId": "ADG03-01", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-01c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo criticizes each other.", "ans": false, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✗ 비문. each other는 두 개체 이상을 지시하는 선행사가 필요한데, Leo는 단수. 적절한 antecedent가 없으므로 anaphor 해석 불가.", "whyHighlights": [{"start": 73, "end": 80, "text": "anaphor", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP047", "groupId": "ADG03-02", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I criticize himself.", "ans": false, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다. I는 1인칭 단수 화자이며, 별도 인용·관점 이동은 가정하지 않습니다.", "why": "✗ 비문. himself는 3인칭 단수 anaphor이고, I는 1인칭. Person 불일치로 appropriateness 조건 위반.", "whyHighlights": [{"start": 22, "end": 29, "text": "anaphor", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP048", "groupId": "ADG03-02", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Each other are always complaining.", "ans": false, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✗ 비문. each other는 anaphor이지만 문장 내에 어떤 potential antecedent도 존재하지 않아 해석 불가.", "whyHighlights": [{"start": 18, "end": 25, "text": "anaphor", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP049", "groupId": "ADG03-02", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-02c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The athletes might disgrace themselves.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✓ 정문. NP [the athletes]가 themselves를 c-command한다. 복수 선행사이므로 appropriateness 조건도 만족.", "whyHighlights": [{"start": 37, "end": 46, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP050", "groupId": "ADG03-03", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-03"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The athletes' conduct might disgrace themselves.", "ans": false, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✗ 비문. [the athletes']는 NP [the athletes' conduct] 내부에 포함되어 있어 themselves를 c-command하지 못한다. C-command 조건 위반.", "whyHighlights": [{"start": 74, "end": 83, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP051", "groupId": "ADG03-04", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-04"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The archers will shoot the arrows at each other.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다. 원책의 평평한 VP 구조에서 each other의 선행사를 archers 또는 arrows로 잡는 두 해석을 비교합니다.", "why": "✓ 정문 (antecedent 해석의 중의성). each other는 [the archers] 또는 [the arrows]를 antecedent로 삼을 수 있습니다. 두 NP 모두 같은 phrase-marker에서 each other를 c-command합니다. 서로 다른 두 tree가 필요한 Structural Ambiguity와 구별합니다.", "whyHighlights": [{"start": 132, "end": 141, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP052", "groupId": "ADG03-05", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-05"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo will buy himself another bicycle.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✓ 정문. Leo는 himself의 적절한 c-commanding antecedent입니다. 원책의 반사대명사 선행사 진단을 적용한 변형예문입니다.", "whyHighlights": [{"start": 24, "end": 33, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP053", "groupId": "ADG03-06", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-06"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Hecklers would put completely off the guests.", "ans": false, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다. put off는 사람에게 불쾌감이나 거부감을 준다는 뜻입니다.", "why": "✗ 비문. completely를 VP의 immediate constituent로 붙이면서 [put off]를 하나의 V constituent로 유지하면, 그 V의 일부인 off가 ADVP 뒤에 남아 No Crossing Branches Constraint를 위반합니다. ADVP를 V 내부에 붙이는 분석도 VP-adverb의 부착 조건에 어긋납니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP054", "groupId": "ADG03-07", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-07"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Hecklers would put the guests off.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다. put off는 사람에게 불쾌감이나 거부감을 준다는 뜻입니다.", "why": "✓ 정문. 원책의 해당 구조 분석에서 VP의 즉각성분은 V put, NP the guests, PP off입니다. 목적어 뒤에 분리된 off는 이 분석에서 PP를 이루며, [put off]를 하나의 불연속 V로 유지하는 구조가 아닙니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP055", "groupId": "ADG03-08", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-08"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I will ever praise you for this.", "ans": false, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✗ 비문. 이 문장의 NPI ever를 허용할 환경이 없습니다. 여기서 다루는 negative declarative의 분석에서는 negative constituent가 ever를 precede하고 c-command해야 합니다. 이 조건을 의문문 등 모든 ever 용법에 일반화하지 않습니다.", "whyHighlights": [{"start": 110, "end": 119, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP056", "groupId": "ADG03-09", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-09"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Nobody will ever praise you for this.", "ans": true, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✓ 정문. 부정 NP Nobody가 ever를 선행하고 c-command한다. NPI 조건 충족.", "whyHighlights": [{"start": 31, "end": 40, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP057", "groupId": "ADG03-10", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-10a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I won't ever praise you for this.", "ans": true, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✓ 정문. 부정 Modal won't이 ever를 선행하고 c-command한다. NPI 조건 충족.", "whyHighlights": [{"start": 33, "end": 42, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP058", "groupId": "ADG03-10", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-10b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I will ever praise nobody for this.", "ans": false, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✗ 비문. nobody가 ever 뒤에 있어 precede 조건을 충족하지 못합니다. 또한 이 분석에서 object NP는 VP 안에 있고 ever는 S의 immediate constituent이므로, object NP가 ever를 c-command하지도 못합니다.", "whyHighlights": [{"start": 130, "end": 139, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP059", "groupId": "ADG03-11", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-11a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Someone who didn't like you would ever praise you for this.", "ans": false, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✗ 비문. 부정어 didn't은 관계절 내부에 있어 주절의 ever를 c-command하지 못한다(precede ✓, c-command ✗).", "whyHighlights": [{"start": 39, "end": 48, "text": "c-command", "style": ["bold", "underline"]}, {"start": 66, "end": 75, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP060", "groupId": "ADG03-11", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-11b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "No supervisor ever would help an intern.", "ans": true, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✓ 정문. 부정 Det No를 포함한 NP [No supervisor]이 ever를 선행하고 c-command한다.", "whyHighlights": [{"start": 52, "end": 61, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP061", "groupId": "ADG03-12", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-12a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "No supervisor would ever help an intern.", "ans": true, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✓ 정문. NP [No supervisor]이 ever를 precede하고 c-command합니다. 이 exercise에서 ever는 Modal 뒤에 있어도 VP 내부가 아니라 S의 immediate constituent로 분석합니다.", "whyHighlights": [{"start": 42, "end": 51, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP062", "groupId": "ADG03-12", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-12b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "No supervisor would help an intern ever.", "ans": true, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✓ 정문. ever가 문장 끝에 위치해도 NP [No supervisor]이 선행 + c-command 조건을 충족한다.", "whyHighlights": [{"start": 48, "end": 57, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP063", "groupId": "ADG03-12", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-12c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Some supervisors ever wouldn't help an intern.", "ans": false, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✗ 비문. ever가 부정어 wouldn't보다 앞에 위치. 부정 표현이 NPI를 선행해야 하므로 precede 조건 위반.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP064", "groupId": "ADG03-13", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-13a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Some supervisors wouldn't ever help an intern.", "ans": true, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✓ 정문. 부정 Modal wouldn't가 ever를 선행하고 c-command. 두 조건 모두 충족.", "whyHighlights": [{"start": 36, "end": 45, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP065", "groupId": "ADG03-13", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-13b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Some supervisors ever would help no intern.", "ans": false, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✗ 비문. no intern은 ever를 선행하지 않는다(precede ✗). NPI 조건 위반.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP066", "groupId": "ADG03-14", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-14a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Some supervisors would ever help no intern.", "ans": false, "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.", "why": "✗ 비문. no intern은 ever 뒤에 있어 precede 조건을 충족하지 못합니다. 또한 object NP는 VP 안에 있고 ever는 S의 immediate constituent이므로, c-command 조건도 충족하지 못합니다.", "whyHighlights": [{"start": 109, "end": 118, "text": "c-command", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP067", "groupId": "ADG03-14", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-14b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo rang up his uncle.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✓ 정문. 이 문장은 원책의 particle 범주 논의를 적용한 변형예문입니다. up은 rang과 phrasal verb를 이루는 particle이며, 원책의 범주 통합 분석에서는 particle을 별도 품사가 아니라 보충어 없이 사용된 P(전치사)로 다룹니다.", "whyHighlights": [{"start": 122, "end": 125, "text": "보충어", "style": ["bold", "underline"]}, {"start": 135, "end": 137, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP068", "groupId": "ADG02-29", "bookChapter": 2, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "2-29"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "It was a bicycle that she bought.", "ans": true, "condition": "Radford 원책의 it-cleft 해당 예문군과 분석을 기준으로 판단합니다. 모든 분열문 용법으로 일반화하지 않습니다.", "why": "✓ 정문. Radford가 비교하는 이 it-cleft의 focus 위치에 NP [a bicycle]가 올 수 있습니다. 이 예문군에서는 NP·PP와 AP·ADVP·VP의 분포를 대조합니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP069", "groupId": "ADG03-15", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-15a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "It is quite cheerful that she is.", "ans": false, "condition": "Radford 원책의 it-cleft 해당 예문군과 분석을 기준으로 판단합니다. 모든 분열문 용법으로 일반화하지 않습니다.", "why": "✗ 비문. Radford가 제시하는 이 it-cleft의 focus 위치에는 AP [quite cheerful]를 넣을 수 없습니다. NP·PP가 허용되는 예문과 대조합니다.", "whyHighlights": [], "subLabel": "c", "variantLabel": "", "id": "ADP070", "groupId": "ADG03-15", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-15c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "It is leave early that I will.", "ans": false, "condition": "Radford 원책의 it-cleft 해당 예문군과 분석을 기준으로 판단합니다. 모든 분열문 용법으로 일반화하지 않습니다.", "why": "✗ 비문. 이 it-cleft의 focus 위치에는 VP [leave early]을 넣을 수 없습니다. 반면 pseudo-cleft인 What I will do is leave early에서는 이 VP가 가능합니다.", "whyHighlights": [], "subLabel": "e", "variantLabel": "", "id": "ADP071", "groupId": "ADG03-15", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-15e"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Leo is a surgeon and very patient.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✓ 정문. be 동사의 보어 위치에서 NP [a surgeon]와 AP [very patient]가 등위 접속 가능.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP072", "groupId": "ADG03-16", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-16a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She might really hesitate.", "ans": true, "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.", "why": "✓ 정문. really는 V hesitate을 수식하는 Adverb입니다. 원책의 ADV-modifying-V 분석을 적용한 변형예문이며, 원책에서는 Adjective와 Adverb를 범주 A의 positional variants로 통합하는 분석을 제안합니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP073", "groupId": "ADG03-17", "bookChapter": 3, "ask": "이 문장은 문법적이다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "3-17"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The present king of Norway is more popular than the last one", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. one의 대용 범위를 N′ 분석으로 판정합니다. 현대 모든 one 용법에 일반화하지 않습니다.", "why": "king of Norway 전체가 N′입니다. one이 그 단위를 받으므로 해당 분석에서는 정문으로 제시합니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP074", "groupId": "ADG04-01", "bookChapter": 4, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The king of Norway defeated the one of Sweden", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. one의 대용 범위를 N′ 분석으로 판정합니다. 현대 모든 one 용법에 일반화하지 않습니다.", "why": "이 분석에서 of Norway를 보충어로 두면 king 단독은 N입니다. one으로 N만 대체한 표현은 비문으로 판단합니다.", "whyHighlights": [{"start": 18, "end": 21, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP075", "groupId": "ADG04-01", "bookChapter": 4, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "the student of Linguistics with red hair", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. of Linguistics는 전공을 나타내는 보충어, with red hair는 외형 부가어로 읽습니다.", "why": "of Linguistics는 보충어, with red hair는 부가어입니다. 보충어가 head에 더 가깝게 배치됩니다.", "whyHighlights": [{"start": 16, "end": 19, "text": "보충어", "style": ["bold", "underline"]}, {"start": 36, "end": 39, "text": "부가어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP076", "groupId": "ADG04-02", "bookChapter": 4, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "the student with red hair of Linguistics", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. of Linguistics는 전공을 나타내는 보충어, with red hair는 외형 부가어로 읽습니다.", "why": "같은 보충어·부가어 분석에서 순서를 바꾸어 해당 분석의 구조 조건에 어긋납니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 7, "end": 10, "text": "부가어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP077", "groupId": "ADG04-02", "bookChapter": 4, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "the student with red hair with long legs", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 with-PP가 각각 student를 수식하며, 두 번째 PP가 hair 내부에 붙는 해석은 제외합니다.", "why": "두 with-PP는 부가어입니다. 해당 분석의 재귀적인 N′ 부가어 규칙으로 결합됩니다.", "whyHighlights": [{"start": 11, "end": 14, "text": "부가어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP078", "groupId": "ADG04-03", "bookChapter": 4, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "the student of Linguistics of History", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 학과를 and로 등위접속한 표현이 아니라 각각 보충어로 겹친 구조를 비교합니다.", "why": "두 of-PP를 하나의 student에 독립 보충어로 겹친 구조입니다. 이 분석의 비재귀 보충어 규칙이 허용하지 않습니다.", "whyHighlights": [{"start": 25, "end": 28, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP079", "groupId": "ADG04-03", "bookChapter": 4, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-03b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "a student of Linguistics and of History", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 같은 PP라는 표면 범주만 아니라 해당 분석의 부착 수준을 비교합니다.", "why": "같은 수준에 결합하는 두 보충어 PP를 등위접속한 해당 분석의 정문 예입니다.", "whyHighlights": [{"start": 14, "end": 17, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP080", "groupId": "ADG04-04", "bookChapter": 4, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-04"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "a student of Linguistics and with red hair", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 같은 PP라는 표면 범주만 아니라 해당 분석의 부착 수준을 비교합니다.", "why": "보충어 PP와 부가어 PP는 이 분석에서 부착 수준이 다릅니다. 둘을 직접 접속한 표현은 비문으로 판단합니다.", "whyHighlights": [{"start": 0, "end": 3, "text": "보충어", "style": ["bold", "underline"]}, {"start": 8, "end": 11, "text": "부가어", "style": ["bold", "underline"]}, {"start": 23, "end": 28, "text": "부착 수준", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP081", "groupId": "ADG04-05", "bookChapter": 4, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-05a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "a student with red hair and of Linguistics", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 PP 모두 student에 직접 붙는 분석이며 with red hair는 외형, of Linguistics는 전공입니다.", "why": "부가어 with red hair와 보충어 of Linguistics의 부착 수준이 달라 해당 분석에서는 직접 접속을 허용하지 않습니다.", "whyHighlights": [{"start": 0, "end": 3, "text": "부가어", "style": ["bold", "underline"]}, {"start": 19, "end": 22, "text": "보충어", "style": ["bold", "underline"]}, {"start": 39, "end": 44, "text": "부착 수준", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP082", "groupId": "ADG04-05", "bookChapter": 4, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-05b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "a student came to see me last Friday with red hair", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 뒤 PP는 student를 수식하며 last Friday나 화자 me를 수식하는 별도 해석은 제외합니다.", "why": "with red hair를 student의 외형 부가어로 읽으면 해당 분석에서는 후치를 허용합니다.", "whyHighlights": [{"start": 27, "end": 30, "text": "부가어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP083", "groupId": "ADG04-06", "bookChapter": 4, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-06a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "a student came to see me last Friday of Linguistics", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 뒤 PP는 student를 수식하며 last Friday나 화자 me를 수식하는 별도 해석은 제외합니다.", "why": "student의 보충어 of Linguistics를 head와 분리하여 뒤로 보냈으므로 비문으로 판단합니다.", "whyHighlights": [{"start": 9, "end": 12, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP084", "groupId": "ADG04-06", "bookChapter": 4, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-06b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "What branch of Linguistics is Daniel a student of?", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. of는 전공, with는 학생의 머리 모양이라는 원책 해석을 유지합니다.", "why": "of는 student의 보충어 PP를 이끕니다. 그 목적어를 전치한 해당 분석의 정문입니다.", "whyHighlights": [{"start": 13, "end": 16, "text": "보충어", "style": ["bold", "underline"]}, {"start": 34, "end": 36, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP085", "groupId": "ADG04-07", "bookChapter": 4, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-07a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "What kind of hair is Daniel a student with?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. of는 전공, with는 학생의 머리 모양이라는 원책 해석을 유지합니다.", "why": "with는 student의 부가어 PP를 이끕니다. 그 내부 NP를 전치한 대비를 해당 분석에서는 비문으로 제시합니다.", "whyHighlights": [{"start": 15, "end": 18, "text": "부가어", "style": ["bold", "underline"]}, {"start": 38, "end": 40, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP086", "groupId": "ADG04-07", "bookChapter": 4, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "4-07b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel will buy the dictionary on Monday, and Leo will do so as well", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. do so의 선행사는 buy the dictionary on Monday 전체입니다.", "why": "do so가 시간 부가어까지 포함한 buy the dictionary on Monday 전체를 받을 수 있습니다.", "whyHighlights": [{"start": 7, "end": 13, "text": "시간 부가어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP087", "groupId": "ADG05-01", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel will buy the dictionary on Monday, and Leo will do so on Friday", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. do so가 각 문장의 buy the dictionary / put the dictionary만을 받는 해당 분석의 제시 분석으로 판단합니다.", "why": "buy the dictionary은 이 분석의 V′입니다. do so가 이 단위를 받고 시간 부가어를 달리 붙일 수 있습니다.", "whyHighlights": [{"start": 49, "end": 55, "text": "시간 부가어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP088", "groupId": "ADG05-01", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel will put the dictionary on the desk, and Leo will do so as well", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. do so는 put the dictionary on the desk 전체를 받습니다.", "why": "put the dictionary on the desk 전체를 대용하면 필수 위치 보충어까지 포함됩니다.", "whyHighlights": [{"start": 46, "end": 49, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP089", "groupId": "ADG05-02", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel will put the dictionary on the desk, and Leo will do so on the shelf", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. do so가 각 문장의 buy the dictionary / put the dictionary만을 받는 해당 분석의 제시 분석으로 판단합니다.", "why": "put의 위치 PP는 보충어입니다. 해당 분석에서는 put the dictionary만을 V′로 대용하고 위치를 따로 바꾼 예를 허용하지 않습니다.", "whyHighlights": [{"start": 12, "end": 15, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP090", "groupId": "ADG05-02", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She worked at the task at the laboratory", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. at the task은 일의 대상, at the laboratory는 일하는 장소로 읽습니다.", "why": "at the task을 보충어, at the laboratory를 장소 부가어로 분석합니다. 보충어가 먼저 옵니다.", "whyHighlights": [{"start": 13, "end": 16, "text": "보충어", "style": ["bold", "underline"]}, {"start": 40, "end": 43, "text": "부가어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP091", "groupId": "ADG05-03", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She worked at the laboratory at the task", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. at the task은 일의 대상, at the laboratory는 일하는 장소로 읽습니다.", "why": "같은 분석에서 장소 부가어가 보충어 앞에 오므로 비문으로 판단합니다.", "whyHighlights": [{"start": 11, "end": 14, "text": "부가어", "style": ["bold", "underline"]}, {"start": 16, "end": 19, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP092", "groupId": "ADG05-03", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-03b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel asked the visitor at reception", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 상대방에게 정보를 묻는 의미입니다.", "why": "ask는 정보를 묻는 상대 NP를 직접 보충어로 받을 수 있습니다.", "whyHighlights": [{"start": 22, "end": 25, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP093", "groupId": "ADG05-04", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-04a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel inquired the visitor at reception", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 상대방에게 정보를 묻는 의미입니다.", "why": "해당 분석의 해당 의미에서 inquire는 상대 NP를 ask처럼 바로 받을 수 없습니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP094", "groupId": "ADG05-04", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-04b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel treated Irene badly LAST WEEK", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다) 의미이며 의료 처치나 대접의 의미는 제외합니다.", "why": "대상 Irene와 방식 badly가 모두 있고 선택적인 시간 부가어 LAST WEEK가 더해졌습니다.", "whyHighlights": [{"start": 31, "end": 37, "text": "시간 부가어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP095", "groupId": "ADG05-05", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-05a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel treated Irene badly", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다)이며 의료 처치하거나 대접한다는 뜻은 제외합니다.", "why": "사람을 대하는 의미의 treat에서 대상 Irene와 방식 badly가 갖춰진 해당 분석의 정문입니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP096", "groupId": "ADG05-05", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-05b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel treated badly LAST WEEK", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다) 의미이며 의료 처치나 대접의 의미는 제외합니다.", "why": "대하는 대상에 해당하는 NP 보충어가 빠져 있습니다.", "whyHighlights": [{"start": 13, "end": 19, "text": "NP 보충어", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP097", "groupId": "ADG05-05", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-05c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel treated Irene LAST WEEK", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다)이며 의료 처치하거나 대접한다는 뜻은 제외합니다.", "why": "LAST WEEK는 시간 부가어입니다. 이 의미의 treat가 요구하는 방식 보충어를 대신하지 못합니다.", "whyHighlights": [{"start": 11, "end": 17, "text": "시간 부가어", "style": ["bold", "underline"]}, {"start": 40, "end": 46, "text": "방식 보충어", "style": ["bold", "underline"]}], "subLabel": "d", "variantLabel": "", "id": "ADP098", "groupId": "ADG05-05", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-05d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel treated LAST WEEK", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다) 의미이며 의료 처치나 대접의 의미는 제외합니다.", "why": "시간 부가어만으로는 대상과 방식 보충어를 대신할 수 없습니다.", "whyHighlights": [{"start": 0, "end": 6, "text": "시간 부가어", "style": ["bold", "underline"]}, {"start": 15, "end": 21, "text": "방식 보충어", "style": ["bold", "underline"]}], "subLabel": "e", "variantLabel": "", "id": "ADP099", "groupId": "ADG05-05", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-05e"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "fond in several respects", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 원책이 명시적 of-보충어를 요구하는 해당 분석입니다. 앞 담화로 보충어를 복원하는 별도 맥락은 가정하지 않습니다.", "why": "in several respects는 부가어로 제시됩니다. 해당 분석의 fond 보충어를 대신할 수 없습니다.", "whyHighlights": [{"start": 21, "end": 24, "text": "부가어", "style": ["bold", "underline"]}, {"start": 45, "end": 48, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP100", "groupId": "ADG05-06", "bookChapter": 5, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-06a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "fond of Irene", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 원책이 명시적 of-보충어를 요구하는 해당 분석입니다. 앞 담화로 보충어를 복원하는 별도 맥락은 가정하지 않습니다.", "why": "of Irene는 fond의 보충어입니다. in several respects라는 부가어가 없어도 허용됩니다.", "whyHighlights": [{"start": 16, "end": 19, "text": "보충어", "style": ["bold", "underline"]}, {"start": 46, "end": 49, "text": "부가어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP101", "groupId": "ADG05-06", "bookChapter": 5, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-06b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "so utterly careless", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. so는 이 AP의 정도 specifier로 읽으며 앞 담화에 대한 독립 대용표현으로 읽지 않습니다.", "why": "so는 specifier, utterly는 attribute입니다. 해당 분석의 구조에서는 attribute가 head에 더 가깝습니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP102", "groupId": "ADG05-07", "bookChapter": 5, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-07a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "utterly so careless", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. so는 이 AP의 정도 specifier로 읽으며 앞 담화에 대한 독립 대용표현으로 읽지 않습니다.", "why": "specifier와 attribute의 순서를 뒤집었으므로 비문으로 판단합니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP103", "groupId": "ADG05-07", "bookChapter": 5, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-07b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She is so out of touch IN CERTAIN RESPECTS", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. out of touch의 원책 PP 분석과 표시된 부가어를 기준으로 합니다.", "why": "of touch는 out의 보충어, IN CERTAIN RESPECTS는 부가어입니다. 이 순서는 해당 분석의 구조에 맞습니다.", "whyHighlights": [{"start": 15, "end": 18, "text": "보충어", "style": ["bold", "underline"]}, {"start": 41, "end": 44, "text": "부가어", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP104", "groupId": "ADG05-08", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-08"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She is so out IN CERTAIN RESPECTS of touch", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. out of touch의 원책 PP 분석과 표시된 부가어를 기준으로 합니다.", "why": "부가어를 out과 보충어 of touch 사이에 끼운 해당 분석의 비문 예입니다.", "whyHighlights": [{"start": 0, "end": 3, "text": "부가어", "style": ["bold", "underline"]}, {"start": 10, "end": 13, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "", "id": "ADP105", "groupId": "ADG05-09", "bookChapter": 5, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "5-09"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I know that Daniel hates Phonology", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. know의 보충절을 현재 직설법으로 읽습니다. 기반 자료 슬래시 선택지를 각각 분리했습니다.", "why": "정형 직설법절에서 단수 주어 Daniel에 hates가 일치합니다.", "whyHighlights": [{"start": 0, "end": 2, "text": "정형", "style": ["bold", "underline"]}, {"start": 31, "end": 33, "text": "일치", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "hates", "id": "ADP106", "groupId": "ADG06-01", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I know that Daniel hate Phonology", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. know의 보충절을 현재 직설법으로 읽습니다. 기반 자료 슬래시 선택지를 각각 분리했습니다.", "why": "같은 직설법 정형절에서 단수 주어에 hate를 썼으므로 비문으로 판단합니다.", "whyHighlights": [{"start": 7, "end": 9, "text": "정형", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "hate", "id": "ADP107", "groupId": "ADG06-01", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I've never known him hate anything as much as Phonology", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. known 뒤에 목적어처럼 보이는 him이 있는 비정형절입니다. 기반 자료의 슬래시 대안을 분리했습니다.", "why": "known 뒤 내포절의 동사는 비정형 기본형 hate입니다.", "whyHighlights": [{"start": 17, "end": 20, "text": "비정형", "style": ["bold", "underline"]}, {"start": 21, "end": 24, "text": "기본형", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "hate", "id": "ADP108", "groupId": "ADG06-01", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I've never known him hates anything as much as Phonology", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. known 뒤에 목적어처럼 보이는 him이 있는 비정형절입니다. 기반 자료의 슬래시 대안을 분리했습니다.", "why": "비정형 내포절에 정형 3인칭 단수형 hates를 쓴 해당 분석의 비문입니다.", "whyHighlights": [{"start": 0, "end": 3, "text": "비정형", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "hates", "id": "ADP109", "groupId": "ADG06-01", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I demand that Daniel leave for Oslo tomorrow", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 해당 분석의 mandative subjunctive 분석으로 한정합니다. 방언별 직설법 mandative의 허용 여부 일반화가 아닙니다. 기반 자료 슬래시 선택지를 분리했습니다.", "why": "해당 분석의 요구적 가정법절에서는 Daniel 뒤에도 기본형 leave를 씁니다.", "whyHighlights": [{"start": 7, "end": 14, "text": "요구적 가정법", "style": ["bold", "underline"]}, {"start": 30, "end": 33, "text": "기본형", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "leave", "id": "ADP110", "groupId": "ADG06-02", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I demand that Daniel leaves for Oslo tomorrow", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 해당 분석의 mandative subjunctive 분석으로 한정합니다. 방언별 직설법 mandative의 허용 여부 일반화가 아닙니다. 기반 자료 슬래시 선택지를 분리했습니다.", "why": "해당 분석이 제시하는 요구적 가정법 분석에서 leaves를 고른 선택지는 비문입니다.", "whyHighlights": [{"start": 12, "end": 19, "text": "요구적 가정법", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "leaves", "id": "ADP111", "groupId": "ADG06-02", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I demanded that Daniel leave for Oslo the following day", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. mandative subjunctive 분석으로 한정하며 방언의 직설법 mandative까지 부정하지 않습니다. 기반 자료 선택지 분리입니다.", "why": "주절이 과거여도 요구적 가정법절의 동사는 기본형 leave입니다.", "whyHighlights": [{"start": 9, "end": 16, "text": "요구적 가정법", "style": ["bold", "underline"]}, {"start": 23, "end": 26, "text": "기본형", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "leave", "id": "ADP112", "groupId": "ADG06-02", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I demanded that Daniel left for Oslo the following day", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. mandative subjunctive 분석으로 한정하며 방언의 직설법 mandative까지 부정하지 않습니다. 기반 자료 선택지 분리입니다.", "why": "해당 분석의 요구적 가정법 분석에서 과거형 left를 쓰는 선택지는 허용되지 않습니다.", "whyHighlights": [{"start": 7, "end": 14, "text": "요구적 가정법", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "left", "id": "ADP113", "groupId": "ADG06-02", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The Director is not sure whether to be a candidate", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. whether절의 묵시적 주어는 The Director입니다. 다른 복수 집단 주어는 상정하지 않습니다. 기반 자료 선택지를 분리했습니다.", "why": "내포절의 묵시적 주어 PRO는 단수 The Director와 연결되므로 단수 술어 a candidate와 맞습니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "a candidate", "id": "ADP114", "groupId": "ADG06-03", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-03"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The Director is not sure whether to be candidates", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. whether절의 묵시적 주어는 The Director입니다. 다른 복수 집단 주어는 상정하지 않습니다. 기반 자료 선택지를 분리했습니다.", "why": "해당 분석의 단수 PRO 해석에서 복수 술어 candidates가 일치하지 않습니다.", "whyHighlights": [{"start": 37, "end": 39, "text": "일치", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "candidates", "id": "ADP115", "groupId": "ADG06-03", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-03"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I believe the Director to be right", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. believe의 명제 보충어 구조입니다. for the Director를 별도 수혜 부가어로 해석하지 않습니다.", "why": "해당 분석에서는 believe의 이 보충어를 exceptional S로 분석하며 해당 to-절을 허용합니다.", "whyHighlights": [{"start": 20, "end": 23, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP116", "groupId": "ADG06-04", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-04a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I've never known the Treasurer to lie", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.", "why": "해당 분석에서는 해당 인지동사의 NP+to절 보충어를 exceptional S로 허용합니다.", "whyHighlights": [{"start": 23, "end": 28, "text": "절 보충어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP117", "groupId": "ADG06-04", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-04b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "They reported the injured climber to be in great pain", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.", "why": "해당 분석에서는 해당 인지동사의 NP+to절 보충어를 exceptional S로 허용합니다.", "whyHighlights": [{"start": 23, "end": 28, "text": "절 보충어", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP118", "groupId": "ADG06-04", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-04c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I consider our trainees to be conscientious", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.", "why": "해당 분석에서는 해당 인지동사의 NP+to절 보충어를 exceptional S로 허용합니다.", "whyHighlights": [{"start": 23, "end": 28, "text": "절 보충어", "style": ["bold", "underline"]}], "subLabel": "d", "variantLabel": "", "id": "ADP119", "groupId": "ADG06-04", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-04d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I believe for the Director to be right", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. believe의 명제 보충어 구조입니다. for the Director를 별도 수혜 부가어로 해석하지 않습니다.", "why": "이 believe 보충구조에 for를 넣었으므로 비문으로 판단합니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP120", "groupId": "ADG06-05", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-05a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I've never known for the Treasurer to lie", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.", "why": "해당 분석의 같은 exceptional 보충절에는 overt complementizer for를 넣지 못합니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP121", "groupId": "ADG06-05", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-05b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "They reported for the injured climber to be in great pain", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.", "why": "해당 분석의 같은 exceptional 보충절에는 overt complementizer for를 넣지 못합니다.", "whyHighlights": [], "subLabel": "c", "variantLabel": "", "id": "ADP122", "groupId": "ADG06-05", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-05c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I consider for our trainees to be conscientious", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.", "why": "해당 분석의 같은 exceptional 보충절에는 overt complementizer for를 넣지 못합니다.", "whyHighlights": [], "subLabel": "d", "variantLabel": "", "id": "ADP123", "groupId": "ADG06-05", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-05d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I believe it to be unlikely that she'll return", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 비지시적 형식 주어이며 주절의 지시적 목적어가 아니라 내포절 주어로 분석합니다.", "why": "해당 분석에서는 비지시적 it을 해당 exceptional절의 주어로 허용합니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP124", "groupId": "ADG06-06", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-06a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I've never known it to snow in August", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 날씨의 허사이며 의인화한 신이나 기계를 가리키는 지시 대명사가 아닙니다.", "why": "날씨의 비지시적 it이 내포절 주어로 쓰입니다. 해당 분석에서는 known의 exceptional절에서 이를 허용합니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP125", "groupId": "ADG06-06", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-06b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "They reported it to be likely that she'd retire", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 비지시적 형식 주어이며 주절의 지시적 목적어가 아니라 내포절 주어로 분석합니다.", "why": "해당 분석에서는 비지시적 it을 해당 exceptional절의 주어로 허용합니다.", "whyHighlights": [], "subLabel": "c", "variantLabel": "", "id": "ADP126", "groupId": "ADG06-06", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-06c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I consider it to be time to depart", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 비지시적 형식 주어이며 주절의 지시적 목적어가 아니라 내포절 주어로 분석합니다.", "why": "해당 분석에서는 비지시적 it을 해당 exceptional절의 주어로 허용합니다.", "whyHighlights": [], "subLabel": "d", "variantLabel": "", "id": "ADP127", "groupId": "ADG06-06", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-06d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The supervisors persuaded the shit to hit the fan", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. the shit hit the fan은 일이 터지거나 문제가 발생한다는 관용구 읽기입니다. 문자적 의인화는 제외합니다.", "why": "관용구의 주어 부분은 설득 가능한 목적어로 해석되지 않아 관용적 읽기가 성립하지 않습니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP128", "groupId": "ADG06-07", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-07a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The supervisors persuaded the fur to fly", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. the fur fly는 다툼이 일어나는 관용적 읽기이며 털을 의인화한 문자적 읽기는 제외합니다.", "why": "관용구 the fur fly의 주어 부분을 설득 대상으로 썼으므로 관용적 해석에서는 비문으로 판단합니다.", "whyHighlights": [{"start": 24, "end": 29, "text": "설득 대상", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP129", "groupId": "ADG06-07", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-07b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The supervisors persuaded there to be a strike", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. there는 존재문의 허사이며 장소나 이름을 가리키지 않습니다.", "why": "허사 there는 설득 대상인 목적어가 될 수 없습니다.", "whyHighlights": [{"start": 0, "end": 2, "text": "허사", "style": ["bold", "underline"]}, {"start": 10, "end": 15, "text": "설득 대상", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP130", "groupId": "ADG06-07", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-07c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The supervisors persuaded it to rain", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 날씨의 허사이며 의인화한 신이나 기계를 가리키는 지시 대명사가 아닙니다.", "why": "persuade의 목적어는 설득 대상이어야 합니다. 날씨의 비지시적 it을 목적어로 쓴 해당 분석의 비문입니다.", "whyHighlights": [{"start": 15, "end": 20, "text": "설득 대상", "style": ["bold", "underline"]}], "subLabel": "d", "variantLabel": "", "id": "ADP131", "groupId": "ADG06-07", "bookChapter": 6, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "6-07d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I shall await the final decision", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 최종 결정을 기다린다는 뜻으로 읽으며 wait가 시간을 기다려 준다는 별도 타동적 의미는 제외합니다.", "why": "await는 뒤에 NP 목적어를 직접 받을 수 있습니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP132", "groupId": "ADG07-01", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "I shall wait the final decision", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 최종 결정을 기다린다는 뜻으로 읽으며 wait가 시간을 기다려 준다는 별도 타동적 의미는 제외합니다.", "why": "해당 분석의 wait는 같은 의미라도 이 NP를 직접 목적어로 받지 못합니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP133", "groupId": "ADG07-01", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel gave the parcel to the manager", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. the manager는 소포를 받는 수령인입니다. by를 장소·근접 부가어로 읽지 않습니다. 기반 자료 슬래시 선택지를 분리했습니다.", "why": "소포를 받는 대상은 give가 선택하는 to-PP로 나타냅니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "to", "id": "ADP134", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel gave the parcel by the manager", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. the manager는 소포를 받는 수령인입니다. by를 장소·근접 부가어로 읽지 않습니다. 기반 자료 슬래시 선택지를 분리했습니다.", "why": "수령인을 나타내는 같은 보충어에서 by는 to를 대신하지 못합니다.", "whyHighlights": [{"start": 0, "end": 3, "text": "수령인", "style": ["bold", "underline"]}, {"start": 13, "end": 16, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "by", "id": "ADP135", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel gave the parcel with the manager", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. the manager는 소포의 수령인입니다. with는 동반 부가어가 아니라 수령인 보충어 자리에 놓인 대안입니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 27, "end": 29, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "with", "id": "ADP136", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel blamed the delay on Irene", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene에게 사건의 책임을 돌리는 의미에서 동사가 선택하는 전치사를 판단합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "해당 분석에서 해당 동사가 선택하는 PP 보충어의 전치사입니다.", "whyHighlights": [{"start": 23, "end": 26, "text": "보충어", "style": ["bold", "underline"]}, {"start": 28, "end": 30, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "on", "id": "ADP137", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel blamed the delay at Irene", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene에게 사건의 책임을 돌리는 의미에서 동사가 선택하는 전치사를 판단합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 27, "end": 29, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "at", "id": "ADP138", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel blamed the delay to Irene", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene에게 사건의 책임을 돌리는 의미에서 동사가 선택하는 전치사를 판단합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 27, "end": 29, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "to", "id": "ADP139", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Online advertising can distract you from your studies", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. your studies는 주의가 이탈하는 대상이며 수단·행위자 같은 별도 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "해당 분석에서 해당 동사가 선택하는 PP 보충어의 전치사입니다.", "whyHighlights": [{"start": 23, "end": 26, "text": "보충어", "style": ["bold", "underline"]}, {"start": 28, "end": 30, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "from", "id": "ADP140", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Online advertising can distract you by your studies", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. your studies는 주의가 이탈하는 대상이며 수단·행위자 같은 별도 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 27, "end": 29, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "by", "id": "ADP141", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Online advertising can distract you out of your studies", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. your studies는 주의가 이탈하는 대상이며 수단·행위자 같은 별도 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 27, "end": 29, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "out of", "id": "ADP142", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel's colleagues dissuaded him from further protests", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 추가 항의나 시위를 하지 않도록 말리는 의미입니다. 행동을 수단으로 삼는 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "해당 분석에서 해당 동사가 선택하는 PP 보충어의 전치사입니다.", "whyHighlights": [{"start": 23, "end": 26, "text": "보충어", "style": ["bold", "underline"]}, {"start": 28, "end": 30, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "d", "variantLabel": "from", "id": "ADP143", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel's colleagues dissuaded him at further protests", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 추가 항의나 시위를 하지 않도록 말리는 의미입니다. 행동을 수단으로 삼는 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 27, "end": 29, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "d", "variantLabel": "at", "id": "ADP144", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel's colleagues dissuaded him by further protests", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 추가 항의나 시위를 하지 않도록 말리는 의미입니다. 행동을 수단으로 삼는 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 27, "end": 29, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "d", "variantLabel": "by", "id": "ADP145", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel's colleagues dissuaded him into further protests", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 추가 항의나 시위를 하지 않도록 말리는 의미입니다. 행동을 수단으로 삼는 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.", "whyHighlights": [{"start": 3, "end": 6, "text": "보충어", "style": ["bold", "underline"]}, {"start": 27, "end": 29, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "d", "variantLabel": "into", "id": "ADP146", "groupId": "ADG07-02", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-02d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel persuaded Irene that he was right", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene는 persuaded의 목적어이며 뒤늦게 덧붙인 호격이나 수정 발화가 아닙니다.", "why": "해당 분석의 NP 보충어 Irene는 동사 직후에 오고 절 보충어가 뒤에 옵니다.", "whyHighlights": [{"start": 7, "end": 13, "text": "NP 보충어", "style": ["bold", "underline"]}, {"start": 31, "end": 36, "text": "절 보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP147", "groupId": "ADG07-03", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel persuaded that he was right Irene", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene는 persuaded의 목적어이며 뒤늦게 덧붙인 호격이나 수정 발화가 아닙니다.", "why": "NP 보충어 Irene를 절 뒤로 보냈으므로 비문으로 판단합니다.", "whyHighlights": [{"start": 0, "end": 6, "text": "NP 보충어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP148", "groupId": "ADG07-03", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-03b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The witness admitted to me that you are right", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. to me는 admitted에 딸린 전달 대상 보충어입니다. right to me에 붙어 내 판단에 옳다는 뜻이 되는 다른 구조는 제외합니다.", "why": "해당 분석에서 admitted의 PP 보충어가 절 보충어에 앞서는 정문입니다.", "whyHighlights": [{"start": 21, "end": 24, "text": "보충어", "style": ["bold", "underline"]}, {"start": 26, "end": 31, "text": "절 보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP149", "groupId": "ADG07-04", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-04a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The witness admitted that you are right to me", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. to me는 admitted에 딸린 전달 대상 보충어입니다. right to me에 붙어 내 판단에 옳다는 뜻이 되는 다른 구조는 제외합니다.", "why": "admitted의 PP 보충어를 절 뒤에 배치했으므로 비문으로 판단합니다.", "whyHighlights": [{"start": 13, "end": 16, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP150", "groupId": "ADG07-04", "bookChapter": 7, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "7-04b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Adrian has probably been studying", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. probably는 문장 전체에 대한 화자의 확률 판단 부사입니다. 다른 운율·삽입구 읽기는 제외합니다.", "why": "해당 분석에서는 정형 has가 I로 이동하여 그 뒤 I–VP 경계에 문장부사가 올 수 있다고 분석합니다.", "whyHighlights": [{"start": 9, "end": 11, "text": "정형", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP151", "groupId": "ADG08-01", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Adrian has been probably studying", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. probably는 문장 전체에 대한 화자의 확률 판단 부사입니다. 다른 운율·삽입구 읽기는 제외합니다.", "why": "해당 분석에서 문장부사 probably를 VP 내부의 been 뒤에 둔 대비는 허용하지 않습니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP152", "groupId": "ADG08-01", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel does have several unusual habits", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. does를 강조 조동사로 읽습니다. 기반 자료의 have/has 선택지를 분리했습니다.", "why": "정형 does가 있으므로 뒤 have는 기본형입니다.", "whyHighlights": [{"start": 0, "end": 2, "text": "정형", "style": ["bold", "underline"]}, {"start": 22, "end": 25, "text": "기본형", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "have", "id": "ADP153", "groupId": "ADG08-02", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-02"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel does has several unusual habits", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. does를 강조 조동사로 읽습니다. 기반 자료의 have/has 선택지를 분리했습니다.", "why": "정형 일치를 does가 이미 표시하는데 뒤 have까지 has로 썼으므로 비문으로 판단합니다.", "whyHighlights": [{"start": 0, "end": 2, "text": "정형", "style": ["bold", "underline"]}, {"start": 3, "end": 5, "text": "일치", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "has", "id": "ADP154", "groupId": "ADG08-02", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-02"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The editor wondered if would he return next month", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. if는 조건절이 아니라 wonder의 간접의문 보충절을 도입합니다. 기반 자료의 whether/if 중 if를 선택했으며 별도 직접 인용은 아닙니다.", "why": "C 자리를 if가 차지한 상태에서 would를 주어 앞으로 옮겼으므로 비문으로 판단합니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "if", "id": "ADP155", "groupId": "ADG08-03", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The editor wondered whether would he return next month", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. whether를 명시적으로 가진 간접의문절입니다. 별도의 직접 인용 발화가 아닙니다. 기반 자료의 whether/if 중 whether를 선택했습니다.", "why": "해당 분석의 C 자리를 whether가 차지한 상태에서 would까지 주어 앞으로 이동한 대비는 비문입니다.", "whyHighlights": [{"start": 46, "end": 48, "text": "이동", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "whether", "id": "ADP156", "groupId": "ADG08-03", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The editor wondered if he would return next month", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. if는 조건절이 아니라 wonder의 간접의문 보충절을 도입합니다. 기반 자료의 whether/if 중 if를 선택했습니다.", "why": "명시적 if로 도입된 간접의문절에서 he 뒤에 would가 오는 해당 분석의 정문입니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "if", "id": "ADP157", "groupId": "ADG08-03", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-03b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The editor wondered whether he would return next month", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. whether를 명시적으로 가진 간접의문절입니다. 별도의 직접 인용 발화가 아닙니다. 기반 자료의 whether/if 중 whether를 선택했습니다.", "why": "whether가 있는 간접의문절에서 주어 뒤에 would가 옵니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "whether", "id": "ADP158", "groupId": "ADG08-03", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-03b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "It was alleged that Morgan was an informant", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. It은 가주어이며 that절의 주어 Morgan는 내포절 안에 그대로 있습니다.", "why": "가주어 It 뒤에 that절이 온 해당 분석의 정문입니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP159", "groupId": "ADG08-04", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-04a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Morgan was alleged that — was an informant", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 해당 분석의 이동 공백 표시이며 발음하는 단어가 아닙니다. that절 내부 주어가 비어 있는 구조로 판단합니다.", "why": "that으로 도입한 ordinary clause 주어 Morgan를 밖으로 수동 이동한 대비를 해당 분석에서는 허용하지 않습니다.", "whyHighlights": [{"start": 45, "end": 47, "text": "이동", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP160", "groupId": "ADG08-04", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-04b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "They seem to our coach — to be fools", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. They는 복수 사람들을 가리킵니다. 현대 단수 they나 집단을 하나의 역할로 보는 별도 읽기는 가정하지 않습니다. 기반 자료 선택지 분리입니다. —는 해당 분석에서 They의 원래 주어 자리를 표시하며 발음하지 않습니다.", "why": "술어명사 fools는 내포절에서 기원한 복수 주어 They와 일치합니다.", "whyHighlights": [{"start": 34, "end": 36, "text": "일치", "style": ["bold", "underline"]}], "subLabel": "", "variantLabel": "fools", "id": "ADP161", "groupId": "ADG08-05", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-05"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "They seem to our coach — to be a fool", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. They는 복수 사람들을 가리킵니다. 현대 단수 they나 집단을 하나의 역할로 보는 별도 읽기는 가정하지 않습니다. 기반 자료 선택지 분리입니다. —는 해당 분석에서 They의 원래 주어 자리를 표시하며 발음하지 않습니다.", "why": "해당 분석의 복수 They 해석에서 단수 술어 a fool은 맞지 않습니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "a fool", "id": "ADP162", "groupId": "ADG08-05", "bookChapter": 8, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "8-05"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "How good do you think Irene is — at Geometry?", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 how good의 원래 자리입니다. Irene’s는 소유격이 아니라 Irene is의 축약으로 읽습니다.", "why": "how good가 이동한 공백 앞에서 축약하지 않은 is는 허용됩니다.", "whyHighlights": [{"start": 21, "end": 23, "text": "축약", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP163", "groupId": "ADG09-01", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "How good do you think Irene's — at Geometry?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 how good의 원래 자리입니다. Irene’s는 소유격이 아니라 Irene is의 축약으로 읽습니다.", "why": "해당 분석에서는 is 바로 뒤의 이동 공백 때문에 축약형을 허용하지 않는다고 분석합니다.", "whyHighlights": [{"start": 18, "end": 23, "text": "이동 공백", "style": ["bold", "underline"]}, {"start": 28, "end": 30, "text": "축약", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP164", "groupId": "ADG09-01", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel — whom you saw at the festival — is a colleague of mine", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 대시는 삽입적 관계절의 경계입니다. 제한적 관계절로 바꾸어 읽지 않습니다.", "why": "삽입적인 비제한적 관계절에서 whom을 쓴 해당 분석의 정문입니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP165", "groupId": "ADG09-02", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel — that you saw at the festival — is a colleague of mine", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 대시는 삽입적 관계절의 경계입니다. 제한적 관계절로 바꾸어 읽지 않습니다.", "why": "해당 분석의 표준영어 비제한적 관계절에서는 that을 쓴 대비가 허용되지 않습니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP166", "groupId": "ADG09-02", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel — you saw at the festival — is a colleague of mine", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 대시는 삽입적인 비제한적 관계절의 경계입니다. you saw at the festival은 Daniel을 수식하는 관계절이며 별도 독립 발화가 아닙니다.", "why": "해당 분석에서는 비제한적 관계절에서 관계사를 생략한 zero relative를 허용하지 않습니다.", "whyHighlights": [], "subLabel": "c", "variantLabel": "", "id": "ADP167", "groupId": "ADG09-02", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-02c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "the woman whose father retired", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. that’s는 that is/has의 축약이 아니라 속격 관계사로 쓰려 한 형태입니다. 기반 자료의 선택지를 분리했습니다.", "why": "whose는 관계절 안의 father를 한정하는 속격입니다.", "whyHighlights": [{"start": 27, "end": 29, "text": "속격", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "whose", "id": "ADP168", "groupId": "ADG09-03", "bookChapter": 9, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "the woman that's father retired", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. that’s는 that is/has의 축약이 아니라 속격 관계사로 쓰려 한 형태입니다. 기반 자료의 선택지를 분리했습니다.", "why": "관계절 표지 that에 소유격 ’s를 붙여 whose처럼 쓴 해당 분석의 비문입니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "that’s", "id": "ADP169", "groupId": "ADG09-03", "bookChapter": 9, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "the dictionary whose cover was damaged", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. whose는 dictionary와 cover의 소유·부분 관계를 나타내는 속격 관계사입니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "해당 분석에서는 비인간 선행사 dictionary에도 속격 관계사 whose를 허용합니다.", "whyHighlights": [{"start": 30, "end": 32, "text": "속격", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "whose", "id": "ADP170", "groupId": "ADG09-03", "bookChapter": 9, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-03b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "the dictionary that's cover was damaged", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. that’s는 that is/has의 축약이 아니라 속격 관계사로 쓰려 한 형태입니다. 기반 자료 슬래시 대안을 분리했습니다.", "why": "해당 분석의 표준영어 분석에서 관계절 표지 that은 whose에 대응하는 속격 that’s를 갖지 않습니다.", "whyHighlights": [{"start": 42, "end": 44, "text": "속격", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "that's", "id": "ADP171", "groupId": "ADG09-03", "bookChapter": 9, "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-03b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Who did Daniel engineer the dismissal of —?", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 who의 원래 자리입니다. 단순 단어순서가 아니라 NP의 주어/보충어 기능을 구분합니다.", "why": "who를 동사 engineer의 보충어 NP 내부에서 추출한 해당 분석의 정문입니다.", "whyHighlights": [{"start": 18, "end": 21, "text": "보충어", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP172", "groupId": "ADG09-04", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-04a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Who did the dismissal of — cause consternation?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 who의 원래 자리입니다. 단순 단어순서가 아니라 NP의 주어/보충어 기능을 구분합니다.", "why": "who를 주어 NP the dismissal of — 내부에서 추출하여 해당 분석의 주어 섬 조건을 위반합니다.", "whyHighlights": [{"start": 47, "end": 51, "text": "주어 섬", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP173", "groupId": "ADG09-04", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-04b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Who did the coalition collapse after the dismissal of —?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 who의 원래 자리이며 발음하지 않습니다. after the dismissal of —는 collapse를 수식하는 시간 부가어 PP입니다.", "why": "해당 분석에서는 부가어 PP 내부에서 who를 추출한 이 예를 부가어 섬 제약 위반으로 제시합니다.", "whyHighlights": [{"start": 9, "end": 12, "text": "부가어", "style": ["bold", "underline"]}, {"start": 35, "end": 40, "text": "부가어 섬", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP174", "groupId": "ADG09-04", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-04c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She has left what where?", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 wh 표현이 원위치에 남은 다중 의문문입니다. 원책이 제시한 이 어순을 판단하며 모든 영어 질문에 도치가 필요하다고 가정하지 않습니다.", "why": "해당 분석의 이 예문은 두 wh가 모두 원위치에 남는 형식을 허용합니다. wh를 반드시 하나 전치해야 한다는 주장이 아닙니다.", "whyHighlights": [{"start": 22, "end": 25, "text": "원위치", "style": ["bold", "underline"]}, {"start": 52, "end": 54, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP175", "groupId": "ADG09-05", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-05a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "What has she left where?", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 일반적인 영어 다중 wh 의문문으로 판정하며 다른 언어의 다중전치나 두 개의 별도 반문을 가정하지 않습니다.", "why": "하나의 wh만 전치하고 다른 wh는 원위치에 두는 해당 분석의 영어 예입니다.", "whyHighlights": [{"start": 8, "end": 10, "text": "전치", "style": ["bold", "underline"]}, {"start": 20, "end": 23, "text": "원위치", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP176", "groupId": "ADG09-05", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-05b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Where has she left what?", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. where만 전치하고 what은 left 뒤 원위치에 남긴 해당 분석의 다중 의문문입니다.", "why": "해당 분석에서는 where를 전치하고 what을 원위치에 남긴 이 어순도 허용합니다.", "whyHighlights": [{"start": 16, "end": 18, "text": "전치", "style": ["bold", "underline"]}, {"start": 27, "end": 30, "text": "원위치", "style": ["bold", "underline"]}], "subLabel": "c", "variantLabel": "", "id": "ADP177", "groupId": "ADG09-05", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-05c"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "What where has she left?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 일반적인 영어 다중 wh 의문문으로 판정하며 다른 언어의 다중전치나 두 개의 별도 반문을 가정하지 않습니다.", "why": "두 wh를 동시에 절 앞으로 보낸 대비는 해당 분석의 영어에서 허용되지 않습니다.", "whyHighlights": [], "subLabel": "d", "variantLabel": "", "id": "ADP178", "groupId": "ADG09-05", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-05d"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Where what has she left?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. where와 what을 모두 하나의 절 앞으로 전치한 구조입니다. 두 개의 별도 반문이나 다른 언어의 다중전치로 읽지 않습니다.", "why": "이 영어 다중 의문문에서 두 wh를 모두 전치했으므로 비문으로 판단합니다.", "whyHighlights": [{"start": 23, "end": 25, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "e", "variantLabel": "", "id": "ADP179", "groupId": "ADG09-05", "bookChapter": 9, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "9-05e"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She won't tell me what she will do —", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 원책이 제외한 semi-indirect speech나 직접인용이 아닌 일반 보충절입니다. —는 원책 이동 자리 표시입니다.", "why": "간접의문 보충절에서 wh는 전치되지만 will은 주어 뒤에 남습니다.", "whyHighlights": [{"start": 15, "end": 17, "text": "전치", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP180", "groupId": "ADG10-01", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-01a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "She won't tell me what will she — do —", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 원책이 제외한 semi-indirect speech나 직접인용이 아닌 일반 보충절입니다. —는 원책 이동 자리 표시입니다.", "why": "일반 간접의문절에 주어–조동사 도치를 추가한 해당 분석의 비문입니다.", "whyHighlights": [], "subLabel": "b", "variantLabel": "", "id": "ADP181", "groupId": "ADG10-01", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-01b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Should we have called the ambulance service?", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. we’ve는 we have의 축약입니다. 해당 분석의 trace 분석으로 풀이하며 축약 가능 방언을 일반화하지 않습니다.", "why": "have를 축약하지 않은 직접의문문은 해당 분석의 정문입니다.", "whyHighlights": [{"start": 6, "end": 8, "text": "축약", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP182", "groupId": "ADG10-02", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-02a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Should we've called the ambulance service", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. we’ve는 we have의 축약입니다. 해당 분석의 trace 분석으로 풀이하며 축약 가능 방언을 일반화하지 않습니다.", "why": "해당 분석에서는 이동한 should의 흔적이 we와 have 사이에 있으므로 have 축약이 막힌다고 분석합니다.", "whyHighlights": [{"start": 48, "end": 50, "text": "축약", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP183", "groupId": "ADG10-02", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-02b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Who would they want to win?", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. who는 이기기를 바라는 사람, 즉 win의 주어입니다. 그들이 누구를 상으로 얻는다는 목적어 읽기는 제외합니다.", "why": "who가 win의 주어인 해석에서 want to를 축약하지 않은 해당 분석의 정문입니다.", "whyHighlights": [{"start": 28, "end": 30, "text": "축약", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP184", "groupId": "ADG10-03", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-03a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Who would they wanna win?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. who는 이기기를 바라는 사람, 즉 win의 주어입니다. 그들이 누구를 상으로 얻는다는 목적어 읽기는 제외합니다.", "why": "같은 내포절 주어 추출 해석에서는 want와 to 사이의 주어 흔적 때문에 해당 분석의 표준 방언에서 wanna 축약이 막힙니다.", "whyHighlights": [{"start": 32, "end": 37, "text": "주어 흔적", "style": ["bold", "underline"]}, {"start": 63, "end": 65, "text": "축약", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP185", "groupId": "ADG10-03", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-03b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Daniel is likely to believe Irene to be wrong", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 각 이름의 원래 역할은 Daniel이 믿는 사람이고 Irene가 틀렸다고 여겨지는 사람입니다.", "why": "해당 분석에서는 가까운 내포절 주어 Daniel을 주절 주어로 올릴 수 있습니다.", "whyHighlights": [], "subLabel": "a", "variantLabel": "", "id": "ADP186", "groupId": "ADG10-04", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-04a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Irene is likely Daniel to believe to be wrong", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. 각 이름의 원래 역할은 Daniel이 믿는 사람이고 Irene가 틀렸다고 여겨지는 사람입니다.", "why": "Daniel을 남겨 둔 채 더 안쪽 Irene를 한 번에 주절 주어로 올리면 해당 분석의 NP 이동 경계 조건을 위반합니다.", "whyHighlights": [{"start": 53, "end": 55, "text": "이동", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP187", "groupId": "ADG10-04", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-04b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "The reporters might wonder what she said to who", "ans": true, "condition": "Radford의 분석틀을 적용한 변형예문입니다. what과 who는 모두 wonder의 내포 의문절에 속하며, who는 said to 뒤의 원위치에 남아 있습니다.", "why": "해당 분석에서는 what을 내포 의문절 앞에 두고 who를 그 안에 남긴 다중 의문문을 제시합니다.", "whyHighlights": [], "subLabel": "", "variantLabel": "", "id": "ADP188", "groupId": "ADG10-05", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-05"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "Who might the reporters wonder what she said to?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. who는 said to의 상대입니다. what이 이끄는 간접의문절을 넘어 그 who를 묻는 해석으로 판단합니다.", "why": "이미 what이 차지한 내포 wh 자리 때문에 who의 중간 이동 경로가 막힙니다.", "whyHighlights": [{"start": 31, "end": 39, "text": "중간 이동 경로", "style": ["bold", "underline"]}], "subLabel": "a", "variantLabel": "", "id": "ADP189", "groupId": "ADG10-06", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-06a"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}, {"sentence": "To whom might the reporters wonder what she said?", "ans": false, "condition": "Radford의 분석틀을 적용한 변형예문입니다. to whom은 she said의 전달 대상 PP이며 what이 이끄는 내포 의문절 밖으로 이동한 해석입니다.", "why": "해당 분석에서는 who만 추출한 NP 추출형뿐 아니라 to whom PP 전체를 추출한 PP 추출형도 허용하지 않습니다. 이미 what이 차지한 내포 wh 위치 때문에 중간 이동 경로가 막힙니다.", "whyHighlights": [{"start": 94, "end": 102, "text": "중간 이동 경로", "style": ["bold", "underline"]}], "subLabel": "b", "variantLabel": "", "id": "ADP190", "groupId": "ADG10-06", "bookChapter": 10, "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.", "source": {"work": "Andrew Radford, Transformational Grammar: A First Course", "adaptationLabel": "원책 개념 기반 변형예문", "example": "10-06b"}, "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true, "directExamExample": false}, "reviewStatus": "independent-adaptation-review-green", "judgmentType": "grammar"}];
-window.BOOK_GROUPS=[{"id": "ADG02-01", "bookChapter": 2, "bookExampleNumber": 1, "itemIds": ["ADP001", "ADP002", "ADP003"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-02", "bookChapter": 2, "bookExampleNumber": 2, "itemIds": ["ADP004", "ADP005", "ADP006"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-03", "bookChapter": 2, "bookExampleNumber": 3, "itemIds": ["ADP007"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-04", "bookChapter": 2, "bookExampleNumber": 4, "itemIds": ["ADP008"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-05", "bookChapter": 2, "bookExampleNumber": 5, "itemIds": ["ADP009"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-06", "bookChapter": 2, "bookExampleNumber": 6, "itemIds": ["ADP010"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-07", "bookChapter": 2, "bookExampleNumber": 7, "itemIds": ["ADP011"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-08", "bookChapter": 2, "bookExampleNumber": 8, "itemIds": ["ADP012"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-09", "bookChapter": 2, "bookExampleNumber": 9, "itemIds": ["ADP013", "ADP014", "ADP015", "ADP016", "ADP017", "ADP018", "ADP019"], "importedSubExampleCount": 5, "sourceSubExampleCount": null, "displayQuestionCount": 7, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-10", "bookChapter": 2, "bookExampleNumber": 10, "itemIds": ["ADP020"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-11", "bookChapter": 2, "bookExampleNumber": 11, "itemIds": ["ADP021", "ADP022"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-12", "bookChapter": 2, "bookExampleNumber": 12, "itemIds": ["ADP023"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-13", "bookChapter": 2, "bookExampleNumber": 13, "itemIds": ["ADP024"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-14", "bookChapter": 2, "bookExampleNumber": 14, "itemIds": ["ADP025"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-15", "bookChapter": 2, "bookExampleNumber": 15, "itemIds": ["ADP026"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-16", "bookChapter": 2, "bookExampleNumber": 16, "itemIds": ["ADP027"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-17", "bookChapter": 2, "bookExampleNumber": 17, "itemIds": ["ADP028"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-18", "bookChapter": 2, "bookExampleNumber": 18, "itemIds": ["ADP029"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-19", "bookChapter": 2, "bookExampleNumber": 19, "itemIds": ["ADP030"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-20", "bookChapter": 2, "bookExampleNumber": 20, "itemIds": ["ADP031"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-21", "bookChapter": 2, "bookExampleNumber": 21, "itemIds": ["ADP032"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-22", "bookChapter": 2, "bookExampleNumber": 22, "itemIds": ["ADP033", "ADP034", "ADP035"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-23", "bookChapter": 2, "bookExampleNumber": 23, "itemIds": ["ADP036"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-24", "bookChapter": 2, "bookExampleNumber": 24, "itemIds": ["ADP037"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-25", "bookChapter": 2, "bookExampleNumber": 25, "itemIds": ["ADP038"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-26", "bookChapter": 2, "bookExampleNumber": 26, "itemIds": ["ADP039"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-27", "bookChapter": 2, "bookExampleNumber": 27, "itemIds": ["ADP040", "ADP041"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-28", "bookChapter": 2, "bookExampleNumber": 28, "itemIds": ["ADP042", "ADP043"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-01", "bookChapter": 3, "bookExampleNumber": 1, "itemIds": ["ADP044", "ADP045", "ADP046"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-02", "bookChapter": 3, "bookExampleNumber": 2, "itemIds": ["ADP047", "ADP048", "ADP049"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-03", "bookChapter": 3, "bookExampleNumber": 3, "itemIds": ["ADP050"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-04", "bookChapter": 3, "bookExampleNumber": 4, "itemIds": ["ADP051"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-05", "bookChapter": 3, "bookExampleNumber": 5, "itemIds": ["ADP052"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-06", "bookChapter": 3, "bookExampleNumber": 6, "itemIds": ["ADP053"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-07", "bookChapter": 3, "bookExampleNumber": 7, "itemIds": ["ADP054"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-08", "bookChapter": 3, "bookExampleNumber": 8, "itemIds": ["ADP055"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-09", "bookChapter": 3, "bookExampleNumber": 9, "itemIds": ["ADP056"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-10", "bookChapter": 3, "bookExampleNumber": 10, "itemIds": ["ADP057", "ADP058"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-11", "bookChapter": 3, "bookExampleNumber": 11, "itemIds": ["ADP059", "ADP060"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-12", "bookChapter": 3, "bookExampleNumber": 12, "itemIds": ["ADP061", "ADP062", "ADP063"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-13", "bookChapter": 3, "bookExampleNumber": 13, "itemIds": ["ADP064", "ADP065"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-14", "bookChapter": 3, "bookExampleNumber": 14, "itemIds": ["ADP066", "ADP067"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG02-29", "bookChapter": 2, "bookExampleNumber": 29, "itemIds": ["ADP068"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-15", "bookChapter": 3, "bookExampleNumber": 15, "itemIds": ["ADP069", "ADP070", "ADP071"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-16", "bookChapter": 3, "bookExampleNumber": 16, "itemIds": ["ADP072"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG03-17", "bookChapter": 3, "bookExampleNumber": 17, "itemIds": ["ADP073"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": true, "completeness": "restored-selected-items-only-not-full-source-group", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG04-01", "bookChapter": 4, "bookExampleNumber": 1, "itemIds": ["ADP074", "ADP075"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG04-02", "bookChapter": 4, "bookExampleNumber": 2, "itemIds": ["ADP076", "ADP077"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG04-03", "bookChapter": 4, "bookExampleNumber": 3, "itemIds": ["ADP078", "ADP079"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG04-04", "bookChapter": 4, "bookExampleNumber": 4, "itemIds": ["ADP080"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG04-05", "bookChapter": 4, "bookExampleNumber": 5, "itemIds": ["ADP081", "ADP082"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG04-06", "bookChapter": 4, "bookExampleNumber": 6, "itemIds": ["ADP083", "ADP084"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG04-07", "bookChapter": 4, "bookExampleNumber": 7, "itemIds": ["ADP085", "ADP086"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-01", "bookChapter": 5, "bookExampleNumber": 1, "itemIds": ["ADP087", "ADP088"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-02", "bookChapter": 5, "bookExampleNumber": 2, "itemIds": ["ADP089", "ADP090"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-03", "bookChapter": 5, "bookExampleNumber": 3, "itemIds": ["ADP091", "ADP092"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-04", "bookChapter": 5, "bookExampleNumber": 4, "itemIds": ["ADP093", "ADP094"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-05", "bookChapter": 5, "bookExampleNumber": 5, "itemIds": ["ADP095", "ADP096", "ADP097", "ADP098", "ADP099"], "importedSubExampleCount": 5, "sourceSubExampleCount": null, "displayQuestionCount": 5, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-06", "bookChapter": 5, "bookExampleNumber": 6, "itemIds": ["ADP100", "ADP101"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-07", "bookChapter": 5, "bookExampleNumber": 7, "itemIds": ["ADP102", "ADP103"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-08", "bookChapter": 5, "bookExampleNumber": 8, "itemIds": ["ADP104"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG05-09", "bookChapter": 5, "bookExampleNumber": 9, "itemIds": ["ADP105"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG06-01", "bookChapter": 6, "bookExampleNumber": 1, "itemIds": ["ADP106", "ADP107", "ADP108", "ADP109"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 4, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG06-02", "bookChapter": 6, "bookExampleNumber": 2, "itemIds": ["ADP110", "ADP111", "ADP112", "ADP113"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 4, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG06-03", "bookChapter": 6, "bookExampleNumber": 3, "itemIds": ["ADP114", "ADP115"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG06-04", "bookChapter": 6, "bookExampleNumber": 4, "itemIds": ["ADP116", "ADP117", "ADP118", "ADP119"], "importedSubExampleCount": 4, "sourceSubExampleCount": null, "displayQuestionCount": 4, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG06-05", "bookChapter": 6, "bookExampleNumber": 5, "itemIds": ["ADP120", "ADP121", "ADP122", "ADP123"], "importedSubExampleCount": 4, "sourceSubExampleCount": null, "displayQuestionCount": 4, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG06-06", "bookChapter": 6, "bookExampleNumber": 6, "itemIds": ["ADP124", "ADP125", "ADP126", "ADP127"], "importedSubExampleCount": 4, "sourceSubExampleCount": null, "displayQuestionCount": 4, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG06-07", "bookChapter": 6, "bookExampleNumber": 7, "itemIds": ["ADP128", "ADP129", "ADP130", "ADP131"], "importedSubExampleCount": 4, "sourceSubExampleCount": null, "displayQuestionCount": 4, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG07-01", "bookChapter": 7, "bookExampleNumber": 1, "itemIds": ["ADP132", "ADP133"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG07-02", "bookChapter": 7, "bookExampleNumber": 2, "itemIds": ["ADP134", "ADP135", "ADP136", "ADP137", "ADP138", "ADP139", "ADP140", "ADP141", "ADP142", "ADP143", "ADP144", "ADP145", "ADP146"], "importedSubExampleCount": 4, "sourceSubExampleCount": null, "displayQuestionCount": 13, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG07-03", "bookChapter": 7, "bookExampleNumber": 3, "itemIds": ["ADP147", "ADP148"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG07-04", "bookChapter": 7, "bookExampleNumber": 4, "itemIds": ["ADP149", "ADP150"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG08-01", "bookChapter": 8, "bookExampleNumber": 1, "itemIds": ["ADP151", "ADP152"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG08-02", "bookChapter": 8, "bookExampleNumber": 2, "itemIds": ["ADP153", "ADP154"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG08-03", "bookChapter": 8, "bookExampleNumber": 3, "itemIds": ["ADP155", "ADP156", "ADP157", "ADP158"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 4, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG08-04", "bookChapter": 8, "bookExampleNumber": 4, "itemIds": ["ADP159", "ADP160"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG08-05", "bookChapter": 8, "bookExampleNumber": 5, "itemIds": ["ADP161", "ADP162"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG09-01", "bookChapter": 9, "bookExampleNumber": 1, "itemIds": ["ADP163", "ADP164"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG09-02", "bookChapter": 9, "bookExampleNumber": 2, "itemIds": ["ADP165", "ADP166", "ADP167"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG09-03", "bookChapter": 9, "bookExampleNumber": 3, "itemIds": ["ADP168", "ADP169", "ADP170", "ADP171"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 4, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG09-04", "bookChapter": 9, "bookExampleNumber": 4, "itemIds": ["ADP172", "ADP173", "ADP174"], "importedSubExampleCount": 3, "sourceSubExampleCount": null, "displayQuestionCount": 3, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG09-05", "bookChapter": 9, "bookExampleNumber": 5, "itemIds": ["ADP175", "ADP176", "ADP177", "ADP178", "ADP179"], "importedSubExampleCount": 5, "sourceSubExampleCount": null, "displayQuestionCount": 5, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG10-01", "bookChapter": 10, "bookExampleNumber": 1, "itemIds": ["ADP180", "ADP181"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG10-02", "bookChapter": 10, "bookExampleNumber": 2, "itemIds": ["ADP182", "ADP183"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG10-03", "bookChapter": 10, "bookExampleNumber": 3, "itemIds": ["ADP184", "ADP185"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG10-04", "bookChapter": 10, "bookExampleNumber": 4, "itemIds": ["ADP186", "ADP187"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG10-05", "bookChapter": 10, "bookExampleNumber": 5, "itemIds": ["ADP188"], "importedSubExampleCount": 1, "sourceSubExampleCount": null, "displayQuestionCount": 1, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}, {"id": "ADG10-06", "bookChapter": 10, "bookExampleNumber": 6, "itemIds": ["ADP189", "ADP190"], "importedSubExampleCount": 2, "sourceSubExampleCount": null, "displayQuestionCount": 2, "restored": false, "completeness": "all-source-sublabels-and-printed-alternatives-present", "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.", "provenance": {"kind": "adapted-book-example", "originalMappingPrivate": true}}];
+window.BOOK_ITEMS = [
+  {
+    "sentence": "Your younger brother, I can’t stand",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "NP 전체 [your younger brother]가 prepose되었습니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "NP 전체",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP001",
+    "groupId": "ADG02-01",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Your younger, I can’t stand brother",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "NP의 일부(your younger)만 이동했습니다. Preposing은 whole phrase 전체만 가능합니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 6,
+        "text": "NP의 일부",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 22,
+        "end": 24,
+        "text": "이동",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 30,
+        "end": 39,
+        "text": "Preposing",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 41,
+        "end": 53,
+        "text": "whole phrase",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP002",
+    "groupId": "ADG02-01",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Younger brother, I can’t stand your",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "NP의 일부만 이동했습니다. your가 제자리에 남아있어 비문입니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 6,
+        "text": "NP의 일부",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 10,
+        "text": "이동",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP003",
+    "groupId": "ADG02-01",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-01c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "[Such careless handling], I simply will not tolerate",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "NP 전체 [such careless handling]가 prepose된 문법적인 문장입니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "NP 전체",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP004",
+    "groupId": "ADG02-02",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "[Down the path] Leo ran, as fast as he could",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "PP 전체 [down the path]이 prepose된 문법적인 문장입니다.",
+    "whyHighlights": [],
+    "subLabel": "d",
+    "variantLabel": "",
+    "id": "ADP005",
+    "groupId": "ADG02-02",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-02d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "[Give in to intimidation], I never will!",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "VP 전체 give in to intimidation이 전치되어 문법적인 예문입니다.",
+    "whyHighlights": [
+      {
+        "start": 31,
+        "end": 33,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "e",
+    "variantLabel": "",
+    "id": "ADP006",
+    "groupId": "ADG02-02",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-02e"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Up his uncle, Leo rang",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. ring up은 전화한다는 뜻의 particle 동사로 읽습니다.",
+    "why": "ring up은 이 예문에서 phrasal verb입니다. up his uncle는 constituent가 아니므로 함께 전치할 수 없습니다.",
+    "whyHighlights": [
+      {
+        "start": 68,
+        "end": 70,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP007",
+    "groupId": "ADG02-03",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Maya explained to him [all the technical difficulties that she had encountered]",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "무거운 NP 전체가 postpose되어 문장 뒤로 이동했습니다. Whole phrase이므로 가능합니다.",
+    "whyHighlights": [
+      {
+        "start": 4,
+        "end": 9,
+        "text": "NP 전체",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 30,
+        "text": "이동",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP008",
+    "groupId": "ADG02-04",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-04b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Maya explained all the to him technical difficulties that she had encountered",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "NP의 일부(all the)만 남기고 이동했습니다. Whole phrase 전체가 함께 이동해야 합니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 6,
+        "text": "NP의 일부",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 21,
+        "end": 23,
+        "text": "이동",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 49,
+        "end": 51,
+        "text": "이동",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP009",
+    "groupId": "ADG02-05",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-05"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "A: Where did he go?\nB: Up the stairs",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "[up the stairs]은 완전한 PP constituent입니다. 완전한 phrase는 sentence fragment로 사용 가능합니다.",
+    "whyHighlights": [
+      {
+        "start": 52,
+        "end": 69,
+        "text": "sentence fragment",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP010",
+    "groupId": "ADG02-06",
+    "bookChapter": 2,
+    "ask": "B's reply is an appropriate sentence fragment.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-06"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "context"
+  },
+  {
+    "sentence": "A: Who were you ringing up?\nB: Up my younger brother",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. ring up은 전화한다는 뜻의 particle 동사로 읽습니다.",
+    "why": "ring up은 phrasal verb입니다. up my younger brother는 이 질문에 대응하는 constituent가 아니므로 적절한 답변이 아닙니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP011",
+    "groupId": "ADG02-07",
+    "bookChapter": 2,
+    "ask": "B's reply is an appropriate sentence fragment.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-07"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "context"
+  },
+  {
+    "sentence": "A: Where are you going to?\nB: The museum",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "the museum는 PP 안에 포함되면서도 그 자체로 완전한 NP이므로 이 장소 질문에 답할 수 있습니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP012",
+    "groupId": "ADG02-08",
+    "bookChapter": 2,
+    "ask": "B's reply is an appropriate sentence fragment.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-08"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "context"
+  },
+  {
+    "sentence": "Certainly, the crew can rely on my advice",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.",
+    "why": "certainly(S-adverb)가 S 앞에 위치했습니다. S-adverb는 S node에 부착되므로 문장 앞 위치 가능합니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "certainly",
+    "id": "ADP013",
+    "groupId": "ADG02-09",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-09a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The certainly crew can rely on my advice",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.",
+    "why": "certainly(S-adverb)가 NP 내부에 끼어들었습니다. S-adverb는 NP node에 부착될 수 없습니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "certainly",
+    "id": "ADP014",
+    "groupId": "ADG02-09",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-09b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The crew certainly can rely on my advice",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.",
+    "why": "certainly(S-adverb)가 NP와 M 사이에 위치했습니다. S node에 부착되는 적절한 위치입니다.",
+    "whyHighlights": [],
+    "subLabel": "c",
+    "variantLabel": "certainly",
+    "id": "ADP015",
+    "groupId": "ADG02-09",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-09c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The crew can certainly rely on my advice",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.",
+    "why": "certainly(S-adverb)가 M과 VP 사이에 위치했습니다. S node에 부착되는 적절한 위치입니다.",
+    "whyHighlights": [],
+    "subLabel": "d",
+    "variantLabel": "certainly",
+    "id": "ADP016",
+    "groupId": "ADG02-09",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-09d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The crew can rely certainly on my advice",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.",
+    "why": "certainly(S-adverb)가 VP 내부에 위치했습니다. S-adverb는 VP node에 부착될 수 없습니다.",
+    "whyHighlights": [],
+    "subLabel": "e",
+    "variantLabel": "certainly",
+    "id": "ADP017",
+    "groupId": "ADG02-09",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-09e"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The crew can rely completely on my advice",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.",
+    "why": "completely(VP-adverb)가 VP 내부에 위치했습니다. VP-adverb는 VP node에 부착되므로 적절합니다.",
+    "whyHighlights": [],
+    "subLabel": "e",
+    "variantLabel": "completely",
+    "id": "ADP018",
+    "groupId": "ADG02-09",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-09e"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Completely, the crew can rely on my advice",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사, completely는 VP 부사로 읽으며 독립 삽입구는 제외합니다.",
+    "why": "completely(VP-adverb)가 문장 앞 S 위치에 왔습니다. VP-adverb는 S node에 부착될 수 없습니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "completely",
+    "id": "ADP019",
+    "groupId": "ADG02-09",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-09a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo rang up his uncle and up his cousin",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. ring up은 전화한다는 뜻의 particle 동사로 읽습니다.",
+    "why": "ring up = Phrasal Verb. \"up his cousin\"는 constituent가 아니므로 등위접속 불가합니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP020",
+    "groupId": "ADG02-10",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-10"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo wrote to Nora and to Owen",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "PP to Nora와 PP to Owen를 등위 접속한 예입니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP021",
+    "groupId": "ADG02-11",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-11a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo wrote a postcard and to Owen",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "이 문맥에서 NP a postcard와 PP to Owen를 같은 자리에 자연스럽게 등위 접속할 수 없습니다.",
+    "whyHighlights": [],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP022",
+    "groupId": "ADG02-11",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-11c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Your tutor won’t put (and your mentor is fed) up with your rude interruptions",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 연습문제는 일반적 용법에서 비문으로 가정하며 유머 사용은 별개입니다. 괄호는 공유 문자열 구문의 분석 표시이며 별도의 완결 발화를 삽입한 것으로 읽지 않습니다.",
+    "why": "공유 문자열 up with your rude interruptions가 두 접속절 모두에서 같은 구성성분으로 성립하지 않습니다. put up with와 be fed up with의 표면 문자열 일치만으로 공유 구문을 허용하지 않습니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP023",
+    "groupId": "ADG02-12",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-12"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo rang (and Owen picked) up Nora’s brother",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. ring up은 전화한다는 뜻의 particle 동사로 읽습니다. 괄호는 공유 문자열 구문의 분석 표시이며 별도의 완결 발화를 삽입한 것으로 읽지 않습니다.",
+    "why": "rang up과 picked up에서 up은 각각 동사와 결합합니다. up Nora’s brother 전체는 공유 가능한 구성성분이 아닙니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP024",
+    "groupId": "ADG02-13",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-13"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "A: Have you ever been to Vienna?\nB: No, I have never been there",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "이 예문의 there는 장소 PP to Vienna에 대응하는 pro-PP입니다. Vienna만을 대신하는 pro-NP라는 주장은 틀립니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP025",
+    "groupId": "ADG02-14",
+    "bookChapter": 2,
+    "ask": "\"there\" is a pro-NP replacing \"Vienna\".",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-14"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "analysis"
+  },
+  {
+    "sentence": "We hope it",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. it은 앞서 언급된 명제를 가리키려는 대명사이며 hope for it이나 I hope so로 고쳐 읽지 않습니다.",
+    "why": "it은 syntactically NP position에만 올 수 있습니다. hope는 S complement를 취하는데 그 자리에 it이 올 수 없습니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP026",
+    "groupId": "ADG02-15",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-15"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "A: Nora has finished her report\nB: I don’t believe it",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "it은 syntactically NP position에 위치하며, semantically S(절 전체)가 antecedent가 될 수 있습니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP027",
+    "groupId": "ADG02-16",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-16a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo might [leave early], and so might Owen",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "so는 앞서 제시한 VP leave early에 대응하는 pro-VP입니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP028",
+    "groupId": "ADG02-17",
+    "bookChapter": 2,
+    "ask": "\"so\" is a pro-VP.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-17a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "analysis"
+  },
+  {
+    "sentence": "Many people consider Leo [remarkably patient], but I’ve never found him so",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "so는 AP [remarkably patient]를 대치하는 Pro-AP입니다.",
+    "whyHighlights": [
+      {
+        "start": 34,
+        "end": 40,
+        "text": "Pro-AP",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP029",
+    "groupId": "ADG02-18",
+    "bookChapter": 2,
+    "ask": "\"so\" is a pro-AP.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-18"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "analysis"
+  },
+  {
+    "sentence": "Leo won’t help me with the laundry, but his brother will",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 생략된 VP를 발음하지 않는 형태입니다.",
+    "why": "둘째 절에서 help me with the laundry 전체 VP가 생략됩니다. will은 남아 있으며 앞 절에서 내용을 복원할 수 있습니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP030",
+    "groupId": "ADG02-19",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-19"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo won’t put the juice into the jug, but his brother will put",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 생략된 VP를 발음하지 않는 형태입니다.",
+    "why": "둘째 절의 put은 남기고 목적어와 PP만 생략했으므로 이 책에서 설명한 전체 VP 생략이 아닙니다. put의 필수 보충어가 빠져 비문입니다.",
+    "whyHighlights": [
+      {
+        "start": 65,
+        "end": 68,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "e",
+    "variantLabel": "",
+    "id": "ADP031",
+    "groupId": "ADG02-20",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-20e"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She may arrive early, but then again she may not",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 생략된 VP를 발음하지 않는 형태입니다.",
+    "why": "둘째 절에서 arrive early 전체 VP가 생략되며 앞 문맥에서 복원됩니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP032",
+    "groupId": "ADG02-21",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-21a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Tourists certainly would get off the coach",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사이며 별도 삽입구가 아닙니다.",
+    "why": "certainly(S-adverb)가 NP와 M 사이에 위치했습니다. S node에 부착되는 적절한 위치입니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP033",
+    "groupId": "ADG02-22",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-22a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Tourists would get certainly off the coach",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사이며 별도 삽입구가 아닙니다.",
+    "why": "certainly(S-adverb)가 VP 내부, P(off) 앞에 위치했습니다. S-adverb는 VP 내부에 올 수 없습니다.",
+    "whyHighlights": [],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP034",
+    "groupId": "ADG02-22",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-22c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Tourists would get off certainly the coach",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. certainly는 문장부사이며 별도 삽입구가 아닙니다.",
+    "why": "certainly(S-adverb)가 PP 내부에 위치했습니다. S-adverb는 PP/NP 내부에 올 수 없습니다.",
+    "whyHighlights": [],
+    "subLabel": "d",
+    "variantLabel": "",
+    "id": "ADP035",
+    "groupId": "ADG02-22",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-22d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Tourists would get [off the coach] and [on the ferry]",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "off the coach와 on the ferry은 모두 PP 구성성분이므로 등위 접속할 수 있습니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP036",
+    "groupId": "ADG02-23",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-23"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Hecklers would put off the guests and off the hosts",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. put off는 사람에게 불쾌감이나 거부감을 준다는 뜻입니다.",
+    "why": "put off는 이 예문에서 phrasal verb이므로 off the hosts만은 독립된 구성성분이 아닙니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP037",
+    "groupId": "ADG02-24",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-24"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Tourists would get — and porters would fall — off the coach",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다.",
+    "why": "[off the coach]는 PP constituent이므로 Shared Constituent Coordination이 성립합니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP038",
+    "groupId": "ADG02-25",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-25"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Hecklers would put — and latecomers would also put — off the guests",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. put off는 사람에게 불쾌감이나 거부감을 준다는 뜻입니다.",
+    "why": "put off = Phrasal Verb. \"off the guests\"는 constituent가 아니므로 공유 불가합니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP039",
+    "groupId": "ADG02-26",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-26"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo will completely finish the report",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 예문의 짧은 NP 조건이며 무거운 NP의 후치와 구별합니다.",
+    "why": "completely가 VP의 처음에 있고 finish와 목적어 the report 사이를 분리하지 않습니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP040",
+    "groupId": "ADG02-27",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-27a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo will finish completely the report",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 예문의 짧은 NP 조건이며 무거운 NP의 후치와 구별합니다.",
+    "why": "completely가 finish와 NP 목적어 the report 사이에 있어 이 장의 Strict Adjacency 조건에 어긋납니다.",
+    "whyHighlights": [
+      {
+        "start": 50,
+        "end": 66,
+        "text": "Strict Adjacency",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP041",
+    "groupId": "ADG02-27",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-27c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo argued [each claim] with the auditor",
+    "ans": true,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 예문의 짧은 NP 조건이며 무거운 NP의 후치와 구별합니다.",
+    "why": "NP 보충어 each claim가 argued 바로 뒤에 있고 with the auditor은 그 뒤에 옵니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP042",
+    "groupId": "ADG02-28",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-28a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo argued with the auditor [each claim]",
+    "ans": false,
+    "condition": "Radford의 이 장 분석과 제시된 문맥을 기준으로 판단합니다. 이 예문의 짧은 NP 조건이며 무거운 NP의 후치와 구별합니다.",
+    "why": "짧은 NP 보충어 each claim 앞에 with the auditor이 끼어들어 이 예문의 Strict Adjacency 조건에 어긋납니다.",
+    "whyHighlights": [
+      {
+        "start": 6,
+        "end": 9,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 53,
+        "end": 69,
+        "text": "Strict Adjacency",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP043",
+    "groupId": "ADG02-28",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-28b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo and Nora think everyone criticizes them.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✓ 정문. them은 대명사로, [Leo and Nora]를 가리킬 수도 있고 문장 밖 다른 사람을 가리킬 수도 있다. 자유 지시(free reference)가 가능하므로 정문.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP044",
+    "groupId": "ADG03-01",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo and Nora criticize themselves.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✓ 정문. themselves는 anaphor(재귀사). [Leo and Nora]가 c-commanding antecedent로 기능하며 복수 선행사이므로 appropriateness 조건도 충족.",
+    "whyHighlights": [
+      {
+        "start": 18,
+        "end": 25,
+        "text": "anaphor",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 48,
+        "end": 57,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP045",
+    "groupId": "ADG03-01",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo and Nora criticize each other.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✓ 정문. each other는 anaphor(상호사). [Leo and Nora]는 두 개체를 지시하므로 appropriateness 조건 충족, c-command도 만족.",
+    "whyHighlights": [
+      {
+        "start": 18,
+        "end": 25,
+        "text": "anaphor",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 83,
+        "end": 92,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP046",
+    "groupId": "ADG03-01",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-01c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo criticizes each other.",
+    "ans": false,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✗ 비문. each other는 두 개체 이상을 지시하는 선행사가 필요한데, Leo는 단수. 적절한 antecedent가 없으므로 anaphor 해석 불가.",
+    "whyHighlights": [
+      {
+        "start": 73,
+        "end": 80,
+        "text": "anaphor",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP047",
+    "groupId": "ADG03-02",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I criticize himself.",
+    "ans": false,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다. I는 1인칭 단수 화자이며, 별도 인용·관점 이동은 가정하지 않습니다.",
+    "why": "✗ 비문. himself는 3인칭 단수 anaphor이고, I는 1인칭. Person 불일치로 appropriateness 조건 위반.",
+    "whyHighlights": [
+      {
+        "start": 22,
+        "end": 29,
+        "text": "anaphor",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP048",
+    "groupId": "ADG03-02",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Each other are always complaining.",
+    "ans": false,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✗ 비문. each other는 anaphor이지만 문장 내에 어떤 potential antecedent도 존재하지 않아 해석 불가.",
+    "whyHighlights": [
+      {
+        "start": 18,
+        "end": 25,
+        "text": "anaphor",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP049",
+    "groupId": "ADG03-02",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-02c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The athletes might disgrace themselves.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✓ 정문. NP [the athletes]가 themselves를 c-command한다. 복수 선행사이므로 appropriateness 조건도 만족.",
+    "whyHighlights": [
+      {
+        "start": 37,
+        "end": 46,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP050",
+    "groupId": "ADG03-03",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-03"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The athletes' conduct might disgrace themselves.",
+    "ans": false,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✗ 비문. [the athletes']는 NP [the athletes' conduct] 내부에 포함되어 있어 themselves를 c-command하지 못한다. C-command 조건 위반.",
+    "whyHighlights": [
+      {
+        "start": 74,
+        "end": 83,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP051",
+    "groupId": "ADG03-04",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-04"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The archers will shoot the arrows at each other.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다. 원책의 평평한 VP 구조에서 each other의 선행사를 archers 또는 arrows로 잡는 두 해석을 비교합니다.",
+    "why": "✓ 정문 (antecedent 해석의 중의성). each other는 [the archers] 또는 [the arrows]를 antecedent로 삼을 수 있습니다. 두 NP 모두 같은 phrase-marker에서 each other를 c-command합니다. 서로 다른 두 tree가 필요한 Structural Ambiguity와 구별합니다.",
+    "whyHighlights": [
+      {
+        "start": 132,
+        "end": 141,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP052",
+    "groupId": "ADG03-05",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-05"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo will buy himself another bicycle.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✓ 정문. Leo는 himself의 적절한 c-commanding antecedent입니다. 원책의 반사대명사 선행사 진단을 적용한 변형예문입니다.",
+    "whyHighlights": [
+      {
+        "start": 24,
+        "end": 33,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP053",
+    "groupId": "ADG03-06",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-06"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Hecklers would put completely off the guests.",
+    "ans": false,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다. put off는 사람에게 불쾌감이나 거부감을 준다는 뜻입니다.",
+    "why": "✗ 비문. completely를 VP의 immediate constituent로 붙이면서 [put off]를 하나의 V constituent로 유지하면, 그 V의 일부인 off가 ADVP 뒤에 남아 No Crossing Branches Constraint를 위반합니다. ADVP를 V 내부에 붙이는 분석도 VP-adverb의 부착 조건에 어긋납니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP054",
+    "groupId": "ADG03-07",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-07"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Hecklers would put the guests off.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다. put off는 사람에게 불쾌감이나 거부감을 준다는 뜻입니다.",
+    "why": "✓ 정문. 원책의 해당 구조 분석에서 VP의 즉각성분은 V put, NP the guests, PP off입니다. 목적어 뒤에 분리된 off는 이 분석에서 PP를 이루며, [put off]를 하나의 불연속 V로 유지하는 구조가 아닙니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP055",
+    "groupId": "ADG03-08",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-08"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I will ever praise you for this.",
+    "ans": false,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✗ 비문. 이 문장의 NPI ever를 허용할 환경이 없습니다. 여기서 다루는 negative declarative의 분석에서는 negative constituent가 ever를 precede하고 c-command해야 합니다. 이 조건을 의문문 등 모든 ever 용법에 일반화하지 않습니다.",
+    "whyHighlights": [
+      {
+        "start": 110,
+        "end": 119,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP056",
+    "groupId": "ADG03-09",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-09"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Nobody will ever praise you for this.",
+    "ans": true,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✓ 정문. 부정 NP Nobody가 ever를 선행하고 c-command한다. NPI 조건 충족.",
+    "whyHighlights": [
+      {
+        "start": 31,
+        "end": 40,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP057",
+    "groupId": "ADG03-10",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-10a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I won't ever praise you for this.",
+    "ans": true,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✓ 정문. 부정 Modal won't이 ever를 선행하고 c-command한다. NPI 조건 충족.",
+    "whyHighlights": [
+      {
+        "start": 33,
+        "end": 42,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP058",
+    "groupId": "ADG03-10",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-10b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I will ever praise nobody for this.",
+    "ans": false,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✗ 비문. nobody가 ever 뒤에 있어 precede 조건을 충족하지 못합니다. 또한 이 분석에서 object NP는 VP 안에 있고 ever는 S의 immediate constituent이므로, object NP가 ever를 c-command하지도 못합니다.",
+    "whyHighlights": [
+      {
+        "start": 130,
+        "end": 139,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP059",
+    "groupId": "ADG03-11",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-11a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Someone who didn't like you would ever praise you for this.",
+    "ans": false,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✗ 비문. 부정어 didn't은 관계절 내부에 있어 주절의 ever를 c-command하지 못한다(precede ✓, c-command ✗).",
+    "whyHighlights": [
+      {
+        "start": 39,
+        "end": 48,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 66,
+        "end": 75,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP060",
+    "groupId": "ADG03-11",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-11b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "No supervisor ever would help an intern.",
+    "ans": true,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✓ 정문. 부정 Det No를 포함한 NP [No supervisor]이 ever를 선행하고 c-command한다.",
+    "whyHighlights": [
+      {
+        "start": 52,
+        "end": 61,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP061",
+    "groupId": "ADG03-12",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-12a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "No supervisor would ever help an intern.",
+    "ans": true,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✓ 정문. NP [No supervisor]이 ever를 precede하고 c-command합니다. 이 exercise에서 ever는 Modal 뒤에 있어도 VP 내부가 아니라 S의 immediate constituent로 분석합니다.",
+    "whyHighlights": [
+      {
+        "start": 42,
+        "end": 51,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP062",
+    "groupId": "ADG03-12",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-12b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "No supervisor would help an intern ever.",
+    "ans": true,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✓ 정문. ever가 문장 끝에 위치해도 NP [No supervisor]이 선행 + c-command 조건을 충족한다.",
+    "whyHighlights": [
+      {
+        "start": 48,
+        "end": 57,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP063",
+    "groupId": "ADG03-12",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-12c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Some supervisors ever wouldn't help an intern.",
+    "ans": false,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✗ 비문. ever가 부정어 wouldn't보다 앞에 위치. 부정 표현이 NPI를 선행해야 하므로 precede 조건 위반.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP064",
+    "groupId": "ADG03-13",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-13a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Some supervisors wouldn't ever help an intern.",
+    "ans": true,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✓ 정문. 부정 Modal wouldn't가 ever를 선행하고 c-command. 두 조건 모두 충족.",
+    "whyHighlights": [
+      {
+        "start": 36,
+        "end": 45,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP065",
+    "groupId": "ADG03-13",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-13b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Some supervisors ever would help no intern.",
+    "ans": false,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✗ 비문. no intern은 ever를 선행하지 않는다(precede ✗). NPI 조건 위반.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP066",
+    "groupId": "ADG03-14",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-14a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Some supervisors would ever help no intern.",
+    "ans": false,
+    "condition": "Radford 원책 Exercise IV의 부정문 분석을 기준으로 판단합니다. 이 문항에서 ever는 S의 직접성분이라고 가정합니다.",
+    "why": "✗ 비문. no intern은 ever 뒤에 있어 precede 조건을 충족하지 못합니다. 또한 object NP는 VP 안에 있고 ever는 S의 immediate constituent이므로, c-command 조건도 충족하지 못합니다.",
+    "whyHighlights": [
+      {
+        "start": 109,
+        "end": 118,
+        "text": "c-command",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP067",
+    "groupId": "ADG03-14",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-14b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo rang up his uncle.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✓ 정문. 이 문장은 원책의 particle 범주 논의를 적용한 변형예문입니다. up은 rang과 phrasal verb를 이루는 particle이며, 원책의 범주 통합 분석에서는 particle을 별도 품사가 아니라 보충어 없이 사용된 P(전치사)로 다룹니다.",
+    "whyHighlights": [
+      {
+        "start": 122,
+        "end": 125,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 135,
+        "end": 137,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP068",
+    "groupId": "ADG02-29",
+    "bookChapter": 2,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "2-29"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "It was a bicycle that she bought.",
+    "ans": true,
+    "condition": "Radford 원책의 it-cleft 해당 예문군과 분석을 기준으로 판단합니다. 모든 분열문 용법으로 일반화하지 않습니다.",
+    "why": "✓ 정문. Radford가 비교하는 이 it-cleft의 focus 위치에 NP [a bicycle]가 올 수 있습니다. 이 예문군에서는 NP·PP와 AP·ADVP·VP의 분포를 대조합니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP069",
+    "groupId": "ADG03-15",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-15a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "It is quite cheerful that she is.",
+    "ans": false,
+    "condition": "Radford 원책의 it-cleft 해당 예문군과 분석을 기준으로 판단합니다. 모든 분열문 용법으로 일반화하지 않습니다.",
+    "why": "✗ 비문. Radford가 제시하는 이 it-cleft의 focus 위치에는 AP [quite cheerful]를 넣을 수 없습니다. NP·PP가 허용되는 예문과 대조합니다.",
+    "whyHighlights": [],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP070",
+    "groupId": "ADG03-15",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-15c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "It is leave early that I will.",
+    "ans": false,
+    "condition": "Radford 원책의 it-cleft 해당 예문군과 분석을 기준으로 판단합니다. 모든 분열문 용법으로 일반화하지 않습니다.",
+    "why": "✗ 비문. 이 it-cleft의 focus 위치에는 VP [leave early]을 넣을 수 없습니다. 반면 pseudo-cleft인 What I will do is leave early에서는 이 VP가 가능합니다.",
+    "whyHighlights": [],
+    "subLabel": "e",
+    "variantLabel": "",
+    "id": "ADP071",
+    "groupId": "ADG03-15",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-15e"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Leo is a surgeon and very patient.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✓ 정문. be 동사의 보어 위치에서 NP [a surgeon]와 AP [very patient]가 등위 접속 가능.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP072",
+    "groupId": "ADG03-16",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-16a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She might really hesitate.",
+    "ans": true,
+    "condition": "Radford의 분석틀을 기준으로 판단합니다. 해당 분석의 조건을 유지한 변형예문입니다.",
+    "why": "✓ 정문. really는 V hesitate을 수식하는 Adverb입니다. 원책의 ADV-modifying-V 분석을 적용한 변형예문이며, 원책에서는 Adjective와 Adverb를 범주 A의 positional variants로 통합하는 분석을 제안합니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP073",
+    "groupId": "ADG03-17",
+    "bookChapter": 3,
+    "ask": "이 문장은 문법적이다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "3-17"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The present king of Norway is more popular than the last one",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. one의 대용 범위를 N′ 분석으로 판정합니다. 현대 모든 one 용법에 일반화하지 않습니다.",
+    "why": "king of Norway 전체가 N′입니다. one이 그 단위를 받으므로 해당 분석에서는 정문으로 제시합니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP074",
+    "groupId": "ADG04-01",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The king of Norway defeated the one of Sweden",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. one의 대용 범위를 N′ 분석으로 판정합니다. 현대 모든 one 용법에 일반화하지 않습니다.",
+    "why": "이 분석에서 of Norway를 보충어로 두면 king 단독은 N입니다. one으로 N만 대체한 표현은 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 18,
+        "end": 21,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP075",
+    "groupId": "ADG04-01",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "the student of Linguistics with red hair",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. of Linguistics는 전공을 나타내는 보충어, with red hair는 외형 부가어로 읽습니다.",
+    "why": "of Linguistics는 보충어, with red hair는 부가어입니다. 보충어가 head에 더 가깝게 배치됩니다.",
+    "whyHighlights": [
+      {
+        "start": 16,
+        "end": 19,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 36,
+        "end": 39,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP076",
+    "groupId": "ADG04-02",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "the student with red hair of Linguistics",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. of Linguistics는 전공을 나타내는 보충어, with red hair는 외형 부가어로 읽습니다.",
+    "why": "같은 보충어·부가어 분석에서 순서를 바꾸어 해당 분석의 구조 조건에 어긋납니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 7,
+        "end": 10,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP077",
+    "groupId": "ADG04-02",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "the student with red hair with long legs",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 with-PP가 각각 student를 수식하며, 두 번째 PP가 hair 내부에 붙는 해석은 제외합니다.",
+    "why": "두 with-PP는 부가어입니다. 해당 분석의 재귀적인 N′ 부가어 규칙으로 결합됩니다.",
+    "whyHighlights": [
+      {
+        "start": 11,
+        "end": 14,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP078",
+    "groupId": "ADG04-03",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "the student of Linguistics of History",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 학과를 and로 등위접속한 표현이 아니라 각각 보충어로 겹친 구조를 비교합니다.",
+    "why": "두 of-PP를 하나의 student에 독립 보충어로 겹친 구조입니다. 이 분석의 비재귀 보충어 규칙이 허용하지 않습니다.",
+    "whyHighlights": [
+      {
+        "start": 25,
+        "end": 28,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP079",
+    "groupId": "ADG04-03",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-03b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "a student of Linguistics and of History",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 같은 PP라는 표면 범주만 아니라 해당 분석의 부착 수준을 비교합니다.",
+    "why": "같은 수준에 결합하는 두 보충어 PP를 등위접속한 해당 분석의 정문 예입니다.",
+    "whyHighlights": [
+      {
+        "start": 14,
+        "end": 17,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP080",
+    "groupId": "ADG04-04",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-04"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "a student of Linguistics and with red hair",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 같은 PP라는 표면 범주만 아니라 해당 분석의 부착 수준을 비교합니다.",
+    "why": "보충어 PP와 부가어 PP는 이 분석에서 부착 수준이 다릅니다. 둘을 직접 접속한 표현은 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 23,
+        "end": 28,
+        "text": "부착 수준",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP081",
+    "groupId": "ADG04-05",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-05a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "a student with red hair and of Linguistics",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 PP 모두 student에 직접 붙는 분석이며 with red hair는 외형, of Linguistics는 전공입니다.",
+    "why": "부가어 with red hair와 보충어 of Linguistics의 부착 수준이 달라 해당 분석에서는 직접 접속을 허용하지 않습니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 19,
+        "end": 22,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 39,
+        "end": 44,
+        "text": "부착 수준",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP082",
+    "groupId": "ADG04-05",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-05b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "a student came to see me last Friday with red hair",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 뒤 PP는 student를 수식하며 last Friday나 화자 me를 수식하는 별도 해석은 제외합니다.",
+    "why": "with red hair를 student의 외형 부가어로 읽으면 해당 분석에서는 후치를 허용합니다.",
+    "whyHighlights": [
+      {
+        "start": 27,
+        "end": 30,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP083",
+    "groupId": "ADG04-06",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-06a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "a student came to see me last Friday of Linguistics",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 뒤 PP는 student를 수식하며 last Friday나 화자 me를 수식하는 별도 해석은 제외합니다.",
+    "why": "student의 보충어 of Linguistics를 head와 분리하여 뒤로 보냈으므로 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 9,
+        "end": 12,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP084",
+    "groupId": "ADG04-06",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-06b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "What branch of Linguistics is Daniel a student of?",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. of는 전공, with는 학생의 머리 모양이라는 원책 해석을 유지합니다.",
+    "why": "of는 student의 보충어 PP를 이끕니다. 그 목적어를 전치한 해당 분석의 정문입니다.",
+    "whyHighlights": [
+      {
+        "start": 13,
+        "end": 16,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 34,
+        "end": 36,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP085",
+    "groupId": "ADG04-07",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-07a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "What kind of hair is Daniel a student with?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. of는 전공, with는 학생의 머리 모양이라는 원책 해석을 유지합니다.",
+    "why": "with는 student의 부가어 PP를 이끕니다. 그 내부 NP를 전치한 대비를 해당 분석에서는 비문으로 제시합니다.",
+    "whyHighlights": [
+      {
+        "start": 15,
+        "end": 18,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 38,
+        "end": 40,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP086",
+    "groupId": "ADG04-07",
+    "bookChapter": 4,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "4-07b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel will buy the dictionary on Monday, and Leo will do so as well",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. do so의 선행사는 buy the dictionary on Monday 전체입니다.",
+    "why": "do so가 시간 부가어까지 포함한 buy the dictionary on Monday 전체를 받을 수 있습니다.",
+    "whyHighlights": [
+      {
+        "start": 7,
+        "end": 13,
+        "text": "시간 부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP087",
+    "groupId": "ADG05-01",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel will buy the dictionary on Monday, and Leo will do so on Friday",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. do so가 각 문장의 buy the dictionary / put the dictionary만을 받는 해당 분석의 제시 분석으로 판단합니다.",
+    "why": "buy the dictionary은 이 분석의 V′입니다. do so가 이 단위를 받고 시간 부가어를 달리 붙일 수 있습니다.",
+    "whyHighlights": [
+      {
+        "start": 49,
+        "end": 55,
+        "text": "시간 부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP088",
+    "groupId": "ADG05-01",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel will put the dictionary on the desk, and Leo will do so as well",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. do so는 put the dictionary on the desk 전체를 받습니다.",
+    "why": "put the dictionary on the desk 전체를 대용하면 필수 위치 보충어까지 포함됩니다.",
+    "whyHighlights": [
+      {
+        "start": 46,
+        "end": 49,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP089",
+    "groupId": "ADG05-02",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel will put the dictionary on the desk, and Leo will do so on the shelf",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. do so가 각 문장의 buy the dictionary / put the dictionary만을 받는 해당 분석의 제시 분석으로 판단합니다.",
+    "why": "put의 위치 PP는 보충어입니다. 해당 분석에서는 put the dictionary만을 V′로 대용하고 위치를 따로 바꾼 예를 허용하지 않습니다.",
+    "whyHighlights": [
+      {
+        "start": 12,
+        "end": 15,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP090",
+    "groupId": "ADG05-02",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She worked at the task at the laboratory",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. at the task은 일의 대상, at the laboratory는 일하는 장소로 읽습니다.",
+    "why": "at the task을 보충어, at the laboratory를 장소 부가어로 분석합니다. 보충어가 먼저 옵니다.",
+    "whyHighlights": [
+      {
+        "start": 13,
+        "end": 16,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 40,
+        "end": 43,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP091",
+    "groupId": "ADG05-03",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She worked at the laboratory at the task",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. at the task은 일의 대상, at the laboratory는 일하는 장소로 읽습니다.",
+    "why": "같은 분석에서 장소 부가어가 보충어 앞에 오므로 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 11,
+        "end": 14,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP092",
+    "groupId": "ADG05-03",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-03b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel asked the visitor at reception",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 상대방에게 정보를 묻는 의미입니다.",
+    "why": "ask는 정보를 묻는 상대 NP를 직접 보충어로 받을 수 있습니다.",
+    "whyHighlights": [
+      {
+        "start": 22,
+        "end": 25,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP093",
+    "groupId": "ADG05-04",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-04a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel inquired the visitor at reception",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 상대방에게 정보를 묻는 의미입니다.",
+    "why": "해당 분석의 해당 의미에서 inquire는 상대 NP를 ask처럼 바로 받을 수 없습니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP094",
+    "groupId": "ADG05-04",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-04b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel treated Irene badly LAST WEEK",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다) 의미이며 의료 처치나 대접의 의미는 제외합니다.",
+    "why": "대상 Irene와 방식 badly가 모두 있고 선택적인 시간 부가어 LAST WEEK가 더해졌습니다.",
+    "whyHighlights": [
+      {
+        "start": 31,
+        "end": 37,
+        "text": "시간 부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP095",
+    "groupId": "ADG05-05",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-05a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel treated Irene badly",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다)이며 의료 처치하거나 대접한다는 뜻은 제외합니다.",
+    "why": "사람을 대하는 의미의 treat에서 대상 Irene와 방식 badly가 갖춰진 해당 분석의 정문입니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP096",
+    "groupId": "ADG05-05",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-05b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel treated badly LAST WEEK",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다) 의미이며 의료 처치나 대접의 의미는 제외합니다.",
+    "why": "대하는 대상에 해당하는 NP 보충어가 빠져 있습니다.",
+    "whyHighlights": [
+      {
+        "start": 13,
+        "end": 19,
+        "text": "NP 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP097",
+    "groupId": "ADG05-05",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-05c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel treated Irene LAST WEEK",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다)이며 의료 처치하거나 대접한다는 뜻은 제외합니다.",
+    "why": "LAST WEEK는 시간 부가어입니다. 이 의미의 treat가 요구하는 방식 보충어를 대신하지 못합니다.",
+    "whyHighlights": [
+      {
+        "start": 11,
+        "end": 17,
+        "text": "시간 부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 40,
+        "end": 46,
+        "text": "방식 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "d",
+    "variantLabel": "",
+    "id": "ADP098",
+    "groupId": "ADG05-05",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-05d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel treated LAST WEEK",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. treat는 behave towards(대하다) 의미이며 의료 처치나 대접의 의미는 제외합니다.",
+    "why": "시간 부가어만으로는 대상과 방식 보충어를 대신할 수 없습니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 6,
+        "text": "시간 부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 15,
+        "end": 21,
+        "text": "방식 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "e",
+    "variantLabel": "",
+    "id": "ADP099",
+    "groupId": "ADG05-05",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-05e"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "fond in several respects",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 원책이 명시적 of-보충어를 요구하는 해당 분석입니다. 앞 담화로 보충어를 복원하는 별도 맥락은 가정하지 않습니다.",
+    "why": "in several respects는 부가어로 제시됩니다. 해당 분석의 fond 보충어를 대신할 수 없습니다.",
+    "whyHighlights": [
+      {
+        "start": 21,
+        "end": 24,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 45,
+        "end": 48,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP100",
+    "groupId": "ADG05-06",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-06a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "fond of Irene",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 원책이 명시적 of-보충어를 요구하는 해당 분석입니다. 앞 담화로 보충어를 복원하는 별도 맥락은 가정하지 않습니다.",
+    "why": "of Irene는 fond의 보충어입니다. in several respects라는 부가어가 없어도 허용됩니다.",
+    "whyHighlights": [
+      {
+        "start": 16,
+        "end": 19,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 46,
+        "end": 49,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP101",
+    "groupId": "ADG05-06",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-06b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "so utterly careless",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. so는 이 AP의 정도 specifier로 읽으며 앞 담화에 대한 독립 대용표현으로 읽지 않습니다.",
+    "why": "so는 specifier, utterly는 attribute입니다. 해당 분석의 구조에서는 attribute가 head에 더 가깝습니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP102",
+    "groupId": "ADG05-07",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-07a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "utterly so careless",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. so는 이 AP의 정도 specifier로 읽으며 앞 담화에 대한 독립 대용표현으로 읽지 않습니다.",
+    "why": "specifier와 attribute의 순서를 뒤집었으므로 비문으로 판단합니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP103",
+    "groupId": "ADG05-07",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-07b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She is so out of touch IN CERTAIN RESPECTS",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. out of touch의 원책 PP 분석과 표시된 부가어를 기준으로 합니다.",
+    "why": "of touch는 out의 보충어, IN CERTAIN RESPECTS는 부가어입니다. 이 순서는 해당 분석의 구조에 맞습니다.",
+    "whyHighlights": [
+      {
+        "start": 15,
+        "end": 18,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 41,
+        "end": 44,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP104",
+    "groupId": "ADG05-08",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-08"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She is so out IN CERTAIN RESPECTS of touch",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. out of touch의 원책 PP 분석과 표시된 부가어를 기준으로 합니다.",
+    "why": "부가어를 out과 보충어 of touch 사이에 끼운 해당 분석의 비문 예입니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 10,
+        "end": 13,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP105",
+    "groupId": "ADG05-09",
+    "bookChapter": 5,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "5-09"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I know that Daniel hates Phonology",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. know의 보충절을 현재 직설법으로 읽습니다. 기반 자료 슬래시 선택지를 각각 분리했습니다.",
+    "why": "정형 직설법절에서 단수 주어 Daniel에 hates가 일치합니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 2,
+        "text": "정형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 31,
+        "end": 33,
+        "text": "일치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "hates",
+    "id": "ADP106",
+    "groupId": "ADG06-01",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I know that Daniel hate Phonology",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. know의 보충절을 현재 직설법으로 읽습니다. 기반 자료 슬래시 선택지를 각각 분리했습니다.",
+    "why": "같은 직설법 정형절에서 단수 주어에 hate를 썼으므로 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 7,
+        "end": 9,
+        "text": "정형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "hate",
+    "id": "ADP107",
+    "groupId": "ADG06-01",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I've never known him hate anything as much as Phonology",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. known 뒤에 목적어처럼 보이는 him이 있는 비정형절입니다. 기반 자료의 슬래시 대안을 분리했습니다.",
+    "why": "known 뒤 내포절의 동사는 비정형 기본형 hate입니다.",
+    "whyHighlights": [
+      {
+        "start": 17,
+        "end": 20,
+        "text": "비정형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 21,
+        "end": 24,
+        "text": "기본형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "hate",
+    "id": "ADP108",
+    "groupId": "ADG06-01",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I've never known him hates anything as much as Phonology",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. known 뒤에 목적어처럼 보이는 him이 있는 비정형절입니다. 기반 자료의 슬래시 대안을 분리했습니다.",
+    "why": "비정형 내포절에 정형 3인칭 단수형 hates를 쓴 해당 분석의 비문입니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "비정형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "hates",
+    "id": "ADP109",
+    "groupId": "ADG06-01",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I demand that Daniel leave for Oslo tomorrow",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 해당 분석의 mandative subjunctive 분석으로 한정합니다. 방언별 직설법 mandative의 허용 여부 일반화가 아닙니다. 기반 자료 슬래시 선택지를 분리했습니다.",
+    "why": "해당 분석의 요구적 가정법절에서는 Daniel 뒤에도 기본형 leave를 씁니다.",
+    "whyHighlights": [
+      {
+        "start": 7,
+        "end": 14,
+        "text": "요구적 가정법",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 30,
+        "end": 33,
+        "text": "기본형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "leave",
+    "id": "ADP110",
+    "groupId": "ADG06-02",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I demand that Daniel leaves for Oslo tomorrow",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 해당 분석의 mandative subjunctive 분석으로 한정합니다. 방언별 직설법 mandative의 허용 여부 일반화가 아닙니다. 기반 자료 슬래시 선택지를 분리했습니다.",
+    "why": "해당 분석이 제시하는 요구적 가정법 분석에서 leaves를 고른 선택지는 비문입니다.",
+    "whyHighlights": [
+      {
+        "start": 12,
+        "end": 19,
+        "text": "요구적 가정법",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "leaves",
+    "id": "ADP111",
+    "groupId": "ADG06-02",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I demanded that Daniel leave for Oslo the following day",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. mandative subjunctive 분석으로 한정하며 방언의 직설법 mandative까지 부정하지 않습니다. 기반 자료 선택지 분리입니다.",
+    "why": "주절이 과거여도 요구적 가정법절의 동사는 기본형 leave입니다.",
+    "whyHighlights": [
+      {
+        "start": 9,
+        "end": 16,
+        "text": "요구적 가정법",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 23,
+        "end": 26,
+        "text": "기본형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "leave",
+    "id": "ADP112",
+    "groupId": "ADG06-02",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I demanded that Daniel left for Oslo the following day",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. mandative subjunctive 분석으로 한정하며 방언의 직설법 mandative까지 부정하지 않습니다. 기반 자료 선택지 분리입니다.",
+    "why": "해당 분석의 요구적 가정법 분석에서 과거형 left를 쓰는 선택지는 허용되지 않습니다.",
+    "whyHighlights": [
+      {
+        "start": 7,
+        "end": 14,
+        "text": "요구적 가정법",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "left",
+    "id": "ADP113",
+    "groupId": "ADG06-02",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The Director is not sure whether to be a candidate",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. whether절의 묵시적 주어는 The Director입니다. 다른 복수 집단 주어는 상정하지 않습니다. 기반 자료 선택지를 분리했습니다.",
+    "why": "내포절의 묵시적 주어 PRO는 단수 The Director와 연결되므로 단수 술어 a candidate와 맞습니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "a candidate",
+    "id": "ADP114",
+    "groupId": "ADG06-03",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-03"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The Director is not sure whether to be candidates",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. whether절의 묵시적 주어는 The Director입니다. 다른 복수 집단 주어는 상정하지 않습니다. 기반 자료 선택지를 분리했습니다.",
+    "why": "해당 분석의 단수 PRO 해석에서 복수 술어 candidates가 일치하지 않습니다.",
+    "whyHighlights": [
+      {
+        "start": 37,
+        "end": 39,
+        "text": "일치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "candidates",
+    "id": "ADP115",
+    "groupId": "ADG06-03",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-03"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I believe the Director to be right",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. believe의 명제 보충어 구조입니다. for the Director를 별도 수혜 부가어로 해석하지 않습니다.",
+    "why": "해당 분석에서는 believe의 이 보충어를 exceptional S로 분석하며 해당 to-절을 허용합니다.",
+    "whyHighlights": [
+      {
+        "start": 20,
+        "end": 23,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP116",
+    "groupId": "ADG06-04",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-04a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I've never known the Treasurer to lie",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.",
+    "why": "해당 분석에서는 해당 인지동사의 NP+to절 보충어를 exceptional S로 허용합니다.",
+    "whyHighlights": [
+      {
+        "start": 23,
+        "end": 28,
+        "text": "절 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP117",
+    "groupId": "ADG06-04",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-04b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "They reported the injured climber to be in great pain",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.",
+    "why": "해당 분석에서는 해당 인지동사의 NP+to절 보충어를 exceptional S로 허용합니다.",
+    "whyHighlights": [
+      {
+        "start": 23,
+        "end": 28,
+        "text": "절 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP118",
+    "groupId": "ADG06-04",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-04c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I consider our trainees to be conscientious",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.",
+    "why": "해당 분석에서는 해당 인지동사의 NP+to절 보충어를 exceptional S로 허용합니다.",
+    "whyHighlights": [
+      {
+        "start": 23,
+        "end": 28,
+        "text": "절 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "d",
+    "variantLabel": "",
+    "id": "ADP119",
+    "groupId": "ADG06-04",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-04d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I believe for the Director to be right",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. believe의 명제 보충어 구조입니다. for the Director를 별도 수혜 부가어로 해석하지 않습니다.",
+    "why": "이 believe 보충구조에 for를 넣었으므로 비문으로 판단합니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP120",
+    "groupId": "ADG06-05",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-05a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I've never known for the Treasurer to lie",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.",
+    "why": "해당 분석의 같은 exceptional 보충절에는 overt complementizer for를 넣지 못합니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP121",
+    "groupId": "ADG06-05",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-05b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "They reported for the injured climber to be in great pain",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.",
+    "why": "해당 분석의 같은 exceptional 보충절에는 overt complementizer for를 넣지 못합니다.",
+    "whyHighlights": [],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP122",
+    "groupId": "ADG06-05",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-05c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I consider for our trainees to be conscientious",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. for가 있으면 절 도입 표지로 읽으며 별도 수혜 부가어로 읽지 않습니다.",
+    "why": "해당 분석의 같은 exceptional 보충절에는 overt complementizer for를 넣지 못합니다.",
+    "whyHighlights": [],
+    "subLabel": "d",
+    "variantLabel": "",
+    "id": "ADP123",
+    "groupId": "ADG06-05",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-05d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I believe it to be unlikely that she'll return",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 비지시적 형식 주어이며 주절의 지시적 목적어가 아니라 내포절 주어로 분석합니다.",
+    "why": "해당 분석에서는 비지시적 it을 해당 exceptional절의 주어로 허용합니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP124",
+    "groupId": "ADG06-06",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-06a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I've never known it to snow in August",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 날씨의 허사이며 의인화한 신이나 기계를 가리키는 지시 대명사가 아닙니다.",
+    "why": "날씨의 비지시적 it이 내포절 주어로 쓰입니다. 해당 분석에서는 known의 exceptional절에서 이를 허용합니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP125",
+    "groupId": "ADG06-06",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-06b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "They reported it to be likely that she'd retire",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 비지시적 형식 주어이며 주절의 지시적 목적어가 아니라 내포절 주어로 분석합니다.",
+    "why": "해당 분석에서는 비지시적 it을 해당 exceptional절의 주어로 허용합니다.",
+    "whyHighlights": [],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP126",
+    "groupId": "ADG06-06",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-06c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I consider it to be time to depart",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 비지시적 형식 주어이며 주절의 지시적 목적어가 아니라 내포절 주어로 분석합니다.",
+    "why": "해당 분석에서는 비지시적 it을 해당 exceptional절의 주어로 허용합니다.",
+    "whyHighlights": [],
+    "subLabel": "d",
+    "variantLabel": "",
+    "id": "ADP127",
+    "groupId": "ADG06-06",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-06d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The supervisors persuaded the shit to hit the fan",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. the shit hit the fan은 일이 터지거나 문제가 발생한다는 관용구 읽기입니다. 문자적 의인화는 제외합니다.",
+    "why": "관용구의 주어 부분은 설득 가능한 목적어로 해석되지 않아 관용적 읽기가 성립하지 않습니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP128",
+    "groupId": "ADG06-07",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-07a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The supervisors persuaded the fur to fly",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. the fur fly는 다툼이 일어나는 관용적 읽기이며 털을 의인화한 문자적 읽기는 제외합니다.",
+    "why": "관용구 the fur fly의 주어 부분을 설득 대상으로 썼으므로 관용적 해석에서는 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 24,
+        "end": 29,
+        "text": "설득 대상",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP129",
+    "groupId": "ADG06-07",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-07b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The supervisors persuaded there to be a strike",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. there는 존재문의 허사이며 장소나 이름을 가리키지 않습니다.",
+    "why": "허사 there는 설득 대상인 목적어가 될 수 없습니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 2,
+        "text": "허사",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 10,
+        "end": 15,
+        "text": "설득 대상",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP130",
+    "groupId": "ADG06-07",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-07c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The supervisors persuaded it to rain",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. it은 날씨의 허사이며 의인화한 신이나 기계를 가리키는 지시 대명사가 아닙니다.",
+    "why": "persuade의 목적어는 설득 대상이어야 합니다. 날씨의 비지시적 it을 목적어로 쓴 해당 분석의 비문입니다.",
+    "whyHighlights": [
+      {
+        "start": 15,
+        "end": 20,
+        "text": "설득 대상",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "d",
+    "variantLabel": "",
+    "id": "ADP131",
+    "groupId": "ADG06-07",
+    "bookChapter": 6,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "6-07d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I shall await the final decision",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 최종 결정을 기다린다는 뜻으로 읽으며 wait가 시간을 기다려 준다는 별도 타동적 의미는 제외합니다.",
+    "why": "await는 뒤에 NP 목적어를 직접 받을 수 있습니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP132",
+    "groupId": "ADG07-01",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "I shall wait the final decision",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 최종 결정을 기다린다는 뜻으로 읽으며 wait가 시간을 기다려 준다는 별도 타동적 의미는 제외합니다.",
+    "why": "해당 분석의 wait는 같은 의미라도 이 NP를 직접 목적어로 받지 못합니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP133",
+    "groupId": "ADG07-01",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel gave the parcel to the manager",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. the manager는 소포를 받는 수령인입니다. by를 장소·근접 부가어로 읽지 않습니다. 기반 자료 슬래시 선택지를 분리했습니다.",
+    "why": "소포를 받는 대상은 give가 선택하는 to-PP로 나타냅니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "to",
+    "id": "ADP134",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel gave the parcel by the manager",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. the manager는 소포를 받는 수령인입니다. by를 장소·근접 부가어로 읽지 않습니다. 기반 자료 슬래시 선택지를 분리했습니다.",
+    "why": "수령인을 나타내는 같은 보충어에서 by는 to를 대신하지 못합니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "수령인",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 13,
+        "end": 16,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "by",
+    "id": "ADP135",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel gave the parcel with the manager",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. the manager는 소포의 수령인입니다. with는 동반 부가어가 아니라 수령인 보충어 자리에 놓인 대안입니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "with",
+    "id": "ADP136",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel blamed the delay on Irene",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene에게 사건의 책임을 돌리는 의미에서 동사가 선택하는 전치사를 판단합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "해당 분석에서 해당 동사가 선택하는 PP 보충어의 전치사입니다.",
+    "whyHighlights": [
+      {
+        "start": 23,
+        "end": 26,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 30,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "on",
+    "id": "ADP137",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel blamed the delay at Irene",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene에게 사건의 책임을 돌리는 의미에서 동사가 선택하는 전치사를 판단합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "at",
+    "id": "ADP138",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel blamed the delay to Irene",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene에게 사건의 책임을 돌리는 의미에서 동사가 선택하는 전치사를 판단합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "to",
+    "id": "ADP139",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Online advertising can distract you from your studies",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. your studies는 주의가 이탈하는 대상이며 수단·행위자 같은 별도 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "해당 분석에서 해당 동사가 선택하는 PP 보충어의 전치사입니다.",
+    "whyHighlights": [
+      {
+        "start": 23,
+        "end": 26,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 30,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "from",
+    "id": "ADP140",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Online advertising can distract you by your studies",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. your studies는 주의가 이탈하는 대상이며 수단·행위자 같은 별도 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "by",
+    "id": "ADP141",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Online advertising can distract you out of your studies",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. your studies는 주의가 이탈하는 대상이며 수단·행위자 같은 별도 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "out of",
+    "id": "ADP142",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel's colleagues dissuaded him from further protests",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 추가 항의나 시위를 하지 않도록 말리는 의미입니다. 행동을 수단으로 삼는 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "해당 분석에서 해당 동사가 선택하는 PP 보충어의 전치사입니다.",
+    "whyHighlights": [
+      {
+        "start": 23,
+        "end": 26,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 30,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "d",
+    "variantLabel": "from",
+    "id": "ADP143",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel's colleagues dissuaded him at further protests",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 추가 항의나 시위를 하지 않도록 말리는 의미입니다. 행동을 수단으로 삼는 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "d",
+    "variantLabel": "at",
+    "id": "ADP144",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel's colleagues dissuaded him by further protests",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 추가 항의나 시위를 하지 않도록 말리는 의미입니다. 행동을 수단으로 삼는 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "d",
+    "variantLabel": "by",
+    "id": "ADP145",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel's colleagues dissuaded him into further protests",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 추가 항의나 시위를 하지 않도록 말리는 의미입니다. 행동을 수단으로 삼는 부가어 읽기는 제외합니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "같은 보충어 의미에서 해당 분석이 허용하지 않는 전치사 대안입니다.",
+    "whyHighlights": [
+      {
+        "start": 3,
+        "end": 6,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 29,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "d",
+    "variantLabel": "into",
+    "id": "ADP146",
+    "groupId": "ADG07-02",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-02d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel persuaded Irene that he was right",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene는 persuaded의 목적어이며 뒤늦게 덧붙인 호격이나 수정 발화가 아닙니다.",
+    "why": "해당 분석의 NP 보충어 Irene는 동사 직후에 오고 절 보충어가 뒤에 옵니다.",
+    "whyHighlights": [
+      {
+        "start": 7,
+        "end": 13,
+        "text": "NP 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 31,
+        "end": 36,
+        "text": "절 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP147",
+    "groupId": "ADG07-03",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel persuaded that he was right Irene",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. Irene는 persuaded의 목적어이며 뒤늦게 덧붙인 호격이나 수정 발화가 아닙니다.",
+    "why": "NP 보충어 Irene를 절 뒤로 보냈으므로 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 6,
+        "text": "NP 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP148",
+    "groupId": "ADG07-03",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-03b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The witness admitted to me that you are right",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. to me는 admitted에 딸린 전달 대상 보충어입니다. right to me에 붙어 내 판단에 옳다는 뜻이 되는 다른 구조는 제외합니다.",
+    "why": "해당 분석에서 admitted의 PP 보충어가 절 보충어에 앞서는 정문입니다.",
+    "whyHighlights": [
+      {
+        "start": 21,
+        "end": 24,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 26,
+        "end": 31,
+        "text": "절 보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP149",
+    "groupId": "ADG07-04",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-04a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The witness admitted that you are right to me",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. to me는 admitted에 딸린 전달 대상 보충어입니다. right to me에 붙어 내 판단에 옳다는 뜻이 되는 다른 구조는 제외합니다.",
+    "why": "admitted의 PP 보충어를 절 뒤에 배치했으므로 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 13,
+        "end": 16,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP150",
+    "groupId": "ADG07-04",
+    "bookChapter": 7,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "7-04b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Adrian has probably been studying",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. probably는 문장 전체에 대한 화자의 확률 판단 부사입니다. 다른 운율·삽입구 읽기는 제외합니다.",
+    "why": "해당 분석에서는 정형 has가 I로 이동하여 그 뒤 I–VP 경계에 문장부사가 올 수 있다고 분석합니다.",
+    "whyHighlights": [
+      {
+        "start": 9,
+        "end": 11,
+        "text": "정형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP151",
+    "groupId": "ADG08-01",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Adrian has been probably studying",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. probably는 문장 전체에 대한 화자의 확률 판단 부사입니다. 다른 운율·삽입구 읽기는 제외합니다.",
+    "why": "해당 분석에서 문장부사 probably를 VP 내부의 been 뒤에 둔 대비는 허용하지 않습니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP152",
+    "groupId": "ADG08-01",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel does have several unusual habits",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. does를 강조 조동사로 읽습니다. 기반 자료의 have/has 선택지를 분리했습니다.",
+    "why": "정형 does가 있으므로 뒤 have는 기본형입니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 2,
+        "text": "정형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 22,
+        "end": 25,
+        "text": "기본형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "have",
+    "id": "ADP153",
+    "groupId": "ADG08-02",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-02"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel does has several unusual habits",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. does를 강조 조동사로 읽습니다. 기반 자료의 have/has 선택지를 분리했습니다.",
+    "why": "정형 일치를 does가 이미 표시하는데 뒤 have까지 has로 썼으므로 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 0,
+        "end": 2,
+        "text": "정형",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 3,
+        "end": 5,
+        "text": "일치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "has",
+    "id": "ADP154",
+    "groupId": "ADG08-02",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-02"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The editor wondered if would he return next month",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. if는 조건절이 아니라 wonder의 간접의문 보충절을 도입합니다. 기반 자료의 whether/if 중 if를 선택했으며 별도 직접 인용은 아닙니다.",
+    "why": "C 자리를 if가 차지한 상태에서 would를 주어 앞으로 옮겼으므로 비문으로 판단합니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "if",
+    "id": "ADP155",
+    "groupId": "ADG08-03",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The editor wondered whether would he return next month",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. whether를 명시적으로 가진 간접의문절입니다. 별도의 직접 인용 발화가 아닙니다. 기반 자료의 whether/if 중 whether를 선택했습니다.",
+    "why": "해당 분석의 C 자리를 whether가 차지한 상태에서 would까지 주어 앞으로 이동한 대비는 비문입니다.",
+    "whyHighlights": [
+      {
+        "start": 46,
+        "end": 48,
+        "text": "이동",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "whether",
+    "id": "ADP156",
+    "groupId": "ADG08-03",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The editor wondered if he would return next month",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. if는 조건절이 아니라 wonder의 간접의문 보충절을 도입합니다. 기반 자료의 whether/if 중 if를 선택했습니다.",
+    "why": "명시적 if로 도입된 간접의문절에서 he 뒤에 would가 오는 해당 분석의 정문입니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "if",
+    "id": "ADP157",
+    "groupId": "ADG08-03",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-03b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The editor wondered whether he would return next month",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. whether를 명시적으로 가진 간접의문절입니다. 별도의 직접 인용 발화가 아닙니다. 기반 자료의 whether/if 중 whether를 선택했습니다.",
+    "why": "whether가 있는 간접의문절에서 주어 뒤에 would가 옵니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "whether",
+    "id": "ADP158",
+    "groupId": "ADG08-03",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-03b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "It was alleged that Morgan was an informant",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. It은 가주어이며 that절의 주어 Morgan는 내포절 안에 그대로 있습니다.",
+    "why": "가주어 It 뒤에 that절이 온 해당 분석의 정문입니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP159",
+    "groupId": "ADG08-04",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-04a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Morgan was alleged that — was an informant",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 해당 분석의 이동 공백 표시이며 발음하는 단어가 아닙니다. that절 내부 주어가 비어 있는 구조로 판단합니다.",
+    "why": "that으로 도입한 ordinary clause 주어 Morgan를 밖으로 수동 이동한 대비를 해당 분석에서는 허용하지 않습니다.",
+    "whyHighlights": [
+      {
+        "start": 45,
+        "end": 47,
+        "text": "이동",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP160",
+    "groupId": "ADG08-04",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-04b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "They seem to our coach — to be fools",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. They는 복수 사람들을 가리킵니다. 현대 단수 they나 집단을 하나의 역할로 보는 별도 읽기는 가정하지 않습니다. 기반 자료 선택지 분리입니다. —는 해당 분석에서 They의 원래 주어 자리를 표시하며 발음하지 않습니다.",
+    "why": "술어명사 fools는 내포절에서 기원한 복수 주어 They와 일치합니다.",
+    "whyHighlights": [
+      {
+        "start": 34,
+        "end": 36,
+        "text": "일치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "",
+    "variantLabel": "fools",
+    "id": "ADP161",
+    "groupId": "ADG08-05",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-05"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "They seem to our coach — to be a fool",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. They는 복수 사람들을 가리킵니다. 현대 단수 they나 집단을 하나의 역할로 보는 별도 읽기는 가정하지 않습니다. 기반 자료 선택지 분리입니다. —는 해당 분석에서 They의 원래 주어 자리를 표시하며 발음하지 않습니다.",
+    "why": "해당 분석의 복수 They 해석에서 단수 술어 a fool은 맞지 않습니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "a fool",
+    "id": "ADP162",
+    "groupId": "ADG08-05",
+    "bookChapter": 8,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "8-05"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "How good do you think Irene is — at Geometry?",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 how good의 원래 자리입니다. Irene’s는 소유격이 아니라 Irene is의 축약으로 읽습니다.",
+    "why": "how good가 이동한 공백 앞에서 축약하지 않은 is는 허용됩니다.",
+    "whyHighlights": [
+      {
+        "start": 21,
+        "end": 23,
+        "text": "축약",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP163",
+    "groupId": "ADG09-01",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "How good do you think Irene's — at Geometry?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 how good의 원래 자리입니다. Irene’s는 소유격이 아니라 Irene is의 축약으로 읽습니다.",
+    "why": "해당 분석에서는 is 바로 뒤의 이동 공백 때문에 축약형을 허용하지 않는다고 분석합니다.",
+    "whyHighlights": [
+      {
+        "start": 18,
+        "end": 23,
+        "text": "이동 공백",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 30,
+        "text": "축약",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP164",
+    "groupId": "ADG09-01",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel — whom you saw at the festival — is a colleague of mine",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 대시는 삽입적 관계절의 경계입니다. 제한적 관계절로 바꾸어 읽지 않습니다.",
+    "why": "삽입적인 비제한적 관계절에서 whom을 쓴 해당 분석의 정문입니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP165",
+    "groupId": "ADG09-02",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel — that you saw at the festival — is a colleague of mine",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 대시는 삽입적 관계절의 경계입니다. 제한적 관계절로 바꾸어 읽지 않습니다.",
+    "why": "해당 분석의 표준영어 비제한적 관계절에서는 that을 쓴 대비가 허용되지 않습니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP166",
+    "groupId": "ADG09-02",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel — you saw at the festival — is a colleague of mine",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 대시는 삽입적인 비제한적 관계절의 경계입니다. you saw at the festival은 Daniel을 수식하는 관계절이며 별도 독립 발화가 아닙니다.",
+    "why": "해당 분석에서는 비제한적 관계절에서 관계사를 생략한 zero relative를 허용하지 않습니다.",
+    "whyHighlights": [],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP167",
+    "groupId": "ADG09-02",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-02c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "the woman whose father retired",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. that’s는 that is/has의 축약이 아니라 속격 관계사로 쓰려 한 형태입니다. 기반 자료의 선택지를 분리했습니다.",
+    "why": "whose는 관계절 안의 father를 한정하는 속격입니다.",
+    "whyHighlights": [
+      {
+        "start": 27,
+        "end": 29,
+        "text": "속격",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "whose",
+    "id": "ADP168",
+    "groupId": "ADG09-03",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "the woman that's father retired",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. that’s는 that is/has의 축약이 아니라 속격 관계사로 쓰려 한 형태입니다. 기반 자료의 선택지를 분리했습니다.",
+    "why": "관계절 표지 that에 소유격 ’s를 붙여 whose처럼 쓴 해당 분석의 비문입니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "that’s",
+    "id": "ADP169",
+    "groupId": "ADG09-03",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "the dictionary whose cover was damaged",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. whose는 dictionary와 cover의 소유·부분 관계를 나타내는 속격 관계사입니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "해당 분석에서는 비인간 선행사 dictionary에도 속격 관계사 whose를 허용합니다.",
+    "whyHighlights": [
+      {
+        "start": 30,
+        "end": 32,
+        "text": "속격",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "whose",
+    "id": "ADP170",
+    "groupId": "ADG09-03",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-03b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "the dictionary that's cover was damaged",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. that’s는 that is/has의 축약이 아니라 속격 관계사로 쓰려 한 형태입니다. 기반 자료 슬래시 대안을 분리했습니다.",
+    "why": "해당 분석의 표준영어 분석에서 관계절 표지 that은 whose에 대응하는 속격 that’s를 갖지 않습니다.",
+    "whyHighlights": [
+      {
+        "start": 42,
+        "end": 44,
+        "text": "속격",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "that's",
+    "id": "ADP171",
+    "groupId": "ADG09-03",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 표현은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-03b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Who did Daniel engineer the dismissal of —?",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 who의 원래 자리입니다. 단순 단어순서가 아니라 NP의 주어/보충어 기능을 구분합니다.",
+    "why": "who를 동사 engineer의 보충어 NP 내부에서 추출한 해당 분석의 정문입니다.",
+    "whyHighlights": [
+      {
+        "start": 18,
+        "end": 21,
+        "text": "보충어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP172",
+    "groupId": "ADG09-04",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-04a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Who did the dismissal of — cause consternation?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 who의 원래 자리입니다. 단순 단어순서가 아니라 NP의 주어/보충어 기능을 구분합니다.",
+    "why": "who를 주어 NP the dismissal of — 내부에서 추출하여 해당 분석의 주어 섬 조건을 위반합니다.",
+    "whyHighlights": [
+      {
+        "start": 47,
+        "end": 51,
+        "text": "주어 섬",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP173",
+    "groupId": "ADG09-04",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-04b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Who did the coalition collapse after the dismissal of —?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. —는 who의 원래 자리이며 발음하지 않습니다. after the dismissal of —는 collapse를 수식하는 시간 부가어 PP입니다.",
+    "why": "해당 분석에서는 부가어 PP 내부에서 who를 추출한 이 예를 부가어 섬 제약 위반으로 제시합니다.",
+    "whyHighlights": [
+      {
+        "start": 9,
+        "end": 12,
+        "text": "부가어",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 35,
+        "end": 40,
+        "text": "부가어 섬",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP174",
+    "groupId": "ADG09-04",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-04c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She has left what where?",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 두 wh 표현이 원위치에 남은 다중 의문문입니다. 원책이 제시한 이 어순을 판단하며 모든 영어 질문에 도치가 필요하다고 가정하지 않습니다.",
+    "why": "해당 분석의 이 예문은 두 wh가 모두 원위치에 남는 형식을 허용합니다. wh를 반드시 하나 전치해야 한다는 주장이 아닙니다.",
+    "whyHighlights": [
+      {
+        "start": 22,
+        "end": 25,
+        "text": "원위치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 52,
+        "end": 54,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP175",
+    "groupId": "ADG09-05",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-05a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "What has she left where?",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 일반적인 영어 다중 wh 의문문으로 판정하며 다른 언어의 다중전치나 두 개의 별도 반문을 가정하지 않습니다.",
+    "why": "하나의 wh만 전치하고 다른 wh는 원위치에 두는 해당 분석의 영어 예입니다.",
+    "whyHighlights": [
+      {
+        "start": 8,
+        "end": 10,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 20,
+        "end": 23,
+        "text": "원위치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP176",
+    "groupId": "ADG09-05",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-05b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Where has she left what?",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. where만 전치하고 what은 left 뒤 원위치에 남긴 해당 분석의 다중 의문문입니다.",
+    "why": "해당 분석에서는 where를 전치하고 what을 원위치에 남긴 이 어순도 허용합니다.",
+    "whyHighlights": [
+      {
+        "start": 16,
+        "end": 18,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 30,
+        "text": "원위치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "c",
+    "variantLabel": "",
+    "id": "ADP177",
+    "groupId": "ADG09-05",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-05c"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "What where has she left?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 일반적인 영어 다중 wh 의문문으로 판정하며 다른 언어의 다중전치나 두 개의 별도 반문을 가정하지 않습니다.",
+    "why": "두 wh를 동시에 절 앞으로 보낸 대비는 해당 분석의 영어에서 허용되지 않습니다.",
+    "whyHighlights": [],
+    "subLabel": "d",
+    "variantLabel": "",
+    "id": "ADP178",
+    "groupId": "ADG09-05",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-05d"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Where what has she left?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. where와 what을 모두 하나의 절 앞으로 전치한 구조입니다. 두 개의 별도 반문이나 다른 언어의 다중전치로 읽지 않습니다.",
+    "why": "이 영어 다중 의문문에서 두 wh를 모두 전치했으므로 비문으로 판단합니다.",
+    "whyHighlights": [
+      {
+        "start": 23,
+        "end": 25,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "e",
+    "variantLabel": "",
+    "id": "ADP179",
+    "groupId": "ADG09-05",
+    "bookChapter": 9,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "9-05e"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She won't tell me what she will do —",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 원책이 제외한 semi-indirect speech나 직접인용이 아닌 일반 보충절입니다. —는 원책 이동 자리 표시입니다.",
+    "why": "간접의문 보충절에서 wh는 전치되지만 will은 주어 뒤에 남습니다.",
+    "whyHighlights": [
+      {
+        "start": 15,
+        "end": 17,
+        "text": "전치",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP180",
+    "groupId": "ADG10-01",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-01a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "She won't tell me what will she — do —",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 원책이 제외한 semi-indirect speech나 직접인용이 아닌 일반 보충절입니다. —는 원책 이동 자리 표시입니다.",
+    "why": "일반 간접의문절에 주어–조동사 도치를 추가한 해당 분석의 비문입니다.",
+    "whyHighlights": [],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP181",
+    "groupId": "ADG10-01",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-01b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Should we have called the ambulance service?",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. we’ve는 we have의 축약입니다. 해당 분석의 trace 분석으로 풀이하며 축약 가능 방언을 일반화하지 않습니다.",
+    "why": "have를 축약하지 않은 직접의문문은 해당 분석의 정문입니다.",
+    "whyHighlights": [
+      {
+        "start": 6,
+        "end": 8,
+        "text": "축약",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP182",
+    "groupId": "ADG10-02",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-02a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Should we've called the ambulance service",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. we’ve는 we have의 축약입니다. 해당 분석의 trace 분석으로 풀이하며 축약 가능 방언을 일반화하지 않습니다.",
+    "why": "해당 분석에서는 이동한 should의 흔적이 we와 have 사이에 있으므로 have 축약이 막힌다고 분석합니다.",
+    "whyHighlights": [
+      {
+        "start": 48,
+        "end": 50,
+        "text": "축약",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP183",
+    "groupId": "ADG10-02",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-02b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Who would they want to win?",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. who는 이기기를 바라는 사람, 즉 win의 주어입니다. 그들이 누구를 상으로 얻는다는 목적어 읽기는 제외합니다.",
+    "why": "who가 win의 주어인 해석에서 want to를 축약하지 않은 해당 분석의 정문입니다.",
+    "whyHighlights": [
+      {
+        "start": 28,
+        "end": 30,
+        "text": "축약",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP184",
+    "groupId": "ADG10-03",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-03a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Who would they wanna win?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. who는 이기기를 바라는 사람, 즉 win의 주어입니다. 그들이 누구를 상으로 얻는다는 목적어 읽기는 제외합니다.",
+    "why": "같은 내포절 주어 추출 해석에서는 want와 to 사이의 주어 흔적 때문에 해당 분석의 표준 방언에서 wanna 축약이 막힙니다.",
+    "whyHighlights": [
+      {
+        "start": 32,
+        "end": 37,
+        "text": "주어 흔적",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      },
+      {
+        "start": 63,
+        "end": 65,
+        "text": "축약",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP185",
+    "groupId": "ADG10-03",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-03b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Daniel is likely to believe Irene to be wrong",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 각 이름의 원래 역할은 Daniel이 믿는 사람이고 Irene가 틀렸다고 여겨지는 사람입니다.",
+    "why": "해당 분석에서는 가까운 내포절 주어 Daniel을 주절 주어로 올릴 수 있습니다.",
+    "whyHighlights": [],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP186",
+    "groupId": "ADG10-04",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-04a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Irene is likely Daniel to believe to be wrong",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. 각 이름의 원래 역할은 Daniel이 믿는 사람이고 Irene가 틀렸다고 여겨지는 사람입니다.",
+    "why": "Daniel을 남겨 둔 채 더 안쪽 Irene를 한 번에 주절 주어로 올리면 해당 분석의 NP 이동 경계 조건을 위반합니다.",
+    "whyHighlights": [
+      {
+        "start": 53,
+        "end": 55,
+        "text": "이동",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP187",
+    "groupId": "ADG10-04",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-04b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "The reporters might wonder what she said to who",
+    "ans": true,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. what과 who는 모두 wonder의 내포 의문절에 속하며, who는 said to 뒤의 원위치에 남아 있습니다.",
+    "why": "해당 분석에서는 what을 내포 의문절 앞에 두고 who를 그 안에 남긴 다중 의문문을 제시합니다.",
+    "whyHighlights": [],
+    "subLabel": "",
+    "variantLabel": "",
+    "id": "ADP188",
+    "groupId": "ADG10-05",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-05"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "Who might the reporters wonder what she said to?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. who는 said to의 상대입니다. what이 이끄는 간접의문절을 넘어 그 who를 묻는 해석으로 판단합니다.",
+    "why": "이미 what이 차지한 내포 wh 자리 때문에 who의 중간 이동 경로가 막힙니다.",
+    "whyHighlights": [
+      {
+        "start": 31,
+        "end": 39,
+        "text": "중간 이동 경로",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "a",
+    "variantLabel": "",
+    "id": "ADP189",
+    "groupId": "ADG10-06",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-06a"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  },
+  {
+    "sentence": "To whom might the reporters wonder what she said?",
+    "ans": false,
+    "condition": "Radford의 분석틀을 적용한 변형예문입니다. to whom은 she said의 전달 대상 PP이며 what이 이끄는 내포 의문절 밖으로 이동한 해석입니다.",
+    "why": "해당 분석에서는 who만 추출한 NP 추출형뿐 아니라 to whom PP 전체를 추출한 PP 추출형도 허용하지 않습니다. 이미 what이 차지한 내포 wh 위치 때문에 중간 이동 경로가 막힙니다.",
+    "whyHighlights": [
+      {
+        "start": 94,
+        "end": 102,
+        "text": "중간 이동 경로",
+        "style": [
+          "bold",
+          "underline"
+        ]
+      }
+    ],
+    "subLabel": "b",
+    "variantLabel": "",
+    "id": "ADP190",
+    "groupId": "ADG10-06",
+    "bookChapter": 10,
+    "ask": "제시된 조건에서 이 문장은 문법적으로 허용된다.",
+    "source": {
+      "work": "Andrew Radford, Transformational Grammar: A First Course",
+      "adaptationLabel": "원책 개념 기반 변형예문",
+      "example": "10-06b"
+    },
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true,
+      "directExamExample": false
+    },
+    "reviewStatus": "independent-adaptation-review-green",
+    "judgmentType": "grammar"
+  }
+];
+window.BOOK_GROUPS = [
+  {
+    "id": "ADG02-01",
+    "bookChapter": 2,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP001",
+      "ADP002",
+      "ADP003"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-02",
+    "bookChapter": 2,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP004",
+      "ADP005",
+      "ADP006"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-03",
+    "bookChapter": 2,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP007"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-04",
+    "bookChapter": 2,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP008"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-05",
+    "bookChapter": 2,
+    "bookExampleNumber": 5,
+    "itemIds": [
+      "ADP009"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-06",
+    "bookChapter": 2,
+    "bookExampleNumber": 6,
+    "itemIds": [
+      "ADP010"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-07",
+    "bookChapter": 2,
+    "bookExampleNumber": 7,
+    "itemIds": [
+      "ADP011"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-08",
+    "bookChapter": 2,
+    "bookExampleNumber": 8,
+    "itemIds": [
+      "ADP012"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-09",
+    "bookChapter": 2,
+    "bookExampleNumber": 9,
+    "itemIds": [
+      "ADP013",
+      "ADP014",
+      "ADP015",
+      "ADP016",
+      "ADP017",
+      "ADP018",
+      "ADP019"
+    ],
+    "importedSubExampleCount": 5,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 7,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-10",
+    "bookChapter": 2,
+    "bookExampleNumber": 10,
+    "itemIds": [
+      "ADP020"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-11",
+    "bookChapter": 2,
+    "bookExampleNumber": 11,
+    "itemIds": [
+      "ADP021",
+      "ADP022"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-12",
+    "bookChapter": 2,
+    "bookExampleNumber": 12,
+    "itemIds": [
+      "ADP023"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-13",
+    "bookChapter": 2,
+    "bookExampleNumber": 13,
+    "itemIds": [
+      "ADP024"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-14",
+    "bookChapter": 2,
+    "bookExampleNumber": 14,
+    "itemIds": [
+      "ADP025"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-15",
+    "bookChapter": 2,
+    "bookExampleNumber": 15,
+    "itemIds": [
+      "ADP026"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-16",
+    "bookChapter": 2,
+    "bookExampleNumber": 16,
+    "itemIds": [
+      "ADP027"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-17",
+    "bookChapter": 2,
+    "bookExampleNumber": 17,
+    "itemIds": [
+      "ADP028"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-18",
+    "bookChapter": 2,
+    "bookExampleNumber": 18,
+    "itemIds": [
+      "ADP029"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-19",
+    "bookChapter": 2,
+    "bookExampleNumber": 19,
+    "itemIds": [
+      "ADP030"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-20",
+    "bookChapter": 2,
+    "bookExampleNumber": 20,
+    "itemIds": [
+      "ADP031"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-21",
+    "bookChapter": 2,
+    "bookExampleNumber": 21,
+    "itemIds": [
+      "ADP032"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-22",
+    "bookChapter": 2,
+    "bookExampleNumber": 22,
+    "itemIds": [
+      "ADP033",
+      "ADP034",
+      "ADP035"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-23",
+    "bookChapter": 2,
+    "bookExampleNumber": 23,
+    "itemIds": [
+      "ADP036"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-24",
+    "bookChapter": 2,
+    "bookExampleNumber": 24,
+    "itemIds": [
+      "ADP037"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-25",
+    "bookChapter": 2,
+    "bookExampleNumber": 25,
+    "itemIds": [
+      "ADP038"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-26",
+    "bookChapter": 2,
+    "bookExampleNumber": 26,
+    "itemIds": [
+      "ADP039"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-27",
+    "bookChapter": 2,
+    "bookExampleNumber": 27,
+    "itemIds": [
+      "ADP040",
+      "ADP041"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-28",
+    "bookChapter": 2,
+    "bookExampleNumber": 28,
+    "itemIds": [
+      "ADP042",
+      "ADP043"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-01",
+    "bookChapter": 3,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP044",
+      "ADP045",
+      "ADP046"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-02",
+    "bookChapter": 3,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP047",
+      "ADP048",
+      "ADP049"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-03",
+    "bookChapter": 3,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP050"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-04",
+    "bookChapter": 3,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP051"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-05",
+    "bookChapter": 3,
+    "bookExampleNumber": 5,
+    "itemIds": [
+      "ADP052"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-06",
+    "bookChapter": 3,
+    "bookExampleNumber": 6,
+    "itemIds": [
+      "ADP053"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-07",
+    "bookChapter": 3,
+    "bookExampleNumber": 7,
+    "itemIds": [
+      "ADP054"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-08",
+    "bookChapter": 3,
+    "bookExampleNumber": 8,
+    "itemIds": [
+      "ADP055"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-09",
+    "bookChapter": 3,
+    "bookExampleNumber": 9,
+    "itemIds": [
+      "ADP056"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-10",
+    "bookChapter": 3,
+    "bookExampleNumber": 10,
+    "itemIds": [
+      "ADP057",
+      "ADP058"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-11",
+    "bookChapter": 3,
+    "bookExampleNumber": 11,
+    "itemIds": [
+      "ADP059",
+      "ADP060"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-12",
+    "bookChapter": 3,
+    "bookExampleNumber": 12,
+    "itemIds": [
+      "ADP061",
+      "ADP062",
+      "ADP063"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-13",
+    "bookChapter": 3,
+    "bookExampleNumber": 13,
+    "itemIds": [
+      "ADP064",
+      "ADP065"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-14",
+    "bookChapter": 3,
+    "bookExampleNumber": 14,
+    "itemIds": [
+      "ADP066",
+      "ADP067"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG02-29",
+    "bookChapter": 2,
+    "bookExampleNumber": 29,
+    "itemIds": [
+      "ADP068"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-15",
+    "bookChapter": 3,
+    "bookExampleNumber": 15,
+    "itemIds": [
+      "ADP069",
+      "ADP070",
+      "ADP071"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-16",
+    "bookChapter": 3,
+    "bookExampleNumber": 16,
+    "itemIds": [
+      "ADP072"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG03-17",
+    "bookChapter": 3,
+    "bookExampleNumber": 17,
+    "itemIds": [
+      "ADP073"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": true,
+    "completeness": "restored-selected-items-only-not-full-source-group",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG04-01",
+    "bookChapter": 4,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP074",
+      "ADP075"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG04-02",
+    "bookChapter": 4,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP076",
+      "ADP077"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG04-03",
+    "bookChapter": 4,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP078",
+      "ADP079"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG04-04",
+    "bookChapter": 4,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP080"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG04-05",
+    "bookChapter": 4,
+    "bookExampleNumber": 5,
+    "itemIds": [
+      "ADP081",
+      "ADP082"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG04-06",
+    "bookChapter": 4,
+    "bookExampleNumber": 6,
+    "itemIds": [
+      "ADP083",
+      "ADP084"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG04-07",
+    "bookChapter": 4,
+    "bookExampleNumber": 7,
+    "itemIds": [
+      "ADP085",
+      "ADP086"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-01",
+    "bookChapter": 5,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP087",
+      "ADP088"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-02",
+    "bookChapter": 5,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP089",
+      "ADP090"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-03",
+    "bookChapter": 5,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP091",
+      "ADP092"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-04",
+    "bookChapter": 5,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP093",
+      "ADP094"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-05",
+    "bookChapter": 5,
+    "bookExampleNumber": 5,
+    "itemIds": [
+      "ADP095",
+      "ADP096",
+      "ADP097",
+      "ADP098",
+      "ADP099"
+    ],
+    "importedSubExampleCount": 5,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 5,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-06",
+    "bookChapter": 5,
+    "bookExampleNumber": 6,
+    "itemIds": [
+      "ADP100",
+      "ADP101"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-07",
+    "bookChapter": 5,
+    "bookExampleNumber": 7,
+    "itemIds": [
+      "ADP102",
+      "ADP103"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-08",
+    "bookChapter": 5,
+    "bookExampleNumber": 8,
+    "itemIds": [
+      "ADP104"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG05-09",
+    "bookChapter": 5,
+    "bookExampleNumber": 9,
+    "itemIds": [
+      "ADP105"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG06-01",
+    "bookChapter": 6,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP106",
+      "ADP107",
+      "ADP108",
+      "ADP109"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 4,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG06-02",
+    "bookChapter": 6,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP110",
+      "ADP111",
+      "ADP112",
+      "ADP113"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 4,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG06-03",
+    "bookChapter": 6,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP114",
+      "ADP115"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG06-04",
+    "bookChapter": 6,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP116",
+      "ADP117",
+      "ADP118",
+      "ADP119"
+    ],
+    "importedSubExampleCount": 4,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 4,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG06-05",
+    "bookChapter": 6,
+    "bookExampleNumber": 5,
+    "itemIds": [
+      "ADP120",
+      "ADP121",
+      "ADP122",
+      "ADP123"
+    ],
+    "importedSubExampleCount": 4,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 4,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG06-06",
+    "bookChapter": 6,
+    "bookExampleNumber": 6,
+    "itemIds": [
+      "ADP124",
+      "ADP125",
+      "ADP126",
+      "ADP127"
+    ],
+    "importedSubExampleCount": 4,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 4,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG06-07",
+    "bookChapter": 6,
+    "bookExampleNumber": 7,
+    "itemIds": [
+      "ADP128",
+      "ADP129",
+      "ADP130",
+      "ADP131"
+    ],
+    "importedSubExampleCount": 4,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 4,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG07-01",
+    "bookChapter": 7,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP132",
+      "ADP133"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG07-02",
+    "bookChapter": 7,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP134",
+      "ADP135",
+      "ADP136",
+      "ADP137",
+      "ADP138",
+      "ADP139",
+      "ADP140",
+      "ADP141",
+      "ADP142",
+      "ADP143",
+      "ADP144",
+      "ADP145",
+      "ADP146"
+    ],
+    "importedSubExampleCount": 4,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 13,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG07-03",
+    "bookChapter": 7,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP147",
+      "ADP148"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG07-04",
+    "bookChapter": 7,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP149",
+      "ADP150"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG08-01",
+    "bookChapter": 8,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP151",
+      "ADP152"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG08-02",
+    "bookChapter": 8,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP153",
+      "ADP154"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG08-03",
+    "bookChapter": 8,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP155",
+      "ADP156",
+      "ADP157",
+      "ADP158"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 4,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG08-04",
+    "bookChapter": 8,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP159",
+      "ADP160"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG08-05",
+    "bookChapter": 8,
+    "bookExampleNumber": 5,
+    "itemIds": [
+      "ADP161",
+      "ADP162"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG09-01",
+    "bookChapter": 9,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP163",
+      "ADP164"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG09-02",
+    "bookChapter": 9,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP165",
+      "ADP166",
+      "ADP167"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG09-03",
+    "bookChapter": 9,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP168",
+      "ADP169",
+      "ADP170",
+      "ADP171"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 4,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG09-04",
+    "bookChapter": 9,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP172",
+      "ADP173",
+      "ADP174"
+    ],
+    "importedSubExampleCount": 3,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 3,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG09-05",
+    "bookChapter": 9,
+    "bookExampleNumber": 5,
+    "itemIds": [
+      "ADP175",
+      "ADP176",
+      "ADP177",
+      "ADP178",
+      "ADP179"
+    ],
+    "importedSubExampleCount": 5,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 5,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG10-01",
+    "bookChapter": 10,
+    "bookExampleNumber": 1,
+    "itemIds": [
+      "ADP180",
+      "ADP181"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG10-02",
+    "bookChapter": 10,
+    "bookExampleNumber": 2,
+    "itemIds": [
+      "ADP182",
+      "ADP183"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG10-03",
+    "bookChapter": 10,
+    "bookExampleNumber": 3,
+    "itemIds": [
+      "ADP184",
+      "ADP185"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG10-04",
+    "bookChapter": 10,
+    "bookExampleNumber": 4,
+    "itemIds": [
+      "ADP186",
+      "ADP187"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG10-05",
+    "bookChapter": 10,
+    "bookExampleNumber": 5,
+    "itemIds": [
+      "ADP188"
+    ],
+    "importedSubExampleCount": 1,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 1,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  },
+  {
+    "id": "ADG10-06",
+    "bookChapter": 10,
+    "bookExampleNumber": 6,
+    "itemIds": [
+      "ADP189",
+      "ADP190"
+    ],
+    "importedSubExampleCount": 2,
+    "sourceSubExampleCount": null,
+    "displayQuestionCount": 2,
+    "restored": false,
+    "completeness": "all-source-sublabels-and-printed-alternatives-present",
+    "comparisonExplanation": "같은 조건에서 표현이 달라지는 이유를 비교합니다. 굵은 밑줄은 판정의 핵심입니다.",
+    "provenance": {
+      "kind": "adapted-book-example",
+      "originalMappingPrivate": true
+    }
+  }
+];
