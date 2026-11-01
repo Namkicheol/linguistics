@@ -2,3 +2,5 @@
 
 /* Area → book → practice: never mix subjects in one long selector. */
 .book-grid{display:block}.book-area{margin:22px 0}.book-area h2{font-size:16px;margin:0 0 10px}.area-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.book-card{aspect-ratio:auto;min-height:128px}.book-area:has(.book-card[aria-pressed=true]) h2{color:#236347}@media(max-width:480px){.area-books{gap:8px}.book-card{min-height:116px;padding:13px}.book-area h2{font-size:15px}}
+
+body{padding-bottom:calc(90px + env(safe-area-inset-bottom))}nav[aria-label="문제 이동"]{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;background:#f8fbf9;border-top:1px solid #c5d8ca;padding:10px max(12px,calc((100vw - 900px)/2)) calc(10px + env(safe-area-inset-bottom));margin:0}nav[aria-label="문제 이동"] button{min-height:48px;min-width:100px}nav[aria-label="문제 이동"] label,#go{display:none}.setup>summary{min-height:44px;cursor:pointer}[hidden]{display:none!important}
