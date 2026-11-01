@@ -18,3 +18,7 @@
 
 
 #sp-emoji,#sp-clap{animation:none!important}summary{min-height:44px} .data-box{overflow-x:auto} @media(prefers-reduced-motion:reduce){[id^="sp-"]{animation:none!important;transition:none!important}}
+
+.setup:not([open]){padding:0 14px}.setup>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:650}.heading{margin:16px 0}.heading h1{font-size:26px}.question-controls label,.question-controls input,.question-controls #jump-total,.question-controls #jump-go{display:none}
+
+body{padding-bottom:calc(90px + env(safe-area-inset-bottom))}.question-controls{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;gap:12px;background:#f8fbf9;border-top:1px solid #c5d8ca;padding:10px max(12px,calc((100vw - 900px)/2)) calc(10px + env(safe-area-inset-bottom));margin:0}.question-controls button{min-height:48px;min-width:100px}.question-controls label,.question-controls input,.question-controls #jump-total,.question-controls #jump-go{display:none}
