@@ -15,3 +15,6 @@
 .book-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0 8px}.book-cards button{text-align:left;padding:18px;border-radius:13px;min-height:96px;border:1px solid #c6d9cd;background:white}.book-cards strong{display:block;font-size:18px}.book-cards span{display:block;font-size:13px;color:#60776a;margin-top:5px}.book-cards [aria-pressed=true]{border:2px solid #236347;background:#edf7f0;padding:17px}.book-exam-link{font-size:13px;text-align:right;margin:8px 0 18px}@media(max-width:480px){.book-cards{gap:8px}.book-cards button{padding:13px;min-height:91px}.book-cards [aria-pressed=true]{padding:12px}.book-cards strong{font-size:16px}.book-cards span{font-size:12px}}
 
 .book-cards{display:block}.concept-area{margin:20px 0}.concept-area h2{font-size:16px;margin:0 0 9px}.concept-area-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.concept-area-books button{width:100%}
+
+
+#sp-emoji,#sp-clap{animation:none!important}summary{min-height:44px} .data-box{overflow-x:auto} @media(prefers-reduced-motion:reduce){[id^="sp-"]{animation:none!important;transition:none!important}}
