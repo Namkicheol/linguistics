@@ -7060,7 +7060,7 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Both reports match the payment table; the different positions of each alone do not change the total.",
         "ans": true,
         "context": "명시한 문맥과 현대 표준영어의 읽기로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>지급표: 참가자3명에게각각토큰2개,총6개.<br>A: We gave the participants each two tokens.<br>B: We gave the participants two tokens each.</p>",
+        "data": "<p><strong>판단 자료</strong><br>지급표: 참가자 3명에게 각각 토큰 2개, 총 6개.<br>A: We gave the participants each two tokens.<br>B: We gave the participants two tokens each.</p>",
         "why": "each는 수령자별 분배를 나타내며 해당 간접목적어 뒤나 수량 표현 뒤에 올 수 있다. 같은 지정된 분배 읽기를 보존한다.",
         "provenance": {
           "kind": "original",
@@ -7187,7 +7187,7 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Both placements can refer to all participants in the infinitival clause; all does not shift to modifying the entirety of the main-clause I.",
         "ans": true,
         "context": "명시한 문맥과 현대 표준영어의 읽기로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>배정 인원 A·B·C가 모두 화재훈련에 참석하도록 바란다.<br>A: I want the trainees all to attend the drill.<br>B: I want the trainees to all attend the drill.<br>all은세훈련생전체를뜻한다.</p>",
+        "data": "<p><strong>판단 자료</strong><br>배정 인원 A·B·C가 모두 화재훈련에 참석하도록 바란다.<br>A: I want the trainees all to attend the drill.<br>B: I want the trainees to all attend the drill.<br>all은 세 훈련생 전체를 뜻한다.</p>",
         "why": "이 부정사절에서 all은 내포절 주어와 연결되어 to 앞이나 뒤에 나타날 수 있다. 모든 뒤쪽 위치를 자유롭게 허용한다는 뜻은 아니다.",
         "provenance": {
           "kind": "original",
@@ -10304,7 +10304,7 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The enormously below expresses the degree of a price increase and need not modify only a comparative adjective.",
         "ans": true,
         "context": "명시한 문맥과 현대 표준영어의 읽기로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>가격 기록: 10에서100으로상승.<br>보고: The price increased enormously.<br>행동의 조심스러운 방식이나 발생 장소를 설명하려는 문장이 아니다.</p>",
+        "data": "<p><strong>판단 자료</strong><br>가격 기록: 10에서 100으로 상승.<br>보고: The price increased enormously.<br>행동의 조심스러운 방식이나 발생 장소를 설명하려는 문장이 아니다.</p>",
         "why": "정도 부사는 변화나 동사구가 나타내는 정도를 수식할 수도 있다. adjective의 비교급 수식에만 한정되지 않는다.",
         "provenance": {
           "kind": "original",
@@ -11565,7 +11565,7 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Under the specified emphatic reading with a pause, sentence-initial myself must be regarded as an error replacing the verb's subject.",
         "ans": false,
         "context": "명시한 문맥과 현대 표준영어의 읽기로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>발언 전사: Myself, I would check the figures once more.<br>화자는 다른 사람의 선택과 구별하여 자신의 의견을 강조하며 myself뒤에 짧게쉰다. 주어I가뒤에따로있다.</p>",
+        "data": "<p><strong>판단 자료</strong><br>발언 전사: Myself, I would check the figures once more.<br>화자는 다른 사람의 선택과 구별하여 자신의 의견을 강조하며 myself 뒤에 짧게 쉰다. 주어 I가 뒤에 따로 있다.</p>",
         "why": "이 대화적 사용에서 myself는 별도 강조 성분이고 I가 주어이다. 이것을 Myself checked...처럼 인칭대명사를 대체한 주어형과 혼동하지 않는다.",
         "provenance": {
           "kind": "original",
@@ -18412,7 +18412,7 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Because A and B are individually possible, C, combining their initial portions, is automatically licensed as the same standard structure.",
         "ans": false,
         "context": "명시한 문맥과 현대 표준영어의 읽기로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>A: a chamber in which to store the samples<br>B: a chamber for the team to store the samples in<br>C: a chamber in which for the team to store the samples<br>편집기는 상대절 두형식을 단순결합했다.</p>",
+        "data": "<p><strong>판단 자료</strong><br>A: a chamber in which to store the samples<br>B: a chamber for the team to store the samples in<br>C: a chamber in which for the team to store the samples<br>편집기는 상대절 두 형식을 단순 결합했다.</p>",
         "why": "전치사+관계사로 시작하는 이 부정사 관계절과 for+명시주어 형식은 이 방식으로 결합하지 않는다. 각 대안의 허용성이 결합형의 허용성을 보장하지 않는다.",
         "provenance": {
           "kind": "original",
@@ -22953,7 +22953,7 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The contrasting focus is the person who approved something, not the thing approved.",
         "ans": true,
         "context": "제시된 문맥의 현대 표준영어로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>기록에는 Lee가 서명했다. 다른 사람이 Kim이라고 잘못 말하자: It was Lee who approved the request, not Kim.</p>",
+        "data": "<p><strong>판단 자료</strong><br>기록에는 Lee가 요청을 승인했다. 다른 사람이 Kim이라고 잘못 말하자: It was Lee who approved the request, not Kim.</p>",
         "why": "it+be 뒤의 성분이 초점이며 이 문맥에서는 행위자 식별을 바로잡는다.",
         "provenance": {
           "kind": "original",
@@ -24252,7 +24252,7 @@ window.EXAMPLE_OX_BANKS = [
         "text": "when, which is possible with a time focus, can always occupy the same position with a person focus.",
         "ans": false,
         "context": "명시한 문맥과 현대 표준영어의 읽기로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>A: It was on Friday that we met. (시간 초점)<br>B: It was Hana who greeted us. (사람 초점)<br>편집기는 B의who를when으로바꾸며“cleft표지라모두같다”고한다.</p>",
+        "data": "<p><strong>판단 자료</strong><br>A: It was on Friday that we met. (시간 초점)<br>B: It was Hana who greeted us. (사람 초점)<br>편집기는 B의 who를 when으로 바꾸며 “cleft 표지라 모두 같다”고 한다.</p>",
         "why": "cleft 연결 표지의 선택은 초점의 종류와 관계를 따른다. 시간용when의 가능성을 사람 초점으로 기계적으로 확장하지 않는다.",
         "provenance": {
           "kind": "original",
@@ -24293,7 +24293,7 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Of the two word orders given for a supplementary as-clause, the non-inverted order cannot be categorically judged erroneous in all modern English.",
         "ans": true,
         "context": "명시한 문맥과 현대 표준영어의 읽기로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>A: Our lab uses the revised protocol, as do several partner labs.<br>B: Our lab uses the revised protocol, as several partner labs do.<br>as는양보절이아니라같은사실을덧붙인다.</p>",
+        "data": "<p><strong>판단 자료</strong><br>A: Our lab uses the revised protocol, as do several partner labs.<br>B: Our lab uses the revised protocol, as several partner labs do.<br>as는 양보절이 아니라 같은 사실을 덧붙인다.</p>",
         "why": "이 용도의 as절에서는 도치형과 비도치형이 사용될 수 있다. neither/so의 특정 도치 패턴을 모든 연결어에 동일하게 강제하지 않는다.",
         "provenance": {
           "kind": "original",
@@ -30668,7 +30668,7 @@ window.EXAMPLE_OX_BANKS = [
         "unit": 3,
         "src": "SET 03",
         "cat": "Stress · 표시와 이동",
-        "text": "In this transcription, the /ɡræ/ syllable in graphic bears primary stress.",
+        "text": "In this transcription, the /ɡræ/ syllable in photographic bears primary stress.",
         "ans": true,
         "focus": "ˈɡræ · primary",
         "correct": "제안한 분석이 맞습니다.",
@@ -36655,7 +36655,7 @@ window.EXAMPLE_OX_BANKS = [
         "cat": "Ch.8 · L2 phonology",
         "concept": "l2-contrast",
         "data": "가상 interlanguage 규칙: 원래 목표 /t/는 /i/앞에서[tʃ]가되지만, 목표 /θ/를대체해생긴[t]는 같은/i/앞에서도[t]로남는다.",
-        "text": "Even with the same surface [t], processing differs depending on the path from the target.",
+        "text": "Even with the same intermediate [t], the final realization differs depending on the path from the target.",
         "ans": true,
         "why": "대체음까지 동일하게 바꾸면 목표 대립이 합쳐질 수 있습니다. 이 예는 대체음의 경로를 구별해 대립을 보존하는 deflected-contrast형 분석을 보여 줍니다.",
         "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-contrast",
