@@ -120,14 +120,14 @@ body{font-family:'Noto Sans KR',sans-serif;background:#f5f4ee;background-image:r
 <div id="rb" style="display:none;max-width:720px;margin:0 auto 14px;padding:0 8px">
   <div style="background:rgba(59,63,134,.08);border:1.5px solid rgba(59,63,134,.3);border-radius:12px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
     <span id="rb-msg" style="font-size:13px;color:#1a1f3a;font-family:'JetBrains Mono',monospace;line-height:1.5"></span>
-    <button onclick="freshStart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">처음부터</button>
+    <button onclick="restart()" style="padding:10px 22px;background:#c62828;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;white-space:nowrap;flex-shrink:0">현재 회차 처음부터</button>
   </div>
 </div>
 <div class="mode-bar">
   <button class="mode-btn active" id="btn-normal" onclick="setMode('normal')">📋 기본 순서</button>
   <button class="mode-btn" id="btn-random" onclick="setMode('random')">🔀 랜덤</button>
 </div>
-<div class="quiz-tools"><label for="unit-filter">학습 범위</label><select id="unit-filter" onchange="setUnit(this.value)"><option value="0">전체 9 UNIT · 36문항</option><option value="1">UNIT 01 · Tense / Aspect</option><option value="2">UNIT 02 · Modals / Negation</option><option value="3">UNIT 03 · Passive / Discourse</option><option value="4">UNIT 04 · Relative / Content Clauses</option><option value="5">UNIT 05 · Extraposition / Tough</option><option value="6">UNIT 06 · Inversion</option><option value="7">UNIT 07 · Multiword Verbs</option><option value="8">UNIT 08 · Definite Reference</option><option value="9">UNIT 09 · Adjective Distribution</option></select><button class="restart-btn" onclick="restart()">현재 범위 다시 풀기</button><button class="restart-btn" id="retry-wrong" onclick="retryWrong()" disabled>오답만 다시 풀기</button><p>범위·순서를 바꾸거나 다시 풀면 현재 회차가 새로 시작됩니다. 최고 기록은 전체 36문항 회차만 저장합니다.</p></div><nav id="nav" aria-label="문항 이동"></nav>
+<div class="quiz-tools"><label for="unit-filter">학습 범위</label><select id="unit-filter" onchange="setUnit(this.value)"><option value="0">전체 9 UNIT · 36문항</option><option value="1">UNIT 01 · Tense / Aspect</option><option value="2">UNIT 02 · Modals / Negation</option><option value="3">UNIT 03 · Passive / Discourse</option><option value="4">UNIT 04 · Relative / Content Clauses</option><option value="5">UNIT 05 · Extraposition / Tough</option><option value="6">UNIT 06 · Inversion</option><option value="7">UNIT 07 · Multiword Verbs</option><option value="8">UNIT 08 · Definite Reference</option><option value="9">UNIT 09 · Adjective Distribution</option></select><button class="restart-btn" onclick="restart()">현재 범위 다시 풀기</button><button class="restart-btn" id="retry-wrong" onclick="retryWrong()" disabled>오답만 다시 풀기</button><button class="restart-btn" id="resume-primary" onclick="resumePrimary()" hidden>원래 풀이로 돌아가기</button><p>범위별로 풀이가 따로 저장됩니다. 다시 풀기는 현재 회차에만 적용됩니다. 최고 기록은 전체 회차만 저장합니다.</p><p id="progress-save-status" role="status"></p></div><nav id="nav" aria-label="문항 이동"></nav>
 <div class="wrap">
   <div id="qa"></div>
   <div class="score-card" id="sc">
@@ -627,24 +627,105 @@ const Q=[
   }
 ];
 const TOTAL=Q.length;
-const SAVE_KEY='ox_school_grammar_v1';
+const LEGACY_KEY='ox_school_grammar_v1';
+const PROGRESS_PREFIX='ox_school_grammar_v2:';
+const LAST_SCOPE_KEY=PROGRESS_PREFIX+'last';
+// Frozen pre-v2 ID order, independent of current Q and TOTAL.
+const LEGACY_IDS=Array.from({length:36},(_,i)=>'SG'+String(1+Math.floor(i/4)).padStart(2,'0')+'-0'+(1+i%4));
+const indexById=new Map(Q.map((q,i)=>[q.id,i]));
 let answers=Array(TOTAL).fill(null),cur=0,mode='normal',unit=0,order=Q.map((_,i)=>i),retry=false;
+let primary=null,seenRaw=null;
 const el=id=>document.getElementById(id);
-function scopedIds(){return Q.map((_,i)=>i).filter(i=>!unit||Q[i].unit===unit);}
+function scopedIds(scope=unit){return Q.map((_,i)=>i).filter(i=>!scope||Q[i].unit===scope);}
 function getScore(){return order.filter(i=>answers[i]!==null&&answers[i]===Q[i].ans).length;}
-function saveProgress(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({v:1,answers,cur,mode,unit,order,retry}));}catch(e){}}
-function clearProgress(){try{localStorage.removeItem(SAVE_KEY);}catch(e){}}
-function start(ids,isRetry=false){
- order=[...ids]; if(!order.length)return;
- if(mode==='random'){for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}}else order.sort((a,b)=>a-b);
- answers=Array(TOTAL).fill(null);cur=0;retry=isRetry;el('rb').style.display='none';saveProgress();render();
+function readStorage(key){try{return localStorage.getItem(key);}catch(e){return null;}}
+function writeStorage(key,value){try{localStorage.setItem(key,value);return true;}catch(e){return false;}}
+function parse(raw){try{return JSON.parse(raw);}catch(e){return null;}}
+function validScope(i){return Number.isInteger(i)&&i>=0&&i<=9;}
+function scopeKey(){return PROGRESS_PREFIX+unit;}
+function snapshot(){
+ return {mode,order:order.map(i=>Q[i].id),current:cur===order.length?null:Q[order[cur]].id,
+  done:cur===order.length,answers:Object.fromEntries(order.filter(i=>typeof answers[i]==='boolean').map(i=>[Q[i].id,answers[i]]))};
 }
-function setMode(m){if(!['normal','random'].includes(m)||m===mode)return;mode=m;start(order,retry);}
-function setUnit(value){unit=Number(value);if(!Number.isInteger(unit)||unit<0||unit>9)unit=0;start(scopedIds());}
-function freshStart(){mode='normal';unit=0;clearProgress();start(scopedIds());}
-function restart(){start(order,retry);}
-function retryWrong(){const ids=order.filter(i=>answers[i]!==null&&answers[i]!==Q[i].ans);if(ids.length)start(ids,true);}
-function jumpTo(i){if(!Number.isInteger(i)||i<0||i>=order.length)return;cur=i;saveProgress();render();}
+function saveProgress(){
+ const raw=JSON.stringify({v:2,unit,main:retry?primary:snapshot(),retry:retry?snapshot():null});
+ const saved=writeStorage(scopeKey(),raw);
+ if(saved)seenRaw=raw;
+ el('progress-save-status').textContent=saved?'':'이 브라우저에 풀이를 저장하지 못했습니다. 새로고침하면 이번 변경이 사라질 수 있습니다.';
+}
+function restore(record,isRetry=false){
+ if(!record||!Array.isArray(record.order)||!['normal','random'].includes(record.mode)||!record.answers||typeof record.answers!=='object')return false;
+ const allowed=new Set(scopedIds()),indices=[...new Set(record.order.map(id=>indexById.get(id)))].filter(i=>allowed.has(i));
+ if(isRetry&&!indices.length)return false;
+ if(!isRetry){const used=new Set(indices);for(const i of allowed)if(!used.has(i))indices.push(i);}
+ if(!indices.length)return false;
+ answers=Array(TOTAL).fill(null);order=indices;mode=record.mode;retry=isRetry;
+ for(const i of order)if(typeof record.answers[Q[i].id]==='boolean')answers[i]=record.answers[Q[i].id];
+ const pos=order.indexOf(indexById.get(record.current)),pending=order.findIndex(i=>answers[i]===null);
+ cur=record.done&&pending===-1?order.length:pos>=0?pos:pending>=0?pending:0;
+ return true;
+}
+function legacy(scope){
+ const s=parse(readStorage(LEGACY_KEY));
+ if(!s||s.v!==1||s.unit!==scope||typeof s.retry!=='boolean'||!['normal','random'].includes(s.mode)||
+  !Array.isArray(s.answers)||s.answers.length!==LEGACY_IDS.length||s.answers.some(a=>a!==null&&typeof a!=='boolean')||
+  !Array.isArray(s.order)||!s.order.length||new Set(s.order).size!==s.order.length||
+  s.order.some(i=>!Number.isInteger(i)||i<0||i>=LEGACY_IDS.length||(scope&&1+Math.floor(i/4)!==scope))||
+  (!s.retry&&s.order.length!==(scope?4:36))||!Number.isInteger(s.cur)||s.cur<0||s.cur>s.order.length||
+  (s.cur===s.order.length&&s.order.some(i=>s.answers[i]===null)))return null;
+ return {retry:s.retry,record:{mode:s.mode,order:s.order.map(i=>LEGACY_IDS[i]),
+  answers:Object.fromEntries(s.order.filter(i=>typeof s.answers[i]==='boolean').map(i=>[LEGACY_IDS[i],s.answers[i]])),
+  current:LEGACY_IDS[s.order[s.cur]]??null,done:s.cur===s.order.length}};
+}
+function clearAttempt(ids,isRetry=false){
+ order=[...ids];if(mode==='random'){for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}}else order.sort((a,b)=>a-b);
+ answers=Array(TOTAL).fill(null);cur=0;retry=isRetry;
+}
+function readScope(allowMigration){
+ seenRaw=readStorage(scopeKey());primary=null;
+ const s=parse(seenRaw);
+ if(s&&s.v===2&&s.unit===unit&&(s.main===null||typeof s.main==='object')){
+  if(s.main&&restore(s.main))primary=snapshot();
+  if(restore(s.retry,true)||(primary&&restore(primary)))return true;
+ }
+ if(allowMigration&&seenRaw===null){
+  const old=legacy(unit);
+  if(old&&restore(old.record,old.retry)){saveProgress();return true;}
+ }
+ mode='normal';clearAttempt(scopedIds());return false;
+}
+function showResume(loaded){el('rb-msg').textContent='이 범위에서 저장한 학습을 이어서 보여 드립니다.';el('rb').style.display=loaded?'block':'none';}
+function setUnit(value){
+ const next=Number(value);unit=validScope(next)?next:0;
+ const url=new URL(location.href);url.searchParams.set('unit',String(unit));
+ try{history.replaceState(history.state,'',url);}catch(e){}
+ el('progress-save-status').textContent='';
+ showResume(readScope(true));writeStorage(LAST_SCOPE_KEY,String(unit));render();
+}
+// Read current scope before mutations and render storage events from other tabs.
+function syncScope(){
+ if(readStorage(scopeKey())===seenRaw)return false;
+ showResume(readScope(false));render();return true;
+}
+function setMode(m){
+ if(syncScope()||!['normal','random'].includes(m)||m===mode)return;
+ const current=order[cur];mode=m;
+ if(mode==='random'){for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}}
+ else order.sort((a,b)=>a-b);
+ cur=current===undefined?order.length:order.indexOf(current);saveProgress();render();
+}
+function restart(){if(syncScope())return;clearAttempt(retry?order:scopedIds(),retry);showResume(false);saveProgress();render();}
+function retryWrong(){
+ if(syncScope())return;
+ const ids=order.filter(i=>answers[i]!==null&&answers[i]!==Q[i].ans);
+ if(ids.length){if(!retry)primary=snapshot();clearAttempt(ids,true);showResume(false);saveProgress();render();}
+}
+function resumePrimary(){
+ if(syncScope()||!retry)return;
+ if(!restore(primary)){mode='normal';clearAttempt(scopedIds());}
+ primary=null;showResume(false);saveProgress();render();
+}
+function jumpTo(i){if(syncScope()||!Number.isInteger(i)||i<0||i>=order.length)return;cur=i;saveProgress();render();}
 function renderExp(q){const a=answers[order[cur]],ok=a===q.ans;
  const cmp=q.compare?`<div class="sec-label">예문 비교</div><div class="compare">${q.compare.map(c=>`<div class="compare-item"><div class="ci-title">${c.title}</div><p>${c.desc}</p></div>`).join('')}</div>`:'';
  return `<div class="exp show"><div class="exp-header"><span>${ok?'🎉 잘했어요!':'💪 괜찮아요. 차이를 확인해 봐요.'} · 정답 ${q.ans?'O':'X'}</span></div><div class="exp-answer"><div class="ans-text">${q.correct}</div></div><div class="exp-body"><p>${q.why}</p>${cmp}<div class="sec-label">근거 · 자체 연습문항</div><p>${q.source}</p><p><a href="${q.study}">이 UNIT 개념 다시 읽기 →</a></p>${q.exam?`<p><a href="${q.exam.url}">관련 원문 기출: ${q.exam.label} ↗</a></p>`:''}</div></div>`;
@@ -655,6 +736,7 @@ function render(){
  const done=order.filter(i=>answers[i]!==null).length,n=order.length,score=getScore();
  el('pt').textContent=`${retry?'오답 재도전 · ':''}${done} / ${n} 응답`;
  el('ps').textContent=`정답 ${score}개`;el('bf').style.width=(done/n*100).toFixed(1)+'%';
+ el('resume-primary').hidden=!retry;
  el('retry-wrong').disabled=!order.some(i=>answers[i]!==null&&answers[i]!==Q[i].ans);
  renderNav();
  if(cur===n){
@@ -665,9 +747,9 @@ function render(){
  el('sc').classList.remove('show');el('qa').style.display='block';const idx=order[cur],q=Q[idx],a=answers[idx];
  el('qa').innerHTML=`<p class="unit-label">🌱 한 문장씩 차근차근 판단해 보세요.</p><div class="card"><div class="q-meta"><span class="q-num">${q.id}</span><span class="q-src">${cur+1} / ${n}</span><span class="q-cat">${q.cat}</span></div><h2 class="unit-label">${q.src} · ${UNIT_NAMES[q.unit-1]}</h2><div class="q-text">${q.text}</div><div class="ox-btns"><button class="ox-btn o-btn ${a===true?(a===q.ans?'co':'wp'):''}" onclick="pick(true)" ${a!==null?'disabled':''}>O<span class="lb">진술이 맞다</span></button><button class="ox-btn x-btn ${a===false?(a===q.ans?'cx':'wp'):''}" onclick="pick(false)" ${a!==null?'disabled':''}>X<span class="lb">진술이 틀리다</span></button></div><div aria-live="polite">${a!==null?renderExp(q):''}</div>${a!==null?`<button class="next-btn show" onclick="next()">${done===n?'결과 보기 →':'다음 미응답 →'}</button>`:''}</div>`;
 }
-function pick(value){if(typeof value!=='boolean'||cur>=order.length||answers[order[cur]]!==null)return;answers[order[cur]]=value;saveProgress();try{if(value===Q[order[cur]].ans){if(typeof playOk==='function')playOk();}else if(typeof playNg==='function')playNg();}catch(e){}render();}
+function pick(value){if(syncScope()||typeof value!=='boolean'||cur>=order.length||answers[order[cur]]!==null)return;answers[order[cur]]=value;saveProgress();try{if(value===Q[order[cur]].ans){if(typeof playOk==='function')playOk();}else if(typeof playNg==='function')playNg();}catch(e){}render();}
 function next(){
- if(cur>=order.length||answers[order[cur]]===null)return;
+ if(syncScope()||cur>=order.length||answers[order[cur]]===null)return;
  const pending=order.map((_,i)=>(cur+1+i)%order.length).find(pos=>answers[order[pos]]===null);
  if(pending!==undefined){cur=pending;saveProgress();render();return;}
  cur=order.length;saveProgress();render();
@@ -677,15 +759,15 @@ function next(){
   const btn=el('sp-retry');if(btn)btn.onclick=()=>{const overlay=el('sp-overlay');if(overlay)overlay.remove();restart();};
  }
 }
-function validSaved(s){
- return s&&s.v===1&&Number.isInteger(s.unit)&&s.unit>=0&&s.unit<=9&&['normal','random'].includes(s.mode)&&typeof s.retry==='boolean'&&Array.isArray(s.answers)&&s.answers.length===TOTAL&&s.answers.every(a=>a===null||typeof a==='boolean')&&Array.isArray(s.order)&&s.order.length>0&&s.order.length<=TOTAL&&new Set(s.order).size===s.order.length&&s.order.every(i=>Number.isInteger(i)&&i>=0&&i<TOTAL&&(!s.unit||Q[i].unit===s.unit))&&(s.retry||s.order.length===Q.filter(q=>!s.unit||q.unit===s.unit).length)&&Number.isInteger(s.cur)&&s.cur>=0&&s.cur<=s.order.length&&(s.cur!==s.order.length||s.order.every(i=>s.answers[i]!==null));
-}
 (function(){
- let loaded=false;try{const s=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');if(validSaved(s)){({answers,cur,mode,unit,order,retry}=s);loaded=true;}}catch(e){}
  const requested=new URLSearchParams(location.search).get('unit');
- if(requested!==null&&/^[1-9]$/.test(requested)&&(!loaded||unit!==Number(requested))){unit=Number(requested);start(scopedIds());return;}
- if(loaded){el('rb-msg').textContent='저장한 학습을 이어서 보여 드립니다.';el('rb').style.display='block';}render();
+ const last=readStorage(LAST_SCOPE_KEY),old=parse(readStorage(LEGACY_KEY));
+ const fallback=last!==null&&validScope(Number(last))?Number(last):validScope(old?.unit)?old.unit:0;
+ unit=requested!==null&&/^[0-9]$/.test(requested)?Number(requested):fallback;
+ showResume(readScope(true));writeStorage(LAST_SCOPE_KEY,String(unit));render();
 })();
+window.addEventListener('storage',event=>{if(event.key===scopeKey()||event.key===null)syncScope();});
+window.addEventListener('pageshow',()=>syncScope());
 
 </script>
 <nav class="quiz-return" aria-label="학교문법 학습 허브"><a id="back-btn" href="./school-grammar.html">← 학교문법 허브로 돌아가기</a></nav>
