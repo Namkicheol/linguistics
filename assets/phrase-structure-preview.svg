@@ -1,0 +1,18 @@
+<svg class="tree-svg" viewBox="118 0 446 260" xmlns="http://www.w3.org/2000/svg">
+      <text x="310" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#315d48">S → NP VP</text>
+      <text x="310" y="58" text-anchor="middle" font-size="18" font-weight="700" fill="#315d48">S</text>
+      <line x1="310" y1="64" x2="190" y2="102" stroke="#8fa998" stroke-width="1.6"/>
+      <line x1="310" y1="64" x2="430" y2="102" stroke="#8fa998" stroke-width="1.6"/>
+      <text x="190" y="122" text-anchor="middle" font-size="16" font-weight="700" fill="#315d48">NP</text>
+      <line x1="190" y1="128" x2="190" y2="168" stroke="#8fa998" stroke-width="1.6"/>
+      <text x="190" y="188" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">The student</text>
+      <text x="430" y="122" text-anchor="middle" font-size="16" font-weight="700" fill="#315d48">VP</text>
+      <line x1="430" y1="128" x2="340" y2="168" stroke="#8fa998" stroke-width="1.6"/>
+      <line x1="430" y1="128" x2="500" y2="168" stroke="#8fa998" stroke-width="1.6"/>
+      <text x="340" y="188" text-anchor="middle" font-size="15" font-weight="700" fill="#315d48">V</text>
+      <line x1="340" y1="194" x2="340" y2="224" stroke="#8fa998" stroke-width="1.6"/>
+      <text x="340" y="244" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">read</text>
+      <text x="500" y="188" text-anchor="middle" font-size="15" font-weight="700" fill="#315d48">NP</text>
+      <line x1="500" y1="194" x2="500" y2="224" stroke="#8fa998" stroke-width="1.6"/>
+      <text x="500" y="244" text-anchor="middle" font-size="13" font-style="italic" fill="#1a1a1a">the article</text>
+    </svg>
