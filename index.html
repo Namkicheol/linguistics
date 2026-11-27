@@ -58,12 +58,24 @@
 @media(max-width:760px){.hub-home .learning-main{margin:16px;padding:24px;border-radius:20px}.hub-home .hub-hero-actions{display:grid;grid-template-columns:1fr 1fr}.hub-home .hub-hero-actions .hero-focus{min-width:0}.hub-home .hub-hero-actions a{padding:14px;gap:3px 8px}.hub-home .hub-overview{gap:16px}.hub-home .hub-overview a{flex:none}}
 @media(max-width:480px){.hub-home .page-heading::after{display:none}.hub-home .learning-main{margin:12px;padding:20px}.hub-home .hub-hero-actions{grid-template-columns:1fr}.hub-home .hub-hero-actions a{min-height:66px}.hub-home .chapter-row{padding:12px 10px;gap:8px}.hub-home .chapter-copy h3{font-size:14px}.hub-home .hub-block,.hub-home .subject-section{margin:26px 0}}
 </style>
+<style>
+.hub-home .hub-overview {position:sticky;top:8px;z-index:2;display:inline-flex;gap:4px;padding:4px;border-radius:12px;background:#eef3ef}
+.hub-home :is(#area-study,#book-practice,#chapters,#general-practice-heading) {scroll-margin-top:72px}
+.hub-home .hub-overview a {min-height:44px;padding:0 18px;border-radius:9px;color:#405c4b}
+.hub-home .hub-overview a[aria-current] {background:white;color:#16482f;box-shadow:0 1px 4px #183b2524}
+.hub-home .book-extra {margin-top:8px}
+.hub-home .book-extra summary,.hub-home .book-extra a {min-height:44px;align-content:center;color:#365e48}
+.hub-home .book-extra a {display:block;text-decoration:underline;text-underline-offset:3px}
+.hub-home .resource-card .book-actions a,.hub-home .chapter-actions a {min-height:44px;box-sizing:border-box}
+.hub-home [hidden] {display:none!important}
+.hub-home :is(a,summary):focus-visible {outline:3px solid #267249;outline-offset:2px}
+</style>
 </head>
 
 <body class="learning-index etwiki-learning hub-home">
 <a class="skip-link" href="#chapters">단원 목록으로 바로가기</a>
 <header class="ew-header"><div class="ew-brand-row"><a class="ew-brand" href="https://etwiki.net/index.html">기출 WIKI</a><span class="ew-header-label">학습자료</span><a class="ew-back" href="https://etwiki.net/study.html">전체 자료 ↗</a></div><nav class="ew-subjects" aria-label="학습 영역"><a href="https://namkicheol.github.io/englisheducation/">영어교육론</a><a href="https://namkicheol.github.io/linguistics/" aria-current="page">영어학</a></nav></header>
-<main class="learning-main"><header class="page-heading"><p class="hub-eyebrow">ENGLISH LINGUISTICS</p><h1>영어학 학습자료</h1><p class="hub-subtitle">개념을 읽고, 원서별로 연습하고, 기출로 확인하세요.</p><div class="hub-hero-actions" id="exams"><span id="exam-practice"></span><a class="hero-focus" href="https://etwiki.net/exam-focus.html"><strong>기출 포커스</strong><span>기출을 원서의 단원과 연결해 보기</span><span aria-hidden="true">↗</span></a><a class="hero-picture" href="https://etwiki.net/diagrams.html"><strong>그림으로 보기</strong><span>수형도와 개념 그림</span><span aria-hidden="true">↗</span></a></div><nav class="hub-overview" aria-label="학습 메뉴"><a href="#area-study">단원별 학습 ↓</a><a href="#book-practice">OX 연습 ↓</a></nav></header><section id="area-study" class="hub-block" aria-labelledby="chapter-heading">
+<main class="learning-main"><header class="page-heading"><p class="hub-eyebrow">ENGLISH LINGUISTICS</p><h1>영어학 학습자료</h1><p class="hub-subtitle">개념을 읽고, 원서별로 연습하고, 기출로 확인하세요.</p><div class="hub-hero-actions" id="exams"><span id="exam-practice"></span><a class="hero-focus" href="https://etwiki.net/exam-focus.html"><strong>기출 포커스</strong><span>기출을 원서의 단원과 연결해 보기</span><span aria-hidden="true">↗</span></a><a class="hero-picture" href="https://etwiki.net/diagrams.html"><strong>그림으로 보기</strong><span>수형도와 개념 그림</span><span aria-hidden="true">↗</span></a></div></header><nav class="hub-overview" aria-label="학습 메뉴"><a href="#area-study">단원별 학습</a><a href="#book-practice">OX 연습</a></nav><section id="area-study" class="hub-block" aria-labelledby="chapter-heading">
 <h2 id="chapter-heading">단원별 학습</h2>
 <ol class="chapter-list" id="chapters" tabindex="-1">
 <li class="chapter-row"><span class="chapter-number">01</span><div class="chapter-copy"><h3>Constituency</h3><p>구성성분 · X-bar</p></div><div class="chapter-actions"><a href="./constituency_study.html" aria-label="Constituency 개념정리">개념정리</a><a href="./constituency.html" aria-label="Constituency OX">OX 연습</a></div></li>
@@ -75,10 +87,46 @@
 <li class="chapter-row"><span class="chapter-number">07</span><div class="chapter-copy"><h3>Semantics</h3><p>의미론</p></div><div class="chapter-actions"><a href="./semantics_study.html" aria-label="Semantics 개념정리">개념정리</a><a href="./semantics.html" aria-label="Semantics OX">OX 연습</a></div></li>
 <li class="chapter-row"><span class="chapter-number">08</span><div class="chapter-copy"><h3>Pragmatics</h3><p>화용론</p></div><div class="chapter-actions"><a href="./pragmatics_study.html" aria-label="Pragmatics 개념정리">개념정리</a><a href="./pragmatics.html" aria-label="Pragmatics OX">OX 연습</a></div></li>
 </ol></section>
-<section class="subject-section" aria-label="통사론 심화"><div class="resource-grid support-grid"><article class="resource-card"><h3><a class="book-title-link" href="./syntax.html">통사론 심화</a></h3><p class="card-desc">구조 진단 해설과 기본 개념을 함께 살펴봅니다.</p><nav class="book-actions" aria-label="통사론 심화 학습"><a href="./syntax.html">심화 학습 허브</a><a href="./syntax-diagnostics_study.html?returnTo=syntax.html&amp;returnLabel=%ED%86%B5%EC%82%AC%EB%A1%A0%20%EC%8B%AC%ED%99%94">구조 진단 해설</a><a href="./syntax.html#chapters">기본 개념 복습</a></nav></article></div></section><section class="subject-section" id="book-practice" aria-labelledby="book-area-heading"><div class="section-head"><h2 id="book-area-heading">OX 연습</h2><h3 class="practice-subheading">원서별 OX</h3></div><div class="resource-grid"><article class="resource-card"><div class="card-top"><span class="card-icon book-code" aria-hidden="true">TG</span><span class="card-state">학교문법</span></div><h3><a class="book-title-link" href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=tg&amp;level=detail">TG 티쳐스 그래머</a></h3><p class="card-en">TEACHER’S GRAMMAR</p><p class="card-desc">학교문법의 개념과 예문을 연결해 판단합니다.</p><div class="card-meta"><span>학교문법 이론</span><span>개념·예문 판단</span></div><nav class="book-actions" aria-label="TG 티쳐스 그래머 OX 선택"><a href="./school-grammar.html">학교문법 이론</a><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=tg&amp;level=detail">개념·자료 OX</a></nav><p class="availability-note">정문·비문 문항 없음</p></article><article class="resource-card"><div class="card-top"><span class="card-icon book-code" aria-hidden="true">TF</span><span class="card-state">통사론</span></div><h3><a class="book-title-link" href="https://namkicheol.github.io/linguistics/book-ox-cards/index.html?book=tf">TF 트랜스포메이션</a></h3><p class="card-en">TRANSFORMATIONAL GRAMMAR</p><p class="card-desc">정문이면 O, 비문이면 X. 묶음 예문도 한 문장씩 판단합니다.</p><div class="card-meta"><span>변형예문</span><span>문장별 판단</span><span>묶음 비교</span></div><nav class="book-actions" aria-label="TF 트랜스포메이션 OX 선택"><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=transform-new&amp;level=detail">개념·자료 OX</a><a href="https://namkicheol.github.io/linguistics/book-ox-cards/index.html?book=tf">정문·비문 OX</a><a class="chapter-action" href="https://namkicheol.github.io/transformational-grammar/index.html">TF 챕터별 정리·실전 연습 · 정리 중</a></nav><p class="availability-note">연계 OX: 개념·자료 판단</p></article><article class="resource-card"><div class="card-top"><span class="card-icon book-code" aria-hidden="true">AEP</span><span class="card-state">음성·음운</span></div><h3><a class="book-title-link" href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=aep-new&amp;level=detail">AEP 음성·음운론</a></h3><p class="card-en">APPLIED ENGLISH PHONOLOGY</p><p class="card-desc">발음·분포·규칙 자료를 보고 분석이 맞는지 판단합니다.</p><div class="card-meta"><span>음성·음운 이론</span><span>자료 적용 판단</span></div><nav class="book-actions" aria-label="AEP 음성·음운론 OX 선택"><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운 이론</a><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=aep-new&amp;level=detail">개념·자료 OX</a><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=aep">자료 OX</a></nav><p class="availability-note">연계 OX: 개념·자료 판단</p></article></div><div class="practice-general"><h3 id="general-practice-heading" class="practice-subheading">일반 영어학 OX</h3><div class="resource-grid general-grid"><article class="resource-card"><div class="card-top"><span class="card-icon book-code" aria-hidden="true">언어</span><span class="card-state">영어학</span></div><h3><a class="book-title-link" href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=general&amp;level=detail">형태·의미·화용</a></h3><p class="card-en">GENERAL LINGUISTICS</p><p class="card-desc">단어 구조와 의미·맥락의 자료를 보고 판단합니다.</p><div class="card-meta"><span>형태론</span><span>의미론·화용론</span></div><nav class="book-actions" aria-label="형태·의미·화용 OX 선택"><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=general&amp;level=detail">개념·자료 OX</a></nav><p class="availability-note">연계 OX: 개념·자료 판단</p></article></div></div><details class="resource-card all-practice"><summary>예문 OX 더 보기</summary><nav class="hub-routes" aria-label="OX 학습 범위 선택">
+<section class="subject-section" id="advanced-study" aria-label="통사론 심화"><h2>통사론 심화</h2>
+<nav class="book-actions" aria-label="통사론 심화 학습"><a href="./syntax.html">심화 학습 허브</a><a href="./syntax-diagnostics_study.html?returnTo=syntax.html&amp;returnLabel=%ED%86%B5%EC%82%AC%EB%A1%A0%20%EC%8B%AC%ED%99%94">구조 진단 해설</a><a href="./syntax.html#chapters">기본 개념 복습</a></nav></section>
+<section class="subject-section" id="book-practice" aria-labelledby="book-area-heading"><div class="section-head"><h2 id="book-area-heading">원서별 OX 연습</h2></div>
+<div class="resource-grid"><article class="resource-card"><h3>TG 티쳐스 그래머</h3><p class="card-desc">학교문법의 개념과 예문을 연결해 판단합니다.</p>
+<nav class="book-actions" aria-label="TG 티쳐스 그래머"><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=tg&amp;level=detail">개념·자료 OX</a></nav>
+<details class="book-extra"><summary>관련 자료</summary><a href="./school-grammar.html">학교문법 이론</a></details></article>
+<article class="resource-card"><h3>TF 트랜스포메이션</h3><p class="card-desc">예문을 한 문장씩 읽고 정문과 비문을 구분합니다.</p>
+<nav class="book-actions" aria-label="TF 트랜스포메이션"><a href="https://namkicheol.github.io/linguistics/book-ox-cards/index.html?book=tf">정문·비문 OX</a></nav>
+<details class="book-extra"><summary>관련 자료</summary><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=transform-new&amp;level=detail">개념·자료 OX</a><a href="https://namkicheol.github.io/transformational-grammar/index.html">TF 챕터별 정리·실전 연습 · 정리 중</a></details></article>
+<article class="resource-card"><h3>AEP 음성·음운론</h3><p class="card-desc">발음·분포·규칙 자료를 보고 분석이 맞는지 판단합니다.</p>
+<nav class="book-actions" aria-label="AEP 음성·음운론"><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=aep-new&amp;level=detail">개념·자료 OX</a></nav>
+<details class="book-extra"><summary>관련 자료</summary><a href="https://namkicheol.github.io/phonetics-phonology/phonetics.html">음성·음운 이론</a><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=aep">자료 OX</a></details></article></div>
+<div class="practice-general"><h2 id="general-practice-heading" class="practice-subheading">일반 영어학 OX</h2>
+<article class="resource-card"><h3>형태·의미·화용</h3><p class="card-desc">단어 구조와 의미·맥락의 자료를 보고 판단합니다.</p>
+<nav class="book-actions" aria-label="형태·의미·화용"><a href="https://namkicheol.github.io/linguistics/book-ox-cards/concepts/example-ox.html?bank=general&amp;level=detail">개념·자료 OX</a></nav></article></div>
+<details class="resource-card all-practice"><summary>예문 OX 더 보기</summary><nav class="hub-routes" aria-label="OX 학습 범위 선택">
 <a class="hub-route exam-route" href="./example-ox.html?bank=exam&amp;level=exam&amp;mode=unit"><strong>기출 개념·분석 OX</strong><span>예문 OX에서 기출 기반 문항 풀기</span></a>
 <a class="hub-route" href="./example-ox.html?level=essence"><strong>필수 · 에센스</strong><span>핵심 예문·자료부터</span></a>
 <a class="hub-route" href="./example-ox.html?level=detail"><strong>전체 · 자세히</strong><span>필수 + 조건·예외·응용</span></a>
-</nav></details></section></main></body></html>
+</nav></details></section></main><script>
+(() => {
+  const chapters = document.getElementById('area-study');
+  const syntax = document.getElementById('advanced-study');
+  const practice = document.getElementById('book-practice');
+  const links = document.querySelectorAll('.hub-overview a');
+  function showSection() {
+    const target = document.getElementById(location.hash.slice(1));
+    const inPractice = Boolean(target && practice.contains(target));
+    chapters.hidden = syntax.hidden = inPractice;
+    practice.hidden = !inPractice;
+    for (const link of links) {
+      if (link.hash === (inPractice ? '#book-practice' : '#area-study')) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    }
+  }
+  showSection();
+  window.addEventListener('hashchange', showSection);
+  window.addEventListener('pageshow', showSection);
+})();
+</script>
+</body></html>
 
 
