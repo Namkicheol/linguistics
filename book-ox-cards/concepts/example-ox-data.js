@@ -132,7 +132,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>[S [NP the repair team] [VP [V replaced] [NP the valve]]]<br>범위 A: the repair team<br>범위 B: team replaced</p>",
         "displayTitle": "Hierarchical brackets",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Hierarchical brackets",
@@ -173,7 +172,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: [NP birds]<br>B: [NP the three birds near the window]</p>",
         "displayTitle": "Head not length",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Head not length",
@@ -213,7 +211,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>The caretaker handed [the visitor] [a key].<br>분석: visitor는 받는 사람, key는 전달되는 것.</p>",
         "displayTitle": "Np functions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Np functions",
@@ -249,7 +246,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>[S [NP the technician] [VP checked [NP both plugs] [PP after lunch]]]<br>주어진 괄호 분석을 기준으로 한다.</p>",
         "displayTitle": "Vp scope",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Vp scope",
@@ -287,7 +283,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: has repaired<br>B: was repairing<br>분석 대상: repaired와 repairing</p>",
         "displayTitle": "Verb form not tense",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Verb form not tense",
@@ -327,7 +322,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: They have a spare battery.<br>B: They have replaced the battery.</p>",
         "displayTitle": "Main vs aux",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Main vs aux",
@@ -365,7 +359,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>완전 보고 문장: The test ended because the cable overheated.<br>분리: Because the cable overheated. [주절 없는 보고문]</p>",
         "displayTitle": "Independent dependent",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Independent dependent",
@@ -404,7 +397,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: They agreed [to wait].<br>B: They avoided [opening the hatch].<br>C: They knew [that the hatch was locked].<br>D: They asked [whether it was safe].</p>",
         "displayTitle": "Complement types",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Complement types",
@@ -442,7 +434,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>자료: equipment [장비 일반, mass 용법], three machines [개별 기계], Lake Sora [고유 지명]</p>",
         "displayTitle": "Noun subtypes",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Noun subtypes",
@@ -478,7 +469,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>자동 분석 로그:<br>입력: The ice melted.<br>태그: passive, 이유=주어가 변화를 겪었기 때문.<br>표면형 검사: be 없음, 과거분사구조 없음.<br>목표: 사건의 참여 역할과 grammatical voice를 구별한다.</p>",
         "displayTitle": "Ergative passive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Ergative passive",
@@ -514,7 +504,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We own the workshop. [지속적 소유 상태]<br>B: We are painting the workshop. [진행 중 작업]</p>",
         "displayTitle": "Stative meaning condition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD02-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 17,
         "cat": "Stative meaning condition",
@@ -550,7 +539,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>원문: The drone might have been transmitting.<br>편집 A: Might the drone have been transmitting?<br>편집 B: Have the drone might been transmitting?</p>",
         "displayTitle": "First aux inversion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "First aux inversion",
@@ -589,7 +577,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>자동교정: The sensor failed. → Did the sensor failed?</p>",
         "displayTitle": "Do and bare form",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Do and bare form",
@@ -625,7 +612,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Didn’t you save the backup?<br>B: Yes, I did.<br>로그 기록: 저장 완료.</p>",
         "displayTitle": "Negative question answer",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Negative question answer",
@@ -664,7 +650,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>현장 담당자는 검사가 이미 끝났다고 믿었다. 현황표가 비어 있어 묻는다: Hasn’t the team already checked this?</p>",
         "displayTitle": "Negative bias",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Negative bias",
@@ -700,7 +685,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>친구: I won a telescope.<br>상대: You won a telescope? [상승 억양, 놀람]</p>",
         "displayTitle": "Declarative question",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Declarative question",
@@ -736,7 +720,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>가벼운 구어 대화: You waiting for the shuttle? [상승 억양]<br>교정 후보: Are you waiting for the shuttle?</p>",
         "displayTitle": "Elliptical question",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Elliptical question",
@@ -772,7 +755,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>동일 문장: The guide knows the route, doesn’t she?<br>A: tag에 상승 억양, 확인할 정보가 부족함.<br>B: tag에 하강 억양, 동의를 기대함.</p>",
         "displayTitle": "Tag intonation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Tag intonation",
@@ -808,7 +790,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>누군가 몰래 규칙을 바꾼 사실을 깨달은 화자: So, you make the rules now, do you? [빈정대는 억양]</p>",
         "displayTitle": "Same polarity tag",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Same polarity tag",
@@ -846,7 +827,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>질문 A: Which robot moved the crate?<br>질문 B: Which crate did the robot move?</p>",
         "displayTitle": "Subject object wh",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Subject object wh",
@@ -884,7 +864,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>화면 A: Where is the package?<br>안내문 B: Tell me where is the package.</p>",
         "displayTitle": "Embedded question order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Embedded question order",
@@ -921,7 +900,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Which lab did she work in?<br>B: In which lab did she work?<br>둘 다 같은 근무 장소를 묻는다.</p>",
         "displayTitle": "Preposition wh register",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Preposition wh register",
@@ -959,7 +937,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: A mechanic inspected it yesterday.<br>B₁: A WHO inspected it? [mechanic을 못 들음]<br>B₂: Which mechanic? [직업은 들었고 신원 추가 질문]</p>",
         "displayTitle": "Repeat vs elaborate",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Repeat vs elaborate",
@@ -995,7 +972,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>진행자가 두 방식 중 하나만 고르라며 묻는다: Will you present online [상승] or in person [하강]?</p>",
         "displayTitle": "Alternative question",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Alternative question",
@@ -1031,7 +1007,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: They installed it beneath the aquarium.<br>B: They installed it WHERE? [못 들어 재확인]</p>",
         "displayTitle": "Echo in situ",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Echo in situ",
@@ -1067,7 +1042,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>폭풍으로 야외행사를 취소하면서: Who would hold a picnic in this storm?<br>화자는 참석자 명단을 요구하지 않고 무리한 계획임을 강조한다.</p>",
         "displayTitle": "Rhetorical exclamatory",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Rhetorical exclamatory",
@@ -1103,7 +1077,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>교사가 정답표를 보유한 상태에서 학생에게 물었다: What does the triangle represent in your diagram?<br>목적: 학생이 범례를 이해했는지 확인.</p>",
         "displayTitle": "Display question",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Display question",
@@ -1139,7 +1112,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>조사자가 보관 위치를 전혀 모르는 상태에서 묻는다: Where did you hide the sample?<br>질문에는 표본을 숨겼다는 내용이 깔려 있다.</p>",
         "displayTitle": "Wh presupposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Wh presupposition",
@@ -1175,7 +1147,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: How many labels did they print?<br>B: How often did they print labels?</p>",
         "displayTitle": "How phrase scope",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "How phrase scope",
@@ -1211,7 +1182,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>해질녘 경치를 감탄하며 하강 억양: Isn’t the sky magnificent!<br>화자는 정보를 묻기보다 자신의 감탄을 드러낸다.</p>",
         "displayTitle": "Exclamatory question",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Exclamatory question",
@@ -1247,7 +1217,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Do you have a permit? [AmE 통상형]<br>B: Have you a permit? [책이 소개하는 BrE 용법]</p>",
         "displayTitle": "Lexical have variety",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Lexical have variety",
@@ -1287,7 +1256,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>일반 정보 질문 Where did the van stop?와 못 들어 되묻는 Where did the van stop?를 같은 글자로 적었다.</p>",
         "displayTitle": "Intonation form function",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD04-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 18,
         "cat": "Intonation form function",
@@ -1455,7 +1423,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "A에서는 확인하지 않음, B에서는 부정적인 내용을 확인함을 구별합니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#negation-scope",
         "source": "Cowan (2008), 인쇄 95쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -1492,13 +1459,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-001",
-          "title": "Uncontracted not follows subject in negative questions"
-        },
         "displayTitle": "Uncontracted not follows subject in negative questions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-001",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1533,13 +1494,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-002",
-          "title": "Wh-negative contracted versus uncontracted order"
-        },
         "displayTitle": "Wh-negative contracted versus uncontracted order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-002",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1576,13 +1531,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-003",
-          "title": "Any is polarity item not negative determiner"
-        },
         "displayTitle": "Any is polarity item not negative determiner",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-003",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1617,13 +1566,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-004",
-          "title": "Yet versus already in negative completion context"
-        },
         "displayTitle": "Yet versus already in negative completion context",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-004",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1660,13 +1603,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-005",
-          "title": "Nonfinite negation does not require do support"
-        },
         "displayTitle": "Nonfinite negation does not require do support",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-005",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1701,13 +1638,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-006",
-          "title": "Mandative subjunctive negation"
-        },
         "displayTitle": "Mandative subjunctive negation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-006",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1744,13 +1675,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-007",
-          "title": "Negative raising is lexically restricted"
-        },
         "displayTitle": "Negative raising is lexically restricted",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-007",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1788,13 +1713,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
         "data": "<p><strong>서로 다른 범위</strong><br>회의에서 말한 “We could not not accept.”를 다음과 같이 해석한다.<br>가능하지 않음 [수락하지 않음].<br>두 not은 하나의 방언적 부정에 합쳐지지 않는다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-008",
-          "title": "Independent double negation versus concord"
-        },
         "displayTitle": "Independent double negation versus concord",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Independent double negation versus concord",
@@ -1829,13 +1748,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
         "data": "<p><strong>상황과 응답</strong><br>A: 자동 저장은 켜지 않았습니다. 수동 검사를 먼저 하려고 intentionally did not enable it.<br>B: 자동 저장이 켜진 것은 실수였습니다. I did not intentionally enable it.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-009",
-          "title": "Intentional abstention versus denial of intention"
-        },
         "displayTitle": "Intentional abstention versus denial of intention",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Intentional abstention versus denial of intention",
@@ -1869,13 +1782,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-010",
-          "title": "Contrastive stress affects focus not syntax"
-        },
         "displayTitle": "Contrastive stress affects focus not syntax",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-010",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1910,13 +1817,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-011",
-          "title": "No versus not any paraphrase"
-        },
         "displayTitle": "No versus not any paraphrase",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-011",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1951,13 +1852,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-012",
-          "title": "Not all does not assert none"
-        },
         "displayTitle": "Not all does not assert none",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-012",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -1992,13 +1887,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-013",
-          "title": "Not a single expresses zero"
-        },
         "displayTitle": "Not a single expresses zero",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-013",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -2033,13 +1922,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-014",
-          "title": "Not a few litotes"
-        },
         "displayTitle": "Not a few litotes",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-014",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -2074,13 +1957,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-015",
-          "title": "Not uncommon is graded understatement"
-        },
         "displayTitle": "Not uncommon is graded understatement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-015",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -2115,13 +1992,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-016",
-          "title": "Negative fronting requires subject auxiliary inversion"
-        },
         "displayTitle": "Negative fronting requires subject auxiliary inversion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-016",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -2156,13 +2027,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-017",
-          "title": "Negative concord is dialectal not universal logical cancellation"
-        },
         "displayTitle": "Negative concord is dialectal not universal logical cancellation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-017",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -2199,13 +2064,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-018",
-          "title": "Negative prefix choice not purely initial consonant"
-        },
         "displayTitle": "Negative prefix choice not purely initial consonant",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-018",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -2240,13 +2099,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-019",
-          "title": "Reversative un versus simple negation"
-        },
         "displayTitle": "Reversative un versus simple negation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-019",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 1,
@@ -2283,13 +2136,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
         "data": "<p><strong>용례의 역할</strong><br>도서관이 nonacademic visitors를 위한 개방일을 마련했다.<br>심사자는 한 글의 근거 제시 방식이 unacademic하다고 비판했다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-020",
-          "title": "Evaluative versus descriptive prefix meaning"
-        },
         "displayTitle": "Evaluative versus descriptive prefix meaning",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Evaluative versus descriptive prefix meaning",
@@ -2324,13 +2171,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-021",
-          "title": "Copular negation versus do support"
-        },
         "displayTitle": "Copular negation versus do support",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Copular negation versus do support",
@@ -2367,13 +2208,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-022",
-          "title": "Lexical have dialect sensitive negation"
-        },
         "displayTitle": "Lexical have dialect sensitive negation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Lexical have dialect sensitive negation",
@@ -2408,13 +2243,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-023",
-          "title": "Negative imperative do"
-        },
         "displayTitle": "Negative imperative do",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Negative imperative do",
@@ -2449,13 +2278,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-024",
-          "title": "Anymore cessation versus never"
-        },
         "displayTitle": "Anymore cessation versus never",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Anymore cessation versus never",
@@ -2492,13 +2315,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-025",
-          "title": "Negative disjunction and neither nor"
-        },
         "displayTitle": "Negative disjunction and neither nor",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Negative disjunction and neither nor",
@@ -2533,13 +2350,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-026",
-          "title": "Not number ago recent interval"
-        },
         "displayTitle": "Not number ago recent interval",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Not number ago recent interval",
@@ -2574,13 +2385,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-027",
-          "title": "Negative minimizer a bit and at all"
-        },
         "displayTitle": "Negative minimizer a bit and at all",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Negative minimizer a bit and at all",
@@ -2620,13 +2425,7 @@ window.EXAMPLE_OX_BANKS = [
           "sourceNote": "Summary row96 has anything; primary book p97 has everything in both compared clauses. This is an independent quantifier distinction prompted by the transcription difference; partial-negation support p99, not a claim to reproduce the book comparison."
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD05-028",
-          "title": "Not-any versus not-every quantifier scope"
-        },
         "displayTitle": "Not-any versus not-every quantifier scope",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD05-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 1,
         "cat": "Not-any versus not-every quantifier scope",
@@ -2662,7 +2461,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>안전 지침 초안: Are alert during the test.<br>수정: Be alert during the test.</p>",
         "displayTitle": "Bare be",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Bare be",
@@ -2699,7 +2497,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>두 표지판 초안: A Don’t be distracted. / B Aren’t distracted.</p>",
         "displayTitle": "Negative be",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Negative be",
@@ -2737,7 +2534,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>방송 작업표의 정오 지시 후보:<br>A: Be monitoring channel three at noon.<br>B: Are monitoring channel three at noon.<br>A의 be와 monitoring은 서로 다른 동사형이다.</p>",
         "displayTitle": "Progressive imperative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Progressive imperative",
@@ -2773,7 +2569,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Do inspect the seal before departure!<br>B: Do the inspection before departure.</p>",
         "displayTitle": "Emphatic do",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Emphatic do",
@@ -2809,7 +2604,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>요청: Pass me the adapter, would you?<br>교정 제안: would you를 do you로 바꾸면 기본 명령문 tag가 된다.</p>",
         "displayTitle": "Imperative tag",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Imperative tag",
@@ -2845,7 +2639,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>현장 지시: Somebody check the rear exit.<br>관찰: somebody 뒤의 동사는 check이다.</p>",
         "displayTitle": "Visible subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Visible subject",
@@ -2881,7 +2674,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>Rina, you hold the reflector.<br>Rina 뒤에는 부르는 말의 쉼이 있고 you가 절의 주어이다.</p>",
         "displayTitle": "Vocative subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Vocative subject",
@@ -2917,7 +2709,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>검사 담당자가 방문자에게: I need you to place your bag here.</p>",
         "displayTitle": "Need you directive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Need you directive",
@@ -2953,7 +2744,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>공동 제안: Let’s not connect the cable yet.</p>",
         "displayTitle": "Lets negative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Lets negative",
@@ -2989,7 +2779,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>원격 기술지원 직원은 자기 컴퓨터를 그대로 둔 채 고객에게 말한다: Let’s restart your tablet.<br>재시작할 대상은 고객의 태블릿 한 대다.</p>",
         "displayTitle": "Lets directive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Lets directive",
@@ -3025,7 +2814,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>직원이 달력을 보며: Let’s see… the next opening is Tuesday.</p>",
         "displayTitle": "Lets see discourse",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Lets see discourse",
@@ -3061,7 +2849,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>결정권 없는 방청객이 당위만 논평한다: If the assistant designed it, let her receive the credit.<br>발화자는 청자에게 집행·허락을 요청하지 않는다고 명시한다.</p>",
         "displayTitle": "Open let",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Open let",
@@ -3101,7 +2888,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A는 손님을 환영하며 Stay for supper라고 한다. B는 훈련 규칙으로 Stay behind the barrier라고 한다.</p>",
         "displayTitle": "Form function",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Form function",
@@ -3139,7 +2925,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>위험 경고: Remove that support and the shelf will collapse.<br>화자는 받침을 제거하지 말라고 경고한다.</p>",
         "displayTitle": "Conditional imperative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Conditional imperative",
@@ -3176,7 +2961,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>업무 분담: You monitor the gauge, and I’ll handle the valve.</p>",
         "displayTitle": "Contrastive you",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Contrastive you",
@@ -3214,7 +2998,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>불안해하는 아이를 달래며 부드럽게: You take your time; there’s no rush.</p>",
         "displayTitle": "Noncontrastive you",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Noncontrastive you",
@@ -3251,7 +3034,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: 주인이 손님을 환영하며 Stay for the concert.<br>B: 권한자가 허가하며 Use the spare room.<br>C: 못 말리겠다는 어조로 Choose whichever route you want.</p>",
         "displayTitle": "Permission invitation acceptance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Permission invitation acceptance",
@@ -3289,7 +3071,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>여행객을 배웅하며: Have a wonderful trip!</p>",
         "displayTitle": "Wish not order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Wish not order",
@@ -3325,7 +3106,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A는 조립 설명서: Align the two marks.<br>B는 논증 안내: Compare the two predictions before judging the model.</p>",
         "displayTitle": "Instruction expository",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Instruction expository",
@@ -3363,7 +3143,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>처음 만난 상급자에게 작은 부탁을 하는 상황과 긴급 대피 지시 상황에서 똑같이 Move now!라고 말한다.</p>",
         "displayTitle": "Appropriateness relationship",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD06-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 19,
         "cat": "Appropriateness relationship",
@@ -3386,7 +3165,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "It is snowing. / I found a scarf. It is blue.에서 두 it의 기능은 다릅니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#nonreferential",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -3421,7 +3199,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "Two lamps are beside the sofa.와 달리 There are…는 존재를 소개합니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#nonreferential",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -3455,7 +3232,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "That the ferry arrived early is surprising."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#nonreferential",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -3489,7 +3265,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "There seems to be an error. / It seems that there is an error."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#nonreferential",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -3533,7 +3308,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "There의 문법적 역할과 논의거리를 처음 소개하는 담화 기능을 함께 봅니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#nonreferential",
         "source": "Cowan (2008), 인쇄 136, 137쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -3569,13 +3343,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
         "data": "<p><strong>안내 데스크</strong><br>A: Is there an accessible entrance?<br>B: Yes, there is.<br>검토 대상: B를 “Yes, there’s.”만으로 끝내기.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-001",
-          "title": "Existential positive short answer contraction"
-        },
         "displayTitle": "Existential positive short answer contraction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 2,
         "cat": "Existential positive short answer contraction",
@@ -3609,13 +3377,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-002",
-          "title": "Existential tag retains there"
-        },
         "displayTitle": "Existential tag retains there",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-002",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 2,
@@ -3652,13 +3414,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-003",
-          "title": "Existential plural agreement in edited prose"
-        },
         "displayTitle": "Existential plural agreement in edited prose",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-003",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 2,
@@ -3696,13 +3452,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
         "data": "<p><strong>잔액 보고</strong><br>There is enough funding for the repairs: there is another two thousand dollars available in the emergency fund.<br>개별 지폐가 아니라 남은 금액을 하나의 예산으로 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-004",
-          "title": "Measure phrase notionally singular existential"
-        },
         "displayTitle": "Measure phrase notionally singular existential",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 2,
         "cat": "Measure phrase notionally singular existential",
@@ -3737,13 +3487,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
         "data": "<p><strong>A와 B의 명사구</strong><br>A: There were a number of objections during the review.<br>B: The number of objections was lower than expected.<br>두 문장의 number 표현을 비교한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-005",
-          "title": "A number of plural existential agreement"
-        },
         "displayTitle": "A number of plural existential agreement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 2,
         "cat": "A number of plural existential agreement",
@@ -3780,13 +3524,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
         "data": "<p><strong>예약을 정하는 대화</strong><br>A: 오늘 어디서 만나지?<br>B: There’s the café we used for the last meeting.<br>두 사람 모두 그 카페를 알고 있다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-006",
-          "title": "Existential definite reminder exception"
-        },
         "displayTitle": "Existential definite reminder exception",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 2,
         "cat": "Existential definite reminder exception",
@@ -3821,13 +3559,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
         "data": "<p><strong>자동변환 오류</strong><br>원문: There is a route that avoids the toll road.<br>편집기: A route is that avoids the toll road.<br>목적: 통행료가 없는 경로의 존재를 말하기.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-007",
-          "title": "Existential counterpart is not mechanically derivable"
-        },
         "displayTitle": "Existential counterpart is not mechanically derivable",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 2,
         "cat": "Existential counterpart is not mechanically derivable",
@@ -3861,13 +3593,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-008",
-          "title": "Non-be existential verbs and register"
-        },
         "displayTitle": "Non-be existential verbs and register",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-008",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 2,
@@ -3904,13 +3630,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-009",
-          "title": "There is no Ving impossibility idiom"
-        },
         "displayTitle": "There is no Ving impossibility idiom",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-009",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 2,
@@ -3945,13 +3665,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-010",
-          "title": "No any is not stacked determiner pattern"
-        },
         "displayTitle": "No any is not stacked determiner pattern",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-010",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 2,
@@ -3986,13 +3700,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_tg_ox_questions"
         },
         "source": "Cowan (2008)의 관련 문법 개념을 참고하여 새로 구성한 판단 연습입니다. 공유되는 문법형식·용어와 새 판단상황을 구별합니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-011",
-          "title": "Existential relative subject omission error"
-        },
         "displayTitle": "Existential relative subject omission error",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-011",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 2,
@@ -4030,13 +3738,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD07-012",
-          "title": "Locative there versus existential there"
-        },
         "displayTitle": "Locative there versus existential there",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD07-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 2,
         "cat": "Locative there versus existential there",
@@ -4072,7 +3774,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>해석A: The technician worked on the platform. [수리 대상이 platform]<br>해석B: 같은 문장 [작업 장소가 platform 위]<br>전면화: On the platform, the technician worked. [장소 해석]</p>",
         "displayTitle": "Phrase vs selected preposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Phrase vs selected preposition",
@@ -4110,7 +3811,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>초안: The crew is capable of repair the antenna.<br>수정: The crew is capable of repairing the antenna.</p>",
         "displayTitle": "Adjective preposition gerund",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Adjective preposition gerund",
@@ -4146,7 +3846,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>규정 준수 안내: in accordance with the safety code<br>기계분석: in accordance with = 하나의 복합 전치사, the safety code = object NP</p>",
         "displayTitle": "Complex preposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Complex preposition",
@@ -4184,7 +3883,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>허용 조건: You may enter on the condition that a guide accompanies you.</p>",
         "displayTitle": "That clause complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "That clause complement",
@@ -4220,7 +3918,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>We dimmed the lights in order to protect the exhibit.<br>We dimmed the lights to protect the exhibit.</p>",
         "displayTitle": "Purpose infinitive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Purpose infinitive",
@@ -4258,7 +3955,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>경로표: 출발 위치는 창고 뒤쪽, 이동 목적지는 주차장.<br>출발점 PP 후보 A: [from [behind the warehouse]]<br>자동검사기는 from 뒤에 P가 또 있다는 이유만으로 A를 삭제하려 한다.</p>",
         "displayTitle": "Stacked prepositions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Stacked prepositions",
@@ -4294,7 +3990,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>담당자: We discussed the complaint in private.<br>해석: 남들이 없는 데서 비공개로 논의했다.</p>",
         "displayTitle": "Preposition adjective idiom",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Preposition adjective idiom",
@@ -4330,7 +4025,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>운송표: from the depot → to the pier<br>실제 경로: 창고에서 출발하여 부두에 도착.</p>",
         "displayTitle": "Source goal",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Source goal",
@@ -4371,7 +4065,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The kitten slept under the bench.<br>B: The kitten crawled under the bench. [바깥에서 그 아래로 이동]</p>",
         "displayTitle": "Static goal context",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Static goal context",
@@ -4407,7 +4100,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>지도 해석 과제: 표지판은 고개 반대편에 고정되어 있다. 독자가 현재 위치에서 고개를 넘으면 그 표지판에 도달한다.<br>분석표: 정적 물체 위치 / 독자에게 가정된 경로 / endpoint location.</p>",
         "displayTitle": "Endpoint vs fixed",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Endpoint vs fixed",
@@ -4445,7 +4137,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>Route: from Harbor A, through Channel B, to Island C.</p>",
         "displayTitle": "Intermediate path",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Intermediate path",
@@ -4483,7 +4174,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Send the file by noon.<br>B: Work on the file for two hours.</p>",
         "displayTitle": "Deadline duration",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Deadline duration",
@@ -4522,7 +4212,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Mina lifted the lid with a hook.<br>B: Mina entered the store with her cousin.</p>",
         "displayTitle": "With instrument comitative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "With instrument comitative",
@@ -4559,7 +4248,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The team won by a narrow margin.<br>B: The cloth is sold by the metre.</p>",
         "displayTitle": "By polysemy",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "By polysemy",
@@ -4597,7 +4285,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>점은 정확히 표적을 가리킨다: pointed at the target.<br>대략 그 방향만 가리킨다: pointed toward the target.</p>",
         "displayTitle": "Overlap not identity",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Overlap not identity",
@@ -4633,7 +4320,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>자동교정규칙: 모든 원인 표현 because of를 from으로 바꾼다.<br>입력: The concert was cancelled because of a hurricane.<br>비교 자료: collapsed from exhaustion은 가능하다.</p>",
         "displayTitle": "Causal from restriction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Causal from restriction",
@@ -4671,7 +4357,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>어휘표: depend on, capable of, believe in<br>학습 전략: 한국어 뜻 하나에 대응하는 전치사 하나를 정해 세 결합 모두에 적용.</p>",
         "displayTitle": "Lexical preposition not translation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Lexical preposition not translation",
@@ -4707,7 +4392,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We heard the warning from the radio operator.<br>B: A barrier prevented the cart from rolling downhill.</p>",
         "displayTitle": "Nonspatial from",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD08-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 20,
         "cat": "Nonspatial from",
@@ -4911,13 +4595,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
         "data": "<p><strong>서로 다른 목적어 형태</strong><br>A: I sorted them out before lunch.<br>B: I sorted out several before lunch.<br>A의 them과 B의 several은 여러 오류를 가리킨다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-001",
-          "title": "Indefinite quantifier objects differ from personal pronouns"
-        },
         "displayTitle": "Indefinite quantifier objects differ from personal pronouns",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 3,
         "cat": "Indefinite quantifier objects differ from personal pronouns",
@@ -4953,13 +4631,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-002",
-          "title": "Particle movement is lexical not universal"
-        },
         "displayTitle": "Particle movement is lexical not universal",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-002",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -4994,13 +4666,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-003",
-          "title": "Lexically restricted idiom object not freely variable"
-        },
         "displayTitle": "Lexically restricted idiom object not freely variable",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-003",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5038,13 +4704,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
         "data": "<p><strong>편집 제안</strong><br>채팅방의 대화를 묘사한 초안: Everyone quieted down suddenly.<br>자동 편집 제안: Everyone quieted suddenly down.<br>quiet down은 조용해지다는 하나의 phrasal verb 의미로 썼다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-004",
-          "title": "Adverb cannot freely intervene between verb particle"
-        },
         "displayTitle": "Adverb cannot freely intervene between verb particle",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 3,
         "cat": "Adverb cannot freely intervene between verb particle",
@@ -5078,13 +4738,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-005",
-          "title": "Causative alternation preserves affected participant"
-        },
         "displayTitle": "Causative alternation preserves affected participant",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-005",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5121,13 +4775,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-006",
-          "title": "Unpaired ergative does not guarantee transitive partner"
-        },
         "displayTitle": "Unpaired ergative does not guarantee transitive partner",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-006",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5165,13 +4813,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
         "data": "<p><strong>조사팀의 출발 보고</strong><br>A: The survey team set off for the observatory before sunrise.<br>B: The survey team set off before sunrise.<br>B는 목적지가 어디인지는 밝히지 않는다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-007",
-          "title": "Following PP does not automatically create lexical three-part verb"
-        },
         "displayTitle": "Following PP does not automatically create lexical three-part verb",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 3,
         "cat": "Following PP does not automatically create lexical three-part verb",
@@ -5206,13 +4848,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
         "data": "<p><strong>부사 삽입 진단</strong><br>A: The volunteers searched for the missing label.<br>B: The volunteers searched carefully for the missing label.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-008",
-          "title": "Adverb insertion supports prepositional analysis"
-        },
         "displayTitle": "Adverb insertion supports prepositional analysis",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 3,
         "cat": "Adverb insertion supports prepositional analysis",
@@ -5248,13 +4884,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-009",
-          "title": "Pied piping diagnostics depend on construction"
-        },
         "displayTitle": "Pied piping diagnostics depend on construction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-009",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5291,13 +4921,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-010",
-          "title": "No particle shift does not alone prove preposition"
-        },
         "displayTitle": "No particle shift does not alone prove preposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-010",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5334,13 +4958,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-011",
-          "title": "Resultative adjective not preposition"
-        },
         "displayTitle": "Resultative adjective not preposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-011",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5375,13 +4993,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-012",
-          "title": "Be adjective preposition not simple prepositional verb"
-        },
         "displayTitle": "Be adjective preposition not simple prepositional verb",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-012",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5416,13 +5028,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-013",
-          "title": "Final preposition in phrasal prepositional verb"
-        },
         "displayTitle": "Final preposition in phrasal prepositional verb",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-013",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5457,13 +5063,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-014",
-          "title": "Prepositional to licenses gerund not infinitive"
-        },
         "displayTitle": "Prepositional to licenses gerund not infinitive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-014",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5498,13 +5098,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 구성한 새 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-015",
-          "title": "Multiword verbs are not categorically informal"
-        },
         "displayTitle": "Multiword verbs are not categorically informal",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-015",
         "reviewStatus": "independent-content-reviewed",
         "data": "",
         "unit": 3,
@@ -5542,13 +5136,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD09-016",
-          "title": "Resultative order is construction-sensitive"
-        },
         "displayTitle": "Resultative order is construction-sensitive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD09-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 3,
         "cat": "Resultative order is construction-sensitive",
@@ -5718,7 +5306,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "Each of the engineers has… / The engineers each have…"
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#quantifiers",
         "source": "Cowan (2008), 인쇄 195, 196쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -5754,13 +5341,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: three those encrypted folders<br>B: those three encrypted folders<br>같은 세 폴더를 가리킨다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-001",
-          "title": "Central versus postdeterminer order"
-        },
         "displayTitle": "Central versus postdeterminer order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Central versus postdeterminer order",
@@ -5797,13 +5378,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Open three files.<br>B: Open the third file.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-002",
-          "title": "Ordinal ranks versus cardinal count"
-        },
         "displayTitle": "Ordinal ranks versus cardinal count",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Ordinal ranks versus cardinal count",
@@ -5838,13 +5413,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Half of our storage is reserved for backups.<br>storage는 저장 공간의 총량이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-003",
-          "title": "Fraction may quantify mass noun"
-        },
         "displayTitle": "Fraction may quantify mass noun",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Fraction may quantify mass noun",
@@ -5881,13 +5450,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The revised device has double the battery capacity of the prototype.<br>비교되는 기준은 시제품의 정해진 용량이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-004",
-          "title": "Multiplier requires determiner in compared amount"
-        },
         "displayTitle": "Multiplier requires determiner in compared amount",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Multiplier requires determiner in compared amount",
@@ -5922,13 +5485,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: this practical advice<br>B: these practical advice<br>advice는 조언 일반을 뜻한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-005",
-          "title": "Demonstrative mass agreement"
-        },
         "displayTitle": "Demonstrative mass agreement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Demonstrative mass agreement",
@@ -5963,13 +5520,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Yesterday I received a call from this researcher who builds underwater robots.<br>말하는 사람은 그 연구자를 처음 소개한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-006",
-          "title": "Narrative this may introduce referent"
-        },
         "displayTitle": "Narrative this may introduce referent",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Narrative this may introduce referent",
@@ -6006,13 +5557,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>현재 안내: This week the gallery is closed.<br>몇 년 전 일을 회상: That week the gallery was closed.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-007",
-          "title": "Demonstrative temporal remoteness"
-        },
         "displayTitle": "Demonstrative temporal remoteness",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Demonstrative temporal remoteness",
@@ -6047,13 +5592,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The extension applies to those members who submitted their forms before the deadline.<br>눈앞의 사람들을 손가락으로 가리키는 상황은 아니다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-008",
-          "title": "Defining demonstrative with relative clause"
-        },
         "displayTitle": "Defining demonstrative with relative clause",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Defining demonstrative with relative clause",
@@ -6088,13 +5627,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The conversion does not require many time.<br>시간의 길이를 말하며 실행 횟수를 말하지 않는다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-009",
-          "title": "Many versus much with mass quantity"
-        },
         "displayTitle": "Many versus much with mass quantity",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Many versus much with mass quantity",
@@ -6129,13 +5662,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Much progress has been made in restoring the damaged archive.<br>격식 있는 연구 보고의 문장이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-010",
-          "title": "Much is not restricted to negative clauses"
-        },
         "displayTitle": "Much is not restricted to negative clauses",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Much is not restricted to negative clauses",
@@ -6170,13 +5697,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Some ___ the cables need replacing.<br>앞서 점검한 특정 케이블 집합을 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-011",
-          "title": "Partitive of before definite set"
-        },
         "displayTitle": "Partitive of before definite set",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Partitive of before definite set",
@@ -6211,13 +5732,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The inspectors all arrived before dawn.<br>B: The inspectors arrived all before dawn.<br>all은 inspectors 전체를 가리킨다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-012",
-          "title": "Floating all versus lexical verb order"
-        },
         "displayTitle": "Floating all versus lexical verb order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Floating all versus lexical verb order",
@@ -6252,13 +5767,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The replacement filters cost twelve dollars each.<br>필터 세 개를 주문한다. 배송료는 별도 없다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-013",
-          "title": "Distributive each after measure"
-        },
         "displayTitle": "Distributive each after measure",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Distributive each after measure",
@@ -6293,13 +5802,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: All of the technicians have arrived.<br>B: The technicians have all arrived.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-014",
-          "title": "Most does not float like all"
-        },
         "displayTitle": "Most does not float like all",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Most does not float like all",
@@ -6334,13 +5837,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The firewall blocked all of them.<br>B: The firewall blocked them all.<br>them은 공격 요청들을 가리킨다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-015",
-          "title": "Pronoun flip retains object case"
-        },
         "displayTitle": "Pronoun flip retains object case",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Pronoun flip retains object case",
@@ -6375,13 +5872,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: All of us received a temporary access code.<br>검토 대상: All us received a temporary access code.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-016",
-          "title": "Of required before personal pronoun"
-        },
         "displayTitle": "Of required before personal pronoun",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Of required before personal pronoun",
@@ -6416,13 +5907,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>행사 준비자가 도움을 구한다.<br>A: Few volunteers are available, so we may need to cancel.<br>B: A few volunteers are available, so we can get started.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-017",
-          "title": "Few versus a few pragmatic orientation"
-        },
         "displayTitle": "Few versus a few pragmatic orientation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Few versus a few pragmatic orientation",
@@ -6457,13 +5942,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The investigator submitted two pieces of evidence.<br>evidence는 일반적인 증거라는 의미이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-018",
-          "title": "Partitive count noun carries plural morphology"
-        },
         "displayTitle": "Partitive count noun carries plural morphology",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Partitive count noun carries plural morphology",
@@ -6500,13 +5979,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Is this your access card?<br>B: No, mine is blue; that one is yours.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-019",
-          "title": "Dependent possessive requires following noun"
-        },
         "displayTitle": "Dependent possessive requires following noun",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Dependent possessive requires following noun",
@@ -6543,13 +6016,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The website’s navigation has been redesigned.<br>단순히 website가 사람이 아니라는 이유로 판정한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-020",
-          "title": "Inanimate genitive preference is not absolute ban"
-        },
         "displayTitle": "Inanimate genitive preference is not absolute ban",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Inanimate genitive preference is not absolute ban",
@@ -6586,13 +6053,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The applicant’s report was anonymous.<br>지원자가 제출하고 작성한 보고서를 검토하는 상황이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-021",
-          "title": "Genitive can encode association not ownership only"
-        },
         "displayTitle": "Genitive can encode association not ownership only",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Genitive can encode association not ownership only",
@@ -6627,13 +6088,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: the newly appointed international safety review panel’s recommendations<br>B: the recommendations of the newly appointed international safety review panel<br>동일한 패널과 권고를 가리킨다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-022",
-          "title": "End weight guides genitive preference not truth"
-        },
         "displayTitle": "End weight guides genitive preference not truth",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "End weight guides genitive preference not truth",
@@ -6668,13 +6123,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-023",
-          "title": "Another additive singular reference"
-        },
         "displayTitle": "Another additive singular reference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Another additive singular reference",
@@ -6709,13 +6158,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-024",
-          "title": "Each subject singular despite plural of noun"
-        },
         "displayTitle": "Each subject singular despite plural of noun",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Each subject singular despite plural of noun",
@@ -6750,13 +6193,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-025",
-          "title": "All versus each agreement"
-        },
         "displayTitle": "All versus each agreement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "All versus each agreement",
@@ -6791,13 +6228,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-026",
-          "title": "Evaluative demonstrative relevance"
-        },
         "displayTitle": "Evaluative demonstrative relevance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Evaluative demonstrative relevance",
@@ -6832,13 +6263,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-027",
-          "title": "Recognitional that shared memory"
-        },
         "displayTitle": "Recognitional that shared memory",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Recognitional that shared memory",
@@ -6873,13 +6298,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-028",
-          "title": "Free-choice any"
-        },
         "displayTitle": "Free-choice any",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Free-choice any",
@@ -6914,13 +6333,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-029",
-          "title": "Optional of before full definite NP"
-        },
         "displayTitle": "Optional of before full definite NP",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-029",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Optional of before full definite NP",
@@ -6955,13 +6368,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-030",
-          "title": "Genitive semantic roles"
-        },
         "displayTitle": "Genitive semantic roles",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-030",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Genitive semantic roles",
@@ -6996,13 +6403,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-031",
-          "title": "Possessive pronoun versus of pronoun"
-        },
         "displayTitle": "Possessive pronoun versus of pronoun",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-031",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Possessive pronoun versus of pronoun",
@@ -7037,13 +6438,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-032",
-          "title": "Floating all with copular be"
-        },
         "displayTitle": "Floating all with copular be",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-032",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Floating all with copular be",
@@ -7080,13 +6475,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-033",
-          "title": "Distributed each with recipient and amount"
-        },
         "displayTitle": "Distributed each with recipient and amount",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-033",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Distributed each with recipient and amount",
@@ -7121,13 +6510,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-034",
-          "title": "Pronoun flip changes case with grammatical role"
-        },
         "displayTitle": "Pronoun flip changes case with grammatical role",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-034",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Pronoun flip changes case with grammatical role",
@@ -7164,13 +6547,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-035",
-          "title": "Spatial demonstrative contrast"
-        },
         "displayTitle": "Spatial demonstrative contrast",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-035",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Spatial demonstrative contrast",
@@ -7205,13 +6582,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD10-036",
-          "title": "Floating quantifier in infinitival clause"
-        },
         "displayTitle": "Floating quantifier in infinitival clause",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD10-036",
         "reviewStatus": "independent-content-reviewed",
         "unit": 4,
         "cat": "Floating quantifier in infinitival clause",
@@ -7379,7 +6750,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "앞선 언어적 언급 없이도 공동의 물리적 환경이 식별 근거를 제공합니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#articles",
         "source": "Cowan (2008), 인쇄 220쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -7417,13 +6787,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Sora is an architect.<br>직업을 소개하며 숫자 one에 강세를 주지 않는다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-001",
-          "title": "Classifying indefinite predicate"
-        },
         "displayTitle": "Classifying indefinite predicate",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Classifying indefinite predicate",
@@ -7458,13 +6822,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The laboratory received equipment yesterday.<br>B: The equipment is now in the secure room.<br>같은 장비를 다시 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-002",
-          "title": "The can modify mass nouns"
-        },
         "displayTitle": "The can modify mass nouns",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "The can modify mass nouns",
@@ -7499,13 +6857,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: I meant the Alex who designed our logo, not the Alex in accounting.<br>두 직원의 이름이 같다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-003",
-          "title": "Proper name with identifying modifier"
-        },
         "displayTitle": "Proper name with identifying modifier",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Proper name with identifying modifier",
@@ -7540,13 +6892,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The Morenos are hosting the neighbourhood meeting.<br>Moreno 가족을 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-004",
-          "title": "Plural family name"
-        },
         "displayTitle": "Plural family name",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Plural family name",
@@ -7581,13 +6927,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>카페 직원: What can I get you?<br>손님: A coffee and a sandwich, please.<br>coffee 한 잔을 주문한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-005",
-          "title": "Mass-to-count serving coercion"
-        },
         "displayTitle": "Mass-to-count serving coercion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Mass-to-count serving coercion",
@@ -7622,13 +6962,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: This is a tea grown without irrigation.<br>차의 새 품종을 시음회에서 소개한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-006",
-          "title": "Type reading of mass noun"
-        },
         "displayTitle": "Type reading of mass noun",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Type reading of mass noun",
@@ -7663,13 +6997,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>교정기 오류 판정</strong><br>접수 기록: Some customer complained that the receipt was unreadable.<br>작성자: 고객 한 사람이지만 신원을 기록하지 못했다.<br>교정기: some 뒤이므로 customers로 고치세요.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-007",
-          "title": "Singular some identity unspecified"
-        },
         "displayTitle": "Singular some identity unspecified",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Singular some identity unspecified",
@@ -7704,13 +7032,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>서로 다른 평가</strong><br>A: That was SOME performance—every movement was flawless.<br>B: That was SOME performance—half the equipment failed and nobody knew what to do.<br>두 화자 모두 SOME에 강세를 주며 B는 비꼬는 말투이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-008",
-          "title": "Stressed some evaluative use"
-        },
         "displayTitle": "Stressed some evaluative use",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Stressed some evaluative use",
@@ -7745,13 +7067,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Lights were flashing around the stage when we arrived.<br>어제 참석한 공연의 한 장면이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-009",
-          "title": "Bare plural existential not always generic"
-        },
         "displayTitle": "Bare plural existential not always generic",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Bare plural existential not always generic",
@@ -7788,13 +7104,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Intelligence is difficult to define.<br>B: The intelligence displayed in this solution impressed the panel.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-010",
-          "title": "Abstract noun generic versus specified instance"
-        },
         "displayTitle": "Abstract noun generic versus specified instance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Abstract noun generic versus specified instance",
@@ -7829,13 +7139,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We usually skip breakfast on Sundays.<br>B: The breakfast served on the overnight train was excellent.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-011",
-          "title": "Meal particularization"
-        },
         "displayTitle": "Meal particularization",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Meal particularization",
@@ -7870,13 +7174,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The children are at school learning to read.<br>B: The electrician is at the school repairing the alarm.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-012",
-          "title": "Institution versus building interpretation"
-        },
         "displayTitle": "Institution versus building interpretation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Institution versus building interpretation",
@@ -7911,13 +7209,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: 미국영어 안내문에서 환자가 in the hospital이라고 쓰였다.<br>B: 영국영어 안내문에서 환자가 in hospital이라고 쓰였다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-013",
-          "title": "Dialect-specific hospital article"
-        },
         "displayTitle": "Dialect-specific hospital article",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Dialect-specific hospital article",
@@ -7952,13 +7244,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>일정 후보표</strong><br>후보: 5월의 금요일 네 날짜가 모두 비어 있다.<br>조건: The inspection must take place on a Friday, but any of the four dates will work.<br>날짜 하나를 아직 선택하지 않았다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-014",
-          "title": "Indefinite weekday selects unspecified member"
-        },
         "displayTitle": "Indefinite weekday selects unspecified member",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Indefinite weekday selects unspecified member",
@@ -7995,13 +7281,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We travelled by train.<br>B: We left the luggage on the train.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-015",
-          "title": "Transport mode versus vehicle reference"
-        },
         "displayTitle": "Transport mode versus vehicle reference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Transport mode versus vehicle reference",
@@ -8036,13 +7316,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The dispute was settled through direct discussion between employer and employee.<br>일반적인 고용 관계의 두 역할을 대비한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-016",
-          "title": "Parallel role expressions zero article"
-        },
         "displayTitle": "Parallel role expressions zero article",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Parallel role expressions zero article",
@@ -8077,13 +7351,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>임명과 직업 소개</strong><br>A, 임명 공고: The board appointed Imani director of the archive.<br>B, 직업 소개: Imani is an archivist.<br>A의 director는 해당 기관의 한 직책이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-017",
-          "title": "Unique role naming complement"
-        },
         "displayTitle": "Unique role naming complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Unique role naming complement",
@@ -8118,13 +7386,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A, 뉴스 제목: Robot Finds Missing Artifact<br>B, 일반 기사 첫 문장 후보: Robot found missing artifact yesterday.<br>특정 robot을 앞서 언급하지 않았다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-018",
-          "title": "Headline omission is register-sensitive"
-        },
         "displayTitle": "Headline omission is register-sensitive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Headline omission is register-sensitive",
@@ -8159,13 +7421,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The giant anteater has a long, narrow tongue.<br>종의 특성을 설명하는 백과사전 항목이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-019",
-          "title": "Generic singular definite"
-        },
         "displayTitle": "Generic singular definite",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Generic singular definite",
@@ -8202,13 +7458,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We need a technician who can repair underwater cameras.<br>조건을 만족하는 사람이라면 누구든 지원할 수 있다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-020",
-          "title": "Relative clause does not force the universally"
-        },
         "displayTitle": "Relative clause does not force the universally",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Relative clause does not force the universally",
@@ -8245,13 +7495,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>Lake Tahoe<br>the Rocky Mountains<br>장소 안내문의 두 표기이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-021",
-          "title": "Geographical names have class-sensitive articles"
-        },
         "displayTitle": "Geographical names have class-sensitive articles",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Geographical names have class-sensitive articles",
@@ -8290,13 +7534,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-022",
-          "title": "Proper name default versus geographic exceptions"
-        },
         "displayTitle": "Proper name default versus geographic exceptions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Proper name default versus geographic exceptions",
@@ -8333,13 +7571,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-023",
-          "title": "Single lake versus range naming"
-        },
         "displayTitle": "Single lake versus range naming",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Single lake versus range naming",
@@ -8374,13 +7606,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-024",
-          "title": "Superlative in identified comparison set"
-        },
         "displayTitle": "Superlative in identified comparison set",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Superlative in identified comparison set",
@@ -8417,13 +7643,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-025",
-          "title": "Ordinal identified sequence versus additional attempt"
-        },
         "displayTitle": "Ordinal identified sequence versus additional attempt",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Ordinal identified sequence versus additional attempt",
@@ -8458,13 +7678,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-026",
-          "title": "Fixed-expression article choice"
-        },
         "displayTitle": "Fixed-expression article choice",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Fixed-expression article choice",
@@ -8499,13 +7713,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-027",
-          "title": "Some time duration reading"
-        },
         "displayTitle": "Some time duration reading",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Some time duration reading",
@@ -8540,13 +7748,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-028",
-          "title": "Season article variation"
-        },
         "displayTitle": "Season article variation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Season article variation",
@@ -8581,13 +7783,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD11-029",
-          "title": "Identifying modifiers with calendar names"
-        },
         "displayTitle": "Identifying modifiers with calendar names",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD11-029",
         "reviewStatus": "independent-content-reviewed",
         "unit": 11,
         "cat": "Identifying modifiers with calendar names",
@@ -8791,13 +7987,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The second route is less dangerous.<br>B: Of the three routes, the tunnel route is the least dangerous.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-001",
-          "title": "Less and least compare decreasing degree"
-        },
         "displayTitle": "Less and least compare decreasing degree",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Less and least compare decreasing degree",
@@ -8832,13 +8022,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: This archive is more complete than the older copy: it includes the missing correspondence.<br>자료의 포괄 정도를 비교한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-002",
-          "title": "Absolute adjective gradability depends on construed scale"
-        },
         "displayTitle": "Absolute adjective gradability depends on construed scale",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Absolute adjective gradability depends on construed scale",
@@ -8873,13 +8057,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The second demonstration was more convincing than the first.<br>공식 평가 보고서이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-003",
-          "title": "Participial comparison uses periphrasis"
-        },
         "displayTitle": "Participial comparison uses periphrasis",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Participial comparison uses periphrasis",
@@ -8916,13 +8094,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: An old colleague called me yesterday.<br>B: The colleague is old.<br>A의 colleague는 서른 살이며 십 년 동안 함께 일했다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-004",
-          "title": "Attributive relational meaning differs from inherent property"
-        },
         "displayTitle": "Attributive relational meaning differs from inherent property",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Attributive relational meaning differs from inherent property",
@@ -8957,13 +8129,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The audit revealed utter confusion.<br>B: The confusion was utter.<br>일반적인 산문에서 A의 정도 강화 용법을 그대로 옮기려 한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-005",
-          "title": "Attributive-only degree adjective"
-        },
         "displayTitle": "Attributive-only degree adjective",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Attributive-only degree adjective",
@@ -8998,13 +8164,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: A medical journalist interviewed the surgeon.<br>그 기자는 의료 뉴스를 전문으로 취재한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-006",
-          "title": "Associative adjective not literal property"
-        },
         "displayTitle": "Associative adjective not literal property",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Associative adjective not literal property",
@@ -9041,13 +8201,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The instrument is battery-powered.<br>검토 규칙: 복합형용사는 모두 be 뒤에 같은 형태로 옮길 수 있다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-007",
-          "title": "Compound adjective predication is lexically variable"
-        },
         "displayTitle": "Compound adjective predication is lexically variable",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Compound adjective predication is lexically variable",
@@ -9082,13 +8236,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The guard remained awake.<br>B: the awake guard<br>별도의 정도 수식어나 특수 문체 없는 기본 단독 수식으로 비교한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-008",
-          "title": "Predicate a-adjective versus prenominal simple form"
-        },
         "displayTitle": "Predicate a-adjective versus prenominal simple form",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Predicate a-adjective versus prenominal simple form",
@@ -9123,13 +8271,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The passengers were [extremely anxious about the delay].<br>대괄호의 구조를 분석한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-009",
-          "title": "Adjective phrase includes degree and PP"
-        },
         "displayTitle": "Adjective phrase includes degree and PP",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Adjective phrase includes degree and PP",
@@ -9166,13 +8308,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The coordinator is responsible with checking the certificates.<br>의도: 확인 작업의 책임을 맡는다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-010",
-          "title": "Preposition choice is adjective-sensitive"
-        },
         "displayTitle": "Preposition choice is adjective-sensitive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Preposition choice is adjective-sensitive",
@@ -9207,13 +8343,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The robot can run fast without losing its balance.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-011",
-          "title": "Flat adverb not necessarily adjective"
-        },
         "displayTitle": "Flat adverb not necessarily adjective",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Flat adverb not necessarily adjective",
@@ -9248,13 +8378,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The library is temporarily using a portable generator.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-012",
-          "title": "Duration versus frequency"
-        },
         "displayTitle": "Duration versus frequency",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Duration versus frequency",
@@ -9289,13 +8413,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The assistant often checks the locks.<br>B: The assistant checked the locks earlier.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-013",
-          "title": "Frequency versus time location"
-        },
         "displayTitle": "Frequency versus time location",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Frequency versus time location",
@@ -9332,13 +8450,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The university sent the certificates electronically rather than by courier.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-014",
-          "title": "Instrumental adverb versus manner"
-        },
         "displayTitle": "Instrumental adverb versus manner",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Instrumental adverb versus manner",
@@ -9373,13 +8485,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The replacement parts are manufactured locally, near the repair centre.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-015",
-          "title": "Place adverb"
-        },
         "displayTitle": "Place adverb",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Place adverb",
@@ -9414,13 +8520,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The app also stores bookmarks.<br>B: The app only stores bookmarks.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-016",
-          "title": "Additive versus restrictive focus"
-        },
         "displayTitle": "Additive versus restrictive focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Additive versus restrictive focus",
@@ -9455,13 +8555,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The tester deliberately entered an invalid password to check the warning.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-017",
-          "title": "Act-related intention versus evaluation"
-        },
         "displayTitle": "Act-related intention versus evaluation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Act-related intention versus evaluation",
@@ -9496,13 +8590,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The server probably restarted during the night.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-018",
-          "title": "Epistemic stance uncertainty"
-        },
         "displayTitle": "Epistemic stance uncertainty",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Epistemic stance uncertainty",
@@ -9537,13 +8625,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The missing manuscript was reportedly found in a private collection.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-019",
-          "title": "Evidential reporting stance"
-        },
         "displayTitle": "Evidential reporting stance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Evidential reporting stance",
@@ -9578,13 +8660,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The process takes roughly twelve seconds on this device.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-020",
-          "title": "Hedge marks approximation"
-        },
         "displayTitle": "Hedge marks approximation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Hedge marks approximation",
@@ -9619,13 +8695,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The road is flooded. Therefore, the buses are using a different route.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-021",
-          "title": "Connective therefore links propositions"
-        },
         "displayTitle": "Connective therefore links propositions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Connective therefore links propositions",
@@ -9662,13 +8732,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The camera rotated remarkably slowly during calibration.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-022",
-          "title": "Stacked adverb modification"
-        },
         "displayTitle": "Stacked adverb modification",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Stacked adverb modification",
@@ -9703,13 +8767,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: She checks often it.<br>it은 앞서 언급한 센서이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-023",
-          "title": "Short direct object restricts intervening frequency adverb"
-        },
         "displayTitle": "Short direct object restricts intervening frequency adverb",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Short direct object restricts intervening frequency adverb",
@@ -9746,13 +8804,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The inspection vehicle moved quietly into the tunnel.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-024",
-          "title": "Following PP not direct object"
-        },
         "displayTitle": "Following PP not direct object",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Following PP not direct object",
@@ -9787,13 +8839,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The drone almost collided with the mast.<br>B: The drone collided with the mast almost.<br>후첨·자기수정 억양은 쓰지 않는다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-025",
-          "title": "Almost final placement restriction"
-        },
         "displayTitle": "Almost final placement restriction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Almost final placement restriction",
@@ -9828,13 +8874,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Always disconnect the battery before opening the case.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-026",
-          "title": "Initial always imperative exception"
-        },
         "displayTitle": "Initial always imperative exception",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Initial always imperative exception",
@@ -9869,13 +8909,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Wisely, the guide refused to enter the unstable cave.<br>거절 덕분에 모두 안전해졌다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-027",
-          "title": "Sentence stance versus manner scope"
-        },
         "displayTitle": "Sentence stance versus manner scope",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Sentence stance versus manner scope",
@@ -9910,13 +8944,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We need to carefully verify each checksum before deleting the source files.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-028",
-          "title": "Split infinitive not universally ungrammatical"
-        },
         "displayTitle": "Split infinitive not universally ungrammatical",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Split infinitive not universally ungrammatical",
@@ -9951,13 +8979,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The new connector is far more reliable under vibration.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-029",
-          "title": "Comparative degree modifiers"
-        },
         "displayTitle": "Comparative degree modifiers",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-029",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Comparative degree modifiers",
@@ -9992,13 +9014,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The backup sensor operates independently of the main circuit.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-030",
-          "title": "Adverb phrase prepositional complement"
-        },
         "displayTitle": "Adverb phrase prepositional complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-030",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Adverb phrase prepositional complement",
@@ -10033,13 +9049,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-031",
-          "title": "Attributive ordering is contextual preference"
-        },
         "displayTitle": "Attributive ordering is contextual preference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-031",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Attributive ordering is contextual preference",
@@ -10074,13 +9084,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-032",
-          "title": "Participial adjective and verbal argument diagnostic"
-        },
         "displayTitle": "Participial adjective and verbal argument diagnostic",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-032",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Participial adjective and verbal argument diagnostic",
@@ -10117,13 +9121,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-033",
-          "title": "Adverb attachment across infinitive boundary"
-        },
         "displayTitle": "Adverb attachment across infinitive boundary",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-033",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Adverb attachment across infinitive boundary",
@@ -10158,13 +9156,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-034",
-          "title": "Generalizing stance versus universal claim"
-        },
         "displayTitle": "Generalizing stance versus universal claim",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-034",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Generalizing stance versus universal claim",
@@ -10199,13 +9191,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-035",
-          "title": "Viewpoint stance"
-        },
         "displayTitle": "Viewpoint stance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-035",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Viewpoint stance",
@@ -10240,13 +9226,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-036",
-          "title": "Reality stance versus reported evidence"
-        },
         "displayTitle": "Reality stance versus reported evidence",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-036",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Reality stance versus reported evidence",
@@ -10281,13 +9261,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-037",
-          "title": "Non-ly degree adverbs"
-        },
         "displayTitle": "Non-ly degree adverbs",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-037",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Non-ly degree adverbs",
@@ -10326,13 +9300,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD12-038",
-          "title": "Degree adverb modifying event predicate"
-        },
         "displayTitle": "Degree adverb modifying event predicate",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD12-038",
         "reviewStatus": "independent-content-reviewed",
         "unit": 5,
         "cat": "Degree adverb modifying event predicate",
@@ -10355,7 +9323,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "To her / To them"
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#pronouns",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -10390,7 +9357,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "The engineer repaired the sensor.도 완전합니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#pronouns",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -10424,7 +9390,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "Each runner congratulated the other."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#pronouns",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -10458,7 +9423,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "This is my bicycle. / This bicycle is mine."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#pronouns",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -10502,7 +9466,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "주절 agreement와 뒤에서 indefinite pronoun을 받는 anaphoric form 선택을 구별합니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#pronouns",
         "source": "Cowan (2008), 인쇄 277, 278쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -10538,13 +9501,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Who left the note on my desk?<br>B: It was me. Sorry, I forgot to sign it.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-001",
-          "title": "Predicate pronoun case register"
-        },
         "displayTitle": "Predicate pronoun case register",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Predicate pronoun case register",
@@ -10581,13 +9538,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: You can read the display more easily than I can.<br>B: You can read the display more easily than me.<br>일상 대화의 두 표현이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-002",
-          "title": "Comparison full clause versus reduced pronoun"
-        },
         "displayTitle": "Comparison full clause versus reduced pronoun",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Comparison full clause versus reduced pronoun",
@@ -10624,13 +9575,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Please share the access code with the supervisor and I.<br>격식 있는 안내문을 편집한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-003",
-          "title": "Conjoined object pronoun case"
-        },
         "displayTitle": "Conjoined object pronoun case",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Conjoined object pronoun case",
@@ -10665,13 +9610,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Me, I prefer to keep a printed backup.<br>Me 뒤에 짧은 pause가 있는 구어적 화제 제시이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-004",
-          "title": "Left dislocation not ordinary subject case"
-        },
         "displayTitle": "Left dislocation not ordinary subject case",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Left dislocation not ordinary subject case",
@@ -10708,13 +9647,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Before she opened the sealed envelope, Dr. Seo checked the date.<br>she와 Dr. Seo가 같은 사람인 독해를 검토한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-005",
-          "title": "Backward anaphora possible"
-        },
         "displayTitle": "Backward anaphora possible",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Backward anaphora possible",
@@ -10749,13 +9682,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We found a spare recorder in the cabinet. It still had a working battery.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-006",
-          "title": "Inter versus intrasentential anaphora"
-        },
         "displayTitle": "Inter versus intrasentential anaphora",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Inter versus intrasentential anaphora",
@@ -10790,13 +9717,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The curator prides herself on keeping accurate records.<br>의도: 자신의 기록 관리 능력을 자랑스럽게 여긴다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-007",
-          "title": "Lexically required reflexive"
-        },
         "displayTitle": "Lexically required reflexive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Lexically required reflexive",
@@ -10831,13 +9752,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The children washed before dinner.<br>검토 규칙: 모든 동사의 reflexive object는 선택적이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-008",
-          "title": "Optional reflexive verb not universal omission"
-        },
         "displayTitle": "Optional reflexive verb not universal omission",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Optional reflexive verb not universal omission",
@@ -10872,13 +9787,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Mina blamed her for the missing log.<br>Mina와 her가 가리키는 Jina는 다른 사람이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-009",
-          "title": "Local direct object reflexive versus personal pronoun"
-        },
         "displayTitle": "Local direct object reflexive versus personal pronoun",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Local direct object reflexive versus personal pronoun",
@@ -10913,13 +9822,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The producer said that the editor had injured himself.<br>producer와 editor는 서로 다른 남성이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-010",
-          "title": "Local reflexive in embedded finite clause"
-        },
         "displayTitle": "Local reflexive in embedded finite clause",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Local reflexive in embedded finite clause",
@@ -10954,13 +9857,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: This project needs someone like yourself who has relevant experience.<br>청자를 경험 많은 사람의 예로 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-011",
-          "title": "Exempt reflexives not ordinary local object"
-        },
         "displayTitle": "Exempt reflexives not ordinary local object",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Exempt reflexives not ordinary local object",
@@ -10997,13 +9894,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The volunteers assembled the kits themselves.<br>그들이 외주업체에 맡기지 않고 직접 조립했다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-012",
-          "title": "Intensive removal preserves core participants"
-        },
         "displayTitle": "Intensive removal preserves core participants",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Intensive removal preserves core participants",
@@ -11038,13 +9929,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The three interpreters helped one another throughout the conference.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-013",
-          "title": "Reciprocal not restricted to exactly two"
-        },
         "displayTitle": "Reciprocal not restricted to exactly two",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Reciprocal not restricted to exactly two",
@@ -11079,13 +9964,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: A colleague of hers offered to repair the projector.<br>청자는 그 협력자의 이름을 모른다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-014",
-          "title": "Double genitive versus identifiable possessive"
-        },
         "displayTitle": "Double genitive versus identifiable possessive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Double genitive versus identifiable possessive",
@@ -11120,13 +9999,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The failed update saved nothing.<br>B: The failed update did not save anything.<br>어떤 항목도 저장되지 않았음을 보고한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-015",
-          "title": "Negative indefinite versus not any"
-        },
         "displayTitle": "Negative indefinite versus not any",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Negative indefinite versus not any",
@@ -11163,13 +10036,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>복도에서 발소리가 들렸다.<br>A: Is someone waiting outside?<br>B: Is anyone waiting outside?</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-016",
-          "title": "Some question positive expectation"
-        },
         "displayTitle": "Some question positive expectation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Some question positive expectation",
@@ -11204,13 +10071,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: I found the safety goggles and put them in the case.<br>고글 한 개를 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-017",
-          "title": "Pluralia tantum pronoun agreement"
-        },
         "displayTitle": "Pluralia tantum pronoun agreement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Pluralia tantum pronoun agreement",
@@ -11245,13 +10106,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The team are changing into their uniforms.<br>영국영어 문맥에서 선수들 각자의 행동을 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-018",
-          "title": "Collective notional agreement and dialect"
-        },
         "displayTitle": "Collective notional agreement and dialect",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Collective notional agreement and dialect",
@@ -11288,13 +10143,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Every applicant keeps a copy of his form.<br>B의 의도: Applicants keep copies of their forms.<br>모든 성별을 포함하는 안내문이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-019",
-          "title": "Gender-neutral plural recasting changes agreement"
-        },
         "displayTitle": "Gender-neutral plural recasting changes agreement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Gender-neutral plural recasting changes agreement",
@@ -11329,13 +10178,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The dashboard and the headlights went dark at the same time. This startled the driver.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-020",
-          "title": "Demonstrative pronoun can refer to event"
-        },
         "displayTitle": "Demonstrative pronoun can refer to event",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Demonstrative pronoun can refer to event",
@@ -11370,13 +10213,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: These cables are shielded.<br>B: Please use these.<br>B의 these는 눈앞의 케이블들을 가리킨다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-021",
-          "title": "Determiner versus pronoun occurrence"
-        },
         "displayTitle": "Determiner versus pronoun occurrence",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Determiner versus pronoun occurrence",
@@ -11413,13 +10250,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-022",
-          "title": "Conjoined subject case prescribed register"
-        },
         "displayTitle": "Conjoined subject case prescribed register",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Conjoined subject case prescribed register",
@@ -11456,13 +10287,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-023",
-          "title": "Untriggered reflexive register-sensitive"
-        },
         "displayTitle": "Untriggered reflexive register-sensitive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Untriggered reflexive register-sensitive",
@@ -11499,13 +10324,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-024",
-          "title": "Picture reflexive context dependent antecedent"
-        },
         "displayTitle": "Picture reflexive context dependent antecedent",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Picture reflexive context dependent antecedent",
@@ -11542,13 +10361,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-025",
-          "title": "Anaphor versus personal pronoun in representational NP"
-        },
         "displayTitle": "Anaphor versus personal pronoun in representational NP",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Anaphor versus personal pronoun in representational NP",
@@ -11583,13 +10396,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD13-026",
-          "title": "Fronted intensive pronoun supplement"
-        },
         "displayTitle": "Fronted intensive pronoun supplement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD13-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 12,
         "cat": "Fronted intensive pronoun supplement",
@@ -11627,7 +10434,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>자동생성: The device cans detect motion.<br>수정후: The device can detect motion.</p>",
         "displayTitle": "Modal invariance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Modal invariance",
@@ -11663,7 +10469,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>조립 후보: may + have + been + recording<br>잘못된 후보: may + been + have + recording</p>",
         "displayTitle": "Modal aux order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Modal aux order",
@@ -11701,7 +10506,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>표준영어 문어: may must renew → may have to renew</p>",
         "displayTitle": "Pure vs semi combination",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Pure vs semi combination",
@@ -11737,7 +10541,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The lock can withstand heat. [성능]<br>B: You can use this entrance. [담당자의 허가]<br>C: The valley can flood in spring. [일반적 가능성]</p>",
         "displayTitle": "Can context",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Can context",
@@ -11774,7 +10577,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>지금 직원에게: Could I charge my phone here?</p>",
         "displayTitle": "Could nonpast request",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Could nonpast request",
@@ -11812,7 +10614,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: She could have taken the earlier bus; I don’t know whether she did.<br>B: She could have taken it, but she chose to walk.</p>",
         "displayTitle": "Could have ambiguity",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Could have ambiguity",
@@ -11850,7 +10651,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: 실험실 규정 You may not enter.<br>B: 일정이 불확실 The courier may not arrive today.</p>",
         "displayTitle": "May not scope",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "May not scope",
@@ -11886,7 +10686,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>동료가 변경을 알리지 않아 피해가 생겼다: You might have warned us before changing the schedule!</p>",
         "displayTitle": "Might criticism",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Might criticism",
@@ -11922,7 +10721,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: You should archive the files. [권고]<br>B: The files should be ready now. [처리시간에 근거한 예상]</p>",
         "displayTitle": "Should advice probability",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Should advice probability",
@@ -11962,7 +10760,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Visitors must wear a badge. [규칙]<br>B: She must be nearby; her bicycle is outside. [단서에서 추론]</p>",
         "displayTitle": "Must obligation deduction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Must obligation deduction",
@@ -12003,7 +10800,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: You must not submit a second form.<br>B: You don’t have to submit a second form.</p>",
         "displayTitle": "Prohibition no necessity",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Prohibition no necessity",
@@ -12042,7 +10838,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>어제의 의무: We had to evacuate.<br>고쳐쓴 문장: We musted evacuate.</p>",
         "displayTitle": "Past obligation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Past obligation",
@@ -12078,7 +10873,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Need we continue? [격식적 BrE modal 용법]<br>B: Do we need to continue? [일반 동사 용법]</p>",
         "displayTitle": "Modal need lexical need",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Modal need lexical need",
@@ -12116,7 +10910,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>권고 A: You should check the label.<br>권고 B: You ought to check the label.</p>",
         "displayTitle": "Ought to",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Ought to",
@@ -12152,7 +10945,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>지금 눈앞의 위험: You’d better not step onto that cracked panel.</p>",
         "displayTitle": "Had better",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Had better",
@@ -12190,7 +10982,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>교정 사전의 두 entry:<br>have to: 의무 의미, 과거 had to 및 modal+have to 가능.<br>have got to: 의무 의미는 가깝지만 같은 분포를 모두 갖지는 않음.<br>자동 규칙 제안: 문맥을 검사하지 않고 모든 have to 문자열을 have got to로 일괄 대체.</p>",
         "displayTitle": "Have got restrictions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Have got restrictions",
@@ -12226,7 +11017,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>근무 규정: Each operator is supposed to record the temperature.</p>",
         "displayTitle": "Supposed to",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Supposed to",
@@ -12262,7 +11052,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>거절에도 불구하고 굳게 선언: I WILL finish the repairs, whatever happens.</p>",
         "displayTitle": "Will volition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Will volition",
@@ -12298,7 +11087,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>둘이 다음 활동을 정하며: Shall we review the map first?</p>",
         "displayTitle": "Shall suggestion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Shall suggestion",
@@ -12336,7 +11124,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: In those years, she would sketch every evening.<br>B: At the time, nobody knew the bridge would close the following winter.</p>",
         "displayTitle": "Would habit future",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Would habit future",
@@ -12374,7 +11161,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We’re going to upgrade the server next month. [확정 계획]<br>B: I think we’ll upgrade it sometime. [불확실한 예상]</p>",
         "displayTitle": "Going to tendency",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Going to tendency",
@@ -12410,7 +11196,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>물컵이 탁자 끝에서 기울어지는 순간: Watch out, it’s going to fall!</p>",
         "displayTitle": "Imminent going to",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Imminent going to",
@@ -12446,7 +11231,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>격식적 BrE 예: Dare I question the decision?<br>분석 대상은 dare 뒤 question의 형태이다.</p>",
         "displayTitle": "Dare modal",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Dare modal",
@@ -12484,7 +11268,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>가상 화자 S의 수용표:<br>예방 조언: You’d best take a coat. ✓ / You’d better take a coat. ✓<br>심각한 위협: You’d better obey, or I’ll dismiss you. ✓<br>같은 위협에서 best로 교체: S는 부적절하다고 평가.<br>이는 한 화자의 설정 자료이며 실제 말뭉치 측정값이 아니다.</p>",
         "displayTitle": "Had best variation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Had best variation",
@@ -12522,7 +11305,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>현재 추론: That can’t be the missing file; the dates differ.<br>과거 추론: He couldn’t have signed it yesterday; he was overseas.</p>",
         "displayTitle": "Cant couldnt inference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Cant couldnt inference",
@@ -12562,7 +11344,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The parcel should have arrived by now; the tracking estimate said noon, but it has not arrived.<br>B: You ought to have checked the address; you sent it to the wrong office.</p>",
         "displayTitle": "Perfect advice vs expectation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Perfect advice vs expectation",
@@ -12602,7 +11383,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Would you lower the music, please?<br>B: Will you lower the music, please?<br>둘 다 지금 행동을 요청하는 상황이다.</p>",
         "displayTitle": "Polite modal request",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD14-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 21,
         "cat": "Polite modal request",
@@ -12625,7 +11405,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "The librarian lent an umbrella to the visitor."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#dative",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -12660,7 +11439,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "I explained to him why the screen went dark."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#dative",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -12694,7 +11472,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "For the neighbours는 beneficiary이고 all morning은 duration입니다. Double-object pattern의 theme 자리를 시간 표현으로 대체하지 않습니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#dative",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -12728,7 +11505,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "The assistant sent a file to the manager."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#dative",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -12770,7 +11546,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "Given: the badge → New: a volunteer at the south gate."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#dative",
         "source": "Cowan (2008), 인쇄 339쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -12806,13 +11581,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: I ordered a cake for the coordinator because she had lost her voice.<br>그녀를 대신해 전화로 주문했고 케이크는 회의 참석자들이 먹었다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-001",
-          "title": "Beneficiary versus proxy meaning"
-        },
         "displayTitle": "Beneficiary versus proxy meaning",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Beneficiary versus proxy meaning",
@@ -12847,13 +11616,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The error message gave the technician a useful clue.<br>오류 메시지가 단서를 제공했다는 뜻이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-002",
-          "title": "Inanimate subject metaphorical transfer"
-        },
         "displayTitle": "Inanimate subject metaphorical transfer",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Inanimate subject metaphorical transfer",
@@ -12890,13 +11653,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: I owe the discovery to a patient’s unexpected question.<br>연구자가 발견의 계기를 밝힌다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-003",
-          "title": "Owe lexical sense controls interpretation"
-        },
         "displayTitle": "Owe lexical sense controls interpretation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Owe lexical sense controls interpretation",
@@ -12931,13 +11688,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>변환 규칙 평가</strong><br>번역기 규칙: V + 사람 + 대상 → V + 대상 + to + 사람<br>검사 동사 목록: send, lend, envy<br>문맥: envy는 상대의 유리한 처지를 부러워한다는 뜻이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-004",
-          "title": "Two objects do not guarantee to alternation"
-        },
         "displayTitle": "Two objects do not guarantee to alternation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Two objects do not guarantee to alternation",
@@ -12974,13 +11725,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Charge the replacement parts to the maintenance account, not to the travel account.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-005",
-          "title": "Billing account versus animate recipient"
-        },
         "displayTitle": "Billing account versus animate recipient",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Billing account versus animate recipient",
@@ -13015,13 +11760,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>동사 교체 검사</strong><br>A: Send the operator a summary of the fault.<br>B: Describe the operator a summary of the fault.<br>B의 의도는 operator에게 고장 내용을 설명하는 것이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-006",
-          "title": "Lexical dative restriction despite recipient meaning"
-        },
         "displayTitle": "Lexical dative restriction despite recipient meaning",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Lexical dative restriction despite recipient meaning",
@@ -13056,13 +11795,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>관계와 형식을 구별하기</strong><br>아나운서가 이름의 발음을 몰라 통역사에게 대신 읽어 달라고 부탁했다.<br>전달할 두 정보: 행위 대상=이름 / 도움을 받은 사람=아나운서<br>검토 규칙: 도움을 받은 사람이 있으면 모든 동사에서 그 사람을 전치사 없는 첫 목적어로 놓는다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-007",
-          "title": "For beneficiary does not license every double object"
-        },
         "displayTitle": "For beneficiary does not license every double object",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "For beneficiary does not license every double object",
@@ -13099,13 +11832,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The tutor lent me one.<br>B: The tutor lent me it.<br>one은 여러 태블릿 중 하나, it은 앞서 지정한 태블릿이며 강세 없는 대명사이다. 표준 미국영어의 중립 문장으로 비교한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-008",
-          "title": "Pronominal theme versus indefinite substitute"
-        },
         "displayTitle": "Pronominal theme versus indefinite substitute",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Pronominal theme versus indefinite substitute",
@@ -13140,13 +11867,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The designer gave me this.<br>화자는 손에 든 모형을 가리킨다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-009",
-          "title": "Demonstrative theme exception"
-        },
         "displayTitle": "Demonstrative theme exception",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Demonstrative theme exception",
@@ -13183,13 +11904,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The new intern has just arrived. Does she need anything?<br>B: I sent her a checklist for the first day.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-010",
-          "title": "Given recipient precedes new theme"
-        },
         "displayTitle": "Given recipient precedes new theme",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Given recipient precedes new theme",
@@ -13224,13 +11939,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The coordinator sent a schedule listing every rehearsal, inspection, and emergency drill to the crew.<br>B: The coordinator sent the crew a schedule listing every rehearsal, inspection, and emergency drill.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-011",
-          "title": "Heavy theme favors final position"
-        },
         "displayTitle": "Heavy theme favors final position",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Heavy theme favors final position",
@@ -13265,13 +11974,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>누구를 위한 제작·구매인가?</strong><br>상황: 작가는 박물관을 위해 지도 모형을 만들었다. 교사는 그 모형을 학생들을 위해 샀다.<br>A: The teacher bought a model that an artist had designed for the students.<br>B: The teacher bought the students a model that an artist had designed for the museum.<br>의도: 제작 수혜자와 구매 수혜자를 구별해 모두 밝힌다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-012",
-          "title": "PP attachment ambiguity in long theme"
-        },
         "displayTitle": "PP attachment ambiguity in long theme",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "PP attachment ambiguity in long theme",
@@ -13308,13 +12011,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The director announced to the residents a detailed plan for restoring the bridge and protecting the nearby wetlands.<br>recipient PP가 긴 theme보다 앞에 있다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD15-013",
-          "title": "Heavy NP shift is not bare double object"
-        },
         "displayTitle": "Heavy NP shift is not bare double object",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD15-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 13,
         "cat": "Heavy NP shift is not bare double object",
@@ -13522,13 +12219,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The institute owns the telescope.<br>B: The engineer is inspecting the telescope.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-001",
-          "title": "State versus dynamic activity"
-        },
         "displayTitle": "State versus dynamic activity",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "State versus dynamic activity",
@@ -13565,13 +12256,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The technician worked for an hour and then stopped.<br>완료해야 할 특정 과업은 제시되지 않았다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-002",
-          "title": "Atelic activity versus stopping"
-        },
         "displayTitle": "Atelic activity versus stopping",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Atelic activity versus stopping",
@@ -13608,13 +12293,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>관측창: 09:00~09:02.<br>센서 기록: 09:00:00, 09:00:20, 09:00:40 … 09:01:40에 각각 짧은 섬광 한 번.<br>보고: The warning light was flashing for two minutes.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-003",
-          "title": "Punctual progressive iterative reading"
-        },
         "displayTitle": "Punctual progressive iterative reading",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Punctual progressive iterative reading",
@@ -13649,13 +12328,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: It took twenty minutes to locate the broken connection.<br>탐색 끝에 한 연결부의 고장을 알아냈다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-004",
-          "title": "Achievement culmination versus preparatory duration"
-        },
         "displayTitle": "Achievement culmination versus preparatory duration",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Achievement culmination versus preparatory duration",
@@ -13690,13 +12363,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The printer stopped printing the model when the filament ran out.<br>모델의 절반만 출력되었다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-005",
-          "title": "Accomplishment stopping does not entail completion"
-        },
         "displayTitle": "Accomplishment stopping does not entail completion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Accomplishment stopping does not entail completion",
@@ -13731,13 +12398,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The team assembled the emergency shelter in forty minutes.<br>조립이 끝난 시간을 기록했다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-006",
-          "title": "In-duration diagnoses completed bounded task"
-        },
         "displayTitle": "In-duration diagnoses completed bounded task",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "In-duration diagnoses completed bounded task",
@@ -13774,13 +12435,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The guide walked around for exercise.<br>B: The guide walked to the northern gate.<br>B는 그 문에 도착한 이동으로 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-007",
-          "title": "Goal PP can supply endpoint"
-        },
         "displayTitle": "Goal PP can supply endpoint",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Goal PP can supply endpoint",
@@ -13815,13 +12470,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The robot sorted parcels all morning.<br>B: The robot sorted the fifty parcels assigned to it.<br>B는 할당된 전체 묶음을 처리했다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-008",
-          "title": "Object quantization contributes telicity"
-        },
         "displayTitle": "Object quantization contributes telicity",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Object quantization contributes telicity",
@@ -13856,13 +12505,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The caretaker replaces the filter every Monday.<br>오늘은 목요일이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-009",
-          "title": "Simple present habitual not current event"
-        },
         "displayTitle": "Simple present habitual not current event",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Simple present habitual not current event",
@@ -13897,13 +12540,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The exhibition opens at nine tomorrow morning.<br>공식 일정표를 설명한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-010",
-          "title": "Scheduled simple present future"
-        },
         "displayTitle": "Scheduled simple present future",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Scheduled simple present future",
@@ -13938,13 +12575,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Yesterday I open the storage room, and this tiny owl looks straight at me!<br>어제의 뜻밖의 일을 생생하게 이야기한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-011",
-          "title": "Historical present"
-        },
         "displayTitle": "Historical present",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Historical present",
@@ -13979,13 +12610,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: I wanted to ask whether you could check this invoice.<br>말하는 지금 청구서를 내밀며 부탁한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-012",
-          "title": "Polite past not necessarily past desire only"
-        },
         "displayTitle": "Polite past not necessarily past desire only",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Polite past not necessarily past desire only",
@@ -14022,13 +12647,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We are meeting the conservator next Thursday.<br>서로 일정 확인을 마쳤다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-013",
-          "title": "Present progressive future arrangement"
-        },
         "displayTitle": "Present progressive future arrangement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Present progressive future arrangement",
@@ -14063,13 +12682,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Stand back—the platform is about to move.<br>경고등이 켜지고 출발음이 들린다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-014",
-          "title": "Be about to imminent event"
-        },
         "displayTitle": "Be about to imminent event",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Be about to imminent event",
@@ -14104,13 +12717,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: All visitors are to remain behind the marked line.<br>시설 관리자의 안전 지침이다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-015",
-          "title": "Be to directive"
-        },
         "displayTitle": "Be to directive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Be to directive",
@@ -14145,13 +12752,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The app is always asking me to sign in again! I just did it five minutes ago.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-016",
-          "title": "Progressive always attitude"
-        },
         "displayTitle": "Progressive always attitude",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Progressive always attitude",
@@ -14186,13 +12787,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: You’re being unusually patient with this difficult client today.<br>평소보다 차분하게 대응하는 모습을 말한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-017",
-          "title": "Being temporary behavior"
-        },
         "displayTitle": "Being temporary behavior",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Being temporary behavior",
@@ -14227,13 +12822,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>실습 전에는 지도 기호를 전혀 해석하지 못했고, 1차에는 절반, 2차에는 대부분을 설명했다.<br>학생의 변화 보고: I’m understanding more of the map as we work through these examples.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-018",
-          "title": "Progressive stative evolving interpretation"
-        },
         "displayTitle": "Progressive stative evolving interpretation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Progressive stative evolving interpretation",
@@ -14268,13 +12857,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We are hoping you can join the review panel, if your schedule allows.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-019",
-          "title": "Progressive hope softening request"
-        },
         "displayTitle": "Progressive hope softening request",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Progressive hope softening request",
@@ -14309,13 +12892,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: While the archivist was scanning the letters, her assistant was checking the dates.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-020",
-          "title": "Past progressives can overlap"
-        },
         "displayTitle": "Past progressives can overlap",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Past progressives can overlap",
@@ -14350,13 +12927,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: At ten tomorrow, we will be testing the backup generator.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-021",
-          "title": "Future progressive ongoing at reference time"
-        },
         "displayTitle": "Future progressive ongoing at reference time",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Future progressive ongoing at reference time",
@@ -14391,13 +12962,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We have owned this workshop since 2018, and we still use it every day.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-022",
-          "title": "Perfect continuative state"
-        },
         "displayTitle": "Perfect continuative state",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Perfect continuative state",
@@ -14432,13 +12997,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The technician has just repaired the lift, so you can use it now.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-023",
-          "title": "Perfect recent completion"
-        },
         "displayTitle": "Perfect recent completion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Perfect recent completion",
@@ -14473,13 +13032,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The system had saved the report when the power failed.<br>B: When the power failed, the system had saved the report.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-024",
-          "title": "Past perfect independent of clause order"
-        },
         "displayTitle": "Past perfect independent of clause order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Past perfect independent of clause order",
@@ -14514,13 +13067,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: After the inspector signed the form, the team opened the gate.<br>서명 후 바로 문을 열었다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-025",
-          "title": "Temporal subordinator can make past perfect optional"
-        },
         "displayTitle": "Temporal subordinator can make past perfect optional",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Temporal subordinator can make past perfect optional",
@@ -14555,13 +13102,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: By noon tomorrow, we will have checked every instrument on the list.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-026",
-          "title": "Future perfect bounded completion"
-        },
         "displayTitle": "Future perfect bounded completion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Future perfect bounded completion",
@@ -14596,13 +13137,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: In May, the trust will have owned the building for twenty years.<br>소유권을 매각한다는 계획은 없다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-027",
-          "title": "Future perfect state duration not cessation"
-        },
         "displayTitle": "Future perfect state duration not cessation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Future perfect state duration not cessation",
@@ -14639,13 +13174,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The plumbers have been replacing the main pipe all morning.<br>완료 여부에 대한 추가 정보는 없다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-028",
-          "title": "Perfect progressive does not entail telic completion"
-        },
         "displayTitle": "Perfect progressive does not entail telic completion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Perfect progressive does not entail telic completion",
@@ -14680,13 +13209,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: How long have you known the access code?<br>코드를 알고 있는 상태의 기간을 묻는다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-029",
-          "title": "Duration question with stative perfect"
-        },
         "displayTitle": "Duration question with stative perfect",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-029",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Duration question with stative perfect",
@@ -14721,13 +13244,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: By the time help arrived, the climbers had been waiting for three hours.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-030",
-          "title": "Past perfect progressive past reference"
-        },
         "displayTitle": "Past perfect progressive past reference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-030",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Past perfect progressive past reference",
@@ -14762,13 +13279,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>가상 발화일: 2026년 9월 1일.<br>실험일지: 2026년 4월 1일에 관측을 시작했고 10월 1일까지 매일 관측할 예정이다.<br>예측: On October 1, we will have been monitoring the glacier for six months.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-031",
-          "title": "Future perfect progressive duration"
-        },
         "displayTitle": "Future perfect progressive duration",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-031",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Future perfect progressive duration",
@@ -14803,13 +13314,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>월요일 원발화: I am sending the samples today.<br>화요일 보고: She said she was sending the samples that day.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-032",
-          "title": "Reported speech deixis requires context"
-        },
         "displayTitle": "Reported speech deixis requires context",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-032",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Reported speech deixis requires context",
@@ -14844,13 +13349,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: I had locked the cabinet before the alarm sounded.<br>보고: She said she had locked the cabinet before the alarm sounded.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-033",
-          "title": "Backshift past perfect stays past perfect"
-        },
         "displayTitle": "Backshift past perfect stays past perfect",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-033",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Backshift past perfect stays past perfect",
@@ -14885,13 +13384,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A, 허가: You may use the scanner.<br>B, 가능성: The scanner may be unavailable tomorrow.<br>둘을 과거 reporting verb로 전달하려 한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-034",
-          "title": "Modal backshift meaning-sensitive"
-        },
         "displayTitle": "Modal backshift meaning-sensitive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-034",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Modal backshift meaning-sensitive",
@@ -14928,13 +13421,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: She said she works at the museum, and I know she still does.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-035",
-          "title": "Optional backshift continuing truth"
-        },
         "displayTitle": "Optional backshift continuing truth",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-035",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Optional backshift continuing truth",
@@ -14969,13 +13456,7 @@ window.EXAMPLE_OX_BANKS = [
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
         "data": "<p><strong>판단 자료</strong><br>A: 통화에서 방금 “The link works”라고 말했는데 상대가 되물었다. 답: I said the link works.<br>B: 다음 주에, 이미 고장 난 그 링크에 관한 지난 통화를 보고한다.</p>",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-036",
-          "title": "Immediate repetition no obligatory backshift"
-        },
         "displayTitle": "Immediate repetition no obligatory backshift",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-036",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Immediate repetition no obligatory backshift",
@@ -15010,13 +13491,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-037",
-          "title": "Perfect progressive ongoing emphasis not mechanical end"
-        },
         "displayTitle": "Perfect progressive ongoing emphasis not mechanical end",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-037",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Perfect progressive ongoing emphasis not mechanical end",
@@ -15051,13 +13526,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-038",
-          "title": "Duration omission changes available perfect readings"
-        },
         "displayTitle": "Duration omission changes available perfect readings",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-038",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Duration omission changes available perfect readings",
@@ -15092,13 +13561,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-040",
-          "title": "Reported modal meaning preservation"
-        },
         "displayTitle": "Reported modal meaning preservation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-040",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Reported modal meaning preservation",
@@ -15133,13 +13596,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-041",
-          "title": "Reported ability future obligation"
-        },
         "displayTitle": "Reported ability future obligation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-041",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Reported ability future obligation",
@@ -15174,13 +13631,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-042",
-          "title": "Instantaneous present commentary"
-        },
         "displayTitle": "Instantaneous present commentary",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-042",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Instantaneous present commentary",
@@ -15215,13 +13666,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-043",
-          "title": "Script directions and communication present"
-        },
         "displayTitle": "Script directions and communication present",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-043",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Script directions and communication present",
@@ -15256,13 +13701,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 진단 개념을 새 상황·분석 자료에 적용한 판단 연습입니다. 책의 예문을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-044",
-          "title": "Stative cessation is not task completion"
-        },
         "displayTitle": "Stative cessation is not task completion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-044",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Stative cessation is not task completion",
@@ -15297,13 +13736,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 진단 개념을 새 상황·분석 자료에 적용한 판단 연습입니다. 책의 예문을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-045",
-          "title": "State diagnostics with manner and do-pseudocleft"
-        },
         "displayTitle": "State diagnostics with manner and do-pseudocleft",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-045",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "State diagnostics with manner and do-pseudocleft",
@@ -15338,13 +13771,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 진단 개념을 새 상황·분석 자료에 적용한 판단 연습입니다. 책의 예문을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-046",
-          "title": "See sensory state versus discovery event"
-        },
         "displayTitle": "See sensory state versus discovery event",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-046",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "See sensory state versus discovery event",
@@ -15379,13 +13806,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 진단 개념을 새 상황·분석 자료에 적용한 판단 연습입니다. 책의 예문을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-047",
-          "title": "Cost progressive emotional force"
-        },
         "displayTitle": "Cost progressive emotional force",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-047",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Cost progressive emotional force",
@@ -15420,13 +13841,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 진단 개념을 새 상황·분석 자료에 적용한 판단 연습입니다. 책의 예문을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-048",
-          "title": "Perfect accumulated change versus future cessation"
-        },
         "displayTitle": "Perfect accumulated change versus future cessation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-048",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Perfect accumulated change versus future cessation",
@@ -15461,13 +13876,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 진단 개념을 새 상황·분석 자료에 적용한 판단 연습입니다. 책의 예문을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-049",
-          "title": "How-long activity progressive preference"
-        },
         "displayTitle": "How-long activity progressive preference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-049",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "How-long activity progressive preference",
@@ -15504,13 +13913,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 진단 개념을 새 상황·분석 자료에 적용한 판단 연습입니다. 책의 예문을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-050",
-          "title": "Open-to-now interval versus closed past timestamp"
-        },
         "displayTitle": "Open-to-now interval versus closed past timestamp",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-050",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Open-to-now interval versus closed past timestamp",
@@ -15547,13 +13950,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD16-051",
-          "title": "Reported backshift preserves aspect distinctions"
-        },
         "displayTitle": "Reported backshift preserves aspect distinctions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD16-051",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
         "cat": "Reported backshift preserves aspect distinctions",
@@ -15759,13 +14156,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-001",
-          "title": "Progressive passive morphology"
-        },
         "displayTitle": "Progressive passive morphology",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Progressive passive morphology",
@@ -15800,13 +14191,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-002",
-          "title": "Perfect passive morphology"
-        },
         "displayTitle": "Perfect passive morphology",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Perfect passive morphology",
@@ -15841,13 +14226,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-003",
-          "title": "Modal passive and thematic roles"
-        },
         "displayTitle": "Modal passive and thematic roles",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Modal passive and thematic roles",
@@ -15882,13 +14261,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-004",
-          "title": "Recipient passive retained theme"
-        },
         "displayTitle": "Recipient passive retained theme",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Recipient passive retained theme",
@@ -15923,13 +14296,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-005",
-          "title": "Prepositional passive complement"
-        },
         "displayTitle": "Prepositional passive complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Prepositional passive complement",
@@ -15966,13 +14333,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-006",
-          "title": "Unknown agent omission"
-        },
         "displayTitle": "Unknown agent omission",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Unknown agent omission",
@@ -16009,13 +14370,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-007",
-          "title": "Given new discourse preference"
-        },
         "displayTitle": "Given new discourse preference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Given new discourse preference",
@@ -16050,13 +14405,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-008",
-          "title": "Agent phrase as new focus"
-        },
         "displayTitle": "Agent phrase as new focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Agent phrase as new focus",
@@ -16095,13 +14444,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-009",
-          "title": "Intransitive passive overgeneralization"
-        },
         "displayTitle": "Intransitive passive overgeneralization",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Intransitive passive overgeneralization",
@@ -16138,13 +14481,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-010",
-          "title": "Lexical restrictions on stative passive"
-        },
         "displayTitle": "Lexical restrictions on stative passive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Lexical restrictions on stative passive",
@@ -16179,13 +14516,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-011",
-          "title": "Prepositional passive is not universal"
-        },
         "displayTitle": "Prepositional passive is not universal",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Prepositional passive is not universal",
@@ -16220,13 +14551,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-012",
-          "title": "Dative passive variation caution"
-        },
         "displayTitle": "Dative passive variation caution",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Dative passive variation caution",
@@ -16261,13 +14586,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-013",
-          "title": "Cost price sense passive restriction"
-        },
         "displayTitle": "Cost price sense passive restriction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Cost price sense passive restriction",
@@ -16304,13 +14623,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-014",
-          "title": "Get passive positive event"
-        },
         "displayTitle": "Get passive positive event",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Get passive positive event",
@@ -16345,13 +14658,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-015",
-          "title": "Get passive responsibility not entailed"
-        },
         "displayTitle": "Get passive responsibility not entailed",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Get passive responsibility not entailed",
@@ -16386,13 +14693,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-016",
-          "title": "Get versus be register"
-        },
         "displayTitle": "Get versus be register",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Get versus be register",
@@ -16427,13 +14728,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-017",
-          "title": "Get plus adjective is not automatically passive"
-        },
         "displayTitle": "Get plus adjective is not automatically passive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Get plus adjective is not automatically passive",
@@ -16470,13 +14765,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-018",
-          "title": "State versus event participle"
-        },
         "displayTitle": "State versus event participle",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "State versus event participle",
@@ -16511,13 +14800,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-019",
-          "title": "Causative have complement morphology"
-        },
         "displayTitle": "Causative have complement morphology",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Causative have complement morphology",
@@ -16552,13 +14835,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-020",
-          "title": "Causative passive complement roles"
-        },
         "displayTitle": "Causative passive complement roles",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Causative passive complement roles",
@@ -16593,13 +14870,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-021",
-          "title": "Experiential have does not entail arrangement"
-        },
         "displayTitle": "Experiential have does not entail arrangement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Experiential have does not entail arrangement",
@@ -16634,13 +14905,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-022",
-          "title": "Context selects causative versus experiential"
-        },
         "displayTitle": "Context selects causative versus experiential",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Context selects causative versus experiential",
@@ -16675,13 +14940,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-023",
-          "title": "Need Ving semantic patient"
-        },
         "displayTitle": "Need Ving semantic patient",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Need Ving semantic patient",
@@ -16716,13 +14975,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD17-024",
-          "title": "Concealed passive meaning versus form"
-        },
         "displayTitle": "Concealed passive meaning versus form",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD17-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 7,
         "cat": "Concealed passive meaning versus form",
@@ -16926,13 +15179,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-001",
-          "title": "Restrictive subset versus supplementary assertion"
-        },
         "displayTitle": "Restrictive subset versus supplementary assertion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Restrictive subset versus supplementary assertion",
@@ -16967,13 +15214,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-002",
-          "title": "Restrictive does not require universal sibling inference"
-        },
         "displayTitle": "Restrictive does not require universal sibling inference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Restrictive does not require universal sibling inference",
@@ -17008,13 +15249,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-003",
-          "title": "Relative role internal not main clause"
-        },
         "displayTitle": "Relative role internal not main clause",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Relative role internal not main clause",
@@ -17049,13 +15284,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-004",
-          "title": "Human restrictive that"
-        },
         "displayTitle": "Human restrictive that",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Human restrictive that",
@@ -17090,13 +15319,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-005",
-          "title": "Object who register"
-        },
         "displayTitle": "Object who register",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Object who register",
@@ -17133,13 +15356,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-006",
-          "title": "Pied piping versus stranding"
-        },
         "displayTitle": "Pied piping versus stranding",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Pied piping versus stranding",
@@ -17176,13 +15393,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-007",
-          "title": "That after fronted preposition"
-        },
         "displayTitle": "That after fronted preposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "That after fronted preposition",
@@ -17217,13 +15428,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-008",
-          "title": "Inanimate whose"
-        },
         "displayTitle": "Inanimate whose",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Inanimate whose",
@@ -17260,13 +15465,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-009",
-          "title": "Whose noun phrase movement"
-        },
         "displayTitle": "Whose noun phrase movement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Whose noun phrase movement",
@@ -17301,13 +15500,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-010",
-          "title": "Partitive possessive relative"
-        },
         "displayTitle": "Partitive possessive relative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Partitive possessive relative",
@@ -17344,13 +15537,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-011",
-          "title": "Of which possessive alternative"
-        },
         "displayTitle": "Of which possessive alternative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Of which possessive alternative",
@@ -17385,13 +15572,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-012",
-          "title": "Comparison gap classification"
-        },
         "displayTitle": "Comparison gap classification",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Comparison gap classification",
@@ -17428,13 +15609,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-013",
-          "title": "Simple resumptive object redundancy"
-        },
         "displayTitle": "Simple resumptive object redundancy",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Simple resumptive object redundancy",
@@ -17469,13 +15644,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-014",
-          "title": "Resumption repair not always deletion"
-        },
         "displayTitle": "Resumption repair not always deletion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Resumption repair not always deletion",
@@ -17512,13 +15681,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-015",
-          "title": "Extraposition separated modifier"
-        },
         "displayTitle": "Extraposition separated modifier",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Extraposition separated modifier",
@@ -17553,13 +15716,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-016",
-          "title": "Extraposition attachment risk"
-        },
         "displayTitle": "Extraposition attachment risk",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Extraposition attachment risk",
@@ -17594,13 +15751,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-017",
-          "title": "Stacking common head"
-        },
         "displayTitle": "Stacking common head",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Stacking common head",
@@ -17635,13 +15786,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-018",
-          "title": "Object versus subject omission"
-        },
         "displayTitle": "Object versus subject omission",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Object versus subject omission",
@@ -17676,13 +15821,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-019",
-          "title": "Whose omission blocked"
-        },
         "displayTitle": "Whose omission blocked",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Whose omission blocked",
@@ -17719,13 +15858,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-020",
-          "title": "Be plus participle reduction"
-        },
         "displayTitle": "Be plus participle reduction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Be plus participle reduction",
@@ -17760,13 +15893,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-021",
-          "title": "Passive participial reduction"
-        },
         "displayTitle": "Passive participial reduction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Passive participial reduction",
@@ -17801,13 +15928,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-022",
-          "title": "Stative participial modifier not progressive proof"
-        },
         "displayTitle": "Stative participial modifier not progressive proof",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Stative participial modifier not progressive proof",
@@ -17842,13 +15963,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-023",
-          "title": "Infinitival relative preposition pairing"
-        },
         "displayTitle": "Infinitival relative preposition pairing",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Infinitival relative preposition pairing",
@@ -17883,13 +15998,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-024",
-          "title": "For subject of infinitival relative"
-        },
         "displayTitle": "For subject of infinitival relative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "For subject of infinitival relative",
@@ -17924,13 +16033,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-025",
-          "title": "Subject infinitival relative role"
-        },
         "displayTitle": "Subject infinitival relative role",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Subject infinitival relative role",
@@ -17967,13 +16070,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-026",
-          "title": "Where requires locative gap"
-        },
         "displayTitle": "Where requires locative gap",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Where requires locative gap",
@@ -18008,13 +16105,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-027",
-          "title": "Way how duplication"
-        },
         "displayTitle": "Way how duplication",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Way how duplication",
@@ -18051,13 +16142,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-028",
-          "title": "Free relative has no separate head"
-        },
         "displayTitle": "Free relative has no separate head",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Free relative has no separate head",
@@ -18092,13 +16177,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-029",
-          "title": "Ever unrestricted choice"
-        },
         "displayTitle": "Ever unrestricted choice",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-029",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Ever unrestricted choice",
@@ -18133,13 +16212,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-030",
-          "title": "Supplementary that disallowed"
-        },
         "displayTitle": "Supplementary that disallowed",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-030",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Supplementary that disallowed",
@@ -18174,13 +16247,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-031",
-          "title": "Sentential which antecedent"
-        },
         "displayTitle": "Sentential which antecedent",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-031",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Sentential which antecedent",
@@ -18215,13 +16282,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-032",
-          "title": "Partitive supplementary subject"
-        },
         "displayTitle": "Partitive supplementary subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-032",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Partitive supplementary subject",
@@ -18258,13 +16319,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-033",
-          "title": "Supplementary object zero not allowed"
-        },
         "displayTitle": "Supplementary object zero not allowed",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-033",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Supplementary object zero not allowed",
@@ -18301,13 +16356,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-034",
-          "title": "Supplementary participial reanalysis"
-        },
         "displayTitle": "Supplementary participial reanalysis",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-034",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Supplementary participial reanalysis",
@@ -18346,13 +16395,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-035",
-          "title": "Relative reduction not blanket be deletion"
-        },
         "displayTitle": "Relative reduction not blanket be deletion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-035",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Relative reduction not blanket be deletion",
@@ -18389,13 +16432,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-036",
-          "title": "Postnominal adjective plus PP"
-        },
         "displayTitle": "Postnominal adjective plus PP",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-036",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Postnominal adjective plus PP",
@@ -18430,13 +16467,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD18-037",
-          "title": "Pied-piped infinitival relative excludes for subject"
-        },
         "displayTitle": "Pied-piped infinitival relative excludes for subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD18-037",
         "reviewStatus": "independent-content-reviewed",
         "unit": 8,
         "cat": "Pied-piped infinitival relative excludes for subject",
@@ -18459,7 +16490,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "If the museum opens late…, we may visit the market first."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#conditionals",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -18494,7 +16524,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "Had는 여기서 반드시 과거 시점만을 가리키지 않습니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#conditionals",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -18528,7 +16557,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "If we had checked the address, …"
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#conditionals",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -18562,7 +16590,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "If you do not save the file, your changes may be lost."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#conditionals",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -18604,7 +16631,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "주어진 실제 사실: 확인하지 않음. 가정한 대안: 확인했다면 센서가 살아남음."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#conditionals",
         "source": "Cowan (2008), 인쇄 456쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -18640,13 +16666,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-001",
-          "title": "Generic condition not single future event"
-        },
         "displayTitle": "Generic condition not single future event",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Generic condition not single future event",
@@ -18681,13 +16701,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-002",
-          "title": "Generic forms not rigid present simple pair"
-        },
         "displayTitle": "Generic forms not rigid present simple pair",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Generic forms not rigid present simple pair",
@@ -18722,13 +16736,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-003",
-          "title": "Past habitual would not necessarily remote"
-        },
         "displayTitle": "Past habitual would not necessarily remote",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Past habitual would not necessarily remote",
@@ -18763,13 +16771,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-004",
-          "title": "Policy condition versus universal natural law"
-        },
         "displayTitle": "Policy condition versus universal natural law",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Policy condition versus universal natural law",
@@ -18806,13 +16808,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-005",
-          "title": "Epistemic inference not event cause"
-        },
         "displayTitle": "Epistemic inference not event cause",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Epistemic inference not event cause",
@@ -18849,13 +16845,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-006",
-          "title": "Inference does not assert antecedent"
-        },
         "displayTitle": "Inference does not assert antecedent",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Inference does not assert antecedent",
@@ -18890,13 +16880,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-007",
-          "title": "Ironical conditional stance"
-        },
         "displayTitle": "Ironical conditional stance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Ironical conditional stance",
@@ -18931,13 +16915,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-008",
-          "title": "Open future present condition"
-        },
         "displayTitle": "Open future present condition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Open future present condition",
@@ -18972,13 +16950,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-009",
-          "title": "Past evidence future result"
-        },
         "displayTitle": "Past evidence future result",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Past evidence future result",
@@ -19013,13 +16985,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-010",
-          "title": "Condition followed by imperative"
-        },
         "displayTitle": "Condition followed by imperative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Condition followed by imperative",
@@ -19056,13 +17022,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-011",
-          "title": "Should contingency not obligation"
-        },
         "displayTitle": "Should contingency not obligation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Should contingency not obligation",
@@ -19097,13 +17057,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-012",
-          "title": "Remote past form future reference"
-        },
         "displayTitle": "Remote past form future reference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Remote past form future reference",
@@ -19138,13 +17092,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-013",
-          "title": "Present state remote"
-        },
         "displayTitle": "Present state remote",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Present state remote",
@@ -19179,13 +17127,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-014",
-          "title": "Remote progressive ongoing event"
-        },
         "displayTitle": "Remote progressive ongoing event",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Remote progressive ongoing event",
@@ -19220,13 +17162,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-015",
-          "title": "Past counterfactual paired forms"
-        },
         "displayTitle": "Past counterfactual paired forms",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Past counterfactual paired forms",
@@ -19261,13 +17197,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-016",
-          "title": "Might result not certainty"
-        },
         "displayTitle": "Might result not certainty",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Might result not certainty",
@@ -19304,13 +17234,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-017",
-          "title": "Mixed past cause present result"
-        },
         "displayTitle": "Mixed past cause present result",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Mixed past cause present result",
@@ -19345,13 +17269,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-018",
-          "title": "Present impossible role hypothetical"
-        },
         "displayTitle": "Present impossible role hypothetical",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Present impossible role hypothetical",
@@ -19386,13 +17304,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-019",
-          "title": "Register of would have condition"
-        },
         "displayTitle": "Register of would have condition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Register of would have condition",
@@ -19427,13 +17339,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-020",
-          "title": "Had conditional inversion"
-        },
         "displayTitle": "Had conditional inversion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Had conditional inversion",
@@ -19470,13 +17376,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-021",
-          "title": "Conditional inversion not do support universal"
-        },
         "displayTitle": "Conditional inversion not do support universal",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Conditional inversion not do support universal",
@@ -19513,13 +17413,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-022",
-          "title": "Should inversion contingency"
-        },
         "displayTitle": "Should inversion contingency",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Should inversion contingency",
@@ -19556,13 +17450,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-023",
-          "title": "Speech act relevance not material condition"
-        },
         "displayTitle": "Speech act relevance not material condition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Speech act relevance not material condition",
@@ -19597,13 +17485,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-024",
-          "title": "Willingness will in if"
-        },
         "displayTitle": "Willingness will in if",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Willingness will in if",
@@ -19640,13 +17522,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-025",
-          "title": "Unless exception not unconditional substitution"
-        },
         "displayTitle": "Unless exception not unconditional substitution",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Unless exception not unconditional substitution",
@@ -19683,13 +17559,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-026",
-          "title": "Unless event not asserted"
-        },
         "displayTitle": "Unless event not asserted",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Unless event not asserted",
@@ -19726,13 +17596,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD19-027",
-          "title": "Were conditional inversion with future hypothetical"
-        },
         "displayTitle": "Were conditional inversion with future hypothetical",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD19-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 14,
         "cat": "Were conditional inversion with future hypothetical",
@@ -19900,7 +17764,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "Gap 확인과 lexical licensing 확인은 별개의 단계입니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#subject-clauses",
         "source": "Cowan (2008), 인쇄 480쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -19936,13 +17799,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-001",
-          "title": "Infinitival subject clause overt subject"
-        },
         "displayTitle": "Infinitival subject clause overt subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Infinitival subject clause overt subject",
@@ -19977,13 +17834,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-002",
-          "title": "Gerund subject entire clause"
-        },
         "displayTitle": "Gerund subject entire clause",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Gerund subject entire clause",
@@ -20020,13 +17871,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-003",
-          "title": "Finite that subject marker versus relative"
-        },
         "displayTitle": "Finite that subject marker versus relative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Finite that subject marker versus relative",
@@ -20061,13 +17906,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-004",
-          "title": "Embedded interrogative subject word order"
-        },
         "displayTitle": "Embedded interrogative subject word order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Embedded interrogative subject word order",
@@ -20102,13 +17941,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-005",
-          "title": "Whether subject alternative issue"
-        },
         "displayTitle": "Whether subject alternative issue",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Whether subject alternative issue",
@@ -20145,13 +17978,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-006",
-          "title": "Dummy it extraposition no antecedent"
-        },
         "displayTitle": "Dummy it extraposition no antecedent",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Dummy it extraposition no antecedent",
@@ -20186,13 +18013,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-007",
-          "title": "Gerund extraposition not unrestricted"
-        },
         "displayTitle": "Gerund extraposition not unrestricted",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Gerund extraposition not unrestricted",
@@ -20227,13 +18048,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-008",
-          "title": "For subject preserved through extraposition"
-        },
         "displayTitle": "For subject preserved through extraposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "For subject preserved through extraposition",
@@ -20268,13 +18083,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-009",
-          "title": "That extraposition entire proposition"
-        },
         "displayTitle": "That extraposition entire proposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "That extraposition entire proposition",
@@ -20309,13 +18118,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-010",
-          "title": "Interrogative extraposition possible"
-        },
         "displayTitle": "Interrogative extraposition possible",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Interrogative extraposition possible",
@@ -20352,13 +18155,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-011",
-          "title": "Seem no automatic finite subject inverse"
-        },
         "displayTitle": "Seem no automatic finite subject inverse",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Seem no automatic finite subject inverse",
@@ -20393,13 +18190,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-012",
-          "title": "Turn out construction selection"
-        },
         "displayTitle": "Turn out construction selection",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Turn out construction selection",
@@ -20438,13 +18229,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-013",
-          "title": "End weight is preference not blanket command"
-        },
         "displayTitle": "End weight is preference not blanket command",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "End weight is preference not blanket command",
@@ -20479,13 +18264,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-014",
-          "title": "Tough gap semantic object"
-        },
         "displayTitle": "Tough gap semantic object",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Tough gap semantic object",
@@ -20520,13 +18299,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-015",
-          "title": "Tough prepositional object retained preposition"
-        },
         "displayTitle": "Tough prepositional object retained preposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Tough prepositional object retained preposition",
@@ -20561,13 +18334,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-016",
-          "title": "Tough lexical adjective restriction"
-        },
         "displayTitle": "Tough lexical adjective restriction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Tough lexical adjective restriction",
@@ -20602,13 +18369,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-017",
-          "title": "Referential it in tough differs dummy it"
-        },
         "displayTitle": "Referential it in tough differs dummy it",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Referential it in tough differs dummy it",
@@ -20645,13 +18406,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-018",
-          "title": "Raising subject lower subject"
-        },
         "displayTitle": "Raising subject lower subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Raising subject lower subject",
@@ -20686,13 +18441,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-019",
-          "title": "Likely raising probability not willingness"
-        },
         "displayTitle": "Likely raising probability not willingness",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Likely raising probability not willingness",
@@ -20729,13 +18478,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-020",
-          "title": "Raising and extraposition information packaging"
-        },
         "displayTitle": "Raising and extraposition information packaging",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Raising and extraposition information packaging",
@@ -20770,13 +18513,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-021",
-          "title": "Control versus tough agent role"
-        },
         "displayTitle": "Control versus tough agent role",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Control versus tough agent role",
@@ -20811,13 +18548,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-022",
-          "title": "Control not automatic raising paraphrase"
-        },
         "displayTitle": "Control not automatic raising paraphrase",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Control not automatic raising paraphrase",
@@ -20854,13 +18585,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-023",
-          "title": "Ability subject controls infinitival action"
-        },
         "displayTitle": "Ability subject controls infinitival action",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Ability subject controls infinitival action",
@@ -20895,13 +18620,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-024",
-          "title": "Apt raising no automatic finite paraphrase"
-        },
         "displayTitle": "Apt raising no automatic finite paraphrase",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Apt raising no automatic finite paraphrase",
@@ -20940,13 +18659,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 새로운 구조·편집 판단 자료에 적용했습니다. 원책 문장을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-025",
-          "title": "Finite clausal subject does not inherit every NP diagnostic"
-        },
         "displayTitle": "Finite clausal subject does not inherit every NP diagnostic",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Finite clausal subject does not inherit every NP diagnostic",
@@ -20981,13 +18694,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 새로운 구조·편집 판단 자료에 적용했습니다. 원책 문장을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD20-026",
-          "title": "Nested clausal subjects versus two-level extraposition"
-        },
         "displayTitle": "Nested clausal subjects versus two-level extraposition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD20-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 15,
         "cat": "Nested clausal subjects versus two-level extraposition",
@@ -21010,7 +18717,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "The team decided to postpone the meeting."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#complements",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -21045,7 +18751,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "The team enjoys solving puzzles."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#complements",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -21079,7 +18784,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "The interns were made to wear gloves.에서는 to-infinitive를 씁니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#complements",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -21113,7 +18817,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "버스가 떠나기를 바란다는 뜻은 I hope that the bus leaves before lunch.처럼 finite clause로 나타낼 수 있습니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#complements",
         "source": "학습 개념을 적용해 독립적으로 작성한 연습문항입니다. 원문 기출이나 교재 문항의 재현이 아닙니다. Cowan (2008)의 관련 설명 또는 실제 용례에 개념 근거를 대조했습니다. 예문 자체가 책 원문이라는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -21155,7 +18858,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "A: 해야 할 일을 기억하고 저장함. B: 앞서 저장한 일을 회상함."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#complements",
         "source": "Cowan (2008), 인쇄 506쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -21191,13 +18893,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-001",
-          "title": "Complement selection lexical"
-        },
         "displayTitle": "Complement selection lexical",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Complement selection lexical",
@@ -21232,13 +18928,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-002",
-          "title": "Content that not relative which"
-        },
         "displayTitle": "Content that not relative which",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Content that not relative which",
@@ -21273,13 +18963,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-003",
-          "title": "Optional that informal complement"
-        },
         "displayTitle": "Optional that informal complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Optional that informal complement",
@@ -21314,13 +18998,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-004",
-          "title": "Recipient interruption before content clause"
-        },
         "displayTitle": "Recipient interruption before content clause",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Recipient interruption before content clause",
@@ -21355,13 +19033,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-005",
-          "title": "Mandative bare verb"
-        },
         "displayTitle": "Mandative bare verb",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Mandative bare verb",
@@ -21396,13 +19068,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-006",
-          "title": "Neg raising not universal substitution"
-        },
         "displayTitle": "Neg raising not universal substitution",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Neg raising not universal substitution",
@@ -21437,13 +19103,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-007",
-          "title": "Negative raising usual interpretation not equivalence law"
-        },
         "displayTitle": "Negative raising usual interpretation not equivalence law",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Negative raising usual interpretation not equivalence law",
@@ -21478,13 +19138,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-008",
-          "title": "Object control agent of infinitive"
-        },
         "displayTitle": "Object control agent of infinitive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Object control agent of infinitive",
@@ -21519,13 +19173,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-009",
-          "title": "Object control passive"
-        },
         "displayTitle": "Object control passive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Object control passive",
@@ -21560,13 +19208,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-010",
-          "title": "Want subject distinction"
-        },
         "displayTitle": "Want subject distinction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Want subject distinction",
@@ -21601,13 +19243,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-011",
-          "title": "Want passive diagnostic not persuade pattern"
-        },
         "displayTitle": "Want passive diagnostic not persuade pattern",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Want passive diagnostic not persuade pattern",
@@ -21642,13 +19278,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-012",
-          "title": "For NP complement subject"
-        },
         "displayTitle": "For NP complement subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "For NP complement subject",
@@ -21685,13 +19315,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-013",
-          "title": "Promise control despite intervening recipient"
-        },
         "displayTitle": "Promise control despite intervening recipient",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Promise control despite intervening recipient",
@@ -21726,13 +19350,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-014",
-          "title": "Believe proposition and passive raising"
-        },
         "displayTitle": "Believe proposition and passive raising",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Believe proposition and passive raising",
@@ -21769,13 +19387,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-015",
-          "title": "Reflexive in ECM complement"
-        },
         "displayTitle": "Reflexive in ECM complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Reflexive in ECM complement",
@@ -21810,13 +19422,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-016",
-          "title": "Optional to be with consider"
-        },
         "displayTitle": "Optional to be with consider",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Optional to be with consider",
@@ -21851,13 +19457,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-017",
-          "title": "Causative active bare versus passive to"
-        },
         "displayTitle": "Causative active bare versus passive to",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Causative active bare versus passive to",
@@ -21892,13 +19492,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-018",
-          "title": "Get unlike make bare pattern"
-        },
         "displayTitle": "Get unlike make bare pattern",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Get unlike make bare pattern",
@@ -21933,13 +19527,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-019",
-          "title": "Regard as versus consider predicate"
-        },
         "displayTitle": "Regard as versus consider predicate",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Regard as versus consider predicate",
@@ -21974,13 +19562,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-020",
-          "title": "Naming predicative NP not second recipient"
-        },
         "displayTitle": "Naming predicative NP not second recipient",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Naming predicative NP not second recipient",
@@ -22015,13 +19597,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-021",
-          "title": "Prepositional to versus infinitive marker"
-        },
         "displayTitle": "Prepositional to versus infinitive marker",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Prepositional to versus infinitive marker",
@@ -22056,13 +19632,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-022",
-          "title": "NP preposition gerund meaning"
-        },
         "displayTitle": "NP preposition gerund meaning",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "NP preposition gerund meaning",
@@ -22097,13 +19667,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-023",
-          "title": "Finish subject control"
-        },
         "displayTitle": "Finish subject control",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Finish subject control",
@@ -22140,13 +19704,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-024",
-          "title": "Gerund subject case register variation"
-        },
         "displayTitle": "Gerund subject case register variation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Gerund subject case register variation",
@@ -22181,13 +19739,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-025",
-          "title": "Interception nonpossessive subject"
-        },
         "displayTitle": "Interception nonpossessive subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Interception nonpossessive subject",
@@ -22222,13 +19774,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-026",
-          "title": "Recommend understood agent context"
-        },
         "displayTitle": "Recommend understood agent context",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Recommend understood agent context",
@@ -22263,13 +19809,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-027",
-          "title": "Dual complements not universal semantic difference"
-        },
         "displayTitle": "Dual complements not universal semantic difference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Dual complements not universal semantic difference",
@@ -22304,13 +19844,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-028",
-          "title": "Remember sequence comparison"
-        },
         "displayTitle": "Remember sequence comparison",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Remember sequence comparison",
@@ -22347,13 +19881,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-029",
-          "title": "Forget to omission of task"
-        },
         "displayTitle": "Forget to omission of task",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-029",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Forget to omission of task",
@@ -22388,13 +19916,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-030",
-          "title": "Try gerund remedy versus attempt"
-        },
         "displayTitle": "Try gerund remedy versus attempt",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-030",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Try gerund remedy versus attempt",
@@ -22429,13 +19951,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-031",
-          "title": "Try infinitive success not negated"
-        },
         "displayTitle": "Try infinitive success not negated",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-031",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Try infinitive success not negated",
@@ -22470,13 +19986,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-032",
-          "title": "Stop purpose versus terminated activity"
-        },
         "displayTitle": "Stop purpose versus terminated activity",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-032",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Stop purpose versus terminated activity",
@@ -22511,13 +20021,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-033",
-          "title": "Purpose adjunct not verb selected complement"
-        },
         "displayTitle": "Purpose adjunct not verb selected complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-033",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Purpose adjunct not verb selected complement",
@@ -22552,13 +20056,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-034",
-          "title": "Perception ongoing versus completed path"
-        },
         "displayTitle": "Perception ongoing versus completed path",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-034",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Perception ongoing versus completed path",
@@ -22593,13 +20091,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-035",
-          "title": "Perception punctual iteration contextual"
-        },
         "displayTitle": "Perception punctual iteration contextual",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-035",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Perception punctual iteration contextual",
@@ -22634,13 +20126,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-036",
-          "title": "Perception posture state versus transition"
-        },
         "displayTitle": "Perception posture state versus transition",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-036",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Perception posture state versus transition",
@@ -22679,13 +20165,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-037",
-          "title": "Never forget experience versus future duty"
-        },
         "displayTitle": "Never forget experience versus future duty",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-037",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Never forget experience versus future duty",
@@ -22720,13 +20200,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-038",
-          "title": "Start-to interrupted onset reading"
-        },
         "displayTitle": "Start-to interrupted onset reading",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-038",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Start-to interrupted onset reading",
@@ -22761,13 +20235,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 새로운 구조·편집 판단 자료에 적용했습니다. 원책 문장을 그대로 제시한 것이 아닙니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD21-039",
-          "title": "Try and attempt reading does not assert successful second action"
-        },
         "displayTitle": "Try and attempt reading does not assert successful second action",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD21-039",
         "reviewStatus": "independent-content-reviewed",
         "unit": 9,
         "cat": "Try and attempt reading does not assert successful second action",
@@ -22935,7 +20403,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "Focus 위치와 given/new 정보 상태를 동일시하지 않습니다."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#cleft-information",
         "source": "Cowan (2008), 인쇄 525쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -22975,13 +20442,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-001",
-          "title": "It cleft identifies contrastive focus"
-        },
         "displayTitle": "It cleft identifies contrastive focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "It cleft identifies contrastive focus",
@@ -23016,13 +20477,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-002",
-          "title": "It cleft time focus"
-        },
         "displayTitle": "It cleft time focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "It cleft time focus",
@@ -23057,13 +20512,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-003",
-          "title": "Purpose cleft scope"
-        },
         "displayTitle": "Purpose cleft scope",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Purpose cleft scope",
@@ -23098,13 +20547,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-004",
-          "title": "Cleft background not always previously mentioned"
-        },
         "displayTitle": "Cleft background not always previously mentioned",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Cleft background not always previously mentioned",
@@ -23139,13 +20582,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-005",
-          "title": "Old versus new focus flexible"
-        },
         "displayTitle": "Old versus new focus flexible",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Old versus new focus flexible",
@@ -23180,13 +20617,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-006",
-          "title": "Wh cleft content focus"
-        },
         "displayTitle": "Wh cleft content focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh cleft content focus",
@@ -23221,13 +20652,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-007",
-          "title": "Wh cleft VP do support"
-        },
         "displayTitle": "Wh cleft VP do support",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh cleft VP do support",
@@ -23262,13 +20687,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-008",
-          "title": "Wh cleft finite content focus"
-        },
         "displayTitle": "Wh cleft finite content focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh cleft finite content focus",
@@ -23303,13 +20722,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-009",
-          "title": "Reversed wh cleft information arrangement"
-        },
         "displayTitle": "Reversed wh cleft information arrangement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Reversed wh cleft information arrangement",
@@ -23344,13 +20757,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-010",
-          "title": "Wh cleft gist function"
-        },
         "displayTitle": "Wh cleft gist function",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh cleft gist function",
@@ -23385,13 +20792,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-011",
-          "title": "Wh cleft clarification not necessarily disagreement"
-        },
         "displayTitle": "Wh cleft clarification not necessarily disagreement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh cleft clarification not necessarily disagreement",
@@ -23428,13 +20829,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-012",
-          "title": "Wh cleft stance"
-        },
         "displayTitle": "Wh cleft stance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh cleft stance",
@@ -23471,13 +20866,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-013",
-          "title": "Fronted object retains function"
-        },
         "displayTitle": "Fronted object retains function",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Fronted object retains function",
@@ -23514,13 +20903,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-014",
-          "title": "Fronting not compulsory inversion"
-        },
         "displayTitle": "Fronting not compulsory inversion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Fronting not compulsory inversion",
@@ -23557,13 +20940,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-015",
-          "title": "Fronting contrast discourse"
-        },
         "displayTitle": "Fronting contrast discourse",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Fronting contrast discourse",
@@ -23600,13 +20977,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-016",
-          "title": "Fronted purpose link to prior issue"
-        },
         "displayTitle": "Fronted purpose link to prior issue",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Fronted purpose link to prior issue",
@@ -23641,13 +21012,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-017",
-          "title": "Negative inversion aux not full verb"
-        },
         "displayTitle": "Negative inversion aux not full verb",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Negative inversion aux not full verb",
@@ -23686,13 +21051,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-018",
-          "title": "Locative full inversion not interrogative"
-        },
         "displayTitle": "Locative full inversion not interrogative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Locative full inversion not interrogative",
@@ -23727,13 +21086,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-019",
-          "title": "So ellipsis additive"
-        },
         "displayTitle": "So ellipsis additive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "So ellipsis additive",
@@ -23768,13 +21121,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-020",
-          "title": "Neither additive negative"
-        },
         "displayTitle": "Neither additive negative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Neither additive negative",
@@ -23811,13 +21158,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-021",
-          "title": "Information packaging weight"
-        },
         "displayTitle": "Information packaging weight",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Information packaging weight",
@@ -23852,13 +21193,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-022",
-          "title": "Inversion observer perspective"
-        },
         "displayTitle": "Inversion observer perspective",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Inversion observer perspective",
@@ -23895,13 +21230,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-023",
-          "title": "It-cleft prepositional focus"
-        },
         "displayTitle": "It-cleft prepositional focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "It-cleft prepositional focus",
@@ -23936,13 +21265,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-024",
-          "title": "It-cleft interrogative clause focus"
-        },
         "displayTitle": "It-cleft interrogative clause focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "It-cleft interrogative clause focus",
@@ -23979,13 +21302,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-025",
-          "title": "Wh-cleft interrogative complement"
-        },
         "displayTitle": "Wh-cleft interrogative complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh-cleft interrogative complement",
@@ -24022,13 +21339,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-026",
-          "title": "Wh-cleft gerund complement"
-        },
         "displayTitle": "Wh-cleft gerund complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh-cleft gerund complement",
@@ -24063,13 +21374,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-027",
-          "title": "Locative temporal wh-cleft"
-        },
         "displayTitle": "Locative temporal wh-cleft",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Locative temporal wh-cleft",
@@ -24104,13 +21409,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-028",
-          "title": "Fronted clausal complements"
-        },
         "displayTitle": "Fronted clausal complements",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Fronted clausal complements",
@@ -24147,13 +21446,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-029",
-          "title": "Wh-cleft infinitival focus"
-        },
         "displayTitle": "Wh-cleft infinitival focus",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-029",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Wh-cleft infinitival focus",
@@ -24188,13 +21481,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-030",
-          "title": "Human focus in who-cleft"
-        },
         "displayTitle": "Human focus in who-cleft",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-030",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Human focus in who-cleft",
@@ -24229,13 +21516,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-031",
-          "title": "Cleft has no mechanical noncleft deletion counterpart"
-        },
         "displayTitle": "Cleft has no mechanical noncleft deletion counterpart",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-031",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Cleft has no mechanical noncleft deletion counterpart",
@@ -24270,13 +21551,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-032",
-          "title": "Cleft relative marker matches focused type"
-        },
         "displayTitle": "Cleft relative marker matches focused type",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-032",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "Cleft relative marker matches focused type",
@@ -24311,13 +21586,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD22-033",
-          "title": "As additive clause permits noninverted do variant"
-        },
         "displayTitle": "As additive clause permits noninverted do variant",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD22-033",
         "reviewStatus": "independent-content-reviewed",
         "unit": 10,
         "cat": "As additive clause permits noninverted do variant",
@@ -24355,7 +21624,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: After the lights went out, the show stopped.<br>B: After the blackout, the show stopped.</p>",
         "displayTitle": "Clause pp",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Clause pp",
@@ -24393,7 +21661,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>경보가 울린 뒤 잠금: The system locked after the alarm sounded.<br>반대 순서: The system locked before the alarm sounded.</p>",
         "displayTitle": "Temporal order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Temporal order",
@@ -24429,7 +21696,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>문이 열린 직후 발송하도록 지정: Send the signal as soon as the gate opens.</p>",
         "displayTitle": "As soon once",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "As soon once",
@@ -24465,7 +21731,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We have guarded the entrance since the alarm rang.<br>B: We guarded the entrance until the guard returned.</p>",
         "displayTitle": "Since until contrast",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Since until contrast",
@@ -24501,7 +21766,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>한 번의 순간적 점화로 읽는다: When the spark ignited the gas, the timer stopped.<br>교정안: while the spark ignited the gas로 바꾸어도 그 순간적 해석 그대로이다.</p>",
         "displayTitle": "When while duration",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "When while duration",
@@ -24539,7 +21803,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: While testing the sensor, Jae noticed a crack.<br>B: While testing the sensor, a crack became visible.<br>두 문장 모두 검사자는 Jae로 의도했다.</p>",
         "displayTitle": "Reduction subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Reduction subject",
@@ -24578,7 +21841,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>Since joining the orchestra, Mira has practised daily.<br>복원 후보 A: since she joined the orchestra<br>후보 B: since she was joining the orchestra</p>",
         "displayTitle": "Preposition gerund not be deletion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Preposition gerund not be deletion",
@@ -24614,7 +21876,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Upon receiving the code, enter it here.<br>B: Upon you receive the code, enter it here.</p>",
         "displayTitle": "Upon ing",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Upon ing",
@@ -24650,7 +21911,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>The novice handled the instrument as if she had used it for years.<br>실제로 사용한 기간은 알려지지 않았다.</p>",
         "displayTitle": "Manner not fact",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Manner not fact",
@@ -24688,7 +21948,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We lowered the shade so that visitors could see the screen.<br>B: We lowered the shade because sunlight was hitting the screen.</p>",
         "displayTitle": "Purpose vs reason",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Purpose vs reason",
@@ -24725,7 +21984,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>급히 경고한다: Move the cable before someone trips over it.<br>아직 아무도 넘어진 적이 없다.</p>",
         "displayTitle": "Avoidance before",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Avoidance before",
@@ -24761,7 +22019,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We stayed inside, for the road was flooded.<br>B: For the road was flooded, we stayed inside.<br>문두 for를 이유절 도입자로 쓰려 한다.</p>",
         "displayTitle": "Reason for position",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Reason for position",
@@ -24799,7 +22056,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>The battery failed, so the display went dark.<br>교정안: The battery failed in order to make the display go dark.<br>고장은 우발적이었다.</p>",
         "displayTitle": "Result not purpose",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Result not purpose",
@@ -24836,7 +22092,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Although it was expensive, the instrument failed immediately. [가격에서 기대한 성능과 어긋남]<br>B: Whereas one model is blue, the other is green. [색 비교]</p>",
         "displayTitle": "Concession vs contrast",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Concession vs contrast",
@@ -24874,7 +22129,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>Humming quietly, Ana sorted the cards.<br>상황: 카드 분류 중 계속 흥얼거렸다.</p>",
         "displayTitle": "Concurrent free adjunct",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Concurrent free adjunct",
@@ -24912,7 +22166,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>Having checked every label, Omar sealed the container.<br>순서표: 검사 완료 → 봉인.</p>",
         "displayTitle": "Perfect free adjunct",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Perfect free adjunct",
@@ -24948,7 +22201,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Knowing the road was closed, we chose a different route.<br>B: Tilting the mirror, we directed the light onto the target.</p>",
         "displayTitle": "Free adjunct reason instrument",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Free adjunct reason instrument",
@@ -24984,7 +22236,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>Assuming the measurements are accurate, the bridge must be longer than the map indicates.<br>가정하는 사람은 조사자이며 bridge는 사고하지 않는다.</p>",
         "displayTitle": "Conditional free adjunct subject",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Conditional free adjunct subject",
@@ -25020,7 +22271,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>The pipe burst, flooding the lower corridor.<br>홍수는 파열 뒤 생긴 결과로 읽는다.</p>",
         "displayTitle": "Final result adjunct",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Final result adjunct",
@@ -25060,7 +22310,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>보고서 초안: Because the printer stopped.<br>의도: 그 때문에 보고서 발송을 미뤘다는 완전 문장.</p>",
         "displayTitle": "Subordinate fragment",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Subordinate fragment",
@@ -25098,7 +22347,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: We will attend the inspection, whenever it is scheduled. [날짜와 무관하게]<br>B: The lamp flashes whenever the sensor detects movement. [매번]</p>",
         "displayTitle": "Whenever readings",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Whenever readings",
@@ -25134,7 +22382,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>격식적 주의: Keep a copy lest the original be lost.</p>",
         "displayTitle": "Lest avoidance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Lest avoidance",
@@ -25170,7 +22417,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: They avoided the slope for fear that the snow would collapse.<br>B: They avoided it for fear of triggering an avalanche.</p>",
         "displayTitle": "For fear patterns",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "For fear patterns",
@@ -25208,7 +22454,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>앞 문단: 기록관이 잃어버렸던 필사본 세 상자를 돌려받았다.<br>다음 문단 시작: Carrying those manuscripts, the archivist entered the restoration room.<br>별도 장면의 문장말: The dancer crossed the stage, balancing a bowl on her head.</p>",
         "displayTitle": "Initial final discourse",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Initial final discourse",
@@ -25244,7 +22489,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>로그: 확인표시를 누름 → 창이 닫힘.<br>Clicking the confirmation button, the operator closed the window.<br>두 동작은 즉시 이어진 것으로 읽는다.</p>",
         "displayTitle": "Simple ing sequence",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD23-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 22,
         "cat": "Simple ing sequence",
@@ -25280,7 +22524,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A의 오류율 8%, B의 오류율 3%: A has a higher error rate than B.</p>",
         "displayTitle": "Comparative not evaluation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Comparative not evaluation",
@@ -25319,7 +22562,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>격식 보고서: fewer damaged tiles / less water<br>시간 안내: less than ten minutes</p>",
         "displayTitle": "Less fewer measure",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Less fewer measure",
@@ -25356,7 +22598,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>폭 비교: This panel is as wide as that one.<br>관측: 둘의 폭이 같다.</p>",
         "displayTitle": "Equality as",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Equality as",
@@ -25394,7 +22635,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>This cable is not as long as the spare.</p>",
         "displayTitle": "Negative equality",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Negative equality",
@@ -25434,7 +22674,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>편집 후보: a narrower gap / move more carefully<br>잘못된 후보: move carefuler</p>",
         "displayTitle": "Adjective adverb form",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Adjective adverb form",
@@ -25470,7 +22709,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>평가표 초안: a more convincing explanation<br>자동수정: a convincinger explanation</p>",
         "displayTitle": "Participial comparative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Participial comparative",
@@ -25508,7 +22746,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>성능 표: good → better; bad → worse<br>기계 출력: gooder, badder를 일반 평가형으로 선택</p>",
         "displayTitle": "Irregular comparative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Irregular comparative",
@@ -25544,7 +22781,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Lia can finish sooner than Ben can.<br>B: Lia can finish sooner than Ben does.<br>두 사람의 능력을 동일하게 비교하려 한다.</p>",
         "displayTitle": "Comparative ellipsis aux",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Comparative ellipsis aux",
@@ -25582,7 +22818,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>원뜻: I stored more files locally than I stored online.<br>축약: I stored more files locally than online.</p>",
         "displayTitle": "Contrast retention",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Contrast retention",
@@ -25618,7 +22853,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The tower is taller than I am.<br>B: The tower is taller than me. [일상 구어]</p>",
         "displayTitle": "Pronoun register",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Pronoun register",
@@ -25654,7 +22888,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>치수표: 전시 상자의 폭 80cm, 높이 80cm.<br>작성 의도: 같은 물체의 서로 다른 치수를 비교한다.<br>편집기는 as wide as it is high의 it is를 «이미 같은 상자를 말했으므로 무조건 중복»이라고 표시했다.</p>",
         "displayTitle": "Distinct predicates reduction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Distinct predicates reduction",
@@ -25690,7 +22923,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>세 장비 중 A가 가장 조용하다: A is the quietest of the three.</p>",
         "displayTitle": "Superlative set",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Superlative set",
@@ -25726,7 +22958,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>발표자 중 발음을 가장 또렷하게 한 사람: spoke most clearly<br>자동수정: spoke clearlier</p>",
         "displayTitle": "Superlative adverb",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Superlative adverb",
@@ -25762,7 +22993,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Most batteries are rechargeable.<br>B: This is the most reliable battery.<br>C: That was a most helpful reply. [격식적 강조]</p>",
         "displayTitle": "Most three functions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Most three functions",
@@ -25799,7 +23029,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The boxes are not the same colour.<br>B: The first box is not as heavy as the second.</p>",
         "displayTitle": "Nonscalar equality",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Nonscalar equality",
@@ -25837,7 +23066,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>표준 어휘형 자료: cleverer / more clever; more eager<br>기계규칙: 첫 음절 강세인 두 음절 형용사는 모두 -er만 붙인다.</p>",
         "displayTitle": "Two syllable variation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Two syllable variation",
@@ -25873,7 +23101,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>편집 후보 A: We prefer silence to background music.<br>B: This design is superior than the old one.</p>",
         "displayTitle": "Prefer superior to",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Prefer superior to",
@@ -25909,7 +23136,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>배송 기록: 안내원에게 지도 12개, 방문객에게 사진 5개를 보냈다.<br>작성 문장: We sent more maps to the guides than photographs to the visitors.<br>복원 과제: than 뒤에 생략된 we sent를 넣고, 남아 있는 대조항을 표시한다.</p>",
         "displayTitle": "Multiple remnants",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Multiple remnants",
@@ -25945,7 +23171,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>예산 기록: 사전 예상은 £400, 실제 수리비는 £700.<br>보고 문장: The repair cost more than we had expected.<br>해석 후보 A: 예상했던 수리비보다 실제 비용이 컸다.<br>후보 B: 실제 비용보다 사전 예상 비용이 컸다.</p>",
         "displayTitle": "Embedded comparative ellipsis",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Embedded comparative ellipsis",
@@ -25981,7 +23206,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>세 창고 비교: A has the most space. B has the fewest damaged crates.<br>space는 mass, crates는 개별 count로 해석한다.</p>",
         "displayTitle": "Nominal superlative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD24-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 23,
         "cat": "Nominal superlative",
@@ -26149,7 +23373,6 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "남은 대조 성분: I/Sam 및 in May/in June. 복원되는 내용: coded the interviews."
           }
         ],
-        "study": "https://namkicheol.github.io/linguistics/example-ox-notes.html#coordination",
         "source": "Cowan (2008), 인쇄 605쪽의 개념을 적용한 독립적인 학습문항입니다. 원책 예문·문항의 재현이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -26187,13 +23410,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-001",
-          "title": "Phrasal versus clausal coordination"
-        },
         "displayTitle": "Phrasal versus clausal coordination",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Phrasal versus clausal coordination",
@@ -26228,13 +23445,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-002",
-          "title": "Initial coordinator links discourse"
-        },
         "displayTitle": "Initial coordinator links discourse",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Initial coordinator links discourse",
@@ -26269,13 +23480,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-003",
-          "title": "And temporal order pragmatic"
-        },
         "displayTitle": "And temporal order pragmatic",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "And temporal order pragmatic",
@@ -26310,13 +23515,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-004",
-          "title": "And conditional directive"
-        },
         "displayTitle": "And conditional directive",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "And conditional directive",
@@ -26353,13 +23552,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-005",
-          "title": "Or warning relation"
-        },
         "displayTitle": "Or warning relation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Or warning relation",
@@ -26394,13 +23587,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-006",
-          "title": "Nor negative addition inversion"
-        },
         "displayTitle": "Nor negative addition inversion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Nor negative addition inversion",
@@ -26435,13 +23622,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-007",
-          "title": "Yet concessive contrast"
-        },
         "displayTitle": "Yet concessive contrast",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Yet concessive contrast",
@@ -26476,13 +23657,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-008",
-          "title": "Both and parallel placement"
-        },
         "displayTitle": "Both and parallel placement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Both and parallel placement",
@@ -26517,13 +23692,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-009",
-          "title": "Neither nor negative scope"
-        },
         "displayTitle": "Neither nor negative scope",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Neither nor negative scope",
@@ -26560,13 +23729,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-010",
-          "title": "As well as addition not forced identity"
-        },
         "displayTitle": "As well as addition not forced identity",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "As well as addition not forced identity",
@@ -26603,13 +23766,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-011",
-          "title": "Just as so parallel propositions"
-        },
         "displayTitle": "Just as so parallel propositions",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Just as so parallel propositions",
@@ -26644,13 +23801,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-012",
-          "title": "Either or clause coordination"
-        },
         "displayTitle": "Either or clause coordination",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Either or clause coordination",
@@ -26685,13 +23836,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-013",
-          "title": "Either alternatives not necessarily exactly two"
-        },
         "displayTitle": "Either alternatives not necessarily exactly two",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Either alternatives not necessarily exactly two",
@@ -26726,13 +23871,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-014",
-          "title": "Not because but because contrast scope"
-        },
         "displayTitle": "Not because but because contrast scope",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Not because but because contrast scope",
@@ -26769,13 +23908,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-015",
-          "title": "Not only initial clause inversion"
-        },
         "displayTitle": "Not only initial clause inversion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Not only initial clause inversion",
@@ -26812,13 +23945,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-016",
-          "title": "Not only NP no blanket inversion"
-        },
         "displayTitle": "Not only NP no blanket inversion",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Not only NP no blanket inversion",
@@ -26853,13 +23980,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-017",
-          "title": "Shared argument coordination"
-        },
         "displayTitle": "Shared argument coordination",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Shared argument coordination",
@@ -26894,13 +24015,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-018",
-          "title": "VP ellipsis retains auxiliary"
-        },
         "displayTitle": "VP ellipsis retains auxiliary",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "VP ellipsis retains auxiliary",
@@ -26935,13 +24050,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-019",
-          "title": "VP ellipsis do support"
-        },
         "displayTitle": "VP ellipsis do support",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "VP ellipsis do support",
@@ -26976,13 +24085,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-020",
-          "title": "Ellipsis recoverability aspect"
-        },
         "displayTitle": "Ellipsis recoverability aspect",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Ellipsis recoverability aspect",
@@ -27019,13 +24122,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-021",
-          "title": "Right node sharing two predicates"
-        },
         "displayTitle": "Right node sharing two predicates",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Right node sharing two predicates",
@@ -27060,13 +24157,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-022",
-          "title": "Gapping remnant role reconstruction"
-        },
         "displayTitle": "Gapping remnant role reconstruction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Gapping remnant role reconstruction",
@@ -27105,13 +24196,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-023",
-          "title": "Gapping versus VP ellipsis"
-        },
         "displayTitle": "Gapping versus VP ellipsis",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Gapping versus VP ellipsis",
@@ -27146,13 +24231,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-024",
-          "title": "Respectively mapping order"
-        },
         "displayTitle": "Respectively mapping order",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-024",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Respectively mapping order",
@@ -27187,13 +24266,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-025",
-          "title": "Respectively not all combinations"
-        },
         "displayTitle": "Respectively not all combinations",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-025",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Respectively not all combinations",
@@ -27230,13 +24303,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-026",
-          "title": "Proximity agreement designated editing norm"
-        },
         "displayTitle": "Proximity agreement designated editing norm",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-026",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Proximity agreement designated editing norm",
@@ -27271,13 +24338,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-027",
-          "title": "Joint coordination not distributive clauses"
-        },
         "displayTitle": "Joint coordination not distributive clauses",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-027",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Joint coordination not distributive clauses",
@@ -27312,13 +24373,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-028",
-          "title": "Collective distributive context"
-        },
         "displayTitle": "Collective distributive context",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-028",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Collective distributive context",
@@ -27353,13 +24408,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-029",
-          "title": "Causal and"
-        },
         "displayTitle": "Causal and",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-029",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Causal and",
@@ -27394,13 +24443,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-030",
-          "title": "Concessive and"
-        },
         "displayTitle": "Concessive and",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-030",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Concessive and",
@@ -27437,13 +24480,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-031",
-          "title": "Right-node shared that complement"
-        },
         "displayTitle": "Right-node shared that complement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-031",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Right-node shared that complement",
@@ -27478,13 +24515,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-032",
-          "title": "Gapping clausal and PP remnants"
-        },
         "displayTitle": "Gapping clausal and PP remnants",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-032",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Gapping clausal and PP remnants",
@@ -27519,13 +24550,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-033",
-          "title": "Gapping of shared subject and verb with contrasting adjuncts"
-        },
         "displayTitle": "Gapping of shared subject and verb with contrasting adjuncts",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-033",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Gapping of shared subject and verb with contrasting adjuncts",
@@ -27560,13 +24585,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 개념을 참고한 문맥 판단 연습입니다.",
-        "theoryLink": {
-          "page": "tg-detail-concepts.html",
-          "anchor": "TGD25-034",
-          "title": "Gapping shared verb and destination"
-        },
         "displayTitle": "Gapping shared verb and destination",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD25-034",
         "reviewStatus": "independent-content-reviewed",
         "unit": 16,
         "cat": "Gapping shared verb and destination",
@@ -27604,7 +24623,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>격식 문어 초안: The alarm rang, however the door stayed shut.<br>수정: The alarm rang; however, the door stayed shut.</p>",
         "displayTitle": "Connector not coordinator",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-001",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Connector not coordinator",
@@ -27641,7 +24659,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>논거 목록: First, the plan is affordable. Second, it uses existing equipment.<br>두 장점은 동시에 성립한다.</p>",
         "displayTitle": "Ordering not time",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-002",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Ordering not time",
@@ -27677,7 +24694,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>앞 문단에서 비용·안전·시간을 평가한 뒤: Overall, the pilot was a success.</p>",
         "displayTitle": "summary",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-003",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "summary",
@@ -27715,7 +24731,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>교체를 권하는 논거: The old motor overheats. Moreover, replacement parts are no longer available.</p>",
         "displayTitle": "Additive thesis",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-004",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Additive thesis",
@@ -27751,7 +24766,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Several surfaces reflect light. For example, polished metal does.<br>B: The image is monochrome. In other words, it contains no colour information.</p>",
         "displayTitle": "Example restatement",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-005",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Example restatement",
@@ -27787,7 +24801,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The fuse blew. As a result, the motor stopped.<br>B: There are four red tiles and five blue tiles; therefore, there are nine tiles.</p>",
         "displayTitle": "Result inference",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-006",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Result inference",
@@ -27823,7 +24836,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The north wall is white. By contrast, the south wall is grey.<br>B: The panel was badly cracked. Nevertheless, it remained waterproof.</p>",
         "displayTitle": "Contrast vs concession",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-007",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Contrast vs concession",
@@ -27860,7 +24872,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>The technician did not replace the switch. Instead, she cleaned its contacts.</p>",
         "displayTitle": "Instead alternative",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-008",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Instead alternative",
@@ -27896,7 +24907,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The tank is completely empty.<br>B: On the contrary, it is still half full.</p>",
         "displayTitle": "Contrary correction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-009",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Contrary correction",
@@ -27932,7 +24942,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>같은 장비를 평가: On the one hand, it is light. On the other hand, the battery is difficult to replace.</p>",
         "displayTitle": "Other hand aspects",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-010",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Other hand aspects",
@@ -27970,7 +24979,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>Officially, the archive is fully digitized. In reality, several boxes remain unscanned.</p>",
         "displayTitle": "Cognitive stance",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-011",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Cognitive stance",
@@ -28006,7 +25014,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>배송일을 정한 뒤: By the way, did you find the missing receipt?</p>",
         "displayTitle": "Topic shift",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-012",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Topic shift",
@@ -28044,7 +25051,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: Can you approve it now?<br>B: Well, I need to check one figure first. [머뭇거리며]<br>별도 상황: Well, let’s begin the test. [활동 전환]</p>",
         "displayTitle": "Well multifunction",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-013",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Well multifunction",
@@ -28080,7 +25086,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>The deadline is Friday—I mean, Thursday.<br>말하면서 요일을 바로잡는다.</p>",
         "displayTitle": "I mean repair",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-014",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "I mean repair",
@@ -28119,7 +25124,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>혼잣말처럼 발화를 이어가며: It was, you know, unexpectedly quiet.<br>화자는 yes/no 응답을 기다리지 않는다.</p>",
         "displayTitle": "You know not question",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-015",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "You know not question",
@@ -28155,7 +25159,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: The small button resets the timer.<br>B: Oh, I had mistaken it for the power switch.</p>",
         "displayTitle": "Oh state change",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-016",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Oh state change",
@@ -28193,7 +25196,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: That completes the safety briefing.<br>B: Okay, let’s check the equipment now.<br>또 다른 응답: Right, I understand the sequence.</p>",
         "displayTitle": "Okay right management",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-017",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Okay right management",
@@ -28229,7 +25231,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>A: There were like forty people. [대략 수를 말함]<br>B: She was like, “Please try again.” [상대 발화를 재현함]</p>",
         "displayTitle": "Like approximation quotation",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-018",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Like approximation quotation",
@@ -28267,7 +25268,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>The prototype is efficient. Indeed, it used half the energy of the earlier design.</p>",
         "displayTitle": "Indeed support",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-019",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Indeed support",
@@ -28303,7 +25303,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>The sensor is highly sensitive—hence the protective cover.</p>",
         "displayTitle": "Hence aside",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-020",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Hence aside",
@@ -28339,7 +25338,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>같은 화자가 가벼운 구어에서 요청을 고쳐 말한다.<br>전: Could we move this meeting to Friday?<br>후: Could we, like, move this meeting to Friday?<br>관찰 조건: like는 요청을 머뭇거리며 완화하는 marker로 사용되었고, 날짜나 허락 조건은 바뀌지 않았다.</p>",
         "displayTitle": "Like softening",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-021",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Like softening",
@@ -28379,7 +25377,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>학술 보고에서는 in other words를, 대화에서는 I mean을 써서 앞 설명을 풀었다.</p>",
         "displayTitle": "Register not truth",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-022",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "Register not truth",
@@ -28415,7 +25412,6 @@ window.EXAMPLE_OX_BANKS = [
         "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
         "data": "<p><strong>판단 자료</strong><br>발표자가 거의 모든 짧은 구마다 you know를 넣으며 다음 말을 고른다.<br>청중은 흐름이 끊긴다고 느낀다.</p>",
         "displayTitle": "You know overuse",
-        "study": "https://namkicheol.github.io/linguistics/tg-detail-concepts.html#TGD26-023",
         "reviewStatus": "independent-content-reviewed",
         "unit": 24,
         "cat": "You know overuse",
@@ -31123,7 +28119,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#competence-performance",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31175,7 +28170,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#grammaticality-vs-meaning",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31226,7 +28220,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#descriptive-vs-prescriptive",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31277,7 +28270,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#recursive-creativity",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31331,7 +28323,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#hypothesis-testing",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31395,7 +28386,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#levels-of-adequacy",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31446,7 +28436,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#structure-dependence",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31498,7 +28487,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#absolute-relative-universals",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31549,7 +28537,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#markedness-core",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31600,7 +28587,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#structural-ambiguity",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31655,7 +28641,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#category-distribution",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31706,7 +28691,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#nonsyntactic-constituency",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31757,7 +28741,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#substitution-span",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31811,7 +28794,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#category-not-size",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31865,7 +28847,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#coordination-diagnostic",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31919,7 +28900,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#ellipsis-vs-gapping",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -31970,7 +28950,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#converging-diagnostics",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32021,7 +29000,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#preposing-constituent-scope",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32075,7 +29053,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#dominance-precedence",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32130,7 +29107,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#c-command",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32184,7 +29160,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#anaphor-c-command",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32238,7 +29213,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#no-crossing-branches",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32289,7 +29263,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#rewrite-rules",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32343,7 +29316,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#gerund-category-tests",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32394,7 +29366,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#category-generalization",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32445,7 +29416,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#major-minor-features",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32496,7 +29466,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#nbar-intermediate",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32551,7 +29520,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#nominal-complement-adjunct",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32605,7 +29573,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#one-pronominalization",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32659,7 +29626,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#optional-not-adjunct",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32713,7 +29679,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#nominal-order",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32767,7 +29732,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#complement-adjunct-tests",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32821,7 +29785,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#nominal-compound-relation",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32872,7 +29835,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#adjectival-premodification",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32923,7 +29885,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#vbar-do-so",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -32978,7 +29939,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#vp-complement-completeness",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33032,7 +29992,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#ap-complement",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33083,7 +30042,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#pp-specifier",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33137,7 +30095,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#cross-categorial-symmetry",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33191,7 +30148,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#endocentricity",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33245,7 +30201,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#adjunction-recursion",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33299,7 +30254,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#principles-and-overgeneration",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33350,7 +30304,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#finite-nonfinite",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33415,7 +30368,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#finite-agreement",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33469,7 +30421,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#clausal-constituency",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33523,7 +30474,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#complementizer-selection",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33574,7 +30524,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#inflection-position",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33625,7 +30574,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#empty-subject-pro",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33679,7 +30627,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#control-vs-exceptional",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33733,7 +30680,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#small-clause",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33787,7 +30733,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#lexical-category-features",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33839,7 +30784,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#subcategorization",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33891,7 +30835,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#selected-preposition",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33942,7 +30885,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#complement-order",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -33993,7 +30935,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#clausal-selection-types",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34044,7 +30985,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#nonverbal-selection",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34095,7 +31035,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#lexical-redundancy",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34146,7 +31085,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#selection-vs-syntax",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34197,7 +31135,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#theta-role-vs-function",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34252,7 +31189,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#theta-and-category",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34306,7 +31242,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#nonthematic-subject",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34360,7 +31295,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#theta-criterion",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34415,7 +31349,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#d-s-structure",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34470,7 +31403,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#head-v-movement",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34525,7 +31457,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#i-to-c-inversion",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34579,7 +31510,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#passive-np-movement",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34634,7 +31564,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#raising-vs-control",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34689,7 +31618,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#ergative-middle",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34740,7 +31668,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#extraposition",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34791,7 +31718,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#echo-vs-direct-wh",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34843,7 +31769,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#wh-gap-dependency",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34898,7 +31823,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#morphological-movement-evidence",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -34949,7 +31873,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#phonological-movement-evidence",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35000,7 +31923,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#reconstruction-interpretation",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35051,7 +31973,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#relative-wh",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35102,7 +32023,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#wh-target-maximal",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35156,7 +32076,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#specifier-c-vs-c-head",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35211,7 +32130,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#ip-reanalysis",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35265,7 +32183,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#small-clause-reanalysis",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35316,7 +32233,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#movement-types",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35368,7 +32284,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#move-alpha-generalization",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35419,7 +32334,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#structure-preserving-substitution",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35470,7 +32384,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#substitution-adjunction",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35521,7 +32434,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#extended-projection",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35572,7 +32484,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#trace-chain",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35627,7 +32538,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#trace-c-command",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35681,7 +32591,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#bounded-successive-cyclic",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35736,7 +32645,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
-        "study": "https://namkicheol.github.io/linguistics/transform-data-notes.html#rule-interaction",
         "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
         "provenance": {
           "kind": "original",
@@ -35797,10 +32705,6 @@ window.EXAMPLE_OX_BANKS = [
       {
         "id": 4,
         "title": "Ch.4 · Vowels"
-      },
-      {
-        "id": 7,
-        "title": "Ch.5 · Acoustics"
       },
       {
         "id": 5,
@@ -36092,422 +32996,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "aep-new",
-        "id": "AN07-01",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "설명용 주기 측정: 한 모음의 반복 진동 간격이 5 ms이다. 1초=1000 ms이며 F0는 초당 반복 횟수이다.",
-        "text": "F0 in these data is 200 Hz.",
-        "ans": true,
-        "why": "1/0.005초=200회/초입니다. 반복주기와 기본주파수는 역수 관계입니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            102
-          ],
-          "pdfPages": [
-            113
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": true,
-        "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-02",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "같은 화자의 안정된 모음 구간: A의 F1=340 Hz, B의 F1=690 Hz. 다른 조건을 통제하고 F1–혀 높이의 일반적 상관을 적용한다.",
-        "text": "The analysis that B is a higher vowel than A accords with the F1 data.",
-        "ans": false,
-        "why": "F1과 혀 높이는 일반적으로 반비례합니다. 이 비교에서 F1이 낮은 A를 더 높은 모음으로 추론합니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            103,
-            104
-          ],
-          "pdfPages": [
-            114,
-            115
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "essence",
-        "representative": true,
-        "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-03",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "설명용 같은 화자 자료: A F1=400/F2=2200 Hz, B F1=400/F2=1100 Hz. 이 문항에서는 F2−F1의 상대적 크기를 전설성의 단서로 사용한다.",
-        "text": "Under this criterion, A is a more front vowel than B.",
-        "ans": true,
-        "why": "A의 차이는1800 Hz, B는700 Hz입니다. 제시한 상대기준에서는 A가 더 전설적입니다. 절대 수치를 모든 화자에게 고정 적용하는 뜻은 아닙니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            103,
-            105
-          ],
-          "pdfPages": [
-            114,
-            116
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-04",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "한 화자의 두 발화 A/B는 F0가 모두150 Hz이지만 A의 F1/F2는350/2100 Hz, B는700/1200 Hz이다.",
-        "text": "Since F0 is identical, the two vowels must also have identical quality.",
-        "ans": false,
-        "why": "F0는 성대 진동률, formants는 성도 공명과 관련됩니다. 같은 pitch에서도 성도 모양이 달라 서로 다른 모음을 만들 수 있습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            102,
-            103
-          ],
-          "pdfPages": [
-            113,
-            114
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-05",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "가상 측정표: 한 모음 내부의 시작→끝에서 F1은700→360 Hz, F2는1100→2100 Hz로 연속 변화한다.",
-        "text": "The data show only stable monophthongs because there is no formant movement within the vowels.",
-        "ans": false,
-        "why": "두 formant가 뚜렷하게 이동합니다. 이는 조음위치가 바뀌는 이중모음형 궤적과 양립하며, 안정된 단모음만 있다고 단정할 수 없습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            106,
-            107
-          ],
-          "pdfPages": [
-            117,
-            118
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-06",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "설명용 음향 기록: 모음 뒤에 에너지가 크게 약해진 폐쇄 구간이 있고, 그 끝에 짧은 burst가 나타난다.",
-        "text": "This interval supports an analysis of stop closure and release.",
-        "ans": true,
-        "why": "Stop은 폐쇄에 따른 신호 약화와 방출 burst를 보일 수 있습니다. 이 단서만으로 구체적인 조음장소까지 결정하지는 않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            107,
-            108
-          ],
-          "pdfPages": [
-            118,
-            119
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "essence",
-        "representative": true,
-        "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-07",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "단어 첫머리의 영어 stop 토큰에서 저주파 voice bar가 관찰되지 않았다. 다른 단서는 측정하지 않았다.",
-        "text": "This fact alone completely rules out the possibility that the token is /b,d,g/.",
-        "ans": false,
-        "why": "영어 lenis stop도 위치에 따라 성대진동이 없을 수 있습니다. Voice bar 부재만으로 음소 범주를 확정하지 않고 VOT·주변모음·폐쇄 등 다른 단서를 함께 봅니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            108
-          ],
-          "pdfPages": [
-            119
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-08",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "두 stop의 release를0 ms로 놓았다. A는 voicing이+65 ms, B는+12 ms에 시작한다.",
-        "text": "A exhibits a longer positive VOT than B.",
-        "ans": true,
-        "why": "방출부터 voicing시작까지의 지연은 A65 ms, B12 ms입니다. 이것은 측정 비교이지 모든 언어에서 A/B가 특정음소라는 판정은 아닙니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            108,
-            110
-          ],
-          "pdfPages": [
-            119,
-            121
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "essence",
-        "representative": true,
-        "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-09",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "설명용 기록: 한 구간에 비주기적인 마찰잡음이 계속되지만 모음처럼 안정된 formant band는 뚜렷하지 않다.",
-        "text": "This record is incompatible with an interpretation as frication noise.",
-        "ans": false,
-        "why": "Fricative는 좁은 통로의 난류로 비주기 잡음을 만듭니다. 모음의 안정된 band가 없다는 사실이 frication 분석을 반박하지 않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            111
-          ],
-          "pdfPages": [
-            122
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-10",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "음향자료 A: 폐쇄 구간 뒤에 마찰구간이 이어진다. 이 토큰의 언어 내 분포나 경계 정보는 주어지지 않았다.",
-        "text": "The presence of closure followed by frication alone conclusively distinguishes a single affricate from a stop + fricative sequence.",
-        "ans": false,
-        "why": "두 경우 모두 폐쇄+마찰을 보일 수 있습니다. 지속시간·단위로서의 분포·경계 등 추가 정보가 필요하며 단순한 두 단계 존재만으로 확정하지 않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            114
-          ],
-          "pdfPages": [
-            125
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-11",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "같은 화자의 두 approximant 기록에서 A의 F3가 B보다 훨씬 낮고 F2에 가까워졌다. 모음환경은 같다.",
-        "text": "A's low F3 can serve as an acoustic cue supporting an English rhotic interpretation.",
-        "ans": true,
-        "why": "영어 rhotic의 낮은 F3는 유용한 단서입니다. 단일 단서가 모든 언어·화자에서 같은 범주를 보장한다는 주장은 아닙니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            104,
-            115
-          ],
-          "pdfPages": [
-            115,
-            126
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-12",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "한 화자가 같은 단어를 문장 중간에서95 ms, 문장 끝 휴지 앞에서170 ms의 모음으로 발음했다. 다른 실험은 없었다.",
-        "text": "Since the durations differ, different vowel phonemes must have been produced.",
-        "ans": false,
-        "why": "위치·강세·속도·뒤 자음 등으로 같은 모음의 지속시간이 달라집니다. 휴지 앞 길이 증가는 음소 차이 없이도 나타날 수 있습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            119,
-            120
-          ],
-          "pdfPages": [
-            130,
-            131
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
         "id": "AN08-01",
         "unit": 8,
         "cat": "Ch.8 · L2 phonology",
@@ -36516,7 +33004,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Even if learners can already produce both sounds, they must newly learn their phonemic contrast in L2.",
         "ans": true,
         "why": "조음 능력과 음소 대립의 학습은 다릅니다. L1 allophony를 L2 contrast로 재구성하는 phonemic split이 필요합니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-contrast",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36552,7 +33039,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Since both systems have /t/, no differences in articulatory realization need to be learned.",
         "ans": false,
         "why": "같은 음소 표기를 사용해도 실제 조음은 다를 수 있습니다. 음소목록 일치가 모든 음성적 일치를 뜻하지 않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-contrast",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36589,7 +33075,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The repair in these data inserts a vowel to break up the cluster rather than deleting an onset consonant.",
         "ans": true,
         "why": "두 자음 p/l이 모두 남고 ə가 추가됩니다. 이는 epenthesis이며 deletion과 구분됩니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-contrast",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36625,7 +33110,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "This table shows success in the derived context preceding success in the basic context.",
         "ans": false,
         "why": "표에서 basic/tautomorphemic환경이 먼저 성공합니다. Derived/heteromorphemic은 단계3에서 성공하므로 순서가 반대입니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-contrast",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36658,7 +33142,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Even with the same intermediate [t], the final realization differs depending on the path from the target.",
         "ans": true,
         "why": "대체음까지 동일하게 바꾸면 목표 대립이 합쳐질 수 있습니다. 이 예는 대체음의 경로를 구별해 대립을 보존하는 deflected-contrast형 분석을 보여 줍니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-contrast",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36693,7 +33176,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The new error is compatible with a hypercontrast analysis involving overapplication of the learned contrast.",
         "ans": true,
         "why": "이전 오류를 피하려다 원래 정확한 범주까지 반대 범주로 바꾸는 과잉수정입니다. 모든 발화에서 대립을 습득했다는 뜻은 아닙니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-contrast",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36726,7 +33208,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Under this criterion, B is more marked than A.",
         "ans": false,
         "why": "A의 존재가 B를 함의하고 역은 아니므로 A가 더 marked합니다. 빈도나 낯섦만으로 순서를 바꾸지 않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-markedness",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36761,7 +33242,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Since both groups exhibit the same type of L1–L2 mismatch, their difficulty must be identical.",
         "ans": false,
         "why": "단순 불일치의 존재만으로 난이도 동일을 보장하지 않습니다. 목표 구조의 markedness와 환경 등도 관련됩니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-markedness",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36796,7 +33276,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "In this figure, the influence of universals increases monotonically throughout.",
         "ans": false,
         "why": "Universal 값은10→25로 상승한 뒤10으로 하강합니다. OPM 일반 추세의 중간 상승 후 감소를 읽는 문항이며 모든 개인에 이 비율을 적용하지 않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-models",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36833,7 +33312,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "y must win because it has fewer violations overall.",
         "ans": false,
         "why": "Strict domination에서는 최상위에서 갈리는 A 위반이 우선입니다. A를 지킨 x가 낮은 제약을 더 많이 위반해도 y보다낫습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-ot",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36869,7 +33347,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The two candidates do not necessarily violate the same faithfulness constraint.",
         "ans": true,
         "why": "삭제는 MAX, 자질 변경은 IDENT-VOICE와 관련됩니다. 입력 출력 불일치라는 공통점이 있어도 위반 유형은 다릅니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-ot",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36902,7 +33379,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Identical category classifications alone establish that the difference cannot be heard at all.",
         "ans": false,
         "why": "범주동화와 실제 차이 식별은 같은 측정이 아닙니다. 동일 범주로 분류하더라도 세부 적합도와 변별 수행을 별도로 확인해야 합니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-perception",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36941,7 +33417,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Since their spellings differ, the two given words must have different phoneme sequences.",
         "ans": false,
         "why": "제시된 전사는 동일합니다. 영어에서 다른 철자가 같은 소리를 표시할 수 있으므로 철자차이가음소 차이를보장하지않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -36977,7 +33452,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Since s and h are two letters, /ʃ/ must also be counted as two phonemes.",
         "ans": false,
         "why": "글자 수와 음소 수는 같지 않습니다. 이 자료에서 sh는 단일/ʃ/를 표시하는 digraph입니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37015,7 +33489,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The same past-tense spelling -ed represents different pronunciations.",
         "ans": true,
         "why": "-ed는이 자료에서/t,d,ɪd/로 실현됩니다. 철자는공통 형태소를 보존하고 발음은 환경에 따라 달라질 수 있습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37049,7 +33522,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The data support an exceptionless rule changing every base-final y to ie when -s is added.",
         "ans": false,
         "why": "Displays가 반례입니다. y 앞의 자음 글자/모음 글자 환경 등을 구분해야 하며 마지막 글자 하나만으로 일괄 변환할 수 없습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37082,7 +33554,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "This notation preserves morpheme spelling even when the surface vowel changes.",
         "ans": true,
         "why": "동일 형태소 표기는 소리 변이와 별개로 보존될 수 있습니다. 이 자료는 실제 영어 단어 목록이 아닌 morphophonemic표기의 설명용 모형입니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37117,7 +33588,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Historical origin alone establishes that modern speakers must also analyze ab as a productive prefix.",
         "ans": false,
         "why": "통시적 분해와 공시적 생산성은 다릅니다. 현재 구조와 사용 자료 없이 역사적 접두사 분석을 모든 현대 단어에 강제할 수 없습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37150,7 +33620,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Different spelling conventions alone establish that the two writers also pronounce the vowels differently.",
         "ans": false,
         "why": "철자 변종과 실제 발음은 별도입니다. 발음 자료 없이 표기 차이를 특정 음질 차이로 치환할 수 없습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37185,7 +33654,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "There is a counterexample to the rule that every base with an -ive derivative must permit only -ible.",
         "ans": true,
         "why": "제시한 supportable이 전칭 규칙을 반박합니다. 철자 대응의 경향과 예외 없는 규칙을 구분해야 합니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37210,253 +33678,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "aep-new",
-        "id": "AN07-13",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "합성 spectrogram 그림: 가로축 time(ms), 세로축 frequency(Hz), 색이 진할수록 해당 시간·주파수의 에너지가 크다. 이것은 실제 녹음이 아닌 읽기 연습용 도식이다.",
-        "text": "A band drawn higher represents a higher frequency than a band below it.",
-        "ans": true,
-        "why": "세로축이주파수이므로 위아래위치는주파수차이입니다. 시간은가로축, 에너지크기는색의진하기로구분합니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            101
-          ],
-          "pdfPages": [
-            112
-          ]
-        },
-        "figure": {
-          "src": "aep-acoustic-chart.svg",
-          "alt": "시간0~150ms, 주파수0~3000Hz 축. F1 band는500Hz에, F2 band는1500Hz에서2300Hz로오른다. 100~150ms F2가더진하다."
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-14",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "합성 spectrogram: F1 band는500 Hz에일정하고 F2 band는1500→2300 Hz로상승한다. 같은F2 band의 마지막 구간만 색이 더 진하다. 실제 녹음이 아닌 도식이다.",
-        "text": "Darkening of the F2 band means that the color has lowered the frequency of that interval.",
-        "ans": false,
-        "why": "진하기는에너지강도의표현이고 주파수는세로위치입니다. 두시각부호를혼동하면안됩니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            101
-          ],
-          "pdfPages": [
-            112
-          ]
-        },
-        "figure": {
-          "src": "aep-acoustic-chart.svg",
-          "alt": "F1은500Hz수평, F2는1500Hz에서2300Hz상승. 마지막50ms F2는진하게표시됨."
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-15",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "분석설정 A는 짧은 시간 변화를 선명하게 보이지만 주파수 분해능이낮다. B는 가까운 주파수 성분을 잘 나누지만 시간 변화가 덜 선명하다.",
-        "text": "A/B exhibit a trade-off between temporal and frequency resolution.",
-        "ans": true,
-        "why": "Broadband/narrowband분석의일반적trade-off입니다. 한설정이모든축에서동시에더정밀하다고판단하지않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            102
-          ],
-          "pdfPages": [
-            113
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-16",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "같은 환경의CV자료에서 F1은세후보모두방출뒤상승한다. F2/F3의모양은후보마다다르다.",
-        "text": "The shared F1 rise alone distinguishes the stop place of articulation of all three candidates.",
-        "ans": false,
-        "why": "공통단서는세범주를구별하지못합니다. 장소추론에는 F2/F3전이와burst등 추가단서가중요합니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            109
-          ],
-          "pdfPages": [
-            120
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-17",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "설명용같은화자자료: 두마찰음의noise대역중심이 A는높은주파수, B는낮은주파수에있다. 분류가이드에는 alveolar보다 postalveolar frication의주요에너지가대체로낮게관찰된다고적었다.",
-        "text": "Comparing only the guide and these two data sets, B is a better match for the postalveolar candidate.",
-        "ans": true,
-        "why": "상대적noise대역을제시한분류가이드에맞춰읽는판단입니다. 이값만으로모든화자의음소를확정하지는않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            111,
-            112
-          ],
-          "pdfPages": [
-            122,
-            123
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-18",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "설명용구간에서 저주파공명은남아있지만 주변모음에비해전체에너지와고주파에너지가줄었다. oralclosure와비강기류가관찰되었다.",
-        "text": "These data are compatible with interpretation as a nasal interval.",
-        "ans": true,
-        "why": "비음은비강을통한방사와감쇠때문에 모음보다약한공명패턴을보일수있습니다. 무음폐쇄만있다고읽을수는없습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            115,
-            116
-          ],
-          "pdfPages": [
-            126,
-            127
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN07-19",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "연속발화에서 앞자음의방출과뒤모음의formant전이가시간상겹친다.",
-        "text": "Since there is overlap, the recording is fundamentally defective.",
-        "ans": false,
-        "why": "발화의조음은시간상겹치며음향경계가항상분절별상자처럼나뉘지않습니다. 전이는공조음의정상적인단서일수있습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            100,
-            101,
-            119
-          ],
-          "pdfPages": [
-            111,
-            112,
-            130
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
         "id": "AN08-13",
         "unit": 8,
         "cat": "Ch.8 · L2 phonology",
@@ -37465,7 +33686,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "For similar phenomena, delayed discrimination of small phonetic differences can be interpreted as allowing L1 influence to persist longer.",
         "ans": true,
         "why": "OPM은대상의유사성에따라영향곡선이다를수있다고봅니다. L1과가깝다는사실이언제나더쉬운습득을보장하지않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-models",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37500,7 +33720,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Among the three candidates, [bə.rim] is the winner.",
         "ans": true,
         "why": "[brim]은최상위제약, [bim]은그다음MAX를위반합니다. 모음삽입후보는최하위DEP만위반하여승리합니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-ot",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37537,7 +33756,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Even after the constraint ranking changes, only the epenthetic form wins, as under the previous *COMPLEX≫MAX≫DEP ranking.",
         "ans": false,
         "why": "새순위에서는두faithfulness 제약을모두지키는[brim]이 승리합니다. 제약 목록과 위반이 같아도 순위가 바뀌면 결과가 바뀔 수 있습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-ot",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37572,7 +33790,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "This result contradicts the assumption that physical and perceptual distance are always identical.",
         "ans": true,
         "why": "Perceptualmagnet설명은범주prototype이주변지각공간을왜곡할수있다고봅니다. 설명용도식을모든청자에게동일하게적용하지않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-perception",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37607,7 +33824,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "Under this model's predictions, A may be easier to discriminate than B.",
         "ans": true,
         "why": "이조건의TC는서로 다른범주가단서가되지만 SC는두 소리가같은 범주로동화됩니다. 모형예측과개인의실험결과는구별합니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-perception",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37641,7 +33857,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "A must always be predicted to be acquired more accurately than B solely because it is more similar to L1.",
         "ans": false,
         "why": "SLM의equivalenceclassification은유사한소리의범주분리를방해할수있습니다. 새범주형성이가능한더다른소리가반드시더어렵다고단정하지않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-perception",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37674,7 +33889,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "If the given observation is accurate, these data counter the claim that adults can never improve their ability to discriminate new sounds.",
         "ans": true,
         "why": "성인학습불가능이라는절대명제는개선사례로반박됩니다. 이것만으로나이효과가전혀없다고결론내리는것도별개의과잉추론입니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#l2-perception",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37711,7 +33925,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The two instances of c represent the same phoneme in the given transcriptions.",
         "ans": false,
         "why": "city의c는/s/, cabin의c는/k/에대응합니다. 같은글자가문맥에따라다른음소를표시할수있습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37746,7 +33959,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The data show an alternation in which n, silent in the first form, is pronounced in the derivative.",
         "ans": true,
         "why": "autumn에는전사상/n/이없고 autumnal에는/n/이있습니다. 철자보존과발음 교체를함께보여주는원책 대표 사례입니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37779,7 +33991,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The preservation of two consonants in the spelling at period 2 alone requires a pronunciation still containing two consonants.",
         "ans": false,
         "why": "발음 변화 뒤에도 철자는 유지될 수 있습니다. 역사적 음가를 현대 발음에 자동 투사하면 안 됩니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37814,7 +34025,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "The second example is a counterexample to the hypothesized rule.",
         "ans": true,
         "why": "carrying은y를유지합니다. i로시작하는접미사앞환경등을고려해야하며 y변환을무조건적규칙으로볼수없습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37847,7 +34057,6 @@ window.EXAMPLE_OX_BANKS = [
         "text": "A different r/e order in spelling should not be read as reversal of the given pronunciation sequence.",
         "ans": true,
         "why": "철자규약의순서교체를음소metathesis로동일시할수없습니다. 여기서는두전사가같다는조건이명시되어있습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#spelling",
         "bookReview": {
           "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
           "status": "independent-content-reviewed",
@@ -37872,41 +34081,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "aep-new",
-        "id": "AN07-20",
-        "unit": 7,
-        "cat": "Ch.5 · Acoustic evidence",
-        "concept": "acoustics",
-        "data": "설명용 발음 연습 기록: 같은 강세 위치의 stop을 같은 속도로 말할 때 VOT 평균이 1주차 12 ms, 2주차 25 ms, 3주차 38 ms로 변했다. 청자의 범주 판정은 아직 바뀌지 않았다.",
-        "text": "Since the listener's category judgment is unchanged, there was no measured pronunciation change at all.",
-        "ans": false,
-        "why": "범주적 청취 판단이 같아도 연속적 음향 수치는 달라질 수 있습니다. 통제된 측정은 아직 청각적으로 뚜렷하지 않은 변화를 추적하는 데 도움이 됩니다. 이것만으로 목표 발음 완성을 선언하지는 않습니다.",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#acoustics",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            122,
-            123
-          ],
-          "pdfPages": [
-            133,
-            134
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
         "id": "AN01-03",
         "unit": 1,
         "cat": "Transcription detail",
@@ -37915,7 +34089,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "Broad/phonemic 표기와 세부 phonetic 표기의 차이입니다. 주어진 동일발화·이음 조건에서는 상세도가 달라도 같은 단어를 기록할 수 있습니다.",
         "concept": "Broad versus narrow transcription",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#phonetic-observation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -37955,7 +34128,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "Voicing 판별의 핵심은 성대진동입니다. 입술이나 혀의 위치가 같아도 성문 상태에 따라 구별됩니다.",
         "concept": "Vocal fold vibration",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#phonetic-observation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -37989,7 +34161,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "Voicing이 release보다 먼저면 음의 VOT/lead이고 뒤면 양의 VOT/lag입니다. B/C의 길이범주 기준은 이 자료에 한정됩니다.",
         "concept": "VOT lead and lag",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#phonetic-observation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38025,7 +34196,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "주조음인 velar closure는 유지됩니다. 입술 원순성이 추가된 labialization은 secondary articulation이며 별도의 bilabial stop으로 바뀐 것이 아닙니다.",
         "concept": "Labialization as secondary articulation",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#phonetic-observation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38059,7 +34229,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "A는 glottalic egressive인 ejective 기제, B는 구강 폐쇄 사이 감압을 사용하는 click의 ingressive 기제에 대응합니다. 둘을 폐기류 하나로 동일시하지 않습니다.",
         "concept": "Non-pulmonic airflow mechanisms",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#phonetic-observation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38095,7 +34264,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "언어별 전사 기호는 실제 음질의 미세차이를 모두 보장하지 않습니다. Cardinal vowels 같은 기준점은 언어간 비교를 위한 참조이지 모든 언어의 모음이 기준점과 같다는 뜻이 아닙니다.",
         "concept": "Cardinal references and cross-language quality",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#phonetic-observation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38313,7 +34481,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "Lenis stop의 부분무성화와 전체 음소대립 소실은 다릅니다. 다른 음성단서와 대립 유지라는 자료가 완전중화 주장을 막습니다.",
         "concept": "Partial devoicing versus neutralization",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38349,7 +34516,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "모음뿐 아니라 sonorant consonant도 뒤 obstruent 유형에 따라 길이가 달라질 수 있습니다. 표의 두 경우 모두 voiced/lenis 쪽이 더 깁니다.",
         "concept": "Duration before fortis and lenis obstruents",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38387,7 +34553,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "Unreleased stop은 폐쇄 조음이 존재하면서 방출이 들리지 않는 실현입니다. 무방출과 segment deletion은 같지 않습니다.",
         "concept": "Unreleased versus deleted segment",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38421,7 +34586,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "A는 nasal release, B는 lateral release에 해당합니다. 동기관 연속에서 중앙 폐쇄를 별도로 폭발시키지 않고 다른 통로로 방출할 수 있습니다.",
         "concept": "Nasal and lateral release",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38527,7 +34691,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "Dark lateral의 추가 tongue-back gesture와 primary lateral articulation은 공존할 수 있습니다. Secondary articulation을 primary stop 교체로 읽지 않습니다.",
         "concept": "Clear and velarized lateral",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38565,7 +34728,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "발화조건과 전사가 주어졌으므로 [p] 뒤 lateral의 무성화로 분석합니다. Lateral gesture 자체가 사라진 deletion이라고 하지 않습니다.",
         "concept": "Approximant devoicing after voiceless obstruent",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38599,7 +34761,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "Non-rhotic 체계에서도 뒤에 vowel이 오면 linking r이 실현될 수 있습니다. 단독형과 연결환경을 구별합니다.",
         "concept": "Non-rhotic and linking-r environments",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38635,7 +34796,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "/ɪ/ 후보는 이 자료에서 지정한 checked-vowel 제약을 어깁니다. /eɪ/ 후보는 해당 제약의 대상이 아닙니다.",
         "concept": "Distributional tense-lax distinction",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#vowel-variation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38671,7 +34831,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "뒤 nasal의 velum gesture가 모음에 겹칩니다. 이 관찰만으로 nasalized vowel이 별도 phoneme이라고 확정하지 않습니다.",
         "concept": "Anticipatory vowel nasalization",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#vowel-variation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38705,7 +34864,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "길이는 환경의 영향을 받습니다. 같은 phoneme의 다른 환경에서 얻은 duration 차이만으로 category 대립을 확정할 수 없습니다.",
         "concept": "Contextual length versus vowel category",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#vowel-variation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38741,7 +34899,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "하나의 nucleus 안에서 음질이 이동하는 A와 안정적인 B를 비교하는 판단입니다. 이동하는 두 지점이 곧 두 음절이라는 뜻은 아닙니다.",
         "concept": "Within-nucleus quality trajectory",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#vowel-variation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38779,7 +34936,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "Pre-lateral vowel merger는 변이체에 따라 다를 수 있습니다. 한 화자의 합류를 다른 화자와 모든 영어로 확대하지 않습니다.",
         "concept": "Pre-liquid variation and merger",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#vowel-variation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38819,7 +34975,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "비강세 음절에도 full vowel이 남을 수 있습니다. Unstressed와 reduced는 같은 분류가 아닙니다.",
         "concept": "Unstressed full vowel counterexample",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#vowel-variation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -38855,7 +35010,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "Function words의 strong forms는 고립형뿐 아니라 초점·대조 환경에서도 나타날 수 있습니다. 문장 속이라는 이유만으로 항상 약화시키지 않습니다.",
         "concept": "Strong forms under contrastive emphasis",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#vowel-variation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39001,7 +35155,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "접사결합이 더 긴 coda를 만들 수 있습니다. Root-only inventory와 morphology를 포함한 inventory의 조사범위를 구별합니다.",
         "concept": "Morphological boundaries in phonotactics",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#syllable-analysis",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39041,7 +35194,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "Orthographic line division은 형태소 구조 등을 보존할 수 있고, spoken syllabification은 음성·음운 기준을 사용합니다. 목적이 다른 경계를 자동으로 동일시하지 않습니다.",
         "concept": "Orthographic versus phonological syllabification",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#syllable-analysis",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39079,7 +35231,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "지정된 체계에서 weight는 rhyme으로 계산합니다. A는 light, B/C는 heavy이며 onset의 자음 수가 이를 뒤집지 않습니다.",
         "concept": "Rhyme branching and onset-independent weight",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#syllable-analysis",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39115,7 +35266,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "Ambisyllabicity는 segment의 syllable affiliation 분석입니다. 별도의 geminate 발음이나 추가 segment를 관찰했다는 주장과 구별합니다.",
         "concept": "Ambisyllabic affiliation versus segment count",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#syllable-analysis",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39153,7 +35303,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "다수 경향과 무예외 규칙은 다릅니다. 표 자체에 둘째음절 stress 13개라는 반례가 있습니다.",
         "concept": "Stress tendencies and lexical exceptions",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39193,7 +35342,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "Me는 secondary, ti는 primary로 주어졌습니다. Stress 유무와 primary/secondary의 강도·기능 구별을 분리합니다.",
         "concept": "Primary versus secondary stress",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39231,7 +35379,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "A는 suffix 자체가 stress를 받고, B는 suffix가 아닌 base의 다른 음절로 이동하며, C는 원래 위치를 유지합니다.",
         "concept": "Bearing shifting and neutral affix comparison",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39269,7 +35416,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "독립 확인된 compound B가 둘째 요소 stress를 가지므로 무예외 첫 요소 규칙의 반례입니다. 철자와 stress의 경향을 절대적인 단일 진단으로 확대하지 않습니다.",
         "concept": "Compound stress and spelling are not universal diagnostics",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39305,7 +35451,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "Stress가 방언별로 달라질 수 있습니다. 특정 교육목표 변이체를 정한 평가와 언어 전체에 대한 정상/오류 판단을 구별합니다.",
         "concept": "Dialectal stress variation",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39347,7 +35492,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "마지막 lexical item에 tonic accent를 두는 것은 경향이며 contrastive focus로 앞당길 수 있습니다. SOLD는 lend와의 대조를 나타냅니다.",
         "concept": "Tonic accent movement with information structure",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39383,7 +35527,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "Intonation이 동일 분절열에 다른 담화 기능·태도를 더할 수 있습니다. 표의 한 기능을 모든 맥락의 유일한 뜻으로 일반화하지 않습니다.",
         "concept": "Intonation contour and contextual attitude",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39421,7 +35564,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "질문 형식과 억양이 일대일로 대응하지 않습니다. Information-seeking과 repetition/echo 기능, 변이체·상황을 함께 봅니다.",
         "concept": "Question type versus intonation function",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39463,7 +35605,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "서로 다른 위치의 폐쇄가 겹치면 첫 방출이 들리지 않을 수 있습니다. Burst 부재와 closure gesture 부재를 구별합니다.",
         "concept": "Overlapping closures versus deletion",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39497,7 +35638,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "A는 alveolar closure가 남은 reinforcement, B는 이 자료에서 replacement입니다. 성문음이 들린다는 사실만으로 뒤 oral gesture의 부재를 추론하지 않습니다.",
         "concept": "Glottal reinforcement versus replacement",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39531,7 +35671,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "같은 fricative의 연쇄는 하나의 긴 좁힘으로 실현될 수 있습니다. 발음 구간 수와 형태소 경계 수는 같지 않습니다.",
         "concept": "Long frication across a morphological boundary",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#consonant-realization",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39565,7 +35704,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "중화는 지정된 환경에 제한될 수 있습니다. 한 환경의 합류를 음운체계 전체의 합류로 확대하지 않습니다.",
         "concept": "Environment-specific pre-r neutralization",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#vowel-variation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39601,7 +35739,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "why": "A는 penult heavy 조건을 만족하고, B는 그 조건을 만족하지 않아 왼쪽 heavy 음절을 선택합니다. 실제 모든 영어 noun의 무예외 규칙이라는 주장은 아닙니다.",
         "concept": "Weight and position in a specified stress rule",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39635,7 +35772,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "문장과 tone group은 반드시 일대일이 아닙니다. B는 명시된 두 group에 하나씩 tonic을 배정한 구조입니다.",
         "concept": "Tone group versus sentence count",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#stress-interpretation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",
@@ -39671,7 +35807,6 @@ window.EXAMPLE_OX_BANKS = [
         "ans": false,
         "why": "Implosive형 관찰은 하강과 감압, ejective형은 상승과 가압입니다. 둘 다 성문기류와 관련되어도 방향과 기제는 구별됩니다.",
         "concept": "Implosive versus ejective pressure mechanism",
-        "study": "https://namkicheol.github.io/linguistics/aep-data-notes.html#phonetic-observation",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
           "kind": "original",

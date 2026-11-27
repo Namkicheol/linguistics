@@ -9,7 +9,30 @@ function shuffle(items,seed){const a=[...items];let s=hash(String(seed));const r
 function normalize(config,banks){const bank=banks.find(b=>b.id===config.bank)||banks[0];const u=Number(config.unit);return {bank:bank.id,unit:bank.units.some(x=>x.id===u)?u:0,mode:['unit','random','daily'].includes(config.mode)?config.mode:'unit',level:levelOf(config),filter:levelOf(config)==='exam'?'exam':'all',size:[5,10,20].includes(Number(config.size))?Number(config.size):10};}
 function sessionKey(c,date){return [c.bank,c.unit,c.mode,levelOf(c),c.mode==='daily'?date:'all',c.mode==='daily'?c.size:'all'].join(':');}
 function buildOrder(bank,c,date,nonce){let ids=bank.questions.filter(q=>inScope(q,c)).map(q=>q.id);if(c.mode==='random')ids=shuffle(ids,nonce);if(c.mode==='daily')ids=shuffle(ids,date+':'+bank.id+':'+c.unit+':'+levelOf(c)).slice(0,c.size);return ids;}
-function validSession(saved,bank,c,date){if(!saved||saved.version!==VERSION||!Array.isArray(saved.order)||!saved.order.length||saved.key!==sessionKey(c,date))return null;const expected=new Set(bank.questions.filter(q=>inScope(q,c)).map(q=>q.id));if(new Set(saved.order).size!==saved.order.length||saved.order.some(id=>!expected.has(id)))return null;if(c.mode==='daily'&&saved.order.length>Math.min(c.size,expected.size))return null;const order=[...saved.order];if(c.mode!=='daily'&&order.length<expected.size){const missing=[...expected].filter(id=>!order.includes(id));order.push(...missing);}const answers={};for(const id of order)if(typeof saved.answers?.[id]==='boolean')answers[id]=saved.answers[id];return {version:VERSION,key:saved.key,order,answers,cursor:Math.max(0,Math.min(order.length,Number.isInteger(saved.cursor)?saved.cursor:0))};}
+function validSession(saved,bank,c,date){
+  if(!saved||saved.version!==VERSION||!Array.isArray(saved.order)||!saved.order.length||saved.key!==sessionKey(c,date))return null;
+  if(new Set(saved.order).size!==saved.order.length)return null;
+  const expected=new Set(bank.questions.filter(q=>inScope(q,c)).map(q=>q.id));
+  const isRetired=id=>c.bank==='aep-new'&&typeof id==='string'&&/^AN07-(?:0[1-9]|1[0-9]|20)$/.test(id);
+  const order=saved.order.filter(id=>expected.has(id));
+  const migrated=order.length!==saved.order.length;
+  if(migrated&&(saved.order.some(id=>!expected.has(id)&&!isRetired(id))||!order.length))return null;
+  const cursor=Number.isInteger(saved.cursor)?saved.cursor:0;
+  const nextCursor=migrated?saved.order.slice(0,Math.max(0,cursor)).filter(id=>expected.has(id)).length:cursor;
+  if(c.mode==='daily'){
+    const targetCount=Math.min(c.size,expected.size);
+    if(order.length>targetCount)return null;
+    if(migrated&&order.length<targetCount){
+      const fresh=buildOrder(bank,c,date).filter(id=>!order.includes(id));
+      order.push(...fresh.slice(0,targetCount-order.length));
+    }
+  }else if(order.length<expected.size){
+    order.push(...[...expected].filter(id=>!order.includes(id)));
+  }
+  const answers={};
+  for(const id of order)if(typeof saved.answers?.[id]==='boolean')answers[id]=saved.answers[id];
+  return {version:VERSION,key:saved.key,order,answers,cursor:Math.max(0,Math.min(order.length,nextCursor))};
+}
 function examDerived(q){return q.provenance?.kind==='exam-derived'&&q.provenance?.verified===true&&/^https:\/\/etwiki\.net\//.test(q.provenance?.examUrl||'');}
 const BOOKS=[{id:'tg',title:'TG · The Teacher’s Grammar of English',desc:'학교문법 · 예문 판단',banks:['tg','school'],concept:'../../school-grammar.html'},{id:'tf',title:'TF · Transformational Grammar',desc:'정문·비문 · 구조 판단',banks:['transform-new','transform','syntax'],concept:'https://namkicheol.github.io/transformational-grammar/index.html#chapters'},{id:'aep',title:'AEP · Applied English Phonology',desc:'음성·음운 · 자료 판단',banks:['aep-new','aep'],concept:'https://namkicheol.github.io/phonetics-phonology/phonetics.html'},{id:'general',title:'일반 영어학',desc:'형태 · 의미 · 화용',banks:['general']}];
 function bookFor(id){return BOOKS.find(b=>b.banks.includes(id));}

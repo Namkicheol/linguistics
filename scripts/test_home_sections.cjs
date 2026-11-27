@@ -30,6 +30,20 @@ for (const [book, [concept, bank]] of Object.entries(bookRoutes)) {
   assert.equal(quiz.pathname, '/linguistics/book-ox-cards/concepts/example-ox.html');
   assert.equal(quiz.searchParams.get('bank'), bank);
 }
+for (const [retired, concept] of Object.entries({
+  'aep-data-notes.html': '../phonetics-phonology/phonetics.html',
+  'tg-detail-concepts.html': './school-grammar.html',
+})) {
+  assert(!html.includes(retired), 'Retired note is no longer listed: ' + retired);
+  const note = fs.readFileSync(retired, 'utf8');
+  assert(note.includes(`http-equiv="refresh" content="0; url=${concept}"`));
+  assert(note.includes(`href="${concept}"`));
+  assert(!note.includes('<section'), 'Old explanatory text is removed: ' + retired);
+}
+assert(!html.includes('transform-data-notes.html'), 'Duplicate TF material is not a home action');
+const tfNotes = fs.readFileSync('transform-data-notes.html', 'utf8');
+assert(!tfNotes.includes('<strong>판단 순서:</strong>'));
+assert(tfNotes.includes('id="c-command"') && tfNotes.includes('id="chapter-10"'), 'TF concept references and chapter anchors remain');
 for (const section of [practice, chapters, syntax]) assert(!('hidden' in section.attrs));
 const targets = new Set(tree.all(practice, () => true));
 practice.contains = node => node === practice || targets.has(node);
