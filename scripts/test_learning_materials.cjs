@@ -22,7 +22,8 @@ for(const topic of topics){
 }
 const index=fs.readFileSync('index.html','utf8');assert.equal((index.match(/class="chapter-row"/g)||[]).length,8);
 for(const t of topics)for(const suffix of ['.html','_study.html'])assert(index.includes('./'+t+suffix));
-assert(!index.includes('100%'));assert(!index.includes('Concept Master'));
+const indexBody = index.slice(index.indexOf('<body'), index.indexOf('</body>'));
+assert(!indexBody.includes('100%'));assert(!indexBody.includes('Concept Master'));
 new vm.Script(fs.readFileSync('study-return.js','utf8'));
 console.log(`PASS: ${topics.length} chapters, ${total} OX items, keys/save IDs/anchors preserved, scripts compile, 16 navigation links.`);
 function returnLink(search='',referrer=''){
