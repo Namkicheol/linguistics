@@ -2,15 +2,18 @@
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const html = fs.readFileSync('syntax-diagnostics_study.html', 'utf8');
+const tree = require('./html-structure.cjs')(html);
 const units = [
   ['constituent-tests', '2014학년도 전공 A 서술형 4번', 'linguistics_2014_A04', '문제지 7쪽'],
   ['raising-control-diagnostics', '2019학년도 전공 B 6번', 'linguistics_2019_B06', '문제지 5쪽'],
 ];
 for (const [anchor, year, card, page] of units) {
-  const unit = html.split(`<section class="depth-unit" id="${anchor}">`)[1]?.split('</section>')[0];
-  assert(unit, anchor);
-  assert.equal((unit.match(/class="exam"/g) || []).length, 1, `${anchor}: exactly one verified history block`);
-  for (const expected of [year, page, `https://etwiki.net/index.html?id=${card}`]) assert(unit.includes(expected), expected);
+  const sections = tree.all(tree.root, node => node.tag === 'section' && node.attrs.id === anchor && tree.hasClass(node, 'depth-unit'));
+  assert.equal(sections.length, 1, `${anchor}: exactly one unit`);
+  const exams = tree.all(sections[0], node => tree.hasClass(node, 'exam'));
+  assert.equal(exams.length, 1, `${anchor}: exactly one verified history block`);
+  for (const expected of [year, page]) assert(tree.source(exams[0]).includes(expected), expected);
+  assert(tree.all(sections[0], node => node.tag === 'a' && node.attrs.href === `https://etwiki.net/index.html?id=${card}`).length, card);
 }
 assert(html.includes('주어의 의미역으로 Raising과 Control 구별하기'));
 assert(fs.readFileSync('docs/한글용어.md', 'utf8').includes('| 의미역 | thematic role |'));

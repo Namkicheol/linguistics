@@ -43,7 +43,9 @@ for (const sectionId of ['subject-control', 'object-control', 'pro']) {
   assert.equal(section.length, 1, sectionId + ': unique section');
   const examples = section[0].children.flatMap(body => body.children || [])
     .filter(n => n.tag === 'details' && tree.hasClass(n, 'concept') &&
-      summary(n) && tree.hasClass(summary(n), 'c-title') && tree.text(summary(n)).includes('기출 변형 예문'));
+      summary(n) && tree.hasClass(summary(n), 'c-title') && n.children.some(child =>
+        child.tag === 'details' && tree.hasClass(child, 'reference-fold') &&
+        tree.text(child).includes('변형 예문') && tree.text(child).includes('2019학년도 1차 전공 B 6번')));
   assert.equal(examples.length, 1, sectionId + ': one original adapted-example disclosure');
   const detail = tree.source(examples[0]);
   for (const marker of exampleContracts[sectionId]) assert(detail.includes(marker), sectionId + ': owns adapted content ' + marker);
@@ -51,8 +53,9 @@ for (const sectionId of ['subject-control', 'object-control', 'pro']) {
   assert(detail.includes('2019학년도 1차 전공 B 6번'));
   assert(detail.includes('https://etwiki.net/index.html?id=linguistics_2019_B06'));
   assert(!detail.includes('github.com/Namkicheol/testmaster'), 'public lesson must not link private originals');
-  assert(!detail.includes('John') && !detail.includes('Sue'), 'new examples must be adapted');
-  assert(tree.all(examples[0], n => tree.hasClass(n, 'eg-line')).length > 0, sectionId + ': actual examples after nested source fold');
+  const lines = tree.all(examples[0], n => tree.hasClass(n, 'eg-line'));
+  assert(lines.length > 0, sectionId + ': actual examples after nested source fold');
+  assert(lines.every(line => !/\b(?:John|Sue)\b/.test(tree.text(line))), 'new examples must be adapted');
 }
 // Additional concept disclosures are valid, but each must have a summary and content.
 for (const concept of concepts) {
@@ -75,9 +78,17 @@ for (const [sectionId, title] of [
 for (const topic of ['ssr', 'sor-ecm', 'subject-control', 'object-control']) {
   const matchingSection = tree.all(tree.root, n => n.attrs.id === topic);
   assert.equal(matchingSection.length, 1, topic + ': unique owning section');
-  const folds = tree.all(matchingSection[0], n => n.tag === 'details' && tree.hasClass(n, 'types-examples') && n.attrs['data-topic'] === topic);
+  const isControl = topic.endsWith('-control');
+  const folds = tree.all(matchingSection[0], n => tree.hasClass(n, 'types-examples') &&
+    (isControl ? n.tag === 'div' : n.tag === 'details' && n.attrs['data-topic'] === topic));
   assert.equal(folds.length, 1, topic + ': unique new examples');
-  assert(summary(folds[0]) && tree.text(summary(folds[0])).includes('종류와 예문'));
+  if (isControl) {
+    assert(folds[0].children.some(n => n.tag === 'h3' && tree.text(n).includes('frame과 controller')));
+    assert(tree.all(matchingSection[0], n => n.tag === 'details' && tree.hasClass(n, 'concept') &&
+      tree.all(n, node => node === folds[0]).length === 1).length === 1, topic + ': examples share the surrounding disclosure');
+  } else {
+    assert(summary(folds[0]) && tree.text(summary(folds[0])).includes('종류와 예문'));
+  }
   assert(bodyText(folds[0]), topic + ': meaningful example body');
   assert(tree.all(folds[0], n => tree.hasClass(n, 'types-source') && n.tag === 'details').length === 1, topic + ': folded source');
   assert(tree.all(folds[0], n => n.tag === 'strong').length > 0, topic + ': marked examples');

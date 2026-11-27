@@ -9,22 +9,24 @@ assert.equal(units.length, 1);
 const unit = units[0];
 assert(tree.hasClass(unit, 'reading-comfort'));
 assert(tree.text(unit).includes('UNIT 08'));
-const ids = ['definite-mention-association','definite-situation','definite-postmodification','definite-generic-exam'];
+const ids = ['definite-mention-association','definite-generic-exam'];
 const ds = tree.all(unit, n => n.tag === 'details');
-assert.equal(ds.length, 5);
+assert.equal(ds.length, 3);
 for (const d of ds) assert(!Object.hasOwn(d.attrs, 'open'), 'Every disclosure starts closed');
 for (const id of ids) {
   const found = tree.all(unit, n => n.tag === 'details' && n.attrs.id === id);
   assert.equal(found.length, 1);
   const d = found[0];
-  assert(unit.children.includes(d), 'Four main sections belong directly to UNIT08');
+  assert(unit.children.includes(d), 'Both main sections belong directly to UNIT08');
   const body = d.children.filter(n => tree.hasClass(n, 'detail-content'));
-  assert.equal(body.length, 1);
-  assert(tree.text(body[0]).length > 300);
-  const sets = tree.all(body[0], n => tree.hasClass(n, 'example-set'));
-  assert.equal(sets.length, 1, id + ': one authored comparison set');
-  assert(tree.text(sets[0]).includes('학습용 대조 예문 · 새로 작성'));
-  assert(tree.all(sets[0], n => n.tag === 'strong').length >= 2);
+  assert.equal(body.length, id === 'definite-mention-association' ? 3 : 1);
+  for (const block of body) assert(tree.text(block).length > 300);
+  const sets = body.flatMap(block => tree.all(block, n => tree.hasClass(n, 'example-set')));
+  assert.equal(sets.length, id === 'definite-mention-association' ? 2 : 1, id + ': authored comparison sets');
+  for (const set of sets) {
+    assert(tree.text(set).includes('학습용 대조 예문 · 새로 작성'));
+    assert(tree.all(set, n => n.tag === 'strong').length >= 2);
+  }
 }
 const last = ds.find(d => d.attrs.id === 'definite-generic-exam');
 assert.equal(tree.all(last, n => n.tag === 'details' && n.attrs.id === 'definite-sources').length, 1);
@@ -34,7 +36,10 @@ const txt = tree.text(unit);
 for (const label of ['second mention','situational use','associative use','post-modification','generic reference']) assert(txt.includes(label));
 for (const boundary of ['relative clause가 있다는 사실만으로 the가 강제되지는 않습니다','처음 나온 명사','cataphoric reference','논리적 필연성','단서가 겹칠','모든 문장에서 세 형태']) assert(txt.includes(boundary));
 assert(!/빈출|2020학년도|refs\/|sha256|SHA|OCR|cloud-ling|source-ledger/.test(tree.source(unit)));
-assert.equal(tree.all(unit, n => ['svg','table','button','input','iframe'].includes(n.tag)).length, 0);
+const tables = tree.all(unit, n => n.tag === 'table');
+assert.equal(tables.length, 1);
+assert.equal(tree.all(tables[0], n => n.tag === 'caption').length, 1);
+assert.equal(tree.all(unit, n => ['svg','button','input','iframe'].includes(n.tag)).length, 0);
 const anchors = tree.all(unit, n => n.tag === 'a');
 const exam = anchors.filter(n => n.attrs.href?.includes('index.html?id='));
 assert(exam.length >= 2);
@@ -52,4 +57,4 @@ const u = new URL(route[0].attrs.href.replaceAll('&amp;','&'),'https://namkicheo
 assert.equal(u.pathname,'/linguistics/school-grammar_study.html');
 assert.equal(u.searchParams.get('returnTo'),'school-grammar.html');
 assert.equal(u.searchParams.get('returnLabel'),'학교문법 심화');
-console.log('PASS: UNIT08 four closed sections, four original comparison sets, nested bibliography, five exact labels, semantic limits, verified routes and nine-unit hub.');
+console.log('PASS: UNIT08 two closed sections, original comparison sets, nested bibliography, five exact labels, semantic limits, verified routes and nine-unit hub.');

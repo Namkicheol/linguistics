@@ -8,21 +8,28 @@ const units = tree.all(tree.root, n => n.attrs.id === 'multiword-verbs');
 assert.equal(units.length, 1);
 const unit = units[0];
 assert(tree.hasClass(unit, 'reading-comfort'));
-const disclosures = ['multiword-diagnostics', 'multiword-object-placement', 'multiword-fronting', 'multiword-weight-exams'];
-assert.equal(tree.all(unit, n => n.tag === 'details').length, 5);
+const sections = {
+  'multiword-diagnostics': 'section',
+  'multiword-object-placement': 'details',
+  'multiword-fronting': 'section',
+  'multiword-weight-exams': 'details',
+};
+assert.equal(tree.all(unit, n => n.tag === 'details').length, 3);
 const bodies = {};
-for (const id of disclosures) {
-  const ds = tree.all(unit, n => n.tag === 'details' && n.attrs.id === id);
-  assert.equal(ds.length, 1, `${id}: scoped disclosure`);
-  assert(!Object.hasOwn(ds[0].attrs, 'open'), `${id}: initially closed`);
+for (const [id, tag] of Object.entries(sections)) {
+  const ds = tree.all(unit, n => n.tag === tag && n.attrs.id === id);
+  assert.equal(ds.length, 1, `${id}: scoped ${tag}`);
+  if (tag === 'details') assert(!Object.hasOwn(ds[0].attrs, 'open'), `${id}: initially closed`);
   const content = ds[0].children.filter(n => tree.hasClass(n, 'detail-content'));
   assert.equal(content.length, 1);
   assert(tree.text(content[0]).trim().length > 180, `${id}: substantive explanation`);
   bodies[id] = content[0];
 }
 const examples = id => tree.all(bodies[id], n => tree.hasClass(n, 'example-set'));
+const frontingExamples = examples('multiword-fronting');
+assert(frontingExamples.every(set => examples('multiword-object-placement').includes(set)), 'fronting shares the example disclosure');
 for (const [id, expected] of [['multiword-object-placement', 1], ['multiword-fronting', 2], ['multiword-weight-exams', 1]]) {
-  const sets = examples(id);
+  const sets = examples(id).filter(set => id !== 'multiword-object-placement' || !frontingExamples.includes(set));
   assert.equal(sets.length, expected, id + ': examples belong to this section');
   for (const set of sets) {
     if (id === 'multiword-fronting' && set === sets[1]) {
@@ -80,4 +87,4 @@ assert.equal(hub.all(hub.root, n => hub.hasClass(n, 'chapter-row')).length, 9);
 const hubHtml = fs.readFileSync('school-grammar.html', 'utf8');
 assert(hubHtml.includes('핵심 9개 단원') && hubHtml.includes('위의 9개 단원'));
 assert(!/핵심 [1-8]개 단원|위의 [1-8]개 단원/.test(hubHtml));
-console.log('PASS: UNIT07 four closed scoped disclosures, four comparison sets with exact provenance labels, two diagnostics, scoped table, lexical/analysis limits, exact exam/dictionary routes and nine-unit hub.');
+console.log('PASS: UNIT07 visible diagnostics, three closed disclosures, four scoped comparison sets, provenance and exact exam/dictionary routes.');
