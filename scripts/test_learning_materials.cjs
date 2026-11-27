@@ -1,5 +1,6 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),cp=require('node:child_process');
-const baseline=process.env.CONTENT_BASELINE || 'a9bcf2153b77d914b7d31113140a9d0a49298452';
+// Last committed main before this audit; keep it fixed as changes accrue.
+const baseline=process.env.CONTENT_BASELINE || 'ef85883';
 const topics=['constituency','phrase-structure','movement','raising-control','binding','morphology','semantics','pragmatics'];
 let total=0;
 for(const topic of topics){

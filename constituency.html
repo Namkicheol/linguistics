@@ -239,8 +239,8 @@ const Q=[
     "cat": "Fragment Answer",
     "text": "For the question \"Where did the children build the fort?\", the fragment answer \"<span class='kw2'>In the backyard</span>\" supports that <span class='kw1'>In the backyard</span> is a PP constituent.",
     "ans": true,
-    "correct": "Fragment answer로 단독 사용 가능 → <span class='kw1'>PP constituent</span>임이 입증.",
-    "why": "<span class='kw1'>Fragment answer test</span>: wh-Q에 단독으로 답할 수 있는 string은 constituent입니다. PP 전체가 답으로 가능하므로 단위로 작동.",
+    "correct": "이 fragment answer는 <span class='kw1'>PP constituent</span> 분석을 지지합니다.",
+    "why": "<span class='kw1'>Fragment answer test</span>: 이 질문에 PP 전체인 <em>in the backyard</em>로 답할 수 있다는 사실은 해당 PP의 constituency를 지지합니다. 답변으로 나타나는 모든 표면 문자열이 반드시 constituent라는 뜻은 아닙니다.",
     "source": "Aarts, B. (2018). English Syntax and Argumentation, 5th ed., §§13.2, 13.4, 13.8. 진단과 한계를 요약함."
   },
   {
@@ -457,7 +457,7 @@ const Q=[
     "text": "In the NP \"<span class='kw2'>the student of physics with long hair</span>,\" <span class='kw1'>of physics</span> is a <span class='kw1'>complement</span> of <em>student</em>, while <span class='kw1'>with long hair</span> is an <span class='kw1'>adjunct</span>.",
     "ans": true,
     "correct": "<span class='kw1'>Complement</span>는 head 가까이, <span class='kw1'>adjunct</span>는 외곽 — 어순이 head→complement→adjunct.",
-    "why": "Complement는 head가 의미상 요구하는 selected element로 head와 sister 관계입니다. Adjunct는 선택적 modifier로 complement 외곽에 위치합니다. 어순은 일반적으로 head → complement → adjunct.",
+    "why": "이 NP 분석에서 <em>of physics</em>는 head <em>student</em>와 선택 관계를 맺는 complement로 head의 sister이고, <em>with long hair</em>는 그 바깥의 adjunct입니다. Complement가 항상 생략 불가능한 것은 아닙니다.",
     "source": "Radford, A. (1988). Transformational Grammar: A First Course, Chapter 5. 구조·진단 기준을 요약하고 예문을 재구성함. 직접 인용이 아님."
   },
   {

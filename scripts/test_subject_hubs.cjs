@@ -45,8 +45,14 @@ for (const [file, ids] of Object.entries(lessonIds)) {
   }
   assert.equal((html.match(/class="core-definition"/g)||[]).length, ids.length);
   assert.equal((html.match(/class="condition-label"/g)||[]).length, ids.length);
-  const expectedSourceNotes = file === 'school-grammar_study.html' ? 12 : ids.length;
+  const expectedSourceNotes = file === 'school-grammar_study.html' ? 56 : ids.length;
   assert.equal((html.match(/class="source-note"/g)||[]).length, expectedSourceNotes);
+  const tree = require('./html-structure.cjs')(html);
+  for (const id of ids) {
+    const unit = tree.all(tree.root, n => n.attrs.id === id)[0];
+    const notes = tree.all(unit, n => tree.hasClass(n, 'source-note'));
+    assert(notes.some(n => tree.all(n, child => child.tag === 'cite').length && /(?:p{1,2}\.|Ch\.|§)/.test(tree.text(n))), `${file}#${id}: cited work and location required`);
+  }
   assert(html.includes('학습용 예문'));
   for (const svg of html.matchAll(/<svg([\s\S]*?)<\/svg>/g)) {
     assert(svg[1].includes('role="img"'));
@@ -130,7 +136,7 @@ for (const [hub, lesson] of [['school-grammar.html','school-grammar_study.html']
     ['constituent-tests', 'detail-content', ['constituency_study.html#s4', 'phrase-structure_study.html#complement-adjunct']],
     ['raising-control-diagnostics', 'exam-links', ['raising-control_study.html#ssr', 'raising-control.html']],
     ['raising-control-diagnostics', 'detail-content', ['raising-control_study.html#ssr']],
-    ['raising-control-diagnostics', 'types-examples', ['raising-control_study.html#subject-control']],
+    ['raising-control-diagnostics', 'detail-content', ['raising-control_study.html#subject-control']],
   ] : [['passive-discourse', 'detail-content', ['movement_study.html#np-movement-passive']]];
   for (const [unitId, role, routes] of contracts) {
     const units = tree.all(tree.root, n => n.attrs.id === unitId);
@@ -217,7 +223,10 @@ for (const id of ['inversion-so-types','inversion-negative-types','inversion-loc
   assert(!Object.hasOwn(ds[0].attrs, 'open'), id + ': initially closed');
 }
 assert.equal(inversionTree.all(inversionUnit, n => inversionTree.hasClass(n, 'self-check')).length, 0);
-assert.equal(inversionTree.all(inversionUnit, n => n.tag === 'u').length, 0);
+const inversionUnderlines = inversionTree.all(inversionUnit, n => n.tag === 'u');
+const inversionSourceComments = inversionTree.all(inversionUnit, n => inversionTree.hasClass(n, 'source-commentary'));
+assert.equal(inversionUnderlines.length, 4);
+for (const underline of inversionUnderlines) assert(inversionSourceComments.some(n => n.start < underline.start && n.end > underline.end), 'UNIT06 underlining belongs to source commentary');
 const inversionEntry = relativeHub.links.filter(a => new URL(a.href, base).hash === '#inversion');
 assert.equal(inversionEntry.length, 1);
 const inversionUrl = new URL(inversionEntry[0].href, base);

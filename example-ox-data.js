@@ -1050,41 +1050,6 @@ window.EXAMPLE_OX_BANKS = [
         "representative": false
       },
       {
-        "id": "TGD04-016",
-        "bookChapter": 4,
-        "level": "detail",
-        "conceptGroup": "TGBOOK-04-display-question",
-        "judgmentTarget": "display-question",
-        "text": "Because the teacher already knows the answer, the utterance cannot function as a question at all.",
-        "ans": false,
-        "context": "제시된 상황과 현대 표준영어의 해당 용법으로 판단합니다.",
-        "why": "Display question은 교사가 새로운 정보를 얻기보다 학생의 지식을 드러내게 하는 기능을 가집니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "bookReview": {
-          "work": "Cowan (2008), The Teacher’s Grammar of English",
-          "printPages": [
-            77
-          ],
-          "pdfPages": [
-            91
-          ],
-          "status": "independent-content-reviewed",
-          "reviewer": "review_tg_ox_questions"
-        },
-        "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
-        "data": "<p><strong>판단 자료</strong><br>교사가 정답표를 보유한 상태에서 학생에게 물었다: What does the triangle represent in your diagram?<br>목적: 학생이 범례를 이해했는지 확인.</p>",
-        "displayTitle": "Display question",
-        "reviewStatus": "independent-content-reviewed",
-        "unit": 18,
-        "cat": "Display question",
-        "correct": "판단을 고쳐야 합니다.",
-        "compare": [],
-        "representative": false
-      },
-      {
         "id": "TGD04-017",
         "bookChapter": 4,
         "level": "detail",
@@ -1762,10 +1727,10 @@ window.EXAMPLE_OX_BANKS = [
         "level": "detail",
         "conceptGroup": "TGC-009",
         "judgmentTarget": "Contrastive stress affects focus not syntax",
-        "text": "Stressing DESIGNER in I didn’t praise the DESIGNER. can mark contrastive focus on the person praised.",
+        "text": "Stressing DESIGNER in I didn’t praise the DESIGNER. can make the designer the target of contrast within the negation.",
         "ans": true,
         "context": "현대 표준영어의 일반적인 용법으로 판단합니다.",
-        "why": "강세는 부정되는 부분을 특정 대상으로 좁히는 데 쓰일 수 있다. 강세를 문법형태 변화로 볼 필요는 없다.",
+        "why": "DESIGNER에 강세를 두면 디자이너를 칭찬했다는 내용을 부정하는 대조를 만들 수 있습니다. 다른 사람을 칭찬했는지는 이 문장만으로 확정할 수 없습니다.",
         "provenance": {
           "kind": "original",
           "relatedExam": null
@@ -2329,11 +2294,11 @@ window.EXAMPLE_OX_BANKS = [
         "level": "detail",
         "conceptGroup": "TGC-012",
         "judgmentTarget": "Not number ago recent interval",
-        "text": "Under the specified recency reading, if the utterance time is 10:00, the checking time must be earlier than 9:50.",
+        "text": "Under the stated reading, not ten minutes ago means that exactly ten minutes have elapsed since the check.",
         "ans": false,
         "context": "제시 문맥의 현대 표준영어로 판단합니다.",
-        "data": "<p><strong>판단 자료</strong><br>10:00에 발화: I checked it not ten minutes ago.<br>여기서는 “10분도 채 안 전에”라는 읽기이다.</p>",
-        "why": "최근성 용법에서는 기준 수치보다 짧은 경과 시간을 나타낸다. 해당 시각은 9시50분 이후이다.",
+        "data": "<p><strong>판단 자료</strong><br>I checked it not ten minutes ago.<br>여기서는 ‘10분도 채 안 전에’라는 읽기입니다.</p>",
+        "why": "이 읽기에서 not ten minutes ago는 확인 이후 10분이 아직 지나지 않았다는 뜻입니다. 정확히 10분이 지났다고 보고하는 표현과 구별합니다.",
         "provenance": {
           "kind": "original",
           "relatedExam": null
@@ -10227,11 +10192,11 @@ window.EXAMPLE_OX_BANKS = [
         "level": "detail",
         "conceptGroup": "TGC-106",
         "judgmentTarget": "Conjoined subject case prescribed register",
-        "text": "Under formal editing standards, me can be corrected to I because it occupies subject position.",
+        "text": "Under formal editing standards, me can be corrected to I because the coordinated phrase the technician and me is the clause’s subject.",
         "ans": true,
         "context": "제시 문맥의 현대 표준영어로 판단합니다.",
         "data": "<p><strong>판단 자료</strong><br>원고: The technician and me checked the circuit.<br>조건: 일반적인 격식적 문장, 주변부 화제화가 아닌 주절 주어.</p>",
-        "why": "병렬 명사구의 일부라고 주어격 기준이 사라지지 않는다. 구어에서 들리는 변이와 편집 기준을 구별한다.",
+        "why": "주어는 The technician and I 전체입니다. 격식적 문어에서는 그 안의 대명사도 주격 I를 씁니다. 실제 구어에서는 다른 격이 나타날 수 있습니다.",
         "provenance": {
           "kind": "original",
           "relatedExam": null
@@ -13258,10 +13223,10 @@ window.EXAMPLE_OX_BANKS = [
         "level": "detail",
         "conceptGroup": "TGC-153",
         "judgmentTarget": "Future perfect progressive duration",
-        "text": "The sentence's six months, measured as of October 1, 2026, matches the starting date in the data.",
+        "text": "Will have been monitoring presents the activity as continuing up to a reference point in the future.",
         "ans": true,
         "context": "현대 표준영어의 일반적인 용법으로 판단합니다.",
-        "why": "미래완료진행형은 미래 기준점까지의 활동 누적기간을 조망한다. 4월 1일부터 10월 1일까지는 6개월이며, 기준점에 활동을 반드시 끝낸다는 뜻은 아니다.",
+        "why": "미래 기준점인 10월 1일까지 관측 활동이 이어져 온 기간을 말합니다. 그날 관측을 끝낸다는 뜻은 아닙니다.",
         "provenance": {
           "kind": "original",
           "relatedExam": null
@@ -13278,7 +13243,7 @@ window.EXAMPLE_OX_BANKS = [
           "reviewer": "review_chat_continue_controls"
         },
         "source": "Cowan (2008)의 문법 개념을 참고하여 새로운 판단 상황으로 구성한 연습입니다.",
-        "data": "<p><strong>판단 자료</strong><br>가상 발화일: 2026년 9월 1일.<br>실험일지: 2026년 4월 1일에 관측을 시작했고 10월 1일까지 매일 관측할 예정이다.<br>예측: On October 1, we will have been monitoring the glacier for six months.</p>",
+        "data": "<p><strong>판단 자료</strong><br>조사팀은 이미 빙하를 관측 중이며 10월에도 작업을 이어갈 예정입니다.<br>On October 1, we will have been monitoring the glacier for six months.</p>",
         "displayTitle": "Future perfect progressive duration",
         "reviewStatus": "independent-content-reviewed",
         "unit": 6,
@@ -20596,7 +20561,7 @@ window.EXAMPLE_OX_BANKS = [
         "level": "detail",
         "conceptGroup": "TGC-235",
         "judgmentTarget": "Wh cleft content focus",
-        "text": "The focus of this sentence is the need for an additional test, not budget approval.",
+        "text": "The focused constituent is another trial, contrasted with a larger budget.",
         "ans": true,
         "context": "제시된 문맥의 현대 표준영어로 판단합니다.",
         "data": "<p><strong>판단 자료</strong><br>What we need is another trial, not a larger budget.</p>",
@@ -21357,7 +21322,7 @@ window.EXAMPLE_OX_BANKS = [
         "ans": true,
         "context": "명시한 문맥과 현대 표준영어의 읽기로 판단합니다.",
         "data": "<p><strong>판단 자료</strong><br>물품 위치표: 예비 배터리=냉장고 위 선반 / 다른 부품=서랍.<br>안내: Where we keep the spare batteries is on the shelf above the refrigerator.</p>",
-        "why": "장소를 묻는 wh절과 장소 전치사구를 연결한 초점 구조이다. 이것을 모든 종류의 전치사구가 모든 wh-cleft에 자유롭게 온다는 규칙으로 확대하지 않는다.",
+        "why": "이 wh-cleft에서 where절은 배터리를 보관하는 장소를 나타내고, 뒤의 장소 PP는 그 위치를 밝힙니다. 전체 문장은 장소를 알려 주는 진술입니다.",
         "provenance": {
           "kind": "original",
           "relatedExam": null
@@ -25383,41 +25348,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "compare": [],
         "representative": false
-      },
-      {
-        "id": "TGD26-023",
-        "bookChapter": 26,
-        "level": "detail",
-        "conceptGroup": "TGBOOK-26-you-know-overuse",
-        "judgmentTarget": "you-know-overuse",
-        "text": "The mere availability of a marker does not mean that increasing its frequency always improves communication.",
-        "ans": true,
-        "context": "제시된 상황과 현대 표준영어의 해당 용법으로 판단합니다.",
-        "why": "담화기능이 있어도 과도한 사용은 청자의 인상·이해 흐름에 영향을 줄 수 있습니다. 구조적 가능성과 사용 효과를 구분합니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "bookReview": {
-          "work": "Cowan (2008), The Teacher’s Grammar of English",
-          "printPages": [
-            626
-          ],
-          "pdfPages": [
-            640
-          ],
-          "status": "independent-content-reviewed",
-          "reviewer": "review_chat_continue_controls"
-        },
-        "source": "Cowan (2008)의 개념을 참고한 자체 판단 자료입니다. 근거쪽이 이 예문 자체의 출처라는 뜻은 아닙니다.",
-        "data": "<p><strong>판단 자료</strong><br>발표자가 거의 모든 짧은 구마다 you know를 넣으며 다음 말을 고른다.<br>청중은 흐름이 끊긴다고 느낀다.</p>",
-        "displayTitle": "You know overuse",
-        "reviewStatus": "independent-content-reviewed",
-        "unit": 24,
-        "cat": "You know overuse",
-        "correct": "맞는 판단입니다.",
-        "compare": [],
-        "representative": false
       }
     ]
   },
@@ -26653,7 +26583,7 @@ window.EXAMPLE_OX_BANKS = [
         "id": "ASG08",
         "unit": 3,
         "src": "문법성",
-        "cat": "2018 B6 연결",
+        "cat": "2024 A7 연결",
         "text": "It seems that Elena understands the problem.",
         "ans": true,
         "context": "Seem의 표준 raising 분석을 따릅니다. Elena와 she는 동일인을 가리키며 parenthetical·인용·방언적 특수 구조가 아닙니다.",
@@ -26666,17 +26596,17 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "Elena seems that she understands the problem."
           }
         ],
-        "source": "기출 예문 또는 명시된 판단 규칙을 변형한 OX입니다. 새 예문을 포함하며 원문 문항의 재현이 아닙니다.",
+        "source": "2024 A7 (3a)의 expletive it과 finite that-clause를 적용한 자체 예문입니다. 구조 근거는 Radford, Transformational Grammar, §8.5, pp.436–438입니다.",
         "study": "https://namkicheol.github.io/linguistics/raising-control_study.html#ssr",
         "provenance": {
           "kind": "exam-derived",
           "relatedExam": {
-            "label": "2018 B6 · 관련 원문",
-            "url": "https://etwiki.net/index.html?id=linguistics_2018_B06"
+            "label": "2024 A7 · 관련 원문",
+            "url": "https://etwiki.net/index.html?id=linguistics_2024_A07"
           },
           "verified": true,
-          "examUrl": "https://etwiki.net/index.html?id=linguistics_2018_B06",
-          "examId": "linguistics_2018_B06"
+          "examUrl": "https://etwiki.net/index.html?id=linguistics_2024_A07",
+          "examId": "linguistics_2024_A07"
         },
         "originPage": "https://namkicheol.github.io/linguistics/advanced-syntax-grammaticality-ox.html",
         "level": "essence",
@@ -26686,7 +26616,7 @@ window.EXAMPLE_OX_BANKS = [
         "id": "ASG09",
         "unit": 3,
         "src": "문법성",
-        "cat": "2018 B6 연결",
+        "cat": "2024 A7 연결",
         "text": "Elena seems that she understands the problem.",
         "ans": false,
         "context": "Seem의 표준 raising 분석을 따릅니다. Elena와 she는 동일인을 가리키며 parenthetical·인용·방언적 특수 구조가 아닙니다.",
@@ -26699,17 +26629,17 @@ window.EXAMPLE_OX_BANKS = [
             "desc": "It seems that Elena understands the problem."
           }
         ],
-        "source": "기출 예문 또는 명시된 판단 규칙을 변형한 OX입니다. 새 예문을 포함하며 원문 문항의 재현이 아닙니다.",
+        "source": "2024 A7 (3a)의 expletive it과 대조하는 자체 비문입니다. 구조 근거는 Radford, Transformational Grammar, §8.5, pp.436–438입니다.",
         "study": "https://namkicheol.github.io/linguistics/raising-control_study.html#theta-criterion",
         "provenance": {
           "kind": "exam-derived",
           "relatedExam": {
-            "label": "2018 B6 · 관련 원문",
-            "url": "https://etwiki.net/index.html?id=linguistics_2018_B06"
+            "label": "2024 A7 · 관련 원문",
+            "url": "https://etwiki.net/index.html?id=linguistics_2024_A07"
           },
           "verified": true,
-          "examUrl": "https://etwiki.net/index.html?id=linguistics_2018_B06",
-          "examId": "linguistics_2018_B06"
+          "examUrl": "https://etwiki.net/index.html?id=linguistics_2024_A07",
+          "examId": "linguistics_2024_A07"
         },
         "originPage": "https://namkicheol.github.io/linguistics/advanced-syntax-grammaticality-ox.html",
         "level": "essence",
@@ -27664,7 +27594,7 @@ window.EXAMPLE_OX_BANKS = [
         "unit": 3,
         "src": "SET 03",
         "cat": "Stress · 표시와 이동",
-        "text": "In this transcription, the /ɡræ/ syllable in photographic bears primary stress.",
+        "text": "In photographic, the third syllable carries primary stress.",
         "ans": true,
         "focus": "ˈɡræ · primary",
         "correct": "제안한 분석이 맞습니다.",
@@ -27682,7 +27612,7 @@ window.EXAMPLE_OX_BANKS = [
           "relatedExam": null
         },
         "originPage": "https://namkicheol.github.io/phonetics-phonology/data-judgment-ox.html",
-        "data": "제공된 전사 /ˌfoʊtəˈɡræfɪk/만 읽습니다. ˌ=secondary, ˈ=primary이며 기호는 해당 syllable 바로 앞에 옵니다. 이 연습의 간단한 숫자 표기는 1=primary, 2=secondary, 0=unstressed입니다(원서의 4단계 숫자 표기와 구별).",
+        "data": "Compare the primary and secondary stresses in photographic.",
         "context": "제시된 자료와 명시된 환경만으로 판단합니다. 자료에 없는 환경이나 방언을 추가로 가정하지 않습니다.",
         "level": "essence",
         "representative": false
@@ -27692,17 +27622,17 @@ window.EXAMPLE_OX_BANKS = [
         "unit": 3,
         "src": "SET 03",
         "cat": "Stress · 표시와 이동",
-        "text": "Since the /foʊ/ syllable in this transcription has a secondary-stress mark, it is read as 0, like an unstressed syllable.",
+        "text": "In photographic, the first syllable is unstressed.",
         "ans": false,
-        "focus": "ˌfoʊ · secondary ≠ 0",
+        "focus": "first syllable · secondary",
         "correct": "제안한 분석을 고쳐야 합니다.",
-        "why": "Secondary stress는 unstressed와 구별됩니다. 제공된 전사에서 두 표시를 0과 1로만 합치면 원문의 정보를 잃습니다.",
+        "why": "Photographic /ˌfoʊtəˈɡræfɪk/의 첫 syllable은 secondary stress를 지니므로 unstressed가 아닙니다.",
         "source": "IPA stress notation; Yavaş, Applied English Phonology, Ch.7. 판단문은 자체 제작한 적용 연습이며 원문 기출 문항이 아닙니다.",
         "study": "https://namkicheol.github.io/phonetics-phonology/stress_study.html",
         "compare": [
           {
             "title": "수정한 분석",
-            "desc": "photographic: 2–0–1–0"
+            "desc": "photographic: first syllable has secondary stress"
           }
         ],
         "provenance": {
@@ -27710,7 +27640,7 @@ window.EXAMPLE_OX_BANKS = [
           "relatedExam": null
         },
         "originPage": "https://namkicheol.github.io/phonetics-phonology/data-judgment-ox.html",
-        "data": "제공된 전사 /ˌfoʊtəˈɡræfɪk/만 읽습니다. ˌ=secondary, ˈ=primary이며 기호는 해당 syllable 바로 앞에 옵니다. 이 연습의 간단한 숫자 표기는 1=primary, 2=secondary, 0=unstressed입니다(원서의 4단계 숫자 표기와 구별).",
+        "data": "Compare the primary and secondary stresses in photographic.",
         "context": "제시된 자료와 명시된 환경만으로 판단합니다. 자료에 없는 환경이나 방언을 추가로 가정하지 않습니다.",
         "level": "essence",
         "representative": false
@@ -28008,10 +27938,10 @@ window.EXAMPLE_OX_BANKS = [
         "id": "TFN03-02",
         "unit": 3,
         "cat": "Ch.4 · Noun phrases",
-        "text": "In the given X-bar analysis, the is labeled as an adjective head selecting N′.",
-        "data": "[NP [Det the] [N′ [AdjP unusually careful] [N′ [N inspection] [PP of the device]]]]",
+        "text": "The word the can be modified by very in A in the same way as careful in B.",
+        "data": "A. The inspection of the device took an hour.\nB. The very careful inspection of the device took an hour.",
         "ans": false,
-        "why": "The는 Det로 제시되어 있습니다. Unusually careful이 AdjP이고 inspection이 N head입니다. 분석 체계에 따라 DP 가설을 쓸 수도 있지만 제시된 표기의 범주를 뒤섞으면 안 됩니다.",
+        "why": "B에서 very는 adjective careful의 정도를 나타냅니다. A의 the는 determiner이므로 같은 방식으로 very를 붙인 *very the inspection은 허용되지 않습니다.",
         "study": "https://namkicheol.github.io/linguistics/phrase-structure_study.html#x-bar-schema",
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
@@ -28312,69 +28242,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "transform-full",
-        "id": "TFA01-05",
-        "unit": 6,
-        "cat": "Ch.1 · Goals",
-        "concept": "hypothesis-testing",
-        "ans": false,
-        "text": "Since the observed examples with simple subjects are correct, the following rule has already been verified for longer subjects as well.",
-        "data": "단순한 주어에서 yes/no 질문을 보고 “문장의 두 번째 단어를 앞으로 옮긴다”라는 가설을 세웠다. 복잡한 주어 자료는 아직 조사하지 않았다.",
-        "why": "제한된 자료에 맞는 가설은 새로운 구조에서도 시험해야 합니다. 구조를 무시한 단어 위치 규칙은 복잡한 주어에서 잘못된 예측을 할 수 있습니다.",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "제시된 구조와 해석을 기준으로 판단합니다.",
-        "compare": [],
-        "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "bookChapter": 1,
-        "learningPriority": "detail",
-        "tier": "detail",
-        "coverageType": "concept-extension",
-        "representative": false,
-        "bookReview": {
-          "book": "Radford, Transformational Grammar: A First Course",
-          "edition": "International Student Edition 2009, 4th printing 2014 (first published 1988)",
-          "section": "1.5",
-          "printedPages": [
-            23,
-            27
-          ],
-          "pdfPages": [
-            35,
-            39
-          ],
-          "status": "independent-content-reviewed",
-          "claim": "Self-authored concept application; cited ranges provide conceptual grounding.",
-          "additionalReferences": [
-            {
-              "section": "1.7",
-              "printedPageRange": [
-                32,
-                32
-              ],
-              "pdfPageRange": [
-                44,
-                44
-              ]
-            }
-          ],
-          "printedPageRange": [
-            23,
-            27
-          ],
-          "pdfPageRange": [
-            35,
-            39
-          ],
-          "pageArrayMeaning": "inclusive-range-endpoints"
-        },
-        "level": "detail"
-      },
-      {
-        "bank": "transform-full",
         "id": "TFA01-06",
         "unit": 6,
         "cat": "Ch.1 · Goals",
@@ -28473,56 +28340,6 @@ window.EXAMPLE_OX_BANKS = [
         },
         "level": "essence",
         "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
-      },
-      {
-        "bank": "transform-full",
-        "id": "TFA01-08",
-        "unit": 6,
-        "cat": "Ch.1 · Goals",
-        "concept": "absolute-relative-universals",
-        "ans": false,
-        "text": "An exception in even one language equally refutes both a claim of exceptionless universality and a claim of a general tendency.",
-        "data": "명제A: 모든 언어가 P를 가진다. 명제B: 언어들은 대체로 P를 가진다. 조사에서 P가 없는 언어 하나가 확인되었다.",
-        "why": "A의 보편양화는 반례 하나와 양립하지 않지만 B는 예외를 허용하는 경향 주장입니다. 두 주장에 요구되는 증거 기준을 구별합니다.",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "제시된 구조와 해석을 기준으로 판단합니다.",
-        "compare": [],
-        "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "bookChapter": 1,
-        "learningPriority": "detail",
-        "tier": "detail",
-        "coverageType": "concept-extension",
-        "representative": false,
-        "bookReview": {
-          "book": "Radford, Transformational Grammar: A First Course",
-          "edition": "International Student Edition 2009, 4th printing 2014 (first published 1988)",
-          "section": "1.8",
-          "printedPages": [
-            36,
-            40
-          ],
-          "pdfPages": [
-            48,
-            52
-          ],
-          "status": "independent-content-reviewed",
-          "claim": "Self-authored concept application; cited ranges provide conceptual grounding.",
-          "printedPageRange": [
-            36,
-            40
-          ],
-          "pdfPageRange": [
-            48,
-            52
-          ],
-          "pageArrayMeaning": "inclusive-range-endpoints"
-        },
-        "level": "detail"
       },
       {
         "bank": "transform-full",
@@ -28831,59 +28648,6 @@ window.EXAMPLE_OX_BANKS = [
         },
         "relatedStudy": [
           "linguistics/constituency_study.html#s1"
-        ],
-        "level": "detail"
-      },
-      {
-        "bank": "transform-full",
-        "id": "TFA02-06",
-        "unit": 1,
-        "cat": "Ch.2 · Structure",
-        "concept": "coordination-diagnostic",
-        "ans": true,
-        "text": "In the given coordination, the boundaries of the two conjuncts must first be identified.",
-        "data": "[NP the editor] and [NP the photographer] arrived.\n연결 대상은 두 NP 전체로 제시되었다.",
-        "why": "And 양쪽을 임의의 한 단어만으로 자르면 원래 분석을 잃습니다. 등위 접속 진단은 등위항의 범위와 범주를 확인하는 데 쓰입니다.",
-        "correct": "맞는 판단입니다.",
-        "context": "제시된 구조와 해석을 기준으로 판단합니다.",
-        "compare": [],
-        "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "bookChapter": 2,
-        "learningPriority": "essence",
-        "tier": "detail",
-        "coverageType": "concept-extension",
-        "representative": false,
-        "bookReview": {
-          "book": "Radford, Transformational Grammar: A First Course",
-          "edition": "International Student Edition 2009, 4th printing 2014 (first published 1988)",
-          "section": "2.6",
-          "printedPages": [
-            75,
-            84
-          ],
-          "pdfPages": [
-            87,
-            96
-          ],
-          "status": "independent-content-reviewed",
-          "claim": "Self-authored concept application; cited ranges provide conceptual grounding.",
-          "printedPageRange": [
-            75,
-            84
-          ],
-          "pdfPageRange": [
-            87,
-            96
-          ],
-          "pageArrayMeaning": "inclusive-range-endpoints"
-        },
-        "relatedStudy": [
-          "linguistics/constituency_study.html#s4"
         ],
         "level": "detail"
       },
@@ -29252,59 +29016,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "transform-full",
-        "id": "TFA03-05",
-        "unit": 2,
-        "cat": "Ch.3 · Phrase-markers",
-        "concept": "rewrite-rules",
-        "ans": true,
-        "text": "This rule does not say that S must consist of only one word.",
-        "data": "규칙 S → NP VP; NP → Det N; VP → V NP.",
-        "why": "구조규칙은 범주를 확장하는 방식을 나타냅니다. S의 직접 구성요소가 둘이라는 사실과 terminal 단어 수는 다릅니다.",
-        "correct": "맞는 판단입니다.",
-        "context": "제시된 구조와 해석을 기준으로 판단합니다.",
-        "compare": [],
-        "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "bookChapter": 3,
-        "learningPriority": "essence",
-        "tier": "detail",
-        "coverageType": "concept-extension",
-        "representative": false,
-        "bookReview": {
-          "book": "Radford, Transformational Grammar: A First Course",
-          "edition": "International Student Edition 2009, 4th printing 2014 (first published 1988)",
-          "section": "3.5",
-          "printedPages": [
-            122,
-            132
-          ],
-          "pdfPages": [
-            134,
-            144
-          ],
-          "status": "independent-content-reviewed",
-          "claim": "Self-authored concept application; cited ranges provide conceptual grounding.",
-          "printedPageRange": [
-            122,
-            132
-          ],
-          "pdfPageRange": [
-            134,
-            144
-          ],
-          "pageArrayMeaning": "inclusive-range-endpoints"
-        },
-        "relatedStudy": [
-          "linguistics/phrase-structure_study.html#phrase-structure-rules"
-        ],
-        "level": "detail"
-      },
-      {
-        "bank": "transform-full",
         "id": "TFA03-06",
         "unit": 2,
         "cat": "Ch.3 · Phrase-markers",
@@ -29348,56 +29059,6 @@ window.EXAMPLE_OX_BANKS = [
           "pdfPageRange": [
             144,
             149
-          ],
-          "pageArrayMeaning": "inclusive-range-endpoints"
-        },
-        "level": "detail"
-      },
-      {
-        "bank": "transform-full",
-        "id": "TFA03-07",
-        "unit": 2,
-        "cat": "Ch.3 · Phrase-markers",
-        "concept": "category-generalization",
-        "ans": true,
-        "text": "Representing shared properties of categories using features is not simply intended to erase all category distinctions.",
-        "data": "가상 자질표에서 두 범주는 자질 하나를 공유하지만 다른 자질에서는 다르다.",
-        "why": "자질체계는 공유되는 일반화와 차이를 함께 나타냅니다. 공통점이 있다는 것과 범주가 완전히 같다는 것은 다릅니다.",
-        "correct": "맞는 판단입니다.",
-        "context": "제시된 구조와 해석을 기준으로 판단합니다.",
-        "compare": [],
-        "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "bookChapter": 3,
-        "learningPriority": "detail",
-        "tier": "detail",
-        "coverageType": "concept-extension",
-        "representative": false,
-        "bookReview": {
-          "book": "Radford, Transformational Grammar: A First Course",
-          "edition": "International Student Edition 2009, 4th printing 2014 (first published 1988)",
-          "section": "3.7",
-          "printedPages": [
-            137,
-            145
-          ],
-          "pdfPages": [
-            149,
-            157
-          ],
-          "status": "independent-content-reviewed",
-          "claim": "Self-authored concept application; cited ranges provide conceptual grounding.",
-          "printedPageRange": [
-            137,
-            145
-          ],
-          "pdfPageRange": [
-            149,
-            157
           ],
           "pageArrayMeaning": "inclusive-range-endpoints"
         },
@@ -31024,56 +30685,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "transform-full",
-        "id": "TFA07-07",
-        "unit": 7,
-        "cat": "Ch.7 · The Lexicon",
-        "concept": "lexical-redundancy",
-        "ans": true,
-        "text": "If one general rule predicts a shared property, the need to repeat the same information in every individual entry can be reduced.",
-        "data": "가상 어휘집의 30개 항목이 예외 없이 공통 특징F를 갖고, 독립적인 규칙이 그 F를 예측한다.",
-        "why": "Lexical redundancy 감소는 예측 가능한 정보를 일반화하는 것입니다. 그렇다고 항목별로 다른 선택 조건까지 지워도 된다는 뜻은 아닙니다.",
-        "correct": "맞는 판단입니다.",
-        "context": "제시된 구조와 해석을 기준으로 판단합니다.",
-        "compare": [],
-        "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "bookChapter": 7,
-        "learningPriority": "detail",
-        "tier": "detail",
-        "coverageType": "concept-extension",
-        "representative": false,
-        "bookReview": {
-          "book": "Radford, Transformational Grammar: A First Course",
-          "edition": "International Student Edition 2009, 4th printing 2014 (first published 1988)",
-          "section": "7.8",
-          "printedPages": [
-            366,
-            369
-          ],
-          "pdfPages": [
-            378,
-            381
-          ],
-          "status": "independent-content-reviewed",
-          "claim": "Self-authored concept application; cited ranges provide conceptual grounding.",
-          "printedPageRange": [
-            366,
-            369
-          ],
-          "pdfPageRange": [
-            378,
-            381
-          ],
-          "pageArrayMeaning": "inclusive-range-endpoints"
-        },
-        "level": "detail"
-      },
-      {
-        "bank": "transform-full",
         "id": "TFA07-08",
         "unit": 7,
         "cat": "Ch.7 · The Lexicon",
@@ -31334,60 +30945,6 @@ window.EXAMPLE_OX_BANKS = [
           "linguistics/raising-control_study.html#theta-criterion"
         ],
         "level": "essence",
-        "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
-      },
-      {
-        "bank": "transform-full",
-        "id": "TFA08-01",
-        "unit": 8,
-        "cat": "Ch.8 · Transformations",
-        "concept": "d-s-structure",
-        "ans": false,
-        "text": "This book's D-structure and S-structure are simply differently sized drawings of the same tree.",
-        "data": "기저: [S the candle [I e, present/3sg] [VP [V glow]]]\n이동 후: [S the candle [I glowsᵢ] [VP [V tᵢ]]]\n이 책 §8.2에서 도입하는 V-to-I 분석을 적용한 축약 도식이다.",
-        "why": "이동 전후의 통사 위치가 달라질 수 있습니다. D/S 구분은 글꼴·그림 크기 구분이 아니라 도출의 구조적 단계 구분입니다.",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "제시된 구조와 해석을 기준으로 판단합니다.",
-        "compare": [],
-        "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "bookChapter": 8,
-        "learningPriority": "essence",
-        "tier": "detail",
-        "coverageType": "concept-extension",
-        "representative": true,
-        "bookReview": {
-          "book": "Radford, Transformational Grammar: A First Course",
-          "edition": "International Student Edition 2009, 4th printing 2014 (first published 1988)",
-          "section": "8.1-8.2",
-          "printedPages": [
-            401,
-            411
-          ],
-          "pdfPages": [
-            413,
-            423
-          ],
-          "status": "independent-content-reviewed",
-          "claim": "Self-authored concept application; cited ranges provide conceptual grounding.",
-          "printedPageRange": [
-            401,
-            411
-          ],
-          "pdfPageRange": [
-            413,
-            423
-          ],
-          "pageArrayMeaning": "inclusive-range-endpoints"
-        },
-        "relatedStudy": [
-          "linguistics/movement_study.html#d-s-structure"
-        ],
-        "level": "detail",
         "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
       },
       {
@@ -31662,9 +31219,9 @@ window.EXAMPLE_OX_BANKS = [
         "cat": "Ch.8 · Transformations",
         "concept": "extraposition",
         "ans": true,
-        "text": "An extraposition analysis must track both the displaced expression's original host and its attachment site after movement.",
+        "text": "The extraposed relative clause is related to report, even though it appears after yesterday.",
         "data": "A report appeared yesterday [that challenged the forecast].\n이 문항에서는 관계절이 subject NP에서 외치된 분석을 가정한다.",
-        "why": "표면에서 인접하지 않아도 관계절의 host는 report입니다. 원위치와 도착 위치의 관계가 해석과 구조조건을 설명하는 핵심입니다.",
+        "why": "관계절이 표면에서 yesterday 뒤에 나타나더라도 report를 수식하는 관계는 유지됩니다. 해당 분석의 원위치와 이동 후 위치를 구별합니다.",
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
@@ -31855,56 +31412,6 @@ window.EXAMPLE_OX_BANKS = [
           "pdfPageRange": [
             483,
             486
-          ],
-          "pageArrayMeaning": "inclusive-range-endpoints"
-        },
-        "level": "detail"
-      },
-      {
-        "bank": "transform-full",
-        "id": "TFA09-04",
-        "unit": 9,
-        "cat": "Ch.9 · WH Movement",
-        "concept": "phonological-movement-evidence",
-        "ans": true,
-        "text": "If a contraction is blocked only in one structure, there are grounds for investigating structural factors beyond mere adjacency of written forms.",
-        "data": "가상언어에서 문자열 a+b는 보통 축약되지만, 이동으로 생긴 gap이 그 사이에 분석되는 환경에서는 축약되지 않는다는 자료가 주어졌다.",
-        "why": "음운현상의 분포가 통사구조나 이동 흔적과 연관될 수 있습니다. 다만 이 상관 하나만으로 모든 이동 분석이 확정되는 것은 아닙니다.",
-        "correct": "맞는 판단입니다.",
-        "context": "제시된 구조와 해석을 기준으로 판단합니다.",
-        "compare": [],
-        "source": "자체 제작 개념 적용 문항. 표시 쪽은 개념 근거입니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "bookChapter": 9,
-        "learningPriority": "detail",
-        "tier": "detail",
-        "coverageType": "concept-extension",
-        "representative": false,
-        "bookReview": {
-          "book": "Radford, Transformational Grammar: A First Course",
-          "edition": "International Student Edition 2009, 4th printing 2014 (first published 1988)",
-          "section": "9.5",
-          "printedPages": [
-            474,
-            476
-          ],
-          "pdfPages": [
-            486,
-            488
-          ],
-          "status": "independent-content-reviewed",
-          "claim": "Self-authored concept application; cited ranges provide conceptual grounding.",
-          "printedPageRange": [
-            474,
-            476
-          ],
-          "pdfPageRange": [
-            486,
-            488
           ],
           "pageArrayMeaning": "inclusive-range-endpoints"
         },
@@ -32124,9 +31631,9 @@ window.EXAMPLE_OX_BANKS = [
         "cat": "Ch.9 · WH Movement",
         "concept": "ip-reanalysis",
         "ans": true,
-        "text": "The IP analysis later in the book aims to reanalyze clause structure associated with the earlier S label within the X-bar projection system.",
+        "text": "In the IP analysis shown, I is the head and the subject NP occupies its specifier.",
         "data": "앞 장의 축약 표기: [S NP [I will] VP]\n후반의 재분석: [IP NP [I′ [I will] VP]]\n후자의 head=I, 중간투사=I′, 최대투사=IP이다.",
-        "why": "라벨 교체만의 문제가 아니라 head·specifier·complement의 구조적 평행성을 논증합니다. 장의 분석 단계를 섞지 않고 읽어야 합니다.",
+        "why": "제시된 구조에서 I는 head, NP는 specifier, VP는 I의 complement입니다. 앞 장의 S 분석을 X-bar projection으로 다시 표현합니다.",
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
@@ -32177,9 +31684,9 @@ window.EXAMPLE_OX_BANKS = [
         "cat": "Ch.9 · WH Movement",
         "concept": "small-clause-reanalysis",
         "ans": false,
-        "text": "Since an earlier chapter used the label SC, there is no reason to reconsider small-clause structure in the later category-projection analysis.",
+        "text": "In the second analysis, the subject is the head and pale is outside the AP projection.",
         "data": "초기 축약: [SC [NP the panel] [AP pale]]\n분석 후보: [AP [NP the panel] [A′ [A pale]]]\n둘째는 술어 A의 projection 안에 주어를 두는 후보이다. 두 구조의 head/주어 위치를 비교한다.",
-        "why": "이론적 일반화가 발전하면 앞서 사용한 약칭의 구조적 가정도 검토해야 합니다. SC라는 표지만으로 범주투사 문제가 해결되지는 않습니다.",
+        "why": "두 번째 구조에서 pale이 A head이고 the panel은 그 AP projection 안의 주어입니다. 첫 도식의 SC 표기와 두 번째 도식의 head 및 주어 위치를 구별합니다.",
         "correct": "판단을 고쳐야 합니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
@@ -32227,9 +31734,9 @@ window.EXAMPLE_OX_BANKS = [
         "cat": "Ch.10 · Alpha Movement",
         "concept": "movement-types",
         "ans": true,
-        "text": "Fronting operations with different discourse functions can still be compared for similarities in structural landing sites or moved elements.",
+        "text": "The second fronting example has subject–auxiliary inversion, while the first does not.",
         "data": "대조 topic: [This report]ᵢ, we will discuss tᵢ tomorrow.\n부정 표현 전면화: [At no time]ᵢ will we discard the records tᵢ.\n둘째 예에는 주어–조동사 도치도 나타난다. 두 전면화 표현의 범주·기능을 비교한다.",
-        "why": "이동 규칙의 일반화는 의미·담화기능이 완전히 같아야만 가능한 것이 아닙니다. 이동 대상의 범주/크기 및 landing site를 비교합니다.",
+        "why": "두 번째에서는 부정 표현 전면화 뒤 will이 주어 we 앞에 옵니다. 첫 번째 topic 전면화에서는 주어 we가 will 앞에 남습니다.",
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
         "compare": [],
@@ -32379,7 +31886,7 @@ window.EXAMPLE_OX_BANKS = [
         "concept": "substitution-adjunction",
         "ans": true,
         "text": "Substitution and adjunction differ in how they construct the structure at the landing site.",
-        "data": "Substitution: [XP e] + XPᵢ → [XP XPᵢ의 내용]\nAdjunction: [XP X′] + YPᵢ → [XP YPᵢ [XP X′]]\n앞 도식은 기존 빈 자리를 채우고, 뒤 도식은 원래 XP를 보존하며 더 큰 XP를 만든다. 이동 출발점은 생략했다.",
+        "data": "Substitution: [XP e] + XPᵢ → [XP XPᵢ의 내용]\nAdjunction: [XP X′] + YPᵢ → [XP YPᵢ [XP X′]]\n이동 출발점은 생략했다.",
         "why": "A는 substitution, B는 adjunction의 개념적 차이를 보여 줍니다. 둘을 단순히 동일한 빈자리 채우기로만 설명하면 구조 차이를 놓칩니다.",
         "correct": "맞는 판단입니다.",
         "context": "제시된 구조와 해석을 기준으로 판단합니다.",
@@ -32887,10 +32394,10 @@ window.EXAMPLE_OX_BANKS = [
         "id": "AN04-02",
         "unit": 4,
         "cat": "Vowel comparison",
-        "text": "In this observation table, the first vowel is identical in the stressed and unstressed syllables.",
-        "data": "모음축약을 설명하기 위한 가상 관찰표: 첫 음절 강세형 [ˈdɛmə] / 첫 음절 비강세형 [dəˈma]. 첫 모음은 각각 [ɛ], [ə]로 전사되었다. 이 자료로 stress 이동의 원인이나 보편 규칙까지 추론하지 않는다.",
+        "text": "The first vowel has the same quality in photograph and photography.",
+        "data": "예시 단어: photograph, photography. 각 단어의 첫 syllable에서 vowel quality를 비교한다.",
         "ans": false,
-        "why": "첫 모음이 [ɛ]와 [ə]로 다르게 제시되었습니다. 이 자료는 stress 차이와 함께 나타난 vowel quality 차이를 보여 줄 뿐, 모든 비강세 모음이 언제나 schwa라는 결론은 주지 않습니다.",
+        "why": "Photograph /ˈfoʊtəɡræf/의 첫 vowel과 photography /fəˈtɑɡrəfi/의 첫 vowel은 다릅니다. 강세 차이와 함께 vowel reduction이 나타납니다.",
         "concept": "vowel-reduction",
         "study": "https://namkicheol.github.io/phonetics-phonology/schwa_study.html#schwa",
         "correct": "판단을 고쳐야 합니다.",
@@ -32978,7 +32485,7 @@ window.EXAMPLE_OX_BANKS = [
         "unit": 6,
         "cat": "Stress and word classes",
         "text": "In the given word pair, the segment sequence is identical but primary stress falls in different positions.",
-        "data": "가상언어 U의 제시 자료: /ˈsami/ ‘끈’(noun), /saˈmi/ ‘묶다’(verb). 두 형태의 segment sequence는 /s a m i/이며 ˈ는 바로 뒤 음절의 primary stress이다. 다른 명사·동사 전체로 일반화하지 않는다.",
+        "data": "가상언어 U: /ˈsami/ ‘끈’(noun), /saˈmi/ ‘묶다’(verb). 이 두 형태를 비교한다.",
         "ans": true,
         "why": "ˈ가 noun에서는 첫 음절 앞에, verb에서는 둘째 음절 앞에 놓입니다. 표의 segment sequence는 같고 primary stress 위치가 다릅니다.",
         "concept": "stress",
@@ -33102,104 +32609,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "aep-new",
-        "id": "AN08-04",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-contrast",
-        "data": "설명용 학습표: 단계1은 한 형태소 내 환경(basic)과 형태소 경계 환경(derived) 모두 대립 실패, 단계2는 한 형태소 내 환경만 성공, 단계3은 두 환경 모두 성공이다.",
-        "text": "This table shows success in the derived context preceding success in the basic context.",
-        "ans": false,
-        "why": "표에서 basic/tautomorphemic환경이 먼저 성공합니다. Derived/heteromorphemic은 단계3에서 성공하므로 순서가 반대입니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            206
-          ],
-          "pdfPages": [
-            217
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN08-05",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-contrast",
-        "data": "가상 interlanguage 규칙: 원래 목표 /t/는 /i/앞에서[tʃ]가되지만, 목표 /θ/를대체해생긴[t]는 같은/i/앞에서도[t]로남는다.",
-        "text": "Even with the same intermediate [t], the final realization differs depending on the path from the target.",
-        "ans": true,
-        "why": "대체음까지 동일하게 바꾸면 목표 대립이 합쳐질 수 있습니다. 이 예는 대체음의 경로를 구별해 대립을 보존하는 deflected-contrast형 분석을 보여 줍니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            206,
-            207
-          ],
-          "pdfPages": [
-            217,
-            218
-          ]
-        },
-        "provenance": {
-          "kind": "book-example",
-          "relatedExam": null
-        },
-        "source": "Yavaş (2011)의 설명/대표 반례를 바탕으로 판단 질문을 재구성했습니다. 예시의 핵심 음 대응 또는 어휘가 원책에 있으며 완전히 새 관찰 자료라는 뜻은 아닙니다.",
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN08-06",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-contrast",
-        "data": "가상 학습자는 예전에는 목표/ð/를[d]로말했다. 훈련 뒤에는 목표/ð/를맞히지만, 일부 원래 목표/d/까지[ð]로말한다.",
-        "text": "The new error is compatible with a hypercontrast analysis involving overapplication of the learned contrast.",
-        "ans": true,
-        "why": "이전 오류를 피하려다 원래 정확한 범주까지 반대 범주로 바꾸는 과잉수정입니다. 모든 발화에서 대립을 습득했다는 뜻은 아닙니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            207
-          ],
-          "pdfPages": [
-            218
-          ]
-        },
-        "provenance": {
-          "kind": "book-example",
-          "relatedExam": null
-        },
-        "source": "Yavaş (2011)의 설명/대표 반례를 바탕으로 판단 질문을 재구성했습니다. 예시의 핵심 음 대응 또는 어휘가 원책에 있으며 완전히 새 관찰 자료라는 뜻은 아닙니다.",
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
         "id": "AN08-07",
         "unit": 8,
         "cat": "Ch.8 · L2 phonology",
@@ -33218,76 +32627,6 @@ window.EXAMPLE_OX_BANKS = [
           "pdfPages": [
             218,
             219
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN08-08",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-markedness",
-        "data": "두 학습집단 모두 L1에는 없는 L2의 특정 위치 대립을 학습한다. 집단 A의 목표는 더 marked한 구조, 집단 B의 목표는 덜 marked한 구조라는 추가 자료가 있다.",
-        "text": "Since both groups exhibit the same type of L1–L2 mismatch, their difficulty must be identical.",
-        "ans": false,
-        "why": "단순 불일치의 존재만으로 난이도 동일을 보장하지 않습니다. 목표 구조의 markedness와 환경 등도 관련됩니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            207,
-            208
-          ],
-          "pdfPages": [
-            218,
-            219
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN08-09",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-models",
-        "data": "가상 OPM 추세도: 초기→중기→후기에 L1영향70→35→10, L2영향20→40→80, universal영향10→25→10으로그렸다. 숫자는 설명용이며 실제 측정값이 아니다.",
-        "text": "In this figure, the influence of universals increases monotonically throughout.",
-        "ans": false,
-        "why": "Universal 값은10→25로 상승한 뒤10으로 하강합니다. OPM 일반 추세의 중간 상승 후 감소를 읽는 문항이며 모든 개인에 이 비율을 적용하지 않습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            212,
-            213,
-            214
-          ],
-          "pdfPages": [
-            223,
-            224,
-            225
           ]
         },
         "reviewStatus": "independent-content-reviewed",
@@ -33371,84 +32710,11 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "aep-new",
-        "id": "AN08-12",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-perception",
-        "data": "가상 청취 실험에서 학습자는 L2의 두 소리를 모두 같은 L1 범주로 분류했다. 두 소리의차이 식별 정확도는 측정하지 않았다.",
-        "text": "Identical category classifications alone establish that the difference cannot be heard at all.",
-        "ans": false,
-        "why": "범주동화와 실제 차이 식별은 같은 측정이 아닙니다. 동일 범주로 분류하더라도 세부 적합도와 변별 수행을 별도로 확인해야 합니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            219,
-            220,
-            221,
-            222
-          ],
-          "pdfPages": [
-            230,
-            231,
-            232,
-            233
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN09-01",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "예시전사: sea /siː/, see /siː/. 이 문항에서는 두단어가동음인발음을사용한다.",
-        "text": "Since their spellings differ, the two given words must have different phoneme sequences.",
-        "ans": false,
-        "why": "제시된 전사는 동일합니다. 영어에서 다른 철자가 같은 소리를 표시할 수 있으므로 철자차이가음소 차이를보장하지않습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            230,
-            231
-          ],
-          "pdfPages": [
-            241,
-            242
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": true,
-        "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
-      },
-      {
-        "bank": "aep-new",
         "id": "AN09-02",
         "unit": 9,
         "cat": "Ch.9 · Spelling and sounds",
         "concept": "spelling",
-        "data": "예시단어: shop /ʃɒp/. sh는 이 전사에서 하나의/ʃ/에 대응한다.",
+        "data": "예시 단어: shop.",
         "text": "Since s and h are two letters, /ʃ/ must also be counted as two phonemes.",
         "ans": false,
         "why": "글자 수와 음소 수는 같지 않습니다. 이 자료에서 sh는 단일/ʃ/를 표시하는 digraph입니다.",
@@ -33485,7 +32751,7 @@ window.EXAMPLE_OX_BANKS = [
         "unit": 9,
         "cat": "Ch.9 · Spelling and sounds",
         "concept": "spelling",
-        "data": "설명용 전사: packed /pækt/, hummed /hʌmd/, waited /ˈweɪtɪd/. 세 단어는 모두 regular past이다.",
+        "data": "예시 단어: packed, hummed, waited. 세 단어는 모두 regular past이다.",
         "text": "The same past-tense spelling -ed represents different pronunciations.",
         "ans": true,
         "why": "-ed는이 자료에서/t,d,ɪd/로 실현됩니다. 철자는공통 형태소를 보존하고 발음은 환경에 따라 달라질 수 있습니다.",
@@ -33514,72 +32780,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "aep-new",
-        "id": "AN09-04",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "철자자료: reply→replies, display→displays. 두 경우의 base 끝 문자는 모두 y이다.",
-        "text": "The data support an exceptionless rule changing every base-final y to ie when -s is added.",
-        "ans": false,
-        "why": "Displays가 반례입니다. y 앞의 자음 글자/모음 글자 환경 등을 구분해야 하며 마지막 글자 하나만으로 일괄 변환할 수 없습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            241
-          ],
-          "pdfPages": [
-            252
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN09-05",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "가상의 영어식 표기 실험: 동일 형태소 M을 단어A에서는[mɛl], 파생형B에서는[məl]로발음하지만 두 경우 모두 mel로 적는다.",
-        "text": "This notation preserves morpheme spelling even when the surface vowel changes.",
-        "ans": true,
-        "why": "동일 형태소 표기는 소리 변이와 별개로 보존될 수 있습니다. 이 자료는 실제 영어 단어 목록이 아닌 morphophonemic표기의 설명용 모형입니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            241,
-            242
-          ],
-          "pdfPages": [
-            252,
-            253
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
         "id": "AN09-06",
         "unit": 9,
         "cat": "Ch.9 · Spelling and sounds",
@@ -33600,106 +32800,6 @@ window.EXAMPLE_OX_BANKS = [
         },
         "reviewStatus": "independent-content-reviewed",
         "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN09-07",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "사용 규약표: 문서A는color, 문서B는colour를쓴다. 발음기록은없다.",
-        "text": "Different spelling conventions alone establish that the two writers also pronounce the vowels differently.",
-        "ans": false,
-        "why": "철자 변종과 실제 발음은 별도입니다. 발음 자료 없이 표기 차이를 특정 음질 차이로 치환할 수 없습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            243,
-            244
-          ],
-          "pdfPages": [
-            254,
-            255
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN09-08",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "작은 철자 자료: 표준표기는 supportable이며 *supportible은채택하지않는다. support→supportive도있다.",
-        "text": "There is a counterexample to the rule that every base with an -ive derivative must permit only -ible.",
-        "ans": true,
-        "why": "제시한 supportable이 전칭 규칙을 반박합니다. 철자 대응의 경향과 예외 없는 규칙을 구분해야 합니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            242
-          ],
-          "pdfPages": [
-            253
-          ]
-        },
-        "provenance": {
-          "kind": "book-example",
-          "relatedExam": null
-        },
-        "source": "Yavaş (2011)의 설명/대표 반례를 바탕으로 판단 질문을 재구성했습니다. 예시의 핵심 음 대응 또는 어휘가 원책에 있으며 완전히 새 관찰 자료라는 뜻은 아닙니다.",
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN08-13",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-models",
-        "data": "모형비교: 보통현상도표보다 유사현상도표에서는 L2영향증가가더완만하고 L1영향감소도더완만하다. 실제측정값아닌 OPM설명용비교이다.",
-        "text": "For similar phenomena, delayed discrimination of small phonetic differences can be interpreted as allowing L1 influence to persist longer.",
-        "ans": true,
-        "why": "OPM은대상의유사성에따라영향곡선이다를수있다고봅니다. L1과가깝다는사실이언제나더쉬운습득을보장하지않습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            213,
-            214
-          ],
-          "pdfPages": [
-            224,
-            225
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
         "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
         "compare": [],
         "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
@@ -33782,180 +32882,11 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "aep-new",
-        "id": "AN08-16",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-perception",
-        "data": "설명용 NLM도식: L1 prototype주변의 두실험음은물리적으로 같은 거리만큼 다르지만, 비prototype 주변 대조보다 청자가 느끼는 거리가 작다.",
-        "text": "This result contradicts the assumption that physical and perceptual distance are always identical.",
-        "ans": true,
-        "why": "Perceptualmagnet설명은범주prototype이주변지각공간을왜곡할수있다고봅니다. 설명용도식을모든청자에게동일하게적용하지않습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            220,
-            221
-          ],
-          "pdfPages": [
-            231,
-            232
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN08-17",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-perception",
-        "data": "PAM분류자료: 대조A의두 소리는 서로 다른 L1 범주로 분류됨(TC). 대조B는같은 L1 범주에 동일하게 적합함(SC).",
-        "text": "Under this model's predictions, A may be easier to discriminate than B.",
-        "ans": true,
-        "why": "이조건의TC는서로 다른범주가단서가되지만 SC는두 소리가같은 범주로동화됩니다. 모형예측과개인의실험결과는구별합니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            222
-          ],
-          "pdfPages": [
-            233
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "essence",
-        "representative": true,
-        "representativeReason": "각 단원의 기본 판단 원리를 확인하기 위해 선정한 대표 연습입니다. 출처의 종류를 뜻하지 않습니다."
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN08-18",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-perception",
-        "data": "설명용 SLM분류: 소리 A는 L1 범주와 매우 비슷하여 동일 범주로 처리됨. 소리 B는 충분히 달라 새 범주 후보로 처리됨.",
-        "text": "A must always be predicted to be acquired more accurately than B solely because it is more similar to L1.",
-        "ans": false,
-        "why": "SLM의equivalenceclassification은유사한소리의범주분리를방해할수있습니다. 새범주형성이가능한더다른소리가반드시더어렵다고단정하지않습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            223
-          ],
-          "pdfPages": [
-            234
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN08-19",
-        "unit": 8,
-        "cat": "Ch.8 · L2 phonology",
-        "concept": "l2-perception",
-        "data": "어떤성인학습자는 훈련전변별정확도55%, 훈련후85%를보였다. 같은 검사와 동일 대조를 사용한 설명용 자료이다.",
-        "text": "If the given observation is accurate, these data counter the claim that adults can never improve their ability to discriminate new sounds.",
-        "ans": true,
-        "why": "성인학습불가능이라는절대명제는개선사례로반박됩니다. 이것만으로나이효과가전혀없다고결론내리는것도별개의과잉추론입니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            221,
-            223,
-            224
-          ],
-          "pdfPages": [
-            232,
-            234,
-            235
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN09-09",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "예시전사: city /ˈsɪti/, cabin /ˈkæbɪn/. 두 단어의 첫 글자는 모두 c이다.",
-        "text": "The two instances of c represent the same phoneme in the given transcriptions.",
-        "ans": false,
-        "why": "city의c는/s/, cabin의c는/k/에대응합니다. 같은글자가문맥에따라다른음소를표시할수있습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            230,
-            232
-          ],
-          "pdfPages": [
-            241,
-            243
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
         "id": "AN09-10",
         "unit": 9,
         "cat": "Ch.9 · Spelling and sounds",
         "concept": "spelling",
-        "data": "예시전사: autumn /ˈɔːtəm/, autumnal /ɔːˈtʌmnəl/. 여기서는 제시한 발음만 비교한다.",
+        "data": "예시 단어: autumn, autumnal. 두 단어의 발음을 비교한다.",
         "text": "The data show an alternation in which n, silent in the first form, is pronounced in the derivative.",
         "ans": true,
         "why": "autumn에는전사상/n/이없고 autumnal에는/n/이있습니다. 철자보존과발음 교체를함께보여주는원책 대표 사례입니다.",
@@ -33978,104 +32909,6 @@ window.EXAMPLE_OX_BANKS = [
         "correct": "맞는 판단입니다.",
         "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
         "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN09-11",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "역사자료모형: 시기1에는 철자 &lt;kn&gt;를[k n]으로발음했고, 시기2에는 같은 철자를 유지하면서 첫 자음 발음이 사라졌다.",
-        "text": "The preservation of two consonants in the spelling at period 2 alone requires a pronunciation still containing two consonants.",
-        "ans": false,
-        "why": "발음 변화 뒤에도 철자는 유지될 수 있습니다. 역사적 음가를 현대 발음에 자동 투사하면 안 됩니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            230,
-            231
-          ],
-          "pdfPages": [
-            241,
-            242
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN09-12",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "철자자료: happy→happiness, carry→carrying. 이 문항의규칙가설은 자음글자+y의 y가뒤 접미사와 무관하게 언제나 i로 바뀐다는 것이다.",
-        "text": "The second example is a counterexample to the hypothesized rule.",
-        "ans": true,
-        "why": "carrying은y를유지합니다. i로시작하는접미사앞환경등을고려해야하며 y변환을무조건적규칙으로볼수없습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            241
-          ],
-          "pdfPages": [
-            252
-          ]
-        },
-        "provenance": {
-          "kind": "book-example",
-          "relatedExam": null
-        },
-        "source": "Yavaş (2011)의 설명/대표 반례를 바탕으로 판단 질문을 재구성했습니다. 예시의 핵심 음 대응 또는 어휘가 원책에 있으며 완전히 새 관찰 자료라는 뜻은 아닙니다.",
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN09-13",
-        "unit": 9,
-        "cat": "Ch.9 · Spelling and sounds",
-        "concept": "spelling",
-        "data": "두 문서에서 같은 명사 철자를 각각center/centre로썼다. 발음 전사는 두 문서 모두 같다고 명시했다.",
-        "text": "A different r/e order in spelling should not be read as reversal of the given pronunciation sequence.",
-        "ans": true,
-        "why": "철자규약의순서교체를음소metathesis로동일시할수없습니다. 여기서는두전사가같다는조건이명시되어있습니다.",
-        "bookReview": {
-          "work": "Yavaş (2011), Applied English Phonology, 2nd edition",
-          "status": "independent-content-reviewed",
-          "printedPages": [
-            243
-          ],
-          "pdfPages": [
-            254
-          ]
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "source": "개념 학습을 위해 독립적으로 작성한 자료 판단입니다. 가상언어와 설명용 발음은 본문에 구분했으며 교재·기출 원문 문항이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
         "level": "detail",
         "representative": false
       },
@@ -34123,10 +32956,10 @@ window.EXAMPLE_OX_BANKS = [
         "id": "AN01-04",
         "unit": 1,
         "cat": "Voicing observation",
-        "data": "설명용 가상 자료(실제 조사·녹음 보고가 아님): 발성 관찰표: 소리 A는 기류가 성문을 지나는 동안 성대가 규칙적으로 진동한다. 소리 B는 성대가 벌어진 채 진동 없이 기류가 통과한다. 다른 조음 조건은 같다고 가정한다.",
-        "text": "Under the observational criterion, A can be classified as voiced and B as voiceless.",
+        "data": "영어의 /z/와 /s/는 모두 alveolar fricative이다.",
+        "text": "English /z/ is voiced, whereas /s/ is voiceless.",
         "ans": true,
-        "why": "Voicing 판별의 핵심은 성대진동입니다. 입술이나 혀의 위치가 같아도 성문 상태에 따라 구별됩니다.",
+        "why": "/z/와 /s/는 place와 manner를 공유하지만 vocal fold vibration의 유무로 구별됩니다.",
         "concept": "Vocal fold vibration",
         "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
         "provenance": {
@@ -34142,41 +32975,6 @@ window.EXAMPLE_OX_BANKS = [
             16
           ],
           "concept": "Vocal fold vibration",
-          "status": "independent-content-reviewed"
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN01-05",
-        "unit": 1,
-        "cat": "VOT event ordering",
-        "data": "설명용 가상 자료(실제 조사·녹음 보고가 아님): 설명용 시간표(ms): 폐쇄 방출=0. A 성대진동 시작=−35, B=+7, C=+65. 이 자료에서는 B를 short lag, C를 long lag라고 정의하며 보편적 경계값을 주장하지 않는다.",
-        "text": "A exhibits voice lead, whereas B and C both exhibit lag, with voicing beginning after release.",
-        "ans": true,
-        "why": "Voicing이 release보다 먼저면 음의 VOT/lead이고 뒤면 양의 VOT/lag입니다. B/C의 길이범주 기준은 이 자료에 한정됩니다.",
-        "concept": "VOT lead and lag",
-        "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "bookReview": {
-          "book": "Yavaş, Applied English Phonology, 2nd ed. (2011)",
-          "printedPages": [
-            10,
-            11
-          ],
-          "pdfPages": [
-            21,
-            22
-          ],
-          "concept": "VOT lead and lag",
           "status": "independent-content-reviewed"
         },
         "reviewStatus": "independent-content-reviewed",
@@ -34210,41 +33008,6 @@ window.EXAMPLE_OX_BANKS = [
             28
           ],
           "concept": "Labialization as secondary articulation",
-          "status": "independent-content-reviewed"
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN01-07",
-        "unit": 1,
-        "cat": "Airstream mechanisms",
-        "data": "설명용 가상 자료(실제 조사·녹음 보고가 아님): 관찰 A: 성문과 구강 폐쇄 사이 공기를 가두고 후두를 올려 압력을 높인다. 관찰 B: 입안의 앞·뒤 폐쇄 사이 공간을 넓힌 뒤 앞 폐쇄를 풀어 외부 공기가 안으로 들어온다.",
-        "text": "A and B are both explained solely by pulmonic egressive airflow from the lungs.",
-        "ans": false,
-        "why": "A는 glottalic egressive인 ejective 기제, B는 구강 폐쇄 사이 감압을 사용하는 click의 ingressive 기제에 대응합니다. 둘을 폐기류 하나로 동일시하지 않습니다.",
-        "concept": "Non-pulmonic airflow mechanisms",
-        "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "bookReview": {
-          "book": "Yavaş, Applied English Phonology, 2nd ed. (2011)",
-          "printedPages": [
-            17,
-            18
-          ],
-          "pdfPages": [
-            28,
-            29
-          ],
-          "concept": "Non-pulmonic airflow mechanisms",
           "status": "independent-content-reviewed"
         },
         "reviewStatus": "independent-content-reviewed",
@@ -35042,7 +33805,7 @@ window.EXAMPLE_OX_BANKS = [
         "id": "AN05-03",
         "unit": 5,
         "cat": "Affricate timing slots",
-        "data": "설명용 가상 자료(실제 조사·녹음 보고가 아님): 주어진 skeletal 분석 A=[t͡ʃa]: affricate [t͡ʃ]가 onset X-slot 하나를 차지한다. B=[sta]: [s]와 [t]가 onset X-slot을 하나씩 차지한다.",
+        "data": "제시한 분석에서는 affricate [t͡ʃ]를 하나의 segment로 본다. A=[t͡ʃa], B=[sta]의 onset을 비교한다.",
         "text": "Although A phonetically includes closure and frication, it is a nonbranching onset in this analysis.",
         "ans": true,
         "why": "Affricate의 phonetic complexity와 timing-slot 수는 다릅니다. A는 1개, B는 2개 slot으로 명시되어 있습니다.",
@@ -35150,7 +33913,7 @@ window.EXAMPLE_OX_BANKS = [
         "id": "AN05-06",
         "unit": 5,
         "cat": "Suffix-created clusters",
-        "data": "설명용 가상 자료(실제 조사·녹음 보고가 아님): 가상 영어형 자료: root /nɛst/의 coda=/st/, suffix /-s/를 붙인 /nɛst+s/의 coda=/sts/. 분석자는 원형어만 조사해 coda 최대2개라고 보고했다.",
+        "data": "가상 영어형 자료: 단음절 root /nɛst/에 suffix /-s/를 결합해 [nɛsts]를 만든다. 분석자는 root만 조사해 coda가 최대 두 segment라고 보고했다.",
         "text": "Adding data with suffixes invalidates the claim that every coda in this data set contains at most two segments.",
         "ans": true,
         "why": "접사결합이 더 긴 coda를 만들 수 있습니다. Root-only inventory와 morphology를 포함한 inventory의 조사범위를 구별합니다.",
@@ -35179,43 +33942,6 @@ window.EXAMPLE_OX_BANKS = [
         },
         "reviewStatus": "independent-content-reviewed",
         "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN05-07",
-        "unit": 5,
-        "cat": "Written versus spoken division",
-        "data": "설명용 가상 자료(실제 조사·녹음 보고가 아님): 가상 항목의 형태소는 /drem+ə/이다. 조판상 경계는 형태소 경계 /m/ 뒤를 보존하고, 주어진 발음 분석 [dre.mə]는 /m/ 앞에 syllable 경계를 둔다. 두 자료는 서로 다른 분할 목적을 갖는다.",
-        "text": "A typesetting boundary preserving morphemes must coincide with the syllable boundary in pronunciation.",
-        "ans": false,
-        "why": "Orthographic line division은 형태소 구조 등을 보존할 수 있고, spoken syllabification은 음성·음운 기준을 사용합니다. 목적이 다른 경계를 자동으로 동일시하지 않습니다.",
-        "concept": "Orthographic versus phonological syllabification",
-        "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "bookReview": {
-          "book": "Yavaş, Applied English Phonology, 2nd ed. (2011)",
-          "printedPages": [
-            147,
-            148,
-            149
-          ],
-          "pdfPages": [
-            158,
-            159,
-            160
-          ],
-          "concept": "Orthographic versus phonological syllabification",
-          "status": "independent-content-reviewed"
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
         "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
         "compare": [],
         "level": "detail",
@@ -35288,45 +34014,6 @@ window.EXAMPLE_OX_BANKS = [
         },
         "reviewStatus": "independent-content-reviewed",
         "correct": "맞는 판단입니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
-        "id": "AN06-03",
-        "unit": 6,
-        "cat": "Stress generalization limits",
-        "data": "설명용 가상 자료(실제 조사·녹음 보고가 아님): 가상 조사표: 두 음절 nouns 100개 중 87개가 첫음절, 13개가 둘째음절 primary stress였다. 개별 단어의 품사·발음은 표에서 확인되었다.",
-        "text": "This table supports the exceptionless rule that all disyllabic nouns have first-syllable stress.",
-        "ans": false,
-        "why": "다수 경향과 무예외 규칙은 다릅니다. 표 자체에 둘째음절 stress 13개라는 반례가 있습니다.",
-        "concept": "Stress tendencies and lexical exceptions",
-        "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "bookReview": {
-          "book": "Yavaş, Applied English Phonology, 2nd ed. (2011)",
-          "printedPages": [
-            157,
-            158,
-            160,
-            162
-          ],
-          "pdfPages": [
-            168,
-            169,
-            171,
-            173
-          ],
-          "concept": "Stress tendencies and lexical exceptions",
-          "status": "independent-content-reviewed"
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
         "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
         "compare": [],
         "level": "detail",
@@ -35799,41 +34486,6 @@ window.EXAMPLE_OX_BANKS = [
       },
       {
         "bank": "aep-new",
-        "id": "AN01-09",
-        "unit": 1,
-        "cat": "Implosive mechanism",
-        "data": "설명용 가상 자료(실제 조사·녹음 보고가 아님): 구강 stop closure를 유지하면서 후두가 아래로 움직여 성문 위 공간의 압력이 낮아진다. 비교 대상 ejective는 후두를 위로 움직여 압력을 높인다.",
-        "text": "An analysis assigning the same direction of larynx movement and pressure change to the two mechanisms accords with the data.",
-        "ans": false,
-        "why": "Implosive형 관찰은 하강과 감압, ejective형은 상승과 가압입니다. 둘 다 성문기류와 관련되어도 방향과 기제는 구별됩니다.",
-        "concept": "Implosive versus ejective pressure mechanism",
-        "source": "원책 개념을 적용한 독창적 판단 자료입니다. 가상·설명용 자료는 본문에 표시했으며 원문 기출이 아닙니다.",
-        "provenance": {
-          "kind": "original",
-          "relatedExam": null
-        },
-        "bookReview": {
-          "book": "Yavaş, Applied English Phonology, 2nd ed. (2011)",
-          "printedPages": [
-            17,
-            18
-          ],
-          "pdfPages": [
-            28,
-            29
-          ],
-          "concept": "Implosive versus ejective pressure mechanism",
-          "status": "independent-content-reviewed"
-        },
-        "reviewStatus": "independent-content-reviewed",
-        "correct": "판단을 고쳐야 합니다.",
-        "context": "자료의 범위를 넘어 모든 언어·발화로 일반화하지 않습니다.",
-        "compare": [],
-        "level": "detail",
-        "representative": false
-      },
-      {
-        "bank": "aep-new",
         "id": "AN02-08",
         "unit": 2,
         "cat": "Near-minimal evidence",
@@ -36197,10 +34849,10 @@ window.EXAMPLE_OX_BANKS = [
         "id": "GN01-05",
         "unit": 1,
         "cat": "Morphology · sound vs structure",
-        "text": "In the given analysis, [mapi] has more syllables and more morphemes than [maps].",
-        "data": "학습용 가상언어: [mapi]는 두 음절이며 더 작은 의미 단위로 나뉘지 않는 명사 ‘강’이다. [maps]는 한 음절이며 map ‘돌’ + 복수 -s로 분석된다.",
+        "text": "Maple has more syllables and more morphemes than maps.",
+        "data": "발음과 뜻: maple [ˈmeɪpəl] ‘단풍나무’, map [mæp] ‘지도 한 장’, maps [mæps] ‘여러 장의 지도’.",
         "ans": false,
-        "why": "[mapi]는 2음절·1형태소, [maps]는 1음절·2형태소입니다. Syllable과 morpheme은 다른 기준으로 셉니다.",
+        "why": "maple은 [eɪ]와 [ə]가 각각 음절을 이루지만 하나의 morpheme입니다. maps는 모음이 [æ] 하나여서 한 음절이고, 뜻을 비교하면 map과 복수 -s로 나뉩니다.",
         "concept": "morpheme",
         "study": "https://namkicheol.github.io/linguistics/morphology_study.html#morpheme",
         "source": "기존 이론 설명의 개념을 적용해 독립적으로 구성한 자료·예문 판단입니다. 원문 기출 문항이 아닙니다.",
@@ -36473,10 +35125,10 @@ window.EXAMPLE_OX_BANKS = [
         "id": "GN01-17",
         "unit": 1,
         "cat": "Morphology · necessary conditions",
-        "text": "The fact that Zel is a monosyllabic adjective alone establishes zelek as a word in actual use.",
-        "data": "가상 접사 -ek 규칙: 한 음절인 adjective에만 붙을 수 있다. 어휘 조사에서 한 음절 adjective naf에는 nafek이 있지만, 한 음절 adjective zel에는 정착된 zelek이 없다.",
+        "text": "These data establish that zelek is a word in actual use.",
+        "data": "가상언어에서 suffix -ek은 한 음절인 adjective에만 붙을 수 있다. naf [naf]와 zel [zɛl]은 adjective이며, nafek은 이 언어에서 쓰인다.",
         "ans": false,
-        "why": "결합에 필요한 형식 조건을 만족하는 것과 실제 어휘로 정착한 것은 다릅니다. 필요조건만으로 모든 가능한 조합의 실재를 보장하지 않습니다.",
+        "why": "zel도 한 음절이어서 -ek이 붙는 데 필요한 조건을 충족합니다. nafek이 쓰인다는 사실만으로 zelek도 실제 어휘로 쓰인다고 결론 내릴 수는 없습니다.",
         "concept": "productivity",
         "study": "https://namkicheol.github.io/linguistics/morphology_study.html#productivity",
         "source": "기존 이론 설명의 개념을 적용해 독립적으로 구성한 자료·예문 판단입니다. 원문 기출 문항이 아닙니다.",
@@ -36749,10 +35401,10 @@ window.EXAMPLE_OX_BANKS = [
         "id": "GN02-15",
         "unit": 2,
         "cat": "Semantics · feature matrix",
-        "text": "Tala and neri differ in the animate feature but share the adult feature.",
-        "data": "가상어 자질표: tala=[+animate,+adult], neri=[+animate,−adult], sova=[−animate,−adult]. 이 문제는 표에 주어진 두 자질만 비교한다.",
+        "text": "Woman and girl differ in the animate feature but share the adult feature.",
+        "data": "이 문항에서 woman은 성인 여성을, girl은 성인이 되기 전의 여자아이를 가리킨다.",
         "ans": false,
-        "why": "둘은 [+animate]를 공유하고 adult 값이 다릅니다. 의미자질표는 차이가 있는 축을 명시적으로 읽어야 합니다.",
+        "why": "둘 다 사람이므로 [+animate]를 공유합니다. woman은 [+adult], girl은 [−adult]이므로 adult 값은 다릅니다.",
         "concept": "componential-analysis",
         "study": "https://namkicheol.github.io/linguistics/semantics_study.html#componential-analysis",
         "source": "기존 이론 설명의 개념을 적용해 독립적으로 구성한 자료·예문 판단입니다. 원문 기출 문항이 아닙니다.",

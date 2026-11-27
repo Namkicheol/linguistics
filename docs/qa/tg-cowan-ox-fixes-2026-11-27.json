@@ -1,0 +1,108 @@
+{
+  "baseline": "ef85883557344629a71167d34c3b83211d2582db",
+  "targetFiles": [
+    "example-ox-data.js",
+    "book-ox-cards/concepts/example-ox-data.js"
+  ],
+  "bank": "tg",
+  "items": [
+    {
+      "id": "TGD05-010",
+      "source": "Cowan p.96, Stress Can Focus Negation (refs/teachers_grammar.md:5589)",
+      "reason": "DESIGNER가 부정의 대조 초점이라는 설명을 실제 칭찬을 받은 사람으로 오해할 수 있습니다.",
+      "changes": {
+        "text": "Stressing DESIGNER in I didn’t praise the DESIGNER. can make the designer the target of contrast within the negation.",
+        "why": "DESIGNER에 강세를 두면 디자이너를 칭찬했다는 내용을 부정하는 대조를 만들 수 있습니다. 다른 사람을 칭찬했는지는 이 문장만으로 확정할 수 없습니다."
+      },
+      "precondition": {
+        "text": "Stressing DESIGNER in I didn’t praise the DESIGNER. can mark contrastive focus on the person praised.",
+        "why": "강세는 부정되는 부분을 특정 대상으로 좁히는 데 쓰일 수 있다. 강세를 문법형태 변화로 볼 필요는 없다."
+      }
+    },
+    {
+      "id": "TGD05-026",
+      "source": "Cowan p.99, Not in Nonverbal Negation (refs/teachers_grammar.md:5798)",
+      "reason": "주된 채점 요소를 시각 계산에서 not ten minutes ago의 해석으로 돌립니다.",
+      "changes": {
+        "text": "Under the stated reading, not ten minutes ago means that exactly ten minutes have elapsed since the check.",
+        "data": "<p><strong>판단 자료</strong><br>I checked it not ten minutes ago.<br>여기서는 ‘10분도 채 안 전에’라는 읽기입니다.</p>",
+        "why": "이 읽기에서 not ten minutes ago는 확인 이후 10분이 아직 지나지 않았다는 뜻입니다. 정확히 10분이 지났다고 보고하는 표현과 구별합니다."
+      },
+      "precondition": {
+        "text": "Under the specified recency reading, if the utterance time is 10:00, the checking time must be earlier than 9:50.",
+        "data": "<p><strong>판단 자료</strong><br>10:00에 발화: I checked it not ten minutes ago.<br>여기서는 “10분도 채 안 전에”라는 읽기이다.</p>",
+        "why": "최근성 용법에서는 기준 수치보다 짧은 경과 시간을 나타낸다. 해당 시각은 9시50분 이후이다."
+      }
+    },
+    {
+      "id": "TGD13-022",
+      "source": "Cowan pp.269, 271, conjoined pronoun case (refs/teachers_grammar.md:15266,15379)",
+      "reason": "문장의 주어는 me 단독이 아니라 the technician and me 전체입니다.",
+      "changes": {
+        "text": "Under formal editing standards, me can be corrected to I because the coordinated phrase the technician and me is the clause’s subject.",
+        "why": "주어는 The technician and I 전체입니다. 격식적 문어에서는 그 안의 대명사도 주격 I를 씁니다. 실제 구어에서는 다른 격이 나타날 수 있습니다."
+      },
+      "precondition": {
+        "text": "Under formal editing standards, me can be corrected to I because it occupies subject position.",
+        "why": "병렬 명사구의 일부라고 주어격 기준이 사라지지 않는다. 구어에서 들리는 변이와 편집 기준을 구별한다."
+      }
+    },
+    {
+      "id": "TGD16-031",
+      "source": "Cowan p.373, Future Perfect Progressive (refs/teachers_grammar.md:21172)",
+      "reason": "기준일까지 몇 개월인지 계산하는 문제가 원서의 future perfect progressive 관계를 직접 묻도록 조정했습니다.",
+      "changes": {
+        "text": "Will have been monitoring presents the activity as continuing up to a reference point in the future.",
+        "data": "<p><strong>판단 자료</strong><br>조사팀은 이미 빙하를 관측 중이며 10월에도 작업을 이어갈 예정입니다.<br>On October 1, we will have been monitoring the glacier for six months.</p>",
+        "why": "미래 기준점인 10월 1일까지 관측 활동이 이어져 온 기간을 말합니다. 그날 관측을 끝낸다는 뜻은 아닙니다."
+      },
+      "precondition": {
+        "text": "The sentence's six months, measured as of October 1, 2026, matches the starting date in the data.",
+        "data": "<p><strong>판단 자료</strong><br>가상 발화일: 2026년 9월 1일.<br>실험일지: 2026년 4월 1일에 관측을 시작했고 10월 1일까지 매일 관측할 예정이다.<br>예측: On October 1, we will have been monitoring the glacier for six months.</p>",
+        "why": "미래완료진행형은 미래 기준점까지의 활동 누적기간을 조망한다. 4월 1일부터 10월 1일까지는 6개월이며, 기준점에 활동을 반드시 끝낸다는 뜻은 아니다."
+      }
+    },
+    {
+      "id": "TGD22-006",
+      "source": "Cowan p.522, Wh- Clefts (refs/teachers_grammar.md:29477–29488)",
+      "reason": "wh-cleft의 배경인 what we need와 be 뒤의 실제 초점 another trial을 구분합니다. 예문에 나오지 않는 budget approval을 대조항으로 제시하지 않습니다.",
+      "changes": {
+        "text": "The focused constituent is another trial, contrasted with a larger budget."
+      },
+      "precondition": {
+        "text": "The focus of this sentence is the need for an additional test, not budget approval."
+      }
+    },
+    {
+      "id": "TGD22-027",
+      "source": "Cowan p.522, Wh- Clefts (refs/teachers_grammar.md:29477)",
+      "reason": "장소를 나타내는 wh-clause를 질문으로 표현한 설명을 바로잡았습니다.",
+      "changes": {
+        "why": "이 wh-cleft에서 where절은 배터리를 보관하는 장소를 나타내고, 뒤의 장소 PP는 그 위치를 밝힙니다. 전체 문장은 장소를 알려 주는 진술입니다."
+      },
+      "precondition": {
+        "why": "장소를 묻는 wh절과 장소 전치사구를 연결한 초점 구조이다. 이것을 모든 종류의 전치사구가 모든 wh-cleft에 자유롭게 온다는 규칙으로 확대하지 않는다."
+      }
+    }
+  ],
+  "retire": [
+    {
+      "id": "TGD04-016",
+      "source": "Cowan p.77 (refs/teachers_grammar.md:4577), education_2011_X28, education_2024_B11",
+      "reason": "정답을 알고 묻는 교실 display question을 구분하는 문항입니다. 확인한 직접 기출은 영어교육론 영역입니다. TG의 일반 의문문 구조와 화용 문항은 유지합니다.",
+      "precondition": {
+        "text": "Because the teacher already knows the answer, the utterance cannot function as a question at all.",
+        "ans": false
+      }
+    },
+    {
+      "id": "TGD26-023",
+      "source": "Cowan p.626 (refs/teachers_grammar.md:35244-35252)",
+      "reason": "담화 표지의 기능보다 ESL 지도상 과도한 사용을 피하라는 권고를 판단하게 합니다. 같은 단원의 you know 기능·해석 문항은 유지합니다.",
+      "precondition": {
+        "text": "The mere availability of a marker does not mean that increasing its frequency always improves communication.",
+        "ans": true
+      }
+    }
+  ]
+}

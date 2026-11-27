@@ -199,7 +199,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
   <div class="sec-body">
     <div class="concept">
       <div class="c-title">Core Definition</div>
-      <div class="def"><span class='kw1'>c-command</span>: <em>X c-commands Y iff the first branching node dominating X also dominates Y, and neither X nor Y dominates the other.</em> Equivalently, <em>a node c-commands its sisters and all of their descendants.</em></div>
+      <div class="def"><span class='kw1'>c-command</span>: <em>X c-commands Y iff the first branching node dominating X also dominates Y, and neither X nor Y dominates the other.</em> In a simple branching tree, <em>a node c-commands its sisters and all of their descendants.</em></div>
       <p class="note">c-command는 binding의 구조적 핵심이다. 어떤 node X 위로 처음 갈라지는(<span class='kw2'>first branching node</span>) node를 찾고, 그 node가 Y를 지배하는지 확인한다. 단, X와 Y가 서로를 지배하는 경우는 제외한다.</p>
       <p class="note">subject NP는 VP 안의 object를 c-command하지만, 소유격(<span class='kw4'>possessor</span>) 안에 든 NP는 그 바깥을 c-command하지 <strong>못한다</strong> — binding antecedent 판별의 단골 함정.</p>
     </div>
@@ -548,7 +548,7 @@ details.concept>p{margin-top:10px;line-height:1.8}
             <tr><th>Principle</th><td>A</td><td>B</td><td>C</td></tr>
             <tr><th>요건</th><td>binding domain 안 bound</td><td>binding domain 안 free</td><td>어디서나 free</td></tr>
             <tr><th>domain 안의 c-commanding·<wbr>coindexed 선행사</th><td class="y">필수 (없으면 비문)</td><td class="n">금지 (있으면 비문)</td><td class="n">금지 (있으면 비문)</td></tr>
-            <tr><th>domain 밖의 c-commanding·<wbr>coindexed 선행사</th><td class="n">불가 (local binding 필요)</td><td class="y">허용</td><td class="n">금지</td></tr>
+            <tr><th>domain 밖의 c-commanding·<wbr>coindexed 선행사</th><td class="n">이 선행사만으로는 불충분 (local binding 필요)</td><td class="y">허용</td><td class="n">금지</td></tr>
           </tbody>
         </table>
       </div>

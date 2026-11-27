@@ -1,6 +1,15 @@
 (function(root){
 'use strict';
 const VERSION=1,KEY='etwiki_example_ox_v1';
+const RETIRED_IDS={
+  tg:new Set(['TGD04-016','TGD26-023']),
+  'transform-new':new Set(['TFA01-05','TFA01-08','TFA02-06','TFA03-05','TFA03-07','TFA07-07','TFA08-01','TFA09-04']),
+  'aep-new':new Set([
+    'AN01-05','AN01-07','AN01-09','AN05-07','AN06-03',
+    'AN08-04','AN08-05','AN08-06','AN08-08','AN08-09','AN08-12','AN08-13','AN08-16','AN08-17','AN08-18','AN08-19',
+    'AN09-01','AN09-04','AN09-05','AN09-07','AN09-08','AN09-09','AN09-11','AN09-12','AN09-13',
+  ]),
+};
 function levelOf(c){return ['exam','essence','detail'].includes(c.level)?c.level:c.filter==='exam'?'exam':'essence';}
 function inScope(q,c){return (!c.unit||q.unit===c.unit)&&(levelOf(c)==='exam'?examDerived(q):levelOf(c)==='detail'||q.level!=='detail');}
 function kstDay(date=new Date()){return new Date(date.getTime()+9*60*60*1000).toISOString().slice(0,10);}
@@ -13,7 +22,8 @@ function validSession(saved,bank,c,date){
   if(!saved||saved.version!==VERSION||!Array.isArray(saved.order)||!saved.order.length||saved.key!==sessionKey(c,date))return null;
   if(new Set(saved.order).size!==saved.order.length)return null;
   const expected=new Set(bank.questions.filter(q=>inScope(q,c)).map(q=>q.id));
-  const isRetired=id=>c.bank==='aep-new'&&typeof id==='string'&&/^AN07-(?:0[1-9]|1[0-9]|20)$/.test(id);
+  const isRetired=id=>RETIRED_IDS[c.bank]?.has(id)
+    ||(c.bank==='aep-new'&&typeof id==='string'&&/^AN07-(?:0[1-9]|1[0-9]|20)$/.test(id));
   const order=saved.order.filter(id=>expected.has(id));
   const migrated=order.length!==saved.order.length;
   if(migrated&&(saved.order.some(id=>!expected.has(id)&&!isRetired(id))||!order.length))return null;
