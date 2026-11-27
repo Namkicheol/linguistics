@@ -32,6 +32,7 @@ for (const hash of ['#general-practice-heading', '#chapters', '#book-practice', 
   assert.equal(practice.hidden, !ox);
   assert.equal(chapters.hidden, ox);
   assert.equal(syntax.hidden, ox);
+  assert.equal(byId('skip-to-topic').href, ox ? '#book-practice' : '#chapters');
   assert.deepEqual(links.filter(link => link.attrs['aria-current']).map(link => link.hash), [ox ? '#book-practice' : '#area-study']);
 }
 console.log('PASS: both sections, eight chapters, four practice groups and legacy deep links');
